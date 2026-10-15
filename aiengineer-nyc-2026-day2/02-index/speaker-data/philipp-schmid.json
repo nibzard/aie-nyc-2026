@@ -1,0 +1,18 @@
+{
+ "slug": "philipp-schmid",
+ "name": "Philipp Schmid",
+ "role": "MTS",
+ "company": "Google DeepMind",
+ "bio": "Philipp Schmid is a Staff Engineer at Google DeepMind working on Gemini, Agents and Gemini API with the mission to help every  builder to create and benefit from AI in a responsible way.",
+ "linkedin": "https://www.linkedin.com/in/philipp-schmid-a6a2bb196/",
+ "twitter": "https://x.com/_philschmid",
+ "website": "https://deepmind.google/",
+ "photo": "https://content-cdn.sessionboard.com/sQcnVUwWTZ6JspUomcZR_headshot-1789391581220.png",
+ "sessions": [
+  {
+   "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+   "time": "2:55pm - 3:13pm",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ]
+}

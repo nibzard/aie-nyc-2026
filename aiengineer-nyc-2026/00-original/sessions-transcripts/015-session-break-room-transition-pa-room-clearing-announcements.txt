@@ -1,0 +1,23 @@
+[01:42:43 | 10:30:34 AM] The current program has finished its run.
+[01:42:46 | 10:30:37 AM] Please collect your belongings and proceed through the main doors for your next scheduled task.
+[01:51:25 | 10:39:17 AM] And I'm going to show you the work we've been doing lastly on building our first foundation model, a Wells Fargo foundation model.
+[01:51:25 | 10:39:17 AM] So I explain why we did that, how we did it, and what we accomplished in doing so.
+[01:51:25 | 10:39:17 AM] So, first, foundation model, it doesn't necessarily need to be language-based.
+[01:51:25 | 10:39:17 AM] I mean, we're all playing with Claude and ChatGPT and others.
+[01:51:25 | 10:39:17 AM] They're all language-based foundation models.
+[01:51:25 | 10:39:17 AM] In financial services, we also have language, of course, from unstructured representation data.
+[01:51:25 | 10:39:17 AM] But we also have a lot of structured representation, a lot of these data is tabular data.
+[01:51:25 | 10:39:17 AM] We have a lot of information from our customers.
+[01:51:25 | 10:39:17 AM] We have information in investment banking, consumer banking, and all of these data is data that we have in Wells Fargo and all big financial organizations have too.
+[01:51:25 | 10:39:17 AM] And we want to take benefit of all of this huge amount of data that we have.
+[01:51:25 | 10:39:17 AM] And it's not like you just take it and put it in a language model and get the best of it.
+[01:51:25 | 10:39:17 AM] Of course, you can get a lot of benefit out of it, but it's not necessarily the best way to do it.
+[01:51:25 | 10:39:17 AM] So what we decided to do is to look at the data we have, all the transactions, all the customer transactions that are doing with their debit card, credit card, digital, check, all of those coming from many different channels, and see if we can.
+[01:51:25 | 10:39:17 AM] Builds from the show model that we can use and fine-tune for downstream tasks like credit scoring, or that you can use it for fraud detection, anti-money laundering, do marketing.
+[01:51:25 | 10:39:17 AM] So how we can build one backbone that you can use and streamline across downstream tasks.
+[01:51:25 | 10:39:17 AM] So now you're moving from many models very siloed across different organizations into really one backbone that every organization can just reuse because you learn the representations of customers' transactions at scale.
+[01:51:25 | 10:39:17 AM] So that's the intent.
+[01:51:25 | 10:39:17 AM] And just spoiler alert, you may say, Hey, that's tabular data.
+[01:51:25 | 10:39:17 AM] Why do you just don't use XGBoost and the usual suspect?
+[01:51:25 | 10:39:17 AM] We did that.
+[01:51:25 | 10:39:17 AM] This is the model we had in production.

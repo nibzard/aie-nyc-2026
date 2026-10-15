@@ -1,0 +1,20 @@
+[07:46:12 | 4:34:04 PM] I have time for one or two questions, and then I think we can wrap.
+[07:46:19 | 4:34:11 PM] Yeah, how's it different from JEPA?
+[07:46:29 | 4:34:20 PM] So JEPA doesn't train alongside the action labels, so they bet on inferred action labels for the most part.
+[07:46:35 | 4:34:26 PM] Which I think, like, one of the ways of thinking about it is JEPA, I think, in the limit is the more correct approach, but it's just a lot less practical in the short term because you need to bet on a separate scaling law on the action inference itself.
+[07:46:45 | 4:34:37 PM] And we really like JEPA as a concept.
+[07:46:48 | 4:34:40 PM] We think it's a, you know, we use some of the things in the models.
+[07:46:54 | 4:34:45 PM] But at the end of the day, it's an approach, not a product.
+[07:46:59 | 4:34:51 PM] And I think we'll, you know, borrow concepts both ways.
+[07:47:06 | 4:34:58 PM] One way of thinking about it is because we have so much action data, let's say you're flying a plane and you're moving the rudder in the back.
+[07:47:15 | 4:35:06 PM] There's no way of being able to tell that from the video frames.
+[07:47:19 | 4:35:11 PM] It's very, very difficult.
+[07:47:20 | 4:35:12 PM] So our mode on having the action data really transfers better to action sequences than it does to world models and to generating the pixels.
+[07:47:28 | 4:35:20 PM] And that's why we just went all in on training these general foundation models for action predictions, and we use all sorts of techniques to do world models.
+[07:47:36 | 4:35:28 PM] You know, our own, we really like other companies building them as well.
+[07:47:41 | 4:35:32 PM] Great.
+[07:47:41 | 4:35:32 PM] New one more and then I got to run, I think.
+[07:47:47 | 4:35:39 PM] Great.
+[07:47:48 | 4:35:40 PM] All right.
+[07:47:49 | 4:35:41 PM] Thank you, everyone.
+[07:47:50 | 4:35:42 PM] Have a good one.

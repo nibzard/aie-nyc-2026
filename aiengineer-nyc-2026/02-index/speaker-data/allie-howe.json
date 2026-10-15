@@ -1,0 +1,27 @@
+{
+ "slug": "allie-howe",
+ "name": "Allie Howe",
+ "role": "Member of Technical Staff",
+ "company": "Keycard",
+ "bio": "Allie Howe is an AI security engineer and Member of Technical Staff at Keycard, which she joined in June 2026. She is the co-creator and host of the Insecure Agents podcast, launched with Kyle Bhiro in early 2025. She is a workstream lead for the OWASP Agentic Security Initiative, where she helped organize an agent-security hackathon and co-created FinBot, a financial-services capture-the-flag app. She is also the founder of Growth Cyber, where she worked as a virtual CISO advising AI startups on security and compliance. She started in software development before moving to security engineering and holds a master's in cybersecurity. Her work focuses on agent identity, authorization, runtime controls, and accountability.",
+ "linkedin": "https://www.linkedin.com/in/allisonhowe",
+ "twitter": "https://x.com/vtahowe",
+ "website": "https://insecureagents.com",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FPTtFSrgyTn2FXa0d1NvN_headshot-1789698888017.png",
+ "sessions": [
+  {
+   "title": "Intent Based Auth",
+   "time": "11:30am - 12:15pm",
+   "id": "e65f74f9-2174-406d-bd32-2d7073eb677d"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://ai.engineer/speakers/allie-howe",
+  "https://ai.engineer/orgs/keycard",
+  "https://www.linkedin.com/in/allisonhowe",
+  "https://x.com/vtahowe",
+  "https://insecureagents.com/live",
+  "https://www.keycard.ai/blog/keycard-insecure-agents"
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "slug": "cameron-wolfe",
+ "name": "Cameron Wolfe",
+ "role": "Staff Research Scientist",
+ "company": "Netflix",
+ "bio": "Cameron R. Wolfe is a Staff Research Scientist on the Globalization team at Netflix, where he focuses on multimodal large language models. Netflix Globalization works to remove language barriers from the member experience, supporting the translation and cultural adaptation of content (e.g., subtitles and dubbing) for more than 300 million members across 190+ countries and 30+ languages. Cameron is also the author of the Deep (Learning) Focus newsletter, where he explains complex topics in AI research in an accessible and intuitive way.\n\nHe earned his Ph.D. in Computer Science from Rice University, where he was advised by Dr. Anastasios Kyrillidis. His research spans machine learning and optimization, including non-convex optimization, deep learning, continual learning, and practical techniques for building more effective neural network systems. Prior to Rice, he studied Computer Science at UT Austin and conducted research in genetic algorithms and evolutionary computation with the Neural Networks Research Group.",
+ "linkedin": "https://www.linkedin.com/in/cwolferesearch/",
+ "twitter": "",
+ "website": "https://cameronrwolfe.substack.com/",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FUxeVusjzTnedAMI2Z1KI_headshot-1790291459947.jpg",
+ "sessions": [
+  {
+   "title": "A Roadmap for Evaluating Highly-Subjective Tasks",
+   "time": "3:20pm - 3:38pm",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ]
+}

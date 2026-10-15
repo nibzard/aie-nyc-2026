@@ -1,0 +1,23 @@
+{
+ "slug": "alexander-shevchenko",
+ "name": "Alexander Shevchenko",
+ "role": "Head of Ramp Labs and Applied Research",
+ "company": "Ramp",
+ "bio": "Alexander (Alex) Shevchenko is Head of Ramp Labs and Applied Research at Ramp, based in New York. He leads Ramp's applied AI lab, Ramp Labs, where his projects include Ramp Sheets (an experimental AI-powered spreadsheet editor that automates finance work), early agent work on computer use, vendor deep research, and video process mining. Before Ramp, he was a software engineer at Microsoft working on process mining (Power Automate Process Mining). He studied at Concordia University. His interests include Rust, WebAssembly, LLMs, agents, novel UX patterns, and information retrieval.",
+ "linkedin": "https://www.linkedin.com/in/shevalex",
+ "twitter": "",
+ "website": "https://ramp.com/",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F6j6dG1FSISNo3ysjePAn_headshot-1791300779161.jpg",
+ "sessions": [
+  {
+   "title": "Chasing capabilities while waiting for the frontier",
+   "time": "9:00am - 9:18am",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/shevalex",
+  "https://www.alshevchenko.com"
+ ]
+}

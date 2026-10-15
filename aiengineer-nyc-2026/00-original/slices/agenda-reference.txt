@@ -1,0 +1,23 @@
+# agenda reference (2026-10-13), t = video seconds (t=0 == 08:47:52 ET)
+
+- t=  428-  488 8:55am-8:56am ET [other] AIE Welcome from GM, Lia McBride -- Lia McBride (AI Engineer)
+- t=  488-  728 8:56am-9:00am ET [other] Welcome Remarks -- Alex Lieberman (Tenex)
+- t=  728- 1808 9:00am-9:18am ET [keynote] Vault: Making Unstructured Data Work for Investing -- Aaron Linsky (Bridgewater), Sam Green (Bridgewater)
+- t= 1808- 2888 9:18am-9:36am ET [keynote] Anthropic: Accelerating frontier AI in Financial Services. -- Belinda Neal (Anthropic), Keon Shahab (Anthropic)
+- t= 2888- 3968 9:36am-9:54am ET [keynote] Balancing Acceleration and Safety for AI Agents -- John Feminella (Two Sigma)
+- t= 3968- 5048 9:54am-10:12am ET [keynote] Does Code Quality Even Matter? -- Max Kanat-Alexander (Capital One)
+- t= 5048- 6128 10:12am-10:30am ET [keynote] What does an AI engineer do? -- Aparna Dhinakaran (Arize AI)
+- t= 6728- 7808 10:40am-10:58am ET [talk] Wells Fargo Foundation Model: Application to Fraud Detection at Scale -- Freddy Lecue (Wells Fargo)
+- t= 8228- 9308 11:05am-11:23am ET [talk] Inside Arca’s long-horizon agents that run the business -- Aman Singh (Arca)
+- t= 9728-12428 11:30am-12:15pm ET [talk] Intent Based Auth -- Allie Howe (Keycard), Ian Livingstone (Keycard), Michael Davis (JPMC), Dick Hardt (AAuth)
+- t=12428-19028 12:15pm-2:05pm ET [other] Networking Break -- (none listed)
+- t=19028-20108 2:05pm-2:23pm ET [talk] Great Agents Start with Great Infrastructure -- Akshat Bubna (Modal)
+- t=20528-21608 2:30pm-2:48pm ET [talk] Beyond the Model Card: The Jagged Frontier of AI in Finance -- Rayan Krishnan (Vals AI)
+- t=22028-23108 2:55pm-3:13pm ET [talk] AI and the Future of Fundamental Investing -- Jack Woodruff (Kepler), Vinoo Ganesh (Kepler)
+- t=23528-24608 3:20pm-3:38pm ET [talk] Shipping like a startup, regulated like a bank -- David Abitbol (Revolut)
+- t=25028-26108 3:45pm-4:03pm ET [talk] Everyone Has AI. Who Has the Advantage? -- Sid Pednekar (?)
+- t=27428-27728 4:25pm-4:30pm ET [other] Welcome Back - Featured Keynotes -- Alex Lieberman (Tenex)
+- t=27728-28808 4:30pm-4:48pm ET [keynote] A Hedge Fund as a Function -- Frank Long (Coatue)
+- t=28808-29888 4:48pm-5:06pm ET [keynote] Frontier Models for Acting in Space and Time -- Pim de Witte (General Intuition)  NOTE: stream ends mid-item at t=29150 (16:53:42 ET)
+- t=29888-30968 5:06pm-5:24pm ET [keynote] Hermes gives you wings: Build on open foundations. -- Dillon Rolnick (Nous Research)  NOTE: starts after stream end - not on this stream
+- t=31028-31328 5:25pm-5:30pm ET [other] Closing Remarks -- Alex Lieberman (Tenex)  NOTE: starts after stream end - not on this stream

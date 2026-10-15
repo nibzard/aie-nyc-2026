@@ -1,0 +1,18 @@
+{
+ "slug": "adit-abraham",
+ "name": "Adit Abraham",
+ "role": "CEO and Co-Founder",
+ "company": "Reducto",
+ "bio": "Adit Abraham is the CEO and Co-Founder of Reducto, which is the agentic document platform for enterprises and AI teams. Our APIs and workflows combine high-performance document understanding with automation built around your processes and expertise, balancing accuracy, speed, and cost so teams can get work done faster with the control and security their business requires.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FOByb2pV4QwqdrzgGWrnn_headshot-1791986055532.jpg",
+ "sessions": [
+  {
+   "title": "How Raj Led Datasite’s AI and Data Transformation at Scale with Reducto",
+   "time": "2:30pm - 2:48pm",
+   "room": "McCarthy Room (Riverside Suite)"
+  }
+ ]
+}

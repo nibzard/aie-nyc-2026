@@ -1,0 +1,278 @@
+# transcript slice 01
+window: t=1820..3640 (00:30:20..01:00:40 video time; 9:10:56 AM..9:41:16 AM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[00:29:34] And the other nice thing with this is that this is all running automatically.
+[00:29:38] You don't need to spend anyone's time.
+[00:29:40] It's just you start it, and the only thing that failed passes that get filtered out is the cost of the tokens.
+[00:29:48] The other thing that's interesting outside of just building out all of the infrastructure to support these swarms is that we do research into how to best use models as part.
+[00:29:59] Models as part of these swarms.
+[00:30:00] One of the interesting insights from that same article that we published is that you can actually use open-weight models that are up to five times cheaper compared to the frontier reasoning.
+[00:30:11] And because you're setting it up as a swarm, the detection rate is not five times lower.
+[00:30:17] So you can kind of spend more on these cheaper tokens and have almost as good of a detection rate.
+[00:30:23] If you follow through all of these examples, you kind of notice a pattern of a lot of them is attempts at saving on time and saving on money.
+[00:30:38] So reducing latency, which is time, and then reducing on token cost, which is money.
+[00:30:42] That's actually Ramp's slogan: saving our customers time and money.
+[00:30:47] And so I'd like to point to two products that we actually offer from Ramp that have been influenced by Ramp Labs' research.
+[00:30:55] The first one is token spend management that connects to a bunch of your API keys and is able to give you a really good picture of how LLMs are being used inside of your company.
+[00:31:06] Not only token spend on an API key basis or a user basis, but digging deeper, accounting categories, and even things like tax credits that you can get by analyzing the spend.
+[00:31:22] It also goes deeper, and we created a taxonomy that contextually analyzes and semantically analyzes the LLM usage so you can actually understand how LLMs are being used outside of just attributing it to a team or a person inside of your company.
+[00:31:37] And then the second one is Ramp Router, which also leans into improving the latency of your agent, where we have a bunch of routing strategies that we work with Ramp Labs to develop, things like Nvidia Switchyard, things like Smart Flex offloading of work to both improve latency and cost per tokens that you spend.
+[00:31:59] And there's a bunch of different strategies already available for routing, and even more coming out later.
+[00:32:06] So if you're interested in any of these two products, you can take a photo of the URLs or scan the QR codes there.
+[00:32:13] Give you a second.
+[00:32:20] Awesome.
+[00:32:22] And then I'd also invite you to check out our Ramp Labs blog, where we publish a bunch of really interesting articles that I haven't had the chance to cover as part of this presentation.
+[00:32:35] Notably, one of the really interesting ones is Portal, where we figured out a way of transferring learnings from one post-train to another.
+[00:32:43] So you could do something like a LoRA post-train on one model, so like the Qwen 3.
+[00:32:50] 5 that I was describing, but then transfer it to newer versions of Qwen or even across different families.
+[00:32:56] So you're post-training this latent that then can be projected onto different models, and that really amortizes the cost that you have to spend on post-training.
+[00:33:06] More blog posts on agentic map reduce, so not only the pen testing stuff that we did, but also things like analyzing and creating taxonomies of LLM usage, which is stuff that has gone into the token spend product.
+[00:33:20] Things like self-improving monitoring, where we use LLMs to automatically create monitors with Datadog on a lot of our product surfaces, and then as alerts come in, improve those monitors automatically without a person in the loop to try to basically create super, super robust and resilient software.
+[00:33:41] And finally, semantic tagging, which is this interesting foray into creating this agentic map reduce over a bunch of user sessions, where we can annotate and create taxonomies that are open-ended.
+[00:33:53] So not knowing ahead of time what are the clusters of LLM usage and trying to create a taxonomy that can then be reconciled against the spend inside of the companies.
+[00:34:05] So if you're interested in this type of research, x.
+[00:34:09] com/ramplabs, where you can go and check out more of our research.
+[00:34:15] And here's my Twitter if you have any other questions or want to talk about some use case as part of your applied research.
+[00:34:25] And that's it.
+[00:34:26] Thank you.
+[00:34:27] As AI agents generate more code than ever, how do we make sure it's ready to ship?
+[00:34:43] To explore the importance of verification in agentic software development, please welcome Tarek Shaukat, CEO of Sonar.
+[00:35:02] Morning, everybody.
+[00:35:05] My name is Tarek Shaukat.
+[00:35:06] I am the CEO of Sonar, as you just heard, and we're here to talk today about how we have been helping companies build software factories that actually work for enterprises.
+[00:35:18] And I thought it'd be an interesting way to start, to start looking at actual factories, because we know how to build actual factories.
+[00:35:25] And for those of you who have a little bit of the gray hair and all of this sort of thing, you may remember the 1980s.
+[00:35:32] And in the 1980s, you could find cars that were really good cars.
+[00:35:36] But if you look at the picture here, and if you remember those times, the cars didn't quite fit together perfectly, right?
+[00:35:43] You'd have different pieces that would leave big gaps.
+[00:35:47] It would be really good cars that just didn't kind of work the way they were supposed to.
+[00:35:51] And then Toyota, and particularly Lexus, came out with a commercial, and it showed something very simple, which was a ball bearing running across the seams of this car.
+[00:36:02] And it was kind of revolutionary at the time because it showed that you could actually build a car that fit together perfectly.
+[00:36:09] And instead of building for volume and then fixing the old mindset, you could actually have a mindset focused on ship it right, on no rework, on customer happiness.
+[00:36:21] And there was not—this was not a single change.
+[00:36:26] What happened was that people really started thinking about the factories differently.
+[00:36:32] They started engineering, building factories that were engineered to deliver quality.
+[00:36:38] And there's a number of different pieces that I think still resonate today.
+[00:36:42] The first is you prioritize quality instead of volume.
+[00:36:46] The second is that you fix the system, not just individual symptoms that you see.
+[00:36:53] The third is that you design for something that can be built, as opposed to designing the wheels and designing the washer bottles and whatever it is, and then hoping it fits together.
+[00:37:04] You solve problems as they occur, as opposed to kicking the can down the road and fixing it at the end.
+[00:37:09] And you empower everybody.
+[00:37:10] Anyone could stop the line, not just the boss.
+[00:37:14] Now, why am I talking about this?
+[00:37:16] It's actually because modern software development actually embraced all of these principles.
+[00:37:20] If you think about how we build software today, what is considered best practice, a lot of the terms and the practices came from that idea of a Toyota production system: agile, Kanban, error budgets if you're in the SRE world, continuous integration.
+[00:37:37] These ideas all kind of sprung from this notion of how do we build factories that work.
+[00:37:44] And it's worked really well for us in software development so far.
+[00:37:47] But agents, as we all know, you wouldn't be sitting here if you didn't understand that agents are changing the game.
+[00:37:54] And as agents are changing the game, weird things start to happen.
+[00:37:59] First of all, this is research that was published last month of the effect of implementing asynchronous agents in your development lifecycle.
+[00:38:10] And I'm sure many of you have seen this.
+[00:38:12] You have an explosion in the number of lines of code written, up 2,450%.
+[00:38:17] You have an increase in the number of commits.
+[00:38:20] So the volume code creation is now easy, and it is now abundant.
+[00:38:25] And by the way, more and more people, I'm sure many people in this room, are saying, okay, if it's easy and abundant, how do I automate it?
+[00:38:32] How do I build factories, agentic software factories that help automate and scale this?
+[00:38:37] And today, we just finished our, what we call State of Code Developer Survey.
+[00:38:43] It'll be out next month, but this is a little preview.
+[00:38:46] Today, 5% of developers that we spoke to say that they're running agentic software factories, but 34% said in a year they expect to, and 39% in financial services.
+[00:38:57] So people are thinking about how do you actually build these next generation factories.
+[00:39:03] And there's a couple of gotchas in here: security risk.
+[00:39:06] The agents can work really well to help you build stuff.
+[00:39:09] It can also work really well to help you hack stuff, help you attack stuff, find vulnerabilities, find quality issues, etc.
+[00:39:16] And so, as I was writing this presentation, kind of over the weekend, a little just-in-time, again from the Toyota production system, Sachin Adela posted this article on X.
+[00:39:27] And if you haven't read it, I think it's a great article that I think everyone should internalize.
+[00:39:32] But he was talking about insider risk of models inside of companies.
+[00:39:36] And one of the things that he talked about was the need for an engineering approach to containment and governance built around strong deterministic system design, human controls, and reliable operating procedures.
+[00:39:49] And this really resonated with me because what we are seeing is a paradigm shift.
+[00:39:57] In software factory design or software development.
+[00:40:00] Software development, let's call it more broadly, that we need to engineer.
+[00:40:03] We need to build systems that engineer confidence and quality into agentic software factories.
+[00:40:11] So to start doing that, I think it's important to understand the limitations that we're facing.
+[00:40:17] So what's the hard thing about this?
+[00:40:19] And there's five that I'm going to call out.
+[00:40:21] The first is that human in the loop doesn't scale.
+[00:40:25] And this may be, I don't know, to this room it may not be all that controversial, but virtually every company I talk to, I say, What's your AI governance strategy?
+[00:40:34] And they give me all this stuff and they say, But don't worry, we have humans in the loop.
+[00:40:37] And the problem with humans in the loop, as I mentioned earlier, 2,450% increase in lines of code, 240% increase in commits, but the same study showed only a 30% increase in releases.
+[00:40:51] We haven't figured out how to scale from producing stuff to shipping stuff.
+[00:40:57] There's automation needed, there's new tools needed, and really importantly, this is a concept that really I see it every day now, and I'm sure many of you do as well, called cognitive surrender.
+[00:41:10] And this study was done just a couple months ago, and it looked at how often do humans agree with AI.
+[00:41:17] And it turns out they agree with AI when AI is right 93% of the time.
+[00:41:23] And four out of five times they agree with it when the AI is wrong.
+[00:41:27] So it's not that human in the loop is, we just need to make things faster.
+[00:41:32] It's actually that it doesn't work in the agentic era.
+[00:41:37] So that's problem one.
+[00:41:38] Problem two is that agents struggle with large, complex codebases.
+[00:41:43] They are very, very smart, but you need to understand what happens in a codebase in order to work on it.
+[00:41:50] The left-hand side is a study that was done on code translation, and what it shows is that the agents were able to get it right 91% of the time when the codebase was 10,000 lines of code.
+[00:42:04] And by the time it got to even 50,000, and I'm sure everyone in this room operates off of much bigger code bases than this, but when it was trying to translate 50,000, the accuracy collapsed.
+[00:42:14] Similarly, another study looked at how many tokens does it take on a large, complex code base to complete the same task, and the variance was 30x, not 30%, but 30x.
+[00:42:28] And the reason is because the agent spends a huge amount of their tokens trying to understand how to navigate the code base, the structure of the code base, things like this.
+[00:42:37] And it's kind of like if I'm trying to go from LA to here, and if I pick a random starting point, if I happen to pick White Plains, I will get to New York pretty quickly.
+[00:42:49] If I pick Albuquerque, it's going to take me a long time and a lot of cost.
+[00:42:53] Same thing happens with agents.
+[00:42:56] Errors compound.
+[00:42:58] This is another important concept.
+[00:43:00] This is a study out of Meter, and Meter looks at, and you can find this on their website, they look at how effective are agents at completing tasks that humans can do.
+[00:43:13] And the way they look at this is, can you complete a task that takes X number of hours?
+[00:43:17] So you can see here the Claude Mythos preview, which is the latest version that they've published, was good at completing tasks that take a human 16 hours.
+[00:43:27] Okay, so that's really good.
+[00:43:28] But there's an important caveat in the fine print here, which is this is at 50% accuracy.
+[00:43:34] When you dial up the accuracy to 80%, the curve flattens substantially because as you do long-running tasks, errors compound.
+[00:43:44] If you have 95% accuracy on each task, by the time you're at 20 steps, you have 36% accuracy.
+[00:43:52] Right.
+[00:43:54] And so that is another issue we have to deal with in software factories.
+[00:43:59] Probably the most aggressive headline I put in here is this fourth point, that LLMs are unreliable reward-seeking judges.
+[00:44:07] You know, so the question that we always get is, well, can't you just ask an LLM?
+[00:44:11] And people have been studying this as well.
+[00:44:13] And this is all, again, the first on the left-hand side is from PayPal AI's research lab.
+[00:44:20] They published a paper this month, actually, and found that depending on the model and the situation, between 7 and 17 percent of verdicts change across what they called identical replications.
+[00:44:33] Ask the same question, get a different answer between 7 and 17 percent of the time.
+[00:44:38] And if you start challenging—this is a study out of Meta now—if you start challenging the LLM, Are you sure?
+[00:44:45] Very simple challenge, it'll actually change its mind 7 to 34 percent, again depending on the model.
+[00:44:50] So you ask the AI judge twice and you may get a different answer.
+[00:44:56] And then lastly, and I won't dig into this one too much because I think it's probably self-evident to everyone, as the time to exploit nears zero, the ability for us to respond is incredibly challenged.
+[00:45:09] And so prevention is something that we believe the software factory has to bake in to the design, has to engineer into the factory.
+[00:45:18] So as we've thought through this, we have written down what we call the code confidence formula, which is basically how do you build, how do you think about a software factory that delivers what we all want, which is outcomes that we can feel confident in, right?
+[00:45:37] Not outcomes we can trust, not blind trust or anything like that, but outcomes that we can feel comfortable with, that we can sit and tell our executives, our customers, our shareholders, our CEOs, our boards that yes, I believe this factory is working well.
+[00:45:51] And we think there's four components to this.
+[00:45:54] The first is being crystal clear about the intent.
+[00:46:00] If you don't know what you're trying to build, you can't tell the agent what to build, and you will not get the outcome you want.
+[00:46:05] The second is guardrails.
+[00:46:08] And we very specifically talk about guardrails, not guardrails.
+[00:46:12] Guardrails prevent something from going off the road.
+[00:46:15] Guardrails help keep you on it.
+[00:46:17] And I think what agents need are the small nudges to guide and govern those agents.
+[00:46:23] The third part is verification that needs to be independent, thorough, and issues fixed, as opposed to just cans kicked down the road.
+[00:46:32] And then lastly, evidence.
+[00:46:34] Trust but verify.
+[00:46:36] Trust but understand that it was done with proof that is consistent, audible, and repeatable.
+[00:46:42] And we multiply these together because we've seen a number of situations where one of these elements is missing.
+[00:46:49] And if it's zero, the confidence goes to zero.
+[00:46:51] If you do all of this but don't have evidence, you go to zero.
+[00:46:55] You don't have confidence in the outcome.
+[00:46:58] So we really think about factory design is requiring these four elements.
+[00:47:05] And as we put together factories, as we help customers, I'm not going to walk through every box on this page, but as we help our customers and partners build these software factories, we're very deliberate about how do you get the intent, bottom left-hand side in purple.
+[00:47:19] How do you put the guardrails in place?
+[00:47:22] How do you do verification in a way that's thorough and independent?
+[00:47:25] And how do you produce the evidence?
+[00:47:28] And by doing this, we see amazing results.
+[00:47:31] So these are real results now from our customers.
+[00:47:35] The first one is focusing on intent and guardrails.
+[00:47:39] And intent and guardrails, we have a product called Sonar Vortex, which gives intent, guardrails, and in the agentic loop starts to do verification.
+[00:47:46] So again, nudging the agents.
+[00:47:48] And what we see when we provide agents in long-running, in large, complex code bases with long-running tasks with this information is a 36% reduction in token cost because you're putting it in white plans.
+[00:48:03] You actually are putting it close to the answer.
+[00:48:05] You're helping it understand the map.
+[00:48:07] You don't have to burn tokens on things we already know.
+[00:48:10] And 92% reduction in issues in the commit, right?
+[00:48:14] So it's cheaper, and we can get a better outcome to go into that verification stage.
+[00:48:20] This is, again, all because we're nudging the agent to keep on track.
+[00:48:26] Then you get to verification, and we started Life as a verification company.
+[00:48:30] This is how we see the world, is through a verification lens.
+[00:48:34] And we have a very strong point of view that independent verification has to cover the full range of issues that is both precise and cost-effective, right?
+[00:48:45] You use CPUs when you can use CPUs, and you use GPUs when you need GPUs.
+[00:48:49] So we look at deterministic mixture methods, and then you add in agentic mixture methods, and it comes up with what we think is the gold standard of verification.
+[00:49:00] And what we see is when you apply this, our product is called Sonar Cube.
+[00:49:04] So we talked to our customers, over a thousand customers recently, and we said, How likely are you, or how often have you seen these issues from agentic coding?
+[00:49:17] And the statement to read here is Sonar Cube users are X percent more likely than non-users to have seen a very positive impact.
+[00:49:24] So 81% more likely to believe that AI coding has had a very positive impact on code security if you have that gold standard verification.
+[00:49:37] 34% more likely to have seen an impact on time to market.
+[00:49:44] 76% on outage frequency.
+[00:49:46] So again, as I come back to how do we have confidence to ship, what we're seeing is that if you put these pieces together and you build verification incredibly strongly as a first-class citizen in the factory, you are actually
+[00:50:01] We're actually building confidence, and you're seeing results: better security, more confidence in our time to market, improved, or a reduction in number of outages, improved reliability.
+[00:50:14] And of course, as I mentioned, you have to do this with evidence.
+[00:50:18] Make sure you pass the quality gate.
+[00:50:19] Make sure whatever—there's lots of acronyms up here—whichever ones you need to pass, whether that is your IT general controls inside of your internal controls and operations, whether that's MISRA if you're building cars, or any of the other ones that are on here.
+[00:50:35] Producing the evidence is what lets you sleep at night.
+[00:50:38] It's what gives you confidence that you can move forward.
+[00:50:42] So that, in essence, is how we think about the challenge of the future: that code is abundant, that confidence is scarce.
+[00:50:51] And really, the goal that we have and that we think that everyone should have as we think about the future of software development is how do we deliver confidence, and the factories of the future need to be able to deliver confidence.
+[00:51:07] So with that, I want to say thank you to everybody.
+[00:51:09] We have a big booth.
+[00:51:10] It's a big red booth on the floor right over that way, and would love to talk to you more about all of this.
+[00:51:18] Thank you very much.
+[00:51:21] Have a great morning.
+[00:51:28] Where should AI agents take control, and when should humans stay in charge?
+[00:51:36] Here to explore that balance in policy-driven workflows, please welcome Evan Kormos, engineering manager at Coinbase.
+[00:51:57] Hi, everyone.
+[00:52:09] My name is Evan Cormos.
+[00:52:10] I've been delivering, designing, building software for 20 years, the last 15 in enterprise financial services.
+[00:52:19] I am a player coach at Coinbase, and we're here today to talk about trusting agents in policy-driven workflows.
+[00:52:34] So let's start with the policy, and it's pretty boring.
+[00:52:37] I'm going to go over here for my notes.
+[00:52:41] So our starting point centers around the policy, and this sets the rules for how work gets done within the organization, and including especially risk and compliance.
+[00:52:56] Think of policy as the original institutional intent, or the original system prompt.
+[00:53:02] So ideally, we have this written down.
+[00:53:04] It's a little bit boring, so stick with me.
+[00:53:09] Using language like must, may, and should.
+[00:53:12] And again, these help define the rules and decisions about how the system operates in the organization.
+[00:53:20] Separate from policy, we have the actual running system.
+[00:53:27] So the first thing we're going to do is separate these two, both the build state and the run state, and two different moments in time.
+[00:53:37] So typically we're either defining or changing our policy, but the system is constantly running and it's constantly moving and changing.
+[00:53:49] So we could then sort of imagine a compilation event that— oops, sorry, I'm skipping ahead.
+[00:53:57] It's constantly changing.
+[00:53:58] So it's evolving quickly with these product-driven changes.
+[00:54:02] So everything is expected to still be roughly bound by the policy, but ultimately we separate this from the run state and the build state.
+[00:54:15] So inside the system, what does it look like?
+[00:54:19] We have a familiar model, if we have any enterprise folks in the room here: people, process, and technology.
+[00:54:27] But where really do agents fit into this mold?
+[00:54:33] So I see them as an operational model cutting across all three.
+[00:54:38] They work with people, execute parts of the process themselves, and they use and are made up of technology.
+[00:54:48] So for our talk today, we're going to be focusing here where agents meet process: what work we give them, what boundaries we set, and how we build trust in their outputs.
+[00:55:07] So let's dive into your workflow.
+[00:55:10] And it's high level and seems basic, but if you haven't, there are good reasons to map this out.
+[00:55:19] So maybe a change has to be approved before it goes live, or a customer has to go through verification before their account is opened.
+[00:55:28] We expect work to flow in a specific and gated direction.
+[00:55:35] So I believe agents make it worth revisiting what we can do in parallel.
+[00:55:44] Previously, some work used to cost too much or be too complex to coordinate in this way.
+[00:55:50] But now we can run independent reviews alongside each other, bring the results together, but keep the required checks in place.
+[00:56:01] So this is a directed acyclic graph, or a DAG.
+[00:56:04] It is a way to represent this workflow or process, the steps, the dependencies, for a flow that moves forward without looping back on itself.
+[00:56:15] Apache Airflow, if you're familiar, is an example of open source software that represents workflows, their dependencies as DAGs in Python code.
+[00:56:35] So this Python code, these DAGs, can be used to define and manage a number of policy-driven processes, like, for example, commercial lending.
+[00:56:49] We could also use a DAG to represent the workflow to list a token on the exchange in a specific region, if you're into that.
+[00:56:59] Or we could use a DAG to represent a regulated flow of delivering software, which is a hot topic.
+[00:57:04] And one we'll spend a little bit of time on.
+[00:57:08] I think that we've seen a lot of adoption within agents, within software delivery, and ultimately we're looking to leverage that same efficiency and scale in other areas of the business and close the adoption gap.
+[00:57:26] So let's stick with the software delivery example for a little bit.
+[00:57:32] What happens inside one of these nodes of the process?
+[00:57:36] And I'll give you a hint: it's a loop.
+[00:57:47] Oversimplified, but we have a basic version of what's happening within the—let's say this is the code review process, right?
+[00:57:56] So we're going to essentially do a number of steps, and essentially once we realize the work, we recognize that the work is good enough, we're going to allow it to pass on to the next step.
+[00:58:08] And that's essentially the function of the code review node.
+[00:58:15] The work doesn't always end up okay, so sometimes we have to take the feedback from the code review and iterate on it until the work is good enough to pass.
+[00:58:31] So this is a representation of a directed cyclic graph, or DCG.
+[00:58:38] So as far as open source software, something like LangChain LangGraph would be what I would say is helpful to manage the state of DCGs.
+[00:58:51] And this is an oversimplification.
+[00:58:54] These graphs can be very complex.
+[00:58:59] So zooming back out, the inner flow of the node, we have people and agents working together.
+[00:59:06] On the outer flow, we have a policy boundary.
+[00:59:12] But not everything goes to plan, so we have to handle exception flows.
+[00:59:16] We don't want the work to get stuck, and we don't want to design for every edge case either.
+[00:59:23] The exception flows will monitor and see kind of what happens.
+[00:59:26] If you're shipping code that gets canceled or doesn't meet security standards, that's something you should want to know about.
+[00:59:38] Volume shifts across the flow once we start to add agents into the mix.
+[00:59:43] And we've seen this with software delivery, and we'll see it in other processes as we bring agents into those processes as well, where now all of a sudden, if you're reviewing code faster, you need to design it quicker or you need to do the security scan faster.
+[00:59:59] So we see the volume shift across.
+[01:00:00] Shift across the flow.
+[01:00:04] And this is where it's really important that we have visibility into the process overall from a metric standpoint, because as we start to supercharge and parallelize and add more efficiency to the process, we start to develop more and more bottlenecks.
+[01:00:19] And so the operational visibility of the process is extremely important, much more important than the authoring and the building of your workflow tool.
+[01:00:29] So we want to visualize the process.
+[01:00:34] So we want to add parallel capacity by still keeping the controls.
+[01:00:37] And so this is where we'll add more additional capacity.
+[01:00:43] Okay, so we're doing some work, we're checking it, we're using the feedback again to refine it until the work is good enough to move on.
+[01:00:56] But why is that hard?
+[01:00:57] That seems like a pretty easy thing to do.
+[01:00:59] But as I mentioned before, these graphs get actually pretty complex, and we'll dive a little bit more into why this is difficult.
+[01:01:10] And if you're familiar, one challenge with AI engineering is the variability of inputs and outputs.
+[01:01:16] And I believe that higher quality inputs will result in better outputs at a lower compute cost.
+[01:01:27] But what are quality inputs?
+[01:01:37] So we'll generally speak to it as context model, maybe we can nitpick that, but this isn't our area of focus today.

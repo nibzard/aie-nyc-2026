@@ -1,0 +1,19 @@
+# Heavy media - the sources stay on YouTube; regenerate with the playbook
+# (00-original/scripts) if local copies are needed again.
+aiengineer-nyc-2026/00-original/media/
+aiengineer-nyc-2026-day2/00-original/media/
+**/00-original/chunks/*.ogg
+**/00-original/chunks/*.m4a
+aiengineer-nyc-2026/03-session-audio/
+aiengineer-nyc-2026-day2/03-session-audio/
+
+# Site build artifacts and dependencies
+site/node_modules/
+site/dist/
+site/.vercel/
+site/.astro/
+
+# Scratch
+tmpdir/
+*.log
+.ytdl

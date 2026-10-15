@@ -1,0 +1,18 @@
+{
+ "slug": "max-kanat-alexander",
+ "name": "Max Kanat-Alexander",
+ "role": "Principal Software Engineer",
+ "company": "Capital One",
+ "bio": "Max is the Technical Lead for AI-Assisted Software Development at Capital One. Previously he was the Chief Architect of the Bugzilla Project, the Tech Lead for Code Health at Google, and a Technical Lead for Developer Productivity and Happiness at LinkedIn. He is the author of the books Code Simplicity and Understanding Software, as well as having published Google's code review guidelines and the LinkedIn Developer Productivity and Happiness Framework. He spends about 5 hours a day talking to his best friends Claude and Codex.",
+ "linkedin": "https://linkedin.com/in/mkanat",
+ "twitter": "https://x.com/mkanat",
+ "website": "https://www.codesimplicity.com/",
+ "photo": "https://content-cdn.sessionboard.com/nFEVrLEZRTCbHHhJVPFx_headshot-1789391581224.jpg",
+ "sessions": [
+  {
+   "title": "Does Code Quality Even Matter?",
+   "time": "9:54am - 10:12am",
+   "id": "5191589c-a70e-4806-99dc-86f7794f46b9"
+  }
+ ]
+}

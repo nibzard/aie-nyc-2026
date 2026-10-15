@@ -1,0 +1,24 @@
+{
+ "slug": "lia-mcbride",
+ "name": "Lia McBride",
+ "role": "General Manager",
+ "company": "AI Engineer",
+ "bio": "Lia McBride is the General Manager of AI Engineer, where she leads the company globally, with a focus on overall operations, partnerships, and international expansion. She has spent nearly two decades in technology, starting her career at Google and holding senior leadership roles at Twitter and Improbable. Her career has centered on advancing developer ecosystems and scaling high-growth platforms for the AI engineer community. She is also the founder and CEO of LIAVELLA, and a University of Glasgow graduate based in the San Francisco Bay Area.",
+ "linkedin": "https://www.linkedin.com/in/lialouisemcbride",
+ "twitter": "https://x.com/liamcbride",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FZ3ANGDiPTaqhcXqD5Uf8_headshot-1791395186029.jpg",
+ "sessions": [
+  {
+   "title": "AIE Welcome from GM, Lia McBride",
+   "time": "8:55am - 8:56am",
+   "id": "e02b5e28-52b1-419a-bd79-edc3a47dbeda"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://ai.engineer/about",
+  "https://www.linkedin.com/in/lialouisemcbride",
+  "https://x.com/liamcbride"
+ ]
+}

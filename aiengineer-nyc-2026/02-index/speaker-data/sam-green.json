@@ -1,0 +1,27 @@
+{
+ "slug": "sam-green",
+ "name": "Sam Green",
+ "role": "Team Lead, Applied AI - AIA Labs",
+ "company": "Bridgewater",
+ "bio": "Sam Green is Team Lead for Applied AI at AIA Labs, Bridgewater Associates' dedicated artificial intelligence research and investment lab, which is spearheaded by Co-CIO Greg Jensen and builds AIA, an artificial investor that aims to meet or exceed expert human performance. He has been at Bridgewater since September 2017; his LinkedIn profile lists him as an Investment Associate who conducted research in systematic strategies for foreign exchange and built quantitative models. He studied at Harvard University, where he was a Head Teaching Fellow for Computer Science 51 and led a teaching staff of more than 20. At AI Engineer NYC 2026 he co-presented \"Vault: Making Unstructured Data Work for Investing\" with Aaron Linsky, covering Bridgewater's Vault platform, which puts the research an investor would read and the firm's memory into the same research loop for investment staff and production AI agents.",
+ "linkedin": "https://www.linkedin.com/in/sa-muel-green",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/event-files%2FOv0F6F6tQaC9bkx4XK5z_Sam%20Green.png",
+ "sessions": [
+  {
+   "title": "Vault: Making Unstructured Data Work for Investing",
+   "time": "9:00am - 9:18am",
+   "id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://x.com/aiDotEngineer/status/2103167580332798207",
+  "https://www.linkedin.com/posts/aidotengineer_announcing-sam-green-team-lead-applied-activity-7508933681072443393-olSB",
+  "https://www.linkedin.com/in/sa-muel-green",
+  "https://www.bridgewater.com/aia-labs",
+  "https://aie-nyc-2026-talks.swyxio.workers.dev/talks/bridgewater-vault",
+  "https://ai.engineer/nyc/2026/schedule"
+ ]
+}

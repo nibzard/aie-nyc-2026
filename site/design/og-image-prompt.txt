@@ -1,0 +1,10 @@
+Use case: ads-marketing.
+Asset type: Open Graph social sharing image for https://aie-nyc-2026.vercel.app, an unofficial engineering digest of AI Engineer NYC 2026.
+Create a finished, striking editorial cover in a wide 1200:630 aspect ratio. A very dark ink/navy background with electric cobalt and periwinkle accents, subtle film grain, crisp off-white typography, generous spacing. On the right third, a beautifully composed luminous blue Manhattan skyline built from intricate isometric architectural wireframes and tiny terminal-like points, resolving from a dense stream of data into a clear city silhouette. Geometric, precise, sophisticated engineering aesthetic. On the left two-thirds, giant bold contemporary grotesk typography, clean and impeccably readable even at thumbnail size.
+Exact text:
+"AI ENGINEER"
+"NYC 2026"
+Below, smaller but prominent: "8 hours of talks. Distilled."
+Along the bottom, restrained monospaced text: "SUMMARIES / TAKEAWAYS / TIMESTAMPS"
+Small top-left label: "THE UNOFFICIAL DAY-ONE DIGEST"
+Keep all text safely inside 64px margins at 1200x630. Strong hierarchy. Text must not overlap the skyline. No logos, no photographs, no robots, no chat bubbles, no watermarks. Fill the whole image; no device mockup or outer frame. This is the actual finished image to share. Opaque background.

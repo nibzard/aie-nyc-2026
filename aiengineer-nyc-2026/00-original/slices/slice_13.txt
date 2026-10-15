@@ -1,0 +1,151 @@
+# transcript slice 13
+window: t=23660..25480 (06:34:20..07:04:40 video time; 3:22:12 PM..3:52:32 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[06:33:25] It's the creativity that lets you explore what possibilities are worth exploring.
+[06:33:29] It's the taste that tells you what good looks like in your given context.
+[06:33:34] It's the decisions where you can weigh what trade-offs are worth making.
+[06:33:41] Judgment is ubiquitous.
+[06:33:43] It exists throughout your organization on a daily basis.
+[06:33:48] Your C-suite, the C-suite is asking questions, taking advantage of judgment all the time.
+[06:33:53] So are the software engineers, the AI leaders, the portfolio managers, and the data scientists.
+[06:34:00] So the question that they're focused on is, given judgment is a finite asset, a limited capacity, the main question becomes, where is our best judgment worth spending?
+[06:34:16] I'd like for you to hold on to that thought.
+[06:34:19] With that, we'll dive into our first pillar: design the right problem.
+[06:34:23] So questions, a question that the leading organizations are asking all the time is they're obsessed over what is the right problem to solve, right?
+[06:34:37] It's tempting to start with the tool.
+[06:34:38] Today we're surrounded with better models, harnesses.
+[06:34:42] We're surrounded with all these AI tools.
+[06:34:45] We're surrounded with copilots.
+[06:34:47] But that isn't the way about, is it?
+[06:34:50] At least that's not the way the leaders are approaching it.
+[06:34:53] Now let's go back to our hypothetical two companies.
+[06:34:57] Let's say they're from asset management.
+[06:34:59] Let's say we're tracking the workflow of two research analysts in these hypothetical organizations.
+[06:35:06] Well, let's say organization B starts with the tool, the copilot.
+[06:35:13] They're asking, where can we add AI to the analyst's work?
+[06:35:17] They're looking at the current existing process to say, earning transcript comes in, I discovered a summarization workflow.
+[06:35:25] Let me pass all of this in through my firehose.
+[06:35:29] Analysts get earnings summaries faster.
+[06:35:32] Win-win, right?
+[06:35:34] Well, not so much, at least not compared to the guys who are leading.
+[06:35:39] And such a workflow of being a faster horse introduces one key nuance.
+[06:35:45] That is, you are losing context as you have information, I guess, reduction as part of your summarization.
+[06:35:53] So what is a hypothetical organization A doing in this?
+[06:35:57] Well, they're obsessed in the right problem to ask.
+[06:36:00] They could be asking, why are our material signals reaching us too late?
+[06:36:06] Where do we focus the attention, the AI, the bandwidth, the capability on?
+[06:36:11] Where is our bottleneck?
+[06:36:12] Right?
+[06:36:12] And so it becomes this redesigning of the workflow, or at least the reevaluation on what to focus on.
+[06:36:20] That's what they're doing different.
+[06:36:21] Now, this consideration isn't particular to finance.
+[06:36:24] It's across the realm and function.
+[06:36:27] You know, you're asking the same question on what to focus on, whether it be research capacity, decision speed, quality of your data, latency, reliability.
+[06:36:39] It traverses all of that.
+[06:36:42] And studies show this.
+[06:36:43] They show leading studies, on average, spend their attention on fewer, higher quality decisions than the other cohort.
+[06:36:54] So leaders are being more selective in where they focus their attention and what they focus their attention.
+[06:37:00] So it's great.
+[06:37:01] The leading companies have an idea of what the right problems are.
+[06:37:05] Where do they go from there?
+[06:37:09] Well, they also concentrate their investments in the highest value workflows.
+[06:37:16] I get it, and I've been culpable of something similar where, you know, AI is almost creating too many opportunities.
+[06:37:25] And experimentation can be a good thing, but one needs to separate experimentation and the resulting innovation theater, or worse, the productivity theater, which actual value generation.
+[06:37:39] Going back to our two hypothetical companies, what does this mean?
+[06:37:43] Company B is looking at how do we launch the most number of AI pilots, and what that ends up looking like is a document summarization bot here, a copilot there, a data retrieval bot here.
+[06:37:57] It's scattered all over the place.
+[06:38:00] Whereas what Company A is focused on in their investments is potentially use cases like end-to-end workflows on the research pipeline.
+[06:38:12] They're focused on aligning engineering, analytics, AI capacity, and judgment towards a singular focus.
+[06:38:21] And research has shown that the leaders spend more than 80% of their investments on these high-value use cases, transforming key business functions and creating new offerings.
+[06:38:37] Perfect.
+[06:38:39] We know they're focusing on finding the right problem, and they're also spending deep investment in select workflows.
+[06:38:47] Well, they're also doing something different.
+[06:38:51] They're reimagining how work is done.
+[06:38:54] I think this is key, and it goes back to what we discussed previously, which is judgment.
+[06:39:01] They're redefining and reorganizing functions, roles, capacities around this key element of judgment.
+[06:39:10] What does that mean for our hypothetical company?
+[06:39:13] Well, Company B might be focused on, as we discussed, I'm getting my earnings transcript, I'm getting my research reports.
+[06:39:20] How do I summarize it?
+[06:39:22] Maybe I make that faster.
+[06:39:23] Maybe I update my financial models faster.
+[06:39:26] Maybe I send my recommendation to my PM faster.
+[06:39:29] Company A is focused on an entirely different ballgame.
+[06:39:34] Hypothetically, they could be asking the analyst to define the investment thesis, and they're watching and gathering evidence that could refute that thesis or support it.
+[06:39:45] They'd be monitoring continuously.
+[06:39:47] They'd be investigating exceptions, and they could be deep diving on, you know, select examples that could lead to actual generation of value.
+[06:40:01] So the winners just don't just automate.
+[06:40:03] Just automate their redesign.
+[06:40:05] And studies show that the cohort of high performers are 75% more likely, or in practice, they actually do redesign their workflow versus 25% of the cohort that doesn't.
+[06:40:18] So where does this leave us with our two hypothetical companies and designing the right problem?
+[06:40:24] Company B adds AI to existing workflows.
+[06:40:27] They're completing individual projects and they're moving to the next initiative, whereas Company A is rethinking how work is done.
+[06:40:35] They're redesigning processes around AI and they're obsessing over the right problem.
+[06:40:40] That's the difference in how organizations put AI to work.
+[06:40:44] Great.
+[06:40:45] So they've picked the right problem.
+[06:40:48] What happens next?
+[06:40:50] Well, we all know in order to actually enable that capacity, you need to build shared capabilities across the org.
+[06:40:59] And what's a trend that's seemingly emerging for some time now is that the lines between technology and business are converging.
+[06:41:08] And we're seeing this everywhere.
+[06:41:10] We're seeing engineers that are moving closer to business outcomes.
+[06:41:13] We're seeing business professionals that are building tools and automations.
+[06:41:18] And as you can see and imagine, you can have forward deployed engineers, you can have forward deployed product managers, but you could also have the inverse, which is forward deployed portfolio managers.
+[06:41:30] And it's really this combination of getting the right people in the room by breaking down organization silos that the leaders are really leaning on.
+[06:41:43] Studies have shown that more and more of the large enterprises are viewing their technology arm as a business growth function.
+[06:41:52] And that's creating an edge for these companies.
+[06:41:56] So the other sort of vertical inside building shared capabilities that is probably a personal favorite of mine, it's standardizing the core and personalizing the edges.
+[06:42:10] And this is something that isn't new to the technology world.
+[06:42:13] We've built infrastructure, we've built, you know, shared modules and system design.
+[06:42:17] But what's interesting here today is that it's taking a very different shape with the capabilities out there and with the org and the breaking down of silos.
+[06:42:26] And this could look very different depending on where you sit.
+[06:42:31] You could be building shared cores for a team that looks very different with analysts and clients.
+[06:42:39] You could be doing that with a bunch of analysts, or you can be doing that for software engineers or data scientists.
+[06:42:47] With the data scientist example in particular, that could look very interesting, where instead of having one-off workflows that is really common in the industry, you could build a shared core of the data sets, their semantic layers, the trade-offs of what worked, what didn't, what some data sets do good of, where the gaps, and so on and so forth, such that each new personnel becomes almost a plug-and-play module in this system where they can then stand on the shoulder of their predecessors.
+[06:43:23] So what should the next person not have to rebuild?
+[06:43:28] Now, what's also interesting is, you know, the enterprise wasn't really built for agents.
+[06:43:34] Agents, they work across workflows and applications.
+[06:43:39] They take context, they deliberate, they take actions.
+[06:43:42] Whereas really the enterprises are focused previously on single human or a collection of them interacting with a single application.
+[06:43:53] So the leaders are cognizant that something needs to change and that they need to modernize their infrastructure.
+[06:44:00] And they're very self-aware of where they are in their journey.
+[06:44:06] And so studies show that, you know, 71% of the orgs are modernizing their core infrastructure to support AI.
+[06:44:13] And, you know, 6 to 10%, or 23%, of them are investing 6 to 10% of their annual revenue in core system modernization to take advantage of this.
+[06:44:26] And a common complaint here, or a common challenge here, is, you know, data quality and the ability to reuse data.
+[06:44:35] So great, we, you know, we have the right people in the room.
+[06:44:40] We have, you know, we have the right knowledge there.
+[06:44:43] What do we do next?
+[06:44:45] And then comes the concept of, hey, how do we make this knowledge reusable and accessible?
+[06:44:51] And that's where we have, you know, depending on the adoption and where they are, you can have different types of team agents, where you can have expert agents being subject matter experts.
+[06:45:01] You can have workflow agents that work across streams like Slack bots that are creating and opening tickets, they're closing them and what have you.
+[06:45:09] And then you can have really chief of staff kind of agents that keep a tab on what the state of the organization is and what needs to be done.
+[06:45:18] So, you know, going back to our workflows, A, again, is looking at this very differently in terms of shared capabilities.
+[06:45:25] Now, the last pillar here that I want to draw your attention to is, well, when does this system really compound?
+[06:45:34] What happens when it's deployed?
+[06:45:37] Well, the leading companies, what they're doing is they're actually thinking about it slightly differently.
+[06:45:44] What are failures that can give us an edge that we can learn from?
+[06:45:48] If there's a success, how do we make it part of the system?
+[06:45:52] And the way they think about this is, you know, the individual learned but did the system.
+[06:45:57] Is there a way, perhaps, when they've encountered something where they need to make a correction, that that knowledge is fed back into the org, either through a new tool or context or what have you?
+[06:46:09] And what's key here is preserving the evidence along with those learnings.
+[06:46:16] So really the last vertical here is AI-first capacity.
+[06:46:22] Where does it go?
+[06:46:24] Being cognizant that you need to redesign your system and really focus it on key metrics that you're evaluating, you're monitoring, and you're creating a flywheel off.
+[06:46:37] So where does this leave us for companies A and B?
+[06:46:41] You know, company A has their entire work redesigned.
+[06:46:45] They're building capabilities at compound, and they have shared capabilities built.
+[06:46:51] So I want to leave you off with one final question.
+[06:46:54] Everyone has AI.
+[06:46:55] Who has the advantage?
+[06:46:56] Thank you.
+[06:59:40] To guide us back into the closing keynotes of today's program, please welcome once again to the stage our MC, Alex Lieberman, managing partner at 10X.
+[06:59:41] How's it going?
+[06:59:42] Who is the most energized in the room?
+[06:59:42] Whoever that was, most energized.
+[06:59:42] Well, welcome back for the closing keynote block here at AI Engineer New York 2026.
+[06:59:43] I'm Alex Lieberman, co-founder, co-managing partner at 10X, Applied AI partner for...

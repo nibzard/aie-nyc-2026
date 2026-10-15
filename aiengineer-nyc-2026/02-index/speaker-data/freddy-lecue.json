@@ -1,0 +1,18 @@
+{
+ "slug": "freddy-lecue",
+ "name": "Freddy Lecue",
+ "role": "Head of Frontier AI Models, Managing Director",
+ "company": "Wells Fargo",
+ "bio": "Freddy Lecue is a Managing Director and Head of Frontier AI Model Methodology at Wells Fargo, where he architects and scales Generative AI, agentic AI, and advanced machine learning models for enterprise production, while balancing performance, latency, cost, and risk.\r\n\r\nHe leads the firm’s AI research agenda, elevates modeling standards through targeted training, and establishes best-practice frameworks to enhance robustness, scalability, and model validation. Freddy also drives AI-enabled transformation across the end-to-end model lifecycle, including development, documentation, testing, and validation.\r\n\r\nPrior to Wells Fargo, he held senior AI leadership roles at JPMorgan Chase, Thales Canada, Accenture Ireland, and IBM Ireland. He holds a Ph.D. in Computer Science and is based in New York City.",
+ "linkedin": "https://www.linkedin.com/in/freddylecue",
+ "twitter": "",
+ "website": "https://www.wellsfargo.com/",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FrMsERgUSmSPIlpNEI6E3_headshot-1791467418797.jpg",
+ "sessions": [
+  {
+   "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+   "time": "10:40am - 10:58am",
+   "id": "1c25f303-f38f-450b-862d-669fdbab5f82"
+  }
+ ]
+}

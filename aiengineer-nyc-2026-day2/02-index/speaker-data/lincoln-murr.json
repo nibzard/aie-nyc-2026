@@ -1,0 +1,23 @@
+{
+ "slug": "lincoln-murr",
+ "name": "Lincoln Murr",
+ "role": "Head of AI Product",
+ "company": "Coinbase",
+ "bio": "Lincoln Murr is the AI Product Lead at Coinbase, where he leads the products powering the agentic economy. He is responsible for Coinbase for Agents (which lets any AI agent trade, pay, and execute financial workflows with user-defined guardrails) and Coinbase Advisor (the first AI-powered SEC-registered financial advisor embedded in the Coinbase app, giving every user access to professional-grade portfolio guidance), among other onchain agentic experiments. Lincoln's work is grounded in a core belief: AI agents are becoming first-class participants in the economy, and Coinbase is building the financial infrastructure they'll run on. Lincoln was previously a fellow with the Ethereum Foundation and currently sits on the board of the x402 Foundation.",
+ "linkedin": "https://www.linkedin.com/in/lincolnmurr/",
+ "twitter": "https://x.com/MurrLincoln?lang=en",
+ "website": "https://www.coinbase.com/",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FJVTzJCUwRBz1THJx4k6e_headshot-1789761029582.jpg",
+ "sessions": [
+  {
+   "title": "Developer Docs as Knowledge Infrastructure for Fintech",
+   "time": "10:40am - 10:58am",
+   "room": "Sutton Room (NY Ballroom W)"
+  },
+  {
+   "title": "Building the Financial Account for Agents",
+   "time": "11:30am - 11:48am",
+   "room": "Shannon Room (NY Ballroom E)"
+  }
+ ]
+}

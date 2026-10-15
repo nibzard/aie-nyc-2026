@@ -1,0 +1,28 @@
+{
+ "slug": "rayan-krishnan",
+ "name": "Rayan Krishnan",
+ "role": "Co-Founder & CEO",
+ "company": "Vals AI",
+ "bio": "Rayan Krishnan is Co-Founder and CEO of Vals AI, a San Francisco-based independent evaluator of artificial intelligence that benchmarks leading AI models on economically valuable professional work in finance, software, cybersecurity, law, and medicine. He left Stanford's AI master's program (where he did research at the Stanford AI Lab) to start Vals AI in August 2023 with co-founder and CTO Langston Nashold, also from Stanford's AI master's program. Before that he was a software engineer at Palantir Technologies and a machine learning engineer at Valar Labs. In August 2026 Vals AI raised a $40M Series A led by Andreessen Horowitz (a16z) at a reported $400M valuation, and Rayan has appeared with a16z's Ben Horowitz and Jennifer Li discussing how AI should be graded, what it costs, and who sets the rules. At AI Engineer NYC 2026 he spoke on 'Beyond the Model Card: The Jagged Frontier of AI in Finance', covering the Vals AI finance agent benchmark (including the Val Smith agent).",
+ "linkedin": "https://www.linkedin.com/in/rayankrishnan",
+ "twitter": "https://x.com/RayanKrishnan",
+ "website": "https://www.vals.ai",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F3SRifyeRZWTlgtlIjoQR_headshot-1789443599941.jpg",
+ "sessions": [
+  {
+   "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+   "time": "2:30pm - 2:48pm",
+   "id": "dc91422b-6636-4466-8fb8-482a09cdd7f4"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/rayankrishnan",
+  "https://x.com/RayanKrishnan",
+  "https://www.vals.ai/",
+  "https://www.vals.ai/about",
+  "https://www.vals.ai/blogs/series-a",
+  "https://proofstory.co/research/vals/index.html",
+  "https://www.cbinsights.com/company/valsai/people"
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "slug": "evan-kormos",
+ "name": "Evan Kormos",
+ "role": "Engineering Manager",
+ "company": "Coinbase",
+ "bio": "Evan Kormos is an Engineering Manager at Coinbase, where he leads teams managing full stack delivery and service management.  Their focus is to bring AI agents into policy-governed automation in commercial Web3 products including Token Listings and the Coinbase Developer Platform. \n\nWith a background in enterprise transformation, retail and commercial banking, and most recently with digital assets and AI, Evan brings a unique perspective on systems thinking and using software to maximize business value.",
+ "linkedin": "https://www.linkedin.com/in/evankormos/",
+ "twitter": "",
+ "website": "https://www.coinbase.com/",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FwG1QvJxIQoaw9wYhOdJg_headshot-1789415360530.jpg",
+ "sessions": [
+  {
+   "title": "Trusting Agents in Policy-Driven Workflows",
+   "time": "9:36am - 9:54am",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ]
+}

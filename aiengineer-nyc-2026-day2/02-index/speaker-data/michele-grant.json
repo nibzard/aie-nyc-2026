@@ -1,0 +1,24 @@
+{
+ "slug": "michele-grant",
+ "name": "Michele Grant",
+ "role": "",
+ "company": "Cognizant",
+ "bio": "Michele Grant is an enterprise transformation and M&A integration executive with 20+ years leading complex change programs and 10+ years running post-merger integrations across media, tech, consumer goods, and financial services. Her integration work includes the $30B ViacomCBS merger, NBCUniversal's $39B Sky acquisition, and a private equity-backed consumer goods merger with a $250M+ synergy target. At Cognizant she serves as Executive Global Director and Value Realization Office Lead on a multi-billion-dollar post-acquisition managed services transition for a Fortune 500 fintech client. She is the creator of 'Leading at Scale', a weekly video and article series on enterprise leadership, and a #1 Amazon bestselling author. She holds a B.S. in Computer Science from St. John's University, is completing a Cornell Johnson Executive MBA, and earned a Wharton M&A credential.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "",
+ "identified_from_session": true,
+ "sessions": [
+  {
+   "order": 24
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://sessionize.com/michelegrant",
+  "https://boardio.com/advisor/michele-grant",
+  "https://www.linkedin.com/in/michelegrantleadership",
+  "https://finance.biggo.com/news/584701923c1477e2"
+ ]
+}

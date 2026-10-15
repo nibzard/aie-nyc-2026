@@ -1,0 +1,18 @@
+{
+ "slug": "jemima-abu",
+ "name": "Jemima Abu",
+ "role": "Senior Product Engineer",
+ "company": "CAIS",
+ "bio": "Jemima Abu is a self-taught front-end developer, Google Developer Expert, Microsoft MVP, and Certified Professional in Accessibility Core Competencies. She is passionate about diversity in technology and accessibility in web development.",
+ "linkedin": "https://www.linkedin.com/in/jemimaabu/",
+ "twitter": "https://twitter.com/jemimaabu/",
+ "website": "https://www.caisgroup.com/",
+ "photo": "https://content-cdn.sessionboard.com/MFKQSlTeTwCJGKaAGXtI_headshot-1787684770876.jpg",
+ "sessions": [
+  {
+   "title": "Stop Wasting Tokens on Products People Can’t Use",
+   "time": "11:30am - 11:48am",
+   "room": "McCarthy Room (Riverside Suite)"
+  }
+ ]
+}

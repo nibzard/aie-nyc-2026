@@ -1,0 +1,137 @@
+# transcript slice 00
+window: t=0..1820 (00:00:00..00:30:20 video time; 8:40:36 AM..9:10:56 AM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[00:15:02] Good morning and welcome back.
+[00:15:04] We're excited to spend this final day together, building on the conversations already underway and making room for a few more big conversations.
+[00:15:13] Without further ado, please welcome today's MC, founder, writer, and analyst at Turing Post, Kseniya Se.
+[00:15:22] Woo!
+[00:15:22] Good morning, good morning, good morning, everyone.
+[00:15:35] Welcome to the third and the final day of AI Engineer New York.
+[00:15:39] Who went to a cool event last night?
+[00:15:41] What was the coolest?
+[00:15:44] Okay, I went to karaoke with Swyx, and it was amazing.
+[00:15:48] 100% recommend.
+[00:15:50] So yes, I'm Kseniya Se.
+[00:15:52] I write Turing Post, and I'm your MC for today.
+[00:15:56] It's actually my second time emceeing AI Engineer in New York, so that's how much I love it.
+[00:16:02] And let's go to the program, because yesterday our partner, Thinakaran from Arize, asked, What does an AI engineer do?
+[00:16:14] And today we have a session from Ryan Carson called Your Job Is Now Agent Manager.
+[00:16:20] So apparently your job description just changed overnight, and I hope that the compensation will keep up.
+[00:16:27] But fortunately, quite a few of your employers are also our sponsors, so they've seen how quickly your responsibility is changing.
+[00:16:42] And let's give them a warm round of applause.
+[00:16:45] A little encouragement goes...
+[00:16:48] Long way.
+[00:16:49] Our most amazing presenting sponsor, Arize, please.
+[00:16:55] Thank you, thank you, thank you.
+[00:16:57] The grade four, our platinum sponsors, Oracle, Sonar, WorkOS, and Axa, please big round of applause.
+[00:17:07] Scattering gold sponsors all on this screen, please.
+[00:17:12] Let's acknowledge everyone with our eyes and give them a big hand.
+[00:17:19] And our silver sponsors, let's give them as much applause as possible because, you know, we don't ration enthusiasm by tier.
+[00:17:29] So please clap, clap, clap, clap, clap.
+[00:17:32] And finally, to all of us, to all our supporting partners, thank you for making this possible.
+[00:17:37] It would not be possible without anyone.
+[00:17:40] Like everyone, you know, it takes a village.
+[00:17:43] So thank you, thank you, thank you.
+[00:17:46] Woo!
+[00:17:47] I'm a little nervous.
+[00:17:48] It's early, but thank you for bearing with me.
+[00:17:52] If you've noticed, there is an interesting progression across all these three days.
+[00:17:57] On Mondays, you could join super practical, hands-on workshops, and you heard from big guys like Cerebras and OpenAI to small but super interesting startups like OpenPros.
+[00:18:09] Yesterday, the conversation included how AI translates into operating margin, and today we'll hear about the capabilities companies are building toward, the work agents can take on, and what managing that might involve.
+[00:18:29] Things will be happening here in Shannon Room, and it will be finance, compute, and infrastructure sessions.
+[00:18:36] In Turing room, my favorite name, evaluations, benchmarking, retrieval, self-improving agents and skills.
+[00:18:44] In Sutton room, you will hear about developer tools, enterprise, enterprise data, software factories, agent permissions, and token economics.
+[00:18:55] And McCarthy room finally will be about model costs, coding agent context, human verification, and banking deployment and financial agent evidence.
+[00:19:07] And at Turing Post, we spend a lot of time following all these directions and research in these directions.
+[00:19:16] But we also have a series called the Org Age of AI, where we look at what happens to a company as it begins to work with this technology.
+[00:19:28] How does the work change, right?
+[00:19:30] What becomes possible that wasn't practical before?
+[00:19:34] And why, while superintelligence feels so powerful, why is the ROI still missing?
+[00:19:41] And that's part of what makes this gathering so interesting to me.
+[00:19:46] You have people developing the technology in the same room as people who understand in considerable detail the work it needs to do.
+[00:19:54] And there is a lot of those two groups can learn from each other.
+[00:19:58] That's fascinating to me.
+[00:20:00] And our first speakers work at the intersection of those two worlds at Ramp.
+[00:20:08] So please help me welcome Alexander Shevchenko with Chasing Capabilities While Waiting for the Frontier.
+[00:20:15] Thank you.
+[00:20:16] Hey everyone, I'm Alex from Ramp.
+[00:20:26] I'll be speaking about chasing capabilities while waiting for the frontier to advance.
+[00:20:39] So, quick intro about myself.
+[00:20:41] I joined Ramp around three years ago on the broader applied AI team, working on a bunch of different surfaces and products, applying LLMs and ML to make a great product even better.
+[00:20:55] And to caveat my presentation on Ramp Labs, Ramp is an extremely bitter lesson-built company.
+[00:21:02] Over the last year, the number of use cases that use LLMs has increased 123%, while at the same time, a lot of our top features are growing in token spend, but on a unit economic basis, they're actually becoming cheaper because there are frontier models that are being released all the time now, and these models are cheaper, faster, and better.
+[00:21:25] And so we're able to provide the same level of accuracy at a much lower cost.
+[00:21:29] And so this is a really bitter lesson-built pattern.
+[00:21:34] And so, given all this, a question that I sometimes get: why not just wait?
+[00:21:40] Why have an applied research function inside of a company like Ramp, an application-layer company, right?
+[00:21:48] And to answer that, I would like to draw a parallel to 2023.
+[00:21:53] Back in 2023, you had access to kind of like GPT-4, and creating an agent was a lot of work.
+[00:22:01] You would have to create very, very strict guardrails.
+[00:22:05] Models weren't RL'd to backtrack.
+[00:22:07] They didn't have thinking tokens, and so if it went in the wrong direction, it would just kind of charge ahead and not realize that it made mistakes.
+[00:22:16] You had to sweat over all of the prompts to the point where some synonyms could change the behavior of your agent because they weren't RL'd properly on generalizing to the user's intent.
+[00:22:31] You had to reduce and scope down the context as much as possible because giving too much context to the agent would just confuse it.
+[00:22:40] And even back then, we decided, well, we need to ship these things.
+[00:22:44] We can't wait for GPT-4.
+[00:22:46] 5 or GPT-5 to come out.
+[00:22:48] We need to serve our financial professionals now.
+[00:22:51] And we shipped things like Grantor Guide and many other agents, even though it was not the easy thing to do.
+[00:22:58] And fast forward now to 2026, building an agent is a lot easier.
+[00:23:02] The models have gotten so much better that you can kind of give them MCPs and access to kind of any context, and they do a very, very good job of understanding what they need to do given a task.
+[00:23:13] But I still believe that we can dig a layer down and create even better experiences for our users.
+[00:23:21] It just requires a bit more effort now.
+[00:23:25] So to present this, some of our work from Ramp Labs, three specific cases of how we've applied research into Ramp itself, starting with creating a specialist model.
+[00:23:39] So in November of last year, we launched Ramp Sheets, which was one of the really early spreadsheet agents.
+[00:23:47] This was before the two frontier labs had launched their versions of spreadsheet agents, and we had a very good launch in November.
+[00:23:53] A bunch of users from great companies had signed up and started using it, and we realized that, well, this is a very general purpose spreadsheet handling agent, and a lot of the work that people do on Ramp, both inside of the company, but also all of our customers, accounting and finance professionals, are spending most of their days inside of spreadsheets.
+[00:24:16] So we can kind of take the harness and the brains behind Ramp Sheets and add it into a bunch of other surfaces within Ramp.
+[00:24:27] And as we were building this out, we realized, well, we can probably apply some research from Ramp Labs to make this even better.
+[00:24:36] And we sat down and we started looking, where do models fall short on this?
+[00:24:41] And back then this was like Opus 4.
+[00:24:44] 6, and the place that had the most friction was when you would drop in a lot of spreadsheets into Ramp Sheets and you would ask it to build a DCF or model some financial scenario, it would spend a lot of time creating a plan at first and then researching all of the sheets that it had access to to try to get a good understanding of the lay of the land.
+[00:25:06] And Opus 4.
+[00:25:07] 6 is a great model, but it was like pretty slow and the thinking tokens are also pretty expensive.
+[00:25:13] And so we took a step back and decided to train a retrieval model, or kind of like a financial question answering model that would, while still keeping these frontier models as orchestrators, would then be handed off to this much faster model that would do financial question answering for that planning agent.
+[00:25:34] And so we partnered with the company Prime Intellect to post-train a Qwen 3.
+[00:25:40] 5 35 billion model, and we actually got above Opus 4.
+[00:25:47] 6, which was the frontier back then, exact task accuracy while also being able to serve it at high KU level latencies.
+[00:25:56] So a much faster, but just a smart model that could then be used in tandem with the really smart frontier orchestrator.
+[00:26:07] And so this was like a very successful example of post-training that we had actually sent to prod as part of our Ramp Labs effort.
+[00:26:16] The second big thing that we are actually exploring up to this day is KV cache tricks, and particularly cartridges are a really interesting family of techniques where you're able to compress a lot of context, up to 20 to 30 times more context, into the KV cache offline and serve it for your agent.
+[00:26:40] And so if you compare it to the Ramp Sheets example, for example, there's a lot of tasks that you know are going to happen at some point, right?
+[00:26:49] Like month-end close, a month finishes, and on the first of the next month, a financial professional will go and try to reconcile and close their books.
+[00:26:57] You know kind of the ledger, the aging report, and the documents that they will need to be retrieving.
+[00:27:02] And so you could prepare them as context, but the agent will still need to agentically retrieve and create a good picture and understanding of them.
+[00:27:11] With cartridges, we're able to compress all of that work and build one overnight before the financial professional starts their work on the first of the month, and Once they open up the agent, it knows exactly what it needs to do because it has all of the context already built in.
+[00:27:30] Cartridges are also a much lower lift than post-training because the way that they do self-play is kind of a lot more generalizable.
+[00:27:38] The caveat with stuff like this is that compared to post-training, this is something that the labs might ship at some point in their APIs, in their foray into continuous learning.
+[00:27:50] And even if they were to do it in the API, we would actually be happy because we are developing a lot of this tribal knowledge inside of the company and just learning how best to apply these techniques.
+[00:28:00] So even if it does ship as an API, we can just hit the ground running on day one knowing how to use them.
+[00:28:09] And finally, the third example of applied research that we are sending to prod is our work on agentic map reduce and kind of agentic swarms.
+[00:28:21] So more concretely, we published an article on the Ramp Labs blog on how we used 10,000 parallel agents to pen test all of Ramp.
+[00:28:32] So at Ramp, we have a cloud agent called Ramp Inspect, which helps out with setting up all of the infrastructure and plumbing for something as ambitious as this.
+[00:28:42] And we were able to spin up 10,000 parallel agents and then kind of map this work out, try to find any vulnerabilities, and then also agentically reduce on the tickets that they would create.
+[00:28:55] So deduplicate them with LLMs and then try to reproduce them adversarially with LLMs to try to make sure that the vulnerabilities are real and important.
+[00:29:04] At the end of all of this, we have actually found seven high severity vulnerabilities that we all patched.
+[00:29:11] Interestingly, one of the Vulnerabilities that we described in that article is a Lua script injection that you could send over via email.
+[00:29:19] And no single component of that stack was unsafe, and the kind of swarm had to patch together multiple components and understanding of multiple components end to end in order to be able to figure this out.
+[00:29:34] And the other nice thing with this is that this is all running automatically.
+[00:29:38] You don't need to spend anyone's time.
+[00:29:40] It's just you start it, and the only thing that failed passes that get filtered out is the cost of the tokens.
+[00:29:48] The other thing that's interesting outside of just building out all of the infrastructure to support these swarms is that we do research into how to best use models as part.
+[00:29:59] Models as part of these swarms.
+[00:30:00] One of the interesting insights from that same article that we published is that you can actually use open-weight models that are up to five times cheaper compared to the frontier reasoning.
+[00:30:11] And because you're setting it up as a swarm, the detection rate is not five times lower.
+[00:30:17] So you can kind of spend more on these cheaper tokens and have almost as good of a detection rate.
+[00:30:23] If you follow through all of these examples, you kind of notice a pattern of a lot of them is attempts at saving on time and saving on money.
+[00:30:38] So reducing latency, which is time, and then reducing on token cost, which is money.
+[00:30:42] That's actually Ramp's slogan: saving our customers time and money.
+[00:30:47] And so I'd like to point to two products that we actually offer from Ramp that have been influenced by Ramp Labs' research.
+[00:30:55] The first one is token spend management that connects to a bunch of your API keys and is able to give you a really good picture of how LLMs are being used inside of your company.
+[00:31:06] Not only token spend on an API key basis or a user basis, but digging deeper, accounting categories, and even things like tax credits that you can get by analyzing the spend.

@@ -1,0 +1,219 @@
+# transcript slice 12
+window: t=21840..23660 (06:04:00..06:34:20 video time; 2:51:52 PM..3:22:12 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[06:03:50] All right.
+[06:03:51] Hello, everyone.
+[06:03:52] Welcome.
+[06:03:53] My name is David.
+[06:03:54] I lead AI operations at a company called Revolut.
+[06:04:02] We have 50 minutes today together.
+[06:04:05] We'll talk about high-performance engineering and self-hosting open-source model on the dedicated GPU.
+[06:04:12] How does that sound?
+[06:04:13] Cool.
+[06:04:14] So it's going to be a technical one, so bear with me.
+[06:04:19] So maybe to start off, because I know this is the US and you may not know Revolut, quick words about our company.
+[06:04:26] We're a digital bank in Europe.
+[06:04:29] We have 80 million customers.
+[06:04:31] We're live in 45 markets with the most downloaded financial app in Europe for the last year.
+[06:04:39] And as of July, we're Europe's largest private company.
+[06:04:45] So we're doing okay.
+[06:04:48] The emphasis of Revolut is, you know, shipping a lot of product, and so there's a high focus on engineering culture and excellence on that domain.
+[06:04:59] And so we'll talk about that.
+[06:05:01] So let's talk about some AI.
+[06:05:06] We have a chart here.
+[06:05:06] You're going to see two lines.
+[06:05:08] This is a sample of 2,000 engineers' performance over the last year.
+[06:05:14] So the green line is going to be lead time.
+[06:05:16] So it's going to be when an engineer picks up a feature until a feature is merged and ready to be deployed.
+[06:05:24] The blue line is going to be coding time.
+[06:05:26] So the green line is in days.
+[06:05:27] The blue line is in hours.
+[06:05:31] Just to reset the timeline in case people forget, because AI moves really fast.
+[06:05:36] Claude Code came out around February 2025, right?
+[06:05:40] And that's the Claude Code Sonnet 3.
+[06:05:42] 7, the one that would delete your prod database, right?
+[06:05:45] Not the safe Claude and Codex that we have today.
+[06:05:48] So bear in mind when we talk about adoption.
+[06:05:52] So what you see on this chart is January 25, first introduced AI in the company, right?
+[06:05:59] Gemini.
+[06:05:59] First time people were able to use private data with an AI.
+[06:06:04] Around February, we started playing around with Code, and then January is when we first launched Code at scale.
+[06:06:12] What you see is Gemini had 10% improvement in lead time, 20% improvement in coding time, so that people no longer needed to look Stack Overflow and reading documentation.
+[06:06:24] But then Code, not so much impact at the time.
+[06:06:28] So when we launched it, we were highly skeptical about the cost of AI.
+[06:06:32] We were seeing engineers spend a thousand a month, ten thousand a month, with not so much ROI.
+[06:06:38] And so when we launched it, we launched it with strict budget limits.
+[06:06:43] And so we're looking at the next thing, right?
+[06:06:44] So how can we provide a limited token to our engineers so they can use AI guilt-free for a fraction of the cost?
+[06:06:51] And so we looked into open source.
+[06:06:54] So around April 26 is when we started self-hosting open source model, big fan of GLM for coding.
+[06:07:01] So around that time, what you see, April 26, GLM 5.
+[06:07:06] 1, we see 60% improvement in coding time, 70% improvement in lead time.
+[06:07:13] So dramatic impact.
+[06:07:16] What did we learn from this?
+[06:07:17] Well, there's more impact on the lead time than on the coding time.
+[06:07:19] So what we find is the bottleneck for engineering is not necessarily coding.
+[06:07:25] You can save a lot of time not having to dig through your inbox or messing with Jira and Confluence.
+[06:07:31] And so when you have a limited token.
+[06:07:33] You're free to do that.
+[06:07:34] You no longer have to save your tokens for the end of the quarter or the most difficult task.
+[06:07:42] So where do we stand?
+[06:07:43] Well, open source is now a priority.
+[06:07:46] Our revoluts, unit economics are favorable.
+[06:07:49] The billing is flat, we don't have any bill shock any of the month.
+[06:07:53] And the frontier is the exception.
+[06:07:55] So obviously, we keep using Codex, Claude Code.
+[06:07:58] The latest model are fantastic.
+[06:08:00] Gemini Argan, very good as well.
+[06:08:03] But we keep them as exception.
+[06:08:08] So how do we get there?
+[06:08:11] Some metrics that matter when you're self-hosting model.
+[06:08:15] So to serve 2,000 engineers, we roughly need 56 B200, and that's to host GLM-4.
+[06:08:21] 3.
+[06:08:22] GLM is a big model, right?
+[06:08:24] 800 billion parameters.
+[06:08:27] What you want to aim for is sub-three-second time to first token.
+[06:08:33] This is empirical evidence.
+[06:08:35] As soon as you exceed five seconds, my Slack inbox starts to blow up, and so we know that's the limit.
+[06:08:40] In terms of throughput, doesn't really matter as much, right?
+[06:08:44] So we serve, in terms of interactivity, 200 tokens per second.
+[06:08:49] People are fine, you don't need to go higher.
+[06:08:52] The way people work has changed.
+[06:08:53] We no longer look at the stream of thinking tokens.
+[06:08:56] People run tasks in parallel and check in when the task is done.
+[06:09:00] But if you want to have high throughput and you're an engineer at Revolut, you just connect after 5 p.
+[06:09:04] m.
+[06:09:04] when no one is on GPU, and you can get 800 TPS, and then, you know, it's a dream.
+[06:09:10] In terms of cost, in terms of impact, self-hosting GLM, our blended cost of token is 30 cents per million, and so our invoice is one-tenth of what we were spending on.
+[06:09:27] Anthropic and OpenAI.
+[06:09:29] So there's a lot of tuning that goes into running open source models.
+[06:09:34] If you just get GPUs and upload weights on a GPU and you start doing some inference, you're going to get terrible performance.
+[06:09:43] It's because your workload is going to be very dependent on the parameters that you set.
+[06:09:50] So if you look all the way to the left of that chart, the blue line is going to be demand, so that's requests per second.
+[06:09:56] That's going to be what's going to be the bottleneck for your latency.
+[06:09:58] For your latency for your GPUs.
+[06:10:01] And the red line is what we're optimizing for.
+[06:10:02] That's the time to first token.
+[06:10:05] So when we started back in April, you could see requests per second around three, which is high but not so high, and time to first token over 10 seconds, which is very slow.
+[06:10:19] A lot of the data that you see is the same number of GPU.
+[06:10:22] We didn't increase GPU count; we stayed at 56.
+[06:10:25] And by the end, you see in August, requests per second were about over seven and time to first token were around 1.
+[06:10:32] 6.
+[06:10:32] So we've had 88% improvement in performance for 76% increased demand.
+[06:10:39] So the learning from this is there's a lot of parameters that you can improve on, and you really need to rescale if you're looking to serve a model.
+[06:10:49] So let's talk parameters.
+[06:10:52] There's no secret recipe, but the things you should consider are the following.
+[06:10:58] First one, long context is a scam.
+[06:11:01] You really need to be mindful that even though you can serve 1 million token, 256, 256 is really what you need.
+[06:11:10] Quantization: if you're running Blackwell generation GPU, you don't want to run anything higher than FP4, and if FP4 is best, roughly going from FP4 to FP8 is a 40% saving in GPU footprint for zero loss in precision.
+[06:11:29] Other parameters to consider: tensor parallelism.
+[06:11:31] Even though GLM fits on TP4, you don't have enough KV cache, and so maybe a TP8 works better depending on how large your workload is.
+[06:11:40] And then on the more esoteric, check your cache hit.
+[06:11:44] Coding tasks need to be above 90% cache hit.
+[06:11:48] And you can look into optimize spec decoding, sequential prefill, PDDAG, all of these.
+[06:11:57] Cool.
+[06:11:58] So now let's talk about production setup.
+[06:12:01] GLM obviously is a text-only model, which is a limitation for some people.
+[06:12:07] The trade-off, I would say, we would make every time is get the smarter model and figure out how to do image recognition another way.
+[06:12:14] You can easily have a local router, OpenCodex is one, where you would route any image recognition to Gemini or Luna and keep GLM for the main task.
+[06:12:26] If you really need some vision model, GLM 5G Flash works really well.
+[06:12:32] We have our UI designer making great use of it.
+[06:12:37] Turnaround for UI product has gone a really, really long way.
+[06:12:44] And then the last one is going to be about the harness.
+[06:12:48] So all of these endpoints are going to be OpenAI-compatible API with response API, and so you can use them inside OpenCode, Claude, Codex, Codex app as well.
+[06:13:00] Works really well.
+[06:13:00] And so that's what we recommend.
+[06:13:07] And then last message, this one is for the CIO in the room.
+[06:13:13] There's been a lot of stigma in using Chinese open-source model.
+[06:13:18] So the simple consider is you're not using the inference dedicated endpoint that goes to China.
+[06:13:24] You're just getting the weights and putting them on a U.
+[06:13:27] S.
+[06:13:28] -based service.
+[06:13:29] So for data sharing side, this is totally fine.
+[06:13:34] Revolut in particular, because we're an EU-regulated bank, we fall under the most strict regime in terms of compliance.
+[06:13:43] And so what we find that works is all of these coding tasks are not considered autonomous agents.
+[06:13:51] They're always with a human in the loop.
+[06:13:53] And so how do you give reassurance that you have a human in the loop?
+[06:13:57] You start by creating a sandbox that guarantees that.
+[06:14:01] And the sandbox means now if you've used Codex Cloud Code, it has all of these features of approve for me.
+[06:14:07] You just have to set the rules for the operations that you don't want to allow.
+[06:14:10] So you can allow grep, but not Gradle, for instance, and that's going to give confidence to your regulator that this is not an autonomous agent that needs different supervision.
+[06:14:23] The sandbox also protects you from rogue use, right?
+[06:14:25] You may have bad actor inside your company and you want a shield for that.
+[06:14:30] You'd be surprised what you find in a large company.
+[06:14:34] And then the last one is prompt injection.
+[06:14:36] Not so much a thing now, given how smart models are, but always a thing.
+[06:14:42] In terms of data privacy, we spoke about it.
+[06:14:44] So as long as the data sits in one of the countries that are in the data equivalency framework, so US, EU, UK, Israel, you're fine.
+[06:14:53] You can get GDPR there.
+[06:14:55] All of your inference provider or GPU provider are going to have zero data retention by default.
+[06:15:03] And then the last thing you need is a very strong open telemetry so that if you ever have an incident, you need to be able to go deep and look at the logs.
+[06:15:15] Also gives you some analytics.
+[06:15:21] All right.
+[06:15:21] Thanks, everyone.
+[06:15:22] That was all for my talk.
+[06:28:57] Good afternoon, everyone present here.
+[06:29:05] It's been a great day and an absolute pleasure to be here.
+[06:29:11] The topic of my talk today is: everyone has AI, who has the advantage?
+[06:29:21] I'll be talking about what the orgs that are doing, that are leading in AI with their implementation and adoption, what are they doing differently?
+[06:29:33] And so before that, who am I and what's my POV?
+[06:29:39] So I'm Dr.
+[06:29:41] Sid Pednekar.
+[06:29:42] I am an AI technology and data exec in asset management.
+[06:29:47] I've spent most of my tenure in hedge funds and investment and academic research.
+[06:29:54] What I've done and focused on is lead strategy and build specialized teams to
+[06:30:01] Teams towards three main verticals: optimizing efficiency, driving P&L, and reducing costs.
+[06:30:11] So I'll be following the discussion along with two hypothetical companies, Company A and Company B, right in this slider below.
+[06:30:22] These are hypothetical, you know, with made-up workflows, but we'll be following their journey along the rest of this presentation.
+[06:30:34] So everyone has AI.
+[06:30:36] Who has the advantage?
+[06:30:40] Before we get started there, first let's see what the lay of the land is.
+[06:30:44] And recent studies have shown that only about 37% of enterprises that were surveyed are showing a positive contribution to their EBIT, and only about 6% of those would be qualified as high performers.
+[06:31:03] So that's about 5% contribution to their EBIT.
+[06:31:07] Other studies earlier in the year have shown that about 66% are saying they're having a productivity increase, but only about 40 and 20% are actually seeing cost reductions and revenue growth.
+[06:31:22] So as we know, access of AI is widespread, yet the impact remains uneven.
+[06:31:31] So the question I would ask, or how I would think about this, is really in terms of three verticals.
+[06:31:43] And the way I think about these three verticals should Apply to organizations and individuals alike, and it should apply to functions regardless of where you are in that organization.
+[06:31:59] So the three main vertical pillars that I think of are, number one, design the right problem.
+[06:32:07] Number two, build shared capabilities.
+[06:32:10] And number three, compound the advantage.
+[06:32:14] Now, before we dive into each of these pillars, there is an idea that I think goes through all these verticals, and I think the best leading firms are taking advantage of that and capitalizing on it.
+[06:32:30] As we know, throughout time, the only constant in this world has been change.
+[06:32:36] What's different in the AI and superintelligence era is that intelligence has become cheap.
+[06:32:44] Regardless of what your unit of intelligence is, whether it be software, analytics, recommendations, reports, AI is creating an abundance in all of it.
+[06:32:55] And as we know, more answers don't necessarily create more value.
+[06:33:02] So what is scarce?
+[06:33:04] What is the scarce resource in an abundant world?
+[06:33:09] What are companies taking advantage of, the leaders at least?
+[06:33:14] It's judgment.
+[06:33:16] What is judgment?
+[06:33:19] Judgment is choosing what matters and how to act when there's no single obvious answer.
+[06:33:25] It's the creativity that lets you explore what possibilities are worth exploring.
+[06:33:29] It's the taste that tells you what good looks like in your given context.
+[06:33:34] It's the decisions where you can weigh what trade-offs are worth making.
+[06:33:41] Judgment is ubiquitous.
+[06:33:43] It exists throughout your organization on a daily basis.
+[06:33:48] Your C-suite, the C-suite is asking questions, taking advantage of judgment all the time.
+[06:33:53] So are the software engineers, the AI leaders, the portfolio managers, and the data scientists.
+[06:34:00] So the question that they're focused on is, given judgment is a finite asset, a limited capacity, the main question becomes, where is our best judgment worth spending?
+[06:34:16] I'd like for you to hold on to that thought.
+[06:34:19] With that, we'll dive into our first pillar: design the right problem.
+[06:34:23] So questions, a question that the leading organizations are asking all the time is they're obsessed over what is the right problem to solve, right?
+[06:34:37] It's tempting to start with the tool.
+[06:34:38] Today we're surrounded with better models, harnesses.
+[06:34:42] We're surrounded with all these AI tools.
+[06:34:45] We're surrounded with copilots.
+[06:34:47] But that isn't the way about, is it?
+[06:34:50] At least that's not the way the leaders are approaching it.
+[06:34:53] Now let's go back to our hypothetical two companies.
+[06:34:57] Let's say they're from asset management.
+[06:34:59] Let's say we're tracking the workflow of two research analysts in these hypothetical organizations.
+[06:35:06] Well, let's say organization B starts with the tool, the copilot.
+[06:35:13] They're asking, where can we add AI to the analyst's work?
+[06:35:17] They're looking at the current existing process to say, earning transcript comes in, I discovered a summarization workflow.

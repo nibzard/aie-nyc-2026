@@ -1,0 +1,23 @@
+{
+ "slug": "jack-mcdonald",
+ "name": "Jack McDonald",
+ "role": "Principal at Apollo Global Management, COO of Redding Ridge",
+ "company": "Apollo Global Management",
+ "bio": "Jack McDonald is a Principal at Apollo Global Management, based in New York. He studied at Wofford College. At AI Engineer NYC 2026, he joined Rowspace co-founder Michael Manapat for the session 'AI in Practice: An Inside Look at Apollo's Approach'. The session covered AI hiring, adoption, and Apollo's five-year outlook.",
+ "linkedin": "https://www.linkedin.com/in/jackmcdonald96",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FRweAuX5Q9W8Su6mLFsTA_headshot-1789673803407.jpg",
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/jackmcdonald96",
+  "https://x.com/aiDotEngineer/status/2110460633766670448/photo/1"
+ ],
+ "sessions": [
+  {
+   "title": "AI in Practice: An Inside Look at Apollo's Approach",
+   "time": "4:30pm - 4:48pm",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "slug": "belinda-neal",
+ "name": "Belinda Neal",
+ "role": "Managing Director, Financial Services",
+ "company": "Anthropic",
+ "bio": "Belinda Neal is Managing Director, Financial Services at Anthropic, based in New York. She joined Anthropic in April 2026 after 19 years at Goldman Sachs. There she was chief operating officer for core engineering, and also led product management and engineering partnerships. She helped shape Goldman Sachs' firm-wide AI strategy and contributed to the GS AI Assistant rollout. At Anthropic she works with financial firms on Claude adoption, including the Millennium partnership to co-develop an AI-powered Digital Risk Analyst and the launch of Claude for Financial Advisors. She studied at London Business School.",
+ "linkedin": "https://www.linkedin.com/in/belindaneal/",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FzdW51bOQlivYCDbJLXQ3_headshot-1790250369400.png",
+ "sessions": [
+  {
+   "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+   "time": "9:18am - 9:36am",
+   "id": "68a1e78b-569e-4314-a56f-f20508123cbe"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/belindaneal",
+  "https://www.linkedin.com/posts/belindaneal_after-19-incredible-years-at-goldman-sachs-activity-7457111919452307456-1fVX",
+  "https://fastforward.boldstart.vc/how-belinda-neal-helps-keeps-goldman-sachs-engineering-team-on-track-with-scalable-guardrails",
+  "https://www.mlp.com/life-at-millennium/millennium-and-anthropic-to-co-develop-ai-powered-digital-risk-analyst",
+  "https://evidentinsights.com/events/evident-ai-symposium-new-york-2026?tab=speakers"
+ ]
+}

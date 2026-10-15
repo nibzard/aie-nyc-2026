@@ -1,0 +1,18 @@
+{
+ "slug": "jeff-smith",
+ "name": "Jeff Smith",
+ "role": "Product Management Architect",
+ "company": "Oracle",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F0URTVkA5TqWDHgOP1xQO_headshot-1790805639423.jpg",
+ "sessions": [
+  {
+   "title": "Your Agent Wants Your Data: Securing MCP Database Access from the Ground Up",
+   "time": "2:30pm - 2:48pm",
+   "room": "Shannon Room (NY Ballroom E)"
+  }
+ ]
+}

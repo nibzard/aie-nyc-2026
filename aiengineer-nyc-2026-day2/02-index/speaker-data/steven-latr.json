@@ -1,0 +1,18 @@
+{
+ "slug": "steven-latr",
+ "name": "Steven Latré",
+ "role": "VP AI",
+ "company": "imec",
+ "bio": "Steven Latré is VP AI and Fellow at imec, where he leads the organization's AI research across datacenters, health, edge, and automotive. He built his career at the intersection of AI and systems infrastructure — starting with a PhD at Ghent University on network management, then growing IDLab Antwerp from a group that fit in a coffee room to over 100 researchers in eight years. Along the way his team entered a DARPA competition on machine learning for dynamic spectrum management on a gamble and came out as the only European finalist. He's previously was a Full Professor at the University of Antwerp, has co-authored 150+ papers (7,500+ citations), and picked up the IEEE COMSOC Young Professional Award and the Laureate award of the Royal Academies for Science and the Arts of Belgium. His latest project is aistack — an open benchmarking initiative that measures real AI workloads on real silicon, because he got tired of watching hardware vendors and model builders talk past each other with incompatible metrics.",
+ "linkedin": "https://linkedin.com/in/stevenlatre",
+ "twitter": "",
+ "website": "https://aistack.imec-int.com",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F7ZDd2JRMQCGKgqpq4fC8_headshot-1790284092040.jpg",
+ "sessions": [
+  {
+   "title": "Benchmarking the Full Stack: From Silicon to Harness.",
+   "time": "11:05am - 11:23am",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ]
+}

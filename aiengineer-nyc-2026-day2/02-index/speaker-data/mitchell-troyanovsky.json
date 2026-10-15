@@ -1,0 +1,18 @@
+{
+ "slug": "mitchell-troyanovsky",
+ "name": "Mitchell Troyanovsky",
+ "role": "Co-Founder",
+ "company": "Basis",
+ "bio": "Mitchell Troyanovsky is the co-founder of Basis, an agentic AI company recently valued at $1.15 billion and backed by BTV, Khosla, Accel and GV. Mitch is building the first long-horizon agents capable of independently executing complex, end-to-end financial workflows — like partnership tax returns — for hours or even days at a time.",
+ "linkedin": "https://www.linkedin.com/in/mitchelltroyanovsky/",
+ "twitter": "https://x.com/mitch_troy",
+ "website": "https://www.getbasis.ai/",
+ "photo": "https://content-cdn.sessionboard.com/BYlGQDakRd2O8B21Mwg6_headshot-1789391585762.jpg",
+ "sessions": [
+  {
+   "title": "Process Supervision for Agents That Do Long-Horizon Work",
+   "time": "4:48pm - 5:06pm",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ]
+}

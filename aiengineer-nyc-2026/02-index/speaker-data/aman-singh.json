@@ -1,0 +1,23 @@
+{
+ "slug": "aman-singh",
+ "name": "Aman Singh",
+ "role": "Lead AI Engineer",
+ "company": "Arca",
+ "bio": "Aman Singh is Lead AI Engineer at Arca, an AI-native wealth management company in New York. He is a founding member of the technical staff on Arca's AI engineering team (joined November 2025) and leads the company's AI work, including the long-horizon agents that run core business operations. Before Arca, he worked at Stripe, where he helped establish Stripe's AI agent framework that powers all agents company-wide. He studied at The Ohio State University and is based in New York.",
+ "linkedin": "https://linkedin.com/in/amanps",
+ "twitter": "",
+ "website": "https://arcawealth.ai",
+ "photo": "https://content-cdn.sessionize.com/api/v2/aiengineer-nyc-2026/image/75bd85ed-b49d-41f6-98e1-7a22853c18ab",
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/amanps",
+  "https://ai.engineer/nyc/2026/schedule?view=list"
+ ],
+ "sessions": [
+  {
+   "title": "Inside Arca's long-horizon agents that run the business",
+   "time": "11:05am - 11:23am",
+   "id": "75bd85ed-b49d-41f6-98e1-7a22853c18ab"
+  }
+ ]
+}

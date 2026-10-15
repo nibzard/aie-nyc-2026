@@ -1,0 +1,274 @@
+# transcript slice 06
+window: t=10920..12740 (03:02:00..03:32:20 video time; 11:42:36 AM..12:12:56 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[03:01:06] We could have said, no, we're not going to do our new, we're not going to, like, stick it out for several years just trying to keep our company alive.
+[03:01:15] We're just going to go do a new AI lab.
+[03:01:17] But we saw this problem, and we said, oh shit, if we don't do anything about this, then we will just hit this three years from now.
+[03:01:24] And here we are three years from now hitting this problem, and where everyone's going to hit this problem.
+[03:01:32] So, as if you watched the last talk, it's very hard to solve this problem unless you are operating both the market and the clusters at the same time.
+[03:01:39] So this is Dylan Page.
+[03:01:41] Dylan is the co-chair of the CNCF Infrastructure Group.
+[03:01:44] That's the organization that makes Kubernetes.
+[03:01:46] He formerly worked at Lambda doing infrastructure there, and he joined the San Francisco Compute because GPU compute.
+[03:01:53] isn't sufficiently standardized or reliable for the market operator to be divorced from the physical infrastructure.
+[03:01:58] It doesn't work if you aren't the one who's buying the thing.
+[03:02:01] Sorry, it doesn't work if the person you're buying from isn't operating it.
+[03:02:04] To give an example of why this doesn't work is I'm sure some of you are flying in from overseas or out of town, and you have a hotel room.
+[03:02:13] Wouldn't it be great if you could, you know, sell that hotel room to somebody else?
+[03:02:18] I go to you and I want to buy that hotel room, and I say, can I get room service?
+[03:02:22] Can I get my room cleaned?
+[03:02:24] I've got a problem with my room.
+[03:02:26] Who do I call?
+[03:02:27] If you don't operate the hotel, you can't fix any of those problems.
+[03:02:31] That's why brokering clusters doesn't work.
+[03:02:33] You have to operate the cluster like the hotel.
+[03:02:36] You have to run the whole damn thing.
+[03:02:38] Otherwise, you can't actually make a market.
+[03:02:40] It doesn't work.
+[03:02:41] You can't do physical settlement.
+[03:02:43] So why does nobody do physical settlement?
+[03:02:46] The problem is there's a very strong incentive to never do physical settlement.
+[03:02:50] That's because if you build out physical settlement for compute, what that literally means is you're building out the entire operating capacity of a GPU cloud.
+[03:02:58] And if you are building out the entire operating capacity of a GPU cloud, you should just be a GPU cloud because it looks to be the case that you will make an ungodly amount of money.
+[03:03:09] You will sign billion dollar deal after billion dollar deal.
+[03:03:17] And so, fuck it.
+[03:03:20] Let's not make a compute market.
+[03:03:22] Let's instead just become a GPU cloud, which is what basically everybody does because the numbers are astronomical and it's a very reasonable thing to do.
+[03:03:30] The reason why we ended up building physical settlement was because we knew that if we didn't start this, we would then not be able to start an AI lab, which was the real damn thing that we wanted to do in the first place.
+[03:03:40] We wanted to make a lab.
+[03:03:42] We didn't get to make a lab unless this exists.
+[03:03:44] So when we started, it was 10 million as the deposit that you had to pay to start a new lab.
+[03:03:48] This is like how you get over the credit risk problem.
+[03:03:51] Then the cluster sizes got bigger.
+[03:03:53] The sort of minimum ante into the space got bigger.
+[03:03:57] Then it was 100 million.
+[03:03:58] Now it's a billion.
+[03:03:59] We don't think it can continue.
+[03:04:01] We don't think there is a world in which you can get a $10 billion round right out the bat before you raise, before you have revenue or traction or your product or anything.
+[03:04:10] And what that means is that if you don't solve this problem, we are currently on track to not have any startups in AI.
+[03:04:16] Now, one of the things that you could think could happen is maybe there can be new inference companies and new model labs.
+[03:04:24] And the way that they solve the credit problem is that instead they just shift the risk to the application layer.
+[03:04:30] They say, look, I need to get over my credit problem.
+[03:04:34] So what I'm going to do is I'm going to only sign customers who are investment grade credit, you know, Fortune 500.
+[03:04:43] I'm going to only sign customers on five-year contracts for tokens.
+[03:04:47] I'm going to only sign customers for tokens that require a big deposit upfront.
+[03:04:54] That is the end of everything.
+[03:04:57] If you have inference layer getting bottlenecked by credit, what happens is you can't get tokens unless you have credit or you have a big deposit.
+[03:05:07] And the problem of that is that tokens are used by the whole damn economy.
+[03:05:11] There is no rule that says that startups have to exist.
+[03:05:15] If every startup is suddenly bottlenecked by credit in order to access intelligence, what happens is existing firms just ship everything.
+[03:05:24] They themselves get to make the product because they've got credit, and then they make the revenue from that product, and then it makes their credit better.
+[03:05:33] And that's a flywheel that makes consolidation happen throughout the entire economy.
+[03:05:37] If you don't fix this bottleneck, there aren't any startups.
+[03:05:40] This is why we started doing this, and because at one point.
+[03:05:43] Or what we think is going to happen is you're going to end up in like three to five years, you're going to look out and say, I want to start a new startup.
+[03:05:53] And to get there, you need to buy so many tokens in order to compete with the existing partner or like existing players.
+[03:06:00] So you need to buy $100 million of tokens.
+[03:06:03] We think this is what you are actually going to have to do in order to start a new company, because other people are spending hundreds of millions of dollars of tokens.
+[03:06:11] If you just draw the line out, this is what happens.
+[03:06:14] So you need a big giant deposit because you're two people who have no idea what they're doing, and so nobody trusts you.
+[03:06:20] So you're going to go and raise $100 million from your venture capitalist.
+[03:06:24] Meanwhile, nobody wants to work with you because you're a two-person startup.
+[03:06:28] Then you're going to be asked to pay for that hundred, or you're going to be asked to pay for a five-year contract on that hundred million if you're not paying it all as a deposit.
+[03:06:34] And then you just don't get new model labs.
+[03:06:37] You don't get new startups.
+[03:06:38] You get a consolidation in the industry.
+[03:06:41] So we, at one point, were this little lab.
+[03:06:45] And what we did is we lived in San Francisco, and we knew all the other people who were also just two little folks who had started a startup and wanted to be able to participate in the most important technology of our time.
+[03:06:59] So I want these people to exist.
+[03:07:01] I want this person to exist, and I want this person to exist.
+[03:07:05] I want this startup to exist, and this startup to exist, and this startup to exist.
+[03:07:09] This one, and this one, and this one, and this one, and this one, and this one, and this one.
+[03:07:14] If you get these companies going, maybe they'll become big folks that build your cancer cures, or they build something that nobody thought of, or something that wasn't just sort of AI slopped out.
+[03:07:24] This is kind of the problem that compute markets solve.
+[03:07:28] And if you don't solve it, we don't think there's going to be any startups.
+[03:07:33] Cool.
+[03:07:33] That's it.
+[03:07:35] That's the talk.
+[03:07:36] Yeah.
+[03:15:22] Started here.
+[03:15:22] Hey everyone, my name is Afan, and I'm a lead for compute trading at Jump Trading, which is a proprietary trading firm, alongside my co-lead over here, Alejandro.
+[03:15:32] So today we're going to be looking over some of the market structure as it applies to compute trading, what compute trading even is, what we can see it becoming.
+[03:15:44] And I think we'll start with some macro, look at microstructure, and then talk a little bit about where we see things in policy.
+[03:15:59] So the title of the talk is The Dark Pools of Compute, but some of you guys are in finance, so you might be confused as to why I'm using this terminology.
+[03:16:07] What do I mean by dark pool here?
+[03:16:09] Essentially what I'm referring to is an unlit market.
+[03:16:13] Right now, most compute trades in blocks, physical compute here, and these are private quotes.
+[03:16:18] We have a lot of brokers, and these are long bilateral contracts.
+[03:16:21] Now, at the end of the day, these are really commercial agreements.
+[03:16:25] So we're using the term trading here to kind of like look at how it's transacted between parties.
+[03:16:30] These commercial agreements tend to be some mixture of an MSA, an SLA, and an order form, cluster-specific with hardware-specific language in each order.
+[03:16:43] But when we're looking at pricing and looking at some of these other kind of metrics, a lot of the time most of the talk is around the SKU, so what the chip itself is, the baseboard, so H100, H200, B300, etc.
+[03:16:58] And so...
+[03:16:59] A lot of the negotiation here happens kind of outside the public view.
+[03:17:03] There's no, you know, like exchange for physically traded compute that's widely, you know, adopted and, you know, used for everyone goes there to, like, take a look and trade compute.
+[03:17:13] These are done in chats, right?
+[03:17:16] They're out of the public view.
+[03:17:18] There's public marketplaces.
+[03:17:19] There's price references.
+[03:17:20] There's a lot of, you know, on-demand marketplaces.
+[03:17:23] However, for these actual tenored, so, you know, on a given term for a fixed amount of capacity with a certain total contract value, these trade over Slack messages, X messages, Telegram group chats, a bunch of OTC kind of channels that are all over in these kind of, I want to call them like neo-chat.
+[03:17:42] And some of you might be familiar with commodities and how a lot of, you know, there's chatting happening on ICE Chat, Bloomberg Chat, etc.
+[03:17:50] This is kind of where the kind of markets here lie.
+[03:17:55] And so I want to look a little bit here on the macro market structure and a little bit on the players here as well.
+[03:18:01] And so this was a recent kind of A16Z, some of you guys might have seen this.
+[03:18:06] So I'm putting this out there because, you know, you can go on A16Z's actual X and take a look at this graph yourself.
+[03:18:12] What we're looking at is that the cost of given capability has fallen sharply.
+[03:18:17] The bill, of course, still depends on the model usage, capacity, and other factors such as speed is a big thing right now with the new ChatGPT models.
+[03:18:27] Cheaper tokens unlock more usage, and a team can do more work for the same budget.
+[03:18:31] So what we're seeing is that a lot of teams are simply just using way more tokens.
+[03:18:36] So we have this latent demand that hasn't really been hit yet, and people are just going to use more with the same budget that they were using before when models cost more, and they're just expending more tokens.
+[03:18:47] So applications that were too expensive become possible.
+[03:18:50] However, as we're kind of talking about compute here, the capacity underneath still has to be built and paid for, even as the cost of a particular task comes down.
+[03:18:59] And so the important distinction is between the price of the intelligence, the number of tasks people want to run, and the amount of hardware needed to serve them.
+[03:19:09] And so this is where we get to kind of the Jevons paradox and a little some of the stuff that we've been looking at lately, where we had a very interesting thing where, you know, intuitively you'd assume that compute and inference kind of like rises together, correlates very, you know, very closely.
+[03:19:26] As you can see, you can see there's a little bit of a decoupling that happened, and token prices declined further, but compute prices remain robust.
+[03:19:33] And so, like, what can be an explanation for this?
+[03:19:35] Now, there's a lot of, like, potential explanations.
+[03:19:38] One here is the whole Jevons paradox, is that even though token prices and inference is getting extremely efficient to serve on these new baseboards and GPUs, people are just consuming a lot more.
+[03:19:50] And so the demand for compute rises, and people just consume a lot more tokens, even if the cost per million.
+[03:19:57] Per million for input and for caching and, you know, for output, it becomes a lot more efficient.
+[03:20:04] And so making the tasks cheaper, encouraging the additional use that way, resource saving for tasks.
+[03:20:09] For inference clouds, that's going to be more applications serving more tokens, bigger market share.
+[03:20:15] And for app layer individuals, that means you guys can serve to a lot more kind of customers.
+[03:20:19] So anyone who's building, utilizing the token infrastructure.
+[03:20:25] And so what really goes into, you know, the macro structure?
+[03:20:28] Now, like, this is very, you know, bare bones here, but you've got your chips, which we've been talking about.
+[03:20:34] You have power, you have buildings, grid connections, and then, of course, you need a lot of capital to get these buildouts going, and that's kind of been the whole talk here.
+[03:20:43] And so chips, power, buildings, money, they all have to come together before, you know, you can even get to an hour of, like, actual usable GPU per hour compute.
+[03:20:52] And so the IEA April update projects that the global data center electricity is going to rise from 485 terawatt hours in '25 to 915 in '30.
+[03:21:02] And so a lot of the talk right now is around buildouts, about getting the power grid set up.
+[03:21:08] Will we have enough power grid here?
+[03:21:09] Is there other energy sources that we can tap into?
+[03:21:13] Where are we, you know, able to get the land to actually be able to do this?
+[03:21:16] And so colocation sites and data center operators and people who are doing the financing the buildouts, or the lenders themselves, are all kind of looking into this.
+[03:21:23] And that type of everything that's upstream, essentially, of the compute is going to then flow down into the compute costs and also usage.
+[03:21:33] And so what does this, like, actual macro map look like underneath a quote?
+[03:21:37] Chip and system vendors supply the GPU servers and networking.
+[03:21:40] Sites and operators supply the power, space, assembly, and management right here.
+[03:21:46] GPUs, memory, servers, networking.
+[03:21:48] Capacity providers, these are hyperscalers, neoclouds, and any other operator that's, like, operating similar to how a neocloud would operate, reselling bare metal capacity.
+[03:21:57] And then the users.
+[03:21:58] So who's the actual end user?
+[03:21:59] The startups, the inference clouds, labs, neolabs, and also anyone on the app layer and enterprises for anyone doing OpenAI stuff as well.
+[03:22:09] And these boxes, like I've kind of boxed them out here, but, you know, there's people can be all of the above.
+[03:22:17] A chip and system vendor, like someone could do a full end-to-end build out and also be the end user of everything.
+[03:22:23] And so there's a little bit of variation that occurs here.
+[03:22:34] And so, as I was kind of mentioning about the inference clouds before, they might rent a cluster and they'll serve tokens off of it and they'll use that revenue to pay off the cluster.
+[03:22:45] And so that might be a use case for the actual inference cloud themselves.
+[03:22:49] However, for hyperscalers, frontier labs, and larger neoclouds, they can make substantial commitments because they have the ability to get into the large equity, they have the ability to take on more debt, and they have the ability to do long horizon kind of deals, so 10-year deal, OpenAI contracted out, et cetera, so of that nature.
+[03:23:08] However, anyone in the middle market isn't actually able to do this.
+[03:23:11] Who's underwriting a Series B startup with enough capacity to get in a 200 million-plus contract over three years for compute?
+[03:23:19] How many equity rounds will they have to raise, right?
+[03:23:22] Will they have to use their entire equity round to fund just the actual cluster and then they don't have any remaining capital left to use for actual costs?
+[03:23:31] And so we're looking into a little bit of the financing chain here and how that plays in.
+[03:23:35] So lenders are financing the build-out against contracted revenue even in many cases for inference clouds.
+[03:23:40] And so they want to finance the build-out.
+[03:23:42] They want confidence that their loan will get repaid.
+[03:23:44] I mean, like, how are you going to underwrite a startup, like a private company that doesn't have, like, much else going for them right now?
+[03:23:49] Like, what are the, you know, they're not public traded.
+[03:23:51] There's not that much cash flows, balance sheet income statement.
+[03:23:53] They might even be pre-profit, pre-revenue, et cetera.
+[03:23:56] And so what they're looking at is that can the person get contracted revenue over a certain scale?
+[03:24:02] And so CoreWeave's public filings give large-scale example of infrastructure financing supported by take-or-pay customer contracts.
+[03:24:08] And so this diagram kind of shows the smaller illustrative.
+[03:24:12] Example here, and the mismatch is that hardware financing, they want very long terms, but customers are only able to afford or don't really want to, like, get into a long-term financing over 36 months.
+[03:24:22] They have to put up on average 15 to 25 percent is what CoreWeave has quoted that they've seen their median prepayment to be, 15 to 25 percent upfront on a 100 million PCV cluster.
+[03:24:34] That's 15 to 25 million dollars that a startup has to put upfront.
+[03:24:38] That might be their entire round.
+[03:24:42] And so this is kind of a look at what I'm, you know, referencing here.
+[03:24:45] It's like you're raising 40 million, you need a 100 million contract over three years, you put down 30 percent prepayment.
+[03:24:50] This is an illustrative example.
+[03:24:52] You've got 10 million left to run the business.
+[03:24:55] And so you might have this kind of step function, as you can see here.
+[03:24:58] So that's your contracted capacity and what you can actually, and the demand is, like, you know, below that.
+[03:25:04] And so now every time that you have to get into a new cluster, it's like tied to your equity round or whatever else it may be, but you might have to cap out and turn away customers.
+[03:25:11] So what are your options?
+[03:25:12] Do you either turn away customers until you can get into your next, you know, equity round so you can put down another 30 percent prepayment so you can get next little bit of capacity going, or do you use on-demand to close the area under that gap and bridge the shortfall?
+[03:25:27] That's like an option now.
+[03:25:28] Now you have to look into the economics.
+[03:25:30] What does that look like?
+[03:25:31] What's the difference between, you know, maybe instead what they do is they go to a lender to finance the prepayment component.
+[03:25:36] But if the yield on the prepayment component that they're getting financed is less than them just buying it out on-demand at that time if they're able to get into that amount of capacity, then does the economics make sense there?
+[03:25:48] And so here's some of the operating models that we've seen.
+[03:25:55] It's like you can build and operate the full stack.
+[03:25:58] Hardware site, your team is going to arrange power, permit, the assembly, the management.
+[03:26:04] You can also own servers in a colocation facility with more or less the assembly and operation handled by a partner.
+[03:26:10] On the other end, an off-take contract buys defined capacity, and the provider is going to own and operate the asset, and they might not give you complete root access to the bare metal, or there might be kind of like levels to how much access you get depending on if it's tenant, multi-tenant, and et cetera type of configurations that can also affect the pricing.
+[03:26:28] And so some businesses are going to value the physical access.
+[03:26:31] Some businesses are going to value, you know, confidential compute.
+[03:26:36] You know, they might value certain topology changes or the ability to reconfigure the system.
+[03:26:40] And so if that is something for your business, then they might actually want to have more and more control and build and operate the stack.
+[03:26:45] And the economics for them might make sense given the opportunity cost they would have to give up if they were to just take rental off-take contracts.
+[03:26:52] So they might be willing to pay more there.
+[03:27:01] And so here's how, like, ownership and rental—this is a very, like, crude graph—how ownership and rental can compare as utilization rises.
+[03:27:09] And so what we're looking at is that usually, you know, these off-take contracts are getting to the cost of actually almost building out and financing your own cluster.
+[03:27:19] And it's not because, I mean, if you're spending 100 million over a three-year period, then maybe if the economics make sense, it would have made more sense to simply buy out the compute operator yourself outside of the time cost and then obviously the operational cost that might exist.
+[03:27:32] So there's an equilibrium that exists that has to be followed where, you know, the ownership costs outweigh the, you know, rental costs, and the rental costs— Should sit below the ownership cost.
+[03:27:47] But if you're utilizing that at such a rate and, you know, in such variable kind of increments, it might be best to just own the stack outright.
+[03:27:59] And so we're seeing this new dynamic that compute procurement affects how much runway a growing company actually has.
+[03:28:06] And so this also gives investors an interest in compute procurement.
+[03:28:10] So we're kind of seeing this.
+[03:28:12] Access and payment terms affect how much runway their portcos are going to have from a VC perspective.
+[03:28:18] So helping a company buy a suitable capacity can improve the underlying investment.
+[03:28:21] And they're very connected, right?
+[03:28:23] So they're able to procure and they're able to actually find compute capacity for their portcos and fund that.
+[03:28:29] And so that also brings another interesting aspect into the microstructure, is that who helps place the capacity and how does this offer get compared and what risk these contracts can transfer.
+[03:28:43] So we have a lot of different players around this GPU hour that are helping kind of shape this market here.
+[03:28:49] You've got your price discovery individuals, so people with indexes, data, the benchmarks that we're all looking at right now and referencing, which would be used to, you know, in the future launch the futures based on the benchmarks talked about in the associated contracts, per spec, per pending approval.
+[03:29:10] And then there's the physical matching venues, auctions, aggregators.
+[03:29:13] So anyone who can match capacity.
+[03:29:16] We're looking at essentially decentralized marketplaces for on-demand compute.
+[03:29:20] You're looking at liquid pools of compute that offer, like, liquid pool services and part it out themselves and have their own standardized contract.
+[03:29:28] You're looking at bare metal resellers.
+[03:29:29] You're looking at neoclouds themselves doing larger capacity sales.
+[03:29:33] And then you're looking at individual brokers and individual operators here as well on the bare metal reselling.
+[03:29:37] You have desks and brokers.
+[03:29:39] They're looking at the bilateral quotes and execution.
+[03:29:42] They might know a lot of people.
+[03:29:43] They might be able to move fast.
+[03:29:44] They might be able to see quotes at very similar specs in one place and know that there's a buyer that is extremely inelastic to price right now, needs the compute immediately, and they can get the RFS in time so they can charge a decent spread on it.
+[03:29:57] And then what they do is they're going to have the source negotiating, and then they're going to be carrying and placing the risk.
+[03:30:02] They're going to have to operate that cluster for the person, but it has to be worth that spread.
+[03:30:07] And, you know, you have looks in financial markets, the exchanges that are coming that are based on the GPU hour, the futures and derivatives.
+[03:30:13] People are going to be using it to take a look at how to maybe hedge out and look into more financial structures, so hedge out risk, so hedge out, you know, balance sheet risk, maybe get into more interesting agreements.
+[03:30:25] We're seeing kind of agreements such as prepayment, payment facilities are coming online.
+[03:30:30] We're seeing people utilize futures and are interested in utilizing futures and other kind of options to be able to—there's demand for this—to be able to hedge out the risk that they currently have on the books.
+[03:30:42] We have buy-side individuals looking for flex contracts, flexible contracts, like, hey, is there ability that if I lock myself into a three- to five-year contract that I'll be able to, you know, at least upgrade when a new chip set comes out, or maybe I'll be able to roll it over, or maybe let me sell it back to you.
+[03:30:57] And then there's, like, credit and financing, so equipment lenders, leasers, specialist credit providers.
+[03:31:03] And so the way we're seeing it right now is that every deal is bespoke.
+[03:31:07] There's different spec sheets, there's formats.
+[03:31:09] The bill of materials may not match the actual, like, delivery, or there might be subject to change if a part is missing or a part is out of stock.
+[03:31:17] And, you know, there's, like, very long lead times that some of these OEM and ODM kind of providers have.
+[03:31:23] And the same term can mean different things when you're negotiating very quickly.
+[03:31:26] If someone's talking about memory, are we talking about, you know, VRAM?
+[03:31:30] Are we talking about the CPU memory?
+[03:31:32] Are we talking about additional storage here?
+[03:31:34] Like, what did you exactly mean there?
+[03:31:35] It affects quite a bit what type of loads can be run and, you know, the actual end user's needs, and also with pricing and delivery dates.
+[03:31:45] So there's a lot of back and forth before anyone can really compare, and this is where the concept of, like, non-fungibility kind of comes into place and how to partition that out.
+[03:31:51] What parts can be fungible?
+[03:31:53] What parts hold the most of the weight, such as the SKU, et cetera, and what parts are still, like, traded as if it was a product, e-commerce, et cetera, where, you know, it's only for that particular cluster that this price applies.
+[03:32:06] And so prices can update daily or faster.
+[03:32:08] Quotes still a good starting point.
+[03:32:09] Bids can get chopped.
+[03:32:10] Creditworthiness changes what's on offer.
+[03:32:12] There's all these kind of latent factors, hidden factors as well, why we're calling it a dark market.
+[03:32:17] These are some public H100 references Snap charted today.
+[03:32:20] I updated them, so take a look at those.
+[03:32:23] Those are the references for if you wanted to go on their websites to see.
+[03:32:27] This is just an example here of, like, what a public on-demand or spot pricing looks like for an H100 today.
+[03:32:35] You can see kind of various prices here.
+[03:32:38] And so people might use this, or they might use their own kind of internal, what they've seen, to actually, like, assume or use it to charge what they want to charge on their actual cluster specification, taking into account every other kind of factor that goes into it.
+[03:32:54] And so why are these new structures kind of needed, and what are these microstructures interesting?
+[03:32:58] It's mainly to solve for these mismatches, right?
+[03:33:00] Bridging capacity, more flexible commitments, resale rights, and protection against price moves.
+[03:33:05] You know, you're selling a fixed price service from an inference cloud point of view.
+[03:33:09] You'd be selling a fixed price service while the GPU bill floats, and that creates price exposure.
+[03:33:14] And so locking capacity for years can solve a part of that, but it'll create idle hour exposure elsewhere as well, unless you're always using it.

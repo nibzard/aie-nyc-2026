@@ -1,0 +1,24 @@
+{
+ "slug": "carmen-li",
+ "name": "Carmen Li",
+ "role": "CEO",
+ "company": "Compute Exchange",
+ "bio": "Carmen Li is the founder and CEO of Silicon Data and CEO of Compute Exchange. She aims to make AI compute markets transparent, efficient, and financially sophisticated. She founded Silicon Data in 2024. The company provides real-time GPU pricing indexes, benchmarks, and risk management tools for AI infrastructure. In 2025 she also became CEO of Compute Exchange, a neutral GPU procurement marketplace for AI infrastructure. Earlier in her career she held leadership roles in enterprise data alliances at Bloomberg LP. She is a Harvard Business School alumna.",
+ "linkedin": "https://www.linkedin.com/in/carmenrli",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FPEajzB4Rm2f2ZU0ggXRR_headshot-1791671286769.png",
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/carmenrli",
+  "https://www.deep-tech-week.com/speakers/carmen-li",
+  "https://compute.exchange/about"
+ ],
+ "sessions": [
+  {
+   "title": "CEO, Compute Exchange",
+   "time": "12:20pm - 12:38pm",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ]
+}

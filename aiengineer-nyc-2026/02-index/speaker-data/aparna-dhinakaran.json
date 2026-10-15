@@ -1,0 +1,25 @@
+{
+ "slug": "aparna-dhinakaran",
+ "name": "Aparna Dhinakaran",
+ "role": "Co-Founder & Chief Product Officer",
+ "company": "Arize AI",
+ "bio": "Aparna Dhinakaran is the co-founder and Chief Product Officer of Arize AI, a pioneer in AI and agent observability and evaluation, which she co-founded in 2020. She builds tools for understanding AI behavior and turning model and agent failures into engineering improvements, connecting observability (recording the steps models and agents take) with evaluations that distinguish a wrong answer from the routing, retrieval, tool-use, or context failure that caused it. Previously she was a machine learning engineer and leader at Uber, where she built core ML infrastructure platforms including Michelangelo, and she also worked at Apple and TubeMogul (acquired by Adobe). She holds a BS in EECS from UC Berkeley, where she published research with the Berkeley AI Research group, and is on a leave of absence from Cornell University's computer vision PhD program. She is a Forbes 30 Under 30 honoree, a Forbes contributor, and a frequent speaker on LLM evaluation and AI observability. Dynatrace completed its acquisition of Arize AI on October 1, 2026.",
+ "linkedin": "https://www.linkedin.com/in/aparnadhinakaran",
+ "twitter": "https://x.com/aparnadhinak",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F7AqpW2GLQvc7uKTYWlng_headshot-1790815191998.jpg",
+ "sessions": [
+  {
+   "title": "What does an AI engineer do?",
+   "time": "10:12am - 10:30am",
+   "id": "b2ed4456-5671-4e8e-83fd-684c012fef8c"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://ai.engineer/speakers/aparna-dhinakaran",
+  "https://arize.com/author/aparna-dhinakaran",
+  "https://www.linkedin.com/in/aparnadhinakaran",
+  "https://x.com/aparnadhinak"
+ ]
+}

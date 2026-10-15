@@ -1,0 +1,247 @@
+# transcript slice 00
+window: t=0..1820 (00:00:00..00:30:20 video time; 8:47:52 AM..9:18:12 AM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[00:08:11] Good morning, and welcome to AI Engineer New York 2026.
+[00:08:11] We're thrilled to have you with us as we kick off an event of big ideas, sharp perspectives, and plenty of signal cutting through the noise.
+[00:08:11] To officially open the event for us this morning, please welcome to the stage AI Engineer's General Manager, Leah McBride.
+[00:08:11] Hi.
+[00:08:12] Good morning, everyone, and welcome to New York.
+[00:08:16] This is our third event in New York.
+[00:08:19] We had two in 2025 with some of our greatest speakers that we've ever had at AI Engineer.
+[00:08:25] So we're really excited to be back.
+[00:08:27] So just a huge welcome from myself and Swyx to everyone.
+[00:08:30] Thanks for attending today.
+[00:08:32] We hope you're going to have a great few days.
+[00:08:34] There's very, very few places like New York City, as we know, where big ideas scale very, very fast.
+[00:08:43] It is where frontier AI comes to meet centuries-old global financial institutions and where multiple different economies thrive together.
+[00:08:52] So we're excited to have an incredible lineup.
+[00:08:55] You're going to hear from some of the world's best speakers, just like at all our events.
+[00:09:02] We've got tracks in finance.
+[00:09:04] We've got engineering leadership, evals, and LLM.
+[00:09:10] We've got Parna Dinakaran — going to get that right — from Arize.
+[00:09:15] We've got Max Kanat-Alexander from Capital One and Tariq Shakked from Sonar.
+[00:09:21] That's just a few of the incredible speakers that we've got this week.
+[00:09:25] I want to say a huge thank you to Arize, who's our presenting sponsor.
+[00:09:29] You guys can go and meet their team in the expo at any point this week.
+[00:09:34] So lean in to learning here.
+[00:09:37] Lean in to connecting as well.
+[00:09:39] There's so many people here that are sharing ideas.
+[00:09:43] They want to talk about the ideas, they want to challenge ideas, and they want to collaborate as well.
+[00:09:49] So make sure to speak to as many people as possible, your attendees, speakers, and all the sponsors.
+[00:09:55] And we hope to see you again soon.
+[00:09:57] We do have a great lineup.
+[00:09:59] We've got another event called Summit in San Francisco in November.
+[00:10:03] And then we have London lined up in February.
+[00:10:03] And then, of course, World's Fair.
+[00:10:03] And we've got a couple of other events happening next year as well that are new.
+[00:10:03] So keep an eye on the schedule.
+[00:10:03] But have a wonderful few days.
+[00:10:03] Thank you so much.
+[00:10:03] Take care.
+[00:10:03] And now, please welcome to the stage your MC for the day, Managing Partner at 10X, Alex Lieberman.
+[00:10:30] What's up, everyone?
+[00:10:31] How's it going?
+[00:10:32] There we go.
+[00:10:33] Before we hop into the official stuff, I just want to start by introducing myself and asking you a quick question.
+[00:10:35] I'm Alex Lieberman.
+[00:10:36] I'm one of the co-founders and co-managing partners at 10X.
+[00:10:37] We're an applied AI company working with Fortune 500 businesses to become AI native.
+[00:10:38] Before that, I co-founded a business called Morning Brew, which makes business news suck a little bit less.
+[00:10:44] My question for you is, who in the room, raise your hand if you are healthily addicted to X, or formerly known as Twitter.
+[00:11:09] Okay, a lot of people are lying in the room.
+[00:11:12] I spend a lot of time on X, and one of the reasons that I spend a lot of time on X is because I feel like I get to live in the future, right?
+[00:11:24] When you're scrolling through X, when you're looking at the commentary on the platform, you feel like you're seeing what will become consensus in three, six, or 12 months.
+[00:11:35] And what I love about this conference and why I get so excited to come to it every single year is because this almost feels like X on steroids.
+[00:11:46] There's this concept that a friend told me a while back called edge city, and edge city is this concept that At any point in some part of the world, there are a group of people that are living in the future in a specific function or specialty.
+[00:12:03] And the way I think about this conference is we are all living in Edge City for what will be consensus in the next six months to two years, if you really think about the diffusion of this technology.
+[00:12:16] So I'm super excited to be part of this with you all today.
+[00:12:19] And now let's hop into what's going to happen.
+[00:12:21] First of all, welcome to AI Engineer New York 2026, where AI engineering meets Wall Street.
+[00:12:28] This is the conference for engineers and technical leaders building production AI across banking, hedge funds, fintech, insurance, and asset management.
+[00:12:39] Over the next two days, we will hear from companies and leaders sparking discussion not only on models, agents, infra, compute, dev tools, and evals, but then how they weave and shape the financial industry, impacting hedge funds, investors, banks, insurance, fintech, and security.
+[00:12:58] Of course, as you all can tell, there's a lot going on.
+[00:13:02] Putting together a gathering like this requires a huge amount of effort, and it could not be done without our sponsors.
+[00:13:08] But before our sponsors, let's all just give a huge shout out to the AIE team.
+[00:13:13] What they do is incredible.
+[00:13:16] Now, let's give some flowers to the sponsors.
+[00:13:22] First up, the presenting sponsor, Arize.
+[00:13:24] Let's give it up for Arize.
+[00:13:26] Yeah, Arize.
+[00:13:30] Next up, the platinum sponsors: Oracle, Sonar, WorkOS, and Exa.
+[00:13:34] Let's give it up for them.
+[00:13:38] Then we have our gold sponsors.
+[00:13:39] If I had enough time, I'd rattle all of them off.
+[00:13:42] And finally, the silver sponsors.
+[00:13:45] But wait, there's more: the supporting sponsors.
+[00:13:48] Awesome.
+[00:13:50] So we are going to hop into the first keynote of the day.
+[00:13:57] We have two amazing folks from Bridgewater who are in the weeds of production AI every single day.
+[00:14:04] So let's give it up for them.
+[00:14:06] Welcome, guys.
+[00:14:12] Coming up next, we're delighted to welcome two speakers from Anthropic.
+[00:14:18] Please put your hands together for Belinda Neal, Managing Director of Financial Services, and Keon Shahab, Applied AI Architect.
+[00:14:29] Just waiting for our slides.
+[00:14:44] There we go.
+[00:14:46] Good morning, everyone.
+[00:14:47] I'm Sam Green, team lead for Applied AI at Bridgewater Associates, and this is my colleague Aaron Linsky.
+[00:14:55] And today we're here to talk to you about the Vault, the data platform that we've built at Bridgewater to turn unstructured data into a first-class asset in our investment process.
+[00:15:05] And as part of the talk this morning, we'd like to share three lessons that we've learned building the Vault.
+[00:15:11] The first is that humans and agents have very different needs from a data platform, and so you have to build for those different needs separately.
+[00:15:21] The second is that the greatest impact occurs when a single tool can meet both of these sets of needs at the same time.
+[00:15:27] And the third is that the real prize is when you can build the foundations needed to make agents a proactive participant in your investment process or whatever you're doing with your tools.
+[00:15:39] Instead of a reactive tool for your humans to use.
+[00:15:46] Before I dive deeper into talking about the vault, I wanted to start with some background about Bridgewater.
+[00:15:51] Over the last 50 years, Bridgewater has been in the constant pursuit of the world's best understanding of how markets and economies work, and turning that into a systematic encoding that we can use to stress test our logic over time.
+[00:16:06] And what originally began as a set of if-then rules on a yellow legal pad evolved into a continuous compounding process with humans at the center, constantly looking for the next thing that's changing in markets.
+[00:16:18] And more recently, we've been working on building AIA, the Artificial Investment Associate, which puts a machine at the center of this continuous process.
+[00:16:27] Across all these phases of evolution, we've had a constant philosophy in mind, which is that we want to be constantly looking at how the world is changing and what's going on in the world, noticing what dynamics are not yet encoded in our understanding, and use that learning to improve and compound for the future.
+[00:16:49] For most of Bridgewater's history, that meant building and overseeing time series models on structured data.
+[00:16:55] And that structured data needed to be carefully built so that it could be safe for use in our research process and aligned to our internal ontology and world model so that we could get great leverage out of using the data that we had built.
+[00:17:10] With the emergence of language models, we had a huge new opportunity to engage with a much wider world of data.
+[00:17:16] You know, news and research, transcripts, policy documents, and all of the internal conversation that was previously just in the ether.
+[00:17:25] So the internal memos and meeting transcripts and debate happening inside the firm.
+[00:17:30] We quickly realized that all of that data needed the exact same treatment to be fit for purpose.
+[00:17:36] It needed to be carefully cleaned, governed, and made ready for use in both point-in-time research questions today and also our systematic study over time.
+[00:17:47] And when we looked out at the landscape of data vendors and data platform providers, there was nothing that provided us with all of the control that we needed to build and maintain our data advantage.
+[00:18:00] And so we built the Vault, which is our repository of external and internal unstructured data, and the platform that indexes, organizes, and makes all of it ready for use by our human investors and agents.
+[00:18:15] Today, the Vault has more than 100 million documents in it, with thousands more added every day, minute by minute, from 135 external sources and, again, growing all the time, as well as all of the data from inside of Bridgewater.
+[00:18:29] And crucially, all that data is not just dumped on our investors' desks; it is carefully aligned to our internal ontology with enrichments like the countries, concepts, markets, and most importantly, time period discussed in the document.
+[00:18:48] To bring this to life, I want to start with a quick motivating example.
+[00:18:51] So what I did here is I asked a fairly basic representative investment question to an enterprise chat client.
+[00:19:00] I asked, How is AI infrastructure investment impacting the Korean won, and do market participants expect this to continue?
+[00:19:07] And as you're all, I'm sure, familiar with, the agent goes to the web and looks for resources it can draw on because I've explicitly asked it to go find other people's perspectives on the question.
+[00:19:21] And you can see it zooms in and it finds 15 relevant-looking resources to draw on before it gives me back its answer.
+[00:19:30] And when I zoomed in on the answer it gave back, a couple of things stood out to me.
+[00:19:34] The first is that even though it found 15 relevant-looking sources, it only picked one or two to answer my question.
+[00:19:42] And the second is down at the end of this response, where the agent itself acknowledges that it hasn't answered my question.
+[00:19:49] It didn't find enough documents on the open web to establish a market consensus and meet the parameters that I laid out.
+[00:19:58] When I double-clicked even further, the problem got even worse.
+[00:20:00] One of the notes that it primarily drew on to answer my question was published way back in July of 2026, even though I asked this question and captured this answer just at the end of last week in early October.
+[00:20:16] In the age of AI and in investing, three months is a massive amount of time.
+[00:20:22] It's not even close to good enough to draw on this resource to answer my question.
+[00:20:28] When I asked this exact same query attached to the vault, something totally different happens.
+[00:20:34] The first is that the connection to the vault helps to prompt the agent that it should look for a specific period of time when answering my question.
+[00:20:41] So it zooms in on October 1st to October 8th.
+[00:20:44] It finds a much wider array of resources, 52 candidate documents that are relevant to the query over this specific period of time because of the vault's much more significant corpus of content that's relevant to investing questions.
+[00:20:59] And when it ultimately answers my question, it draws on seven instead of only one or two and gives me back a rich answer that the agent is more confident is going to address my question.
+[00:21:12] And so for us, this is the big lesson from building the vault to kind of motivate the talk today, which is that it takes great data and the right connectors to make agents impactful.
+[00:21:22] And I'm going to hand it over to Aaron now to talk about some of the product engineering takeaways from building the vault.
+[00:21:27] Thanks, Sam.
+[00:21:28] So hi, I'm Aaron.
+[00:21:30] I run product engineering at Bridgewater.
+[00:21:32] I'm going to take us through a few of our learnings from building the vault over the past few years.
+[00:21:37] I'm going to start with one that might seem obvious, but I still think it's worth saying, which is search is hard.
+[00:21:46] But it gets even harder if we're designing for two different consumers.
+[00:21:50] And in this case, we're designing for humans and agents.
+[00:21:52] I'm going to go over the difference here, starting with us.
+[00:21:56] So humans need precision and a high signal-to-noise ratio because we can only read so much.
+[00:22:02] Even a fast reader manages about 300 words a minute, and personally, I'm much slower.
+[00:22:08] Agents are a different kind of reader.
+[00:22:10] They're far less sensitive to precision.
+[00:22:13] If the data is there, they'll find it.
+[00:22:15] And basically anything you hand to them will get attended to.
+[00:22:19] They scale super quickly, and they consume about 100 times faster, 30,000 words per minute.
+[00:22:28] And so we need to build Vault for both of these.
+[00:22:30] And when we're thinking about the dimensions that matter, there are these five on the board: recall, precision, filtering, entitlements, and scale.
+[00:22:42] Some of them matter to people, some matter more to agents, many to both.
+[00:22:46] I'm going to go deep on three of these: precision for people, scale for agents, and then filtering for both.
+[00:22:54] So, precision.
+[00:22:56] Once we'd filled the vault, which was a heroic effort by our data and legal teams, recall was no longer a pressing issue.
+[00:23:05] However, the number one complaint was, Vault search is bad.
+[00:23:09] As the product owner, it's painful to hear that, but my response was, Let's benchmark it.
+[00:23:15] And that's what we did.
+[00:23:16] We collected questions and found the best documents by hand, including ones that looked helpful but weren't.
+[00:23:23] In total, it was about 200 examples, and it took us less than a week.
+[00:23:27] It was not fun or very glamorous, but it was very helpful.
+[00:23:32] And after we ran it, it was very clear: search was bad.
+[00:23:36] The key metric we were looking at is precision at 10, which is, of the top 10 results, how many are the right documents?
+[00:23:44] And we were hitting about 60%.
+[00:23:47] So the people were right, it was bad.
+[00:23:50] But now we had a way to measure all of the improvements.
+[00:23:53] And here on the board are five of them.
+[00:23:56] And by the time we got done with agentic search, we were up in the 90, 95% recall at 10, or precision at 10.
+[00:24:04] All right, so that was precision.
+[00:24:07] Now on to filtering.
+[00:24:10] Like anyone, we want the most relevant documents.
+[00:24:13] But when we looked at the production traces, what we were seeing is that almost always there was some condition, either as of a certain date, or from a certain source, or about a specific asset.
+[00:24:25] And all of that requires advanced filtering.
+[00:24:27] And that's where we ran into our first major performance issue.
+[00:24:31] So I'm going to quickly go through this, a little bit technical here.
+[00:24:37] There's classically two ways to filter a vector database.
+[00:24:42] Post-filtering will use that vector index first and then filter the top results by metadata.
+[00:24:47] It's fast, but recall could be pretty low because the globally relevant results might not match your filters.
+[00:24:55] On the other side, we have pre-filtering, where we'll filter first and then calculate distances for every one of those matches.
+[00:25:02] The advantage there is that the recall is very good, but it can be very slow, and we needed something in between.
+[00:25:08] So that's what led us to try and then ultimately switch to TurboPuffer.
+[00:25:12] Their approach, which they call native filtering, looks only in the nearest clusters that contain matches and then scores just those.
+[00:25:19] What you end up getting is something that's fast like post-filtering, but with close to the same recall as pre-filtering.
+[00:25:28] And lastly, I'm going to talk about scale.
+[00:25:31] Human scale for us is pretty pedestrian: 100 queries an hour.
+[00:25:34] We have 300 users.
+[00:25:36] They're going to search, you know, every so often.
+[00:25:38] It takes our users minutes to read the docs that they're receiving.
+[00:25:42] Agents, on the other hand, are a few orders of magnitude beyond that.
+[00:25:48] Easily 100-plus queries a second, and agent swarms can hit thousands easily.
+[00:25:53] And they obviously will read, as I said earlier, will read docs in seconds.
+[00:25:56] So we need something that could scale as well.
+[00:25:59] And again, TurboPuffer handled that easily too.
+[00:26:03] So we were covering all five dimensions.
+[00:26:05] I didn't talk about entitlements, but I'll be talking about that later today.
+[00:26:09] But we covered it all.
+[00:26:10] It unlocked new workflows, but it didn't change how our researchers worked.
+[00:26:16] They still weren't coming to Vault every morning.
+[00:26:19] And that's my second lesson that I want to share here, is that no matter how amazing the tools are, we can't just drop them on our investors' desks and expect them to be used.
+[00:26:28] We need to migrate their old habits into a new form.
+[00:26:34] And so we looked at what they were already doing.
+[00:26:37] Many of them were living in email.
+[00:26:38] The research came straight from the brokers.
+[00:26:41] They had subscribed lists.
+[00:26:42] They had rules that filtered everything into folders.
+[00:26:45] It worked.
+[00:26:46] It was familiar.
+[00:26:48] And they knew that they weren't missing anything.
+[00:26:50] So we had to build all of these features into the Vault.
+[00:26:54] That's exactly what we did.
+[00:26:55] Everything searchable.
+[00:26:56] The subscribed lists became saved searches, and folders became saved collections.
+[00:27:02] It's the same habits, just a new home.
+[00:27:04] And once we had them there, we can open up new habits.
+[00:27:07] So they can ask questions across all the data, as Sam showed.
+[00:27:12] They can follow dynamic feeds by topic, and they can hand those collections over to their agents to take further action.
+[00:27:18] And that's when we clearly had product-market fit.
+[00:27:22] And once we had that fit, the users wanted it everywhere, so we put it in chat.
+[00:27:26] We made a phone app.
+[00:27:28] It's in Slack and their IDE, and of course, we availed all of that to the agents as well, including a CLI because agents love CLIs.
+[00:27:37] And so the main question here is, okay, so what does this enable?
+[00:27:40] Sam is going to talk about what we're building right now, but first and foremost, it's helping us to move around that research circle faster.
+[00:27:49] With our pocket analyst, which is our first AI analyst, it can do hours of research in just a few minutes for a few dollars, and that's relying on the vault.
+[00:28:01] And then we're expanding that now with the researcher, which is the next generation.
+[00:28:04] It's the same idea stretched across days or weeks.
+[00:28:09] We're also able to train custom models to more intelligently reason over the vault's data and use those together with other foundation models to feed systematic decision-making processes.
+[00:28:20] The forecaster is our first one, which produces AI-generated macro-relevant predictions.
+[00:28:26] And then we also have built investment signals from the vault, turning unstructured data into structured tradable strategies.
+[00:28:35] Now I'll hand it to Sam to take us through Vault's latest capability.
+[00:28:42] So, like I alluded to at the beginning of the talk, the real prize is when you can take agents from a reactive resource that can be ready to answer a human's question and instead make them proactive participants, helping to steer your high-value professionals towards the most important areas for their attention.
+[00:29:02] And the way that we're solving that problem is in an experience we're calling the investor workbench, where the Agent is always on, tracking what's important to that investor and presenting them with the areas that are most in need of their attention.
+[00:29:17] It looks like an experience like this that relies on the vault, where a topic is proposed and several pieces of information are presented to the investor to decide whether they should dig deeper or ignore that topic entirely.
+[00:29:30] You can see here the card that an investor sees in order to decide whether to dig in deeper into the same AI impact on currencies question that we looked at earlier in the talk.
+[00:29:40] And the investor receives everything they need: an agentic summary if they want a quick scan across the agent's findings.
+[00:29:47] They also get the exact evidence that the agent was drawing on so that they can assess for themselves what was leading to this recommendation.
+[00:29:56] And if they choose to dig deeper, they have a direct connection to the research output from the analytical tools that Aaron was just...
+[00:30:02] Aaron was just describing.
+[00:30:02] And when they dig deeper alongside the agent to look at the dynamics driving this question, the learnings are automatically captured.
+[00:30:12] The results of their collaboration are automatically captured back in the vault.
+[00:30:19] And so this, for us, is the key lesson.
+[00:30:21] The vault enables compounding because it provides the right evidence, the right internal and external information at the fingertips of our investors and agents, and it automatically captures the synthesis that they generate and puts it back in the corpus for the next turn.
+[00:30:38] And that makes us go around the circle faster and better.
+[00:30:41] And so when we think back to the question we began with, what it takes to make an agent work is the right context and the right understanding of what's going on in your world.
+[00:30:51] And so our question for you is, does your AI know what's going on in the world, and does it remember what your firm has learned about it?
+[00:30:57] Because we are teaching ours too.
+[00:30:59] And if these sound like an exciting challenge, we'd love to talk.
+[00:31:03] Thank you.

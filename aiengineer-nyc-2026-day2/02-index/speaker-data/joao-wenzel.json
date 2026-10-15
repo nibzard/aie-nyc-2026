@@ -1,0 +1,18 @@
+{
+ "slug": "joao-wenzel",
+ "name": "Joao Wenzel",
+ "role": "COO",
+ "company": "Citadel Securities",
+ "bio": "Joao Fiadeiro Wenzel is COO at Citadel Securities, responsible for deploying agentic AI firm-wide.",
+ "linkedin": "https://www.linkedin.com/in/jfiadeiro",
+ "twitter": "https://twitter.com/jay_wooow",
+ "website": "https://citadelsecurities.com",
+ "photo": "https://content-cdn.sessionboard.com/nwQGbRY9S8qZ5Bzf6K54_headshot-1789391585927.jpg",
+ "sessions": [
+  {
+   "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+   "time": "3:20pm - 3:38pm",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ]
+}

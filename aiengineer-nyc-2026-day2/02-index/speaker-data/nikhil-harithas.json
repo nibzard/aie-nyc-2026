@@ -1,0 +1,18 @@
+{
+ "slug": "nikhil-harithas",
+ "name": "Nikhil Harithas",
+ "role": "Head of Deployed Engineering",
+ "company": "Factory",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FBrmw0BXpQyGUEn4KUQYJ_headshot-1791300797503.jpg",
+ "sessions": [
+  {
+   "title": "Decoupling Agents from Infrastructure",
+   "time": "3:45pm - 4:03pm",
+   "room": "McCarthy Room (Riverside Suite)"
+  }
+ ]
+}

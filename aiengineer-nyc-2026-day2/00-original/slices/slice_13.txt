@@ -1,0 +1,242 @@
+# transcript slice 13
+window: t=23660..25480 (06:34:20..07:04:40 video time; 3:14:56 PM..3:45:16 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[06:38:43] Okay.
+[06:38:44] Pleasure to be here.
+[06:38:55] Another round of applause for everyone at AI Engineering.
+[06:39:04] This has been a really, really exceptional conference so far.
+[06:39:07] Thank you.
+[06:39:10] All right.
+[06:39:14] So I want to begin by asking you to think about that person in your company who just seems to know everything.
+[06:39:20] They've been through 17 reorgs, they know all the gossip, all the politics, and somehow they always seem to predict what's going to come out of these, like, big strategic moves.
+[06:39:28] That person is a company's world model, essentially.
+[06:39:31] And the problem is that they don't scale, and nobody really writes down what they say.
+[06:39:37] I'm Juan Wenzel with Citadel Securities, and I'm going to talk a little bit about how we try to approximate that with an agentic system.
+[06:39:46] So a little bit about Citadel Securities.
+[06:39:48] We build our own technology down to the silicon.
+[06:39:51] At this point, over two-thirds of our employees write code.
+[06:39:56] So naturally, we are completely AI-pilled, and agents already help us with a lot of things at the organization.
+[06:40:02] So naturally, leadership
+[06:40:02] Leadership started asking questions about strategy.
+[06:40:05] These harnesses are really good at producing high-quality code, but can they actually help define and refine the strategy of our company?
+[06:40:14] So this is one of my favorite visuals.
+[06:40:17] I've borrowed from Tim Urban.
+[06:40:18] Strategy really comes down to three questions, right?
+[06:40:21] Where do we stand right now?
+[06:40:23] What's going to happen next?
+[06:40:25] And how did we get here?
+[06:40:27] And to answer any of those questions, an agent has to have a really rich profile of the company that it's operating in.
+[06:40:35] So this is broadly a talk about engineering an institutional memory layer.
+[06:40:41] Let's call it that.
+[06:40:43] The agents need to have information about relationships, right?
+[06:40:46] Two teams that used to work together but no longer talk because there was a reorg, or a project story and why it was re-scoped several times, or the politics, right?
+[06:40:58] Like who's in the room, what are they saying, and what are they not saying?
+[06:41:03] There's two ways in, right?
+[06:41:04] There's top down and there's bottom up.
+[06:41:07] Top down, you have the decks, you have your strategy docs, your meeting and status reports, and they're tidy and they're pretty clean.
+[06:41:15] But there's a unique human twist.
+[06:41:17] People generally like to infuse their thoughts and opinions into these things, sometimes by design.
+[06:41:21] So you end up with what, you know, things I call watermelon projects, right?
+[06:41:25] They're green on the outside and red on the inside.
+[06:41:28] Then you have, on the bottom, you have the really noisy stuff, which has a surprising amount of signal, but it's hard to uncover, right?
+[06:41:36] You have meeting notes and you have Slack and code changes and even your session traces with your favorite harness.
+[06:41:43] And the model is where they meet.
+[06:41:45] The evidence is synthesized at that level.
+[06:41:49] Now, the evidence piece sometimes is problematic because it's either partial or wrong.
+[06:41:54] But it turns out that in robotics, you actually have the solution for this, and it's called a state estimator, right?
+[06:42:00] What you do is you have some sort of belief about something you care about, and the longer it's been since you've seen or observed evidence that supports it, the less you trust it, right?
+[06:42:12] The fuzzier it gets until you have a deck or some thread or some meeting notes that sort of collapses that, and you now have new evidence, right?
+[06:42:23] And now you're more certain of it, and therefore you produce the update.
+[06:42:27] And the things that I care about when producing an update, or that the agent should care about, there's three things.
+[06:42:33] There's how long has it been since some signal has been received?
+[06:42:38] There's where that signal come from, and is it still trustworthy?
+[06:42:42] And then does it broadly agree with other sensors, right?
+[06:42:45] There's a lot of parallels here with self-driving, for example, that I'll come back to.
+[06:42:50] So let's start at the top, right?
+[06:42:51] Like a very simple example is something like a slide that is produced already by someone in BizOps, and they produce a monthly status deck.
+[06:43:01] And the question is, how do you get data out of this slide, right?
+[06:43:04] Many of you, I'm sure, have tried that.
+[06:43:06] It's deceptive, actually, right?
+[06:43:08] Because let's say you try to parse the file, right?
+[06:43:11] Like you unpack the PowerPoint file and you get an XML, and all of a sudden you get into this really interesting conceptual question: what is green, right?
+[06:43:19] What is the hex code for green?
+[06:43:21] And things break down when it comes to this type of script.
+[06:43:25] Then the solution is to say, well, I'm just going to take a screenshot of it and throw it at a vision model.
+[06:43:29] But at that point, even if it's pretty high res, you're dealing with someone who copy-pasted a screenshot back into a presentation, and essentially you have Claude trying to squint and trying to figure out if it's a 31 or an 81.
+[06:43:43] And so the theme of the talk really is about elegance comes from just synthesizing things and adding more information.
+[06:43:50] And in this example, it's very basic, but you get the true picture by taking both the XML and the output of a vision model.
+[06:43:59] Now, that's pretty basic, right?
+[06:44:01] But the issue is that you want to establish some continuity over time, right?
+[06:44:05] Like this collateral that your company accrues is very much sort of always building up.
+[06:44:10] And so, in this particular example, you have a project that just spontaneously changed names back in March.
+[06:44:17] And so, you know, you have to establish that sort of longitudinal traceable audit layer as you create this shared context layer about the sort of institutional memory of your company.
+[06:44:29] And the irony, there's two things.
+[06:44:31] The irony here is that even if you do this really well, you're still missing half the picture, right?
+[06:44:36] You're looking at a deck and your Slack says otherwise because that was five days ago.
+[06:44:41] And now you have someone on Slack saying, Hey, by the way, I think we're on track for this.
+[06:44:45] But then someone replies with a picture of a dashboard and it's no longer the case.
+[06:44:48] So things just start breaking down.
+[06:44:51] And so we need to do a better job of, like, integrating all these things, right?
+[06:44:56] Your company has no model of itself.
+[06:44:59] So I'm proposing just a brief plan here, right?
+[06:45:02] The idea is you take the three things that I described earlier about the state estimator.
+[06:45:06] You have the update, age, and observe stages, and then you have grade.
+[06:45:12] The grade stage is basically comparing what you observed versus what you expected.
+[06:45:17] And then the correct stage is basically a way for people to allow the system to get new feedback and steer the behavior of the system, right?
+[06:45:27] At Citadel Securities, the system that we've built has agents at every part of this particular loop, right?
+[06:45:34] But the key thing is that the model is proposing these changes, and then you have code and people deciding how the records are updated.
+[06:45:42] And of course, you're probably asking yourself, like, why not just RAG, right?
+[06:45:45] Like, probably RAG would do the trick.
+[06:45:47] And in fact, it really doesn't, right?
+[06:45:49] Like, in this example, I asked, Hey, what's the status of this project?
+[06:45:52] Is it on track?
+[06:45:53] And as of March 16th, some model would happily pick up a couple of Slack messages and some slides and say, Yep, it's green.
+[06:46:01] But it's missing a lot of the context, right?
+[06:46:03] It's not enough.
+[06:46:05] So here's how we start building this world model.
+[06:46:08] The first stage is about updating information consistently and robustly.
+[06:46:13] In this simple example, where I'm taking some slides and some decks, we are basically just looking at, you know, every month, you know, a new month comes around, we take last month's record and this month's slide, and you try to construct a sort of longitudinal record, right?
+[06:46:29] And we've been doing this now for three years, right?
+[06:46:32] We have a pretty large historical database of these records that now allow us to construct this robust so-called institutional or enterprise world model.
+[06:46:42] You start with the basics, right?
+[06:46:43] Like, you know, sometimes these models struggle with the most basic things, but they're normal, right?
+[06:46:49] The actual name of a particular project changed spontaneously, but by actually looking at that historical set of records, it can see and infer that it actually refers to Project Northstar by virtue of who was involved, by virtue of some continuity in the types of goals, those kinds of things.
+[06:47:07] But more interestingly, what you want to do is you have the agentic system try to discriminate between what's being reported and actual evidence for what it's saying.
+[06:47:17] So you look at some status deck, for example, and here it's identifying that while it is green on the deck, in fact it should be highlighted as a yellow and should be flagged as such because there's a comment someone left talking about how there's a dependency still outstanding.
+[06:47:32] The main thing here is that you don't touch previous months, right?
+[06:47:35] You just sort of heal in this sort of feed-forward mechanism.
+[06:47:39] And what that allows you to do is to actually do some robust evals down the line, right?
+[06:47:46] So here's what the actual update step writes.
+[06:47:48] You know, very simple.
+[06:47:49] This is what it was reported.
+[06:47:51] This is how, you know, the evidence—this is where the evidence points, and this is why.
+[06:47:56] And then you fold in the second component, age.
+[06:48:00] The reality is every fact has a half-life.
+[06:48:02] We've all seen, you know, you go back at some slides and you see that the go-live date for a particular project keeps slipping.
+[06:48:10] It was Q2 in January, then it was Q3, now it's October, right?
+[06:48:15] And you actually observe this, right, by actually collecting all this data, you can have some pretty interesting beginnings of analytical insights.
+[06:48:22] For example, in the last three years, you look at these delivery dates and on average, half the delivery dates change within two months, and 90% of those change into a date that is after what was originally proposed, right?
+[06:48:35] So far, so good.
+[06:48:36] Pretty basic.
+[06:48:37] But what this forces you to do is then introduce this notion of, like, a date that is associated to a particular claim so that the agent can introduce some sort of recency bias when you ask about the status of a particular project, person, or the corporate intent, let's say.
+[06:48:57] Then the observe section.
+[06:48:58] The observe section here, I'm going to pretty quickly gloss over it, but just kind of give you something very tactical.
+[06:49:04] In the beginning, I was pretty seductive to just basically say, well, let's just YOLO this.
+[06:49:09] Let's have Claude or some other model take a look at the entire corpus of things and let's see what it does.
+[06:49:15] And as it turns out, it's pretty clear that a lot of information is lost, right?
+[06:49:21] It loses some attention to detail.
+[06:49:24] And so what ultimately we had to do was engineer a simple agentic workflow where you have a series of specialists break down the collateral of these assets, look for specific things, be reviewed by other agents, and so on.
+[06:49:39] And what you see here on the right-hand side is that actually the amount of insightful updates to a particular project more than doubled after doing this.
+[06:49:48] So I guess the takeaway here is be intentional about how you build these workflows and don't just assume that a YOLO method is going to work out.
+[06:49:56] But now you get, I think, to the really interesting stuff, right?
+[06:49:58] A world model should
+[06:50:04] The model should tell you what happens next, what project is about to slip, or which green turns red the next month.
+[06:50:13] And it turns out that you can actually do this, right?
+[06:50:16] Because you can look back and establish a snapshot as of some sort of past date and essentially run a backtest.
+[06:50:22] So, for example, if we take a snapshot as of February, we can look at the future labels that came after that and see and compare what the agent said was going to slip or flagged versus what actually happened.
+[06:50:30] And you can see that as the agent analyzes all this information, that for statuses that were green but flagged, they were twice as likely to actually turn yellow or red.
+[06:50:36] And so, again, this is encouraging because we were starting to see some beginning of the inability to say, well, it's not predictive of exactly what's going to go wrong, but at least it should tell you what to look at.
+[06:50:48] So, you know, you have 18 different cases where you have a verdict from an agent that's flagged, but what about those where you don't?
+[06:50:54] And this is where some product intuition comes in.
+[06:50:58] First of all, how would you incorporate a very elegant sort of loop where you include an actual user, a stakeholder, a human?
+[06:51:04] And what do you ask them, and where do you meet them, right?
+[06:51:08] I put a non-trivial amount of work into finding out how best to actually capture this information.
+[06:51:13] It's meeting the users where they are, whether it's the app they're using or Slack or email, whatever.
+[06:51:19] And the closer you can get to them, and the simpler you can make that feedback collection mechanism, the more scalable and robust the process is going to be.
+[06:51:25] It also matters what you ask, right?
+[06:51:26] You want to understand whether, like, you're asking a fact, which only fixes one output, or if you're asking about a rule.
+[06:51:34] And once that agent understands that pattern, it does a much better job of fixing every output it covers, both now and into the future.
+[06:51:42] So we have this notion now of our record containing not just an element of what was inferred by the agent, but more importantly confirmed after someone actually provided that signal.
+[06:51:58] Okay, so now bottom up, right?
+[06:52:00] You have meetings with, you know, really strong signal, what people say out loud.
+[06:52:05] You have your Slack.
+[06:52:06] You obviously, it's constant, it's noisy, it's very close to the truth.
+[06:52:10] Code changes describe what shipped.
+[06:52:12] And then, of course, the agent sessions, which is how the sausage was made.
+[06:52:16] And I think I encourage you all to explore all of these disparate data sources to kind of build such a model up.
+[06:52:22] With Slack, it's relatively simple, right?
+[06:52:24] Like you're just looking at every thread and trying to understand, based on attachments and participants and content, the claims that you want the agent to record or update.
+[06:52:34] When was this?
+[06:52:35] Who was responsible, or who does this relate to?
+[06:52:39] What project?
+[06:52:39] What is the sort of link to the evidence, and so on.
+[06:52:45] With PRs, of course, it shows you what changed, and it's a really nice way to see how a project is evolving.
+[06:52:52] But when it comes to the actual, like, subtleties of how projects are sort of run and deployed, it's really interesting to look at the actual traces, you know, for users and engineers who opt into that, right?
+[06:53:06] Like you understand how the ask was, how evolved over time, test failures or, you know, particular decisions from the developer, those kinds of things.
+[06:53:17] Ultimately, these culminate in a pull request, but the synthesis of these things, I think, makes a big difference.
+[06:53:23] The other gotcha I just want to share is to just be mindful of how you think about the validity of signal coming from different so-called sensors.
+[06:53:31] If you're driving down a highway, for example, and your speedometer just, you know, just— Ghost just disappears.
+[06:53:36] It doesn't mean you're now going at zero miles an hour, right?
+[06:53:40] It's just like a faulty signal.
+[06:53:42] So, for example, here we ran into a couple of issues sometimes when the bottom-up approach, you had some semblance of a claim saying, Hey, this particular channel, this thing is going quiet.
+[06:53:52] What's going on?
+[06:53:53] But in reality, you know, we were treating it as a zero when really it shouldn't have been.
+[06:53:57] And so we sort of iterated over time to understand how to incorporate when we last tried to get information from that sensor, when it was last okay, and what do you do when these diverge?
+[06:54:08] So now, if you look at the actual record that we constructed, the agents are going to be much more effective in understanding the true state of the world, right?
+[06:54:19] It's not green, right?
+[06:54:20] It's the go-live slipped twice, the evidence is yellow, people are talking about failing tests.
+[06:54:25] It's going to be tricky.
+[06:54:27] So what do we use this for, right?
+[06:54:30] We use it to steer leadership conversations.
+[06:54:32] Instead of, you know, circulating a deck to everyone and forcing everyone to just go through some slides everyone glosses over, you start with the stuff that actually, you know, matters.
+[06:54:42] You start where the deck and the evidence disagree.
+[06:54:44] You also produce a weekly read for managers and leaders on what's stuck and what went quiet.
+[06:54:49] But I think also, most importantly, you have the sort of beginning of a context layer that every agent can rely on.
+[06:54:55] And we're using this pattern and constructing it so that it's extendable to other different use cases, right?
+[06:55:01] In our client franchise, for example, we're curious about how we can build similar models to help serve our clients.
+[06:55:07] You know, we have some client and we want to understand who holds what, what are they interested in, how can we anticipate their needs as best as possible by folding in information from all sorts of disparate internal and external sources.
+[06:55:21] So a couple of things that are difficult to do, just to kind of maybe we can chat outside about your solutions.
+[06:55:27] I'd be very curious to hear, are when you have a lot of, you know, for example, one client with four records and four different systems with no canonical identifier, how do you go about mapping those in a very elegant way?
+[06:55:40] That's one thing that I don't think we have a clear answer to.
+[06:55:44] The second thing is how can we be most effective at capturing signal from stakeholders and users?
+[06:55:49] Where the model is sure and the stakes are pretty low, you should just apply it automatically.
+[06:55:55] When those stakes are low, but the model isn't sure, just wait for more evidence.
+[06:56:01] But if the stakes are high, it really matters, like who you ask, when you ask it, and kind of the whole mechanism there.
+[06:56:09] So here's the loop again.
+[06:56:11] Update, age, observe, grade, and correct.
+[06:56:14] And three things I want you to take home.
+[06:56:18] The model that your company has, you should think about it as a state estimator, right?
+[06:56:24] Don't assume that just like indexing everything and cataloging everything is enough, because by definition, these things are extremely nuanced.
+[06:56:33] And this intrinsic information that lives almost between the lines is hard for even the best state-of-the-art models to capture.
+[06:56:40] Grade it against what happens next, right?
+[06:56:42] So be intentional and think through how you can integrate and implement evals from the get-go, and think about an elegant solution that allows your models and your agents and your stakeholders to kind of play nice together.
+[06:56:58] So your company can have a model of itself.
+[06:57:01] I encourage you to start collecting now if you're not collecting already.
+[06:57:05] And certainly if you have, if you're at a bigger company and like me, you had the, I mean, fortune or misfortune of dealing with thousands of decks, definitely something you should start thinking about, because I've definitely seen material improvements in how these agents are able to reconstruct that sort of corporate memory and apply it in all sorts of daily tasks without sort of being all confused about things.
+[06:57:29] Okay.
+[06:57:29] Thank you very much.
+[06:57:29] I'm João, and I'll be outside for any questions if you want.
+[06:57:32] Cheers.
+[06:59:17] I'm Will Brown.
+[06:59:17] I lead applied research at Prime Intellect, and hope you are all having a great AI Engineer Conference.
+[06:59:17] This is always one of my favorites.
+[06:59:18] It's always just so cool to see what everyone's working on and building, and I feel like it is a place where people get to talk about what the future looks like and, like, start seeing the trends in the industry and seeing the progress and what works and what doesn't.
+[06:59:19] And that's kind of the theme I want to think about for this talk today, is, like, what comes next from what we're doing right now, and what are some of the things that we've been working on and also just been seeing in research that's unfolding that kind of points at what we think the future of AI might look like at the organization level.
+[06:59:19] Because we've seen a lot of very cool progress in agents and interfaces and bots and things like that over the past several months, years.
+[06:59:19] But there's always, like, there's always more coming.
+[06:59:19] Things are just moving so fast, and I think it's a very exciting time to just imagine and speculate and plan for what comes next.
+[06:59:19] And so I don't know if any of you remember back in the early ChatGPT days, OpenAI had kind of spelled out their framing of, like, what are the different stages of AI progress on the road to AGI.
+[06:59:20] And I think we've moved along this faster than we thought we would.
+[06:59:20] We, like, I remember 18 months ago, I was here in New York at AI Engineer giving a talk where we had gotten reasoners and chatbots had been around for a while, and reasoners were, like, the new thing, but we didn't really have agents yet.
+[06:59:48] And now we've climbed pretty quickly through agents and innovators and— The question next seems to be, okay, what happens for organizations?
+[06:59:48] Like, what does it mean for an organization to truly, like, be AI native, not just as, like, a startup that uses a lot of agents and builds everything with cloud code, but, like, at the, like, large enterprise scale?
+[06:59:48] What do companies of the future look like that involve, like, deep integration of agents throughout the lifecycle of the organization?
+[06:59:48] And what do we need to build on the path there?
+[06:59:48] So, a bit about Prime Intellect, just for some backdrop.
+[06:59:48] We build a lot of different things around AI infrastructure for training, deploying, continuously improving models, and especially open source models and open source tooling.
+[06:59:48] And so we do a lot of things, and, like, we roughly do the sorts of things that you would do inside of a big lab.
+[06:59:51] And these are our products.
+[07:00:04] And the reason we do this is because we are imagining a future that is coming pretty quickly, it seems, where open source models are readily available to train and deploy on your own workflows, on your own data, in your own harnesses, and can be the sorts of things that organizations can have grow with them over time, that allow compounding their institutional knowledge, their institutional advantage from their workflows, from their data, from their people and their processes, in addition to using the models from the frontier labs.
+[07:02:21] And so this talk will be a bit about how we see that evolving and unfolding, where, like, what is the role of training in an AI native enterprise?
+[07:03:25] How does this coexist with the frontier models?
+[07:03:32] And, like, what do we think is going to be the version of this that really unlocks the most value for people?
+[07:03:52] And what does it look like?
+[07:04:02] And so organizations have lots of knowledge, and, like, the longer an organization's been around and the kind of more established it is, the more implicit knowledge there is that kind of doesn't ever get written down.
+[07:05:26] There are things that do get written down.
+[07:05:37] There's code bases, there's emails, there's processes.

@@ -1,0 +1,215 @@
+[
+ {
+  "slug": "alexander-shevchenko",
+  "name": "Alexander Shevchenko",
+  "role": "Head of Ramp Labs and Applied Research",
+  "company": "Ramp",
+  "context": "Chasing capabilities while waiting for the frontier (Ramp applied research: specialist models, KV-cache cartridges, agen",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "amol-kapoor",
+  "name": "Amol Kapoor",
+  "role": "",
+  "company": "",
+  "context": "Off-air pre-roll: two speakers planning edits and naming their agent 'Jiro'",
+  "missing": [
+   "record",
+   "role",
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "carmen-li",
+  "name": "Carmen Li",
+  "role": "CEO",
+  "company": "Compute Exchange",
+  "context": "CEO, Compute Exchange: the only neutral GPU marketplace + Silicon Data term structure, residual values, live platform de",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "clifford-ressel",
+  "name": "Clifford Ressel",
+  "role": "",
+  "company": "",
+  "context": "Off-air pre-roll: two speakers planning edits and naming their agent 'Jiro'",
+  "missing": [
+   "record",
+   "role",
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "harisha-p-c",
+  "name": "Harisha P C",
+  "role": "",
+  "company": "",
+  "context": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optim",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "jack-mcdonald",
+  "name": "Jack McDonald",
+  "role": "Principal at Apollo Global Management, COO of Redding Ridge",
+  "company": "Apollo Global Management",
+  "context": "AI in Practice: An Inside Look at Apollo's Approach (Rowspace x Apollo; hiring, adoption, competitive edge, 5-year outlo",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "jiro",
+  "name": "Jiro",
+  "role": "",
+  "company": "",
+  "context": "Agentifying a SEC Master (Nori Agentic, podcast-format AIE online-track talk with agent co-presenter 'Jiro') -- off-agen",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "john-stecher",
+  "name": "John Stecher",
+  "role": "CTO",
+  "company": "Blackstone",
+  "context": "Built to Scale: Future-Proofing Your Technology Roadmap (Blackstone x Norm.ai on POCs, rewrites, frontier trade-offs)",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "joseph-kim",
+  "name": "Joseph Kim",
+  "role": "Head of ChatGPT for Financial Services",
+  "company": "OpenAI",
+  "context": "Building the Next Chapter of AI in Finance: ChatGPT for Financial Services (with live product demo)",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "ksenia-se",
+  "name": "Ksenia Se",
+  "role": "AI Inferencer",
+  "company": "Turing Post",
+  "context": "Welcome remarks: MC intro, final-day welcome, sponsor acknowledgments",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "michael-manapat",
+  "name": "Michael Manapat",
+  "role": "Co-Founder",
+  "company": "Rowspace",
+  "context": "AI in Practice: An Inside Look at Apollo's Approach (Rowspace x Apollo; hiring, adoption, competitive edge, 5-year outlo",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "michele-grant",
+  "name": "Michele Grant",
+  "role": "",
+  "company": "",
+  "context": "The Agent Works. Does Anyone Trust It? (Michele Grant: value case, three lines model, autonomy scorecard, M&A integratio",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "oliver-kennon",
+  "name": "Oliver Kennon",
+  "role": "Research Analyst, Core Research",
+  "company": "SemiAnalysis",
+  "context": "Not All GPU's Are Deployed The Same (cost curves for intelligence, the operator multiplier, ClusterMax)",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "scott-worland",
+  "name": "Scott Worland",
+  "role": "CTO",
+  "company": "Norm.ai",
+  "context": "Built to Scale: Future-Proofing Your Technology Roadmap (Blackstone x Norm.ai on POCs, rewrites, frontier trade-offs)",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "sharish-gagar",
+  "name": "Sharish Gagar",
+  "role": "",
+  "company": "",
+  "context": "Moving AI agents from experiment to enterprise production (Intuit Credit Karma: LangGraph, MCP gateway, evals, memory, P",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "steve-jamison",
+  "name": "Steve Jamison",
+  "role": "",
+  "company": "",
+  "context": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR (Jellyfish research) -- off-agenda, pr",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "swyx",
+  "name": "Swyx",
+  "role": "",
+  "company": "",
+  "context": "Swyx closing remarks: thanks, AI Engineer Europe (London, February), World's Fair San Francisco -- off-agenda",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "tariq-shaukat",
+  "name": "Tariq Shaukat",
+  "role": "CEO",
+  "company": "Sonar",
+  "context": "The Machine that Changed the World, vAI: engineering confidence into agentic software factories",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "will-brown",
+  "name": "Will Brown",
+  "role": "Applied Research",
+  "company": "Prime Intellect",
+  "context": "Self-Improving Organizations (AI-native enterprises, open-source training, compounding institutional knowledge)",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "zhao-chenjiang",
+  "name": "Zhao Chenjiang",
+  "role": "",
+  "company": "",
+  "context": "Scary stories of AI gone wrong: three real incidents and the infrastructure controls that prevent them -- off-agenda",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ }
+]

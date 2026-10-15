@@ -1,0 +1,18 @@
+{
+ "slug": "doneyli-de-jesus",
+ "name": "Doneyli De Jesus",
+ "role": "Head of AI Engineering Solutions",
+ "company": "Langfuse (by ClickHouse)",
+ "bio": "I lead AI Engineering Solutions at Langfuse (by ClickHouse). Helping organizations with Agent Observability and Evals.",
+ "linkedin": "https://www.linkedin.com/in/doneyli/",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FiNEt2aI1SbWfydGzrEq6_headshot-1791678695273.png",
+ "sessions": [
+  {
+   "title": "Building Deployment Gates for AI Agents in Financial Services",
+   "time": "2:55pm - 3:13pm",
+   "room": "McCarthy Room (Riverside Suite)"
+  }
+ ]
+}

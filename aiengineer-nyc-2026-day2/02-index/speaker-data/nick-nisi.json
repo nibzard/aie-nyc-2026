@@ -1,0 +1,18 @@
+{
+ "slug": "nick-nisi",
+ "name": "Nick Nisi",
+ "role": "Engineering Manager",
+ "company": "WorkOS",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FDUCXvIsrSNuLW9miocTK_headshot-1790808639442.png",
+ "sessions": [
+  {
+   "title": "Are You Smarter Than a Fruit Fly?",
+   "time": "2:30pm - 2:48pm",
+   "room": "Sutton Room (NY Ballroom W)"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "scott-worland",
+ "name": "Scott Worland",
+ "role": "CTO",
+ "company": "Norm.ai",
+ "bio": "Scott Worland is Chief Technology Officer of Norm Ai, a New York company that automates regulatory compliance with AI agents. He joined Norm Ai as Head of Engineering before becoming CTO. He has 12+ years of experience building ML and AI systems across academia, government, and industry. Earlier, he was Director of Data Science at FreightWaves and a hydrologist at the U.S. Geological Survey, where he published machine learning research on streamflow prediction. He holds a PhD in engineering from Vanderbilt University and is a visiting research fellow in AI and Law at Emory University School of Law.",
+ "linkedin": "https://www.linkedin.com/in/scott-c-worland",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F0LEIJK53Qky7Th6KoJcr_headshot-1791388107877.png",
+ "sessions": [
+  {
+   "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+   "time": "2:05pm - 2:23pm",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/scott-c-worland",
+  "https://scholar.google.com/citations?user=4wi6zygAAAAJ&hl=en",
+  "https://theorg.com/org/norm-ai/person/scott-worland",
+  "https://aiandthefutureofwork.org/people"
+ ]
+}

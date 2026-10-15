@@ -1,0 +1,18 @@
+{
+ "slug": "zach-lloyd",
+ "name": "Zach Lloyd",
+ "role": "Founder & CEO",
+ "company": "Warp",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FDDkTGwrSRqpCu8p03U8H_headshot-1790269348253.jpg",
+ "sessions": [
+  {
+   "title": "Building a self-improving software factory",
+   "time": "1:40pm - 1:58pm",
+   "room": "McCarthy Room (Riverside Suite)"
+  }
+ ]
+}

@@ -1,0 +1,1295 @@
+[
+ {
+  "file": "000-pre-show-countdown-hold-before-show-open-holding-slide.md",
+  "session_id": "000",
+  "title": "Pre-show countdown hold before show open (holding slide, pre-show music, no speech)",
+  "speakers": [],
+  "start_wall": "8:47:52 AM ET",
+  "end_wall": "8:56:03 AM ET",
+  "video_start": "00:00:00",
+  "video_end": "00:08:11",
+  "session_type": "dead-air",
+  "tags": [
+   "pre-show",
+   "dead-air",
+   "holding-slide",
+   "countdown",
+   "livestream",
+   "show-open-boundary"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=0s",
+  "one_liner": "The livestream opens at 8:47:52 AM ET with roughly eight minutes of holding-slide pre-show content and no speech, until the show-open voice-over begins at 00:08:11."
+ },
+ {
+  "file": "001-show-open-aie-welcome-from-gm-lia-leah-mcbride.md",
+  "session_id": "001",
+  "title": "AIE Welcome from GM, Lia McBride",
+  "speakers": [
+   "Lia McBride",
+   "Unseen announcer (show-open voice-over)"
+  ],
+  "start_wall": "8:56:03 AM ET",
+  "end_wall": "8:58:21 AM ET",
+  "video_start": "00:08:11",
+  "video_end": "00:10:29",
+  "session_type": "announcement",
+  "tags": [
+   "show-open",
+   "welcome",
+   "announcement",
+   "ai-engineer",
+   "arize-sponsor",
+   "new-york",
+   "event-preview"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=491s",
+  "one_liner": "After an eight-minute pre-show countdown hold, an unseen voice-over opens the AI Engineer NYC 2026 livestream and hands the stage to AI Engineer General Manager Lia McBride, who welcomes the crowd to the third New York event, thanks presenting sponsor Arize, previews the tracks and speakers, and introduces MC Alex Lieberman."
+ },
+ {
+  "file": "002-welcome-remarks-mc-alex-lieberman-on-edge-city-conference.md",
+  "session_id": "002",
+  "title": "Welcome Remarks",
+  "speakers": [
+   "Alex Lieberman"
+  ],
+  "start_wall": "8:58:21 AM ET",
+  "end_wall": "9:01:58 AM ET",
+  "video_start": "00:10:29",
+  "video_end": "00:14:06",
+  "session_type": "announcement",
+  "tags": [
+   "welcome-remarks",
+   "mc",
+   "edge-city",
+   "conference-framing",
+   "sponsors",
+   "finance-ai",
+   "keynote-intro"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=629s",
+  "one_liner": "MC Alex Lieberman opens AI Engineer New York 2026 by calling the room an \"Edge City\" that lives six months to two years ahead of AI consensus, frames the event as \"AI engineering meets Wall Street,\" thanks the AIE team and sponsors, and hands off to the first keynote from Bridgewater."
+ },
+ {
+  "file": "003-vault-making-unstructured-data-work-for-investing-bridgewater.md",
+  "session_id": "003",
+  "title": "Vault: Making Unstructured Data Work for Investing",
+  "speakers": [
+   "Sam Green",
+   "Aaron Linsky"
+  ],
+  "start_wall": "9:01:41 AM ET",
+  "end_wall": "9:18:55 AM ET",
+  "video_start": "00:13:49",
+  "video_end": "00:31:03",
+  "session_type": "keynote",
+  "tags": [
+   "unstructured-data",
+   "data-platform",
+   "enterprise-agents",
+   "vector-search",
+   "investment-research",
+   "product-engineering",
+   "compounding-knowledge"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=829s",
+  "one_liner": "Bridgewater built Vault, a governed 100-million-document platform for external and internal unstructured data, because frontier models fail on the open web \u2014 and the real prize is an always-on agent that captures what the firm learns back into the corpus."
+ },
+ {
+  "file": "004-mc-fill-during-slide-delay-teaser-for-the-upcoming-anthropic.md",
+  "session_id": "004",
+  "title": "MC fill during slide delay: teaser for the upcoming Anthropic keynote",
+  "speakers": [
+   "Alex Lieberman"
+  ],
+  "start_wall": "9:02:04 AM ET",
+  "end_wall": "9:02:38 AM ET",
+  "video_start": "00:14:12",
+  "video_end": "00:14:46",
+  "session_type": "announcement",
+  "tags": [
+   "mc-fill",
+   "slide-delay",
+   "anthropic",
+   "keynote-teaser",
+   "stage-transition",
+   "run-of-show"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=853s",
+  "one_liner": "The MC teases the upcoming Anthropic keynote by name-checking Belinda Neal and Keon Shahab, then fills roughly 20 seconds of dead air while the stage crew fixes the slides."
+ },
+ {
+  "file": "005-applause-then-host-welcome-introducing-anthropic-speakers.md",
+  "session_id": "005",
+  "title": "Applause, then host welcome introducing Anthropic speakers Belinda Neal and Keon Shahab",
+  "speakers": [
+   "Unidentified host (MC)",
+   "Belinda Neal",
+   "Keon Shahab"
+  ],
+  "start_wall": "9:18:55 AM ET",
+  "end_wall": "9:19:41 AM ET",
+  "video_start": "00:31:03",
+  "video_end": "00:31:49",
+  "session_type": "announcement",
+  "tags": [
+   "applause",
+   "speaker-introduction",
+   "anthropic",
+   "stage-handoff",
+   "host-welcome",
+   "keynote-intro"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=1863s",
+  "one_liner": "A 46-second stage handoff: applause closes the Bridgewater keynote, the host introduces the two Anthropic speakers by name and role, and Belinda Neal opens with a self-introduction that leads straight into the keynote."
+ },
+ {
+  "file": "006-anthropic-accelerating-frontier-ai-in-financial-services.md",
+  "session_id": "006",
+  "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+  "speakers": [
+   "Belinda Neal",
+   "Keon Shahab"
+  ],
+  "start_wall": "9:19:12 AM ET",
+  "end_wall": "9:38:09 AM ET",
+  "video_start": "00:31:20",
+  "video_end": "00:50:17",
+  "session_type": "keynote",
+  "tags": [
+   "anthropic",
+   "claude",
+   "financial-services",
+   "ai-agents",
+   "mcp",
+   "skills",
+   "agent-evals",
+   "wealth-management"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=1880s",
+  "one_liner": "Anthropic's Belinda Neal and Keon Shahab argue that model intelligence now runs far ahead of adoption in financial services, and they lay out a five-layer agent foundation (MCP connectors, skills, identity and permissions, approval, evals) plus Claude for Financial Advisors as the proof that the same pattern scales from one firm to a whole industry."
+ },
+ {
+  "file": "007-applause-then-host-welcome-introducing-john-feminella-svp-of.md",
+  "session_id": "007",
+  "title": "Applause, then host welcome introducing John Feminella, SVP of Architecture at Two Sigma",
+  "speakers": [
+   "John Feminella"
+  ],
+  "start_wall": "9:38:10 AM ET",
+  "end_wall": "9:38:54 AM ET",
+  "video_start": "00:50:18",
+  "video_end": "00:51:02",
+  "session_type": "announcement",
+  "tags": [
+   "host-hand-off",
+   "stage-transition",
+   "applause",
+   "john-feminella",
+   "two-sigma",
+   "keynote-intro"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=3018s",
+  "one_liner": "A 44-second stage hand-off: applause closes the Anthropic keynote, an unnamed host introduces John Feminella of Two Sigma, and Feminella opens with \"Hey, everyone.\" before his talk begins."
+ },
+ {
+  "file": "008-balancing-acceleration-and-safety-for-ai-agents.md",
+  "session_id": "008",
+  "title": "Balancing Acceleration and Safety for AI Agents",
+  "speakers": [
+   "John Feminella"
+  ],
+  "start_wall": "9:38:25 AM ET",
+  "end_wall": "9:57:32 AM ET",
+  "video_start": "00:50:33",
+  "video_end": "01:09:40",
+  "session_type": "keynote",
+  "tags": [
+   "ai-agents",
+   "agent-safety",
+   "composable-controls",
+   "financial-services",
+   "enterprise-ai",
+   "incident-analysis",
+   "risk-management"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=3033s",
+  "one_liner": "Two Sigma's John Feminella retells Citibank's $900 million Revlon wire error to show why agent safety and speed are not a tradeoff, then lays out five composable controls \u2014 an agent registry, risk-scored review, declared-purpose tool access, shared evals, and classifier-governed runtime \u2014 that let a regulated firm run agents with real autonomy."
+ },
+ {
+  "file": "009-host-hand-off-introducing-max-kanat-alexander.md",
+  "session_id": "009",
+  "title": "Host hand-off introducing Max Kanat-Alexander",
+  "speakers": [
+   "Max Kanat-Alexander",
+   "Unidentified host/MC (voice only)"
+  ],
+  "start_wall": "9:57:34 AM ET",
+  "end_wall": "9:58:07 AM ET",
+  "video_start": "01:09:42",
+  "video_end": "01:10:15",
+  "session_type": "announcement",
+  "tags": [
+   "host-hand-off",
+   "speaker-introduction",
+   "max-kanat-alexander",
+   "code-quality",
+   "capital-one",
+   "keynote-intro"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=4182s",
+  "one_liner": "A 33-second host hand-off that bridges the Two Sigma keynote and the \"Does Code Quality Even Matter?\" keynote, framing it as a talk about the missing principles of code quality."
+ },
+ {
+  "file": "010-does-code-quality-even-matter-understanding-execution.md",
+  "session_id": "010",
+  "title": "Does Code Quality Even Matter?",
+  "speakers": [
+   "Max Kanat-Alexander"
+  ],
+  "start_wall": "9:57:34 AM ET",
+  "end_wall": "10:14:28 AM ET",
+  "video_start": "01:09:42",
+  "video_end": "01:26:36",
+  "session_type": "keynote",
+  "tags": [
+   "code-quality",
+   "durable-software",
+   "disposable-software",
+   "ai-coding-agents",
+   "engineering-rigor",
+   "software-structure",
+   "cost-of-rigor"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=4182s",
+  "one_liner": "The author of Code Simplicity reduces all software success to understanding and execution, splits software into durable versus disposable, and answers the title directly: quality matters for durable software, not for disposable software \u2014 and rigor does not have to be expensive."
+ },
+ {
+  "file": "011-applause-and-stage-transition-after-max-kanat-alexander.md",
+  "session_id": "011",
+  "title": "Applause and stage transition after Max Kanat-Alexander",
+  "speakers": [],
+  "start_wall": "10:14:29 AM ET",
+  "end_wall": "10:14:49 AM ET",
+  "video_start": "01:26:37",
+  "video_end": "01:26:57",
+  "session_type": "filler",
+  "tags": [
+   "filler",
+   "applause",
+   "stage-transition",
+   "host-teaser",
+   "keynote-handoff",
+   "boundary-segment"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5197s",
+  "one_liner": "A 20-second bridge between keynotes: applause after Max Kanat-Alexander's close, then an off-stage voice teases the next talk by asking what an engineer is when AI does the building."
+ },
+ {
+  "file": "012-host-hand-off-introducing-aparna-dhinakaran-arize-ai.md",
+  "session_id": "012",
+  "title": "Host hand-off introducing Aparna Dhinakaran (Arize AI)",
+  "speakers": [
+   "Aparna Dhinakaran",
+   "Unidentified host/MC (voice only)"
+  ],
+  "start_wall": "10:14:49 AM ET",
+  "end_wall": "10:14:54 AM ET",
+  "video_start": "01:26:57",
+  "video_end": "01:27:02",
+  "session_type": "announcement",
+  "tags": [
+   "host-hand-off",
+   "speaker-introduction",
+   "aparna-dhinakaran",
+   "arize-ai",
+   "keynote-intro",
+   "defining-success"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5217s",
+  "one_liner": "A roughly five-second host hand-off that bridges the applause after Max Kanat-Alexander's keynote and Aparna Dhinakaran's \"What does an AI engineer do?\" keynote, framing it around what engineering means when AI does the building."
+ },
+ {
+  "file": "013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature.md",
+  "session_id": "013",
+  "title": "What does an AI engineer do?",
+  "speakers": [
+   "Aparna Dhinakaran"
+  ],
+  "start_wall": "10:14:49 AM ET",
+  "end_wall": "10:30:34 AM ET",
+  "video_start": "01:26:57",
+  "video_end": "01:42:42",
+  "session_type": "keynote",
+  "tags": [
+   "ai-engineering",
+   "ai-agents",
+   "observability",
+   "evals",
+   "always-on-agents",
+   "arize-signal",
+   "telemetry"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5217s",
+  "one_liner": "Aparna Dhinakaran (Arize AI) argues the AI engineer's job has shifted from writing AI features to building the always-on loop \u2014 agents, evals, and telemetry \u2014 that writes, reviews, and improves those features, illustrated by Arize's Signal agent."
+ },
+ {
+  "file": "014-house-announcement-session-over-clear-the-room.md",
+  "session_id": "014",
+  "title": "House announcement: session over, clear the room",
+  "speakers": [
+   "Unidentified venue PA announcer"
+  ],
+  "start_wall": "10:30:34 AM ET",
+  "end_wall": "10:30:42 AM ET",
+  "video_start": "01:42:42",
+  "video_end": "01:42:50",
+  "session_type": "announcement",
+  "tags": [
+   "house-announcement",
+   "room-clear",
+   "pa-voice",
+   "session-transition",
+   "morning-break"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=6162s",
+  "one_liner": "An eight-second public-address announcement closes the 10:30 AM keynote block: the program has finished, and attendees must collect their belongings and clear the room through the main doors before the next session."
+ },
+ {
+  "file": "015-session-break-room-transition-pa-room-clearing-announcements.md",
+  "session_id": "015",
+  "title": "Session break / room transition (PA room-clearing announcements, then dead air before the Wells Fargo talk)",
+  "speakers": [],
+  "start_wall": "10:30:35 AM ET",
+  "end_wall": "10:39:17 AM ET",
+  "video_start": "01:42:43",
+  "video_end": "01:51:25",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "room-transition",
+   "pa-announcements",
+   "dead-air",
+   "agenda-gap",
+   "livestream-hold"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=6163s",
+  "one_liner": "A roughly nine-minute room-turnaround break on the main-stage livestream: a PA voice clears Simons Room after the Arize AI keynote, the stream holds with no speech for about 8.6 minutes, and Freddy Lecue's Wells Fargo talk begins at the segment's closing boundary."
+ },
+ {
+  "file": "016-wells-fargo-foundation-model-application-to-fraud-detection.md",
+  "session_id": "016",
+  "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+  "speakers": [
+   "Freddy Lecue"
+  ],
+  "start_wall": "10:39:17 AM ET",
+  "end_wall": "11:00:43 AM ET",
+  "video_start": "01:51:25",
+  "video_end": "02:12:51",
+  "session_type": "talk",
+  "tags": [
+   "foundation-model",
+   "fraud-detection",
+   "tabular-data",
+   "tokenization",
+   "pre-training",
+   "financial-services",
+   "transformers"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=6685s",
+  "one_liner": "Wells Fargo pre-trained its own 1-billion-parameter transaction foundation model from scratch on billions of monthly customer transactions, and it beat the production XGBoost fraud model on detection rate, false positives, and latency."
+ },
+ {
+  "file": "017-break-stage-changeover-between-wells-fargo-and-arca-talks.md",
+  "session_id": "017",
+  "title": "Break / stage changeover between Wells Fargo and Arca talks",
+  "speakers": [],
+  "start_wall": "11:00:46 AM ET",
+  "end_wall": "11:07:46 AM ET",
+  "video_start": "02:12:54",
+  "video_end": "02:19:54",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "stage-changeover",
+   "dead-air",
+   "boundary-segment",
+   "schedule-gap",
+   "room-turnaround"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=7975s",
+  "one_liner": "A roughly seven-minute stage changeover on the main-stage livestream between Freddy Lecue's Wells Fargo fraud-detection talk and Aman Singh's Arca talk, with no transcribed speech until a single \"All right.\" opens the Arca talk at 11:07:46 AM ET."
+ },
+ {
+  "file": "018-inside-arca-s-long-horizon-agents-that-run-the-business.md",
+  "session_id": "018",
+  "title": "Inside Arca\u2019s long-horizon agents that run the business",
+  "speakers": [
+   "Aman Singh"
+  ],
+  "start_wall": "11:07:46 AM ET",
+  "end_wall": "11:21:13 AM ET",
+  "video_start": "02:19:54",
+  "video_end": "02:33:21",
+  "session_type": "talk",
+  "tags": [
+   "long-horizon-agents",
+   "ai-native-company",
+   "wealth-management",
+   "signals-engine",
+   "agent-memory",
+   "human-in-the-loop",
+   "financial-services"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=8394s",
+  "one_liner": "Arca, an \"AI native\" wealth-management services firm, gives agents four primitives (signals, operational context, a harness with persistent memory, and human collaboration) so they own 10-day client goals end to end \u2014 and the firm steers the business by steering its agents."
+ },
+ {
+  "file": "019-transition-between-arca-talk-and-intent-based-auth-panel.md",
+  "session_id": "019",
+  "title": "Transition between Arca talk and Intent Based Auth panel (~9.7 min, applause/room changeover/dead air)",
+  "speakers": [],
+  "start_wall": "11:21:14 AM ET",
+  "end_wall": "11:31:05 AM ET",
+  "video_start": "02:33:22",
+  "video_end": "02:43:13",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "room-changeover",
+   "dead-air",
+   "stage-transition",
+   "panel-setup",
+   "boundary-segment"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=9202s",
+  "one_liner": "A roughly 10-minute stage turnover after the Arca talk: the stream stays live through applause and room changeover with no transcribed speech, until two Intent Based Auth panelists greet each other as their microphones go live at the panel's start."
+ },
+ {
+  "file": "020-intent-based-auth-panel-runtime-authorization-for-agents.md",
+  "session_id": "020",
+  "title": "Intent Based Auth",
+  "speakers": [
+   "Allie Howe",
+   "Ian Livingstone",
+   "Michael Davis",
+   "Dick Hardt"
+  ],
+  "start_wall": "11:31:05 AM ET",
+  "end_wall": "12:14:14 PM ET",
+  "video_start": "02:43:13",
+  "video_end": "03:26:22",
+  "session_type": "panel",
+  "tags": [
+   "intent-based-auth",
+   "runtime-authorization",
+   "agent-security",
+   "aauth",
+   "agentic-commerce",
+   "agent-identity",
+   "audit-logs"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=9793s",
+  "one_liner": "A Keycard-moderated panel on runtime authorization for AI agents: approve each action against the agent's mission rather than standing OAuth scopes, using AAuth missions and budgets, supervising agents, egress proxies, and tamper-proof audit logs."
+ },
+ {
+  "file": "021-panel-close-stage-transition-applause-before-lunch-talk.md",
+  "session_id": "021",
+  "title": "Panel close / stage transition (applause before lunch-talk block)",
+  "speakers": [],
+  "start_wall": "12:14:15 PM ET",
+  "end_wall": "12:14:51 PM ET",
+  "video_start": "03:26:23",
+  "video_end": "03:26:59",
+  "session_type": "filler",
+  "tags": [
+   "filler",
+   "applause",
+   "stage-transition",
+   "panel-close",
+   "intent-based-auth",
+   "lunch-block",
+   "boundary-segment"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=12383s",
+  "one_liner": "A 36-second bridge: the \"Intent Based Auth\" panel ends in mutual thanks and applause, and the stream holds on the stage until the first extra lunch talk begins."
+ },
+ {
+  "file": "022-extra-lunch-talk-financial-planners-building-their-own-agents.md",
+  "session_id": "022",
+  "title": "We Let Our Financial Planners Write the Agents",
+  "speakers": [
+   "Matt Ragone"
+  ],
+  "start_wall": "12:14:52 PM ET",
+  "end_wall": "12:23:41 PM ET",
+  "video_start": "03:27:00",
+  "video_end": "03:35:49",
+  "session_type": "talk",
+  "tags": [
+   "claude-skills",
+   "no-code-agents",
+   "financial-planning",
+   "domain-experts",
+   "human-in-the-loop",
+   "skills-governance"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=12420s",
+  "one_liner": "A certified financial planner at Range explains how non-coding planners wrote the Claude skills they use daily, and gives a five-step method (pick, teach, pack, test, ship) for getting domain experts to author their own agents."
+ },
+ {
+  "file": "023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped.md",
+  "session_id": "023",
+  "title": "Your Agent Is a Lethal Trifecta",
+  "speakers": [
+   "Kim Maida"
+  ],
+  "start_wall": "12:23:49 PM ET",
+  "end_wall": "12:49:16 PM ET",
+  "video_start": "03:35:57",
+  "video_end": "04:01:24",
+  "session_type": "talk",
+  "tags": [
+   "agent-security",
+   "lethal-trifecta",
+   "token-exchange",
+   "intent-based-authorization",
+   "oauth",
+   "mcp",
+   "task-scoped-access",
+   "nonhuman-identity"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=12957s",
+  "one_liner": "A Keycard demo talk that first lets an overprivileged on-call triage agent leak customer PII and drop a production database, then rebuilds the same agent with OAuth 2.0 token exchange and intent-based authorization so every tool call gets an ephemeral, task-scoped, attributable credential governed by policy."
+ },
+ {
+  "file": "024-transition-applause-between-lunch-talks.md",
+  "session_id": "024",
+  "title": "Transition/applause between lunch talks",
+  "speakers": [],
+  "start_wall": "12:49:16 PM ET",
+  "end_wall": "12:49:37 PM ET",
+  "video_start": "04:01:24",
+  "video_end": "04:01:45",
+  "session_type": "filler",
+  "tags": [
+   "filler",
+   "applause",
+   "stage-transition",
+   "lunch-talks",
+   "boundary-segment",
+   "networking-break"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=14484s",
+  "one_liner": "A 21-second applause and changeover window on the livestream between two extra lunch talks \u2014 Kim Maida's Keycard talk ending and Branislav Brzak's GPU side-channel talk beginning \u2014 inside the agenda's 12:15-2:05pm networking break."
+ },
+ {
+  "file": "025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your.md",
+  "session_id": "025",
+  "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+  "speakers": [
+   "Branislav Brzak"
+  ],
+  "start_wall": "12:49:36 PM ET",
+  "end_wall": "1:02:57 PM ET",
+  "video_start": "04:01:44",
+  "video_end": "04:15:05",
+  "session_type": "talk",
+  "tags": [
+   "gpu-security",
+   "side-channel",
+   "nvidia-mig",
+   "nvlink",
+   "llm-fingerprinting",
+   "timing-analysis",
+   "multi-tenancy",
+   "threat-detection"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=14504s",
+  "one_liner": "A GPU co-tenant can fingerprint your LLM from timing alone \u2014 architecture at 97% accuracy and decode speed at 99.3% on real H100s \u2014 without root, an exploit, or ever touching your data."
+ },
+ {
+  "file": "026-transition-between-pre-recorded-lunch-talks-applause-stream.md",
+  "session_id": "026",
+  "title": "Transition between pre-recorded lunch talks (applause / stream filler)",
+  "speakers": [],
+  "start_wall": "1:02:57 PM ET",
+  "end_wall": "1:03:23 PM ET",
+  "video_start": "04:15:05",
+  "video_end": "04:15:31",
+  "session_type": "filler",
+  "tags": [
+   "filler",
+   "applause",
+   "stream-transition",
+   "lunch-talks",
+   "boundary-segment",
+   "networking-break"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=15305s",
+  "one_liner": "A 26-second applause and stream-filler window between two pre-recorded extra lunch talks \u2014 Branislav Brzak's GPU side-channel talk ending and the Railway \"SaaS layer\" talk beginning \u2014 inside the agenda's 12:15pm-2:05pm Networking Break."
+ },
+ {
+  "file": "027-extra-lunch-talk-become-your-company-s-saas-layer-principles.md",
+  "session_id": "027",
+  "title": "Become your company's SaaS layer \u2014 principles for building polished internal tools with agents (Railway)",
+  "speakers": [
+   "Unnamed Railway engineer"
+  ],
+  "start_wall": "1:03:22 PM ET",
+  "end_wall": "1:16:40 PM ET",
+  "video_start": "04:15:30",
+  "video_end": "04:28:48",
+  "session_type": "talk",
+  "tags": [
+   "internal-tools",
+   "saas-replacement",
+   "agents",
+   "product-polish",
+   "agent-skills",
+   "verification",
+   "ux-patterns",
+   "railway"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=15330s",
+  "one_liner": "A Railway engineer who replaced his company's marketing SaaS with one agent-built internal tool explains the product-polish patterns agents never add on their own, packaging opinions as agent skills, and the end-to-end verification loop that closes the gap between one-shot software and tools people actually love."
+ },
+ {
+  "file": "028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies.md",
+  "session_id": "028",
+  "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+  "speakers": [
+   "Hrishi Olickel"
+  ],
+  "start_wall": "1:16:49 PM ET",
+  "end_wall": "1:38:04 PM ET",
+  "video_start": "04:28:57",
+  "video_end": "04:50:12",
+  "session_type": "talk",
+  "tags": [
+   "just-in-time-ontologies",
+   "model-priors",
+   "pareto-surfing",
+   "entity-resolution",
+   "data-pipelines",
+   "decision-models",
+   "llm-errors"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=16137s",
+  "one_liner": "Southbridge AI co-founder Hrishi Olickel argues that no universal schema exists \u2014 only four schemas that align solely at decision time \u2014 so build just-in-time ontologies, split intelligence into three pipeline roles, and let self-optimizing \"Pareto surfing\" pipelines drive an Ohio campaign-finance entity-resolution job from a projected $10,000 to $795."
+ },
+ {
+  "file": "029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina.md",
+  "session_id": "029",
+  "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+  "speakers": [
+   "Karthic Rao"
+  ],
+  "start_wall": "1:38:22 PM ET",
+  "end_wall": "1:53:48 PM ET",
+  "video_start": "04:50:30",
+  "video_end": "05:05:56",
+  "session_type": "talk",
+  "tags": [
+   "regulated-ai",
+   "workflow-engineering",
+   "determinism-vs-judgment",
+   "wealth-management",
+   "compliance",
+   "model-routing",
+   "human-in-the-loop"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=17430s",
+  "one_liner": "An extra lunch talk from Perpetual's CTO arguing that reliable AI in regulated finance comes from deliberately placing the boundary between deterministic compiled workflows and minimal, typed model judgment - not from choosing \"more agency\" or \"less agency\"."
+ },
+ {
+  "file": "030-extra-lunch-talk-flywire-s-internal-ai-platform-structured-wo.md",
+  "session_id": "030",
+  "title": "Extra lunch talk: Flywire's internal AI platform \u2014 structured workflow automation (Orbit on the Victoria PaaS)",
+  "speakers": [
+   "Edu",
+   "Javi"
+  ],
+  "start_wall": "1:54:11 PM ET",
+  "end_wall": "1:56:54 PM ET",
+  "video_start": "05:06:19",
+  "video_end": "05:09:02",
+  "session_type": "talk",
+  "tags": [
+   "flywire",
+   "internal-ai-platform",
+   "workflow-automation",
+   "orbit",
+   "victoria-paas",
+   "compliance",
+   "truncated-talk"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=18379s",
+  "one_liner": "Two Flywire engineers open their lunch talk on structured agentic workflow automation \u2014 Flywire's compliance context, the Victoria PaaS, and the Orbit platform \u2014 before the captured livestream audio cuts off after less than three minutes."
+ },
+ {
+  "file": "031-great-agents-start-with-great-infrastructure-modal-sandboxes.md",
+  "session_id": "031",
+  "title": "Great Agents Start with Great Infrastructure",
+  "speakers": [
+   "Akshat Bubna"
+  ],
+  "start_wall": "1:56:55 PM ET",
+  "end_wall": "2:11:19 PM ET",
+  "video_start": "05:09:03",
+  "video_end": "05:23:27",
+  "session_type": "talk",
+  "tags": [
+   "modal",
+   "agent-infrastructure",
+   "sandboxes",
+   "ai-agents",
+   "cloud-platform",
+   "observability",
+   "scaling"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=18543s",
+  "one_liner": "Modal CTO Akshat Bubna shows what agents actually need from infrastructure \u2014 sandboxes holding multiple containers and sidecars, shared volumes, snapshots, path-level network control, and agent-facing observability \u2014 backing workloads like Hebbia's agent-per-spreadsheet-cell at up to 10,000 sandboxes per second."
+ },
+ {
+  "file": "032-hold-after-modal-talk-ends-early-no-speech-or-ocr-for-10-5.md",
+  "session_id": "032",
+  "title": "Hold after Modal talk ends early: no speech or OCR for 10.5 minutes before the Vals AI session",
+  "speakers": [],
+  "start_wall": "2:11:20 PM ET",
+  "end_wall": "2:21:50 PM ET",
+  "video_start": "05:23:28",
+  "video_end": "05:33:58",
+  "session_type": "dead-air",
+  "tags": [
+   "dead-air",
+   "hold",
+   "stage-changeover",
+   "schedule-variance",
+   "no-speech",
+   "livestream-gap"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=19408s",
+  "one_liner": "After the Modal talk closed at 2:11:19 PM, about 12 minutes ahead of its 2:23 PM agenda slot, the livestream held for 10.5 minutes with no speech and no readable on-screen text until Rayan Krishnan opened the Vals AI session at 2:21:49 PM."
+ },
+ {
+  "file": "033-beyond-the-model-card-the-jagged-frontier-of-ai-in-finance.md",
+  "session_id": "033",
+  "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+  "speakers": [
+   "Rayan Krishnan"
+  ],
+  "start_wall": "2:21:50 PM ET",
+  "end_wall": "2:31:38 PM ET",
+  "video_start": "05:33:58",
+  "video_end": "05:43:46",
+  "session_type": "talk",
+  "tags": [
+   "evaluation",
+   "benchmarks",
+   "finance",
+   "reward-hacking",
+   "model-routing",
+   "cost-optimization",
+   "vals-ai"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=20038s",
+  "one_liner": "Rayan Krishnan of Vals AI argues that model cards hide a jagged, task-dependent frontier, so firms should mine their own work history into rigorous evals to pick models, cut spend, and codify their competitive advantage."
+ },
+ {
+  "file": "034-break-stage-changeover-after-vals-ai-evals-talk-12-min-no.md",
+  "session_id": "034",
+  "title": "Break / stage changeover after the Vals AI evals talk (12 min, no speech on stream)",
+  "speakers": [],
+  "start_wall": "2:31:38 PM ET",
+  "end_wall": "2:43:50 PM ET",
+  "video_start": "05:43:46",
+  "video_end": "05:55:58",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "stage-changeover",
+   "dead-air",
+   "boundary-segment",
+   "schedule-drift",
+   "kepler-fireside-start"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=20626s",
+  "one_liner": "A roughly 12-minute stage changeover on the main-stage livestream between Rayan Krishnan's Vals AI finance-evals talk and the Kepler fireside chat with Jack Woodruff, with no transcribed speech in between \u2014 the Vals talk closed with \"Thanks, everyone.\" at 2:31:37 PM ET and Vinoo Ganesh opened the fireside early at 2:43:50 PM ET."
+ },
+ {
+  "file": "035-ai-and-the-future-of-fundamental-investing-kepler-fireside.md",
+  "session_id": "035",
+  "title": "AI and the Future of Fundamental Investing",
+  "speakers": [
+   "Jack Woodruff",
+   "Vinoo Ganesh"
+  ],
+  "start_wall": "2:43:50 PM ET",
+  "end_wall": "2:51:42 PM ET",
+  "video_start": "05:55:58",
+  "video_end": "06:03:50",
+  "session_type": "fireside",
+  "tags": [
+   "fundamental-investing",
+   "hedge-funds",
+   "alpha-generation",
+   "analyst-roles",
+   "time-management",
+   "equity-research",
+   "fireside"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=21358s",
+  "one_liner": "In a Kepler-hosted fireside, former Citadel PM and Candlestick Capital founder Jack Woodruff argues that AI will not change long-term stock picking or divergent-view alpha, but will flatten analyst prep work and turn investing into a time-management game where humans stay the bottleneck."
+ },
+ {
+  "file": "036-shipping-like-a-startup-regulated-like-a-bank-self-hosting.md",
+  "session_id": "036",
+  "title": "Shipping like a startup, regulated like a bank",
+  "speakers": [
+   "David Abitbol"
+  ],
+  "start_wall": "2:51:42 PM ET",
+  "end_wall": "3:03:15 PM ET",
+  "video_start": "06:03:50",
+  "video_end": "06:15:23",
+  "session_type": "talk",
+  "tags": [
+   "self-hosting",
+   "open-source-models",
+   "glm",
+   "gpu-inference",
+   "revolut",
+   "fintech-compliance",
+   "ai-coding-tools"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=21830s",
+  "one_liner": "Revolut's David Abitbol explains how self-hosting GLM on 56 dedicated B200 GPUs cut the bank's token bill to one-tenth, lifted engineering lead time 70%, and still passed EU bank compliance through sandboxing and human-in-the-loop controls."
+ },
+ {
+  "file": "037-break-room-turnaround-in-simons-room-after-shipping-like-a.md",
+  "session_id": "037",
+  "title": "Break / room turnaround in Simons Room: after \\\"Shipping like a startup, regulated like a bank\\\" (David Abitbol, Revolut), before \\\"Everyone Has AI. Who Has the Advantage?\\\" (Sid Pednekar) - 13.6 min with no transcribed audio",
+  "speakers": [],
+  "start_wall": "3:03:14 PM ET",
+  "end_wall": "3:16:49 PM ET",
+  "video_start": "06:15:22",
+  "video_end": "06:28:57",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "room-turnaround",
+   "stage-changeover",
+   "dead-air",
+   "schedule-drift",
+   "simons-room",
+   "no-speech"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=22522s",
+  "one_liner": "After David Abitbol closed the Revolut talk at 3:03:13 PM, the Simons Room stage turned over for 13 minutes and 35 seconds with no transcribed audio, until Sid Pednekar opened \"Everyone Has AI. Who Has the Advantage?\" at 3:16:49 PM."
+ },
+ {
+  "file": "038-everyone-has-ai-who-has-the-advantage-three-pillars-design.md",
+  "session_id": "038",
+  "title": "Everyone Has AI. Who Has the Advantage?",
+  "speakers": [
+   "Sid Pednekar"
+  ],
+  "start_wall": "3:16:49 PM ET",
+  "end_wall": "3:34:48 PM ET",
+  "video_start": "06:28:57",
+  "video_end": "06:46:56",
+  "session_type": "talk",
+  "tags": [
+   "ai-strategy",
+   "judgment",
+   "workflow-redesign",
+   "shared-capabilities",
+   "enterprise-adoption",
+   "org-design",
+   "flywheel"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=23337s",
+  "one_liner": "With AI access now universal, Sid Pednekar argues that advantage comes from judgment plus three pillars: design the right problem, build shared capabilities, and compound the advantage."
+ },
+ {
+  "file": "039-untranscribed-gap-after-afternoon-talk-before-mc-returns.md",
+  "session_id": "039",
+  "title": "Untranscribed gap after afternoon talk, before MC returns (12m44s; room changeover / idle stream)",
+  "speakers": [],
+  "start_wall": "3:34:49 PM ET",
+  "end_wall": "3:47:31 PM ET",
+  "video_start": "06:46:57",
+  "video_end": "06:59:39",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "dead-air",
+   "room-changeover",
+   "idle-stream",
+   "schedule-drift",
+   "mc-return",
+   "boundary-record"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=24417s",
+  "one_liner": "After Sid Pednekar's \"Thank you.\" closed the last afternoon stage talk at 3:34:48 PM, the livestream carried no transcribed speech for 12 minutes 42 seconds, until an off-stage voice-over welcomed MC Alex Lieberman back at 3:47:31 PM to open the closing-keynote block."
+ },
+ {
+  "file": "040-welcome-back-brief-mc-return-alex-lieberman-opening-the-clos.md",
+  "session_id": "040",
+  "title": "Welcome Back - Featured Keynotes",
+  "speakers": [
+   "Alex Lieberman",
+   "Unidentified stage announcer"
+  ],
+  "start_wall": "3:47:31 PM ET",
+  "end_wall": "3:47:35 PM ET",
+  "video_start": "06:59:40",
+  "video_end": "06:59:43",
+  "session_type": "announcement",
+  "tags": [
+   "mc-segment",
+   "welcome-back",
+   "closing-keynote-block",
+   "stage-intro",
+   "announcement",
+   "day-one"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=25180s",
+  "one_liner": "A voice-over announcer brings MC Alex Lieberman back to the main stage to open the closing keynote block of day one at AI Engineer New York 2026."
+ },
+ {
+  "file": "041-untranscribed-gap-inside-the-welcome-back-block-10-3-min.md",
+  "session_id": "041",
+  "title": "Untranscribed gap inside the welcome-back block (~10.3 min; possible sponsor reel, video, or dead air before the MC resumes)",
+  "speakers": [],
+  "start_wall": "3:47:35 PM ET",
+  "end_wall": "3:57:57 PM ET",
+  "video_start": "06:59:43",
+  "video_end": "07:10:05",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "dead-air",
+   "untranscribed-gap",
+   "welcome-back",
+   "closing-block",
+   "stream-hold",
+   "schedule-drift"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=25183s",
+  "one_liner": "Between video 06:59:43 and 07:10:05 (3:47:35 PM to 3:57:57 PM), the main-stage livestream produced no transcribed speech inside the welcome-back block, leaving a 10-minute-22-second hold between Alex Lieberman's cut-off self-introduction and his mid-sentence resume."
+ },
+ {
+  "file": "042-mc-resumes-sponsor-acknowledgments-conference-reflections.md",
+  "session_id": "042",
+  "title": "Welcome Back - Featured Keynotes",
+  "speakers": [
+   "Alex Lieberman"
+  ],
+  "start_wall": "3:57:57 PM ET",
+  "end_wall": "4:02:23 PM ET",
+  "video_start": "07:10:05",
+  "video_end": "07:14:31",
+  "session_type": "announcement",
+  "tags": [
+   "mc-remarks",
+   "sponsor-acknowledgments",
+   "enterprise-ai",
+   "diffusion-gap",
+   "edge-city",
+   "adoption-stats",
+   "keynote-intro"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=25805s",
+  "one_liner": "MC Alex Lieberman returns after the afternoon break to thank the sponsor tiers, argues the conference content is \"surface area\" for hallway conversations, shares Tenex's enterprise AI diffusion ladder (90% LLM rollout, 60% trained users, 50% coding agents, 5% non-engineering agents), and introduces Frank Long of Coatue for \"A Hedge Fund as a Function.\""
+ },
+ {
+  "file": "043-a-hedge-fund-as-a-function-coatue.md",
+  "session_id": "043",
+  "title": "A Hedge Fund as a Function",
+  "speakers": [
+   "Frank Long"
+  ],
+  "start_wall": "4:02:12 PM ET",
+  "end_wall": "4:16:26 PM ET",
+  "video_start": "07:14:20",
+  "video_end": "07:28:34",
+  "session_type": "keynote",
+  "tags": [
+   "ai-investing",
+   "agent-architecture",
+   "hedge-fund",
+   "evaluation",
+   "hyperparameter-tuning",
+   "human-in-the-loop",
+   "coatue"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=26060s",
+  "one_liner": "Coatue Head of AI Frank Long models a hedge fund as a function that compresses external and internal context into one tuple \u2014 selection, size, timing \u2014 and decomposes it into evaluable steps, each run by the best of four runner types: code, statistics, LLMs, or people."
+ },
+ {
+  "file": "044-applause-stage-transition-after-frank-long-coatue-talk-19.md",
+  "session_id": "044",
+  "title": "Applause / stage transition after Frank Long (Coatue) talk",
+  "speakers": [],
+  "start_wall": "4:16:26 PM ET",
+  "end_wall": "4:16:45 PM ET",
+  "video_start": "07:28:34",
+  "video_end": "07:28:53",
+  "session_type": "break",
+  "tags": [
+   "filler",
+   "applause",
+   "stage-transition",
+   "voice-over-teaser",
+   "keynote-handoff",
+   "boundary-segment"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=26914s",
+  "one_liner": "A 19-second bridge after Frank Long's Coatue keynote: applause and stage changeover, closed by an off-stage MC voice-over that teases the next keynote, \"Frontier Models for Acting in Space and Time.\""
+ },
+ {
+  "file": "045-host-hand-off-mc-alex-lieberman-introduces-general-intuition.md",
+  "session_id": "045",
+  "title": "Host hand-off: MC Alex Lieberman introduces General Intuition CEO Pim de Witte (frontier models that act in space and time)",
+  "speakers": [
+   "Alex Lieberman",
+   "Pim de Witte"
+  ],
+  "start_wall": "4:16:45 PM ET",
+  "end_wall": "4:17:12 PM ET",
+  "video_start": "07:28:53",
+  "video_end": "07:29:20",
+  "session_type": "announcement",
+  "tags": [
+   "host-hand-off",
+   "speaker-introduction",
+   "alex-lieberman",
+   "general-intuition",
+   "pim-de-witte",
+   "keynote-intro",
+   "frontier-models"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=26933s",
+  "one_liner": "A 27-second MC hand-off that bridges Frank Long's Coatue keynote to the \"Frontier Models for Acting in Space and Time\" keynote by introducing General Intuition co-founder and CEO Pim de Witte."
+ },
+ {
+  "file": "046-frontier-models-for-acting-in-space-and-time-pixels-to-actio.md",
+  "session_id": "046",
+  "title": "Frontier Models for Acting in Space and Time",
+  "speakers": [
+   "Pim de Witte"
+  ],
+  "start_wall": "4:16:45 PM ET",
+  "end_wall": "4:35:42 PM ET",
+  "video_start": "07:28:53",
+  "video_end": "07:47:50",
+  "session_type": "keynote",
+  "tags": [
+   "pixel-to-action",
+   "world-models",
+   "robotics",
+   "game-data",
+   "foundation-models",
+   "agents"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=26933s",
+  "one_liner": "General Intuition CEO Pim de Witte presents one model family that converts pixels to actions in real time \u2014 trained on Medal's game-play action data, it plays video games at the highest level and controls over 10 robot types, on the theory that scaling pixel space repeats Anthropic's bet on coding space."
+ },
+ {
+  "file": "047-audience-q-a-after-general-intuition-keynote-jepa-comparison.md",
+  "session_id": "047",
+  "title": "Audience Q&A after General Intuition keynote: JEPA comparison, action labels vs world models",
+  "speakers": [
+   "Pim de Witte",
+   "Unidentified audience member"
+  ],
+  "start_wall": "4:34:04 PM ET",
+  "end_wall": "4:35:42 PM ET",
+  "video_start": "07:46:12",
+  "video_end": "07:47:50",
+  "session_type": "qna",
+  "tags": [
+   "audience-qna",
+   "jepa",
+   "action-labels",
+   "world-models",
+   "foundation-models",
+   "general-intuition",
+   "embodied-ai"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=27972s",
+  "one_liner": "In a 98-second closing Q&A, Pim de Witte distinguished General Intuition's action-label-trained foundation models from JEPA, calling JEPA \"the more correct approach\" in the limit but far less practical short-term."
+ },
+ {
+  "file": "048-stage-introduction-of-the-final-talk-of-the-day-nous-researc.md",
+  "session_id": "048",
+  "title": "Stage introduction of the final talk of the day (Nous Research CEO)",
+  "speakers": [
+   "Alex Lieberman"
+  ],
+  "start_wall": "4:35:43 PM ET",
+  "end_wall": "4:36:11 PM ET",
+  "video_start": "07:47:51",
+  "video_end": "07:48:19",
+  "session_type": "announcement",
+  "tags": [
+   "mc-handoff",
+   "stage-introduction",
+   "keynote-intro",
+   "nous-research",
+   "hermes-keynote",
+   "boundary-segment",
+   "closing-block"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=28071s",
+  "one_liner": "MC Alex Lieberman uses one sentence to open the last talk of day one, welcoming Nous Research CEO Dillon Rolnick to the stage for the \"Hermes gives you wings\" closing keynote."
+ },
+ {
+  "file": "049-hermes-gives-you-wings-build-agents-on-open-foundations-you.md",
+  "session_id": "049",
+  "title": "Hermes gives you wings: Build on open foundations.",
+  "speakers": [
+   "Dillon Rolnick"
+  ],
+  "start_wall": "4:35:43 PM ET",
+  "end_wall": "4:51:18 PM ET",
+  "video_start": "07:47:51",
+  "video_end": "08:03:26",
+  "session_type": "keynote",
+  "tags": [
+   "open-source",
+   "hermes-agent",
+   "nous-research",
+   "ai-economics",
+   "vendor-lock-in",
+   "moats",
+   "keynote"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=28071s",
+  "one_liner": "Nous Research CEO Dillon Rolnick argues that commoditized models leave frontier labs two ways to recoup their trillion-dollar bets \u2014 trap business users at the agent layer or \"build God\" and aim it at lucrative problems like finance \u2014 so companies should build agents on open foundations they own, such as the MIT-licensed Hermes Agent."
+ },
+ {
+  "file": "050-voice-over-hand-off-mc-returns-for-closing-remarks.md",
+  "session_id": "050",
+  "title": "Voice-over hand-off: MC returns for closing remarks",
+  "speakers": [
+   "Unidentified announcer",
+   "Alex Lieberman"
+  ],
+  "start_wall": "4:51:19 PM ET",
+  "end_wall": "4:51:29 PM ET",
+  "video_start": "08:03:27",
+  "video_end": "08:03:37",
+  "session_type": "announcement",
+  "tags": [
+   "closing-remarks",
+   "mc-hand-off",
+   "voice-over",
+   "stage-announcement",
+   "day-one-wrap"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=29007s",
+  "one_liner": "An off-stage announcer hands the stage back to MC Alex Lieberman for the day-one closing remarks, and Lieberman opens with \"Okay, let's close this thing out.\""
+ },
+ {
+  "file": "051-closing-remarks-speaker-applause-sponsors-housekeeping-netwo.md",
+  "session_id": "051",
+  "title": "Closing Remarks",
+  "speakers": [
+   "Alex Lieberman"
+  ],
+  "start_wall": "4:51:19 PM ET",
+  "end_wall": "4:52:55 PM ET",
+  "video_start": "08:03:27",
+  "video_end": "08:05:03",
+  "session_type": "announcement",
+  "tags": [
+   "closing-remarks",
+   "mc",
+   "day-one-wrap",
+   "sponsors",
+   "housekeeping",
+   "networking",
+   "edge-city"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=29007s",
+  "one_liner": "MC Alex Lieberman closes day one of AI Engineer NYC 2026 with applause for the speakers, thanks to the sponsors, and two housekeeping items: go talk to humans tonight, and come back before 9 a.m. tomorrow."
+ },
+ {
+  "file": "052-silence-after-final-sign-off-until-the-livestream-cuts-appla.md",
+  "session_id": "052",
+  "title": "Silence after final sign-off until the livestream cuts (applause or outro, untranscribed)",
+  "speakers": [],
+  "start_wall": "4:52:56 PM ET",
+  "end_wall": "4:53:42 PM ET",
+  "video_start": "08:05:04",
+  "video_end": "08:05:50",
+  "session_type": "dead-air",
+  "tags": [
+   "dead-air",
+   "stream-end",
+   "end-of-day",
+   "sign-off",
+   "applause-or-outro",
+   "no-speech",
+   "boundary-record"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=29104s",
+  "one_liner": "After the final sign-off of the closing remarks at 4:52:53 PM, the day-one livestream ran 46 more seconds with no transcribed speech, and the broadcast ended at 4:53:42 PM ET."
+ }
+]

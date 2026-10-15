@@ -1,0 +1,217 @@
+[
+ {
+  "slug": "aaron-linsky",
+  "name": "Aaron Linsky",
+  "role": "Head of Product Engineering",
+  "company": "Bridgewater",
+  "context": "Vault: Making Unstructured Data Work for Investing (Bridgewater) \u2014 data platform lessons for humans and agents",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "akshat-bubna",
+  "name": "Akshat Bubna",
+  "role": "CTO",
+  "company": "Modal",
+  "context": "Great Agents Start with Great Infrastructure (Modal sandboxes, volumes, sidecars; pets-cattle-microbes)",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "alex-lieberman",
+  "name": "Alex Lieberman",
+  "role": "Managing Partner",
+  "company": "Tenex",
+  "context": "Welcome remarks: MC Alex Lieberman on Edge City, conference framing, sponsor thanks, first-keynote intro",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "allie-howe",
+  "name": "Allie Howe",
+  "role": "Member of Technical Staff",
+  "company": "Keycard",
+  "context": "Intent Based Auth (panel): runtime authorization for agents using intent, AOF budgets, sandboxing, audit logs",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "aman-singh",
+  "name": "Aman Singh",
+  "role": "Lead AI Engineer",
+  "company": "Arca",
+  "context": "Inside Arca's long-horizon agents that run the business",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "aparna-dhinakaran",
+  "name": "Aparna Dhinakaran",
+  "role": "Co-Founder & Chief Product Officer",
+  "company": "Arize AI",
+  "context": "Host hand-off introducing Aparna Dhinakaran (Arize AI)",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "belinda-neal",
+  "name": "Belinda Neal",
+  "role": "Managing Director, Financial Services",
+  "company": "Anthropic",
+  "context": "Anthropic: Accelerating frontier AI in Financial Services (frontier of intelligence, five-layer agent foundation, Claude",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "branislav-brzak",
+  "name": "Branislav Brzak",
+  "role": "",
+  "company": "",
+  "context": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "dillon-rolnick",
+  "name": "Dillon Rolnick",
+  "role": "CEO",
+  "company": "Nous Research",
+  "context": "Hermes gives you wings: build agents on open foundations you own",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "edu",
+  "name": "Edu",
+  "role": "",
+  "company": "",
+  "context": "Extra lunch talk: Flywire's internal AI platform \u2014 structured workflow automation (Orbit on the Victoria PaaS)",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "frank-long",
+  "name": "Frank Long",
+  "role": "Head of AI",
+  "company": "Coatue",
+  "context": "A Hedge Fund as a Function (Coatue)",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "hrishi-olickel",
+  "name": "Hrishi Olickel",
+  "role": "",
+  "company": "",
+  "context": "Extra lunch talk: no universal schema \u2014 just-in-time ontologies, model priors, and Pareto surfing (Southbridge)",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "javi",
+  "name": "Javi",
+  "role": "",
+  "company": "",
+  "context": "Extra lunch talk: Flywire's internal AI platform \u2014 structured workflow automation (Orbit on the Victoria PaaS)",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "kartik-perplexity-cto-uncertain",
+  "name": "Kartik",
+  "role": "",
+  "company": "",
+  "context": "Extra lunch talk: reliable and intelligent workflows for finance, wealth, and insurance \u2014 determinism vs judgment bounda",
+  "missing": [
+   "company",
+   "bio"
+  ]
+ },
+ {
+  "slug": "keon-shahab",
+  "name": "Keon Shahab",
+  "role": "Applied AI Architect",
+  "company": "Anthropic",
+  "context": "Anthropic: Accelerating frontier AI in Financial Services (frontier of intelligence, five-layer agent foundation, Claude",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "kim-maida",
+  "name": "Kim Maida",
+  "role": "Founding GTM Engineer",
+  "company": "Keycard",
+  "context": "Extra lunch talk: Your Agent Is a Lethal Trifecta \u2014 task-scoped access with token exchange and intent-based authorizatio",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "lia-mcbride",
+  "name": "Lia McBride",
+  "role": "General Manager",
+  "company": "AI Engineer",
+  "context": "Show open + AIE welcome from GM Lia (Leah) McBride",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "matt-ragone",
+  "name": "Matt Ragone",
+  "role": "Financial Planner",
+  "company": "Range",
+  "context": "Extra lunch talk: financial planners building their own agents \u2014 a five-step method for expert-written Claude skills (Ra",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "rayan-krishnan",
+  "name": "Rayan Krishnan",
+  "role": "Co-Founder & CEO",
+  "company": "Vals AI",
+  "context": "Beyond the Model Card: The Jagged Frontier of AI in Finance (Vals AI index, finance agent benchmark, Val Smith)",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "sam-green",
+  "name": "Sam Green",
+  "role": "Team Lead, Applied AI - AIA Labs",
+  "company": "Bridgewater",
+  "context": "Vault: Making Unstructured Data Work for Investing (Bridgewater) \u2014 data platform lessons for humans and agents",
+  "missing": [
+   "bio"
+  ]
+ },
+ {
+  "slug": "sid-pednekar",
+  "name": "Sid Pednekar",
+  "role": "Head of Data and AI | Asset Management",
+  "company": "",
+  "context": "Everyone Has AI. Who Has the Advantage? (three pillars: design the right problem, build shared capabilities, compound th",
+  "missing": [
+   "company"
+  ]
+ }
+]

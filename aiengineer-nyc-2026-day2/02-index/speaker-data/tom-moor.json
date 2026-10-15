@@ -1,0 +1,18 @@
+{
+ "slug": "tom-moor",
+ "name": "Tom Moor",
+ "role": "Head of Engineering",
+ "company": "Linear",
+ "bio": "Tom Moor is the Head of Engineering at Linear, a purpose-built tool redefining how modern teams build software. He previously co-founded and scaled multiple SaaS startups including Abstract and Buffer. He draws on over a decade of experience building collaborative tools and design-led products.",
+ "linkedin": "https://www.linkedin.com/in/tom-moor-b6213b1ba/",
+ "twitter": "https://x.com/tommoor",
+ "website": "https://linear.app/",
+ "photo": "https://content-cdn.sessionboard.com/rYTXO8hQQHOTxqDVuL7T_headshot-1789391590605.png",
+ "sessions": [
+  {
+   "title": "Your Coding Agent Has a Context Problem",
+   "time": "11:05am - 11:23am",
+   "room": "McCarthy Room (Riverside Suite)"
+  }
+ ]
+}

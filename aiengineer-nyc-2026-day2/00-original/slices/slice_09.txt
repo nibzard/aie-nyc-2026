@@ -1,0 +1,339 @@
+# transcript slice 09
+window: t=16380..18200 (04:33:00..05:03:20 video time; 1:13:36 PM..1:43:56 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[04:32:02] Every week, analysts in the IMO are going to reconcile the numbers against the general ledger.
+[04:32:11] As they track down status from all 40 leads, they're also comparing actuals against the plan, then finally assembling the executive deck for the steering committee, which is going to include the CFO, the Chief Risk Officer, business unit heads, and the integration lead.
+[04:32:34] The engineering team builds an agent automate that first draft.
+[04:32:41] The agent then ingests the weekly updates, reconciles the ledger, runs variance math against the plan, and flags the initiatives that are falling behind.
+[04:32:53] Everything looks good, and they decide to run a four-week pilot.
+[04:32:58] The agents draft match the analyst reports line for line, so we can say that the tech works.
+[04:33:06] Now the question is, what value does that steering committee need before they can trust it to run the business?
+[04:33:16] First, the steering committee needs a written value case agreed upon before the agent ever touches production data.
+[04:33:26] In our example, that comes down to three specific metrics.
+[04:33:32] First, let's look at cycle time.
+[04:33:35] If that weekly report needs five business days to compile, right now, you're going to want to set a hard target such as two days.
+[04:33:45] Your second metric will be analyst capacity.
+[04:33:48] If four analysts spend half of their week building this deck, that is 80 hours a week the agent gives back.
+[04:33:59] That time counts as value only when the integration lead assigns it to the workstreams that are behind on their synergy targets and need help getting back on track.
+[04:34:12] Then you only count that value after netting out the compute, licensing, and human review costs of running the agent.
+[04:34:23] Your third metric is the most important one: detection time.
+[04:34:29] That is how long it takes from the first sign of a slip in the data to the moment the steering committee sees it.
+[04:34:37] Cutting the report from five days to two days does not guarantee that the committee sees that slip any sooner.
+[04:34:45] The agent has to catch it, and the value case measures that directly.
+[04:34:52] Every single metric requires a pre-deployment baseline.
+[04:34:56] If the IMO cannot state the baseline today, do not deploy.
+[04:35:01] If you can't measure where you started, you can never prove the agent moved the needle.
+[04:35:08] Next, the steering committee needs to know who owns the risk the agent creates.
+[04:35:16] We are going to apply the three lines model to the agent.
+[04:35:22] In the first line, management owns the controls.
+[04:35:25] The integration lead is the accountable executive.
+[04:35:29] She owns the agent's output exactly the way she owned the manual deck.
+[04:35:35] In the second line, risk and compliance oversee the agent and challenge how to run it.
+[04:35:43] How deep they go depends on the agent's exposure.
+[04:35:47] An internal draft scrubbed by a senior analyst warrants a very different review standard than an autonomous agent publishing figures straight to the board.
+[04:36:00] In the third line, internal audit provides assurance, deciding based on material risk when and how the agent enters the annual audit plan.
+[04:36:12] The agent also needs one employee assigned to oversee it every day.
+[04:36:18] In our example, that is the senior analyst who reviews the draft before it reaches the committee.
+[04:36:26] Her role requires four specific capabilities.
+[04:36:29] She has to first understand the operational boundaries.
+[04:36:34] She has to interpret its output with context.
+[04:36:39] She must have the authority to override or reverse it.
+[04:36:45] And she needs clear kill switch to shut it down safely the second it behaves unexpectedly.
+[04:36:54] Accountability also means defining where the agent's authority stops.
+[04:36:59] I document this in a one-page policy called the Human Work Standard.
+[04:37:05] For every fork in the process, it maps the decision, the human role authorized to make it.
+[04:37:13] The required evidence and the escalation path.
+[04:37:18] These decisions exist at every tier.
+[04:37:21] The senior analyst decides whether a variance is an accounting timing difference or a real cash shortfall.
+[04:37:30] The workstream lead decides how to remediate that shortfall, and the integration lead is going to decide whether to formally flag an initiative as at risk to the steering committee.
+[04:37:44] The engine prepares the analysis behind every one of those decisions, and it stops there.
+[04:37:52] The person who makes the decision owns the consequence.
+[04:37:57] So keeping these decisions with your team does not slow the agent down.
+[04:38:02] It can go into use while each role keeps its authority.
+[04:38:07] The one reason to delay deployment is a decision with no assigned owner.
+[04:38:14] This means if leadership has not agreed who declares an initiative off track, the agent flags lead to no action.
+[04:38:26] The third question is where the engineers in this room come in.
+[04:38:34] The evidence for greater autonomy comes from how the agent is built.
+[04:38:40] I look for three artifacts.
+[04:38:43] The first is an auditable decision log.
+[04:38:46] For every workstream the agent evaluates, it records the raw data ingested, the tool calls executed, the prompt, and the model versions.
+[04:38:58] Output generated along with the human sign-off.
+[04:39:04] Two engineering choices make that log airtight.
+[04:39:08] First, your core math and reconciliation rules must run in deterministic, finance-approved code, not generated as conversational prose from an LLM.
+[04:39:22] Second, treat the model's written summary as a helpful explanation, not proof.
+[04:39:29] Your real proof lives in the telemetry: what records were pulled, what deterministic tools ran, and who signed the review.
+[04:39:41] If reported savings do not match the general ledger, agent does not touch the number.
+[04:39:49] It flags the discrepancy and routes it up.
+[04:39:54] The second artifact is the model inventory record.
+[04:39:58] This captures the
+[04:40:02] First, the accountable executive, data lineage, dependencies across source systems, validation results, escalation path, and the kill switch runbook.
+[04:40:16] Most importantly, it documents your regression triggers, which are any updates to our prompt, base model, or source API that require full revalidation before running in production again.
+[04:40:31] Your third artifact, this is going to be the autonomy scorecard.
+[04:40:37] The steering committee uses it to grant autonomy in four stages.
+[04:40:43] Stage one is shadow mode.
+[04:40:45] The analyst builds the report as they do today.
+[04:40:49] The agent runs right alongside them, and the team compares the two.
+[04:40:54] Stage two is the supervised draft.
+[04:40:58] The agent compiles the first draft, and the senior analyst reviews every single line item.
+[04:41:06] Stage three is the exception ensemble, where the analyst reviews flagged initiatives plus a random sample of the clean ones.
+[04:41:17] Then we have stage four, where it's exceptions only.
+[04:41:22] The analyst reviews only high-risk anomalies, supported by periodic independent sampling.
+[04:41:30] Pay close attention to stage four, however, because once humans only look at exceptions, your biggest vulnerability is what the agent failed to flag.
+[04:41:42] So I advise tracking missed material issues through independent sampling.
+[04:41:48] Monitoring error severity and watching your override rate carefully.
+[04:41:54] A falling override rate does not automatically mean the agent is getting smarter.
+[04:41:59] It can also mean the depth of review has slipped.
+[04:42:03] So independent sampling tells you which one of these you are seeing.
+[04:42:09] The scorecard puts those control metrics side by side with your value metrics: cycle time, analyst hours deployed, and your detection time.
+[04:42:21] And with that single-page view, the steering committee can make clean, efficient, data-backed decisions to either promote the agent, hold it where it is, step it back, or down to supervised review stage.
+[04:42:39] So let's come back to the three questions.
+[04:42:44] Ask them of every agent you build, fund, or govern.
+[04:42:49] What value does it create?
+[04:42:52] Who is accountable for it?
+[04:42:55] And what evidence permits it to operate with autonomy?
+[04:43:00] In our M&A example today, the agent did not magically create the 400 million in synergies.
+[04:43:06] Procurement, supply chain, and operating leaders captured that value through the gritty work of integration.
+[04:43:14] But what the agent delivers is clear: verified evidence weeks ahead of schedule, giving leadership the runway to intervene while the deal's synergies can still be captured.
+[04:43:29] Building an agent that works is just the first step.
+[04:43:33] Answering those three questions is what earns it the trust to run at scale.
+[04:43:40] Thank you.
+[04:44:05] Hi, I'm Steve Jamison, AI research and engineering leader at Jellyfish.
+[04:44:09] I'm here to show you why tokens are the cheap part.
+[04:44:13] The research that I'll present is drawn from the Jellyfish platform, the industry's largest set of engineering workflow data joined to AI telemetry data.
+[04:44:23] It's no secret that AI costs are climbing.
+[04:44:26] They're up 60x from this time last year.
+[04:44:29] The use cases are wide and varied.
+[04:44:31] The models and harnesses are getting much better.
+[04:44:34] The implications are exciting, but discussions around budget and spend are not as much fun.
+[04:44:40] These conversations involve your peers and senior leadership and the board, not always the easiest audiences, especially when you don't have the right data.
+[04:44:49] And it's real money these days.
+[04:44:53] Output is up too.
+[04:44:55] Merge PRs per engineer are up 43% over the same one-year horizon.
+[04:45:00] This is phenomenal.
+[04:45:01] We've not seen productivity inputs like this, especially on this time scale.
+[04:45:08] There's plenty of research and anecdotal data to know that AI and agentic coding are driving these throughput gains.
+[04:45:15] Heck, even our charts show the correlation.
+[04:45:17] Notice where the inflection points are.
+[04:45:20] AI spend increased in early 2026 when throughput gains start a steady increase of their own.
+[04:45:27] There's a tension with these two numbers, though.
+[04:45:30] How do you reconcile them?
+[04:45:32] Spend is up 60x, throughput is also up 43%.
+[04:45:37] Is that good?
+[04:45:38] Bad?
+[04:45:39] 43% is a big number, but so is 60x.
+[04:45:44] How do you know if you're spending enough?
+[04:45:47] Is there more productivity gain locked behind a checkbook?
+[04:45:52] Should we increase spend 50%, 2x more?
+[04:45:57] Or how do you know if you spent too much?
+[04:46:00] I'm sure many of you have felt the tension here.
+[04:46:02] The CFO or board are asking for the receipts of the spend.
+[04:46:06] Can you show them?
+[04:46:08] Will merge PRs are up 43% satisfy them?
+[04:46:12] Also, what happens if you cap use and spend?
+[04:46:17] Are you stopping from setting tokens on fire, or are you stunting further efficiency gains?
+[04:46:23] You can ask peers at other companies what they're paying.
+[04:46:26] For many, it's still a moving target, though.
+[04:46:29] But how do you equate that to your org?
+[04:46:32] Surely, just comparing their bill to yours isn't adequate.
+[04:46:36] We've heard the reports of companies spending 100K, 500K, even millions on AI, then resetting their AI budgets as reality sets in.
+[04:46:50] Ultimately, these two numbers can't tell the story, and even together, they miss the biggest line on the cost side.
+[04:46:59] These two numbers leave out the biggest cost of all: developer salary.
+[04:47:04] AI is making developers more productive on a scale we haven't seen before.
+[04:47:09] It isn't just another tool; it's intelligence.
+[04:47:12] This intelligence dramatically changes how much each dev can produce.
+[04:47:17] That's why we need to think about its cost differently, not off to the side as overhead, but as part of what it takes to produce each PR.
+[04:47:26] We're going to call this intelligence costs of a PR.
+[04:47:34] What you pay your engineers plus what you pay for AI, put them together in one cost bucket.
+[04:47:41] AI is about 2.
+[04:47:43] 5% of the cost to produce another unit of merge code.
+[04:47:48] Salary is the other 97.
+[04:47:51] 5%.
+[04:47:52] This is in line with other reported figures, and this data is from August 2026.
+[04:47:59] Here, tokens are the cheap part.
+[04:48:03] But that's current relative costs, not dollars.
+[04:48:07] Let's look at what happened to the cost of a merged PR over the last year.
+[04:48:18] The dollar cost of a merged PR fell 26% over the last year.
+[04:48:23] Not PRs created, but PRs merged.
+[04:48:26] Review time is factored in, and some level of quality gates has been cleared.
+[04:48:32] That decline in cost per merged PR includes a 60x increase in AI costs over the same time frame.
+[04:48:39] The change is nearly universal too.
+[04:48:41] 83% of the companies we studied showed a drop in cost per PR.
+[04:48:46] What does this tell us?
+[04:48:48] The additional throughput gains are spreading salary thinner across PRs, and this is happening faster than the AI costs are increasing.
+[04:49:02] What's the range in token spend?
+[04:49:04] We ranked companies by token usage, then grouped them into quintiles or fifths.
+[04:49:11] The range here is quite large.
+[04:49:13] The lightest group, about 0.
+[04:49:16] 3% of the cost of a PR, is AI.
+[04:49:22] This represents about 60 million tokens per dev per month.
+[04:49:27] The top 20% of AI spend per dev, we're going to call the heaviest spend group.
+[04:49:34] There, 8.
+[04:49:35] 5% of the PR cost is AI.
+[04:49:38] This represents about 2.
+[04:49:40] 5 billion tokens per dev per month, about two orders of magnitude more than the lightest group.
+[04:49:47] We'll use these groups on the next slides to see how token spend influences other metrics.
+[04:49:54] First, PR throughput measured as merged PRs per dev, split by the same.
+[04:50:02] The same AI spend quintiles on the previous slide.
+[04:50:06] The bottom four-fifths of spenders saw PR throughput gains of around 40%, give or take.
+[04:50:14] But the heavy spend group improved more, at a 67% increase.
+[04:50:20] More AI spend led to more throughput gains.
+[04:50:27] Now let's look at the cost per PR.
+[04:50:30] Positive results are seen again across the board.
+[04:50:33] Cost per PR is dropping for all AI usage groups.
+[04:50:37] However, again, the heaviest fifth, so the companies that spent the most, improved the most.
+[04:50:46] They saw a cost per PR decrease of 32% over the last year.
+[04:50:53] The other four groups saw about a 25% decrease in cost per PR.
+[04:51:00] Investing in spending more on AI fueled more of an improvement in cost per PR compared to peers who leaned in less.
+[04:51:09] So we saw that the same as we saw in the population average.
+[04:51:16] Cost per PR changes are driven largely by PR throughput, not by AI spend.
+[04:51:22] The heavy spenders experienced PR throughput gains of 67% compared to about 40-ish percent for their peers.
+[04:51:31] Spreading the same salary across more PRs in the month has more of an effect than the rising AI costs, because tokens are the cheaper.
+[04:51:44] This is not to say that orgs should Light tokens on fire and spend with abandon.
+[04:51:50] Here we're looking at tokens used on the horizontal axis and cost per PR on the vertical axis.
+[04:51:56] There's a steep drop at the beginning, where relative small AI spend results in large gains initially.
+[04:52:04] As token usage increases, the cost per PR improvement decreases.
+[04:52:09] This is diminishing returns.
+[04:52:11] I want to stress, though, diminishing returns is not the same as no returns.
+[04:52:18] We're seeing that the top 10% are spending 8x the tokens compared to the median and achieving a 25% lower cost per PR.
+[04:52:33] There will be a time when tokens aren't the cheap part, but by and large, for most companies out in the wild, we're not close to that threshold.
+[04:52:44] More tokens leads to more PRs, which leads to a lower cost of delivery.
+[04:52:57] So far we've talked about companies.
+[04:53:00] Next I'd like to take a tangent and talk about a study we did with developers.
+[04:53:06] Here we looked at developer weeks with heavy token use compared to the same developer weeks with lower token use.
+[04:53:18] Here we saw the same phenomenon, just at the individual level.
+[04:53:23] Compare each developer's heavy agent skill weeks with their own weeks without skills.
+[04:53:31] They spend about twice as much on tokens.
+[04:53:37] Merge 27% more PRs and reach PR costs, and each PR costs about 18% less once salary and tokens are accounted together.
+[04:53:51] There are two fair curiosities I get when I talk about this work.
+[04:53:56] First, does faster work result in worse work?
+[04:54:03] And second, are the more PRs, the throughput gains that we're seeing, are they being driven by smaller chunks of work?
+[04:54:15] First curiosity is cheaper, faster work, worse work.
+[04:54:20] If AI makes PRs faster and cheaper, are we just shipping more mistakes?
+[04:54:25] One proxy for this is reverts, merge PRs that undo an earlier PR.
+[04:54:31] The heaviest fifth started lowest before most of the token growth, and revert rates drop slightly for every group, though these deltas are just slightly below the noise in the data.
+[04:54:44] It's not evidence of improvement here.
+[04:54:48] However, more importantly, we're not seeing any worrying signs of rampant or severe quality issues with higher token spends and faster PR throughput.
+[04:55:04] The second curiosity is throughput driven by smaller PRs, and this is demonstrably no, not smaller PRs.
+[04:55:16] In fact, AI is driving an increase in lines of code generated per PR.
+[04:55:24] This is no surprise to the devs in the room.
+[04:55:28] Raise your hand if you've rolled your eyes at verbose, unnecessary inline AI comments or a file full of mostly irrelevant tests.
+[04:55:38] Gen AI likes to generate code.
+[04:55:41] Also, the bar to create is low for devs, and there's a pull to do more per PR instead of spinning up another ticket.
+[04:55:48] It's just one, maybe two prompts, and I'll handle this edge case, or I can combine this and that element.
+[04:55:56] Fewer PRs to wrangle.
+[04:55:57] This doesn't mesh well with the PR review stress folks are feeling these days, though.
+[04:56:04] Also, AI is just becoming more capable, so we're getting more ambitious.
+[04:56:10] It is beyond this talk to dig into what's actually driving those level of lines of code changes.
+[04:56:18] However, the increase in PR throughput is not coming from smaller PRs.
+[04:56:24] This is intuitive for most, but it's still good to verify.
+[04:56:30] Back to the opening question: is 60x more spend worth 43% more output?
+[04:56:37] You can't tell in isolation.
+[04:56:40] You should track both.
+[04:56:42] They are important numbers, but they're supporting metrics.
+[04:56:45] AI spend per PR is the intelligence that you're buying as a resource to help make your devs go faster.
+[04:56:54] PRs per engineer is what you're getting with that spend.
+[04:56:59] However, looking at those hides the tradeoff.
+[04:57:07] But put salary into the equation and take the ratio of cost to throughput, and there you get your answer.
+[04:57:14] Cost per PR is down 26% over that same time period.
+[04:57:20] It's clear AI is driving cost efficiencies despite the increasing bills.
+[04:57:30] And the AI spend needed to get those efficiencies is small, relatively speaking.
+[04:57:37] AI is still a sliver of what a PR costs, 2.
+[04:57:42] 5% on average, under 10% for the heavy spender group.
+[04:57:47] Tokens are the cheap part.
+[04:57:50] In the range that we see, more spend kept paying.
+[04:57:54] Heavier token users saw 67% PR throughput gain compared to 40% for their lower-spend peers.
+[04:58:03] This drove cost per PR down 32% compared to about 25% for the lower-spend peers.
+[04:58:11] Looking at the PR cost-to-token ratio curve, the top 10% of company months by token usage resulted in 8x the tokens, but 25% lower cost per PR compared to the median.
+[04:58:30] AI is making developers more productive on a scale we haven't seen before.
+[04:58:35] It isn't just another tool; it is intelligence, which changes how much each dev can produce.
+[04:58:43] That's why we need to think about its cost differently, not off to the side as overhead, but part of what it takes to produce each PR.
+[04:58:53] We need to add the AI spend and the human spend, the human salary spend.
+[04:59:00] Together to calculate your real costs per PR.
+[04:59:04] This isn't to say spend frivolously.
+[04:59:07] Sure, you should watch for runaway jobs.
+[04:59:11] You should track your AI spend.
+[04:59:14] I'm not saying don't look at how much AI spend is going in each PR.
+[04:59:20] I'm saying don't let that be your driving metric.
+[04:59:24] A new framing might steer how and when you think about other investments, like integrating model routers, post-training your own model, implementing token limits, etc.
+[04:59:37] Will you get more efficiencies out of trying to control AI costs, or by continuing to invest in things that increase throughput, like more AI enablement?
+[04:59:48] Either way, track the total intelligence costs, human plus artificial, per PR every month, next to that AI bill, and next.
+[04:59:59] And next to the PR throughput.
+[05:00:02] How are you trending?
+[05:00:03] Is throughput continuing to improve?
+[05:00:06] What about those cost efficiencies, the cost to deliver?
+[05:00:10] Watch reverts and quality metrics beside all of this as a counterweight.
+[05:00:15] We don't need AI slop mucking up the gears.
+[05:00:19] So heading into budget season, bring cost per PR to the table, not just your token bill, not just the throughput bump.
+[05:00:28] The bill tells you what you spent.
+[05:00:31] Cost per PR tells you whether it worked.
+[05:00:35] And right now, for most companies, it says keep investing.
+[05:00:40] Tokens are the cheap part to get efficiency gains.
+[05:00:47] Well done.
+[05:00:47] You made it to the end.
+[05:00:49] Here's how you can stay up to date with our latest research, which again draws from the largest engineering workflow and AI telemetry dataset in the industry.
+[05:00:59] You can follow me on LinkedIn, my colleagues, or Jellyfish.
+[05:01:03] Subscribe to our Substack, or you can check out our Jellyfish blog on the website.
+[05:01:10] If you want help tracking your org's engineering workflow and AI effectiveness, including cost per merged PR, go to our website and book a demo, or reach out to me and I'll get you connected to the right folks.
+[05:01:25] Again, I'm Steve Jamison, AI research and engineering leader at Jellyfish.
+[05:01:29] Thanks for watching.
+[05:01:31] Cheers.
+[05:01:50] Okay.
+[05:01:50] Yep.
+[05:01:51] Do we want to call it Jiro or no?
+[05:01:55] Yeah, we could call it Jiro.
+[05:01:58] We could just be like, this is our agent Jiro.
+[05:02:01] I think it's also like a helpful potential cut, which is like, if we ask Jiro, like, you ready to get started?
+[05:02:06] Yeah, sure.
+[05:02:07] And then, like, you know, our video can move, Jiro can, like, draw something, acknowledgement, whatever.
+[05:02:12] Yeah, yeah, yeah.
+[05:02:12] Maybe like a transition pane.
+[05:02:14] Yeah.
+[05:02:15] Transition cut.
+[05:02:15] Okay.
+[05:02:15] Yeah.
+[05:02:16] All right, let's get started.
+[05:02:19] Thanks, guys, for coming to listen to a talk on the AIE online track.
+[05:02:22] I guess coming to listen is not quite right because obviously you guys are not in the room with us.
+[05:02:27] Making the long long trip.
+[05:02:28] Yeah, making the long long trip.
+[05:02:30] Yeah, yeah, yeah, yeah.
+[05:02:30] The arduous journey to...
+[05:02:31] com.
+[05:02:32] Whenever we do these kinds of talks, we always want to play around with the format a little bit.
+[05:02:35] You know, I'm not a huge fan of just standing in front of a loom and doing slides late at night in my room.
+[05:02:40] So I dragged Cliff along to do something a little bit different.
+[05:02:42] We wanted to do this in a little bit of a podcast format, and part of that is just because it's nice to have multiple people to, like, riff with and bounce ideas off of, but also because we wanted to find a way to include Jiro, our agent.
+[05:02:53] So obviously, you know, on our side, Jiro is not quite in the room with us.
+[05:02:57] He's kind of living on this computer.
+[05:02:59] But when you guys are watching this on YouTube, hopefully you'll have all three of us present.
+[05:03:03] You'll have me and Cliff talking, and then Jiro will be sort of in the middle drawing things out and describing things.
+[05:03:09] Jiro, please wave hi for the viewers.
+[05:03:11] Yeah, Jiro, please wave hi for the viewers.
+[05:03:14] So this talk is all about agentifying a sec master.
+[05:03:17] This is part of AIE New York, which of course is very, very focused on the finance and, like, AI in finance in 2026.
+[05:03:25] And so I think before we really dive in, maybe it makes sense for just us to briefly introduce ourselves.
+[05:03:32] And then we probably want to just give some definitions even, like what is a sec master?
+[05:03:35] What is a cloud agent?
+[05:03:36] How do you, like, use agents to do any of these things?
+[05:03:39] So I'll go first.
+[05:03:40] My name is Amol.
+[05:03:41] I am the CEO of a company called Nori Agentic.
+[05:03:43] And as you might have guessed, we spend a lot of time thinking about cloud agents and how we can put agents in the cloud to solve problems both in finance and kind of all in a bunch of different industries.
+[05:03:54] And yeah, Cliff.
+[05:03:55] I'm Cliff.
+[05:03:55] I'm the CTO at Nori Agentic.
+[05:03:57] We've been working on dev tooling AI agents, this form factor, for almost two years now.
+[05:04:02] Yeah.
+[05:04:03] And before that, I was working on data engineering and building out a new data platform for a startup hedge fund.
+[05:04:08] And before that, staff software engineering.
+[05:04:09] And there's kind of a through line in all those things with data engineering, dev tools, some amount of cloud infra, some amount of web apps.
+[05:04:16] Yeah, it's kind of funny, actually.
+[05:04:17] This is almost like a perfect talk for you.
+[05:04:18] Like, I'm sort of the odd person out.
+[05:04:20] Like, my background is in ML, so I've been doing the AI/ML thing for like 12 years, but, like, I don't know anything about finance.

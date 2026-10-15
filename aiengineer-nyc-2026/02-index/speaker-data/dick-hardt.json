@@ -1,0 +1,18 @@
+{
+ "slug": "dick-hardt",
+ "name": "Dick Hardt",
+ "role": "Founder",
+ "company": "AAuth",
+ "bio": "Dick Hardt is Founder and CEO of Hellō, a cooperative identity platform. He led the design of OAuth 2.0 and JSON Web Token, standards used by billions of people every day. He is now the author of AAuth, which does for agents what OAuth did for apps: gives agents access to resources without giving them credentials. Dick co-chairs the OpenID Foundation's IPSIE working group and co-authors OAuth 2.1, and previously founded ActiveState and Sxip Identity and led identity initiatives at Microsoft and Amazon. He lives in Lisbon with his wife and their dog.",
+ "linkedin": "https://www.linkedin.com/in/dickhardt/",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FFVQ1RcIIT5qRjZOzwQKJ_headshot-1789030075487.jpg",
+ "sessions": [
+  {
+   "title": "Intent Based Auth",
+   "time": "11:30am - 12:15pm",
+   "id": "e65f74f9-2174-406d-bd32-2d7073eb677d"
+  }
+ ]
+}

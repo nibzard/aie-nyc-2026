@@ -1,0 +1,18 @@
+{
+ "slug": "david-abitbol",
+ "name": "David Abitbol",
+ "role": "Ops & Infrastructure Leader",
+ "company": "Revolut",
+ "bio": "David is a strategy consultant specialized in financial services, passionate about tech with a side hobby of statistical modelling.",
+ "linkedin": "https://www.linkedin.com/in/abitbold/",
+ "twitter": "https://x.com/Revolut",
+ "website": "https://www.revolut.com/",
+ "photo": "https://content-cdn.sessionboard.com/wCpmgRZBTSmdfGcz9JOX_headshot-1788964010365.jpg",
+ "sessions": [
+  {
+   "title": "Shipping like a startup, regulated like a bank",
+   "time": "3:20pm - 3:38pm",
+   "id": "2a07765d-fe3a-48df-be0f-75c111dbee6a"
+  }
+ ]
+}

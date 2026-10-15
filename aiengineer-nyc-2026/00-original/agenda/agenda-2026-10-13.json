@@ -1,0 +1,546 @@
+{
+ "event": "AI Engineer NYC 2026",
+ "day": "2026-10-13",
+ "room": "Simons Room (Metropolitan East) = main stage / livestream track",
+ "stream_start_et": "08:47:52",
+ "stream_epoch_utc": 1791895672,
+ "stream_end_t": 29150,
+ "t_zero_note": "video t=0 == 08:47:52 ET",
+ "items": [
+  {
+   "id": "e02b5e28-52b1-419a-bd79-edc3a47dbeda",
+   "wall": "8:55am",
+   "wall_end": "8:56am",
+   "t": 428,
+   "t_end": 488,
+   "title": "AIE Welcome from GM, Lia McBride",
+   "format": "Lightning Talk (5-10mins)",
+   "type": "other",
+   "description": "",
+   "speakers": [
+    {
+     "name": "Lia McBride",
+     "role": "General Manager",
+     "company": "AI Engineer",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FZ3ANGDiPTaqhcXqD5Uf8_headshot-1791395186029.jpg"
+    }
+   ]
+  },
+  {
+   "id": "56c18e0d-b727-4f1a-a04e-ee769e5e45e9",
+   "wall": "8:56am",
+   "wall_end": "9:00am",
+   "t": 488,
+   "t_end": 728,
+   "title": "Welcome Remarks",
+   "format": "Lightning Talk (5-10mins)",
+   "type": "other",
+   "description": "",
+   "speakers": [
+    {
+     "name": "Alex Lieberman",
+     "role": "Managing Partner",
+     "company": "Tenex",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FJXUASg3YS0WtVnHzy2Vq_headshot-1791395273162.jpg"
+    }
+   ]
+  },
+  {
+   "id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6",
+   "wall": "9:00am",
+   "wall_end": "9:18am",
+   "t": 728,
+   "t_end": 1808,
+   "title": "Vault: Making Unstructured Data Work for Investing",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "description": "Model intelligence and persistence have reached a level where we believe applied AI in the enterprise is now about context and connectors. Out of the box frontier intelligence in the investment domain is fundamentally limited by access to information.\nBridgewater's investment philosophy is fundamental and systematic. We work to uncover truths about how economies operate, building up that understanding on one of the world's most comprehensive bitemporal structured data stores. But our investors don't work from structured data alone. They consume research, news, transcripts, and internal writing every day. An agent tasked with investment problems needs access to the same information our best human investors have, so we built the Vault: a centralized, high-quality repository of our best external and internal unstructured data, serving humans and agents alike.\nWe'll walk through why we chose to solve this problem ourselves, tracing the Vault from our first instinct, which was to buy it, through expanding it across all of our third-party research and into our internal knowledge, building it up from a point solution into a platform. The Vault already powers PAT, our first generation of analyst agents, used daily by hundreds of Bridgewater investors, and is now enabling our second-generation Researcher.",
+   "speakers": [
+    {
+     "name": "Aaron Linsky",
+     "role": "Head of Product Engineering",
+     "company": "Bridgewater",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FpfrCkEvTxucmWKouiHCO_headshot-1789757044363.jpg"
+    },
+    {
+     "name": "Sam Green",
+     "role": "Team Lead, Applied AI - AIA Labs",
+     "company": "Bridgewater",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/event-files%2FOv0F6F6tQaC9bkx4XK5z_Sam%20Green.png"
+    }
+   ]
+  },
+  {
+   "id": "68a1e78b-569e-4314-a56f-f20508123cbe",
+   "wall": "9:18am",
+   "wall_end": "9:36am",
+   "t": 1808,
+   "t_end": 2888,
+   "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "description": "Frontier AI is moving faster than financial services is adopting it, and that gap is the opportunity. In this keynote, Belinda Neal and Keon Shahab of Anthropic set out the two frontiers every firm now has to reach: the frontier of intelligence, what the best model can do today, and the frontier of adoption, how much of the firm's real work runs on it. They show how to go from a handful of agents to many by building connectors, skills and controls once, and what it looks like when a whole industry does the same, with Claude for Financial Advisors as a worked example. You will leave with three questions to take back to your own firm.",
+   "speakers": [
+    {
+     "name": "Belinda Neal",
+     "role": "Managing Director, Financial Services",
+     "company": "Anthropic",
+     "bio": "",
+     "linkedin": "https://www.linkedin.com/in/belindaneal/",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FzdW51bOQlivYCDbJLXQ3_headshot-1790250369400.png"
+    },
+    {
+     "name": "Keon Shahab",
+     "role": "Applied AI Architect",
+     "company": "Anthropic",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FHsLZvasPT264l37iikzv_headshot-1791821815149.jpg"
+    }
+   ]
+  },
+  {
+   "id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1",
+   "wall": "9:36am",
+   "wall_end": "9:54am",
+   "t": 2888,
+   "t_end": 3968,
+   "title": "Balancing Acceleration and Safety for AI Agents",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "description": "As AI agents grow in utility and power, they also grow in potential risk. For some, this creates a balancing act: too little safety means highly regulated firms are exposed to undue risk; too little innovation means agents cost more to run than they earn.  How do we balance the desire for safe agentic AI usage with the goal of using agents to carry out innovative research and engineering? In this talk, I’ll cover some of the key technical approaches we use and have found highly effective at Two Sigma, and along the way hopefully convince you that there doesn’t need to be a tradeoff between these two properties.",
+   "speakers": [
+    {
+     "name": "John Feminella",
+     "role": "SVP Architecture",
+     "company": "Two Sigma",
+     "bio": "John Feminella is SVP Architecture at Two Sigma, where he is responsible for building AI tools and infrastructure for the company at scale. He comes to Two Sigma from Pivotal, ThoughtWorks, VMware, and EY, where he served as a technology executive. He focuses building platforms, large-scale agentic AI and transformation efforts, and improving the experiences of enterprise developers, modelers, and product managers. In past efforts, he helped to build the U.S. EPA's National Emissions Inventory, the world's largest and longest-lived database of climatology and emissions data; a United Nations system for tracking aid to refugees; a tax-filing platform that automates and simplifies filing tax returns; and FedNow, an instant payment infrastructure developed by the U.S. Federal Reserve that lets banks and credit unions process transactions in real time.\n\nJohn lives in Charlottesville, VA and likes meta-jokes, milkshakes, and referring to himself in the third person in speaker bios.",
+     "linkedin": "https://linkedin.com/in/johnxf",
+     "twitter": "",
+     "website": "https://bsky.app/profile/jxf.me",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FlnWs2X3MQFe9dO6hntME_headshot-1790283785326.png"
+    }
+   ]
+  },
+  {
+   "id": "5191589c-a70e-4806-99dc-86f7794f46b9",
+   "wall": "9:54am",
+   "wall_end": "10:12am",
+   "t": 3968,
+   "t_end": 5048,
+   "title": "Does Code Quality Even Matter?",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "description": "There's so much debate online about \"should we read the code?\" Some people are yelling, \"Everybody should build everything with a dark factory!\" Others cry out, \"The slop will destroy us all!\" What this whole conversation is missing is principles for understanding how we would even make these decisions. Come hear the author of Code Simplicity say what he thinks is true now with AI coding, and see if there's some way to reliably find a path through all these opposing viewpoints.",
+   "speakers": [
+    {
+     "name": "Max Kanat-Alexander",
+     "role": "Principal Software Engineer",
+     "company": "Capital One",
+     "bio": "Max is the Technical Lead for AI-Assisted Software Development at Capital One. Previously he was the Chief Architect of the Bugzilla Project, the Tech Lead for Code Health at Google, and a Technical Lead for Developer Productivity and Happiness at LinkedIn. He is the author of the books Code Simplicity and Understanding Software, as well as having published Google's code review guidelines and the LinkedIn Developer Productivity and Happiness Framework. He spends about 5 hours a day talking to his best friends Claude and Codex.",
+     "linkedin": "https://linkedin.com/in/mkanat",
+     "twitter": "https://x.com/mkanat",
+     "website": "https://www.codesimplicity.com/",
+     "photo": "https://content-cdn.sessionboard.com/nFEVrLEZRTCbHHhJVPFx_headshot-1789391581224.jpg"
+    }
+   ]
+  },
+  {
+   "id": "b2ed4456-5671-4e8e-83fd-684c012fef8c",
+   "wall": "10:12am",
+   "wall_end": "10:30am",
+   "t": 5048,
+   "t_end": 6128,
+   "title": "What does an AI engineer do?",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "description": "Coding agents have effectively eliminated the need for manually writing code, and the current frontier is how to eliminate code review. But where are we going if we look past that? What happens when agents master devops, architecture, scaling, and security? What is an engineer if agents can do all the building? In this look into the next few years, Aparna Dhinakaran argues that the core skill that remains is the definition of “good”: knowing what your users want, and what it looks like when it’s “done”, are the two things agents don’t know and aren’t going to get to. At the same time, more and more AI is going to be involved in software, so software is going to get steadily less deterministic. That presents a dual challenge: you have to get good at defining success, while simultaneously success gets harder to measure. How to tackle those challenges is the subject of this talk.",
+   "speakers": [
+    {
+     "name": "Aparna Dhinakaran",
+     "role": "Co-Founder & Chief Product Officer",
+     "company": "Arize AI",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F7AqpW2GLQvc7uKTYWlng_headshot-1790815191998.jpg"
+    }
+   ]
+  },
+  {
+   "id": "1c25f303-f38f-450b-862d-669fdbab5f82",
+   "wall": "10:40am",
+   "wall_end": "10:58am",
+   "t": 6728,
+   "t_end": 7808,
+   "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+   "format": "Stage Talk (18 minutes)",
+   "type": "talk",
+   "description": "Building production-grade foundation models in finance requires more than scaling architectures. It demands rethinking how systems are designed, trained, and validated in a regulated, high-stakes environment. In this talk, we share lessons from developing large-scale transaction foundation models trained on billions of banking transactions. We focus on the full build lifecycle: representing heterogenous transaction data, designing tokenization, and sequence strategies, curating high-quality datasets at scale, and constructing robust training and evaluation pipelines. We highlight key decisions and trade-offs required to move from experimentation to production. Finally, we show how adaptive fine-tuning and multi-task learning enable these models to support critical applications such as fraud detection and transaction decisioning.",
+   "speakers": [
+    {
+     "name": "Freddy Lecue",
+     "role": "Head of Frontier AI Models, Managing Director",
+     "company": "Wells Fargo",
+     "bio": "Freddy Lecue is a Managing Director and Head of Frontier AI Model Methodology at Wells Fargo, where he architects and scales Generative AI, agentic AI, and advanced machine learning models for enterprise production, while balancing performance, latency, cost, and risk.\r\n\r\nHe leads the firm’s AI research agenda, elevates modeling standards through targeted training, and establishes best-practice frameworks to enhance robustness, scalability, and model validation. Freddy also drives AI-enabled transformation across the end-to-end model lifecycle, including development, documentation, testing, and validation.\r\n\r\nPrior to Wells Fargo, he held senior AI leadership roles at JPMorgan Chase, Thales Canada, Accenture Ireland, and IBM Ireland. He holds a Ph.D. in Computer Science and is based in New York City.",
+     "linkedin": "https://www.linkedin.com/in/freddylecue",
+     "twitter": "",
+     "website": "https://www.wellsfargo.com/",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FrMsERgUSmSPIlpNEI6E3_headshot-1791467418797.jpg"
+    }
+   ]
+  },
+  {
+   "id": "75bd85ed-b49d-41f6-98e1-7a22853c18ab",
+   "wall": "11:05am",
+   "wall_end": "11:23am",
+   "t": 8228,
+   "t_end": 9308,
+   "title": "Inside Arca’s long-horizon agents that run the business",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "description": "What is an AI-native company? At Arca, it means a company where you can steer the business by steering the agents.\n\nThis talk gives you a look inside the agent runtime for Arca's long-horizon work: a single goal spanning weeks, crossing multiple human hands, and internal/external systems. We’ll look at our agent loop, our signals engine, tools for long-horizon work, and how we orchestrate human/AI collaboration to drive business outcomes.",
+   "speakers": [
+    {
+     "name": "Aman Singh",
+     "role": "Lead AI Engineer",
+     "company": "Arca",
+     "bio": "",
+     "linkedin": "https://linkedin.com/in/amanps",
+     "twitter": "",
+     "website": "https://arcawealth.ai",
+     "photo": "https://content-cdn.sessionboard.com/event-files%2F2p6a5UTQ7S1rsfP8TKzJ_Aman_Singh_headshot.png"
+    }
+   ]
+  },
+  {
+   "id": "e65f74f9-2174-406d-bd32-2d7073eb677d",
+   "wall": "11:30am",
+   "wall_end": "12:15pm",
+   "t": 9728,
+   "t_end": 12428,
+   "title": "Intent Based Auth",
+   "format": "Stage Talk (18 minutes)",
+   "type": "talk",
+   "description": "“Is this tool call allowed?” It’s never that simple.\n\nAllowing or denying individual API calls or MCP tools isn’t enough. You might give an agent access to read-only Notion MCP tools, for example, but still have no way to limit it to a specific database on a specific page.\n\nIntent-based auth adds the missing context: what is this agent trying to accomplish, and does this action serve that mission?\n\nWe'll explore how AAuth, a new protocol designed for agents, allows you to track an agent's mission, how intent is enforced, and why intent based auth is key to unlocking agentic commerce.",
+   "speakers": [
+    {
+     "name": "Allie Howe",
+     "role": "Member of Technical Staff",
+     "company": "Keycard",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FPTtFSrgyTn2FXa0d1NvN_headshot-1789698888017.png"
+    },
+    {
+     "name": "Ian Livingstone",
+     "role": "CEO and Co-Founder",
+     "company": "Keycard",
+     "bio": "Ian Livingstone is the Co-Founder & CEO of Keycard, the identity and access platform for AI agents. A three-time founder, prolific angel investor, and massive infrastructure nerd, Ian has spent 15+ years building developer tools and security infrastructure and is now focused on identity, authorization, and access control for autonomous software. Previously, he shaped platform strategy at Snyk and held senior engineering roles at Salesforce. He co-hosts The Infra Pod, covering the technical and economic shifts reshaping how software gets built and run.",
+     "linkedin": "https://www.linkedin.com/in/irlivingstone/",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FzPF1Rb8ySgO9wQKxlbtY_headshot-1789701775412.png"
+    },
+    {
+     "name": "Michael Davis",
+     "role": "Global Chief Security Architect",
+     "company": "JPMC",
+     "bio": "Michael A. Davis has been privileged to help shape and educate the global community on the evolution of IT security including international corporations such as Amazon, AT&T, Sears, Exelon and the U.S. Department of Defense. Davis’ early embrace of entrepreneurship earned him a spot on BusinessWeek’s “Top 25 under 25” list, recognizing his 2005 launch of IT security consulting firm Savid Technologies, which was recognized as one of the fastest growing security companies of its decade. He has a passion for educating others, as a contributing author for the “Hacking Exposed” books, as a speaker at dozens of conferences and symposiums, and through industry publications including InformationWeek and Dark Reading. Currently, Davis serves as Managing Director, Global Chief Security Architect for JP Morgan. Davis brings a solid background in IT threat assessment and protection to his latest posting, having led the Dedicated Security Team at Amazon protecting Amazon’s 30+ Subsidiaries including Prime Air, Zoox, and Zappos. Aside from his work advancing cyber security, Davis has been a partner in several diverse entrepreneurial startups including CTO of GoSecure, Davis let all product, security research, and engineering while raising over $100MM to compete in the endpoint detection and response market. Earlier positions include Senior Manager Global Threats for McAfee prior to launching Savid, which was acquired by External IT. Davis’ ability to analyze, translate, and make connections among emerging IT and security trends combined with a business and entrepreneurial mindset make him a popular speaker — he strives to present complex concepts in a way that delivers value to a range of listeners. He regularly presents at industry conferences including Black Hat, Interop, and InfoSecWorld. His long-term vision, to create systems that “push defenders ahead of attackers” applies to a wide array of enterprise, government, and vertical-industry stakeholders. “The phrase “I can’t” is the most powerful force of negation in the human psyche. When done properly, security controls enable IT to say “we can”.",
+     "linkedin": "https://www.linkedin.com/in/mrmichaeladavis/",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F5mvDWfuTAiSHc1m82nGA_headshot-1789755473643.jpg"
+    },
+    {
+     "name": "Dick Hardt",
+     "role": "Founder",
+     "company": "AAuth",
+     "bio": "Dick Hardt is Founder and CEO of Hellō, a cooperative identity platform. He led the design of OAuth 2.0 and JSON Web Token, standards used by billions of people every day. He is now the author of AAuth, which does for agents what OAuth did for apps: gives agents access to resources without giving them credentials. Dick co-chairs the OpenID Foundation's IPSIE working group and co-authors OAuth 2.1, and previously founded ActiveState and Sxip Identity and led identity initiatives at Microsoft and Amazon. He lives in Lisbon with his wife and their dog.",
+     "linkedin": "https://www.linkedin.com/in/dickhardt/",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FFVQ1RcIIT5qRjZOzwQKJ_headshot-1789030075487.jpg"
+    }
+   ]
+  },
+  {
+   "id": "96dfa264-b5a1-485c-8f55-da1a4f39fd8a",
+   "wall": "12:15pm",
+   "wall_end": "2:05pm",
+   "t": 12428,
+   "t_end": 19028,
+   "title": "Networking Break",
+   "format": "",
+   "type": "other",
+   "description": "",
+   "speakers": []
+  },
+  {
+   "id": "3803afe2-3761-4fee-a6c2-dae9c6a1066e",
+   "wall": "2:05pm",
+   "wall_end": "2:23pm",
+   "t": 19028,
+   "t_end": 20108,
+   "title": "Great Agents Start with Great Infrastructure",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "description": "Why Modal Is Built for AI Agents at Scale",
+   "speakers": [
+    {
+     "name": "Akshat Bubna",
+     "role": "CTO",
+     "company": "Modal",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FuFiDw5SOq80XArvu43wn_headshot-1791233257980.jpg"
+    }
+   ]
+  },
+  {
+   "id": "dc91422b-6636-4466-8fb8-482a09cdd7f4",
+   "wall": "2:30pm",
+   "wall_end": "2:48pm",
+   "t": 20528,
+   "t_end": 21608,
+   "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "description": "Rayan Krishnan, CEO and co-founder of Vals AI, walks through what building industry-standard benchmarks has taught his team about the jagged frontier of AI in finance: the common failure modes, patterns of behavior, and why no single model leads on every task. No two workflows are identical, so independently evaluating models on your own work is essential for proving ROI, optimizing spend, and maintaining a competitive edge.",
+   "speakers": [
+    {
+     "name": "Rayan Krishnan",
+     "role": "Co-Founder & CEO",
+     "company": "Vals AI",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F3SRifyeRZWTlgtlIjoQR_headshot-1789443599941.jpg"
+    }
+   ]
+  },
+  {
+   "id": "a244839c-239c-4789-b621-32a3568a218e",
+   "wall": "2:55pm",
+   "wall_end": "3:13pm",
+   "t": 22028,
+   "t_end": 23108,
+   "title": "AI and the Future of Fundamental Investing",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "description": "Jack Woodruff ran one of the largest books at Citadel and went on to found Candlestick Capital. Today he's the buyer every finance AI company wants to win, and in this fireside chat with Vinoo Ganesh, CEO of Kepler and former Head of Business Engineering at Citadel, he'll speak candidly about what AI is changing in fundamental investing and what it isn't. Jack will share where AI is saving real time in his process, what he'd never hand over to a model, and why the judgment call still belongs to the investor. They'll also take on the questions most people only ask in private. Will the biggest funds win everything? If everyone has the same models, where does alpha come from? And when does a number have to be right, not just plausible?",
+   "speakers": [
+    {
+     "name": "Jack Woodruff",
+     "role": "Senior Advisor",
+     "company": "Kepler",
+     "bio": "Jack Woodruff is the founder and former Chief Investment Officer of Candlestick Capital Management (CCM). Mr. Woodruff led the firm from its inception in 2019 through 2025, overseeing portfolio decisions and building CCM’s investment, research, and risk frameworks. Prior to founding Candlestick, Mr. Woodruff served as a Portfolio Manager in Citadel’s equity unit, Surveyor Capital, from 2010 to 2019, where he built and led an 18-person investment team and invested in more than 400 global equities across multiple sectors. Mr. Woodruff also worked at Sigma Capital, a division of SAC Capital Advisors, and previously held analyst roles at Northsound Capital and Trivium Capital. He began his career at Ernst & Young and maintains an inactive CPA license in California. Mr. Woodruff holds an MBA in Finance from the NYU Stern School of Business and a B.S. in Accounting from the University of Southern California. He currently serves on the University of Southern California Marshall Board of Leaders and Thrive Scholars New York Advisory Board. He also is a Senior Advisor to Connect Ventures and Kepler AI.",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2Fn2Wxn3lSyuLkrMpBX67m_headshot-1790829465219.jpg"
+    },
+    {
+     "name": "Vinoo Ganesh",
+     "role": "CEO",
+     "company": "Kepler",
+     "bio": "Vinoo Ganesh is CEO of Kepler, the industry-agnostic, ground truth platform for AI, starting with finance. At Kepler, language models interpret financial questions and plan the analysis, while deterministic software retrieves source data, runs the calculations, and records how every result was produced. He started his career at Palantir, where he spent seven years working on the search and indexing backend, managing the Spark/YARN compute platform, leading customer engagements across the commercial, healthcare, and defense sectors, and running Project Frontline, Palantir's FDE rotation program. After Palantir he served as CTO of Veraset, a geospatial data startup that grew to $15M ARR before it was acquired, and before founding Kepler he was Head of Business Engineering at Citadel, overseeing data pipelines and investment platforms across the hedge fund. Kepler is backed by founders of OpenAI, Facebook, MotherDuck, dbt, Square, and others.",
+     "linkedin": "",
+     "twitter": "",
+     "website": "https://www.kepler.ai",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FH7LyvXELSzm9Cy6lIrfQ_headshot-1790808709113.jpg"
+    }
+   ]
+  },
+  {
+   "id": "2a07765d-fe3a-48df-be0f-75c111dbee6a",
+   "wall": "3:20pm",
+   "wall_end": "3:38pm",
+   "t": 23528,
+   "t_end": 24608,
+   "title": "Shipping like a startup, regulated like a bank",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "description": "Inside Revolut’s internal coding stack with Together AI. Revolut became a fully licensed U.K bank in March 2026, and serves more than 75 million customers. Its engineering org still moves at startup speed. Holding both at once is the problem every engineer in financial services recognizes. Revolut runs two kinds of models against its internal coding work: Language models that turn written descriptions into working code, and vision models that turn mockups into a working interface. That second capability is the one most teams in fintech still haven’t shipped. You’ll leave knowing which of the two to deploy first, what changes when your codebase is subject to audit, and whether mockup-to-interface is ready for the work your team actually does.",
+   "speakers": [
+    {
+     "name": "David Abitbol",
+     "role": "Ops & Infrastructure Leader",
+     "company": "Revolut",
+     "bio": "David is a strategy consultant specialized in financial services, passionate about tech with a side hobby of statistical modelling.",
+     "linkedin": "https://www.linkedin.com/in/abitbold/",
+     "twitter": "https://x.com/Revolut",
+     "website": "https://www.revolut.com/",
+     "photo": "https://content-cdn.sessionboard.com/wCpmgRZBTSmdfGcz9JOX_headshot-1788964010365.jpg"
+    }
+   ]
+  },
+  {
+   "id": "1872565b-e24d-4da9-99c6-05a8c01d3d06",
+   "wall": "3:45pm",
+   "wall_end": "4:03pm",
+   "t": 25028,
+   "t_end": 26108,
+   "title": "Everyone Has AI. Who Has the Advantage?",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "description": "Why do organizations with access to the same AI achieve vastly different results? This keynote explores the technical and organizational choices behind that gap - from choosing the right problems and redesigning workflows to building shared capabilities and feedback loops that turn AI into sustained competitive advantage.",
+   "speakers": [
+    {
+     "name": "Sid Pednekar",
+     "role": "Head of Data and AI | Asset Management",
+     "company": "",
+     "bio": "Sid Pednekar, PhD, is a data, technology and AI executive who develops strategy and leads its execution. He builds capabilities that help organizations make better decisions, improve how they work and put new technology to practical use.\n\nHis work connects business priorities with technical and organizational choices: where to invest, what to build, how to allocate resources and what needs to change for a capability to succeed. He leads specialized teams and aligns business, technology, research and governance stakeholders around a shared direction. A recurring focus is turning bespoke solutions into reusable capabilities, supported by the ownership, workflows and adoption needed to make them effective across teams.\n\nSid’s experience is rooted in investment management, spanning quantitative research, alternative data, portfolio and risk analytics, and applied AI. Working closely with investment professionals has shaped his approach: understand the decision, identify where better information or a different process can help, and build around the people doing the work.\n\nHe holds a PhD in Computational Physics and Process Engineering. That scientific foundation informs how he approaches complex problems - reasoning from evidence, testing assumptions and understanding how the parts of a system interact. He brings the same discipline to strategy, team development and organizational change.",
+     "linkedin": "https://www.linkedin.com/in/sidhantpednekar/",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FDGqI3OlnTEeAIDAnoZFW_headshot-1790104797296.jpg"
+    }
+   ]
+  },
+  {
+   "id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9",
+   "wall": "4:25pm",
+   "wall_end": "4:30pm",
+   "t": 27428,
+   "t_end": 27728,
+   "title": "Welcome Back - Featured Keynotes",
+   "format": "Lightning Talk (5-10mins)",
+   "type": "other",
+   "description": "",
+   "speakers": [
+    {
+     "name": "Alex Lieberman",
+     "role": "Managing Partner",
+     "company": "Tenex",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FJXUASg3YS0WtVnHzy2Vq_headshot-1791395273162.jpg"
+    }
+   ]
+  },
+  {
+   "id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a",
+   "wall": "4:30pm",
+   "wall_end": "4:48pm",
+   "t": 27728,
+   "t_end": 28808,
+   "title": "A Hedge Fund as a Function",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "description": "Frameworks for Thinking about Applying AI to Investing",
+   "speakers": [
+    {
+     "name": "Frank Long",
+     "role": "Head of AI",
+     "company": "Coatue",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F80YgJt1WR1qLMp8z5Kbi_headshot-1790105618341.jpg"
+    }
+   ]
+  },
+  {
+   "id": "cada670e-c5ea-4977-b3c2-9a68dda26abb",
+   "wall": "4:48pm",
+   "wall_end": "5:06pm",
+   "t": 28808,
+   "t_end": 29888,
+   "title": "Frontier Models for Acting in Space and Time",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "description": "Pim de Witte is the co-founder and CEO of General Intuition, the frontier lab for acting in space and time. He previously founded Medal, the world’s largest and fastest-growing platform for gaming clips, where millions of gamers share their best moments. Before gaming and AI, he worked with Médecins Sans Frontières and ran the largest Runescape private server at 14. General Intuition recently raised $650M+ from Khosla and General Catalyst.",
+   "speakers": [
+    {
+     "name": "Pim de Witte",
+     "role": "Co-Founder & CEO",
+     "company": "General Intuition",
+     "bio": "Pim de Witte is the co-founder and CEO of General Intuition, the frontier lab for acting in space and time. He previously founded Medal, the world’s largest and fastest-growing platform for gaming clips, where millions of gamers share their best moments. Before gaming and AI, he worked with Médecins Sans Frontières and ran the largest Runescape private server at 14. General Intuition recently raised $650M+ from Khosla and General Catalyst.",
+     "linkedin": "",
+     "twitter": "",
+     "website": "https://generalintuition.com",
+     "photo": "https://content-cdn.sessionboard.com/lUeCqx72SEu4O5ThREcW_headshot-1789391581235.jpg"
+    }
+   ],
+   "note": "stream ends mid-item at t=29150 (16:53:42 ET)"
+  },
+  {
+   "id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add",
+   "wall": "5:06pm",
+   "wall_end": "5:24pm",
+   "t": 29888,
+   "t_end": 30968,
+   "title": "Hermes gives you wings: Build on open foundations.",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "description": "Modern businesses require open agents.",
+   "speakers": [
+    {
+     "name": "Dillon Rolnick",
+     "role": "CEO",
+     "company": "Nous Research",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/event-files%2FDViV1MwTy6AOuTHQVreQ_Dillon%20Rolnick.png"
+    }
+   ],
+   "note": "starts after stream end - not on this stream"
+  },
+  {
+   "id": "dd25c0a8-d64f-4d6e-a597-7dd576eabc16",
+   "wall": "5:25pm",
+   "wall_end": "5:30pm",
+   "t": 31028,
+   "t_end": 31328,
+   "title": "Closing Remarks",
+   "format": "Lightning Talk (5-10mins)",
+   "type": "other",
+   "description": "",
+   "speakers": [
+    {
+     "name": "Alex Lieberman",
+     "role": "Managing Partner",
+     "company": "Tenex",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FJXUASg3YS0WtVnHzy2Vq_headshot-1791395273162.jpg"
+    }
+   ],
+   "note": "starts after stream end - not on this stream"
+  }
+ ]
+}

@@ -1,0 +1,268 @@
+# transcript slice 05
+window: t=9100..10920 (02:31:40..03:02:00 video time; 11:19:32 AM..11:49:52 AM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[02:30:44] Agents run the business.
+[02:30:45] They are making the decisions that shape our outcomes.
+[02:30:49] And so at Arca, when people log in, right, they see a list of tasks that have been prepared for them by agents.
+[02:30:57] They've already read that email.
+[02:30:59] They've, like, looked at the document that came in.
+[02:31:01] They've done, like, 90% of the work, and they're pulling you in just when it's time for you to act.
+[02:31:08] So building this system lets us get to a point where at Arca, agents prompt people more than people are prompting agents, which lets our agents drive the work that our firm does.
+[02:31:23] And because agents are driving the work the firm does, agents can drive the business.
+[02:31:29] Let me give you an example.
+[02:31:30] Remember that email that Jane sent us?
+[02:31:32] This is a bit of a failure, right?
+[02:31:34] Because we should have just been proactive about this in the first place, right?
+[02:31:38] So Jane should never have to send this email.
+[02:31:41] So say at, you know, our AI-native business, we take on this new goal.
+[02:31:46] Our new goal is— Proactivity.
+[02:31:51] Every January, prepare each client's tax situation and proactively reach out to them before anyone even asks.
+[02:31:59] This is a new business goal for our business to drive.
+[02:32:01] And in an AI-native firm, all we have to do is make this goal part of our agent's set of goals.
+[02:32:10] And because they have the primitives to be able to drive work through people for the business, they start driving this goal.
+[02:32:18] And just like that, you have these analyses being done in January and these one-click approval emails with the full plan for every client showing up on our users' plates.
+[02:32:32] And because they're aligned with the goal of proactivity, they can one-click approve and drive the business towards this new outcome.
+[02:32:42] So this is sort of, I think, the key difference between a company that uses AI tools versus a company that is AI-native.
+[02:32:56] In an AI-native company, you know you've built one when you can steer your business by steering your agents.
+[02:33:04] And that is our ambition at Arca, and we're hiring.
+[02:33:13] So please check out our website.
+[02:33:15] Please reach out to me if this is something that you're interested in working on, these sorts of problems.
+[02:33:20] And thank you for listening.
+[02:43:13] Hey, Dick.
+[02:43:14] Hey, Davis.
+[02:43:14] Hey, Ian.
+[02:43:15] Hi, everyone.
+[02:43:16] Welcome to AI Engineer New York.
+[02:43:19] I'm super excited to be here today.
+[02:43:22] My name is Allie Howe.
+[02:43:24] I'm a member of technical staff at Keycard.
+[02:43:27] I'm here with some amazing panelists today.
+[02:43:29] We have Ian, CEO of Keycard.
+[02:43:32] We have Michael Davis, Global Chief Security Architect at J.
+[02:43:36] P.
+[02:43:36] Morgan Chase.
+[02:43:37] And we have Dick Hart, the founder of Aoth and co-creator of Oath, with us on stage today.
+[02:43:45] I'm super excited to talk to all of them about intent-based authorization.
+[02:43:50] And to set the stage, I want to bring to light that as more companies are looking to give their agents increased levels of autonomy, they're looking to runtime authorization to help.
+[02:44:01] Runtime auth is the practice of authorizing an agent per tool call, rather than having the agent hold broad standing access that it will eventually misuse.
+[02:44:10] However, is this tool call or not is never a simple question.
+[02:44:15] This is because many MCP tools and APIs are coarse-grained.
+[02:44:20] Humans struggle to write the perfect policy, and the environment around the agent will change as it runs.
+[02:44:27] Intent can help by providing extra context so that at runtime, we can make better authorization decisions about what an agent is allowed or is not allowed to do.
+[02:44:39] So to continue, I would like to talk about, really dive into, why do we need intent-based auth in the first place?
+[02:44:47] Models have dramatically improved.
+[02:44:49] They have bigger context windows.
+[02:44:51] They're able to verify work because model vision capabilities have improved, and in many contexts, people are proclaiming that AGI is here.
+[02:45:00] If the models are so good, if AGI is really here today, then why are teams struggling to give their agents more autonomy?
+[02:45:07] Ian, let's start with you.
+[02:45:09] You're helping many financial enterprises at Keycard.
+[02:45:12] What are you seeing that's getting in the way?
+[02:45:14] Well, I think broadly speaking, enterprises, especially financial services firms, regulated industries, are almost always security first.
+[02:45:20] It's how they build trust in their business, and maintaining the business continuity is bar first, like the first priority.
+[02:45:25] Then innovation is second, third, or fourth.
+[02:45:28] I think, like broadly speaking, in any enterprise, what you see is this hodgepodge of different little islands, of different little identities, of different little systems from across all different worlds.
+[02:45:39] And how do you actually tie that together in a way that an agent can navigate through that, ask for access, and then also ensure that the agent cannot perform something that was unintended by the user or the business?
+[02:45:50] And the unfortunate situation is most of our systems today are course-grained, right?
+[02:45:54] I don't know, Salesforce is a good example, where for a very long time they had a single scope, which was API on their OAuth, which is like, in the context of an agent, not very helpful.
+[02:46:03] So that's broadly the first and foremost part, is that most of the systems they have for security today were designed for a world where humans were making all the decisions and software is very deterministic, not this new fangled magic box we've invented that basically reasons and tries over and over again to find a solution to a problem.
+[02:46:21] Dig, how is OAuth part of the problem?
+[02:46:23] How is OAuth getting in the way?
+[02:46:25] Why is it not the right fit for agents?
+[02:46:28] Well, when people started looking at how do we authorize agents to access something, the tool that was sitting there on the shelf was OAuth.
+[02:46:35] And people grabbed that tool and says, Here's a tool.
+[02:46:38] This is authorization.
+[02:46:40] It should be able to solve the problem.
+[02:46:41] But OAuth was not designed for this kind of world.
+[02:46:44] It was designed originally for like, how do I let this website talk to this website?
+[02:46:49] You know, in OAuth 2, we added scopes.
+[02:46:51] Before that, it was just do anything.
+[02:46:54] But it required you to be pre-registered.
+[02:46:57] It's expecting that there is a browser involved and a redirect.
+[02:47:00] You know, OAuth has evolved over the years to support some other things.
+[02:47:03] But the agentic world is completely different.
+[02:47:05] We don't know ahead of time what the agent needs to do.
+[02:47:08] We need to go and make that decision over time.
+[02:47:10] Different instances of an agent are going to need different kinds of things.
+[02:47:14] And, you know, as Ian talked about, the granularity of the scopes that people says, well, we already have scopes for OAuth.
+[02:47:20] Let's just map those over to agents, is far too coarse-grained for what agents are doing.
+[02:47:27] Davis, how are you seeing enterprises move towards higher levels of autonomy?
+[02:47:32] Yeah, I think the key piece is how do you deal with that coarse-grain problem?
+[02:47:36] And what I've seen the kind of more successful enterprises is they kind of board agents like they onboard developers, right?
+[02:47:42] Start with, you don't get full, you know, commit access day one, right?
+[02:47:45] You're actually having to go through and add levels of capability as they mature, right?
+[02:47:51] And so the definitions that enterprises are coming up with of what is the context that makes this agent safe.
+[02:47:56] And it isn't just usually what the agent says, right?
+[02:47:59] It can, you know, attest to something, but it's other things like the environment around it and other information that can help you understand levels of autonomy.
+[02:48:06] Very simple example would be, where is the sandbox running?
+[02:48:09] Is it in the sandbox, right?
+[02:48:10] Those type of things can change the level of autonomy that's allowed.
+[02:48:14] Absolutely.
+[02:48:14] You know, as we mentioned that coarse-grain access problem, and to put that into perspective, to give an example, with Notion's MCP server, you can say, fetch this page, which is like the view page tool or get page, but you can't say, just get this database on this page.
+[02:48:31] How is runtime authorization based on intent a better model?
+[02:48:34] That's for anyone.
+[02:48:38] I'll take a shot at it.
+[02:48:39] So to me, this is something that the financial services industry, hopefully maybe we can learn from the background that, you know, banks have gone through.
+[02:48:47] Banks moved long ago from authorizing and authenticating humans to authorizing the transaction, right?
+[02:48:53] And when is that transaction occurring?
+[02:48:55] At runtime, right?
+[02:48:57] And so I think that, you know...
+[02:48:59] Runtime authorization is we're going to be able to learn from the kind of the scars of the past that we've had and apply it to this new problem.
+[02:49:06] I also think that, you know, one thing is it's a lot easier to debug something at runtime when you understand the intent, right?
+[02:49:13] I think we've all remember back in the day writing checks, right, or seen those things on TV now, I guess is the right thing.
+[02:49:19] But, you know, writing checks, there was a memo field there, right?
+[02:49:22] That memo field was used to actually tell the intent of what this payment was.
+[02:49:25] But the check itself did have limits, right?
+[02:49:28] The price, the payee, the date, et cetera, right?
+[02:49:31] I think a lot of those concepts are now being applied and can be applied to help with this runtime.
+[02:49:36] Intent's sort of one of those, you know, like many words, words are hard.
+[02:49:40] And so, you know, building on the example here of making a payment of a transaction, right, you know, that's not a scope.
+[02:49:47] That's, can I do this one thing in this particular context?
+[02:49:51] Well, this one payment.
+[02:49:53] But I think we need an agent to make a decision, should it be able to do it, you need all the rest of the context of, well, why are we making—
+[02:50:01] Are we making this payment?
+[02:50:02] What are all the things that happened before?
+[02:50:04] You know, did we just make the same payment just like, you know, five seconds ago, and now this is a double payment, right?
+[02:50:10] You know, just because this is right in context by itself doesn't mean it's the right thing within the broader mission.
+[02:50:16] And so, you know, in Aoth, we're working on the concept of a mission that is what do we want the agent to accomplish, big picture, and then each of the decisions are made within the context, you know, the intent around what's happening big picture around doing that.
+[02:50:31] And you need granularity at the transaction layer for many of the things to know what exactly is happening, not just, I'm allowed to go and make payments.
+[02:50:42] Yeah, I think one of the most interesting things, I think, like a practical example, like to understand, like, why intents are required is if you have two ChatGPT sessions or two Claude sessions, and one session I say, Hey, help me go to do some shopping, and the other session I say, Hey, help me understand why there's a bug in production.
+[02:50:58] Those have very different, like, profiles in terms of, like, what permissions they should have and also when they should bring you back into the loop.
+[02:51:05] Like, when should the human be involved again?
+[02:51:07] And so at the end of the day, if we don't have intent or some capacity to, like, relay what is the user or the business's intent with this thing, we actually can't get to, like, autonomy, right?
+[02:51:15] And so a lot of the talks this morning were, Hey, we're going to run our business on agents, we're going to do all this stuff.
+[02:51:20] It's like, well, great.
+[02:51:21] What happens the first minute, like, a Pacto-style incident happens where, like, it actually accidentally deletes the production database instead of staging because it has coarse-grained access instead of long-scoped access.
+[02:51:30] And so what we want as an industry is to leverage this, like, magic box we've created to, like, automate our lives.
+[02:51:37] The current state of the world is that you can do that and take all of the risk, and then you can see all the incidents that come from it.
+[02:51:43] And so until we actually solve that underlying problem, realizing true autonomy, so being able to operationalize our business and be able to step away as humans.
+[02:51:52] And scale that, we have to solve intent first.
+[02:51:55] Absolutely.
+[02:51:56] And now that we understand why we need intent-based auth, let's talk about what it is practically.
+[02:52:01] What are the primitives?
+[02:52:02] What does it actually look like in practice?
+[02:52:04] Dick hinted at it with the concept of the AOF mission.
+[02:52:08] So, Dick, elaborate on the mission.
+[02:52:10] What is the mission based off of?
+[02:52:12] Is it based off of the user's intent?
+[02:52:14] Is it the agent's intent, or is it a combination of the two?
+[02:52:18] Well, the agent, you know, should be working on behalf of the person.
+[02:52:22] And in AOF, we define a person as either the organization or a human, because it could be operating on either one of those.
+[02:52:29] And so it needs to be acting in the best interest of the person that it's acting on, because that is who's ultimately responsible for what the agent does, right?
+[02:52:39] The agent can't be responsible, right?
+[02:52:42] And so the mission is something that the person is giving the agent to do.
+[02:52:48] A good agent is going to go and negotiate with the person to go and talk more about, like, what are the parameters around that.
+[02:52:55] You know, a good example is when you think of back, you know, in the day, which seems like only like three months ago, when you would want to code something up and you'd create a plan and then the agent would do the plan.
+[02:53:06] Now you just tell it and it figures everything out.
+[02:53:08] But that whole concept of what's a plan, what are you trying to do, and you give that to the agent, so then that then is the context around where you're making authorization decisions later on.
+[02:53:20] And then that mission identifier tracks through everything, so you can go and, you know, audit and be able to see what were all the things that happened and what were the decisions that happened in the context of this one mission, right?
+[02:53:34] Where today, you know, there isn't really a good concept of agent identity or the mission, right?
+[02:53:40] It's just making something and things are making decisions without really knowing which instance of the agent is doing it or what's the context of what mission is this involved in, right?
+[02:53:52] Tell me more about that negotiation phase, because what happens if a user is talking to an agent, and it talks to that agent and says, I want you to go read the CEO's email.
+[02:54:02] That's outside of the scope of that agent.
+[02:54:04] So is that intent rejected from the user?
+[02:54:08] Should be.
+[02:54:10] So, you know, with a good separation—and I don't know whether, I forget whether we were talking about this later—but the separation concerns of the worker, right?
+[02:54:19] There's an agent that's doing the work, and we believe there should be a separate agent that's supervising what this one does.
+[02:54:26] And so that you have a separation of concerns where this one can't do any of the work, but it gets to decide what this agent gets to do.
+[02:54:34] And so if the user says, Oh, I want you to go read the CEO's email, that's probably going to get caught in deterministic policies right away, right?
+[02:54:42] Like, that's not a vague thing, right?
+[02:54:45] Reading somebody else's email, we've got good controls for that.
+[02:54:49] But telling the agent to, you know, send the CEO's—forward a CEO's email to the outside world, that's a little more vague, and that's the kind of thing that ideally comes back to a supervising agent and says, That's probably a bad idea, and no, you can't do that.
+[02:55:08] Absolutely.
+[02:55:08] So I feel like that's another primitive, too, of intent-based is policy.
+[02:55:13] Ian, at Keycard, how are you seeing that when a mission needs to change or a policy needs to update, how can Keycard help keep track of those changes as maybe the mission or policy updates need to be made?
+[02:55:23] Yeah, I think, like, taking a step back, there's, like, actually—it was Dave and I were sitting in a room some time ago, and before, like, AAuth and some of these things actually had emerged in the ecosystem, one of the things we actually talked a lot about was consent fatigue.
+[02:55:35] And I think, like, at the minimum, like, we—you always have this, like— How secure do you make a system versus, like, the trade-off of, like, the impact to the human?
+[02:55:43] And so, you know, a key card, our broad view on this is you want to have, like, broad-based deterministic policy that basically says this is what must never happen, effectively, right?
+[02:55:51] Or these are the things that always require a human to be involved.
+[02:55:54] And then from there, what you really want to think about is, okay, cool.
+[02:55:57] Well, now that I have that in place, there's a big gap between all of the policy I can write as a human or write as an organization and then what I actually want the policy to be in the specifics of a specific task.
+[02:56:10] And so the real challenge is how do I, like, layer over those two things, right?
+[02:56:14] Because humans can't write it all.
+[02:56:15] And so there's a version of that that is like a user or agent-to-agent interaction, and they have an intent between those two of, like, transactional intent.
+[02:56:23] And there's also, like, the business's intent for why they build or adopt an agent.
+[02:56:26] So why did we buy Claude Code?
+[02:56:28] Well, because we wanted to make our developers more successful, or because we wanted to do these different things.
+[02:56:33] And in the context of using Claude Code or whatever, why am I working in this moment with Claude Code?
+[02:56:39] Well, it's actually to fix a bug in staging, right?
+[02:56:41] And those are two different types of intent.
+[02:56:42] And if we can understand those two different things and then convert that some way into, like, a bounding box of what those agents can do, you can then basically calculate the intersection of that and say, okay, here's what you can actually do.
+[02:56:54] And then the trick for anyone building these systems is how do I ensure that I don't bring the user into the loop except when absolutely required, because that's what's going to be the adoption curve problem.
+[02:57:03] But that's also the adoption curve problem when it comes to, like, enabling agents to be autonomous in the first place.
+[02:57:09] Yeah.
+[02:57:10] I like what you were saying with the intersection.
+[02:57:11] I think that's a unique thing we don't talk about enough within identity and access management, right?
+[02:57:16] Normally you get access to one thing, right?
+[02:57:18] And so what I've seen successful kind of in this intent-based approach, and where I get more excited is you can actually have those different intents be from different areas of the organization, right?
+[02:57:28] And so you have the decoupling of these things, and they can kind of live on their own, but then come together to form that, you know, decision.
+[02:57:34] And that decision doesn't have to be static, right?
+[02:57:36] So if we use the example of the CEO's email, well, you know, if that context involves that the administrative assistant, then yeah, maybe she is supposed to read the email, right?
+[02:57:45] Or maybe just the calendar, right?
+[02:57:47] And so I think when we see and we start thinking about these intersection components, we have a totally different way we can start expressing policy, but also start to bring in not just the one side of the equation we always talked about before, which was the app doing something.
+[02:58:00] Now we actually have the ecosystem you can bring in.
+[02:58:03] And so the more I see organizations starting to realize that, you know, maintaining that state or that context of these other elements to be able to help with that intention can completely change the way you're effective at runtime authorization.
+[02:58:15] And are you seeing this across enterprises today?
+[02:58:17] Most people have mission tracking and policy tracking in place, or is that largely missing today?
+[02:58:22] No, it's brand new still.
+[02:58:24] And I think part of the reason why I'm excited to talk about it, because I think that it is changing the way to reason through this, right?
+[02:58:30] Even in the most simplistic case, if you're a developer and you are thinking in terms of things like transaction and you have these concepts of intent, it makes it easier for you to potentially build the components that'll be composed and used through that intention.
+[02:58:43] And so I think it'll give us more ways to reason through these and communicate, and then ultimately be more interoperable, right?
+[02:58:49] And to me, the last thing that I think is interesting is the diagnostics that you can run on this.
+[02:58:55] Intention is something that flows through many events potentially, right?
+[02:58:59] And I think one of the examples I've seen before is, you know, talking about that, like that mission flows through.
+[02:59:05] It could be long-lived.
+[02:59:06] It could be weeks.
+[02:59:07] That intention can still be there.
+[02:59:09] So it's still very, very early for most enterprises.
+[02:59:12] Absolutely.
+[02:59:12] And yes, that interoperability is key.
+[02:59:14] I think that's pretty hard for enterprises because they're jumping between different clouds, different environments, different legacy systems, and that policy, that mission has to hold through all of those different hops.
+[02:59:23] Yeah, a lot of enterprises still have to deal with the fact that the permissions says read only and it's still rewrite, right?
+[02:59:29] So, like, you have the other problems you have to start dealing with.
+[02:59:31] And so I think that it will help get the kind of taxonomy or language amongst people be easier to interoperate now.
+[02:59:39] Absolutely.
+[02:59:41] One of the reasons why I'm excited about intent-based authorization is because I think it has the ability to be a huge unlock for things like agentic commerce.
+[02:59:50] So let's apply intent-based auth to something real.
+[02:59:53] I think intent-based auth adds a lot of value here, and for users, it can help them ensure their agents buy the right item with their own personal
+[03:00:00] own personal budget.
+[03:00:01] And for merchants, that means capturing the intent that gives them extra data to understand why a purchase is being made and if this agent should even be trusted to visit their site.
+[03:00:09] Davis, when we think about agents in the context of financial services and agentic commerce, why is intent-based auth so important?
+[03:00:17] I think simply it extends the concept.
+[03:00:19] Maybe not everybody is aware, but some are, you know, know your customer, right?
+[03:00:23] So I want to know my customer, know who they are, what they're doing.
+[03:00:25] But I think also we're starting to see, I want to know my agent, right?
+[03:00:29] So I think that you have a coupling here around the agent itself, the intent of the actual user, the intent of the operator, the intent of the processor, right, et cetera.
+[03:00:39] Before now, we couldn't really bring those together, right?
+[03:00:42] It matters, of course, when it comes to things like commerce, because you have additional layers on top of this around what was the intention for things like regulatory requirements, et cetera.
+[03:00:51] And this is going to help, I think, simplify those operations, which means we'll get more access to these agents, you know, doing good work for us.
+[03:00:59] That makes sense.
+[03:01:00] And another blocker for agentic commerce is the fact that the web wasn't made for agents.
+[03:01:04] Ian, can you tell us how agent identity can help?
+[03:01:07] Yeah, I think stepping back, we've kind of always had this problem where, like, what do you do with the unregistered client?
+[03:01:13] So, like, I show up on eBay, I haven't logged in, I'm using Chrome, eBay doesn't know who I am.
+[03:01:18] How do I do guest checkout?
+[03:01:20] How do I prove I'm a person?
+[03:01:22] How do I, you know, so they can, you know, say, yeah, you can bid on this pair of socks for $50.
+[03:01:27] And I think if we're all paying attention to what's going on in personal agents, Muse and Instinct and Grokbot, and, you know, recently this announcement out of Sierra and Decagon and Friends around this personal agent protocol, is, like, the fundamental problem we have is, like, how do you have an agent show up to a website, be able to interact with the website, know that you actually can trust that agent?
+[03:01:45] So, like, for a long time, if it captures on the web, well, why?
+[03:01:49] It's because we want to prevent spam.
+[03:01:50] We want to prevent abuse.
+[03:01:51] So we added CAPTCHAs, and then, like, that's something only a human could solve.
+[03:01:54] So if we have a CAPTCHA that stops spam so they can't spam the thing, right?
+[03:01:57] And now we have agents, and they've broken CAPTCHAs.
+[03:01:59] But this has, like, been a traditional problem on the web.
+[03:02:03] In fact, if you think back two to three years, Vercel, which is, I think we're all aware of Vercel, was blocked in Spain.
+[03:02:09] Well, why was Vercel blocked in Spain?
+[03:02:10] Because Vercel shared the same IP addresses for every single host on Vercel, and there was one host on Vercel, one website on Vercel that they were hosting that was hosting, like, Premier League content.
+[03:02:21] And Spain decided, hey, in order for us to stop that Premier League content being displayed illegally inside Spain, we're going to block all of Vercel, right?
+[03:02:28] And so in the same way that, like, Vercel has the problem, agents have the same problem, but so much, so much worse.
+[03:02:34] So how do you have unregistered traffic you've never met before show up to your front door and then decide whether or not you let it in or not?
+[03:02:40] And that's, like, the actual first and foremost fundamental problem we have to solve.
+[03:02:43] It's the same issue with Muse and Instinct and what they're trying to do, is, like, how do we actually create agreeable rails we can all operate on so that as a downstream resource, I can decide what agents I want to allow, who I trust based on who users they are, and then on the other side, I can also know how to talk to those people.
+[03:03:00] Thanks, Vance.

@@ -1,0 +1,24 @@
+{
+ "slug": "matt-ragone",
+ "name": "Matt Ragone",
+ "role": "Financial Planner",
+ "company": "Range",
+ "bio": "Matthew Ragone is a Financial Planner at Range, a fintech startup that aims to make working with a financial advisor more accessible. He is based in the New York City metropolitan area, holds the CFP(R) and CRPC(TM) designations, and studied at Fairfield University. Before joining Range, he worked in wealth management at Merrill Lynch. At Range, he and his colleagues built the AI agent skills used in their planning workflow without writing code, which is the subject of his AI Engineer talk \"We Let Our Financial Planners Write the Agents\".",
+ "linkedin": "https://www.linkedin.com/in/matthew-ragone-cfp%C2%AE-crpc%E2%84%A2-a56a85106/",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FfjQrUkA2SbuYPYn7A5HF_headshot-1791983200354.jpg",
+ "sessions": [
+  {
+   "title": "We Let Our Financial Planners Write the Agents",
+   "time": "11:30am - 11:48am",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ],
+ "enriched_from_day1": true,
+ "sources": [
+  "https://www.linkedin.com/in/matthew-ragone-cfp%C2%AE-crpc%E2%84%A2-a56a85106/",
+  "https://daily.dev/posts/we-let-our-financial-planners-write-the-agents-matthew-ragone-range-8yytuikgy",
+  "https://www.getwarmer.com/advisors/matthew-ragone"
+ ]
+}

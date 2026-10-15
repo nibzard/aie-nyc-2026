@@ -1,0 +1,24 @@
+{
+ "slug": "will-brown",
+ "name": "Will Brown",
+ "role": "Applied Research",
+ "company": "Prime Intellect",
+ "bio": "Will Brown leads Applied Research at Prime Intellect, working on open-source research and infrastructure for agentic reinforcement learning. He created Verifiers, an open-source framework for training and evaluating language-model agents, and contributed to the INTELLECT-3 project. He completed a PhD in algorithmic game theory at Columbia University, advised by Christos Papadimitriou and Tim Roughgarden, and studied computer science, data science, and philosophy at the University of Pennsylvania. Before Prime Intellect, he was a member of the Machine Learning Research group at Morgan Stanley, with earlier research and engineering roles at AWS, Two Sigma, MongoDB, and AmFam.",
+ "linkedin": "https://www.linkedin.com/in/willcb",
+ "twitter": "https://x.com/willccbb",
+ "website": "https://willcb.com",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FB5YMbU4qT1CWvN0ZyPOo_headshot-1791758174716.jpg",
+ "sessions": [
+  {
+   "title": "Self-Improving Organizations",
+   "time": "3:45pm - 4:03pm",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://willcb.com",
+  "https://ai.engineer/speakers/will-brown",
+  "https://www.linkedin.com/in/willcb"
+ ]
+}

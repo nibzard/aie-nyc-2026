@@ -1,0 +1,351 @@
+# transcript slice 06
+window: t=10920..12740 (03:02:00..03:32:20 video time; 11:49:52 AM..12:20:12 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[03:01:04] Ian, can you tell us how agent identity can help?
+[03:01:07] Yeah, I think stepping back, we've kind of always had this problem where, like, what do you do with the unregistered client?
+[03:01:13] So, like, I show up on eBay, I haven't logged in, I'm using Chrome, eBay doesn't know who I am.
+[03:01:18] How do I do guest checkout?
+[03:01:20] How do I prove I'm a person?
+[03:01:22] How do I, you know, so they can, you know, say, yeah, you can bid on this pair of socks for $50.
+[03:01:27] And I think if we're all paying attention to what's going on in personal agents, Muse and Instinct and Grokbot, and, you know, recently this announcement out of Sierra and Decagon and Friends around this personal agent protocol, is, like, the fundamental problem we have is, like, how do you have an agent show up to a website, be able to interact with the website, know that you actually can trust that agent?
+[03:01:45] So, like, for a long time, if it captures on the web, well, why?
+[03:01:49] It's because we want to prevent spam.
+[03:01:50] We want to prevent abuse.
+[03:01:51] So we added CAPTCHAs, and then, like, that's something only a human could solve.
+[03:01:54] So if we have a CAPTCHA that stops spam so they can't spam the thing, right?
+[03:01:57] And now we have agents, and they've broken CAPTCHAs.
+[03:01:59] But this has, like, been a traditional problem on the web.
+[03:02:03] In fact, if you think back two to three years, Vercel, which is, I think we're all aware of Vercel, was blocked in Spain.
+[03:02:09] Well, why was Vercel blocked in Spain?
+[03:02:10] Because Vercel shared the same IP addresses for every single host on Vercel, and there was one host on Vercel, one website on Vercel that they were hosting that was hosting, like, Premier League content.
+[03:02:21] And Spain decided, hey, in order for us to stop that Premier League content being displayed illegally inside Spain, we're going to block all of Vercel, right?
+[03:02:28] And so in the same way that, like, Vercel has the problem, agents have the same problem, but so much, so much worse.
+[03:02:34] So how do you have unregistered traffic you've never met before show up to your front door and then decide whether or not you let it in or not?
+[03:02:40] And that's, like, the actual first and foremost fundamental problem we have to solve.
+[03:02:43] It's the same issue with Muse and Instinct and what they're trying to do, is, like, how do we actually create agreeable rails we can all operate on so that as a downstream resource, I can decide what agents I want to allow, who I trust based on who users they are, and then on the other side, I can also know how to talk to those people.
+[03:03:00] Thanks, Vance.
+[03:03:01] Dick, how is AI helping unlock the future of agentic commerce?
+[03:03:06] Well, the key thing is a number of people have been building sort of proprietary closed-box systems, right?
+[03:03:14] You know, so, you know, I'm a fan of the concept of the personal agent protocol, Poppy, but it doesn't really go far enough, right?
+[03:03:24] It just, it's like, okay, well, now we've got a bit of an agent identity.
+[03:03:26] We just use some of the building blocks, and it's an attractive approach because you're just doing it, but it doesn't solve many of the new things that you need for an agentic world.
+[03:03:37] And so a key motivator for people for having standards is that you can plug components from different places, right?
+[03:03:45] So I'm a strong believer that we should have control over what our agents do.
+[03:03:50] At some point, agents are going to be doing so much work, there's no way we can have human in the loop approving everything, right?
+[03:03:56] That's just not—we've already seen that that isn't going to scale.
+[03:03:59] So that means we need to have a supervising agent that is our supervising agent that runs our policy and decides how we do things, that should be independent of the agents doing all the work.
+[03:04:10] And if we want to be able to plug and play those things, we need to be able to have a protocol to separate those.
+[03:04:15] Otherwise, you know, the decision about what the agent can and can't do, what the guardrails, is decided by the agent, by the vendors of the agent around what you can and can't do.
+[03:04:26] And I don't really want to go and give control to them to decide what I can do and that all my decisions are based in there.
+[03:04:32] I want to be able to pull that supervision into another component.
+[03:04:36] And in order to be able to plug and play pieces, we need to have a protocol that things interoperate.
+[03:04:41] I would just add to that.
+[03:04:42] I think, like, right now what we're seeing is, like, we kind of like, we all want the web to be federated, right?
+[03:04:47] That means, like, websites or resources on the web can decide what they're allowed to do.
+[03:04:51] But the standards upon which things operate should be federated and enable us all to interoperate.
+[03:04:55] And I think we're at a moment where things like, you know, we're at a moment where there's a couple of large players, and the question for the industry is, are we going to settle on things that actually bias to the large players and give them, like, concrete locked doors?
+[03:05:07] Are we going to move to do the thing we've always done, which is build federated protocols, things like OIDC, things like, you know, TLS?
+[03:05:13] Those things operate and enabled, like, a broad web, enabled a lot of commerce to occur, enabled a lot of information to flow, enabled all of us to have jobs in a way that, because we could be inventive.
+[03:05:21] And so the question I actually ask the broad industry is, okay, this stuff's coming.
+[03:05:26] Which version of the world do we want, one way or the other?
+[03:05:29] Now, I do, I think it's interesting that let's say this all goes perfect and we've got agents buying stuff and everybody's kind of happy.
+[03:05:36] What I think will end up happening is we'll start realizing that we have another piece that we have to start working on, which is the human itself.
+[03:05:41] And so one of the things I think when you start having intents being involved is you get what's called psychological ownership, meaning I actually now have a linkage between the human and the outcome of that agent.
+[03:05:50] When you're just kind of, you know, disconnecting it or you connect it up an OAuth scope or something like that and a claim and all that, it's kind of magic, and then you don't really know what's going on.
+[03:06:00] And so I think with intention, it'll be easier for humans to take accountability when things do go wrong.
+[03:06:05] And I think when you're talking about real money being transferred or things like that, you want to have that human ultimately accountable.
+[03:06:10] I think many people have probably seen the 1979 IBM manual.
+[03:06:14] It says, you know, and so, like, that photo, I think, is very true in that we can't have the machines be accountable, right?
+[03:06:20] We're going to have to have the humans linked to it, and intention, I think, is that link.
+[03:06:24] Yes, and then, yeah, another word for intent is motive, like we were talking about last night.
+[03:06:31] And that ability to hold someone accountable, whether it's a person or an agent, I think is really important.
+[03:06:36] I think intent can also help with that, be able to understand why did this go wrong?
+[03:06:41] Was it the user's, you know, the user was malaligned, the agent was malaligned?
+[03:06:46] And then using that intent to be able to respond.
+[03:06:48] For each of you, how are you seeing intent provide that benefit and the ability to respond to potentially a malaligned user or agent?
+[03:06:56] I think it's going back to what I mentioned before about diagnosing, right?
+[03:06:59] So if you change the word intent to motive, then you change diagnostics to forensics, right?
+[03:07:04] And I think anybody who's done debugging or had to do forensics of an AI agent gone rogue will know that, like, trying to figure out what it was trying to do versus what the intention of the user was is very hard, right?
+[03:07:16] So having some of that information being propagated and immutable through the system, et cetera, gives you some properties that allow you to more short-circuit your investigation, right?
+[03:07:25] And as those things become more interoperable, I think we're going to start seeing companies be able to more quickly kind of scope and identify, well, was this human error?
+[03:07:32] Was this an agent software error?
+[03:07:34] Was this—what was that error?
+[03:07:36] And handle that blast radius appropriately.
+[03:07:38] We see in the financial system, right, you have different things when you're doing a transaction around, okay, I made this payment, but it was, you know, incorrect dollar amount or whatnot.
+[03:07:46] You have clear guidelines on how to work with that.
+[03:07:48] We don't have a lot of those when things go wrong right now.
+[03:07:51] So I think intent will help us build those as we go forward.
+[03:07:57] And I think one area where a recent incident kind of highlights where intent—you can have, like, good intent but still take potentially the wrong action—is the Resy incident that happened recently, where an Instacart agent went out on behalf of a user and tried to book a restaurant reservation on Resy.
+[03:08:16] com.
+[03:08:17] That agent was very eager.
+[03:08:18] It made 200 API calls an hour, and it ended up getting the user's Resy account banned.
+[03:08:25] Dick, how can AOF budgets help in the case where an agent like that is using way too much of a downstream resource, but it still has good intent?
+[03:08:34] Yeah, well, this is another example about how just software is completely different now in the agentic world, right?
+[03:08:40] When it was predetermined software, you know, that was a bug if you called 200 times and you would fix it.
+[03:08:45] Where now, well, the agent's like, No, I'll just keep trying until I win.
+[03:08:51] And so we saw that as we were, you know, experimenting, working with people with AOF, and we realized, yeah, there's a big problem that agents will learn something and they'll just abuse the system.
+[03:09:04] They don't think it's of abuse.
+[03:09:05] They don't know any different.
+[03:09:06] There's been no signal to tell them that, Oh, I should only use this amount of stuff.
+[03:09:10] And so we added the concept of budgets, where not only do you give a token to the agent that's time-limited as to how long can they do a particular action, but also a budget of how much resource they can do.
+[03:09:24] And so they have access until the tokens either expired or they've exhausted the budget.
+[03:09:29] And so that way, when they come back and, you know, they've exhausted all the budget, the supervision, you can go and decide, should I give more budget to this agent or not, as opposed to traditional rate limiting, which just cuts it off, and then, like, then what do you do, right?
+[03:09:44] And it doesn't know, well, why did I get cut off or anything like that.
+[03:09:47] Where in budget, there's continual feedback to the agent about how much budget was consumed, has an idea about how much budget it has, and so now it can operate within a budget, right, like a person would do about, Oh, this resource is scarce.
+[03:10:00] I'm going to be careful about how much I...
+[03:10:03] How much I use this.
+[03:10:05] Then how does the brains versus the hands architecture concept come into play here to allow us to, okay, when a budget is close to being fully reached or is reached, how can the brain and hands separation of access and the credentials being separate from the agent and the model itself help us be able to stop an agent from using too much of a downstream resource?
+[03:10:27] Because if it's getting close, then maybe we don't exercise the ability to give it another credential, for example.
+[03:10:32] Sorry, I didn't quite follow.
+[03:10:34] The echo in here is horrible, so— No worries, that's for anyone.
+[03:10:37] But basically, like, so with the brains and the hands architecture that we're converging on in an industry, we're basically keeping the credentials and the access from an agent separate from the agent itself.
+[03:10:40] So there's no broadstanding access that an agent has today, and no API keys, which I know is a benefit of AIOF, that AFL allows agents to run without API keys.
+[03:10:43] How is that helpful in the context of the residency?
+[03:10:43] Well, you've got the access to it.
+[03:10:43] Sorry, I still don't understand.
+[03:10:44] Yeah, I can jump in.
+[03:10:44] Yeah, please, thanks.
+[03:10:44] I got you, Dick.
+[03:10:44] So, like, broadly speaking, look, I think we look back at an incident that I just keep at the top of my mind, like macOS where I found, like, a random key on a disk, right?
+[03:10:56] Like, obviously agents are deeply goal-seeking.
+[03:11:18] So the core of the question is like, okay, well, if we give these, like, agents, we give the brain, which is the model and the LLM, and you have these hands, which you kind of give them, put them in a sandbox, and inside the sandbox is the tools.
+[03:11:34] Like, the fundamental idea of the sandbox here that is that, okay, you can control what's inside of it, so it can't actually, like, get API access.
+[03:11:42] And then if you have an egress proxy outside the sandbox, that's where you get to have your authorization boundary.
+[03:11:47] And so not only does it help do translation between systems, right, which is like that's where AIOF can exist and talk to the outside world or do termination, but it also means that, like, the agent, you have, like, an ability to apply authorization at the egress proxy boundary.
+[03:12:02] And so I think at the core of it— That model, which is the predominant model today in Anthropic and OpenAI and many of their labs are pursuing today, is the model that allows us to both have the things we want, which is how do we have these things experiment and try stuff out and do silly things, which is the core value, while also having a deterministic layer outside of it that can implement things like AOF and all the other components we want in our protocols.
+[03:12:26] I think the decoupling is valuable.
+[03:12:28] Going back to what you mentioned with forensic and be able to separate things, but I do think that we still have a lot to learn on.
+[03:12:34] It isn't just one brain, right?
+[03:12:35] And it's very easy, actually, to build your agent loop where you put the brain in the loop rather than outside the loop, right?
+[03:12:41] So an example of this would be, you know, people that are leveraging memory systems.
+[03:12:45] They put in some memory and some context that is now used going forward for every agent that is biasing that agent to make a decision, to tell the hands, in this case, to go do something it shouldn't do.
+[03:12:55] And so one of the things that I think we don't talk about enough here is toxic combinations, right?
+[03:13:00] And so when you do separate the hands and the brain and whatnot, you can actually change up what hands are available, right?
+[03:13:06] So the example that I've seen be very successful is the removal of tools dynamically based on that actual brain and what it's doing.
+[03:13:13] So the earlier example we gave of reading an email, there's nothing that says that, oh, if they're going to go write an email, I'm going to disable all web search tool calls or any other external egress capability, tool-call-wise, until the write email tool has been complete and that mission has been done, then I can re-enable them, right?
+[03:13:32] And so I think that we're going to start becoming more and more engineering in these different kind of concepts, that they are still complicated, they're still growing and still nascent, but I think it's a better separation than what we have today.
+[03:13:43] Yeah, and this is how these things we're talking about, which seemed like geeky OSS problems, actually then merge back up to real agent engineering problems, which is if you actually understand what you're doing, one of the biggest complaints, less now, but one of the biggest complaints with MCP was context bloat, especially when we had smaller context windows, right?
+[03:13:58] But intent systems can ensure that the right capabilities are given to the agent at the right time so they don't spend a bunch of time doing things they shouldn't be doing.
+[03:14:06] be doing, right?
+[03:14:07] It actually helps them navigate towards the goal state and helps them put them on more of a paved path.
+[03:14:11] So intent, like not only unlocks like a bunch of security stuff, intent also will result in us spending less tokens because the agent will spend time doing less things that aren't the right pathway.
+[03:14:21] Or it'll come up to the point and say, Hey, I just can't do it.
+[03:14:24] And so what we know about this era is so much of it is about nudging the agent in the right direction and ensuring it can't do the wrong thing, and that's how you get the outcome you want.
+[03:14:32] Davis, how are you seeing intent-based auth as part of a larger strategy for production agents?
+[03:14:39] I know when it comes to building, deploying, and operating agents in production, there's many different outcomes teams should be thinking about, such as discovering what's running, what the agent's capabilities are, the ability to validate inputs and outputs, constraining an agent like we've talked about using the egress proxy and different networking rules.
+[03:14:57] How does all of this fit into play, and what's working inside enterprises today to really be able to ship agents to production?
+[03:15:03] I think we're finally—it's helping move the kind of conversation from authentication to authorization.
+[03:15:08] And really, like, how do we do dynamic authorization?
+[03:15:12] How do I validate that authorization?
+[03:15:13] How do I have the human in the loop at the right time?
+[03:15:16] Because I agree with what Dick was saying earlier, that the human in the loop is somewhat of an anti-pattern in many ways, right?
+[03:15:20] Because they can get fatigued, et cetera.
+[03:15:22] But you need to have a way to bring them in when it's important.
+[03:15:26] Those were not engineering discussions before, right?
+[03:15:28] Now they're actually part of the engineering conversation, where engineers are being involved in the authorization process.
+[03:15:34] They're not just saying, Oh, I've got my access.
+[03:15:36] I'm good to go.
+[03:15:37] So that actually changes the way we're seeing threat models done.
+[03:15:39] It changes the way we're seeing the full attack surface of applications in general.
+[03:15:44] And so I think you're now looking at this authorization model as another kind of set of tools that you can use to reduce not just security issues, but flat-out error rates of your agent, right?
+[03:15:55] Like, I mean, when you have less things the agent can do, it makes better decisions, right?
+[03:15:59] And so fundamentally, we've seen, you know, real-world cases where the agent loop is just better, faster, stronger because you've actually spent the time on knowing what it is the intent they're trying to get, what's the mission that they're trying to accomplish.
+[03:16:11] And then the last thing is it brings the people together in terms of we now have other different people, the security team, the application team, they're now able to have a conversation that they're using the same language.
+[03:16:22] A lot of times when it came to identity, it was a completely different language, right?
+[03:16:26] And it was just like, get out of my way.
+[03:16:27] What do I have to go do to go ahead and get my, you know, token and I can go forward.
+[03:16:32] Now they're seeing that you can actually pair these things and leverage that capability to drive, you know, efficiency of your actual agent's outcome.
+[03:16:38] That makes sense.
+[03:16:40] Ian, how are you applying these concepts to software factories?
+[03:16:43] I know today you released a reference architecture on the secure software factory.
+[03:16:48] How are you applying the concepts of runtime authorization, constraining agents, and all of that to that?
+[03:16:54] Yeah, I think, like, so there is a reference architecture we just published on agentbaseline.
+[03:16:59] org.
+[03:16:59] We talk about three different levels of factory, one being like a human-driven one, one being a workflow-driven one, one being like this agentic-driven one, which is like the thing we all basically want to get to, which is like it's driven by agents.
+[03:17:11] At all points in time, the runtime authorization is a core component of a larger ecosystem that actually enables the factory to, like, be able to point in the right direction and do the right thing and also get access to the right piece.
+[03:17:24] And it's very, it looks different than previous things that you would have used, like a secret manager, because it's making very different decisions than previous generations had for managing deterministic software.
+[03:17:33] But it is a core component of enabling the entire thing to work, like when to bring someone into the loop, what agents can work off to what other agents.
+[03:17:40] You know, how can we have an agent that can have access to production systems and do an auto patch?
+[03:17:44] These are fundamental questions of, like, how do we actually solve how to scale software.
+[03:17:48] Right now we're in a position where, like, we've never been able to generate more software, but we have a complete bottleneck in getting into production and ensuring it works.
+[03:17:56] And that's the next phase, is, like, how do you actually graduate from just using LLM to generate text and software to actually making it capable of deploying it into production, iterating on it, and getting it to a stable state quickly and then responding to instances as they arise.
+[03:18:11] Davis, on a podcast you did with me, we talked about how cybersecurity has something to learn from robotics.
+[03:18:18] In robotics, there's this concept when maybe a robot raises its arm, it thinks, is it safe for me to raise my arm?
+[03:18:24] Should I?
+[03:18:25] Am I allowed to do that?
+[03:18:26] But it also looks at its external environment and says, what has changed?
+[03:18:29] Is it still safe for me to raise my arm?
+[03:18:31] When we think about runtime authorizations, what do those decisions need to take into context beyond just intent?
+[03:18:38] Yeah, I think having a model like this allows us to add in more sensors into our decision.
+[03:18:44] So the robotics example of an arm moving up or down, any of the external factors, it could be, are there other objects near it, right?
+[03:18:52] It could be temperature.
+[03:18:53] It could be, well, am I moving and I don't want to move my arm while the rest of the robot's moving, et cetera.
+[03:18:59] So it's usually looking at all different types of things.
+[03:19:01] None of those are deterministic.
+[03:19:03] They're all probabilistic.
+[03:19:04] So there's a range of options, and it picks the best option based on all of those sensor data at one time.
+[03:19:11] Most authorization decisions in organizations today are still single binary decisions, right?
+[03:19:16] And that just doesn't work in the future, right?
+[03:19:18] So being able to pair the intent of what a user is trying to do with the ecosystem that the user is doing it in.
+[03:19:24] That could be where they're doing it from, time of day, but it could be even more advanced things like, for example, should I let this administrator use Firefox to access this server right now when this server has high-risk vulnerabilities and their system hasn't been patched too, right?
+[03:19:39] Now all of a sudden you're bringing in a lot more context into the environment around it.
+[03:19:44] And again, that can be through different teams, but more importantly, through sensors.
+[03:19:48] And I think we've all kind of seen the value of observability in general.
+[03:19:52] Imagine being able to have this type of context at the span level from an OTEL perspective or something, right?
+[03:19:58] You're looking at a trace, you've got a span, and you actually know what the environment was outside.
+[03:20:04] Outside your application at that time, as well as what the user's intention was, that allows you to diagnose things in a completely different way.
+[03:20:05] And so I think if we can bring in some of those concepts, we'll get shorter time, shorter-to-live, you know, authorization decisions that have much more context than even just the user's intent.
+[03:20:05] It'll be the state of the environment around it.
+[03:20:07] That makes sense.
+[03:20:08] And forward-looking, as we evaluate whether intent-based authorization is working in our environments, one natural place to look will be a log of the agent's actions: what was denied, what was allowed.
+[03:20:36] Ian, why is it important to have your audit log separate from the agent itself, meaning outside of its control?
+[03:20:42] Yeah, I think this comes back to also just, like, why the enforcement point has to be outside the, like, primary, like, hands and brains of an agent, right?
+[03:20:49] You can't trust this thing.
+[03:20:50] And so in the Hugging Face incident, it had a couple of different components of it.
+[03:20:53] I mean, one obviously abused a vulnerability we didn't know about in Squid proxy, but more importantly, you didn't have any observability or monitoring about what was going on.
+[03:21:00] And so this thing was able to get on the open internet through this vulnerability, and there was no, like, place at which recorded the different actions that this agent was taking and for them to monitor.
+[03:21:09] And so independent of, like, whether we're applying, like, a, you know, enforcement point to network traffic that's pushing it on the internet that is out of reach of the agent to tamper with, or we're using, you know, solving vulnerabilities as they pop up, you know, this Hugging Face one is literally unique.
+[03:21:23] We still need to actually have a record of, like, who told this agent to do what thing for what purpose, and is that still true?
+[03:21:29] Because ultimately, at the end of the day, what we're dealing with agents is a liability question.
+[03:21:34] And so this is why I actually don't think we need more regulation around agents.
+[03:21:35] What we just need is our pre-existing laws around liability be dealt with, which is if I employ an agent to do some action, who is liable if that action causes damage, right?
+[03:21:46] It is the person who employs it, which could be an organization or a person, or someone that delegated some action to something.
+[03:21:51] That is, like, that's the final question we have to deal with.
+[03:21:54] And then, of course, you have to have the ability to answer that question, which is, well, who did it, and which is where the tamper-resistant audit log comes from.
+[03:22:01] Perfect.
+[03:22:02] And then to wrap up, I wanted to ask you all a fun question.
+[03:22:06] So there's the concept of the probability of doom or p-doom, where the AI doomers are saying that AI agents are going to really cause all sorts of havoc or be like the ruin to humanity, whereas the AI optimists are like, no, this is really, you know, poised to help us.
+[03:22:20] It's not a genuine threat.
+[03:22:23] For each of you on the panel, what is your take on this as, you know, runtime authorization based on intent, the other things we talk about like constraining agents, validating inputs, outputs, a holistic strategy for production agents, is that enough to save us?
+[03:22:37] Is p-doom real or is it not worth the hype?
+[03:22:42] You get to start, Dave.
+[03:22:43] Oh, I get to start first?
+[03:22:44] You've got that spicy look on your face.
+[03:22:47] Well, part of your question is, are agents going to take over?
+[03:22:52] And I think agents being fully autonomous and not really tied to a particular organization is still science fiction.
+[03:22:59] You know, so who knows, right?
+[03:23:01] Like, that's one direction.
+[03:23:04] Another one is, in a responsible organization, it's put in the right controls.
+[03:23:07] Agents aren't, you know, we're getting and evolving enough of the tools to make sure that bad things don't happen in a responsible organization to put in the right controls.
+[03:23:15] And so that leaves two scenarios for where there's going to be a potential problem.
+[03:23:20] One of those is in an organization that isn't got its act together, an insider threat could go and unleash an agent to cause havoc, right?
+[03:23:29] And so they've got some special access that other people have.
+[03:23:32] The other one, the one that I'm more concerned about is, you know, it's been shown, you know, the hugging face instance, and if you watch the talk that they gave at Black Hat, right, that was really a call to arms around, you know, here's a situation where we didn't want a bad thing to happen and a bad thing did happen.
+[03:23:50] What about people that Want bad things to happen and have these tools.
+[03:23:56] And that, I think, is a threat that's the one that's potentially going to have—I mean, it's going to happen, and there's going to be some catastrophes.
+[03:24:04] Hopefully we're prepared enough that those aren't horribly disastrous.
+[03:24:07] But it's going to be, you know, there's going to be some things that are like massive natural disaster-like scale issues caused by malicious actors, either kind of intentionally or kind of unintentionally.
+[03:24:21] But it's where people aren't being responsible in their use of these super powerful tools.
+[03:24:28] Yeah, I can't give necessarily a specific probability, right?
+[03:24:32] But what I can say is I think I've always been, you know, kind of surprised and excited when, you know, ingenuity of engineers gets involved in problem solving.
+[03:24:41] And I think where we're at the stage now, like some of the new capabilities within agents, et cetera, we have real engineers, folks that are here actually just iterating on the problem, right?
+[03:24:50] And we're starting to see just tremendous improvement in, you know, in my mind, some of the capabilities that will be available to change what our future can be.
+[03:24:57] And so to me, I have no problem kind of believing the engineers are going to figure out a solution here.
+[03:25:04] I mean, maybe I have the hottest take.
+[03:25:05] I mean, like, I can't say it's equal to zero, but I would say it's approaching or asymptotically zero is probably the world is going to end.
+[03:25:11] I think, like, the incentive structure for most people is to continue.
+[03:25:14] And also at the end of the day, like, we still have liability frameworks.
+[03:25:18] And, you know, I think generally humans are good people, so we don't set out to destroy the world specifically.
+[03:25:24] I also think, like, broadly speaking, like these agents, at the end, I have this sort of hot take I say, which is like they can just be unplugged, but I think it's just true.
+[03:25:30] It's like at the end of the day, like, they're computers, we can unplug them.
+[03:25:35] And so broadly speaking, I don't believe in the debate.
+[03:25:37] I don't think it's real.
+[03:25:38] I think at the upside of it, I kind of believe more to what Dave's position is, is we're iterating very quickly.
+[03:25:45] We're figuring out where these things can work, where they don't, and when they don't work, they create damage, and that's what ultimate, like, sort of— The antibody of society is that says, hey, maybe we shouldn't do this.
+[03:25:56] Like, it's probably a bad idea.
+[03:25:57] So I'm the doomer on the panel.
+[03:26:00] It's unfortunate for, you know, people like the founder of PocketOS who, like, lost a bunch of data.
+[03:26:04] But it's great for the rest of us because we all learn together.
+[03:26:07] And at the end of the day, that results in people not doing things that don't make a lot of sense, and I think that will continue to be true.
+[03:26:13] Makes sense.
+[03:26:14] Thank you each for your expertise and your time here on this panel today, and thank you to the audience for listening, and we'll catch you next time.
+[03:26:22] Thank you.
+[03:26:23] Thanks so much.
+[03:27:01] Hi, everyone.
+[03:27:02] I'm Matt Ragone, and I'm a financial planner at Range.
+[03:27:04] I want to show you how our financial planners ended up writing the agents that we use every day.
+[03:27:10] And none of us, the financial planners for that matter, write code.
+[03:27:15] This is the build guide, how we did it step by step so you can take it back to your own teams, companies, etc.
+[03:27:22] So a quick bit about me, because it matters for how you'll hear this talk.
+[03:27:27] I'm not an engineer.
+[03:27:28] I'm a certified financial planner, and I spend my days with clients talking about cash flow, taxes, insurance, retirement, estate, you name it.
+[03:27:37] I also lead the AI adoption for the planning team at Range, which is an all-in-one wealth management company.
+[03:27:45] Most agent talks you'll hear come from the people who built the platform.
+[03:27:50] This talk comes from someone on the other side, the people you hand the platform to.
+[03:27:55] We work in a regulated business.
+[03:27:57] The output is financial advice to real clients, and the review step is not optional.
+[03:28:04] So this isn't a vendor pitch.
+[03:28:06] It's a method, and it's what actually worked for us.
+[03:28:11] We started where everyone starts: AI as a chatbot.
+[03:28:14] I'd write a client message, paste it in, and ask it to make it a little clearer or friendlier.
+[03:28:20] And that was useful.
+[03:28:21] It saved me a few minutes here and there, but I was still doing all of the work manually.
+[03:28:26] I was just doing it a little bit faster.
+[03:28:29] The change that actually mattered came later.
+[03:28:33] Here's what we figured out.
+[03:28:35] A planner's constraint was never typing speed, for example.
+[03:28:39] It's that we can only be in one place at a time.
+[03:28:43] If I'm on a call with a client, I'm not building someone else's plan.
+[03:28:48] Writing faster doesn't fix that problem.
+[03:28:50] What fixes it is work that happens while I'm somewhere else.
+[03:28:54] So here's what a day looks like now.
+[03:28:57] I'm on a call with one client.
+[03:29:00] At the same time, an agent is drafting a full cash flow analysis or an insurance analysis for a different client.
+[03:29:08] When the call ends, I open that draft, I fully review it, adjust what needs to be adjusted, and send the client their recommendations.
+[03:29:17] I want to be really clear about that last step.
+[03:29:19] The agent doesn't send anything.
+[03:29:22] A planner reviews every single recommendation before a client sees it.
+[03:29:28] What changed is that the first draft no longer needs me sitting in front of it.
+[03:29:34] Getting there took a lot more than a good prompt, however.
+[03:29:37] Two things had to be true.
+[03:29:39] First, the agent has to work where the work lives, not in a separate chat window I'm copying and pasting it into.
+[03:29:48] Second, it has to know how we do it, not how financial planning works in general.
+[03:29:53] The model already knows that, but the agent needs to know how Range does it, what we look at first.
+[03:30:00] Look at first what we always flag, how we phrase a specific recommendation.
+[03:30:05] That combination is what a skill is, our firm's way of doing one specific piece of work written down so an agent can follow it.
+[03:30:16] The bulk of this talk is how you build one.
+[03:30:20] Five steps: pick, teach, pack, test, and then ship.
+[03:30:26] None of them require writing code.
+[03:30:28] Every one of them requires knowing the work really well, which is exactly why the people doing the work should also be the ones building it.
+[03:30:39] Step one: pick a workflow you repeat.
+[03:30:42] Your initial instinct is to go for the flashiest work, whatever's taking the most amount of time and the most complex.
+[03:30:49] Don't.
+[03:30:50] Pick something you do every week where you already know what good looks like, where you can spot a bad draft at a glance.
+[03:30:57] Additionally, we recommend choosing some of the least complex workflows to start, but some that require the most manual work.
+[03:31:06] For us, that meant things like cash flow analysis and insurance reviews.
+[03:31:11] Just for us here at Range, that required the most manual work.
+[03:31:15] And if you can't judge the output quickly, you can't test it and you can't trust it.
+[03:31:21] So look for two things: you do it often and you know how to judge it.
+[03:31:27] Step two: show it several real cases for previous plans you've delivered.
+[03:31:33] Take several actual client cases and walk through the work start to finish.
+[03:31:38] And as you do it, narrate your judgment out loud, not just, Next I open the pasteup, why you're opening it.
+[03:31:46] What you're looking for.
+[03:31:48] What would make you stop and ask a question?
+[03:31:50] That narration is the whole game.
+[03:31:53] The steps are easy to write down.
+[03:31:55] The judgment is what makes it your firm's work instead of generic advice.
+[03:32:03] Step three: pack it into a skill.
+[03:32:05] A skill isn't just a list of steps.
+[03:32:08] Two things matter most: the questions it must ask before it starts.
+[03:32:13] What does it need to know?
+[03:32:15] What should it confirm with me instead of simply guessing?
+[03:32:18] And the limits it must respect.
+[03:32:21] What it never does on its own.
+[03:32:23] In our world, the big one is that it never sends anything to a client.
+[03:32:27] It drafts, and then a planner decides if it gets sent or needs to be adjusted.
+[03:32:33] If you only write the steps, you get something that simply just runs on its own.
+[03:32:38] If you write the questions and set the limits, you can get something you can trust.
+[03:32:42] Think of a skill as a recipe.
+[03:32:45] Once Claude knows how to do the skill, it will repeat your process on command.
+[03:32:51] Step number four: run it five or ten times on real cases before anyone else sees it.
+[03:32:58] This is the step everyone wants to skip.
+[03:33:01] Every run teaches you something the skill didn't know yet.
+[03:33:04] An edge case, a question it should have asked, a spot where it sounded confident and was wrong.
+[03:33:09] You need to fix it, save the skill, and run it again and again and again.
+[03:33:16] Five to ten runs sounds like a lot, but it's a lot less work than cleaning up after you hand a half-baked skill to 15, 20, 100 people in your team.

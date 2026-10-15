@@ -1,0 +1,39 @@
+[00:08:11 | 8:56:03 AM] Good morning, and welcome to AI Engineer New York 2026.
+[00:08:11 | 8:56:03 AM] We're thrilled to have you with us as we kick off an event of big ideas, sharp perspectives, and plenty of signal cutting through the noise.
+[00:08:11 | 8:56:03 AM] To officially open the event for us this morning, please welcome to the stage AI Engineer's General Manager, Leah McBride.
+[00:08:11 | 8:56:03 AM] Hi.
+[00:08:12 | 8:56:03 AM] Good morning, everyone, and welcome to New York.
+[00:08:16 | 8:56:08 AM] This is our third event in New York.
+[00:08:19 | 8:56:11 AM] We had two in 2025 with some of our greatest speakers that we've ever had at AI Engineer.
+[00:08:25 | 8:56:17 AM] So we're really excited to be back.
+[00:08:27 | 8:56:19 AM] So just a huge welcome from myself and Swyx to everyone.
+[00:08:30 | 8:56:22 AM] Thanks for attending today.
+[00:08:32 | 8:56:24 AM] We hope you're going to have a great few days.
+[00:08:34 | 8:56:26 AM] There's very, very few places like New York City, as we know, where big ideas scale very, very fast.
+[00:08:43 | 8:56:35 AM] It is where frontier AI comes to meet centuries-old global financial institutions and where multiple different economies thrive together.
+[00:08:52 | 8:56:44 AM] So we're excited to have an incredible lineup.
+[00:08:55 | 8:56:47 AM] You're going to hear from some of the world's best speakers, just like at all our events.
+[00:09:02 | 8:56:54 AM] We've got tracks in finance.
+[00:09:04 | 8:56:56 AM] We've got engineering leadership, evals, and LLM.
+[00:09:10 | 8:57:02 AM] We've got Parna Dinakaran — going to get that right — from Arize.
+[00:09:15 | 8:57:07 AM] We've got Max Kanat-Alexander from Capital One and Tariq Shakked from Sonar.
+[00:09:21 | 8:57:13 AM] That's just a few of the incredible speakers that we've got this week.
+[00:09:25 | 8:57:16 AM] I want to say a huge thank you to Arize, who's our presenting sponsor.
+[00:09:29 | 8:57:21 AM] You guys can go and meet their team in the expo at any point this week.
+[00:09:34 | 8:57:26 AM] So lean in to learning here.
+[00:09:37 | 8:57:29 AM] Lean in to connecting as well.
+[00:09:39 | 8:57:31 AM] There's so many people here that are sharing ideas.
+[00:09:43 | 8:57:35 AM] They want to talk about the ideas, they want to challenge ideas, and they want to collaborate as well.
+[00:09:49 | 8:57:41 AM] So make sure to speak to as many people as possible, your attendees, speakers, and all the sponsors.
+[00:09:55 | 8:57:47 AM] And we hope to see you again soon.
+[00:09:57 | 8:57:49 AM] We do have a great lineup.
+[00:09:59 | 8:57:51 AM] We've got another event called Summit in San Francisco in November.
+[00:10:03 | 8:57:55 AM] And then we have London lined up in February.
+[00:10:03 | 8:57:55 AM] And then, of course, World's Fair.
+[00:10:03 | 8:57:55 AM] And we've got a couple of other events happening next year as well that are new.
+[00:10:03 | 8:57:55 AM] So keep an eye on the schedule.
+[00:10:03 | 8:57:55 AM] But have a wonderful few days.
+[00:10:03 | 8:57:55 AM] Thank you so much.
+[00:10:03 | 8:57:55 AM] Take care.
+[00:10:03 | 8:57:55 AM] And now, please welcome to the stage your MC for the day, Managing Partner at 10X, Alex Lieberman.
+[00:10:30 | 8:58:21 AM] What's up, everyone?

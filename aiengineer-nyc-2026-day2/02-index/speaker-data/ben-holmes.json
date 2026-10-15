@@ -1,0 +1,18 @@
+{
+ "slug": "ben-holmes",
+ "name": "Ben Holmes",
+ "role": "DevEx Lead",
+ "company": "Warp",
+ "bio": "Ben is a Lead DevEx Engineer helping developers embrace to the agentic world. You may have seen him with a whiteboard breaking down web development and agentic coding concepts. You also may know him from Warp Factories, or as a core maintainer of Astro.build. If you're interested in becoming a factory foreman, go talk to him.",
+ "linkedin": "https://linkedin.com/in/bholmesdev",
+ "twitter": "",
+ "website": "https://warp.dev",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FJ0rd88toTGOFJ0FHlWXv_headshot-1789679147258.jpg",
+ "sessions": [
+  {
+   "title": "Your agent needs a skill to improve its skills",
+   "time": "2:30pm - 2:48pm",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ]
+}

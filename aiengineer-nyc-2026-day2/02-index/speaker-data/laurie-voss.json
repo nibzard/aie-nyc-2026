@@ -1,0 +1,18 @@
+{
+ "slug": "laurie-voss",
+ "name": "Laurie Voss",
+ "role": "Head of Developer Relations",
+ "company": "Arize AI",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FB0mbC1YTtWWKjgts5SXQ_headshot-1790815169069.jpg",
+ "sessions": [
+  {
+   "title": "The Rise of the Product Engineer",
+   "time": "12:20pm - 12:38pm",
+   "room": "Shannon Room (NY Ballroom E)"
+  }
+ ]
+}

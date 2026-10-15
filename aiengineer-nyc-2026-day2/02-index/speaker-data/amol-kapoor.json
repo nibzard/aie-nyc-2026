@@ -1,0 +1,35 @@
+{
+ "slug": "amol-kapoor",
+ "name": "Amol Kapoor",
+ "role": "CEO",
+ "company": "Nori Agentic",
+ "bio": "Amol Kapoor is the CEO of Nori Agentic, the company behind Nori, cloud infrastructure for running AI agents in isolated cloud environments with access to a team's code, documents, and operational knowledge. He has worked in AI and machine learning for about 12 years, including as a researcher at Google Research on graph neural networks, computer vision, 3D reconstruction, and robotics. He studied at Columbia University, co-founded the visual-filesystem company SOOT (serving as its CTO), and organizes Agentics, a New York AI community event series. At AI Engineer NYC 2026 he presented the online-track talk \"Agentifying a SEC Master\" with Nori Agentic CTO Clifford Ressel and their on-screen agent Jiro.",
+ "linkedin": "https://www.linkedin.com/in/amolkapoor",
+ "twitter": "https://twitter.com/theahura_",
+ "website": "https://amolkapoor.com/",
+ "photo": "https://ai.engineer/wf26/speakers/online-track/amol-kapoor.jpg",
+ "identified_from_session": true,
+ "enriched": true,
+ "sources": [
+  "https://ai.engineer/speakers/amol-kapoor",
+  "https://amolkapoor.com/",
+  "https://noriagentic.com/",
+  "https://www.linkedin.com/in/amolkapoor"
+ ],
+ "sessions": [
+  {
+   "order": 28,
+   "title": "Off-air pre-roll: two speakers planning edits and naming their agent 'Jiro'",
+   "time": "1:42:26pm - 1:42:54pm",
+   "room": "AIE online track (pre-roll before the recorded talk)",
+   "kind": "filler"
+  },
+  {
+   "order": 29,
+   "title": "Agentifying a SEC Master (Nori Agentic, podcast-format AIE online-track talk with agent co-presenter 'Jiro') -- off-agenda",
+   "time": "1:42:54pm - 2:02:56pm",
+   "room": "AIE online track (pre-recorded)",
+   "kind": "talk"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "slug": "michael-davis",
+ "name": "Michael Davis",
+ "role": "Global Chief Security Architect",
+ "company": "JPMC",
+ "bio": "Michael A. Davis has been privileged to help shape and educate the global community on the evolution of IT security including international corporations such as Amazon, AT&T, Sears, Exelon and the U.S. Department of Defense. Davis’ early embrace of entrepreneurship earned him a spot on BusinessWeek’s “Top 25 under 25” list, recognizing his 2005 launch of IT security consulting firm Savid Technologies, which was recognized as one of the fastest growing security companies of its decade. He has a passion for educating others, as a contributing author for the “Hacking Exposed” books, as a speaker at dozens of conferences and symposiums, and through industry publications including InformationWeek and Dark Reading. Currently, Davis serves as Managing Director, Global Chief Security Architect for JP Morgan. Davis brings a solid background in IT threat assessment and protection to his latest posting, having led the Dedicated Security Team at Amazon protecting Amazon’s 30+ Subsidiaries including Prime Air, Zoox, and Zappos. Aside from his work advancing cyber security, Davis has been a partner in several diverse entrepreneurial startups including CTO of GoSecure, Davis let all product, security research, and engineering while raising over $100MM to compete in the endpoint detection and response market. Earlier positions include Senior Manager Global Threats for McAfee prior to launching Savid, which was acquired by External IT. Davis’ ability to analyze, translate, and make connections among emerging IT and security trends combined with a business and entrepreneurial mindset make him a popular speaker — he strives to present complex concepts in a way that delivers value to a range of listeners. He regularly presents at industry conferences including Black Hat, Interop, and InfoSecWorld. His long-term vision, to create systems that “push defenders ahead of attackers” applies to a wide array of enterprise, government, and vertical-industry stakeholders. “The phrase “I can’t” is the most powerful force of negation in the human psyche. When done properly, security controls enable IT to say “we can”.",
+ "linkedin": "https://www.linkedin.com/in/mrmichaeladavis/",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F5mvDWfuTAiSHc1m82nGA_headshot-1789755473643.jpg",
+ "sessions": [
+  {
+   "title": "Intent Based Auth",
+   "time": "11:30am - 12:15pm",
+   "id": "e65f74f9-2174-406d-bd32-2d7073eb677d"
+  }
+ ]
+}

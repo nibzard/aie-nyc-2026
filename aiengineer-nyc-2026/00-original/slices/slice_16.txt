@@ -1,0 +1,20 @@
+# transcript slice 16
+window: t=29120..29150.17 (08:05:20..08:05:50 video time; 4:53:12 PM..4:53:42 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[08:04:31] First, very important one, go speak to humans.
+[08:04:35] That is housekeeping item one.
+[08:04:37] There's been incredible content covered today.
+[08:04:40] Again, that is surface area for you to be able to connect with others and live in edge city by having intellectually stimulating conversations.
+[08:04:48] Don't let the opportunity pass you by.
+[08:04:50] And then second, this is just one day of an amazing event.
+[08:04:55] So tomorrow things kick off again right before 9 a.
+[08:04:58] m.
+[08:04:59] So make sure you get here bright and early.
+[08:05:01] Thank you all for coming.
+[08:05:02] Thanks for having me, and see you tomorrow.

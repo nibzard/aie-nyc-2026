@@ -1,0 +1,25 @@
+{
+ "slug": "michael-manapat",
+ "name": "Michael Manapat",
+ "role": "Co-Founder",
+ "company": "Rowspace",
+ "bio": "Michael Manapat is the co-founder and CEO of Rowspace, an AI platform that acts as an intelligence layer on top of financial firms' proprietary data, helping investment firms make faster decisions. Before Rowspace, he held senior engineering roles at Notion (Head of Engineering) and Stripe, where he led applied machine learning, including ML-based fraud detection, and he began his career as a software engineer at Google. He met Rowspace co-founder Yibo Ling while in graduate school at MIT.",
+ "linkedin": "https://www.linkedin.com/in/mlmanapat/",
+ "twitter": "",
+ "website": "https://www.rowspace.ai/",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F3KEGdEQQMae5yWmMLIVw_headshot-1789589495151.png",
+ "sessions": [
+  {
+   "title": "AI in Practice: An Inside Look at Apollo's Approach",
+   "time": "4:30pm - 4:48pm",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://fortune.com/2026/02/25/rowspace-sequoia-ai-financial-platform-private-equity-investment-venture-capital",
+  "https://www.linkedin.com/in/mlmanapat/",
+  "https://x.com/mlmanapat",
+  "https://sequoiacap.com/founder/michael-manapat"
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "slug": "natalia-connolly",
+ "name": "Natalia Connolly",
+ "role": "Director, AI & Data",
+ "company": "AlixPartners",
+ "bio": "I bring deep expertise in artificial intelligence and machine learning to complex business problems. A physicist by training (PhD in High Energy Physics), I've spent 15+ years as a data science and AI executive, building and scaling technical teams across management consulting, retail and fintech. I've worked at both ends of the spectrum -  from Fortune 500 enterprises  navigating data governance and AI risk, to early-stage startups deploying ML at scale on limited resources.  Now at AlixPartners as Director of Performance, I both advise C-suite clients and architect production AI workflows at scale. Claude Certified Architect (2026).",
+ "linkedin": "https://www.linkedin.com/in/natalia-connolly-47711b21/",
+ "twitter": "",
+ "website": "https://www.alixpartners.com",
+ "photo": "https://content-cdn.sessionboard.com/texrL14EQcCk4cgdJddh_headshot-1789391595887.jpg",
+ "sessions": [
+  {
+   "title": "Claude Code, Financial Analyst: Turning a Coding Agent Loose on Governed Enterprise Data",
+   "time": "11:05am - 11:23am",
+   "room": "Sutton Room (NY Ballroom W)"
+  }
+ ]
+}

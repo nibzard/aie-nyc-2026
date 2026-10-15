@@ -1,0 +1,214 @@
+[05:22:41 | 2:03:17 PM] All right, we're going to go ahead and get started.
+[05:22:43 | 2:03:19 PM] I'm Scott Worland.
+[05:22:44 | 2:03:20 PM] I'm the CTO of Norm AI, and I'm privileged enough to be sharing the stage here with John Stecker, who's the CTO of Blackstone.
+[05:22:51 | 2:03:27 PM] From what I understand, John has basically three full-time jobs, it sounds like.
+[05:22:56 | 2:03:32 PM] Yep.
+[05:22:56 | 2:03:32 PM] Responsible for all of the technology at Blackstone, also advises on their investments, and as well as serves as a resource for the portfolio companies for all things technology.
+[05:23:07 | 2:03:43 PM] Did I miss anything?
+[05:23:08 | 2:03:44 PM] Nope, you hit it all perfectly, man.
+[05:23:10 | 2:03:46 PM] Cool job.
+[05:23:11 | 2:03:46 PM] Yeah, and if you're not familiar with what Blackstone does, then you probably have wandered into the wrong conference, so I'm not going to go into that.
+[05:23:18 | 2:03:53 PM] But you may not know what Norm does.
+[05:23:19 | 2:03:55 PM] So really briefly, Norm is an AI company, and we operate in the legal and regulatory space.
+[05:23:24 | 2:04:00 PM] We have an enterprise AI platform that's deployed in some of the largest financial institutions in the world, and then we also have an affiliated law firm, Norm Law, and our AI platform also supports that.
+[05:23:36 | 2:04:12 PM] So...
+[05:23:37 | 2:04:12 PM] Since the end of last year, and certainly all of this year, everyone's been racing to figure out how to deploy AI agents.
+[05:23:43 | 2:04:19 PM] And I'd love to hear how you're thinking about this at Blackstone and how you're trying to make sure you get this right.
+[05:23:48 | 2:04:24 PM] Yeah, I mean, I think the race has definitely been on as, like, the technology has improved mightily since, you know, really like February, March of last year, like just in terms of context windows, being able to run stuff for significantly longer amounts of time have, like, resulted in people being able to produce just more value.
+[05:24:03 | 2:04:38 PM] And one of the things that, like, we've been focused on a lot, and I think every company in our portfolio I advise on and work with all the time, that they need to have top of mind for, like, being successful with AI agents in general is you have to get your data story right.
+[05:24:17 | 2:04:52 PM] And so, like, one of the biggest things and impediments and tripping points that I see for companies out there when they're all in on AI, they want to build as many agents as possible, they really want to kind of extract value.
+[05:24:27 | 2:05:03 PM] If they don't have a cohesive data strategy that's moving stuff out of transactional systems into something that can be accessed and easily managed and recalled from, like, an agent perspective, it is going to fail.
+[05:24:39 | 2:05:14 PM] And so that's been one of the biggest things that we've been focused on.
+[05:24:42 | 2:05:17 PM] You know, as a big asset manager, we have a ton of data, proprietary data, public data, all woven together.
+[05:24:47 | 2:05:22 PM] We have to move that out of systems into something that we can really leverage from an AI perspective.
+[05:24:52 | 2:05:28 PM] I think the second thing that, you know, has nothing to do with AI, but you can leverage AI to actually figure out how to do the best possible way, is straight-through processing still matters.
+[05:25:02 | 2:05:38 PM] I'm always shocked at how everybody just talks about, like, agents as being the biggest differentiator in the world.
+[05:25:07 | 2:05:43 PM] The thing that I've leveraged myself using Factory and a couple other ways to go off and build code inside of the firm is, like, taking time, having agents help to craft something for me, understand the workflows out there that people are doing, and then make sure that I'm, like, actually writing code to optimize for straight-through processing, and then using agents to inject in intelligence where necessary, where humans were making decisions in the past for a variety of rote work things.
+[05:25:31 | 2:06:06 PM] So that's really, like, the two key elements that I spend a ton of time thinking about every single day.
+[05:25:35 | 2:06:11 PM] And then the biggest thing from an agent perspective...
+[05:25:38 | 2:06:13 PM] is really stepping back and looking at, like, what is work that we want to build agents to do better, to offload, like, intellectual cycles from our investment professionals, our finance professionals, our engineers, such that they can do higher value work.
+[05:25:53 | 2:06:28 PM] And there's a ton of stuff when you think about the software development lifecycle: writing test cases, functional test cases, performance test cases, versioning forward libraries underneath applications.
+[05:26:03 | 2:06:38 PM] It's the bane of every engineer's existence.
+[05:26:06 | 2:06:41 PM] I've hated it for 27 years that I've been doing this.
+[05:26:08 | 2:06:43 PM] Having an agent be able to go off and do these things for me and renovate my code and my source code has made all the difference in the world for the velocity that we deliver at.
+[05:26:15 | 2:06:51 PM] So how are you thinking about it at Norm?
+[05:26:17 | 2:06:53 PM] Yeah.
+[05:26:18 | 2:06:53 PM] So Norm was founded in 2023, so, you know, that's three years, I guess four years after GPT-1, but still a year before there was, like, you know, Chain of Thought.
+[05:26:27 | 2:07:03 PM] So it was, like, an interesting time in terms of development.
+[05:26:30 | 2:07:05 PM] I remember when we had our first team get together, we were at Stanford's campus for a week, and, I mean, I'm probably misremembering the exact timeline, but it felt like we went from 4K to 8K to 128K context windows, and then we had multimodal, and everything just felt like it was kind of coming all at once.
+[05:26:45 | 2:07:20 PM] And then there was a bit of a time where things did slow down when it was coming from the frontier.
+[05:26:49 | 2:07:25 PM] And so I think, like a lot of companies in, like, early 2024, you know, we were trying to deploy these models as part of, like, our workflow and as part of, like, our production software.
+[05:26:57 | 2:07:33 PM] And so we ended up adding a lot of structure to the system, and this comes from, you know, all different parts of the stack.
+[05:27:04 | 2:07:40 PM] So whether that was from, like, how we went and took the content that we knew needed to be, like, eventually added to context to the models, and we had, like, very specific ways in which we did that, or if there was, like, you know, just the sequencing of the models, if there was, like, steps we needed to do in terms of looking for consistency and then ultimately, like, distilling everything down into some useful output, we ended up with something that looked like a large map-reduce problem, effectively, right?
+[05:27:27 | 2:08:03 PM] Whereas, like, we had a lot of scaffolding for the agents, and we were very particular about, like, how these—well, I would say agents, really—just how these models ran.
+[05:27:34 | 2:08:09 PM] It was much more like a workflow.
+[05:27:36 | 2:08:11 PM] And what this allowed us to do was get, like, really, you know, high quality and also— With accurate, very accurate, but also just very consistent, which is very important for us in the regulatory space, outputs.
+[05:27:47 | 2:08:23 PM] But then one fortuitous thing as part of doing this, because we wanted to have some way to regression test this big system, we ended up with a really large set of evaluation samples.
+[05:27:56 | 2:08:32 PM] We had tens of thousands, actually, of like hand-labeled examples by experts.
+[05:27:59 | 2:08:35 PM] And so as soon as we moved to a place where it was like clear that agents were actually a thing, and by agents I simply mean, you know, given like an LLM, a system, or given a set of tools that it can use, give it some goal and give it some way to verify itself against that goal, allowing it just to go figure out how to do the thing in the best way possible.
+[05:28:18 | 2:08:54 PM] We were able to just take this benchmark set and just immediately run on top of it with some of these more agentic approaches.
+[05:28:24 | 2:08:59 PM] And we saw, you know, I think a lot of people had this moment where you're staring at hundreds of thousands of lines of code your team had really thoughtfully written and realizing most of it was pretty obsolete and was just kind of actually in the way.
+[05:28:34 | 2:09:10 PM] And so to update quickly on this, what we did was we took—I got the engineering leadership team.
+[05:28:39 | 2:09:15 PM] We actually rented a Sprinter van and we drove to upstate New York.
+[05:28:43 | 2:09:19 PM] It was actually after a big snowstorm.
+[05:28:45 | 2:09:20 PM] We had an Airbnb, and it was like, forget norm for a minute.
+[05:28:48 | 2:09:23 PM] Let's just say, what would we build today as far as a platform, knowing what we know right now, if we were going to be starting over?
+[05:28:55 | 2:09:30 PM] And then from that, we left with basically a set of specs about like what this platform needed to be able to do to enable two things.
+[05:29:01 | 2:09:36 PM] One, deliver agentic experiences to our clients.
+[05:29:03 | 2:09:39 PM] And then also it needed to be amenable to having AI as like co-developers alongside of our own development team.
+[05:29:10 | 2:09:45 PM] And that's what we've been executing against ever since then.
+[05:29:13 | 2:09:48 PM] So I think this— Do you have a question?
+[05:29:13 | 2:09:48 PM] I was going to say, I think you hit on like a key point, Scott, which is like the eval side of the fence that you were talking about before.
+[05:29:21 | 2:09:57 PM] If you're working in financial services, like the quality bar for what agents have to deliver on is very, very high.
+[05:29:28 | 2:10:03 PM] And so I think really thinking through like what is your eval set for how you basically test your agents, what they're actually, you know, whatever work they're performing, that the output makes sense and it's consistent and repeatable.
+[05:29:39 | 2:10:15 PM] And I've seen across the board as model versions change underneath the covers, you get different answers.
+[05:29:44 | 2:10:20 PM] You get skew in terms of the accuracy of information that comes back.
+[05:29:48 | 2:10:24 PM] So having good evals so that you can run those consistently and really measure the health of a system is paramount to success.
+[05:29:54 | 2:10:30 PM] Same thing happens if harnesses change that you're running stuff on top of, you'll get different answers.
+[05:29:59 | 2:10:35 PM] Data change is different answers.
+[05:30:01 | 2:10:36 PM] So it's something where I think if you're trafficking in financial services, like the duty to be accurate is, like, up here, and hitting that is, like, something, like, we think about all the time.
+[05:30:11 | 2:10:47 PM] Definitely.
+[05:30:12 | 2:10:48 PM] I think this leads nicely into this concept that we've been talking about, just like with the bitter lesson.
+[05:30:16 | 2:10:52 PM] So, like, everyone's familiar with it, and, you know, there's this idea that these handcrafted systems built by, you know, clever people thinking hard about the problem will oftentimes eventually be dominated by systems that scale with compute, right?
+[05:30:30 | 2:11:05 PM] And this is actually, I think Rich Sutton originally talked about this in 2019, but this has been since the beginning of neural networks.
+[05:30:35 | 2:11:11 PM] If you go back to, like, the '50s and '60s, like with Rosenblatt's little perceptron, I think the New York Times ran an article or somebody did saying it was the first machine that could ever have its own original thoughts, you know?
+[05:30:46 | 2:11:22 PM] And so, and there's actually quite a fascinating history here of how the expert systems and the connectionists and what ended up happening.
+[05:30:53 | 2:11:28 PM] A lot of it actually was highly litigated in England, and a lot of AI research was dismantled.
+[05:30:57 | 2:11:33 PM] But one funny thing, if you go back to the '80s even, there was a lead at IBM's translation lab, and he made a comment, which is very much the bitter lesson: Every time I fire a linguist, my models improve, right?
+[05:31:08 | 2:11:43 PM] The point of having these linguists in there and trying to think about all the rules of language versus, like, training a statistical model based on just probabilities.
+[05:31:14 | 2:11:49 PM] And so we speed up to today, and, like, we see this all the time.
+[05:31:16 | 2:11:52 PM] We've been touching on lots of points about this, and I'm curious, when you think about your roadmaps, when people on your team are bringing you project ideas, like, how do you keep this in mind as you're thinking about this for Blackstone?
+[05:31:26 | 2:12:02 PM] Yeah, I mean, a lot of what we do is, like, the simple equation is giving enough compute, every problem is solvable by, like, hardware and software at some point in time in the future.
+[05:31:37 | 2:12:12 PM] Elon talks about this energy-wise, et cetera.
+[05:31:39 | 2:12:14 PM] So it's like, it's a big map, it's a whole bunch of stuff.
+[05:31:41 | 2:12:17 PM] How do you bring it back to reality?
+[05:31:43 | 2:12:19 PM] Like, what I spend a lot of my time doing from, like, my seat working with engineers and my team, with product people, with our SRE function, with, like, stakeholders, is really trying to define, like, you know, what is the ROI of what I'm being asked to work on?
+[05:31:57 | 2:12:32 PM] And so, like, when I think of building agents, I think about, you know, getting data into the right spot, think about building dashboards, trading platforms, whatever it is.
+[05:32:03 | 2:12:39 PM] It's like, if I look at, like, what's the ROI that's going to be created from the actual ask that's coming in to me from a team perspective, and then, like, what's the true cost?
+[05:32:14 | 2:12:50 PM] of actually building something today.
+[05:32:16 | 2:12:52 PM] Like, how can I balance that equation?
+[05:32:18 | 2:12:53 PM] And then I make a decision of, like, you know, is this something where the models are going to get good enough, I'm going to have more than enough compute in six months that it's not worth trying to tackle the problem today.
+[05:32:27 | 2:13:03 PM] It's better to delay it and actually address it with one of the new models.
+[05:32:32 | 2:13:07 PM] We have made that decision before.
+[05:32:33 | 2:13:09 PM] It's like, let's actually wait for the model to become slightly more sophisticated so that we can solve these problems with it because it will cost less at that time.
+[05:32:41 | 2:13:17 PM] And the need for that application to be built today isn't pressing.
+[05:32:45 | 2:13:21 PM] There's no, like, real business value increase that will be created because it's produced today versus six months from now.
+[05:32:52 | 2:13:27 PM] So that's a trade-off that we actually, you know, make regularly and I think about regularly.
+[05:32:57 | 2:13:32 PM] The other thing that we do is, like, you don't want to wait too long to basically build something.
+[05:33:01 | 2:13:36 PM] And so you can always be waiting for the new model, waiting for the new technology or whatever else.
+[05:33:05 | 2:13:40 PM] Like, the beautiful thing with, like, all of the various different software development harnesses today is if you lean into them, it's amazing how quick you can go from, like, concept, mapping out your planning and concept with, like, Fable for, like, you know, just, hey, work with me and let's define this with the product person and with the stakeholder, to actually writing code to having, like, a workable proof of concept.
+[05:33:25 | 2:14:01 PM] And when I say workable proof of concept, it's something people could click through, interact with, whatever else it is.
+[05:33:30 | 2:14:05 PM] It doesn't have cybersecurity review, doesn't have all the other things that you need to do in our industry to make sure you, like, put something into production that scales.
+[05:33:36 | 2:14:11 PM] But you can get to a POC or a POV very quickly.
+[05:33:40 | 2:14:15 PM] And so, like, that's one big thing I try to encourage all my engineers to do frequently is, like, just get to POC.
+[05:33:46 | 2:14:21 PM] Don't worry about PowerPoints.
+[05:33:47 | 2:14:22 PM] Don't worry about anything else.
+[05:33:48 | 2:14:24 PM] Leverage tokens, which, like, I think it's a fallacy to be, like, counting tokens in some way, shape, or form.
+[05:33:53 | 2:14:29 PM] It's better to think about producing value.
+[05:33:55 | 2:14:30 PM] Go off, produce value, produce POVs, put it in front of people, iterate on it quickly, and throw it away if you don't need it.
+[05:34:01 | 2:14:36 PM] You will spend far less time and money doing those types of things.
+[05:34:04 | 2:14:39 PM] And so that's, like, a big way that we think about trying to solve it.
+[05:34:07 | 2:14:42 PM] It doesn't maps into the paradigm, like the, you know, how do you deal with increasing compute, making it easier to do these things.
+[05:34:13 | 2:14:49 PM] But, like, I just, I think in a much shorter time frame.
+[05:34:16 | 2:14:52 PM] Yeah, it's so interesting because it's like, you know, I mean, you touched on so many things that I think everybody's probably been thinking about too.
+[05:34:23 | 2:14:58 PM] And if you go back to 2023 when we were originally, like, sitting around as a small group talking about what we were building, we were aware of the better lesson then.
+[05:34:29 | 2:15:05 PM] We talked about it.
+[05:34:31 | 2:15:06 PM] We said, how do we not get in this trap?
+[05:34:32 | 2:15:07 PM] And I think at this point, it's just really evident to me that it's like, it's definitely a gradient, right?
+[05:34:36 | 2:15:11 PM] It's not this binary thing about you can somehow build the perfect technology to index into all the, you know, everything coming in from the frontier in a way that you don't have to throw things away.
+[05:34:44 | 2:15:19 PM] So really it gets down to, like, where do we want to invest heavily and where are we willing to invest conservatively?
+[05:34:50 | 2:15:25 PM] Because, like you said, we need something today.
+[05:34:52 | 2:15:27 PM] But at the same time, we're just aware that, like, some of these investments we make, particularly around things like we've built, you know, fairly complicated systems around all of our agent primitives, so the harness, the sandbox, how egress works, you know, all of these things.
+[05:35:05 | 2:15:40 PM] And we also want to make sure that as, like, things are coming out either from, like, a frontier lab or from, like, a third party, that we're able to index into that.
+[05:35:11 | 2:15:47 PM] And so I think a lot of it is just kind of when do you update?
+[05:35:15 | 2:15:50 PM] And that's one of the hardest things to do.
+[05:35:17 | 2:15:52 PM] And, like, for me, a good example was I really updated really hard on cloud code.
+[05:35:21 | 2:15:57 PM] Not so much that it was suddenly tools that, like, in my profession that we could use that were really incredible.
+[05:35:26 | 2:16:02 PM] What it really was for me was just this idea, because I was a bit skeptical up to that point of how we would get something that was, like, truly generalizable.
+[05:35:32 | 2:16:08 PM] It's like, well, what does cloud code give you?
+[05:35:35 | 2:16:10 PM] Well, you can write code, and then it can execute the code and, like, basically run a computer in some verifiable way.
+[05:35:40 | 2:16:16 PM] At that moment, I was like, well, we have all the ingredients for, like, a truly generalizable intelligence, because if you can go do this at scale, then, I mean, you know, of course, like, you can basically do anything in terms of most knowledge work and actually even outside of knowledge work, which we're seeing some today.
+[05:35:52 | 2:16:28 PM] And you fast forward to now, and, like, all these tools that people are using, these, like, AI assistants and things, this is why they're so amazing.
+[05:35:58 | 2:16:34 PM] It's because you can ask a question that's never seen before, fully out of distribution.
+[05:36:02 | 2:16:37 PM] It can spin up a computer and go do this thing in the background.
+[05:36:04 | 2:16:40 PM] And for a consumer, it's amazing.
+[05:36:05 | 2:16:41 PM] And then we're also seeing this now within the enterprise too.
+[05:36:08 | 2:16:43 PM] And so for me, that moment was like, well, where are we going to invest heavily?
+[05:36:11 | 2:16:47 PM] Of course, we still need to invest in what we're building on the agent side.
+[05:36:15 | 2:16:50 PM] But going back to what John mentioned, how we do our data capture and distillation and how we make How we make this available is, like, state to these models, and then also just how we do our benchmarks and evaluation.
+[05:36:25 | 2:17:01 PM] And so with, like, the law firm, for example, we have this really unique situation where we started this law firm, you know, from nothing.
+[05:36:32 | 2:17:07 PM] So we've kind of grown together; they've grown with Norm together.
+[05:36:35 | 2:17:10 PM] And so we work directly with lawyers to stand up these benchmarks and evaluations.
+[05:36:39 | 2:17:14 PM] And effectively, rather than think of a traditional roadmap, like, when are you going to build an agent that can go do these three things?
+[05:36:45 | 2:17:21 PM] It's, well, let's have a scorecard that determines when an agent, or when a human even, is successful at completing these tasks across the various dimensions.
+[05:36:54 | 2:17:29 PM] And then we want to be able to see this just improve over time.
+[05:36:56 | 2:17:31 PM] So as we make general improvements to the system, we should see an uplift to these, you know, these things like an attorney would expect to improve their workflow, but at the same time not getting kind of going back to the state that we were originally, where we had added a lot of structure to it in a way that ultimately we found that we actually could get even better performance if we were to remove that upfront structure.
+[05:37:15 | 2:17:50 PM] Yeah, I think, like, another thing that's important to think through is, like, you can produce, like I was saying, a lot more proof of concepts, proof of value very quickly.
+[05:37:24 | 2:18:00 PM] I still think, like, the hard yards for a lot of development out there is getting it to production.
+[05:37:29 | 2:18:05 PM] And what I mean by that is, like, infrastructure build-out that actually runs inside of the infrastructure that's available inside of any financial services or enterprise company, for that matter, out there.
+[05:37:38 | 2:18:14 PM] Like, that is a challenge that a lot of folks, like, underestimate.
+[05:37:42 | 2:18:17 PM] If you're selling AI tools, that is hard on the other side, just so you know.
+[05:37:46 | 2:18:21 PM] Deal with it quite a bit.
+[05:37:47 | 2:18:23 PM] The other thing is, is just, like, dealing with, like, the cybersecurity side of the fence and the supportability side of the fence.
+[05:37:53 | 2:18:29 PM] And so, like, one thing I've noticed, you know, the agents are getting better at this now, but it's making sure that the actual software that's being written is truly traceable, and it feeds into your SRE platform so that it can be monitorable in production.
+[05:38:06 | 2:18:42 PM] Those are things still that, like, I like to have people think about.
+[05:38:09 | 2:18:45 PM] It's like they haven't started to scale yet with agents.
+[05:38:11 | 2:18:47 PM] They will, but it's something that, from my perspective, I think about regularly.
+[05:38:15 | 2:18:51 PM] Makes sense.
+[05:38:16 | 2:18:52 PM] And we, our approach to this, and I'm sure a lot of other companies, and maybe even you guys have taken this approach as well, is there's parts of our codebase that we, like, still require, like, complete human oversight from when it comes to designing, building, code ownership, even improving any kind of changes to the codebase.
+[05:38:33 | 2:19:09 PM] And these are, like, our core primitives.
+[05:38:35 | 2:19:10 PM] And these are things where, you know, basically you can build things on top of these, but the things that you build on top of these are not allowed to, like, change these systems without having, like, human review.
+[05:38:43 | 2:19:18 PM] And it's because of the things you mentioned.
+[05:38:45 | 2:19:20 PM] It's like, you know, data security for us is, you know, is, is, is, like, as paramount as delivering quick.
+[05:38:50 | 2:19:25 PM] It's actually more important.
+[05:38:51 | 2:19:26 PM] So, and it depends on where you are and if whether it's a consumer product or for us with obviously working with highly sensitive data, like, we have to build in so much infrastructure around this and ensure that we're not ever getting out ahead of, like, you know, these parts of the stack, which it can be hard because maybe somebody brings to you, and I'm sure you've seen this, like, a really cool demo and it's really exciting, and you're looking at it terrified because you're like, this is, this is very cool, but to get to this point in terms of capabilities, like, it would expose so much that we're not able to do yet.
+[05:39:17 | 2:19:52 PM] So I think it's just always that trade-off.
+[05:39:18 | 2:19:54 PM] So we just, you know, basically we invest heavily in these things and then invest conservatively in places where we realize as the frontier continues to improve, we want to make sure we have conduits.
+[05:39:28 | 2:20:04 PM] And the way I described it actually this morning with the team is like, basically throughout our platform, we want to have, like, conduits for what's coming from the frontier.
+[05:39:36 | 2:20:11 PM] You don't want to have dams where, like, the intelligence is coming in and it can't quite get into your stack because you build things in such a way.
+[05:39:41 | 2:20:17 PM] Again, it's a gradient.
+[05:39:42 | 2:20:18 PM] We're going to get some of it wrong, some of it right, just being very cognizant of it, talking about it a lot, and making sure that our core pieces are locked down, but then also, you know, being very open about just rip and replace.
+[05:39:52 | 2:20:28 PM] I think that's, like, a thing that I think everybody's gotten really good at.
+[05:39:55 | 2:20:31 PM] Yeah, I think that's, like, one of the biggest, I mean, like, I've been doing this for 27 years sometimes, I feel like.
+[05:40:00 | 2:20:36 PM] Sometimes I feel like it's been like a hundred years.
+[05:40:02 | 2:20:38 PM] Other times I feel like it's been five.
+[05:40:04 | 2:20:39 PM] I think the thing that's, like, really made a material difference, like when I look at the ability to write software today versus what I was doing 10 years ago, was 10 years ago, it took so much time, effort, and money and people's, like, intellectual capital to produce a piece of software.
+[05:40:20 | 2:20:56 PM] It was almost like the ship had sailed.
+[05:40:22 | 2:20:58 PM] Like, by the time you designed it and started writing code, it was out to sea, and you were going to ride that baby for, like, as long as you could until it got to the other side of the ocean.
+[05:40:30 | 2:21:06 PM] And, like, what I've become very comfortable with today is, like, for the most part, a lot of, like, internal applications can be just thrown away.
+[05:40:38 | 2:21:13 PM] It's build them, have them work for a purpose and a point in time, but understand that they're going to disappear at some point in time, now much more quickly than ever before, and then just think about, like, what comes next.
+[05:40:50 | 2:21:26 PM] And so I think one of the challenges with, like, sitting in my seat or any, like, good engineer's seat should be constantly questioning, like, you know, should I rewrite this?
+[05:40:58 | 2:21:33 PM] And does it cost me less to rewrite it than it costs me to keep versioning the current version forward?
+[05:41:03 | 2:21:38 PM] And that is, like, a question that a decade ago never would have came up in anyone's head.
+[05:41:07 | 2:21:43 PM] If you went to say, I want to rewrite an internal application, like, your CFO would have looked at you like you were insane.
+[05:41:12 | 2:21:47 PM] And I think now it's a completely relevant thing that all of us should be doing because net new applications might produce way more business value at the end of the day.
+[05:41:20 | 2:21:56 PM] So it's just something I encourage folks to do.
+[05:41:21 | 2:21:57 PM] It sounds like you guys are doing quite a bit at Norm.
+[05:41:23 | 2:21:59 PM] Yeah, exactly.
+[05:41:24 | 2:22:00 PM] And I think it's just that concept of what used to be expensive that's now cheap.
+[05:41:28 | 2:22:04 PM] And if you don't update quickly on that, then it's, you know, like, it's incredible.
+[05:41:32 | 2:22:07 PM] You said it feels like 27 or five years or 100 years or five years.
+[05:41:35 | 2:22:11 PM] It's like if you over-index too hard on something that was in June and now it's October, like, you know, it feels like in some ways there's been like 10 years of technological advancement.
+[05:41:44 | 2:22:19 PM] So, well, great.
+[05:41:45 | 2:22:20 PM] We only have a minute or so left.
+[05:41:47 | 2:22:22 PM] Is there any closing remarks?
+[05:41:48 | 2:22:24 PM] I mean, I think, like, the one thing I'd, like, leave the audience on, if you want, like, you know, like good takeaways from this, it's like we talked about a lot of, like, very interesting things.
+[05:41:57 | 2:22:33 PM] I think, like, what makes me, like, excited to go to work is, like, it's cool to get To get back to engineering, one of the things that, like, I value is, like, you know, I was a hardcore low-level engineer for 10 years at IBM and, like, wrote, like, you know, this is way back in the day, of using Notepad and VI to write, like, instruction-level code for RISC machines.
+[05:42:15 | 2:22:50 PM] It was, like, awesome.
+[05:42:16 | 2:22:51 PM] It's nerdy as all heck.
+[05:42:17 | 2:22:52 PM] No one does this stuff anymore, but it was, like, fun for me.
+[05:42:19 | 2:22:54 PM] I still enjoy those days.
+[05:42:21 | 2:22:56 PM] As you get more senior in your career, it, like, the barrier to actually writing code on a daily basis disappears, or it becomes more, like, hard to get through, like dealing with a stream, like processing stuff off a stream.
+[05:42:33 | 2:23:09 PM] It's just all these things are like, oh my God, I can't even get started because the scaffolding is so hard.
+[05:42:37 | 2:23:12 PM] With, like, AI, it's been, like, reinvigorating to get back and actually build stuff because it's like I never lost my knowledge on how to architect things.
+[05:42:45 | 2:23:20 PM] I see this with a lot of engineers out there.
+[05:42:47 | 2:23:23 PM] They understand because they've been in the market 10, 20, 30 years, they understand the complexity of system design, which hasn't changed.
+[05:42:54 | 2:23:29 PM] And now they can actually express that knowledge with these new cool agents.
+[05:42:57 | 2:23:33 PM] And so I think it's a super exciting time to be, like, starting a company, working at a company, and, like, building software because there's, like, a whole new world that we can create out there.
+[05:43:06 | 2:23:42 PM] So that's what, like, excites me.
+[05:43:07 | 2:23:43 PM] Yeah.
+[05:43:08 | 2:23:44 PM] Well, thank you so much.
+[05:43:10 | 2:23:46 PM] It's been an honor.
+[05:43:11 | 2:23:47 PM] Yep.
+[05:43:12 | 2:23:48 PM] Thank you guys for having us here today.
+[05:43:14 | 2:23:49 PM] Appreciate it.

@@ -1,0 +1,18 @@
+{
+ "slug": "vinoo-ganesh",
+ "name": "Vinoo Ganesh",
+ "role": "CEO",
+ "company": "Kepler",
+ "bio": "Vinoo Ganesh is CEO of Kepler, the industry-agnostic, ground truth platform for AI, starting with finance. At Kepler, language models interpret financial questions and plan the analysis, while deterministic software retrieves source data, runs the calculations, and records how every result was produced. He started his career at Palantir, where he spent seven years working on the search and indexing backend, managing the Spark/YARN compute platform, leading customer engagements across the commercial, healthcare, and defense sectors, and running Project Frontline, Palantir's FDE rotation program. After Palantir he served as CTO of Veraset, a geospatial data startup that grew to $15M ARR before it was acquired, and before founding Kepler he was Head of Business Engineering at Citadel, overseeing data pipelines and investment platforms across the hedge fund. Kepler is backed by founders of OpenAI, Facebook, MotherDuck, dbt, Square, and others.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "https://www.kepler.ai",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FH7LyvXELSzm9Cy6lIrfQ_headshot-1790808709113.jpg",
+ "sessions": [
+  {
+   "title": "AI and the Future of Fundamental Investing",
+   "time": "2:55pm - 3:13pm",
+   "id": "a244839c-239c-4789-b621-32a3568a218e"
+  }
+ ]
+}

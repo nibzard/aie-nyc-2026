@@ -1,0 +1,262 @@
+---
+session_id: "035"
+title: "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks"
+agenda_title: "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks -- Philipp Schmid (Google DeepMind)"
+speakers: ["Philipp Schmid"]
+start_wall: "2:52:53 PM ET"
+end_wall: "3:10:06 PM ET"
+video_start: "06:12:17"
+video_end: "06:29:30"
+video_url: "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=22337s"
+stage: "Simons Room (Metropolitan East) - main stage livestream"
+session_type: "talk"
+tags: [gemini, managed-agents, digital-coworker, agent-credentials, mcp, finance, live-demo, google-deepmind]
+confidence: "high"
+---
+
+# Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks
+
+> Philipp Schmid of Google DeepMind builds "Bug", an autonomous Wall Street co-worker, live on Gemini managed agents — with skills, MCP connectors, write-only credentials behind a network proxy, hooks, cron triggers, and a Gemini 4.0 recap.
+
+## TL;DR
+- Philipp Schmid (Google DeepMind) assembles a digital finance co-worker called "Bug" from seven parts: brain (Gemini), computer (managed agents sandbox), playbook (skills), tools, credentials, house rules (hooks), and a schedule (triggers).
+- Managed agents remove the client-side tool-calling loop: Gemini runs tools in its own remote sandbox, and you swap a model ID for an agent ID in the interactions API.
+- Gemini 4.0, announced the day before, brings a 1 million unified context window, up to 1 million output tokens, more than 64K thinking tokens for math and reasoning, and $2 in / $10 out pricing.
+- Credentials stay secure through write-only secrets behind an external network proxy that swaps dummy values for real ones only on approved domains, which blocks prompt-injection token theft.
+- Live demos: a simulated cron trigger runs a real portfolio-audit agent call that updates a Google Sheet, and a Slack thread gets a positions recommendation with full conversation context.
+
+## Key lessons
+1. A digital co-worker needs the same seven things as a new human hire: a brain to do the work, a computer to save artifacts and iterate, playbooks for domain-specific workflows, tools, credentials, house rules for what needs approval, and working schedules [06:13:13-06:14:10].
+2. Managed agents collapse the classic agent loop — request, JSON function call, local execution, return — into one API call: instead of a model ID like "Gemini 4 Argon" you pass an agent ID (here "anti-gravity preview 09"), and the sandbox executes the tools remotely [06:16:59-06:17:45].
+3. Gemini 4.0 shipped the day before with a 1 million unified context window, up to 1 million output tokens, and more than 64K tokens to think through math and reasoning proofs; it costs $2 in and $10 out, and the interactions API gets you started in "literally four lines of code" with a key from aistudio.com [06:14:15-06:15:19].
+4. Keep system instructions short because you pay for them on every request; put on-demand knowledge in skills with short descriptions that the agent reads only when the task fits, and slice dense skills into dedicated references and scripts to control context cost [06:19:48-06:20:47].
+5. Everything in a managed agent lives as a file — skills, hooks, system instructions — so the agent can create new skills to improve itself and store memories from earlier sessions; the environment bootstraps from inline files, a public or private GitHub repository, or GCS buckets [06:18:53-06:19:34].
+6. Credentials support three forms (bearer tokens, OAuth for consumer MCP servers, environment variables for CLIs), are write-only so they cannot be retrieved once stored, and reach the sandbox through an external network proxy that swaps a local dummy value for the real secret only on domains you define — so a malicious MCP server cannot steal a Gmail token and prompt injection cannot dump your .env keys [06:22:43-06:25:11].
+7. Hooks are protected files with regex matchers over every tool call; they deterministically guard decisions and add human-in-the-loop approvals outside the normal agentic conversation, and the agent cannot edit them to bypass the rules [06:25:16-06:25:53].
+8. Cron triggers (for example, a run at 8:30 a.m. with a fixed input in the same environment for due diligence or auditing) make the agent proactive, with webhooks planned so external events like a SaaS provider alert can wake the agent and have it message Slack or Teams directly [06:26:00-06:26:44].
+
+## Notable quotes
+[06:12:58 | 2:53:34 PM] And now we are moving into, like, this autonomous co-worker area where we basically give or create a digital employee where we give an agent its own computer, give it a task, and hopefully come back a few hours later with a good result.
+
+[06:22:16 | 3:02:52 PM] And I think that's, for me, the most exciting and the greatest feature about the managed agents API, because credentials are super hard and super easy to get wrong with agents.
+
+[06:24:26 | 3:05:02 PM] And the benefit here is that there's no way for a prompt injection, right?
+
+[06:29:31 | 3:10:06 PM] So thanks for listening, and hopefully go hire your first AI co-worker.
+
+## Session narrative
+Schmid opened with audience interaction — "Can you raise your hand?" — and told the room to try Gemini later because "It is really good." He then framed a two-year arc: chatbots that answered simple questions, then assistants that used tools on our own computers with the first coding agents, and now autonomous co-workers. In this model, you create a digital employee, give the agent its own computer, hand it a task, and come back a few hours later hoping for a good result. From that framing he derived the anatomy of any co-worker, human or AI: a brain, a computer, a playbook, tools, credentials, house rules, and a schedule. He promised to work through all seven steps while building a co-worker live.
+
+Before the build, he recapped "the big day" — the Gemini 4.0 announcement — with its 1 million unified context window, up to 1 million output tokens, and more than 64K thinking tokens for math and reasoning, at $2 in and $10 out. The interactions API is the on-ramp, "literally four lines of code" after grabbing a key from aistudio.com. He showed what Google already did with the model internally: the Chrome team accelerated decoupling of the Chromium browser, Gemini made the Gemma open model easier and more efficient to run, the ADK team improved their framework, and internal codebases saw strong gains. A colleague's demo closed the recap: Gemini built a custom 3D ray tracer in pure Python, with voiceover added by the Gemini TTS model and Lyria.
+
+The core build used managed agents in the Gemini API. The product gives Gemini a remote sandbox that runs tool calls directly, so the familiar loop of receiving a JSON function call and executing it on your own machine disappears. Calling the agent is just the interactions API with an agent ID instead of a model ID. Schmid then created "Bug": an agent ID, a base agent that shares the same agent harness as Anti-gravity, the new model, and the system instruction "You are Bug." Everything in the agent lives as a file — skills, hooks, system instructions — so Bug can write new skills and store memories, and its environment bootstraps from inline files, GitHub repositories, or GCS buckets. He split knowledge into always-included system instructions (keep them short; you pay per request) and on-demand skills with short descriptions, sliced into references and scripts. Tools come from built-in Google Search, the new Workspace MCP server for Gmail and spreadsheets, or your own functions and MCP servers for execution you want outside the sandbox.
+
+The security section was the deepest. Credentials — bearer tokens, OAuth, or environment variables — are write-only and stored outside the sandbox. A network proxy around the sandbox watches all traffic and swaps a local dummy value for the real credential only on the domains you define, so the agent never sees the secret, a malicious MCP server cannot steal a Gmail token, and prompt injection cannot print your keys. Hooks add deterministic guards with regex matchers over tool calls, and the agent cannot edit those protected files. Cron triggers make the agent proactive, with webhooks coming. Two live demos followed: a simulated cron trigger sent a real managed-agents API call that read the portfolio-audit skill, checked whether stock prices changed through a financial services connector, and updated the Google Sheet automatically — with the same trigger able to post to a Slack trading channel; a second demo answered a Slack recommendation request with all previous turns as context. Schmid closed on the final slide — brain, computer, skills, tools, credentials, hooks, and triggers in one service — and sent the room off to "go hire your first AI co-worker."
+
+## Speaker details
+**Philipp Schmid** - MTS, Google DeepMind. Philipp Schmid is a Staff Engineer at Google DeepMind working on Gemini, Agents and Gemini API, with the mission to help every builder create and benefit from AI in a responsible way.
+
+- LinkedIn: https://www.linkedin.com/in/philipp-schmid-a6a2bb196/
+- Twitter: https://x.com/_philschmid
+- Website: https://deepmind.google/
+
+## Full timestamped transcript
+```text
+[06:12:17 | 2:52:53 PM] Can you raise your hand?
+[06:12:19 | 2:52:55 PM] Okay, that's not enough.
+[06:12:20 | 2:52:56 PM] So you should definitely try.
+[06:12:22 | 2:52:57 PM] Take your time later.
+[06:12:24 | 2:52:59 PM] Try it.
+[06:12:24 | 2:53:00 PM] It is really good.
+[06:12:26 | 2:53:01 PM] We are going to use it and show it in our talk as well.
+[06:12:28 | 2:53:04 PM] So we are going to look at how you can build and code your own autonomous Wall Street co-workers.
+[06:12:33 | 2:53:09 PM] So hopefully we have many finance people or, like, engineers working in finance here.
+[06:12:38 | 2:53:14 PM] So quickly, before we go into, like, right where we are coming from.
+[06:12:42 | 2:53:18 PM] Two years ago, we basically had a chatbot.
+[06:12:45 | 2:53:20 PM] We asked some simple question like, What's the capital of France?
+[06:12:48 | 2:53:24 PM] Like, who won the last European Championship?
+[06:12:51 | 2:53:26 PM] Then we moved to assistants using tools on our own computer, having the first coding agents writing code for us.
+[06:12:58 | 2:53:34 PM] And now we are moving into, like, this autonomous co-worker area where we basically give or create a digital employee where we give an agent its own computer, give it a task, and hopefully come back a few hours later with a good result.
+[06:13:13 | 2:53:49 PM] So what does a co-worker normally needs?
+[06:13:16 | 2:53:51 PM] And I think that goes for AI and for us humans as well.
+[06:13:20 | 2:53:55 PM] We need a brain to be able to do our work.
+[06:13:23 | 2:53:58 PM] We need a computer where we can save artifacts we create, where we can iterate.
+[06:13:29 | 2:54:04 PM] We need some kind of a new playbook, right?
+[06:13:31 | 2:54:06 PM] When you hire someone new, they are new to your environment, to your domain.
+[06:13:35 | 2:54:11 PM] You might have specific workflows, so you need playbooks.
+[06:13:38 | 2:54:14 PM] We need tools for them to be able to do that job.
+[06:13:42 | 2:54:17 PM] They all need credentials in one or the other way.
+[06:13:45 | 2:54:21 PM] Then there might be some specific house rules on what you should do or what you should not do, what you can do on your own, or where you need to get some approvals.
+[06:13:53 | 2:54:29 PM] And then, of course, there are hopefully some schedules for working hours when you can come in or when you have to work.
+[06:14:01 | 2:54:37 PM] And the same goes for our agents.
+[06:14:04 | 2:54:39 PM] So, and we are going to work through all of those seven steps and how you can build your own digital co-worker with Gemini in this talk.
+[06:14:10 | 2:54:46 PM] But before we go in, yesterday was the big day.
+[06:14:13 | 2:54:48 PM] We announced Gemini 4.
+[06:14:15 | 2:54:50 PM] 0 and made it available to you.
+[06:14:18 | 2:54:53 PM] Biggest new features: we have now a 1 million unified context window.
+[06:14:22 | 2:54:58 PM] This means Gemini can generate up to 1 million output tokens.
+[06:14:26 | 2:55:02 PM] And we see strong improvements, especially on math and reasoning tasks, where the model now has more than 64K token available to think, to work through, to reason through some proofs.
+[06:14:37 | 2:55:12 PM] And for math, and then also very good is, like, we tested that model heavily, so we know there are always some...
+[06:14:47 | 2:55:22 PM] Thinking around, hey, Gemini is just benchmarks, but the model is really good.
+[06:14:51 | 2:55:27 PM] You should definitely give it a try.
+[06:14:53 | 2:55:28 PM] We use it extensively at Google.
+[06:14:55 | 2:55:31 PM] There are already many projects by Google employees who have used it.
+[06:14:59 | 2:55:35 PM] The easiest way to get started is the interactions API.
+[06:15:03 | 2:55:38 PM] It's literally four lines of code, which for you to take, you get your API key in AI Studio, aistudio.
+[06:15:09 | 2:55:45 PM] com slash API key, and then you can immediately send your request.
+[06:15:13 | 2:55:49 PM] It's also, I would say, quite affordable for a frontier model with $2 in and $10 out.
+[06:15:19 | 2:55:54 PM] You should definitely try if you have a free minute later, or even if you have some agents running right now, give it a link.
+[06:15:25 | 2:56:00 PM] Tell it, hey, please set up Gemini 4 and give it a try.
+[06:15:28 | 2:56:04 PM] So what have Google done so far with the model?
+[06:15:31 | 2:56:06 PM] I think it's very impressive because it's like a super new model.
+[06:15:34 | 2:56:09 PM] We had it available internally to test for a few weeks already, but Googlers are using it so heavily and, like, shipping so many cool things.
+[06:15:41 | 2:56:17 PM] We had the Chrome team, like, basically accelerating some decoupling of the Chromium browser.
+[06:15:46 | 2:56:22 PM] We have Gemma, which is our open model, where Gemini accelerated Gemma to be more easily and more efficient to run.
+[06:15:54 | 2:56:30 PM] The ADK team from Cloud improved their framework, and then many, many other things.
+[06:16:00 | 2:56:35 PM] And especially the right one at the bottom is, like, we use it internally heavily, and we see strong improvements for our internal, like, code base as well.
+[06:16:09 | 2:56:45 PM] So what have people built?
+[06:16:12 | 2:56:47 PM] There are some demos.
+[06:16:13 | 2:56:48 PM] You can look them up, but there's one specific one from a colleague of mine which I want to show.
+[06:16:17 | 2:56:52 PM] He basically prompted Gemini to build a custom 3D ray tracer in Python, and it was completely built from Gemini and nothing external tools, and at the end just Python.
+[06:16:30 | 2:57:05 PM] And it also used Gemini TTS model and Lyria to add some voiceover to explain how it works.
+[06:16:36 | 2:57:11 PM] And it's, like, very impressive for me how far we can push those models now.
+[06:16:40 | 2:57:15 PM] So try to be very ambitious.
+[06:16:42 | 2:57:18 PM] How can we build our agent?
+[06:16:45 | 2:57:21 PM] And in Gemini API, we have a product called managed agents.
+[06:16:49 | 2:57:25 PM] And managed agents is basically a simple way for you to build a remote agent where you give Gemini a sandbox which it can use to run tools.
+[06:16:59 | 2:57:35 PM] So when we normally build an agent, we have this weird tool calling loop, right?
+[06:17:04 | 2:57:40 PM] We send a request to the model.
+[06:17:06 | 2:57:41 PM] The model might generate a JSON function call.
+[06:17:09 | 2:57:45 PM] We receive that function call.
+[06:17:11 | 2:57:46 PM] We run that function call on our machine, execute the code, and then we go back to the model.
+[06:17:16 | 2:57:51 PM] And with managed agents, we basically provide a sandbox which Gemini can directly use to run all of those calls.
+[06:17:21 | 2:57:57 PM] So if it decides to execute code to write a file, it has its own computer available for it to use, and it takes just an API call.
+[06:17:30 | 2:58:05 PM] So instead of providing the model ID with Gemini 4 Argon, you provide the agent ID.
+[06:17:35 | 2:58:11 PM] In this case, it's anti-gravity preview 09.
+[06:17:39 | 2:58:14 PM] Give it a prompt.
+[06:17:40 | 2:58:15 PM] The environment is remote, so you want to run it in the managed sandbox, and that's all it takes.
+[06:17:45 | 2:58:20 PM] So let's get into building Bug.
+[06:17:48 | 2:58:24 PM] Bug is our coworker for today, and Bug needs a brain.
+[06:17:52 | 2:58:28 PM] Our brain is going to be Gemini.
+[06:17:55 | 2:58:30 PM] Our computer is going to be agents, and then we all of the other things.
+[06:17:58 | 2:58:34 PM] So how can you create an agent?
+[06:18:01 | 2:58:36 PM] In managed agents, you have a very simple API where you can define your own agent.
+[06:18:05 | 2:58:41 PM] So you give it an ID.
+[06:18:07 | 2:58:42 PM] That's the name which you are going to use later to call the agent.
+[06:18:10 | 2:58:45 PM] We have the base agent, so that's the main agent underlying.
+[06:18:14 | 2:58:49 PM] In this case, it's the agent harness.
+[06:18:16 | 2:58:51 PM] So the remote agent uses the same agent harness which we have in anti-gravity as well.
+[06:18:23 | 2:58:58 PM] So if we are using anti-gravity as your coding agent, you get the same agent harness remotely.
+[06:18:29 | 2:59:04 PM] Then we want to use the new model, so we define our model.
+[06:18:32 | 2:59:07 PM] We have a system instruction: You are Bug.
+[06:18:34 | 2:59:10 PM] And then all it takes to call it, again, interactions API create, and instead of using the model ID for Gemini, or the default agent, we use our own agent Bug.
+[06:18:47 | 2:59:22 PM] And our agent needs a computer, and the computer normally needs some additional files, additional scaffolding.
+[06:18:53 | 2:59:29 PM] So with managed agents, you can provide your skills or an agent.
+[06:18:56 | 2:59:32 PM] md file, maybe from your GitHub repository.
+[06:18:59 | 2:59:35 PM] You can inline those files directly.
+[06:19:01 | 2:59:37 PM] You can provide a GitHub repository, private or public, with your skills, and you can connect GCS buckets.
+[06:19:08 | 2:59:44 PM] So you can already bootstrap the environment the agent is going to work in.
+[06:19:13 | 2:59:48 PM] And everything in managed agent lives as a file.
+[06:19:16 | 2:59:51 PM] So we have skills, we have hooks, we have system instructions at the end.
+[06:19:21 | 2:59:56 PM] It's just a file system or the agent's own computer where it can create new skills if it thinks it needs to improve itself, where it can store memories from previous sessions or learning.
+[06:19:31 | 3:00:07 PM] So at the end, we just work with files.
+[06:19:34 | 3:00:10 PM] And for knowledge or for our agent, I like to separate those in like three different categories.
+[06:19:42 | 3:00:17 PM] So we have knowledge, which we always need to include into every request.
+[06:19:46 | 3:00:22 PM] That's normally the system instructions.
+[06:19:48 | 3:00:23 PM] We want to be very concise.
+[06:19:50 | 3:00:25 PM] We want to try to keep it very short because that's something we need to pay on every request.
+[06:19:55 | 3:00:31 PM] So if we have very long system instructions, all of our requests are going to be much more expensive.
+[06:20:00 | 3:00:36 PM] If we have concise, then we have
+[06:20:02 | 3:00:38 PM] We have knowledge which the agent can decide when it needs to use them or not.
+[06:20:08 | 3:00:44 PM] So that's typically with skills, right?
+[06:20:10 | 3:00:46 PM] With skills, we have very short descriptions which give the agent some guidance on like, hey, you can use that skill if the user wants to do a certain task or if you have to do certain tasks, and then the agent can read that skill.
+[06:20:23 | 3:00:58 PM] But for skills, we also want to make sure that we are not having super long, dense skills because that's also a high cost at the end.
+[06:20:31 | 3:01:07 PM] Context is very valuable for us, so we want to decouple them and separate them into much more slices where we can then have, like, dedicated references and scripts if we want the agent to, like, do very certain things where it needs more context.
+[06:20:47 | 3:01:22 PM] Okay, so let's look at an example skill which we are going to use.
+[06:20:50 | 3:01:25 PM] So we have a portfolio audit.
+[06:20:52 | 3:01:27 PM] The agent should use it.
+[06:20:53 | 3:01:28 PM] It has some instructions available for it how to run it.
+[06:20:55 | 3:01:31 PM] So we have a Python script.
+[06:20:57 | 3:01:32 PM] The agent can run, and then some additional information on what it needs to do with the results and where to store it.
+[06:21:04 | 3:01:40 PM] Our part of our onboarding for our coworkers tools, right?
+[06:21:09 | 3:01:44 PM] We humans use normal software.
+[06:21:10 | 3:01:46 PM] For agents, that's either built-in skills like Google Search, code executions, or MCP server.
+[06:21:16 | 3:01:51 PM] Or if you don't have an MCP server and rather want to write a local function, that's also possible.
+[06:21:22 | 3:01:57 PM] So managed agents, we still have our agents create.
+[06:21:25 | 3:02:01 PM] We are now extending it to define our tools.
+[06:21:29 | 3:02:05 PM] We have built-in tools from the Gemini API for Google Search, so there's nothing you need to additionally do to get Google Search integrated.
+[06:21:37 | 3:02:13 PM] But if you want to use, for example, spreadsheets, Workspace has now an MCP server available for Gmail, for spreadsheets, so we can use that.
+[06:21:46 | 3:02:22 PM] Or if you want to provide your own functions or MCP server, that's also possible.
+[06:21:51 | 3:02:27 PM] So for your own function, it still works the same way as you normally do with models.
+[06:21:56 | 3:02:31 PM] So the agent creates a function call, and then you send back the function result.
+[06:22:00 | 3:02:35 PM] So it's basically for you a way to have agentic capabilities outside of the agent's environment and computer.
+[06:22:08 | 3:02:43 PM] So if you want to do certain things where the agent should not run the execution in the sandbox, that's a way for you to do it.
+[06:22:14 | 3:02:50 PM] And then we are logins.
+[06:22:16 | 3:02:52 PM] And I think that's, for me, the most exciting and the greatest feature about the managed agents API, because credentials are super hard and super easy to get wrong with agents.
+[06:22:26 | 3:03:01 PM] And I think the previous talk already also mentioned that we are very careful about using agents because things can go wrong very easily.
+[06:22:33 | 3:03:08 PM] And we thought a lot about this with managed agents, and we have support for three different ways of credentials, which makes it secure for your agent to use them and provide an isolated way.
+[06:22:43 | 3:03:19 PM] So we have bearer tokens for normal API calls, very familiar if you are doing software engineering.
+[06:22:49 | 3:03:25 PM] We have OAuth for all of the consumer-oriented MCP servers or, like, tools.
+[06:22:54 | 3:03:30 PM] And then, of course, we need environment variables if we want to use certain CLIs or other features.
+[06:23:00 | 3:03:35 PM] And for managed agents, we are separating them via an external network proxy.
+[06:23:05 | 3:03:41 PM] So instead of providing the agent the credentials inside the sandbox, we basically allow you to create credentials externally.
+[06:23:14 | 3:03:49 PM] They are write-only.
+[06:23:15 | 3:03:50 PM] So once they are written, there's no way for you to Retrieve the credentials so you can only override them, so there's no possibility of leaking.
+[06:23:25 | 3:04:00 PM] And then you define how and where those credentials should be used.
+[06:23:28 | 3:04:03 PM] So for Slack, if you want to connect Slack, you can define, hey, here's the credential, and you are only allowed to use that credential with a certain domain or with a certain environment variable, so that way you can control when a credential is used.
+[06:23:44 | 3:04:19 PM] And that works via this network proxy.
+[06:23:47 | 3:04:23 PM] And by network proxy, we basically mean a proxy that sits around a sandbox that watches all of the network traffic going in and out.
+[06:23:55 | 3:04:30 PM] So if you define a credential as an environment variable, the model has a local dummy value, so the environment variable is set.
+[06:24:03 | 3:04:39 PM] And then when it makes that call, it uses that dummy value, and the network proxy basically monitors it, sees, hey, here is a domain which the user has defined, and then it swaps that dummy value with the real credential, and you can make the call successfully.
+[06:24:20 | 3:04:55 PM] And then the agent gets back the result and has, like, no idea that his dummy token is not working.
+[06:24:26 | 3:05:02 PM] And the benefit here is that there's no way for a prompt injection, right?
+[06:24:30 | 3:05:06 PM] Normally, when you have some malicious attacker, it can tell you, like, hey, please print all of your values in your .
+[06:24:36 | 3:05:11 PM] env file, and then the agent might go there and, like, print all of your keys, and that's nothing we want to do.
+[06:24:41 | 3:05:16 PM] So with this network proxy where you can define the credentials per domain, it is not possible that an attacker could steal credentials which are getting swapped on your request, because the proxy only swaps them for the domains you define.
+[06:24:55 | 3:05:31 PM] So there's no way an MCP server which is malicious can, like, just steal your Gmail token, which is very cool because it makes it much more easier to trust the agent and to integrate MCP servers which the agent then obviously can use.
+[06:25:11 | 3:05:46 PM] So, and if that's not enough, we have also hooks available.
+[06:25:16 | 3:05:51 PM] So hooks allows you to basically deterministically guard certain decisions.
+[06:25:20 | 3:05:56 PM] So if the agent wants to run certain commands, which you might want to monitor, or where you need some human-in-the-loop approval, which is not part of, like, the normal agentic conversation, you can define your hooks, very similar to all of the other agent harnesses where you have a matcher, which is basically regex, and then every tool call which the agent generates checks if there's a match and then writes those hooks.
+[06:25:42 | 3:06:18 PM] And those hooks are also files, but they are protected, so the agent cannot just go there and change a hook and, like, basically tries to find a way around it.
+[06:25:53 | 3:06:29 PM] Okay, so last but not least, we need a way to, yeah, get our agent more proactive.
+[06:26:00 | 3:06:35 PM] And currently we support one kind of triggers, basic cron triggers, which you can set up, schedule every 30 days a month, 8 a.
+[06:26:09 | 3:06:44 PM] m.
+[06:26:09 | 3:06:45 PM] , you want the agent to run a certain trigger with a certain input in the same environment to do maybe some due diligence, some auditing.
+[06:26:17 | 3:06:53 PM] And we are also working on webhooks that you can even, like, make this much more interactive, that you could connect external webhooks, like from some certain SAC provider or maybe other providers you work together with, which would directly then call your agent.
+[06:26:32 | 3:07:07 PM] The agent does some first auditing and then, like, basically can call your Slack or your Microsoft Teams directly without you even needing to manage some infrastructure at all.
+[06:26:44 | 3:07:20 PM] So that's that final picture, and now let's look at some real demos, and let's hopefully hope that the Wi‑Fi is good enough.
+[06:26:55 | 3:07:30 PM] So I told Gemini that I want to do a cool Google Sheets demo, and it helped me create basically this whole Google Sheets replication in my browser.
+[06:27:04 | 3:07:39 PM] And when I click here, we basically simulate this cron trigger.
+[06:27:08 | 3:07:43 PM] So we send a real API call to Managed Agents.
+[06:27:11 | 3:07:47 PM] It should use our portfolio auditing skill, and it runs the request.
+[06:27:16 | 3:07:52 PM] So first step, basically see like, hey, I need to read the skill.
+[06:27:20 | 3:07:56 PM] It gets the result back, so it tries to understand what it should do here.
+[06:27:25 | 3:08:01 PM] It's like, I hope that's roughly accurate on, like, the Google Sheets.
+[06:27:29 | 3:08:05 PM] But it basically runs through all of those calls, calls financial services, tries to see, okay, did the market or the stock price change?
+[06:27:37 | 3:08:13 PM] And then at the end, hopefully it should update our own Google Sheets completely automatically.
+[06:27:43 | 3:08:18 PM] So it's still working through it, test some first result, and it updates the Google Sheet based on that trigger.
+[06:27:51 | 3:08:26 PM] And that trigger would run every 8:30 a.
+[06:27:53 | 3:08:28 PM] m.
+[06:27:53 | 3:08:28 PM] without you needing to do anything.
+[06:27:55 | 3:08:30 PM] And then, of course, if the agent has access to Slack, then it can even, like, post in some, like, specific trading channel, okay, what changed, what is going on, how does it work?
+[06:28:07 | 3:08:42 PM] And here we have an example where I can just ask Spark any recommendation, and hopefully this works as well.
+[06:28:19 | 3:08:54 PM] So it takes a little bit of time.
+[06:28:22 | 3:08:58 PM] You have seen in the other demo, we have seen all of that.
+[06:28:25 | 3:09:01 PM] Perfect.
+[06:28:26 | 3:09:01 PM] So there are three positions.
+[06:28:27 | 3:09:03 PM] So that's based on, like, this Slack thread content.
+[06:28:30 | 3:09:05 PM] So it has all of the previous turns available, and it provides the context of what changed.
+[06:28:35 | 3:09:11 PM] But it's still basically not taking actions based on the system instructions you gave.
+[06:28:40 | 3:09:15 PM] And all of the infrastructure you need to run that agent is part of the managed agents environment.
+[06:28:46 | 3:09:22 PM] So it's very easy for you to get started, to, like, integrate those into, like, the tools you already use, provide the systems you need, and then, like, to get started.
+[06:28:56 | 3:09:31 PM] Back to the slide.
+[06:28:58 | 3:09:34 PM] So the whole co-worker, which we need in like one service, we have the brain, Gemini.
+[06:29:06 | 3:09:42 PM] We have the computer with managed agents.
+[06:29:09 | 3:09:44 PM] We can provide skills for the same agents you use maybe on your local computer.
+[06:29:13 | 3:09:49 PM] You can use the tools.
+[06:29:15 | 3:09:50 PM] You can provide MCP server for external services, data providers to connect.
+[06:29:19 | 3:09:54 PM] We have a secure way for you to provide credentials, to rotate credentials.
+[06:29:23 | 3:09:59 PM] We have hooks to protect certain deterministic logic.
+[06:29:26 | 3:10:02 PM] And of course, we have triggers to much more proactively integrate it into it.
+[06:29:31 | 3:10:06 PM] So thanks for listening, and hopefully go hire your first AI co-worker.
+```

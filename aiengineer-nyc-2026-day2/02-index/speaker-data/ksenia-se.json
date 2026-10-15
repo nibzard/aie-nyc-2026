@@ -1,0 +1,33 @@
+{
+ "slug": "ksenia-se",
+ "name": "Ksenia Se",
+ "role": "AI Inferencer",
+ "company": "Turing Post",
+ "bio": "Co-founder of Turing Post, a newsletter and media platform covering machine learning and AI. She shapes the editorial direction, leads the \"Inference\" interview series, and produces \"Attention Span\", a video series explaining major shifts in AI. She has covered machine learning and AI for more than seven years, previously held editor-in-chief roles, and contributed to outlets including Stratfor and Towards Data Science. She is also co-founder of TheSequence.ai, a mother of five, and a frequent speaker and moderator at conferences such as AIE, HumanX, and Ai4.",
+ "linkedin": "https://www.linkedin.com/in/ksenia-se",
+ "twitter": "https://x.com/Kseniase_",
+ "website": "https://www.turingpost.com",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FFnIQmW5RFSVAMAZyOYyK_headshot-1791387672406.jpg",
+ "sessions": [
+  {
+   "title": "Welcome Remarks",
+   "time": "8:55am - 9:00am",
+   "room": "Simons Room (Metropolitan East)"
+  },
+  {
+   "title": "Welcome Back - Featured Keynotes",
+   "time": "4:25pm - 4:30pm",
+   "room": "Simons Room (Metropolitan East)"
+  },
+  {
+   "title": "Closing Remarks",
+   "time": "5:25pm - 5:30pm",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.turingpost.com/authors/ksenia-se",
+  "https://www.linkedin.com/in/ksenia-se"
+ ]
+}

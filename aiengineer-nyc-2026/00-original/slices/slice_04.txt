@@ -1,0 +1,261 @@
+# transcript slice 04
+window: t=7280..9100 (02:01:20..02:31:40 video time; 10:49:12 AM..11:19:32 AM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[02:00:21] I'm saying it again because people sometimes are confused.
+[02:00:24] We pre-train transformer blocks at scale from scratch using our transaction data.
+[02:00:32] So the zero rate that we use from OpenAI, we just use the architecture, and then we pre-train from scratch using our GPU cluster.
+[02:00:40] And then we train for a couple of days and weeks, and then you do the downstream task of post-training.
+[02:00:49] But the goal here, and you pre-train it for predicting the next token or the next transactions, and you try to do this, you try to predict the next pattern of the customer.
+[02:01:00] But that's not the intent.
+[02:01:02] The intent is to do the downstream task later on.
+[02:01:04] And in terms of scale, I mean, we operate at a large scale, so we have billions of transactions, a million of accounts, hundreds of transactions per client on a monthly basis, interacting with their debit card, credit card, or doing check.
+[02:01:21] And the five main dimensions we look at is really who is doing, I mean, who is processing and who is asking, and who is providing a service.
+[02:01:32] So really the customer and the merchant.
+[02:01:35] The what, so, I mean, what do we buy, what do we transact, and how.
+[02:01:41] So which channel is it?
+[02:01:43] Credit, is it debit, is it digital?
+[02:01:45] When is it happening and where is it happening?
+[02:01:47] And all of those, they're basically breaking down in hundreds of features.
+[02:01:51] And if you look at the existing model we have in production, there's a lot of—and people that build those models in similar organizations may understand that—they build a lot of very hard-crafted, uncrafted engineering, feature engineering efforts on that, and that requires a lot and a lot of time.
+[02:02:11] So we step back and look at really the raw features we need, not the ones that have been really pre-built and post-built for doing the downstream task, but try to understand which raw features.
+[02:02:23] And we ended up with basically a hundred features.
+[02:02:26] Even if at the end of the day we had thousands of them, but we tried to find which ones are really the raw information unit.
+[02:02:34] And then we let the architecture, the transformer blocks, to figure out the relationship between those core features.
+[02:02:41] And as you can see, we do have a bunch of features on those five dimensions, and the vocabulary is very unique.
+[02:02:51] to the financial services setup.
+[02:02:53] So, and that's the reason why, I mean, we didn't really use existing pre-trained model, because the vocabulary that we use is very, very specific to the work that you want to do.
+[02:03:06] And even if you merge, well, all digital and checking and saving and all of those sort of transactions, even if you merge all of those, you still end up with a very limited number of features and characteristics.
+[02:03:22] So at that scale, then the question is, well, how you work with that?
+[02:03:27] So we started, everything is tabular data.
+[02:03:29] I mean, there's no secret, it's tabular data.
+[02:03:31] And then the goal is to understand how you're going to capture the vocabulary, because you do have numerical values, you have categorical values, you have information like zip code.
+[02:03:43] Do you encode each and every zip code in a token?
+[02:03:46] Does that make sense?
+[02:03:47] So there's a lot of efforts you need to push in understanding the vocabulary that you need and the vocabulary that you want also to scale, because at the training, if you have a too huge vocabulary, it would be kind of messy to train such a model with a vocabulary which is far, far too big.
+[02:04:04] So there's a lot of effort in understanding this value to token.
+[02:04:08] So which information do you encode in a token?
+[02:04:11] And then you have the token to ID, the tokenizations, and then the embedding lookup.
+[02:04:15] So then when we have a transaction coming up, you do have the vocabulary.
+[02:04:19] So it's basically, it's a lookup and aligning a transaction and all the characteristics of that transaction to a token and an ID and then an embedding.
+[02:04:29] So just to give you a number, well, some numbers.
+[02:04:35] So we have quantitative, qualitative, categorical of different kinds, right?
+[02:04:39] So categories with only eight types, some with much bigger types.
+[02:04:44] You have transaction amount, which is a big deal.
+[02:04:47] You have the delta time between transactions.
+[02:04:49] So you have anything related to IP address, postal code.
+[02:04:52] So just to give you an example of variety and heterogeneity of each and every characteristic could be encoded in a binary token or could be encoded in a much larger number of tokens.
+[02:05:05] And even if you look at the zip code, I mean, you have a much larger number of zip codes in the U.
+[02:05:12] S.
+[02:05:12] than those 2,800, but you have a much better way to structure how you're going to regroup zip code based on distributions, for instance.
+[02:05:24] So here, just what we— so we use the Tinkchilla mathematics behind to define how we build it, right?
+[02:05:36] I mean, initially, because we had no clue how it's going to work in a tabular space, even though there are existing open weights and open solutions for doing tabular data foundation models.
+[02:05:50] So we started from what they learned and adapted to what we needed to do.
+[02:05:55] And that gives you an example of embedding dimensions, number of decoder blocks we use, and all of the recipe from an architecture perspective.
+[02:06:05] So we have— and as you can see, we're not trying to build a trillion-parameters model.
+[02:06:11] We don't try to compete with any of the leaders in the language models because we're working really and focusing on transactions, right?
+[02:06:21] Transactions foundation models at billion level.
+[02:06:24] And one one billion is because that the model that was kind of the smallest and gave us the highest boost.
+[02:06:32] And now we're working on the next version, that 11 billion.
+[02:06:35] But that's good enough to give a lot of ROI from a false positive reductions for downstream tasks like fraud detection and unit detection rate.
+[02:06:48] So, and the type of architecture, so the decoder-only architecture, that's basically for predicting the next token or the next transaction, and that's really the pre-training.
+[02:07:01] So here we initially used 20 times the number of parameters to define the number of tokens we might need.
+[02:07:06] We ended up actually 10 times factored than that.
+[02:07:09] So by doing a few experimentations, we needed much more tokens per parameters.
+[02:07:15] I mean, this is kind of the initial experimentation we did.
+[02:07:20] So I'll pass on this because this is the usual suspect from an objective functions, causal language modeling and masked language modeling type of optimization work.
+[02:07:34] And from an architecture perspective, nothing really fancy here.
+[02:07:39] Again, the most complex part was really the tokenization, and then adapting and doing the pre-training, and then how you do the fine-tuning.
+[02:07:47] So I would say the recipe or the secret sauce is really how you do the tokenization and how you're going to do the post-training.
+[02:07:56] But anything from a training perspective, the question is just how many transactions you're going to put in your context or in your history for doing the training.
+[02:08:08] And evaluation, perplexity-based, accuracy dashboard on downstream tasks, that's the usual suspect.
+[02:08:18] Yeah, so use mixed precision, distributed data parallel, maximize micro-batch size, get faster convergence, yeah, using Muon, rope usual, and memory efficiency, flash attention, activation checkpointing.
+[02:08:34] I mean, here there is nothing really new.
+[02:08:37] It's just we use the advices from the best, from the ones that build even much bigger models.
+[02:08:46] So I'll pass on this one.
+[02:08:48] Time is short, but I wanted to spend some time on the results.
+[02:08:54] So, yeah, so when you build this foundation, that foundation is really, is only a backbone.
+[02:09:04] It's something you can use for downstream tasks.
+[02:09:07] And the downstream task was to do fraud classification.
+[02:09:11] So you have a transaction, and then you try to predict if that transaction is going to be fraudulent.
+[02:09:16] So in the model we have in production, it's a NextGBoost model, and it's trained on a large amount of transactions, which is fraudulent or non-fraudulent.
+[02:09:26] And the missing piece is that was the relationship between whatever transaction you try to predict, try to classify, and the relationship with this transaction with all of the past transactions.
+[02:09:38] And that information is kind of gone when you use a NextGBoost model, unless you encode it in a very hard way, which is not so easy.
+[02:09:47] But if you use transformer architectures, you do have these nice attentions from transactions to past transactions.
+[02:09:55] And that's basically what help, this is what we think, this is what really help pushing the...
+[02:10:01] Pushing the fraud detection rate much higher.
+[02:10:03] But at the end of the day, the downstream task was to say, here's the sequence of transactions.
+[02:10:09] I have someone just using the debit card.
+[02:10:11] Is that transaction fraudulent with respect to all historical information?
+[02:10:18] And that's exactly what you put in at inference time when you try to do the prediction.
+[02:10:25] So that's the architecture.
+[02:10:27] So nothing really fancy here.
+[02:10:29] You just need to have the good engineering in place to do less than 250 milliseconds for doing the processing, because the decline need to happen within that time frame.
+[02:10:43] But we were 10 times slower than that from a latency perspective, so it was all good.
+[02:10:50] And just in terms of final result we get.
+[02:10:53] So the main matrix, and those matrix relate right away to dollar, to cost, well, to savings for the firm.
+[02:11:03] So it's detection rate and false positive rate.
+[02:11:06] Of course, you can detect much higher, but in many cases, sometimes you get much more false positive.
+[02:11:12] And in this case, we managed to get, we flagged more fraudulent activities, and we even reduced the false positive.
+[02:11:20] So that was a big win.
+[02:11:21] That was a big win because at the end of the day, if you decline a transaction which is not fraudulent, then that person is going to call.
+[02:11:29] There is then operation cost associated to it.
+[02:11:31] You lose the transaction related to that non-fraudulent action.
+[02:11:36] So it's something that you don't really want to happen.
+[02:11:42] So again, that's compared to the state of the art of XGBoost model using fraud detection.
+[02:11:49] So it's basically huge.
+[02:11:52] It's millions of dollar savings.
+[02:11:55] So it's a very big boost.
+[02:11:57] So just to finish up on that slide.
+[02:12:02] So that foundation model has been built on billions of transactions from Wells Fargo customers.
+[02:12:12] That's number one.
+[02:12:14] It's pre-trained from scratch, so we don't pre-train from any open-weight existing model.
+[02:12:19] We use existing architecture, but the way they zero-rate, we pre-training on a couple of days.
+[02:12:25] I mean, we did a couple of weeks initially, but then that's pre-trained.
+[02:12:28] And then when it's pre-trained, it's pretty good in predicting the next transaction.
+[02:12:33] Then when you're done with that, then you can use it for many downstream tasks.
+[02:12:37] We use it for fraud detection.
+[02:12:38] Now we're investigating for credit line increase, investigating for anti-money laundering, investigating for marketing.
+[02:12:45] So now the same foundation is used across different organizations within Wells Fargo.
+[02:12:51] And yeah, thank you for having me, and thank you.
+[02:19:54] All right.
+[02:19:57] Good morning, everybody.
+[02:20:03] Thank you for joining us today.
+[02:20:19] It is such an honor to be sharing this stage with so many great speakers.
+[02:20:24] So yeah, let's get right into it.
+[02:20:26] My name is Aman.
+[02:20:27] I lead AI at Arca, and today I'm going to talk to you about Arca's long horizon agents that run our business.
+[02:20:36] Arca is an AI native services firm.
+[02:20:40] We provide our clients with financial services like financial planning, tax planning, asset management, investment advice, and we serve a range of clients.
+[02:20:50] Some of them are like technology executives that have amassed a lot of wealth and need a real plan to retire early, but also that family in New Hampshire that made their first million dollars and want to buy that house finally.
+[02:21:07] I said we were AI native.
+[02:21:09] There's lots of definitions of this term these days, very overused.
+[02:21:14] But what we mean by AI native is that agents run our business.
+[02:21:21] Not that they assist the business from some co-pilot corner.
+[02:21:25] They execute the decisions that shape the outcomes that our business has for our clients.
+[02:21:33] Work in this industry, it's interesting to know what it looks like.
+[02:21:36] In financial services, the work is more long horizon and less long running.
+[02:21:42] And what I mean by that is this is less agents grinding tokens for like hours or days on end, right?
+[02:21:49] This is more one client goal that spans 10 days.
+[02:21:54] It's very stop-start.
+[02:21:55] There's many actors in between, many decision points, many handoffs, and ultimately that goal lands like 10 days later.
+[02:22:04] That is the kind of work that we are working on.
+[02:22:07] And so here's an example.
+[02:22:09] Jane's our client, fairly wealthy, but has a big tax bill—oh—has a big tax bill in April 15th, right?
+[02:22:20] So we're going to help Jane figure out what is the most tax-optimal way for this cash to be raised to pay the tax bill.
+[02:22:30] So there's the advisor that will do all of the statement analysis and the analysis of how to make this tax optimal.
+[02:22:37] There's the trader that would actually liquidate the assets.
+[02:22:42] The assets themselves will take like days to settle, and then the ops people will come in and kind of like trigger the ACH.
+[02:22:48] That will itself take days to land.
+[02:22:50] So this is kind of the work I'm talking about in this industry, which takes days to settle.
+[02:22:57] And of course, if you do this at scale for several, several clients, the amount of time our firm takes to do this sort of work exponentially, right?
+[02:23:05] So at Arca, we took a different approach.
+[02:23:09] It's helpful to know that Arca is not a SaaS company.
+[02:23:14] We are not selling software to other businesses, to other firms.
+[02:23:17] We are the firm.
+[02:23:19] We're an applied AI company that happens to be running a services business in this industry.
+[02:23:24] And so the approach we took was, all right, we're going to have agents own this whole long-horizon outcome end to end.
+[02:23:32] And for that, we gave them a couple of key components.
+[02:23:35] I'll give you a sneak peek of.
+[02:23:37] We gave them signals from the external world that keeps them really aware of what is happening.
+[02:23:42] So that email will be read by agents.
+[02:23:45] We give them all of our operational context on what to do about that email.
+[02:23:48] What does this industry do with this situation of taxes, right?
+[02:23:52] We give them our harness.
+[02:23:54] That gives them all of the tools and the guardrails, and more importantly, persistence of memory over the kind of long horizon period to carry that work out.
+[02:24:05] And of course, we gave them the ability to collaborate with people.
+[02:24:10] So that work with agents compresses a lot because all we did was we took humans out of the critical path of this work.
+[02:24:20] Nobody has to babysit this goal over days.
+[02:24:25] Agents are on it.
+[02:24:26] In this talk, I'd love to describe to you how we actually do that.
+[02:24:31] Let's follow the journey of this email.
+[02:24:35] Jane owes $100,000 for taxes.
+[02:24:37] This email, much like many other signals in our platform, will be read by background agents.
+[02:24:46] So there's like phone calls our firm is making, there's documents that are coming in, there's meetings being had, there's events coming in from our custodian, there's market movement that's happening.
+[02:24:55] These are all signals that our background agents are continuously evaluating to progress work.
+[02:25:02] So this email is one of those signals.
+[02:25:04] And when the signal is ingested by agents, they actually get to the work, right?
+[02:25:09] We have a harness that gives them the knowledge to know what to do about the situation.
+[02:25:13] They have deep client memory, so they know, hey, let's never touch Jane's Apple position because she said that in a call like eight months ago, right?
+[02:25:22] We of course have a sandbox for all of the financial computation that needs to happen for this analysis.
+[02:25:28] But largely, I think harnesses today are coalescing on a standard shape.
+[02:25:32] So it's more interesting what happens outside of this harness.
+[02:25:39] So after they've done the work, they produce this plan.
+[02:25:42] This plan by itself cannot be executed without people.
+[02:25:45] So in our product, we build a space, agents build a space where they put out this plan and there's, you can chat with the agent to like kind of know what's happening with the plan.
+[02:25:55] There's multiple people that can be chatting with the agent.
+[02:25:59] And more importantly, this space is where also they pull people in when they need people to execute some work.
+[02:26:05] So here in this case, we would approve the plan and the email out to Jane.
+[02:26:11] And then there's this whole dance of, has Jane replied?
+[02:26:15] What does her answer mean for the plan that we had, right?
+[02:26:19] And then all of these other questions that will have to be answered throughout this whole like long horizon work.
+[02:26:24] At Arca, we were like, of course we're not going to have people babysitting it.
+[02:26:29] So we let our agents watch the world so people don't have to, right?
+[02:26:33] So we give them tools to be able to register interest in anything happening in our world.
+[02:26:39] So they're able to say, let me know when Jane responds.
+[02:26:42] Let me know when that ACH lands, right?
+[02:26:45] And this is powered by our signal system in the background where agents are routing signals to agents that are interested in it.
+[02:26:55] And of course, if the signal never lands, agents can like wake themselves up on a schedule as well to keep track of work.
+[02:27:05] But then of course, the real world is very messy, right?
+[02:27:10] People are waiting for that email, but Jane never responds to that email.
+[02:27:15] Say we meet her in person and we learn some information that affects the plan.
+[02:27:20] So the person goes in and they add this information into our UI.
+[02:27:25] But this act of adding information or doing work in our UI is also a signal that will wake up an agent.
+[02:27:33] In fact, when people work in our product, when they reschedule a calendar event, you know, that's a signal.
+[02:27:40] When they mark a task complete, that is a signal.
+[02:27:43] So this system lets us be both aware of everything happening in the external world and the internal world as work is progressing so our agents can participate in work.
+[02:27:56] And of course, agents are communicating with each other as well.
+[02:28:00] So this signal read by a background agent, we let it notify another agent about this so that it can update the space to say, hey, we just need $80,000 instead of the $100,000.
+[02:28:11] So the work has changed because of these signals.
+[02:28:15] And the last piece of the story is that agents are able to pull in the right people at the right time.
+[02:28:20] So the agent on the left has read operational context to be like, okay, the next step here is to pull in the person that trades these assets.
+[02:28:30] And so that person now gets a task and gets pulled in to participate in this long horizon work.
+[02:28:38] What we've done overall, if you take a step back, is we've given our agents the primitives for driving longer horizon work.
+[02:28:45] What do people do at work, right?
+[02:28:47] They need to stay aware of what is happening.
+[02:28:49] So we've built this very intense signal system for our agents to be aware.
+[02:28:53] They need to know what to do next.
+[02:28:55] So we've given them all of this operational context.
+[02:28:58] They need to do the work.
+[02:28:59] So it's our harness that lets them actually perform the work and keep track of it, right?
+[02:29:03] It's long persistence memory systems that hold the state and bring in the right people at the right time.
+[02:29:14] This is a pretty simple idea on the face of it, but there's a lot of emergent complexity.
+[02:29:20] You can imagine at any point there's hundreds of these signals coming in, and tasks are being added on people's plates, they're being pulled in, background agents are communicating with each other, right?
+[02:29:33] So over the last six months, we've been working on getting this system to be really good.
+[02:29:38] We've been closing all of our context gaps so that agents are fully aware.
+[02:29:43] We have been working on the precision of tasks, so pulling in the right person at the right time.
+[02:29:49] Work that needs to be tracked for the future is tracked in the agent's memory.
+[02:29:53] Work that is doable now becomes a task, right?
+[02:29:56] So we've been working on our ability to hold state over long horizons as well.
+[02:30:01] And because we are the firm and not just a SaaS company, we've been changing and standardizing how work happens in the firm in the first place, and operationalizing that context into our agent state.
+[02:30:15] And because these are our colleagues that use our product, we collect rich reasoning from them that become evals for our system to improve.
+[02:30:25] So, I guess there's a question to be asked here, like, why do this, right?
+[02:30:29] What does this unlock?
+[02:30:32] What is the takeaway here, right?
+[02:30:33] For us, this is our whole thesis, is that we want our platform to be so AI-native that agents drive the business.
+[02:30:44] Agents run the business.
+[02:30:45] They are making the decisions that shape our outcomes.
+[02:30:49] And so at Arca, when people log in, right, they see a list of tasks that have been prepared for them by agents.
+[02:30:57] They've already read that email.
+[02:30:59] They've, like, looked at the document that came in.
+[02:31:01] They've done, like, 90% of the work, and they're pulling you in just when it's time for you to act.
+[02:31:08] So building this system lets us get to a point where at Arca, agents prompt people more than people are prompting agents, which lets our agents drive the work that our firm does.
+[02:31:23] And because agents are driving the work the firm does, agents can drive the business.
+[02:31:29] Let me give you an example.
+[02:31:30] Remember that email that Jane sent us?
+[02:31:32] This is a bit of a failure, right?
+[02:31:34] Because we should have just been proactive about this in the first place, right?
+[02:31:38] So Jane should never have to send this email.
+[02:31:41] So say at, you know, our AI-native business, we take on this new goal.
+[02:31:46] Our new goal is— Proactivity.
+[02:31:51] Every January, prepare each client's tax situation and proactively reach out to them before anyone even asks.
+[02:31:59] This is a new business goal for our business to drive.
+[02:32:01] And in an AI-native firm, all we have to do is make this goal part of our agent's set of goals.
+[02:32:10] And because they have the primitives to be able to drive work through people for the business, they start driving this goal.
+[02:32:18] And just like that, you have these analyses being done in January and these one-click approval emails with the full plan for every client showing up on our users' plates.
+[02:32:32] And because they're aligned with the goal of proactivity, they can one-click approve and drive the business towards this new outcome.

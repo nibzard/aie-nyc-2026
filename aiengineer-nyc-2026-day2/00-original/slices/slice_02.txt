@@ -1,0 +1,310 @@
+# transcript slice 02
+window: t=3640..5460 (01:00:40..01:31:00 video time; 9:41:16 AM..10:11:36 AM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[00:59:43] And we've seen this with software delivery, and we'll see it in other processes as we bring agents into those processes as well, where now all of a sudden, if you're reviewing code faster, you need to design it quicker or you need to do the security scan faster.
+[00:59:59] So we see the volume shift across.
+[01:00:00] Shift across the flow.
+[01:00:04] And this is where it's really important that we have visibility into the process overall from a metric standpoint, because as we start to supercharge and parallelize and add more efficiency to the process, we start to develop more and more bottlenecks.
+[01:00:19] And so the operational visibility of the process is extremely important, much more important than the authoring and the building of your workflow tool.
+[01:00:29] So we want to visualize the process.
+[01:00:34] So we want to add parallel capacity by still keeping the controls.
+[01:00:37] And so this is where we'll add more additional capacity.
+[01:00:43] Okay, so we're doing some work, we're checking it, we're using the feedback again to refine it until the work is good enough to move on.
+[01:00:56] But why is that hard?
+[01:00:57] That seems like a pretty easy thing to do.
+[01:00:59] But as I mentioned before, these graphs get actually pretty complex, and we'll dive a little bit more into why this is difficult.
+[01:01:10] And if you're familiar, one challenge with AI engineering is the variability of inputs and outputs.
+[01:01:16] And I believe that higher quality inputs will result in better outputs at a lower compute cost.
+[01:01:27] But what are quality inputs?
+[01:01:37] So we'll generally speak to it as context model, maybe we can nitpick that, but this isn't our area of focus today.
+[01:01:46] We're going to focus more on outputs.
+[01:01:48] But we can't really talk about quality of outputs without talking about the quality of inputs.
+[01:01:57] So ideally, we've established a trusted context for our agent, and there's some references on that.
+[01:02:04] But one thing we can do in this model is inject the DAG state into our agent and let it know kind of where it fits into the bigger picture.
+[01:02:14] Okay, so now we've added even long time horizon goals, and that emphasizes the need to optimize the cost and efficiency of this loop.
+[01:02:35] So the check is where we decide whether the work is good enough to move forward.
+[01:02:39] We need to define what good looks like.
+[01:02:41] That's the hard part.
+[01:02:44] And we need to have a reliable way to evaluate it.
+[01:02:47] Otherwise, more passes don't necessarily mean better results.
+[01:02:52] The loop is really only as trustworthy as the check.
+[01:02:55] So if we want to talk about quality, let's talk about the check and let's talk about quality.
+[01:03:01] Okay, I think building with AI is an opportunity to improve product quality overall, like some of the conversation about durable software.
+[01:03:13] So I'm a believer in quality, and in traditional software, we've built confidence mechanisms in place to give us confidence that the software is of high quality.
+[01:03:28] And that's done with a variety of mechanisms, but primarily systematically with test cases, unit tests, checking these as a part of our delivery flow to ensure that when we make code changes, mistakes aren't made that break other things, right?
+[01:03:43] So this is a confidence mechanism that we've put in place with traditional software.
+[01:03:51] The agents are probabilistic, and so the same request can produce different answers.
+[01:03:58] More than one answer may be acceptable.
+[01:04:02] And we still need evidence, but exact output comparisons alone really aren't good enough.
+[01:04:09] We need to build representative data sets and evaluate them and define what good looks like.
+[01:04:17] We need to run these evaluations in repeated series, and this is a statistical analysis, right, where we actually look at the outputs in volume and not just as a direct comparison.
+[01:04:34] So, combining with evals as sort of your runtime logs of what happened, or sorry, traces, which are sort of your runtime logs of what happens, we've built this confidence mechanism to complement traditional software.
+[01:04:53] And ultimately, this is what we're going to be talking about a little bit more in terms of driving confidence in the output, not only putting this mechanism in place, but how do we begin to turn it on?
+[01:05:08] So, where does the agent belong?
+[01:05:11] Back to the lending example, we can do KYC, financials in parallel, and sequence like credit memo, risk review, documentation, decision, all these things in our DAG.
+[01:05:23] Looking at each node, we want to ask some certain questions like, how valuable would it be to have an agent drive this node versus a human drive this node?
+[01:05:34] And we can sort of look at some of these basic questions like, can we check it against the policy easily?
+[01:05:39] Can it run an abounded loop?
+[01:05:41] Can we trace it?
+[01:05:42] Can we fall back to a human?
+[01:05:44] If we can answer yes to these type of questions, we can kind of have a good idea going in that this particular node may be better suited for automation.
+[01:05:53] But throughout the DAG, we should look to drive agent assistance.
+[01:05:58] So, what we're really talking about is not whether or not AI is involved, but whether or not AI we expect to Take over at some point.
+[01:06:10] On the decision, you would probably agree that we probably need that to be human-driven.
+[01:06:15] This is essentially the check against the policy.
+[01:06:18] So this is going to be a little bit more difficult, I think, to hill climb.
+[01:06:25] But what do we mean by hill climb?
+[01:06:27] All right, how do we turn this on?
+[01:06:30] So day one, we start supervised.
+[01:06:33] And as we have agents and humans working together as a part of the process, we can manually verify the output to ensure that it is of high quality.
+[01:06:48] This is where we refine our data sets and ensure that we have the right confidence mechanisms in place.
+[01:06:54] We've defined what good looks like with the domain subject matter experts, and that they're beginning to verify it.
+[01:07:03] When measured confidence reaches a policy threshold, we can move towards sampling.
+[01:07:09] And what that means is humans are looking at a slice of the output and not necessarily all of it.
+[01:07:14] We begin more systematic evaluation through traces in order to ensure that what the humans aren't seeing is still meeting the quality bar.
+[01:07:27] And then finally, once we clear the confidence threshold, humans handle more of the exceptions of the process, but still act as participants in refining the data sets and ensuring the quality outputs.
+[01:07:40] Okay, so a few takeaways from this.
+[01:07:49] DAG and DCG.
+[01:07:50] Basic graph theory, but ultimately, how do we build these processes that exist today and where people are working them and bring agents into the mix?
+[01:08:01] And the recipe really is to keep it deterministic on the outside and make it adaptive on the inside.
+[01:08:13] The next is quality through evaluation, and this is really establishing a complementary confidence mechanism.
+[01:08:22] So it's not a feeling about a model.
+[01:08:25] We can actually provide research and statistics about the quality of our agents.
+[01:08:35] So this builds confidence and inherently trusts output.
+[01:08:42] Quality is a team sport.
+[01:08:44] AI engineers own the pipeline to taking product signals from all directions and deliver applications that are well built and utilize MLOps operations behind the scenes.
+[01:09:02] Finally, agents accelerate across the operating model.
+[01:09:11] I've included some references on the final slide, things that I've spoken about today.
+[01:09:17] This concludes my presentation.
+[01:09:19] Thank you very much.
+[01:09:33] What does it take to turn advances in AI into meaningful progress for financial services?
+[01:09:39] To share the thinking behind this question and to discuss where it's headed, please welcome the head of ChatGPT for financial services at OpenAI, Joseph Kim.
+[01:09:59] Hi everyone, I'm Joseph Kim, and I lead ChatGPT for financial services, a new product we launched just one month ago.
+[01:10:16] Many of you have already experienced how tools like Codex have changed the way you build in software engineering.
+[01:10:21] AI has become a much bigger part of the work you do every day.
+[01:10:26] Model intelligence is continuing to improve at an incredible pace, but many people working in industries like finance haven't yet experienced that same change in their day-to-day work.
+[01:10:37] I expect that to start changing rapidly over the next few months, and builders like all of you in this room have a big role in making that happen quickly, taking the intelligence in these models and turning it into products that people can use in their daily work.
+[01:10:51] Today, I will share a little bit about what we learned building ChatGPT for financial services and how we're thinking about what comes next.
+[01:10:59] I'll start by showing you what we've built, including a quick demo.
+[01:11:03] Then I'll explain why we built it and why we think now is the right time to build.
+[01:11:08] From there, I'll walk you through how we built it with some technical lessons that I hope you can apply to your own products.
+[01:11:13] Finally, we'll take a look at where models are headed and products are going and what that could mean for financial work over the next year.
+[01:11:22] Let's start with what we built.
+[01:11:26] ChatGPT for financial services is a tailored version of ChatGPT work built specifically for financial professionals, starting with investment banking and equity research.
+[01:11:35] It's designed to help people at the large financial institutions get more out of their day-to-day work, similar to how Codex speeds you up in software development.
+[01:11:44] As we built the product with our design partners, Morgan Stanley and Evercore, we focused on three core areas.
+[01:11:50] First, financial data.
+[01:11:53] Financial data is the foundation of financial work, and the work you can do is limited by the quality of your sources.
+[01:11:59] We wanted people to have access to the data they need directly within ChatGPT.
+[01:12:03] Second, an interface built for finance.
+[01:12:07] We wanted the product to feel familiar to financial professionals with ways to inspect source material, explore financial charts, and control the sources behind an analysis.
+[01:12:17] Third, your firm's format.
+[01:12:20] Financial work happens within the context of an organization, and the models and presentations people produce need to follow their firm's format and standards.
+[01:12:28] We made it easier to create those artifacts using firm-specific templates.
+[01:12:33] But they say a picture is worth a thousand words, so I'll stop talking for a bit and show you the product.
+[01:13:50] Wonderful.
+[01:13:51] Now I'd like to take some time to talk about why we built it.
+[01:14:12] We built ChatGPT for financial services to help close what we call the capability overhang.
+[01:14:18] As you can see here, model capabilities have improved at a tremendous rate over the last few years.
+[01:14:23] In just a few years, we've gone from models solving high school math problems to systems capable of solving the Millennial Prize math problems.
+[01:14:29] But the value people get from these models in their day-to-day work hasn't kept pace.
+[01:14:34] You read about the breakthroughs in the news, yet for many financial professionals, the way they work hasn't changed nearly as quickly.
+[01:14:40] We call that gap the capability overhang, the distance between what the model is capable of and the value people can actually get from it.
+[01:14:48] Closing that gap takes more than building a capable model.
+[01:14:51] People need the right data and tools, and they need an experience that fits the way they work.
+[01:14:55] That's where builders like you come in.
+[01:14:57] I want to show you an example of how much of a difference the right product experience can make.
+[01:15:03] This is a chart that shows how Codex usage grew within OpenAI across different job functions.
+[01:15:09] As you can see, engineers started using Codex early, and that share grew steadily.
+[01:15:14] But look at finance, legal, and recruiting.
+[01:15:17] At the beginning of 2026, almost none of their AI output was generated in Codex.
+[01:15:21] By June, that share was around 90%.
+[01:15:24] If you look carefully, you'll notice a huge inflection point that happened around February, March of this year.
+[01:15:30] I went back to see what happened around this time, assuming that we must have released a new model, but instead I found that we had released the Codex desktop app in February.
+[01:15:39] My takeaway is that the product made it easier for people outside of engineering to put these capabilities to work.
+[01:15:45] That's the opportunity we're pursuing in finance, building an experience that helps financial professionals get much more value from the intelligence already available to them.
+[01:15:54] Now let me talk about how we built it.
+[01:15:57] Let's start with data.
+[01:15:59] In finance, the work you can do is limited by the quality of the information you have access to.
+[01:16:03] So we wanted the product to come with the sources professionals rely on, from financial statements and earning transcripts to market and private company data.
+[01:16:11] We looked at existing MCP connectors for financial data and found that many had issues with latency, errors, or search quality.
+[01:16:19] So we went and licensed a lot of this data directly and built our own hosting and search indexes using the same infrastructure as our web index.
+[01:16:26] We still use the MCP protocol to give the model access to the data, but hosting and indexing it ourselves gives us more control over the quality and the reliability of the experience.
+[01:16:36] It also gives us the flexibility to post-train our models to work with these datasets.
+[01:16:41] The analogy I like to use is MCP and skills are like handing an instruction manual to a junior analyst versus post-training, where the model is like having a senior analyst who's been working with the data for over two decades and knows all of its quirks like the back of their hand.
+[01:16:55] MCP and skills give the model access and instructions.
+[01:16:59] Post-training can help it develop more familiarity with the data itself.
+[01:17:03] Once we had that data foundation in place, the next step was making it easy to turn that information into professional-grade work.
+[01:17:10] For financial professionals, that work often takes the form of an Excel model, a PowerPoint presentation, or a written analysis that needs to be reviewed and shared with other people.
+[01:17:18] So we focused on helping the model produce those outputs in a way that fits the firm's existing workflows.
+[01:17:24] We built a template system that gives users access to the firm's approved templates when generating spreadsheets and presentations.
+[01:17:31] The goal is to reduce the work someone has to do to get an output ready for their team or clients.
+[01:17:36] We also added things like interactive financial charts so users can explore stock prices and financial metrics directly within ChatGPT as they work through an analysis.
+[01:17:45] And we built citation viewers that let people inspect the source passages and tables behind an answer.
+[01:17:51] In finance, you need to be able to check where a number came from and understand the context around it.
+[01:17:56] We wanted that review to be a natural part of the experience.
+[01:18:00] These are the kind of product details that help turn a model's capabilities into work that someone can use.
+[01:18:05] The part I think that is most relevant for people in the room is how we built it.
+[01:18:10] Much of the functionality you just saw was built using the same ChatGPT plugin platform that's available to US developers.
+[01:18:17] For financial data, we use MCP tools and connectors to give the model access to the information it needs.
+[01:18:22] We use citation metadata in MCP apps to let users inspect the sources, and MCP apps also power interactive financial charts.
+[01:18:29] We use Skills together with shared artifact tools to guide financial workflows and produce Excel models and PowerPoint presentations.
+[01:18:36] And for financial onboarding, we leveraged the native plugin onboarding experience.
+[01:18:42] What that means for builders is that you can focus on the expertise that makes your product valuable.
+[01:18:46] If you have unique data, an existing tool, or a deep understanding of a particular workflow, you can use these building blocks to bring that into ChatGPT and create an experience around it.
+[01:18:57] Financial services is just one example, but I do think this opportunity extends far beyond finance.
+[01:19:04] I personally believe that we're going to see multiple $1 billion businesses built simply as ChatGPT plugins, and that opportunity will keep evolving as the models become more capable.
+[01:19:14] Last but not least, I'd like to spend the rest of the talk on what comes next and what that means for the products we should be building today.
+[01:19:22] I'd like to start by talking about model capabilities and expectations for the future.
+[01:19:27] Models are improving so quickly that it can be difficult to get an intuitive sense of what comes next.
+[01:19:33] One useful way to build that intuition is to look backwards.
+[01:19:37] Something remarkable about the last couple of years is how predictable parts of that progress have been.
+[01:19:42] Model improvements have come from three broad, sometimes overlapping drivers: scaling compute, improving algorithms, and something we call unhobbling, which is about finding ways to get more useful work out of the models.
+[01:19:54] We'll come back to unhobbling on a later slide.
+[01:19:57] In 2002 and 2003, the most visible driver was pre-training, which
+[01:20:02] Which meant scaling compute by making the models bigger and adding more data.
+[01:20:05] By leveraging scaling laws, researchers were able to predict model performance with high accuracy.
+[01:20:11] For example, before GPT-4 finished training, OpenAI researchers were able to predict its final loss as well as its performance on a coding eval.
+[01:20:20] Improvements on the algorithm side have also been surprisingly steady.
+[01:20:23] One study found that the compute needed to reach a given level of language model performance from scratch fell by roughly half every eight months.
+[01:20:31] Although you can't predict the timing of each individual breakthrough, the cumulative rate of improvement follows a surprisingly steady trend.
+[01:20:38] In 2024 and 2025, reasoning became another major driver of progress.
+[01:20:43] We used reinforcement learning and post-training to teach models to work through problems more effectively, and we gave them more compute to think when answering.
+[01:20:51] That opened up another way to improve performance alongside pre-training.
+[01:20:55] However, for folks that don't know, at OpenAI, we ran into problems with pre-training and therefore had difficulty scaling the model.
+[01:21:02] In 2026, we've been able to solve many of these issues, and we've successfully trained larger and more capable models, as you've seen through GPT-5.
+[01:21:10] 6-Sol and GPT-6-Astra.
+[01:21:13] Throughout these years, researchers have raised concerns about potential barriers to further scaling.
+[01:21:17] For example, in 2024, many researchers were concerned about a potential data wall where we would run out of human-generated text to train on.
+[01:21:26] But techniques like synthetic data generation, learning from verifiable rewards, as well as algorithmic improvements to learn more from each individual token have essentially solved this problem.
+[01:21:36] We've also solved concerns around things like context window length using things like sparse attention and compaction.
+[01:21:43] Looking ahead to 2027, I strongly believe that the trend lines of the past will continue and that we'll train larger, more efficient, and more capable models.
+[01:21:51] We clearly still have very difficult problems to solve, especially around things like alignment and safety.
+[01:21:55] But like we have in the past, I believe that human ingenuity, increasingly assisted by capable models, will help us make progress on those problems too.
+[01:22:03] So how good will models be at the end of 2027?
+[01:22:06] Let's use math as an example.
+[01:22:08] In 2023, GPT-4 scored 700 out of 800 on SAT high school math.
+[01:22:14] By 2005, an OpenAI model reached gold medal status on the International Mathematical Olympiad.
+[01:22:21] And in early 2026, an internal model disproved a long-standing conjecture related to a problem that mathematicians had been working on since 1946.
+[01:22:31] More recently, an internal model proposed a solution to the Navier-Stokes Millennium Prize problem, and we also shared 719 mathematical research manuscripts across 372 families of results.
+[01:22:44] In just a few years, we've gone from a strong score on a high school math exam to AI systems producing original research at the frontier of mathematics.
+[01:22:51] If we see another year of progress roughly in line with what we've been seeing over the past couple of years, I expect that by end of 2027, models will outperform even leading human experts on a growing range of difficult tasks across different fields and specialties.
+[01:23:05] Mathematics gives us an early glimpse of what that could look like.
+[01:23:09] And while the capability curve may look gradual, the change in how we work can feel sudden.
+[01:23:14] I call this the threshold phenomenon.
+[01:23:16] For any given task, there's a threshold of usefulness, the point where a model becomes capable and reliable enough to save you time.
+[01:23:22] That threshold depends on the work you're doing and how much checking or human review it requires.
+[01:23:27] Below that threshold, improvements can be hard to appreciate.
+[01:23:30] The model might produce better answers, make fewer mistakes, or get further through a task.
+[01:23:34] But if checking and fixing its work still takes as long as doing it yourself, your practical assessment hasn't changed.
+[01:23:40] It's still not useful.
+[01:23:41] Meaningful improvements in capability can feel like little progress.
+[01:23:45] Then the model crosses that threshold.
+[01:23:47] Suddenly it produces something you can use.
+[01:23:49] The time you spend reviewing it becomes much smaller than the time it saves you.
+[01:23:53] You start using it regularly, and eventually you become comfortable delegating that task.
+[01:23:57] That transition can feel like an enormous leap, even if the underlying improvement was similar to the previous few improvements.
+[01:24:03] What changes is the progress became useful to you.
+[01:24:06] This helps explain why model progress sometimes feels sudden, even when parts of the underlying trend have been steady and predictable.
+[01:24:12] And because difficult tasks have different thresholds, we should expect those moments to arrive at different times across the work that we do.
+[01:24:19] So as you think about the products you're building, I'd encourage you to ask yourself, what model capabilities am I underappreciating today because they aren't quite useful yet?
+[01:24:27] Where might those capabilities be a year from now?
+[01:24:31] Then think about what you would build if those capabilities crossed the threshold of usefulness and became reliable enough to delegate.
+[01:24:37] How would the interface change?
+[01:24:39] What would the user still need to control, review, or approve?
+[01:24:43] Those are product design questions we can start working on now.
+[01:24:46] We want to have the right experiences ready so that when the models cross that threshold, people can take advantage of the capabilities right away, and so you can stay one step ahead of your competitors.
+[01:24:56] So what does this mean for finance?
+[01:24:58] I think there are two forces that will push more financial work across that threshold of usefulness.
+[01:25:02] I think of them as the rising tide and the waves on top.
+[01:25:06] The rising tide is the underlying improvements to the underlying model.
+[01:25:09] Historically, we haven't dedicated a significant amount of training time or compute specifically to finance.
+[01:25:15] Much of the financial capabilities you see today have come from building larger, more capable models and from transferable skills developed in areas like mathematics, coding, and reasoning.
+[01:25:26] As these general capabilities improved, they lifted performance across many kinds of financial work.
+[01:25:31] The waves are what happen when we focus directly on finance.
+[01:25:34] My team is leading an effort to invest significantly more in finance-specific post-training.
+[01:25:39] The idea here is to build on those broad capabilities and train the model more directly on the work people do in finance.
+[01:25:45] That can create peaks in performance on particular tasks on top of the rising tide.
+[01:25:49] Over the next three months, we're focused on improving general financial reasoning and the quality of the work these models produce, analyzing financial information, building Excel models, and creating PowerPoint presentations.
+[01:26:00] These are the kinds of tasks that make up a significant percentage of the daily work of a junior analyst, and we want the output to be accurate, well-structured, and increasingly useful in real workflows.
+[01:26:10] Beyond that, we plan to invest more in the kinds of judgment that senior bankers, analysts, and investors bring to more difficult questions.
+[01:26:16] This includes taking in large amounts of information, deciding what matters, and essentially trying to predict the future, forecasting a company's earnings, assessing where commodity prices might go, or evaluating which businesses are attractive investments.
+[01:26:29] Our goal is for models to match the performance of the best human experts on these types of financial tasks sometime in 2027.
+[01:26:37] We expect that progress to come from both forces working together: the underlying model continuing to improve and our team training it more directly for the work people do in finance.
+[01:26:45] We've talked about how models are becoming more capable and how we can train them to perform better on specific tasks, but I want to come back to one third driver I mentioned earlier: unhobbling.
+[01:26:55] We've already seen a few examples.
+[01:26:57] ChatGPT uses RLHF to teach models to follow instructions and have conversations with us.
+[01:27:03] Tools allow them to search for information, write and run code, and interact with the software we use.
+[01:27:08] Each of these makes the model more useful in the real world.
+[01:27:11] I think the next form of unhobbling will be proactive and persistent agents.
+[01:27:14] Today, a lot of our interactions with AI still happen when we open a conversation and tell it what to do next.
+[01:27:20] A persistent agent can hold on to a goal, remember the relevant context, and continue working in the background.
+[01:27:25] Once you've given it a direction, it can make progress even when you aren't actively prompting it.
+[01:27:30] The other reason persistence matters is it changes the API or the way people work with the agent.
+[01:27:35] Today, getting the most out of AI agents requires learning a new workflow, learning how to prompt it, and learning how to use the tools.
+[01:27:41] A persistent agent can work in a way that's more familiar.
+[01:27:44] You can give it a project, share context, and ask for an update.
+[01:27:48] It's much more similar to how humans work with other humans and therefore makes the AI more accessible to people that don't develop those initial skills.
+[01:27:57] Let me close with three bets for finance in 2027.
+[01:28:00] These are just a couple of my expectations for what comes as the models improve.
+[01:28:03] First, people will rely rarely, if ever, on Excel and PowerPoint to make financial models or pitch decks.
+[01:28:10] Second, AI financial analysts will start to feel like human coworkers.
+[01:28:13] They'll remember your preferences and context from the previous days, take ownership of assignments, proactively follow up, and keep working when you're focused on something else.
+[01:28:21] Third, models will start to outperform the best human experts on critical financial tasks.
+[01:28:26] That includes things like forecasting earnings and developing investment ideas.
+[01:28:29] I expect models to become better than the best people at making these economically important forward-looking judgments.
+[01:28:35] Those are my three bets for 2027.
+[01:28:38] And if this is where we expect to be in 2027, I'll leave you with one last question.
+[01:28:43] What should you start building today to be ready for inevitable thresholds that the models will cross tomorrow?
+[01:28:48] Thank you.
+[01:28:49] AI is changing both sides of the security equation.
+[01:29:04] Here to examine the emerging risks and defenses shaping AI security today, please welcome the head of architecture and emerging technologies in the Office of the CTO at Bloomberg, Andre Ribka.
+[01:29:16] Hello, everybody.
+[01:29:17] Who is running agents here in Dev, prod, your laptop, your phone?
+[01:29:33] Yeah?
+[01:29:35] Amazing.
+[01:29:36] I see a lot of opportunities.
+[01:29:37] It's just such a great H2B in the age of AI and security.
+[01:29:42] So we're going to talk about real incidents and what would have stopped them.
+[01:29:46] You might be wondering, why is there vegetables?
+[01:29:48] A lot of security talks are about, like, just eat your vegetables.
+[01:29:53] We're going to make it a little more exciting.
+[01:29:55] All right, so who have seen this headline?
+[01:29:58] An autonomous agent.
+[01:30:11] Some agent security incidents, yeah?
+[01:30:13] All right.
+[01:30:14] Every lab at this point announced some sort of security incident, right, with runaway agents, right?
+[01:30:20] So the big one.
+[01:30:22] There was one way out.
+[01:30:23] The agent found it.
+[01:30:25] So on July 26, we found out that AI agents and the hacken test—they were obviously given a hacken goal—escaped their sandbox through a proxy bug, then breached the public model.
+[01:30:30] Who can guess what it was?
+[01:30:32] Yeah?
+[01:30:33] Maybe a little bit?
+[01:30:35] Okay.
+[01:30:36] All right.
+[01:30:37] I'm not going to name any names here, just to be clear.
+[01:30:39] So the agents took 17,600 actions in four and a half days.
+[01:30:44] How do you miss that, right?
+[01:30:48] And so AI lab was doing the evaluation, right?
+[01:30:55] Then there was some package proxy.
+[01:30:57] They found a zero day.
+[01:30:58] Okay, so that was a way out.
+[01:31:01] Then you had some exposed customer endpoint in some unnamed compute platform, and then they breached the model hub, right?
+[01:31:11] So we just need a better sandbox, yes?
+[01:31:14] Everybody thinks just need a better sandbox.
+[01:31:17] Not quite.
+[01:31:19] Security for most of us right now is not built for agents, and we have autonomy problem versus the blast radius, right?
+[01:31:31] The agents are only useful if they can reach a ton of tools, services, data.
+[01:31:36] If we give them that reach, right, with no hard limits, the damage could be unlimited.
+[01:31:43] And firewall or static role.
+[01:31:45] Can't tell when an agent goal has been hijacked, right?
+[01:31:51] So what needs to change?
+[01:31:53] One agent, one identity, short-lived scoped credentials, no shared keys.
+[01:32:00] Assume the input is hostile.

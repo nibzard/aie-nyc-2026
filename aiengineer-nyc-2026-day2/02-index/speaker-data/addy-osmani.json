@@ -1,0 +1,18 @@
+{
+ "slug": "addy-osmani",
+ "name": "Addy Osmani",
+ "role": "Member of Technical Staff",
+ "company": "Anthropic",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FaeZjxYfyTXOH6gcnsDEw_headshot-1791298294115.jpg",
+ "sessions": [
+  {
+   "title": "Who verifies the software factory?",
+   "time": "11:30am - 11:48am",
+   "room": "Sutton Room (NY Ballroom W)"
+  }
+ ]
+}

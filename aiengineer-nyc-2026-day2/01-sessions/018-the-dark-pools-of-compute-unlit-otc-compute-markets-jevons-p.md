@@ -1,0 +1,273 @@
+---
+session_id: "018"
+title: "The Dark Pools of Compute"
+agenda_title: "The Dark Pools of Compute -- Affaan Mustafa (Jump Trading), Alejandro Soumah Fernandez (Jump Trading)"
+speakers: ["Affaan Mustafa", "Alejandro Soumah Fernandez"]
+start_wall: "11:55:58 AM ET"
+end_wall: "12:16:20 PM ET"
+video_start: "03:15:22"
+video_end: "03:35:44"
+video_url: "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=11722s"
+stage: "Simons Room (Metropolitan East) - main stage livestream"
+session_type: "talk"
+tags: [compute-markets, otc-trading, gpu-pricing, jevons-paradox, infrastructure-financing, export-controls]
+confidence: "high"
+---
+
+# The Dark Pools of Compute
+
+> Jump Trading's compute trading leads map the unlit, chat-brokered over-the-counter market for physical GPU compute, from Jevons-paradox demand and the prepayment squeeze on middle-market buyers to the microstructure and policy that could turn compute into a real market.
+
+## TL;DR
+- Physical compute trades "the way many commodities did before exchanges existed": private quotes, brokers, and long bilateral contracts negotiated over Slack, X, and Telegram. The speakers call this an unlit market — the dark pools of compute.
+- Token prices fell while compute prices held firm. The Jevons paradox explains the decoupling: cheaper tokens unlock more usage, and teams spend the same budget on far more tokens.
+- The middle market is squeezed. CoreWeave-style deals demand 15 to 25 percent prepayment, so $15 to $25 million upfront on a $100 million cluster. That can consume a startup's entire equity round, so compute procurement now sets runway.
+- A full microstructure is forming around the GPU hour: benchmarks and indexes, matching venues, brokers, flex contracts, prepayment facilities, futures, and credit providers.
+- Policy frames the whole market: H200-class export license reviews for China and Macau moved to case-by-case, and the U.S. AI Action Plan recommends improving the financial market for compute.
+- Closing call to action: firms with strong balance sheets, uncorrelated with the market, should bridge buyer and supplier. "Let's build this together."
+
+## Key lessons
+1. Physical compute trades as an unlit market: blocks, private quotes, brokers, and long bilateral contracts. Each deal mixes an MSA, an SLA, and an order form with cluster-specific hardware language. Pricing talk centers on the SKU — the chip and baseboard, such as H100, H200, and B300.
+2. Tenured capacity deals trade over "neo-chat" channels: Slack messages, X messages, and Telegram group chats. No widely adopted exchange exists for physically traded compute. Public marketplaces and price references cover only on-demand capacity.
+3. The Jevons paradox explains the price decoupling. Token prices "declined further, but compute prices remain robust" because cheaper tokens unlock more usage: applications that were too expensive become possible, and teams expend far more tokens on the same budget.
+4. The IEA April update projects global data center electricity rising from 485 terawatt hours in 2025 to 915 terawatt hours in 2030. Chips, power, buildings, and capital must all come together before one billable GPU hour exists.
+5. Financing sits on contracted revenue. CoreWeave's public filings show take-or-pay customer contracts and median prepayments of 15 to 25 percent upfront; on a $100 million cluster that is $15 to $25 million. The illustrative case: raise $40 million, sign a $100 million three-year contract, prepay 30 percent, and only $10 million remains to run the business.
+6. Compute procurement now affects runway, which pulls investors in. Access and payment terms change how much runway a VC's portfolio companies have, so VCs procure and fund capacity for them. Middle-market buyers cannot sign the 10-year, debt-backed deals that hyperscalers and frontier labs sign.
+7. A microstructure is forming around the GPU hour: index and benchmark providers (possible futures underlyings, per spec, pending approval), physical matching venues, auctions, aggregators, decentralized on-demand marketplaces, liquid pools, bare-metal resellers, neoclouds, and desks and brokers who see similar quotes and charge spreads to price-inelastic buyers. Demand exists for futures and options to hedge balance-sheet risk, plus flex contracts with upgrade, rollover, or sell-back rights on three-to-five-year locks.
+8. Every deal is bespoke, which blocks fungibility. Spec sheets differ, bills of materials may not match delivery, OEM and ODM lead times run long, and the same term ("memory") can mean VRAM, CPU memory, or storage. A financial hedge can fix a reference price, but it cannot deliver the cluster or guarantee utilization. Policy binds it all: in January the U.S. Commerce Department moved qualifying H200-class license reviews for China and Macau to case-by-case review, and the U.S. AI Action Plan encourages open-weight AI and recommends improving the financial market for compute.
+
+## Notable quotes
+> "Essentially what I'm referring to is an unlit market." — [03:16:09 | 11:56:45 AM]
+
+> "They have to put up on average 15 to 25 percent is what CoreWeave has quoted that they've seen their median prepayment to be, 15 to 25 percent upfront on a 100 million PCV cluster." — [03:24:22 | 12:04:58 PM]
+
+> "As you can see, you can see there's a little bit of a decoupling that happened, and token prices declined further, but compute prices remain robust." — [03:19:26 | 12:00:01 PM]
+
+> "And so just making a CTA here, let's build this together." — [03:35:41 | 12:16:17 PM]
+
+## Session narrative
+The session opened cold after the 11:48-11:55am ET break, with no host introduction. Affaan Mustafa (introduced himself as "Afan") named himself lead for compute trading at Jump Trading, a proprietary trading firm, alongside his co-lead Alejandro. He set the arc — macro, then microstructure, then policy — and justified the title: for the finance crowd, "dark pool" here means an unlit market. Compute trades in blocks, through brokers, as long bilateral commercial agreements mixing MSAs, SLAs, and cluster-specific order forms, with pricing discussed at the SKU level (H100, H200, B300). Tenured deals for fixed capacity happen out of public view, over Slack, X, and Telegram — the compute analog of ICE Chat and Bloomberg Chat in commodities.
+
+The macro core built in three steps. First, an a16z chart on falling cost per capability, extended into the Jevons paradox: token prices declined further while compute prices held firm, because cheaper tokens unlock latent demand and teams simply spend more tokens on the same budget. Second, the supply map: chips, power, buildings, grid connections, and capital, with the IEA projecting data center electricity rising from 485 TWh in 2025 to 915 TWh in 2030, and a chain from chip and system vendors through sites, capacity providers (hyperscalers, neoclouds), to users (startups, inference clouds, labs, app layer, enterprises). Third, the financing squeeze: lenders finance buildouts against contracted revenue, CoreWeave's take-or-pay filings show 15 to 25 percent median prepayments, and the illustrative math ($40 million raise, $100 million three-year contract, 30 percent prepay, $10 million left) shows why middle-market buyers face a step-function capacity trap — turn away customers, bridge with on-demand, or finance the prepayment. Operating models (full stack build, owned servers in colocation, off-take contracts) and the ownership-versus-rental equilibrium followed, ending on the point that compute procurement now affects runway, which gives VCs a direct interest in procuring capacity for their portfolio companies.
+
+The microstructure section cataloged the players forming around the GPU hour — index and benchmark providers, matching venues and aggregators, decentralized marketplaces, liquid pools, bare-metal resellers, brokers charging spreads, coming exchanges with futures and derivatives, prepayment facilities, and credit providers — against the reality that every deal is bespoke and non-fungible. Public H100 spot references charted that day anchored the pricing discussion. Alejandro Soumah Fernandez then took the closing section ("Everything that Afan has said sits inside of a structure that is regulated"), covering export controls (January's case-by-case H200-class reviews for China and Macau) and the U.S. AI Action Plan's recommendation to improve the financial market for compute. He closed on the opportunity: a growing middle market needs standardized capacity contracts and bridge balance sheets that are uncorrelated with the market, and he issued the call to action "let's build this together." The talk ended at 12:16:20 PM ET, about three minutes past its 12:13pm agenda slot.
+
+## Speaker details
+**Affaan Mustafa** - Compute Trading Lead, Jump Trading. Affaan Mustafa leads the compute trading division at Jump Trading, focused on trading, financing, and structuring transactions across compute and inference markets. Before Jump he co-founded Ito Markets, a platform for compute procurement, financing, and risk management; created ECC, an open source agentic engineering toolkit used by millions; built automated trading systems for prediction markets; researched high-dimensional data processing on HPC clusters at the San Diego Supercomputer Center; and ran an electronics business that sold thousands of GPUs. Links: [LinkedIn](https://linkedin.com/in/affaanmustafa) | [Website](https://jumptrading.com). In the session he introduced himself as "Afan" (the ASR spelling).
+
+**Alejandro Soumah Fernandez** - Co-Lead, Compute Trading, Jump Trading. Alejandro Soumah co-leads the compute trading division at Jump Trading, focused on trading, financing, and structuring transactions across compute markets. Before Jump he co-founded Ito Markets and previously worked as a quant at Goldman Sachs. Link: [LinkedIn](https://www.linkedin.com/in/alejandro-soumah). Affaan introduced him in-session as "my co-lead over here, Alejandro"; he delivered the closing policy and market-structure section.
+
+## Full timestamped transcript
+```
+[03:15:22 | 11:55:57 AM] Started here.
+[03:15:22 | 11:55:58 AM] Hey everyone, my name is Afan, and I'm a lead for compute trading at Jump Trading, which is a proprietary trading firm, alongside my co-lead over here, Alejandro.
+[03:15:32 | 11:56:08 AM] So today we're going to be looking over some of the market structure as it applies to compute trading, what compute trading even is, what we can see it becoming.
+[03:15:44 | 11:56:20 AM] And I think we'll start with some macro, look at microstructure, and then talk a little bit about where we see things in policy.
+[03:15:59 | 11:56:35 AM] So the title of the talk is The Dark Pools of Compute, but some of you guys are in finance, so you might be confused as to why I'm using this terminology.
+[03:16:07 | 11:56:43 AM] What do I mean by dark pool here?
+[03:16:09 | 11:56:45 AM] Essentially what I'm referring to is an unlit market.
+[03:16:13 | 11:56:49 AM] Right now, most compute trades in blocks, physical compute here, and these are private quotes.
+[03:16:18 | 11:56:54 AM] We have a lot of brokers, and these are long bilateral contracts.
+[03:16:21 | 11:56:57 AM] Now, at the end of the day, these are really commercial agreements.
+[03:16:25 | 11:57:01 AM] So we're using the term trading here to kind of like look at how it's transacted between parties.
+[03:16:30 | 11:57:06 AM] These commercial agreements tend to be some mixture of an MSA, an SLA, and an order form, cluster-specific with hardware-specific language in each order.
+[03:16:43 | 11:57:19 AM] But when we're looking at pricing and looking at some of these other kind of metrics, a lot of the time most of the talk is around the SKU, so what the chip itself is, the baseboard, so H100, H200, B300, etc.
+[03:16:58 | 11:57:34 AM] And so...
+[03:16:59 | 11:57:35 AM] A lot of the negotiation here happens kind of outside the public view.
+[03:17:03 | 11:57:39 AM] There's no, you know, like exchange for physically traded compute that's widely, you know, adopted and, you know, used for everyone goes there to, like, take a look and trade compute.
+[03:17:13 | 11:57:49 AM] These are done in chats, right?
+[03:17:16 | 11:57:52 AM] They're out of the public view.
+[03:17:18 | 11:57:54 AM] There's public marketplaces.
+[03:17:19 | 11:57:55 AM] There's price references.
+[03:17:20 | 11:57:56 AM] There's a lot of, you know, on-demand marketplaces.
+[03:17:23 | 11:57:59 AM] However, for these actual tenored, so, you know, on a given term for a fixed amount of capacity with a certain total contract value, these trade over Slack messages, X messages, Telegram group chats, a bunch of OTC kind of channels that are all over in these kind of, I want to call them like neo-chat.
+[03:17:42 | 11:58:18 AM] And some of you might be familiar with commodities and how a lot of, you know, there's chatting happening on ICE Chat, Bloomberg Chat, etc.
+[03:17:50 | 11:58:26 AM] This is kind of where the kind of markets here lie.
+[03:17:55 | 11:58:31 AM] And so I want to look a little bit here on the macro market structure and a little bit on the players here as well.
+[03:18:01 | 11:58:37 AM] And so this was a recent kind of A16Z, some of you guys might have seen this.
+[03:18:06 | 11:58:42 AM] So I'm putting this out there because, you know, you can go on A16Z's actual X and take a look at this graph yourself.
+[03:18:12 | 11:58:48 AM] What we're looking at is that the cost of given capability has fallen sharply.
+[03:18:17 | 11:58:53 AM] The bill, of course, still depends on the model usage, capacity, and other factors such as speed is a big thing right now with the new ChatGPT models.
+[03:18:27 | 11:59:03 AM] Cheaper tokens unlock more usage, and a team can do more work for the same budget.
+[03:18:31 | 11:59:07 AM] So what we're seeing is that a lot of teams are simply just using way more tokens.
+[03:18:36 | 11:59:12 AM] So we have this latent demand that hasn't really been hit yet, and people are just going to use more with the same budget that they were using before when models cost more, and they're just expending more tokens.
+[03:18:47 | 11:59:23 AM] So applications that were too expensive become possible.
+[03:18:50 | 11:59:26 AM] However, as we're kind of talking about compute here, the capacity underneath still has to be built and paid for, even as the cost of a particular task comes down.
+[03:18:59 | 11:59:35 AM] And so the important distinction is between the price of the intelligence, the number of tasks people want to run, and the amount of hardware needed to serve them.
+[03:19:09 | 11:59:45 AM] And so this is where we get to kind of the Jevons paradox and a little some of the stuff that we've been looking at lately, where we had a very interesting thing where, you know, intuitively you'd assume that compute and inference kind of like rises together, correlates very, you know, very closely.
+[03:19:26 | 12:00:01 PM] As you can see, you can see there's a little bit of a decoupling that happened, and token prices declined further, but compute prices remain robust.
+[03:19:33 | 12:00:09 PM] And so, like, what can be an explanation for this?
+[03:19:35 | 12:00:11 PM] Now, there's a lot of, like, potential explanations.
+[03:19:38 | 12:00:14 PM] One here is the whole Jevons paradox, is that even though token prices and inference is getting extremely efficient to serve on these new baseboards and GPUs, people are just consuming a lot more.
+[03:19:50 | 12:00:26 PM] And so the demand for compute rises, and people just consume a lot more tokens, even if the cost per million.
+[03:19:57 | 12:00:33 PM] Per million for input and for caching and, you know, for output, it becomes a lot more efficient.
+[03:20:04 | 12:00:40 PM] And so making the tasks cheaper, encouraging the additional use that way, resource saving for tasks.
+[03:20:09 | 12:00:44 PM] For inference clouds, that's going to be more applications serving more tokens, bigger market share.
+[03:20:15 | 12:00:51 PM] And for app layer individuals, that means you guys can serve to a lot more kind of customers.
+[03:20:19 | 12:00:54 PM] So anyone who's building, utilizing the token infrastructure.
+[03:20:25 | 12:01:00 PM] And so what really goes into, you know, the macro structure?
+[03:20:28 | 12:01:04 PM] Now, like, this is very, you know, bare bones here, but you've got your chips, which we've been talking about.
+[03:20:34 | 12:01:09 PM] You have power, you have buildings, grid connections, and then, of course, you need a lot of capital to get these buildouts going, and that's kind of been the whole talk here.
+[03:20:43 | 12:01:18 PM] And so chips, power, buildings, money, they all have to come together before, you know, you can even get to an hour of, like, actual usable GPU per hour compute.
+[03:20:52 | 12:01:27 PM] And so the IEA April update projects that the global data center electricity is going to rise from 485 terawatt hours in '25 to 915 in '30.
+[03:21:02 | 12:01:37 PM] And so a lot of the talk right now is around buildouts, about getting the power grid set up.
+[03:21:08 | 12:01:43 PM] Will we have enough power grid here?
+[03:21:09 | 12:01:45 PM] Is there other energy sources that we can tap into?
+[03:21:13 | 12:01:48 PM] Where are we, you know, able to get the land to actually be able to do this?
+[03:21:16 | 12:01:52 PM] And so colocation sites and data center operators and people who are doing the financing the buildouts, or the lenders themselves, are all kind of looking into this.
+[03:21:23 | 12:01:58 PM] And that type of everything that's upstream, essentially, of the compute is going to then flow down into the compute costs and also usage.
+[03:21:33 | 12:02:09 PM] And so what does this, like, actual macro map look like underneath a quote?
+[03:21:37 | 12:02:12 PM] Chip and system vendors supply the GPU servers and networking.
+[03:21:40 | 12:02:16 PM] Sites and operators supply the power, space, assembly, and management right here.
+[03:21:46 | 12:02:21 PM] GPUs, memory, servers, networking.
+[03:21:48 | 12:02:24 PM] Capacity providers, these are hyperscalers, neoclouds, and any other operator that's, like, operating similar to how a neocloud would operate, reselling bare metal capacity.
+[03:21:57 | 12:02:32 PM] And then the users.
+[03:21:58 | 12:02:33 PM] So who's the actual end user?
+[03:21:59 | 12:02:34 PM] The startups, the inference clouds, labs, neolabs, and also anyone on the app layer and enterprises for anyone doing OpenAI stuff as well.
+[03:22:09 | 12:02:44 PM] And these boxes, like I've kind of boxed them out here, but, you know, there's people can be all of the above.
+[03:22:17 | 12:02:53 PM] A chip and system vendor, like someone could do a full end-to-end build out and also be the end user of everything.
+[03:22:23 | 12:02:58 PM] And so there's a little bit of variation that occurs here.
+[03:22:34 | 12:03:10 PM] And so, as I was kind of mentioning about the inference clouds before, they might rent a cluster and they'll serve tokens off of it and they'll use that revenue to pay off the cluster.
+[03:22:45 | 12:03:21 PM] And so that might be a use case for the actual inference cloud themselves.
+[03:22:49 | 12:03:24 PM] However, for hyperscalers, frontier labs, and larger neoclouds, they can make substantial commitments because they have the ability to get into the large equity, they have the ability to take on more debt, and they have the ability to do long horizon kind of deals, so 10-year deal, OpenAI contracted out, et cetera, so of that nature.
+[03:23:08 | 12:03:43 PM] However, anyone in the middle market isn't actually able to do this.
+[03:23:11 | 12:03:46 PM] Who's underwriting a Series B startup with enough capacity to get in a 200 million-plus contract over three years for compute?
+[03:23:19 | 12:03:55 PM] How many equity rounds will they have to raise, right?
+[03:23:22 | 12:03:57 PM] Will they have to use their entire equity round to fund just the actual cluster and then they don't have any remaining capital left to use for actual costs?
+[03:23:31 | 12:04:07 PM] And so we're looking into a little bit of the financing chain here and how that plays in.
+[03:23:35 | 12:04:11 PM] So lenders are financing the build-out against contracted revenue even in many cases for inference clouds.
+[03:23:40 | 12:04:16 PM] And so they want to finance the build-out.
+[03:23:42 | 12:04:18 PM] They want confidence that their loan will get repaid.
+[03:23:44 | 12:04:20 PM] I mean, like, how are you going to underwrite a startup, like a private company that doesn't have, like, much else going for them right now?
+[03:23:49 | 12:04:25 PM] Like, what are the, you know, they're not public traded.
+[03:23:51 | 12:04:26 PM] There's not that much cash flows, balance sheet income statement.
+[03:23:53 | 12:04:29 PM] They might even be pre-profit, pre-revenue, et cetera.
+[03:23:56 | 12:04:32 PM] And so what they're looking at is that can the person get contracted revenue over a certain scale?
+[03:24:02 | 12:04:37 PM] And so CoreWeave's public filings give large-scale example of infrastructure financing supported by take-or-pay customer contracts.
+[03:24:08 | 12:04:43 PM] And so this diagram kind of shows the smaller illustrative.
+[03:24:12 | 12:04:47 PM] Example here, and the mismatch is that hardware financing, they want very long terms, but customers are only able to afford or don't really want to, like, get into a long-term financing over 36 months.
+[03:24:22 | 12:04:58 PM] They have to put up on average 15 to 25 percent is what CoreWeave has quoted that they've seen their median prepayment to be, 15 to 25 percent upfront on a 100 million PCV cluster.
+[03:24:34 | 12:05:10 PM] That's 15 to 25 million dollars that a startup has to put upfront.
+[03:24:38 | 12:05:14 PM] That might be their entire round.
+[03:24:42 | 12:05:18 PM] And so this is kind of a look at what I'm, you know, referencing here.
+[03:24:45 | 12:05:21 PM] It's like you're raising 40 million, you need a 100 million contract over three years, you put down 30 percent prepayment.
+[03:24:50 | 12:05:26 PM] This is an illustrative example.
+[03:24:52 | 12:05:27 PM] You've got 10 million left to run the business.
+[03:24:55 | 12:05:30 PM] And so you might have this kind of step function, as you can see here.
+[03:24:58 | 12:05:33 PM] So that's your contracted capacity and what you can actually, and the demand is, like, you know, below that.
+[03:25:04 | 12:05:39 PM] And so now every time that you have to get into a new cluster, it's like tied to your equity round or whatever else it may be, but you might have to cap out and turn away customers.
+[03:25:11 | 12:05:47 PM] So what are your options?
+[03:25:12 | 12:05:48 PM] Do you either turn away customers until you can get into your next, you know, equity round so you can put down another 30 percent prepayment so you can get next little bit of capacity going, or do you use on-demand to close the area under that gap and bridge the shortfall?
+[03:25:27 | 12:06:03 PM] That's like an option now.
+[03:25:28 | 12:06:04 PM] Now you have to look into the economics.
+[03:25:30 | 12:06:05 PM] What does that look like?
+[03:25:31 | 12:06:06 PM] What's the difference between, you know, maybe instead what they do is they go to a lender to finance the prepayment component.
+[03:25:36 | 12:06:12 PM] But if the yield on the prepayment component that they're getting financed is less than them just buying it out on-demand at that time if they're able to get into that amount of capacity, then does the economics make sense there?
+[03:25:48 | 12:06:24 PM] And so here's some of the operating models that we've seen.
+[03:25:55 | 12:06:31 PM] It's like you can build and operate the full stack.
+[03:25:58 | 12:06:34 PM] Hardware site, your team is going to arrange power, permit, the assembly, the management.
+[03:26:04 | 12:06:40 PM] You can also own servers in a colocation facility with more or less the assembly and operation handled by a partner.
+[03:26:10 | 12:06:45 PM] On the other end, an off-take contract buys defined capacity, and the provider is going to own and operate the asset, and they might not give you complete root access to the bare metal, or there might be kind of like levels to how much access you get depending on if it's tenant, multi-tenant, and et cetera type of configurations that can also affect the pricing.
+[03:26:28 | 12:07:04 PM] And so some businesses are going to value the physical access.
+[03:26:31 | 12:07:07 PM] Some businesses are going to value, you know, confidential compute.
+[03:26:36 | 12:07:11 PM] You know, they might value certain topology changes or the ability to reconfigure the system.
+[03:26:40 | 12:07:15 PM] And so if that is something for your business, then they might actually want to have more and more control and build and operate the stack.
+[03:26:45 | 12:07:21 PM] And the economics for them might make sense given the opportunity cost they would have to give up if they were to just take rental off-take contracts.
+[03:26:52 | 12:07:28 PM] So they might be willing to pay more there.
+[03:27:01 | 12:07:36 PM] And so here's how, like, ownership and rental—this is a very, like, crude graph—how ownership and rental can compare as utilization rises.
+[03:27:09 | 12:07:44 PM] And so what we're looking at is that usually, you know, these off-take contracts are getting to the cost of actually almost building out and financing your own cluster.
+[03:27:19 | 12:07:54 PM] And it's not because, I mean, if you're spending 100 million over a three-year period, then maybe if the economics make sense, it would have made more sense to simply buy out the compute operator yourself outside of the time cost and then obviously the operational cost that might exist.
+[03:27:32 | 12:08:07 PM] So there's an equilibrium that exists that has to be followed where, you know, the ownership costs outweigh the, you know, rental costs, and the rental costs— Should sit below the ownership cost.
+[03:27:47 | 12:08:23 PM] But if you're utilizing that at such a rate and, you know, in such variable kind of increments, it might be best to just own the stack outright.
+[03:27:59 | 12:08:35 PM] And so we're seeing this new dynamic that compute procurement affects how much runway a growing company actually has.
+[03:28:06 | 12:08:42 PM] And so this also gives investors an interest in compute procurement.
+[03:28:10 | 12:08:46 PM] So we're kind of seeing this.
+[03:28:12 | 12:08:47 PM] Access and payment terms affect how much runway their portcos are going to have from a VC perspective.
+[03:28:18 | 12:08:53 PM] So helping a company buy a suitable capacity can improve the underlying investment.
+[03:28:21 | 12:08:56 PM] And they're very connected, right?
+[03:28:23 | 12:08:58 PM] So they're able to procure and they're able to actually find compute capacity for their portcos and fund that.
+[03:28:29 | 12:09:04 PM] And so that also brings another interesting aspect into the microstructure, is that who helps place the capacity and how does this offer get compared and what risk these contracts can transfer.
+[03:28:43 | 12:09:19 PM] So we have a lot of different players around this GPU hour that are helping kind of shape this market here.
+[03:28:49 | 12:09:24 PM] You've got your price discovery individuals, so people with indexes, data, the benchmarks that we're all looking at right now and referencing, which would be used to, you know, in the future launch the futures based on the benchmarks talked about in the associated contracts, per spec, per pending approval.
+[03:29:10 | 12:09:46 PM] And then there's the physical matching venues, auctions, aggregators.
+[03:29:13 | 12:09:48 PM] So anyone who can match capacity.
+[03:29:16 | 12:09:51 PM] We're looking at essentially decentralized marketplaces for on-demand compute.
+[03:29:20 | 12:09:55 PM] You're looking at liquid pools of compute that offer, like, liquid pool services and part it out themselves and have their own standardized contract.
+[03:29:28 | 12:10:03 PM] You're looking at bare metal resellers.
+[03:29:29 | 12:10:05 PM] You're looking at neoclouds themselves doing larger capacity sales.
+[03:29:33 | 12:10:09 PM] And then you're looking at individual brokers and individual operators here as well on the bare metal reselling.
+[03:29:37 | 12:10:13 PM] You have desks and brokers.
+[03:29:39 | 12:10:14 PM] They're looking at the bilateral quotes and execution.
+[03:29:42 | 12:10:17 PM] They might know a lot of people.
+[03:29:43 | 12:10:19 PM] They might be able to move fast.
+[03:29:44 | 12:10:20 PM] They might be able to see quotes at very similar specs in one place and know that there's a buyer that is extremely inelastic to price right now, needs the compute immediately, and they can get the RFS in time so they can charge a decent spread on it.
+[03:29:57 | 12:10:33 PM] And then what they do is they're going to have the source negotiating, and then they're going to be carrying and placing the risk.
+[03:30:02 | 12:10:38 PM] They're going to have to operate that cluster for the person, but it has to be worth that spread.
+[03:30:07 | 12:10:42 PM] And, you know, you have looks in financial markets, the exchanges that are coming that are based on the GPU hour, the futures and derivatives.
+[03:30:13 | 12:10:48 PM] People are going to be using it to take a look at how to maybe hedge out and look into more financial structures, so hedge out risk, so hedge out, you know, balance sheet risk, maybe get into more interesting agreements.
+[03:30:25 | 12:11:00 PM] We're seeing kind of agreements such as prepayment, payment facilities are coming online.
+[03:30:30 | 12:11:06 PM] We're seeing people utilize futures and are interested in utilizing futures and other kind of options to be able to—there's demand for this—to be able to hedge out the risk that they currently have on the books.
+[03:30:42 | 12:11:18 PM] We have buy-side individuals looking for flex contracts, flexible contracts, like, hey, is there ability that if I lock myself into a three- to five-year contract that I'll be able to, you know, at least upgrade when a new chip set comes out, or maybe I'll be able to roll it over, or maybe let me sell it back to you.
+[03:30:57 | 12:11:33 PM] And then there's, like, credit and financing, so equipment lenders, leasers, specialist credit providers.
+[03:31:03 | 12:11:39 PM] And so the way we're seeing it right now is that every deal is bespoke.
+[03:31:07 | 12:11:43 PM] There's different spec sheets, there's formats.
+[03:31:09 | 12:11:44 PM] The bill of materials may not match the actual, like, delivery, or there might be subject to change if a part is missing or a part is out of stock.
+[03:31:17 | 12:11:52 PM] And, you know, there's, like, very long lead times that some of these OEM and ODM kind of providers have.
+[03:31:23 | 12:11:58 PM] And the same term can mean different things when you're negotiating very quickly.
+[03:31:26 | 12:12:02 PM] If someone's talking about memory, are we talking about, you know, VRAM?
+[03:31:30 | 12:12:05 PM] Are we talking about the CPU memory?
+[03:31:32 | 12:12:08 PM] Are we talking about additional storage here?
+[03:31:34 | 12:12:09 PM] Like, what did you exactly mean there?
+[03:31:35 | 12:12:11 PM] It affects quite a bit what type of loads can be run and, you know, the actual end user's needs, and also with pricing and delivery dates.
+[03:31:45 | 12:12:20 PM] So there's a lot of back and forth before anyone can really compare, and this is where the concept of, like, non-fungibility kind of comes into place and how to partition that out.
+[03:31:51 | 12:12:27 PM] What parts can be fungible?
+[03:31:53 | 12:12:28 PM] What parts hold the most of the weight, such as the SKU, et cetera, and what parts are still, like, traded as if it was a product, e-commerce, et cetera, where, you know, it's only for that particular cluster that this price applies.
+[03:32:06 | 12:12:41 PM] And so prices can update daily or faster.
+[03:32:08 | 12:12:44 PM] Quotes still a good starting point.
+[03:32:09 | 12:12:45 PM] Bids can get chopped.
+[03:32:10 | 12:12:46 PM] Creditworthiness changes what's on offer.
+[03:32:12 | 12:12:48 PM] There's all these kind of latent factors, hidden factors as well, why we're calling it a dark market.
+[03:32:17 | 12:12:53 PM] These are some public H100 references Snap charted today.
+[03:32:20 | 12:12:55 PM] I updated them, so take a look at those.
+[03:32:23 | 12:12:59 PM] Those are the references for if you wanted to go on their websites to see.
+[03:32:27 | 12:13:02 PM] This is just an example here of, like, what a public on-demand or spot pricing looks like for an H100 today.
+[03:32:35 | 12:13:11 PM] You can see kind of various prices here.
+[03:32:38 | 12:13:13 PM] And so people might use this, or they might use their own kind of internal, what they've seen, to actually, like, assume or use it to charge what they want to charge on their actual cluster specification, taking into account every other kind of factor that goes into it.
+[03:32:54 | 12:13:29 PM] And so why are these new structures kind of needed, and what are these microstructures interesting?
+[03:32:58 | 12:13:34 PM] It's mainly to solve for these mismatches, right?
+[03:33:00 | 12:13:36 PM] Bridging capacity, more flexible commitments, resale rights, and protection against price moves.
+[03:33:05 | 12:13:41 PM] You know, you're selling a fixed price service from an inference cloud point of view.
+[03:33:09 | 12:13:45 PM] You'd be selling a fixed price service while the GPU bill floats, and that creates price exposure.
+[03:33:14 | 12:13:50 PM] And so locking capacity for years can solve a part of that, but it'll create idle hour exposure elsewhere as well, unless you're always using it.
+[03:33:22 | 12:13:57 PM] Reselling spare capacity only helps if someone actually can buy the hours.
+[03:33:25 | 12:14:01 PM] A financial hedge can address a reference price, but it can't deliver the cluster right now in terms of cash settlement or guarantee a utilization.
+[03:33:33 | 12:14:08 PM] So the useful structure has to start with the particular risk that the business has and needs to manage.
+[03:33:41 | 12:14:17 PM] And I'll go pretty fast on this policy section because we're running out of time.
+[03:33:47 | 12:14:22 PM] Everything that Afan has said sits inside of a structure that is Regulated and is affected by policy in various ways.
+[03:33:59 | 12:14:35 PM] One way is export controls, one of the examples.
+[03:34:03 | 12:14:38 PM] In January, the U.
+[03:34:04 | 12:14:40 PM] S.
+[03:34:04 | 12:14:40 PM] Commerce Department moved qualifying H-200 class license reviews for China and Macau to case-by-case review with conditions.
+[03:34:13 | 12:14:48 PM] Furthermore, open-weight models connect policy back to the U.
+[03:34:17 | 12:14:52 PM] S.
+[03:34:17 | 12:14:53 PM] economics we started with.
+[03:34:19 | 12:14:55 PM] The U.
+[03:34:20 | 12:14:55 PM] S.
+[03:34:20 | 12:14:56 PM] AI Action Plan explicitly encourages open-source and open-weight AI and recommends improving the financial market for compute so that startups and academics can access large-scale computing power.
+[03:34:34 | 12:15:10 PM] So I'm going to tie this out right here.
+[03:34:37 | 12:15:12 PM] But where does this opportunity lie?
+[03:34:38 | 12:15:13 PM] We have this growing middle market.
+[03:34:40 | 12:15:15 PM] We need balance sheets that can bridge buyer and supplier needs.
+[03:34:42 | 12:15:18 PM] There needs to be some level of standardization, a standard capacity contract, common specs, common terms, and definitions.
+[03:34:49 | 12:15:25 PM] And so growing companies with needs and commitment do not fit the contracts that hyperscalers and frontier labs can sign.
+[03:34:54 | 12:15:30 PM] Those companies have real workloads.
+[03:34:56 | 12:15:32 PM] We want them to grow.
+[03:34:57 | 12:15:33 PM] They still face this financing problem, a timing problem, a specification problem.
+[03:35:01 | 12:15:36 PM] A supplier might want the long-term commitment for the buildout, while the buyer wants to expand in smaller blocks as demand becomes clearer as it's so volatile, front of curve.
+[03:35:08 | 12:15:43 PM] The buyer needs a way to avoid paying for capacity it can't use yet, and so participants with strong balance sheets that are uncorrelated with the market and the ability to assess those risks with a strong credit profile can help bridge the gap between what buyers need and what suppliers offer.
+[03:35:22 | 12:15:57 PM] That requires more than quoting the actual GPU hour.
+[03:35:24 | 12:16:00 PM] It means understanding the delivery, workload, all of that.
+[03:35:27 | 12:16:02 PM] And so there's very few kind of players in the market, and, you know, a very well-suited player can be a firm that's uncorrelated with the market, with strong balance sheets, strong credit rating, and incredible amounts of hardware talent that sits inside for high-performance computing.
+[03:35:41 | 12:16:17 PM] And so just making a CTA here, let's build this together.
+[03:35:44 | 12:16:20 PM] Thank you guys so much for attending our talk.
+```

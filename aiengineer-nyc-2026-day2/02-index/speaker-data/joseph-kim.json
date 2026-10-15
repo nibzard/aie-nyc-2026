@@ -1,0 +1,24 @@
+{
+ "slug": "joseph-kim",
+ "name": "Joseph Kim",
+ "role": "Head of ChatGPT for Financial Services",
+ "company": "OpenAI",
+ "bio": "Joseph Kim is Product Lead for ChatGPT for Financial Services at OpenAI, the finance-industry version of ChatGPT launched in September 2026 and shaped with partners including Morgan Stanley and Evercore. He demonstrated the product to press, showing how it bundles premium financial data sources and turns financial-model outputs into interactive outputs. He is a Member of Technical Staff at OpenAI based in San Francisco and holds a B.S. in Electrical and Computer Engineering and Computer Science from Carnegie Mellon University.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FYsBsMMOuSzTT07D6HQA1_headshot-1790201129006.png",
+ "sessions": [
+  {
+   "title": "Building the Next Chapter of AI in Finance",
+   "time": "9:54am - 10:12am",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://fortune.com/2026/09/10/openai-courts-wall-street-with-chatgpt-for-financial-services-developed-with-morgan-stanley",
+  "https://venturebeat.com/data/openai-launches-chatgpt-for-financial-services-with-integrated-data-sources-it-pulls-research-cites-it-and-builds-decks-in-minutes",
+  "https://www.linkedin.com/in/yckimjoseph"
+ ]
+}

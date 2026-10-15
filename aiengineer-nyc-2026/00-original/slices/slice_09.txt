@@ -1,0 +1,359 @@
+# transcript slice 09
+window: t=16380..18200 (04:33:00..05:03:20 video time; 1:20:52 PM..1:51:12 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[04:32:02] The source schema is whatever you have access to.
+[04:32:05] Your phone gives you your region's temperature, sensor on your desk, which is less accurate but is more local, or your watch.
+[04:32:11] But even your patience in following through on my request is part of that source schema.
+[04:32:16] The second one is the storage schema.
+[04:32:19] There's only so much you can write down.
+[04:32:22] You can't write down the firmware of the device you're using.
+[04:32:25] You can't even write the time down to the second because you couldn't finish writing all of that inside of a second.
+[04:32:31] This is the schema imposed on you by storage.
+[04:32:34] The third one belongs to the decision.
+[04:32:36] Why do I need you to write the temperature down?
+[04:32:40] Maybe I'm figuring out what makes you comfortable, in which case I need temperatures from you spread throughout the day, and I need to make sure that it's you that's doing the measurement.
+[04:32:48] Maybe I'm building weather migration maps, in which case I don't care who does the measuring, but I care a lot about your exact location, the time, the device you used, and whether that's changed.
+[04:32:59] Or maybe I'm deciding whether to install sensitive equipment and where, and you yourself become this variable that I need to cancel out.
+[04:33:08] There's a fourth one, though, which we'll get to when we talk about priors.
+[04:33:12] It's this recent addition.
+[04:33:13] The true problem is that you will never know all four schemas at the same time except at the moment that the decision is being made.
+[04:33:21] In almost every enterprise and every home, most of the data being recorded has little idea what it's going to be used for.
+[04:33:29] Take a customer, the first box in every ontology.
+[04:33:32] To billing, a customer is whoever pays.
+[04:33:35] To support, it's whoever calls.
+[04:33:37] To compliance, it's whoever we're on the hook for.
+[04:33:40] And the only time you know is when the decision is known.
+[04:33:43] Should we refund this order?
+[04:33:45] Can we extend this account more credit?
+[04:33:47] Suddenly, what you need to know, how and to what degree, becomes extremely clear.
+[04:33:52] This is why I was wrong.
+[04:33:55] There is no universal schema.
+[04:33:57] There is no concept of a customer that's divorced from the question that you want to answer.
+[04:34:03] And pulling these schemas together is the process of transformation, of making information actually useful, taking the context that it was recorded in and merging it with the context of the decision.
+[04:34:14] And that takes discernment.
+[04:34:16] Doing that merge when the decision space is known instead of ahead of time is what I mean by a just-in-time ontology.
+[04:34:23] So we'll come back to discernment with a story from my last job, where most of my job was to make sure that certain numbers just did not exist ever.
+[04:34:34] Before that, a little bit about me and us.
+[04:34:38] We are best described as obsessives.
+[04:34:40] Obsessives who embed intelligence into pipelines.
+[04:34:43] Pipelines that can scale, that can run over and over again to take work truly off our hands, and pipelines that can mature in cost, performance, and speed all on their own.
+[04:34:54] And most of the work we do in data breaks into three regimes.
+[04:34:58] The first is write once, run once.
+[04:35:00] If you do any kind of development, think of these as monster-scale, immediately invoked functions.
+[04:35:06] They're built for something single-use, like joining a dataset, mining information, or answering one specific question, and then they get torn down.
+[04:35:15] The second is write many, run once, where lots of smaller and larger workloads are built for one large common goal.
+[04:35:23] The closest thing you might know is, like, large migrations.
+[04:35:27] Years of records moved out of systems nobody fully remembers, lots of workloads built for one move and verified individually at source, checked against the others because all of it only happens once.
+[04:35:38] The third, though, and this is bread and butter, is the most common, is write many, run many.
+[04:35:43] These are repeatable pipelines that are built and maintained over time as we add more information in.
+[04:35:49] And at SoftRidge, we've moved so much work off the main thread and into these repeatable systems, from benchmark design, tracking, coding, to making subtitles for movies that we want to watch.
+[04:36:00] Almost everything we do in the modern world is a transformation of data, or it's bottlenecked by how hard it is to transform data.
+[04:36:08] And in all of these cases, our job is simple: make sure people can rely on the results.
+[04:36:13] In just two years, we've gone from figuring out how to make early 3.
+[04:36:17] 5 turbo-level models reliable on things like healthcare, aging, mining research, to building Hankwave, our open-source harness for data work, and then using that to get models to work together at terabyte scale.
+[04:36:30] Today, we have systems that can self-optimize.
+[04:36:33] You give them the problem, a way to fail safely, a place to work, and they find the shape of the solution.
+[04:36:39] They pick the right models, they run the pilots, they scale up, and they Pareto-serve their way to the best option they can find.
+[04:36:49] So, story.
+[04:36:50] At my last job, the question we heard most often was, Can we make this decision data-led?
+[04:36:58] And sometimes that was the right question when we had thousands of vessels on the platform.
+[04:37:02] The problem is that we also asked it when we only had 50 users.
+[04:37:06] And if you know statistics, you can explain really well why A/B testing 50 users is a bad idea.
+[04:37:12] Not because you're not going to get a result, but because you will.
+[04:37:16] So the only real option was to not produce a number at all, because the moment a number exists, it argues for a result.
+[04:37:25] Today, though, it is worse.
+[04:37:27] Interactive agents will always give you an answer.
+[04:37:30] They'll give it to you quickly.
+[04:37:32] You ask for a transformation, whatever, and you get a confident yes, sir.
+[04:37:36] What this means is mistakes add up quickly.
+[04:37:38] Moment in chat can be a prod nightmare forever, just waiting to be discovered.
+[04:37:43] The primary reason that this happens is that intelligence, as it relates to data work today, occupies three separate roles that coding agents kind of mash into one context window.
+[04:37:54] Let's pull those apart, because it'll help a lot when we get to decision models, because they fit into exactly one of these three.
+[04:38:01] The first one is building and designing the pipeline, which is breaking down the problem, writing the early specs, authorizing spend.
+[04:38:08] The second one, and this is usually confused with the first and given to the same models, is working inside the pipeline, actually doing the work, reading the PDF, writing to databases, checking results.
+[04:38:20] Before we get to the third one, I want to make it clear that these two roles pull in very different directions.
+[04:38:26] The first one wants slower models with heavier, thicker tokens, models that can think more, walk around a problem and see the angles, digest documentation, understand how these pipelines get built, and predict how something will do before it even starts, like Opus or O1.
+[04:38:43] The models you want inside pipelines, though, are the opposite.
+[04:38:47] You want them cheaper, faster, specialized, good at following instructions, repeatable workers with knowable defects.
+[04:38:54] You see the same thing in nature.
+[04:38:56] A leafcutter ant colony, for example, runs on four different sizes of worker: small, medium, high, ex-high.
+[04:39:02] As you watch any system that you design, review, or hear about, listen for what slots and where in this layer cake.
+[04:39:09] It makes a big difference.
+[04:39:12] Because we had this distinction, bringing in Jev in this newly exploding class of decision models was very easy, because they're workers.
+[04:39:19] They're built for quick contact with information, and they're deployed at the bottom end of large workloads.
+[04:39:26] So, third category, though.
+[04:39:27] This is something we call the hill climbers or surfers, models that can take a first run and self-optimize.
+[04:39:34] Given the right knowledge, instructions, and an incredibly stable surface to stand on, they can try new things, vary budgets to limit cost exposure, debug quickly, take notes, surf their way not just to the right solution, but the optimal one.
+[04:39:50] We call that Pareto surfing, and we'll cover it at the end.
+[04:39:53] But first, let's talk about our experience with Jev.
+[04:39:56] Jev launched on a Tuesday when we were deep into an entity resolution.
+[04:40:01] Entity resolution pipeline.
+[04:40:03] We were working on donors in Ohio's campaign finance, and at this point, a lot of people have seen this chart.
+[04:40:09] We talked about the results before and adapted some of the ongoing work to the dataset, so you can download it for yourself, prompts and everything.
+[04:40:17] What we didn't talk about is everything behind that one arrow and what happened when we ran the same idea on the whole state.
+[04:40:24] Here are all of the architectures we tried.
+[04:40:26] We started with three designs on a small development set: a cheap reasoning model on its own, Jev with a reasoning model for anything it wasn't sure about, and a reasoning model proposing answers with Jev checking them.
+[04:40:39] On about 200 held-out families, the cheap reasoning model on its own did as well as Fable for about 2% of the cost.
+[04:40:47] Jev first got the core answers right, but it missed nine household links because it had confidently said no to every one of them.
+[04:40:56] So we rewrote the questions without touching the models or the thresholds.
+[04:41:00] The household question now said what counts as enough evidence, and Jev went from no on all 13 development questions to yes.
+[04:41:06] And as we scaled it statewide, we ran over a dozen rounds of such qualification.
+[04:41:11] Each round fixed a definition: what a committee is, what a filer means, when two people live at one address, what does that mean.
+[04:41:18] Every one of Ohio's 203,317 cases now has a label that says what the answer rests on and how far it was checked.
+[04:41:28] This is the hierarchy we discovered for this specific problem.
+[04:41:32] And here's everything we learned about putting decision models into pipelines.
+[04:41:36] I'll leave this up so you can screenshot it.
+[04:41:39] But here's where the money went.
+[04:41:40] The whole statewide job came to $795 on an $800 budget that was set ahead of time.
+[04:41:47] Checking cost about four times as much as doing, 5.
+[04:41:50] 45 on second opinions, settling disagreements, and the audit against 128 for first answers.
+[04:41:57] And before Dev, we expected this work to cost about $10,000.
+[04:42:01] And now that the pipeline is built and verified, we expect the audit budget for the next state to be close to zero.
+[04:42:07] The most amazing thing is that our agent, 4A, running on Astra and then later on Opus, found most of these approaches incrementally on its own by building the system, running it, debugging it, and trying new things.
+[04:42:22] It ran for 10 days, tried over a dozen architectures.
+[04:42:25] Its hangs ran for more than 4,000 times alongside 90,000 calls to Dev, tried practically every model on the Pareto frontier, and the models inside those runs went through roughly 6 billion tokens.
+[04:42:38] And once all of that was done, we wrote what we learned back into our library of agentic patterns.
+[04:42:44] This work leaned on these existing ones, and we're adding new tested ones like the checking ladder.
+[04:42:50] This is, to me, the value of taking work off the main thread for humans and for agents, because every single one of these iterations was a version-controlled hang.
+[04:43:00] They were easy to revert, understand, debug, and critique.
+[04:43:05] So can models do this natively now?
+[04:43:08] Not quite.
+[04:43:09] They're missing four things, which we'll go over.
+[04:43:12] And there's something that doesn't go away, though, as models get bigger and more capable: the prior.
+[04:43:18] Just like humans, models bring their own priors, their beliefs about what should be in the world to every task.
+[04:43:25] This is that fourth schema that I mentioned before, the one the model brings with it.
+[04:43:31] Bigger models, in a strange way, are worse at this sometimes.
+[04:43:35] They hold on to their beliefs and argue for them even more vehemently.
+[04:43:39] Here's a few that we ran into.
+[04:43:41] One pipeline looked for in-kind spelled with an underscore.
+[04:43:45] The file spelled it with a capital I and a hyphen.
+[04:43:48] So the model counted 15,658 in-kind contributions as ordinary money, didn't double-check.
+[04:43:55] The loan repayments also disappeared the same way.
+[04:43:58] Another one tried four date formats when the file used to fifth.
+[04:44:03] 99.
+[04:44:03] 4% of the transaction dates then came out empty, and every row count and dollar so matched, so the agent moved on.
+[04:44:12] Several runs noticed that loan amounts were negative, decided that the sign was redundant, and stored the absolute value.
+[04:44:19] A net of 784,000 became 5.
+[04:44:22] 3 million dollars of debt in the end, validated by multiple models.
+[04:44:28] And this is quickly becoming the largest class of error I see across companies in data work as models take over.
+[04:44:34] Sometimes you can solve this just by not vibing, by checking results and applying human intuition.
+[04:44:39] And what you're actually doing there when you do this is interesting.
+[04:44:43] You're intersecting your priors with the models.
+[04:44:46] In that first example, any human would catch missing in-kind contributions if they knew campaign finance or think to check.
+[04:44:54] That's how we found it.
+[04:44:55] But humans, speaking as a human on this particular task, are expensive.
+[04:44:59] They are slow.
+[04:45:00] They pause timelines.
+[04:45:01] They're even more non-deterministic than models, and they hate interruptions.
+[04:45:06] But it turns out you can also get really far with cross-model prior intersection.
+[04:45:11] On our 200 held-out families, Jev and Luna agreed on 194, and none of those shared answers was wrong.
+[04:45:19] Every error sat in the six families where they disagreed.
+[04:45:23] Models from different families, different pedigrees, tend to disagree more and have different priors than models in the same group, for example.
+[04:45:30] The exception, I'm not going to say who, are models that are distilled outside the same company.
+[04:45:36] So with that kind of work, you can shrink the surface quite a bit and the errors along with it down to a much smaller but persistent class of problems that apply to LLMs as a species.
+[04:45:48] So in one benchmark, four different model families produced the same total down to the cent because they all shared a signed convention that the answer key didn't.
+[04:45:56] And once you get that far, the only way forward is to list them, look out for them, and apply specific solutions.
+[04:46:03] So going back, what are the four things we're missing to be able to self-optimize?
+[04:46:09] Number one is a stable deployment surface.
+[04:46:13] We use Hankweave for this, a harness that takes the fast-moving surface of agent runtimes like Claude Code and Py, and then exposes a consistent, well-tested login API interface with checkpointing, rollback, budget enforcement, everything built in, something you can build on.
+[04:46:28] But other things fit this description.
+[04:46:31] To be fair, for headless data work, Hankweave, I would say, is still the oldest, most stable, and the most open.
+[04:46:36] I'll leave the skill up if you'd like to try it.
+[04:46:39] Number two is some way to bound your experiments.
+[04:46:42] You can't test unless you can control cost, time, and access as resources.
+[04:46:48] The third one is know-how and methodology.
+[04:46:51] We found that this new class of models can take everything we've learned from two years of deployments: agentic patterns, debugging techniques, prompting, and apply it to complex problems.
+[04:47:01] With the right abstraction layer, you can express it very token efficiently, and the models can implement it.
+[04:47:07] The fourth and the most important one is a failure surface.
+[04:47:10] Our community said, Give me a place to stand and I will move the earth.
+[04:47:14] And in our case, we haven't met a problem or a constraint that we couldn't iterate ourselves to solving, given a stable stack to build on and a failure surface to iterate against.
+[04:47:25] That last one has been the hardest to put into words and into tooling and instructions that helps models get there.
+[04:47:31] The current best models are still only barely good at this, sparks of intelligence, so to speak.
+[04:47:37] The whole process, though, involves going through six stages.
+[04:47:40] First, we spec the job and we split it.
+[04:47:42] For Jeff, that means splitting some 800,000 rows into 200,000 smaller specialized cases, and each of those cases into typed questions: what kind of donor, one donor, you know, different, different questions that needed to get answered.
+[04:47:56] Then we decide the failure surface.
+[04:47:58] In this case, we ran good models on a small slice of the data, with some of it being manually checked, to set a baseline that we can fail against.
+[04:48:06] In other cases, we've set automated failure systems, we've set schema checks, we've also covered behavior as a thing that we can measure against.
+[04:48:15] But it's very important to have to define a failure surface before you ever start.
+[04:48:21] But now comes the fun part.
+[04:48:22] We run minimal bounded pilots to test architecture, and once something starts working, we move those checks into rigs, code that runs between bounded work segments that we call codons.
+[04:48:34] These codons are then reused, looped independently, validated, and placed in sequence.
+[04:48:41] Finally, working pipelines get deployed to production, where they can slowly mature.
+[04:48:46] And that middle part is where the surfing happens.
+[04:48:49] We find an architecture that gives a solid result, we use it as a baseline, then we swap models and some other parts for faster, cheaper options, compare against known intermediates, tighten the requirements for success each time, moving closer and closer to the ideal, and you just watch the frontier move.
+[04:49:06] Being able to break a complex problem into pieces means each piece can move to its own best position, as Adam Smith would say.
+[04:49:15] In a system like this, ontologies exist as intermediates between intelligence and result, which makes them easier to reuse.
+[04:49:23] That's the other half of what I mean by just-in-time ontologies.
+[04:49:26] It's built when the job needs it, kept with its receipts, and reused when the next job needs the same thing.
+[04:49:34] And once you have those, you can make these things cheaper.
+[04:49:37] You can run them in parallel across datasets to scale up.
+[04:49:41] I close with an apology, right, that the answer is there is no ontology.
+[04:49:46] Not a universal one, at least.
+[04:49:48] There never was one.
+[04:49:49] The good news is that this makes every ontology and schema valid, as long as you can label and preserve the context around it.
+[04:49:56] And if we can harness this cheap intelligence that's starting to percolate through the world around us,
+[04:50:01] Around us, we're rapidly approaching a future where any information in any format is made as useful as it can be.
+[04:50:07] And at Perplexity, we're working as hard as we can to make that future a reality.
+[04:50:12] Thank you.
+[04:50:30] Hello, I'm Kartik, CTO at Perplexity.
+[04:50:35] In this presentation, I'll talk about building workflows that are both reliable and intelligent for finance, wealth, and insurance.
+[04:50:51] In regulated domains, workflows must be reliable enough to meet regulatory standards while still being intelligent enough to handle the real world in fields such as finance and wealth management.
+[04:51:01] This presents both a technical and a compliance issue.
+[04:51:04] Reliability and intelligence are not opposites.
+[04:51:06] It is up to you where you draw the boundary between them, and that is the point of this talk: deciding where that boundary lies.
+[04:51:13] For us, it's not merely a thought experiment, but a question that surfaces serious consequences.
+[04:51:18] For Perplexity, it's a wealth management roll-up.
+[04:51:21] We acquire running traditional wealth management firms, and we maximize their throughput and revenue with the help of AI.
+[04:51:28] Wealth management is a regulated industry, and that is where we build with AI in production.
+[04:51:34] Everything in this talk is grounded in building for those constraints.
+[04:51:38] Workflows in finance and wealth management come with four facts, and each of them pushes the architecture in the same direction.
+[04:51:45] First, they're complex, and they need runtime strategies as the process unfolds.
+[04:51:50] You can't script every path in advance.
+[04:51:52] Second, the data is sensitive, so you need a path to move these workflows entirely onto privately hosted models.
+[04:51:59] Third, in a highly regulated industry, a policy violation isn't a bug report; it has severe consequences.
+[04:52:06] So, fourth, execution has to be highly reliable and deterministic.
+[04:52:11] Inject intelligence only where runtime judgment is genuinely required, and minimize reliance on LLMs everywhere else.
+[04:52:20] AI is spreading through regulated industries, but there's still no consensus on an architecture that gives you high reliability with the least use of LLM intelligence.
+[04:52:29] Meanwhile, most of what developers hear from the big labs is how to burn more tokens.
+[04:52:34] But in a regulated industry, token maxing is the wrong goal.
+[04:52:38] These tasks are close to main.
+[04:52:40] You can lay them out in advance and build them into a massive state machine, and that machine needs only a sprinkle of intelligence to navigate it.
+[04:52:47] Most steps just follow the next edge.
+[04:52:49] Only at a few judgment points does the model pick a branch.
+[04:52:53] So the intelligent way to build is to use intelligence minimally and on purpose.
+[04:53:01] Let's make this concrete with a real wealth management workflow.
+[04:53:05] A wealth advisor turns to their assistant and says one sentence: Fill out the IRS W-9 for Mr.
+[04:53:11] Harper to a person.
+[04:53:12] That's a simple instruction.
+[04:53:13] Watch what it actually triggers when a human being executes it.
+[04:53:17] The task has complexities that go beyond what meets the eye.
+[04:53:21] First, the assistant finds Form W-9 from the firm's records or from the IRS website.
+[04:53:26] Then they look for Mr.
+[04:53:28] Harper in the system of record and find three Harper households.
+[04:53:31] So they call the advisor, Which Harper do you mean?
+[04:53:34] Only once that ambiguity is resolved do they move on to the form.
+[04:53:38] A lookup, an ambiguity, and a human in the loop, all in the first minute of a one-line task.
+[04:53:49] Filling a form sounds like data entry.
+[04:53:51] It isn't.
+[04:53:52] Every form is a small program.
+[04:53:56] A W-9 first decides who the taxpayer is, the person or the owner if it's a disregarded entity.
+[04:54:02] A foreign person stops right here because they need a W-8 instead.
+[04:54:07] Then how they are taxed.
+[04:54:08] Exactly one box on line 3A, and an LLC adds its letter.
+[04:54:13] That decides which name goes on line 1 and which on line 2, then whose number, an SSN or an EIN.
+[04:54:21] Never both.
+[04:54:22] Taken from a verified document, never from memory.
+[04:54:25] Exemption codes apply only to some entities and never to an S corporation.
+[04:54:30] And finally, who signs under penalties of perjury.
+[04:54:33] Each answer changes the next question, and the people involved only ever see three kinds of gates: a question, a document to collect, or a signature.
+[04:54:43] Now they start filling the form and realize the system of record is missing three of the values it needs.
+[04:54:50] They check the documents on file and the system of record again, still missing, so they start an email thread with the client asking for exactly those three values.
+[04:55:00] The task now depends on someone outside the firm on their timeline.
+[04:55:05] And now the workflow waits.
+[04:55:07] The request is with the client and all three values are still missing.
+[04:55:10] If the client doesn't reply within two days, the assistant follows up and brings it to the advisor at the daily standup.
+[04:55:16] If the client replies with only two of the three values, they follow up again for the missing one.
+[04:55:21] When all three arrive, they complete the form and write the new information back to the system of record, including the trail of how they obtained those values.
+[04:55:36] In this industry, how you know a value matters as much as the value itself.
+[04:55:49] Once the form is filled, it goes out for e-signature.
+[04:55:52] If the client doesn't sign within a day or two, the assistant nudges them again.
+[04:55:57] Once it's signed, they file it for the client, send the acknowledgement, and update the advisor at the next day standup.
+[04:56:03] One sentence from the advisor became a process that runs for days, crosses several systems, waits on two people, and loops back on itself more than once.
+[04:56:13] Look at what's inside that one sentence: ambiguity to resolve, data to gather, approvals, waits measured in days, follow-up loops, and an evidence trail at the end.
+[04:56:43] Workflow automation tools exist, but they rarely handle this real-world complexity and ambiguity.
+[04:56:49] A fixed flowchart breaks at the first which-harper, and the lack of a native system of record with an integration, and an agent that improvises its way through is exactly what a compliance team can't sign off on.
+[04:57:01] One breaks on ambiguity, the other can't be signed off.
+[04:57:04] Neither handles what's inside that sentence.
+[04:57:07] So what do we do about it?
+[04:57:10] The fashionable framing is more agency and better models.
+[04:57:14] Given agent the whole task and wait for the next model to make it reliable.
+[04:57:19] The reflexive answer, especially inside regulated firms, is the opposite: less agency, more rules.
+[04:57:26] Lock it down and hardcode every path.
+[04:57:29] Both are the wrong axis.
+[04:57:32] In regulated verticals, reliability comes from where you place the boundary between the two, between the parts that must be deterministic and the parts that genuinely need judgment.
+[04:57:42] Here's the principle: determinism governs controlled flow, evidence, and side effects.
+[04:57:48] What runs next, what we know, and how we know it, and anything that changes the world, like a record written, an email sent, or a form filed.
+[04:58:02] Intelligence provides interpretation and judgment: reading an ambiguous instruction, deciding which harper, understanding a client's reply.
+[04:58:12] The model answers a typed question, and the deterministic system decides what to do with the answer, and the interplay is recursive.
+[04:58:20] A judgment can open a new, smaller plan that's compiled, gated, and deterministic again.
+[04:58:26] You'll see that in a moment with follow-ups.
+[04:58:28] The boundary between the two is the design.
+[04:58:31] Here's how that works in the workflow engine we've built.
+[04:58:36] The request goes to a planner.
+[04:58:44] That is a model call, and its only job is translation.
+[04:58:48] It emits a typed semantic graph of intents, entities, facts, artifacts, events, and constraints, each grounded in the words of the request with any ambiguities it found.
+[04:58:59] Every node points back to the words it came from.
+[04:59:03] That graph goes to a compiler that never calls a model.
+[04:59:06] In eleven deterministic stages, it turns the graph into an execution DAG or it fails closed.
+[04:59:12] There are only three verdicts: valid, needs clarification, or refused.
+[04:59:20] Which Harper comes back as a question, not a guess.
+[04:59:23] The plan is compiled, immutable, and pinned by its hash.
+[04:59:34] The model translates.
+[04:59:36] The plan is compiled.
+[04:59:37] The compiler checks the plan against a grammar, the vocabulary of what the firm is allowed to do.
+[04:59:43] Forty-two typed action contracts across forms, documents, email, e-signature, calendar, and human steps.
+[04:59:51] Each action the planner asks for has to match a contract.
+[04:59:55] Here.
+[05:00:00] Here, Formfill finds its forms contract and logs in.
+[05:00:04] If the planner asks for an action that isn't in the grammar or wires one up wrong, the compiler refuses.
+[05:00:11] There are about forty ways to fail closed, from a cycle in the graph to an unsupported action, and the same contract digest is pinned in the engine, the backend, and the UI, so all three agree on what an action means.
+[05:00:25] That is what a closed domain buys you.
+[05:00:27] The model can only ask for things the firm already knows how to do safely.
+[05:00:31] Here is a compiled plan for a W-9 chase.
+[05:00:34] Send the client the form, wait for it to come back, check it, and file it.
+[05:00:39] Before anything runs, a person approves the plan itself.
+[05:00:42] Find the form, prepare it for the client to fill, render the PDF, and draft the email.
+[05:00:48] Drafting is a model call, so it is violet.
+[05:00:55] Sending is an action gate.
+[05:00:57] Nothing leaves the firm until a person approves that exact email.
+[05:01:01] Then the plan waits for a reply, and a judge steps in to read it.
+[05:01:06] The returned form is verified.
+[05:01:09] If it matches, it's archived behind another gate.
+[05:01:12] If it doesn't, the plan follows up.
+[05:01:14] Now look at the dashed steps.
+[05:01:18] Rendering the PDF, attaching it, judging the reply.
+[05:01:22] The planner never asked for them.
+[05:01:24] The grammar added them because the contracts require them.
+[05:01:28] In the story, waiting, approvals, and follow-ups were most of the work.
+[05:01:33] Here, they are nodes in the plan, not prompts.
+[05:01:36] A reply wait defaults to 72 hours, and an explicit deadline can be anything from a minute to 30 days.
+[05:01:44] When it passes, a rule decides what happens, not a model.
+[05:01:48] One approval covers the plan, and every external action, like sending an email or a signature request, has its own gate.
+[05:01:56] The approval is tied to a hash of the exact payload and is checked again right before sending.
+[05:02:02] When a client replies with only part of what we asked, the reply judge marks it partial.
+[05:02:07] That judgment is provisional.
+[05:02:09] The step stays blocked until a person confirms it.
+[05:02:12] A person confirms it, and the step unblocks.
+[05:02:15] Then the follow-up runs as a new child plan.
+[05:02:18] The approved parent is never changed, and there are at most five rounds.
+[05:02:28] Once a plan is approved, a state machine runs it.
+[05:02:32] It picks every step and records every result.
+[05:02:35] When a step needs judgment, it makes one fixed schema model call: compose an email, judge a reply, spot missing values, extract fields, verify a document.
+[05:02:46] The answer comes back typed, and the state machine decides what to do with it.
+[05:02:50] Side effects get a life cycle of their own: prepared, dispatching, succeeded, or, when the world doesn't answer cleanly, outcome unknown and manual review.
+[05:03:01] There are no automatic retries.
+[05:03:03] A chat message can approve a step or answer a question.
+[05:03:07] It can't change an already approved plan.
+[05:03:09] The model steers; it never drives.
+[05:03:17] Now look at what is left for the model to do.
+[05:03:20] Outside the planner, the judgments are small and typed.
+[05:03:24] Is this reply complete?
+[05:03:25] Does this document match?
+[05:03:27] Which field is which?
+[05:03:28] They don't need frontier intelligence.
+[05:03:30] A fast small model, the flash tier, can handle them.
+[05:03:34] In this illustrative run of 20 decisions, 19 go to the flash tier and one goes to the frontier.
+[05:03:41] That is why we designed for about 95 percent of model decisions in a workflow never needing a frontier model, and the flash tier can run on hardware you control.
+[05:03:52] Only the genuinely hard cases go to a frontier model.
+[05:03:56] And the 5 percent is not a permanent tax, because every judgment is typed and logged, and the provisional ones are confirmed or rejected by a person.
+[05:04:06] Each frontier decision produces eval-grade distribution real training data by construction.
+[05:04:13] That data can post-train the flash tier.
+[05:04:17] Logging and evals exist today.
+[05:04:19] The training loop is next.

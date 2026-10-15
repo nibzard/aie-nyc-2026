@@ -1,0 +1,27 @@
+{
+ "slug": "clifford-ressel",
+ "name": "Clifford Ressel",
+ "role": "Co-founder and CTO",
+ "company": "Nori Agentic",
+ "bio": "Clifford Ressel is the co-founder and CTO of Nori Agentic, a company that provides cloud infrastructure for teams running AI agents to develop software and automate operational work. He works on the future of coding agents, including nori-cli, a Rust-based CLI for running coding agents across models and providers, and nori-skillsets for portable, reusable agent skills. He studied computer science and linguistics at Carnegie Mellon University.",
+ "linkedin": "https://www.linkedin.com/in/cliffordressel",
+ "twitter": "https://x.com/CSRessel",
+ "website": "https://github.com/CSRessel",
+ "photo": "",
+ "identified_from_session": true,
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/cliffordressel",
+  "https://ai.engineer/orgs/nori",
+  "https://www.linkedin.com/company/nori-agentic",
+  "https://github.com/CSRessel"
+ ],
+ "sessions": [
+  {
+   "order": 28
+  },
+  {
+   "order": 29
+  }
+ ]
+}

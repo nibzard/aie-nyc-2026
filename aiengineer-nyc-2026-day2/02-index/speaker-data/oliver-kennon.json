@@ -1,0 +1,26 @@
+{
+ "slug": "oliver-kennon",
+ "name": "Oliver Kennon",
+ "role": "Research Analyst, Core Research",
+ "company": "SemiAnalysis",
+ "bio": "Oliver Kennon is a Research Analyst on the Core Research team at SemiAnalysis, based in New York. His work covers GPU economics, compute markets, and AI infrastructure finance. He co-authored the SemiAnalysis report \"Nvidia's Backstop Universe - Heads I Win, Tails Who Loses?\" on the $11T AI buildout and the limits of Nvidia's balance sheet. He studied at Colby College. At AI Engineer NYC 2026 he spoke on \"Not All GPU's Are Deployed The Same\", arguing that compute indexes miss operator-level differences and that GPU contracts should price the operator, not just the GPU.",
+ "linkedin": "https://www.linkedin.com/in/oliver-kennon-870360206",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FkV6Knz8SReCJrs7ZldMM_headshot-1790951974776.jpg",
+ "sessions": [
+  {
+   "title": "Not All GPU's Are Deployed The Same",
+   "time": "11:05am - 11:23am",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/oliver-kennon-870360206",
+  "https://www.linkedin.com/posts/oliver-kennon-870360206_im-excited-to-announce-my-new-role-as-a-activity-7494056317918085120-MBYU",
+  "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i",
+  "https://www.linkedin.com/posts/aidotengineer_youre-pricing-the-gpu-are-you-pricing-the-activity-7513297089456578561-pWjh",
+  "https://ai.engineer/nyc/2026/schedule"
+ ]
+}

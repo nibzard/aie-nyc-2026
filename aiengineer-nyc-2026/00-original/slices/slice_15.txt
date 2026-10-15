@@ -1,0 +1,299 @@
+# transcript slice 15
+window: t=27300..29120 (07:35:00..08:05:20 video time; 4:22:52 PM..4:53:12 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[07:34:14] Those actions are, in this case, either a keyboard and mouse or a game controller.
+[07:34:17] So the output tokens of the model are essentially equivalent to that of an enhanced computer use model with more actions on the output space to internalize it.
+[07:34:26] So you send frames and you get actions.
+[07:34:29] This works, again, because every single thing that you see here can control all of these different embodiments, right?
+[07:34:36] So as humans, we do not know how to predict motor torque.
+[07:34:46] We do not know what value to send to a machine.
+[07:34:50] There is this beautiful device that has been made for many years, which actually does that work for us, so we can control them.
+[07:34:57] Most robotics companies today are trying to solve the problem at the end-to-end level, trying to predict exact poses or exact values in the motor, instead of just looking and picking up the thing that every robotics company has built to generalize our very limited abilities to have physics understanding and predict exact values and solve for it.
+[07:35:25] And so our approach is, let's just use that.
+[07:35:29] And so Meta, at the moment, sees about a billion videos uploaded per year.
+[07:35:37] This year we're on track for three billion, which lead to over a trillion and a half action tokens per month.
+[07:35:45] So just for comparison, think about the bet.
+[07:35:47] The total amount of data that Frontier Labs use today to train robotics models, we collect in, at the moment, half a day.
+[07:35:55] And so, the type of bet, and again, think of the fact that humans can use the exact same controllers and their eyes to play video games that they can't tell operate robots.
+[07:36:08] It is the same thing.
+[07:36:09] We just bet on scaling pixel space the same way that anthropic scaled coding space, and betting that people will just, as we scale, data compute into pixel space, that people will bring more problems into pixel space.
+[07:36:22] And so, what happens?
+[07:36:26] All of a sudden, you get an incredibly general agent that can go and solve problems on computers in the real world.
+[07:36:39] And in addition, similarly to how Anthropic focuses on doing coding environments, we focus on world models, which most of you know is for the Mira release world models, to then generate additional environments for these models to learn in.
+[07:36:52] One way of internalizing a big advantage of this approach against LLMs is if you're an LLM company and you have to bet on the ability to generate environments for your models to learn, you have two problems.
+[07:37:06] One, you actually need to spend the compute to simulate environments, and the more realistic you try to simulate, the more expensive that gets.
+[07:37:13] And so, imagine you want to learn a new thing.
+[07:37:16] You want to learn that new thing in the exact input space of the human, right?
+[07:37:23] So if we are learning from pixels, we're learning by looking around.
+[07:37:26] If I'm trying to communicate something, I want my robot partner to observe that exact same thing.
+[07:37:32] And so, what I don't want is for that to have to go through an LLM, for a digital twin to have to be created, for the model to have to get deployed, for there to be a bunch of verifier checks whether or not things are equivalent, and then for the robot to learn much later, right?
+[07:37:47] And so, one way of thinking about it is when you can learn in the native modality of the human, you can all of a sudden start solving a lot more problems a lot faster, which you'll see when these models come out is they are significantly faster than any LLM at doing these things.
+[07:38:07] Because games are so action dense, so what you see, right, is one thing that's interesting is you saw, for instance, the model predicting multiple actions at the same time.
+[07:38:17] We're able to take that action density from gamers and convert them into really complex robotics workloads.
+[07:38:24] So, for example, if you are operating a drone and you need to make lots of little adjustments, you really, really, really want to start with games.
+[07:38:31] You don't want to start with teleoperations because the human will just take a lot less actions.
+[07:38:36] It has a lot less information.
+[07:38:37] So you want a model that can predict really high APM.
+[07:38:41] And so the APM of the dataset puts a lot of these problems all of a sudden in reach so that it can do a lot of these actions simultaneously.
+[07:38:48] And as I mentioned, the model doesn't just understand the key it's predicting.
+[07:38:52] It also understands the semantic meaning associated with that key it's predicting, which is really important for things like interpretability.
+[07:39:01] So we will be releasing the models this year.
+[07:39:06] We are very happy.
+[07:39:08] I think the correct word would be that we're stunned by the fact of what these models can do.
+[07:39:17] This is a live stream, so I unfortunately couldn't share the release videos without breaking the surprise.
+[07:39:23] But if you're in New York, we are also in New York.
+[07:39:25] And so we have started doing a few demos of the model.
+[07:39:29] So if you know somebody on the team, reach out and we can start showing you some of the capabilities live.
+[07:39:36] But we have essentially one model which can play video games at the highest level and control over 10 types of robots using the exact same primitives.
+[07:39:45] So pixels in, actions out, completely real time.
+[07:39:48] And we'll be rolling out early access to these models over the next few months.
+[07:39:53] We already have some customers that are on them, but it's still private, so you're not hearing too much about it.
+[07:39:59] But if you scan this QR code.
+[07:40:00] You'll be able.
+[07:40:01] You'll be able to get the models because we go by who signs up on the waitlist at which times.
+[07:40:09] So this is a great moment to get in touch.
+[07:40:13] As I mentioned, we are in New York.
+[07:40:14] I think what you'll find is similar to how Jev and a lot of these decision-making models have kind of opened people's eyes on what you can do when you have a new architectural primitive.
+[07:40:25] People are ready to kind of do away with the unpredictability of an LLM and put something in that is more reliable and faster, and you just understand how it's going to react as opposed to having to work around it.
+[07:40:35] If that resonates, these models are exactly what you're looking for.
+[07:40:39] And all of a sudden, you can start exploring the environments that you generate with LLMs.
+[07:40:46] All of a sudden, one of the use cases that I'm really, really excited about is, well, these models, they can take actions as if a human was on the interface.
+[07:40:56] And so if you're doing UX work and you're trying to understand, is this an intuitive interface?
+[07:41:01] Well, this is a very interesting way of solving the problem.
+[07:41:03] So all these problems that LLMs can't solve because they can't actually explore like a human, you can start using these models for.
+[07:41:12] So the way that they're going to be released is we still expect you to use an orchestrator model.
+[07:41:20] So you may use something like Gemini or Astra in order to do long-term planning and everything, and you'll be able to plug these into your workloads.
+[07:41:27] And we're actually—the models are so general, it is genuinely going to, I think, feel like the early LLM days when you have a new toy and you just want to figure out what it does and all the things you can use it for.
+[07:41:42] My reaction was like that when I first started using the checkpoints, and I think you'll have the same reaction.
+[07:41:50] And I think a lot of you will, just like with LLMs, if you're a bit early and you start understanding these primitives, I think you'll understand that you can even build lots of businesses on top of this, right?
+[07:42:02] You know, think about, for instance, a science lab, right?
+[07:42:08] If you, all of a sudden, if you can reliably orchestrate robots in space and time, and they can take text instructions and do things, all of a sudden, this is a recursive problem, right?
+[07:42:20] Robotics is interesting because one of the big problems of solving robotics is making more robots.
+[07:42:24] And so there are all these businesses that, because it's so bottlenecked by intelligence, are going to emerge just from solving this one simple problem, which is pixels to actions.
+[07:42:35] And I think if you're early on getting your hands on these, it will have a similar effect on getting your hands on early LLMs.
+[07:42:45] I am most excited also, one of the things that we're working on, which is interesting, is if you have any friends or family who are in some way need accessibility help for using their computer, because these models can use computers like a human, all of a sudden, for instance, if you only can use one arm, all of a sudden the model can allow you to play video games because you can just control the mouse, and the model is predicting the actions for your keyboard.
+[07:43:16] And because the model also understands which actions you're predicting, because that's the input, right?
+[07:43:20] It's observing as it's acting, it will actually just not predict the things that you're doing, and it will just predict the keys.
+[07:43:27] And so it has all these downstream effects of things that you can build on top that—I'm an engineer.
+[07:43:32] If you're interested in building in this space.
+[07:43:35] This is going to be the most interesting toy that comes out this year.
+[07:43:41] I'm fairly certain.
+[07:43:43] And I also think a lot of the initial usage will sit in simulation.
+[07:43:46] So if a lot of you are into generating environments with Astra or with Gemini, it's perfect.
+[07:43:50] Now all of a sudden you can have something that can explore it, and you don't have to do it yourself.
+[07:43:55] And it's perfect timing because of all the environment generation capabilities going into these models.
+[07:44:02] Okay, so really quickly before I wrap up, I want to talk about the team.
+[07:44:08] So we are based in New York City.
+[07:44:11] The metal team and the general intuition team is here in New York City.
+[07:44:14] So if you're here, you should reach out to us, and we can both show you the models, especially if you want to join the team.
+[07:44:21] I think we'll prioritize even higher.
+[07:44:24] But we really are looking for people who, A, want to understand these models as much as we do.
+[07:44:33] So people, if you're really, really good at generating novel environments, typically if you have some sort of research background, but I don't have a research background, so that's okay.
+[07:44:42] If you come from an engineering background and you're very, very happy to learn, this is fine too.
+[07:44:47] And ideally what we want is somebody who has experience shipping end-to-end AI products, but it doesn't have to be on the research side.
+[07:44:58] So we just want to kind of hire people that understand the entire thing.
+[07:45:04] Let's see.
+[07:45:05] We have three teams.
+[07:45:06] So one is world modeling, the other is the policy, so the agent, and the other one is working on essentially the data generation and the environment generation.
+[07:45:15] So these are the main teams.
+[07:45:16] If you're an engineer, the best one to join is probably the environment generation team, and then you sort of grow into getting access to the other ones.
+[07:45:25] Yeah, I'm very, very excited for November.
+[07:45:27] I really hope that you'll be on the lookout.
+[07:45:32] As I mentioned, it will be either late November, early December is the current planning.
+[07:45:37] One more thing.
+[07:45:38] We are going to organize three hackathons.
+[07:45:41] So the first is going to be in New York City.
+[07:45:44] It will be mid-November.
+[07:45:45] And we will send out—if you sign up for the partner waitlist, we'll send out some emails so that everybody can get access.
+[07:45:53] We hope to see everybody at the hackathons.
+[07:45:55] I think it will be really the first time to get your hands on them the way that we're playing with them internally now.
+[07:45:59] And there will be one in New York City and one in London.
+[07:46:03] So if you're in either of those cities or want to travel to either of those cities, those would be good times to meet the team.
+[07:46:09] Yeah, let's see.
+[07:46:12] I have time for one or two questions, and then I think we can wrap.
+[07:46:19] Yeah, how's it different from JEPA?
+[07:46:29] So JEPA doesn't train alongside the action labels, so they bet on inferred action labels for the most part.
+[07:46:35] Which I think, like, one of the ways of thinking about it is JEPA, I think, in the limit is the more correct approach, but it's just a lot less practical in the short term because you need to bet on a separate scaling law on the action inference itself.
+[07:46:45] And we really like JEPA as a concept.
+[07:46:48] We think it's a, you know, we use some of the things in the models.
+[07:46:54] But at the end of the day, it's an approach, not a product.
+[07:46:59] And I think we'll, you know, borrow concepts both ways.
+[07:47:06] One way of thinking about it is because we have so much action data, let's say you're flying a plane and you're moving the rudder in the back.
+[07:47:15] There's no way of being able to tell that from the video frames.
+[07:47:19] It's very, very difficult.
+[07:47:20] So our mode on having the action data really transfers better to action sequences than it does to world models and to generating the pixels.
+[07:47:28] And that's why we just went all in on training these general foundation models for action predictions, and we use all sorts of techniques to do world models.
+[07:47:36] You know, our own, we really like other companies building them as well.
+[07:47:41] Great.
+[07:47:41] New one more and then I got to run, I think.
+[07:47:47] Great.
+[07:47:48] All right.
+[07:47:49] Thank you, everyone.
+[07:47:50] Have a good one.
+[07:47:51] Ladies and gentlemen, for our final talk of the day, please welcome to the stage the CEO of Noose Research, Dylan Rolnick.
+[07:48:21] Hey, everyone.
+[07:48:33] I'm Dylan Rolnick.
+[07:48:34] I'm the CEO of Noose Research, and today we're going to talk about building on foundations and platforms that you can actually own.
+[07:48:43] Oh, there we go.
+[07:48:47] All right.
+[07:48:49] How do you make back a cent-to-billion-dollar infrastructure and research bet?
+[07:48:59] Labs individually have spent hundreds of billions of dollars training and building ever more sophisticated intelligent systems, and the industry as a whole has spent trillions, perhaps.
+[07:49:17] The problem is, though, that the models have begun to commoditize.
+[07:49:23] You guys in this room, who are hopefully practitioners of AI, have known this intuitively.
+[07:49:29] You switch among models readily.
+[07:49:31] You switch between Astra, Fable, Opus, Kimi, whatever it may be.
+[07:49:36] Without too much regard for who's on the back end or what it may be, you want to try the new model.
+[07:49:42] We've seen this in data too.
+[07:49:44] There was some charts going around Twitter this week showing the average cost of a token going down while the total spent on tokens surges, and the infrastructure costs associated with serving those tokens has stayed flat, meaning
+[07:50:01] Where there used to be margin in a very, very performant model, it's now starting to narrow as we see competition and, you know, a baseline level of intelligence be available to people.
+[07:50:14] Okay, so if the models are starting to commoditize and you've spent hundreds of billions, trillions of dollars on them, you need to make that back, and you need to find a different way to do it.
+[07:50:28] And in my opinion, there are two pretty obvious ways to do it.
+[07:50:33] One, you find a different layer of the stack to compete at.
+[07:50:36] You go down to the infrastructure or you go up to the user.
+[07:50:40] Or two, you build God, and you build God faster than anyone else, and you monetize God.
+[07:50:48] If you're in front of the user, you have an opportunity for stickiness.
+[07:50:52] Stickiness means margin.
+[07:50:54] This is why the fight has largely shifted to the agent layer lately.
+[07:50:57] We started talking, I heard somebody previously talk about 5% of, you know, a workforce engaging in agents.
+[07:51:04] This is becoming more and more the zeitgeist of where the AI battle is taking place.
+[07:51:10] Consumers, though, are fickle and they're terrible customers.
+[07:51:15] Businesses, on the other hand, spend tons of money on tokens, and they have economically productive use cases for those tokens.
+[07:51:24] So if you're going to be competing at the user layer and you're going to be bringing this fight somewhere else, you're going to be bringing it to businesses.
+[07:51:33] The best thing to do is to get ingrained in a business because when you're in a business, it's hard to take you out, right?
+[07:51:38] And if you think about your business two, three years into the future, how much of your workforce, as measured by its output, is agentic, 70% conservatively, probably more.
+[07:51:55] And if 70% of your workforce is organized by somebody else who may or may not have adverse incentives to you, they can be organized into a strike.
+[07:52:04] And so what you would do if you had to make back a trillion-dollar investment was you would embed, you would use your asymmetric leverage, and you would change the rules of the game.
+[07:52:16] Or, like I said, you would build God.
+[07:52:21] If you succeed at building God, what you would do is you would point God at the most lucrative problems in the world.
+[07:52:31] The best shot at earning it back is not to sell it for an ever-decreasing margin to others to solve these hard and lucrative problems.
+[07:52:38] The best shot is to solve them yourselves.
+[07:52:40] Labs think that markets are solvable problems, and that's exactly how they view the financial industry, as a problem to be solved, and a tractable problem at that, perhaps not even a very hard one.
+[07:53:08] Right now, though, they know, at least the smart ones know, that they don't have enough context, know-how, or experience in the financial industry to be able to do that themselves.
+[07:53:17] So they will partner.
+[07:53:19] They hire investment banking analysts.
+[07:53:20] They partner with some of the biggest firms on the globe, and they start to build their foundation here.
+[07:53:30] My belief is that they will eventually go to the source because, like I said, that's where the money is, and we're trying to make back a trillion dollars.
+[07:53:38] And so you might say, this is nothing new.
+[07:53:42] We have always been trying to trap people into these games and change the margin.
+[07:53:46] And once we have you and you're stuck, we are able to raise the prices.
+[07:53:50] But the difference is that the stakes are much higher.
+[07:53:52] We're talking about meaningful deca percentages of the Earth's economy.
+[07:53:59] And you in this room need AI.
+[07:54:06] Everybody has seen what they can do, what these models can do, what agentic systems can do, and there's no going back.
+[07:54:13] People in this room who are making decisions, vice presidents and executives and engineers about what they're building on, are going to have to make decisions now about where they grow roots around these tools and processes that will affect the future of these businesses.
+[07:54:32] And whatever you pick, you'll start to harden.
+[07:54:36] You'll gain know-how.
+[07:54:37] It'll sop up the intelligence of the organization itself.
+[07:54:40] You will start to build processes and systems around it.
+[07:54:43] I implore you, do not build on quicksand foundations.
+[07:54:48] Build on open foundations.
+[07:54:51] Build on Hermes Agent.
+[07:54:55] So I just spent a fair amount of time convincing you, hopefully, that the highest expected value move in AI right now is to either trap you and jack up the prices or replace you directly.
+[07:55:09] So why am I standing here?
+[07:55:13] We view the world very differently.
+[07:55:16] And the first thing I hope you guys will learn about me and about Noose Research is that we built this company primarily for moral and philosophical reasons.
+[07:55:26] And a lot of times in business, morality and incentives don't always align.
+[07:55:30] And when that happens, it's probably easiest to change your morality.
+[07:55:35] But we think the world is changing and we think it's different.
+[07:55:37] And for that reason, we think that the best course of action is one in which we are both aligned.
+[07:55:46] When we built the company originally, we built it to combat a seemingly inexorable trend towards centralization and centralized control of perhaps the world's most important technology and most important invention.
+[07:55:58] Nus research was built by and staffed by nerds, nerds who love science fiction.
+[07:56:04] And we've all seen what happens when a centralized entity gets control of godlike intelligence and uses that for exploitation.
+[07:56:12] Skynet was, after all, a closed source company.
+[07:56:18] The next thing that you need to know is that there's no longer really a strong moat in proprietary software.
+[07:56:25] The marginal cost to reproduce a piece of software has plummeted.
+[07:56:30] A few months ago, xAI released Grok bots, and we saw that and we thought, wow, that's an intuitive user interface.
+[07:56:37] That's really nice.
+[07:56:39] So we pointed Hermes agent at it and we reproduced it in a weekend and released it as a feature within Hermes agent, open source, of course.
+[07:56:48] And the game has changed.
+[07:56:50] It used to be that software was difficult to produce and it took coordinated teams of engineers long hours to pilfer open source and take libraries and combine them together into proprietary pieces of software and then sell that software as SaaS.
+[07:57:06] But now the opposite is true.
+[07:57:08] Anything can be reverse engineered, and there are many, many motivated open source builders pointing their agents at these different.
+[07:57:16] Softwares.
+[07:57:18] If the closed competitors do manage to make interesting features, open source will have it not long afterwards.
+[07:57:24] The moats of yesterday were in proprietary IP.
+[07:57:27] The moats of tomorrow are in network effects, reputation, and reliability.
+[07:57:34] What's funny is that in a lot of ways, the labs have always seemed to underestimate their own tools, or perhaps they are underestimating the users of those tools and their genius and their motivation.
+[07:57:46] This happened and is happening on the model side, and we'll talk about why that's important.
+[07:57:52] But it turns out that models can fairly easily teach another model to be, you know, nearly as smart as the original model.
+[07:58:01] And the advantage in a model is very rarely in the architecture or some novel system that was created in a proprietary way for that model.
+[07:58:10] In fact, it's usually in the quality of the data and the scale.
+[07:58:16] And, sorry.
+[07:58:21] The model companies started to realize that the, you know, scale was catching up and that you could create these things with supplementary quality data by teaching one model from another.
+[07:58:51] So they labeled the teaching process distillation, and they labeled illicit distillation theft.
+[07:58:58] You cannot call that copyright infringement because copyright infringement would imply that you somehow took every living human being's written or creative work and then trained on top of it.
+[07:59:09] They also labeled the process of.
+[07:59:13] They also trained the models to not assist in the process of training other models, and they labeled that safety.
+[07:59:27] The next thing that you need to know about agents and about the new world is that agents are like operating systems, and they're like frameworks, and they're a lot more like those than they are like chatbots.
+[07:59:39] And so if you continue to think about your agent as merely a personal assistant, you will forever live on the surface of what it means to engage in agentic systems.
+[07:59:49] And so what do I mean by that?
+[07:59:52] If you guys were here a little bit earlier, there was a presentation about a financial firm and
+[08:00:06] firm and how they think about AI and these different inputs that go into ultimately what becomes an investment decision.
+[08:00:11] Agents are really at their heart a system that combines determinism and non-determinism.
+[08:00:18] If you remember from that talk, there are data sources, there are routine code, there are people's opinions, and there's judgment.
+[08:00:25] And all these things come together to create what is the new application.
+[08:00:25] The new application is no longer necessary that it is deterministic and solid and cold hard code.
+[08:00:30] It can inject intelligence, reasoning, judgment, all of these things together to combine to create the new application.
+[08:00:39] And so, as you at your company think about building these new applications, you should be building these systems on foundations that you own.
+[08:00:52] You should be able to swap in and out the models that you want.
+[08:00:54] You should be creating ever more sophisticated towers of functionality on top of these core primitives of determinism, non-determinism, code, data sources, judgment, reasoning, intellect.
+[08:01:12] But you should not be spending your entire lives being intelligence companies.
+[08:01:19] What has made you successful this far?
+[08:01:21] Most of you are most likely not agent companies.
+[08:01:23] Most of you are not likely AI companies.
+[08:01:26] You should be focused on the things that you do well.
+[08:01:29] And when the state of the art changes and it evolves and what it means to be an agentic system starts to shift, you should inherit that, not rebuild it and maintain it.
+[08:01:39] Remember, these are tools that should make you better.
+[08:01:41] They are not drop-ins to replace you.
+[08:01:43] Do you know how much energy it takes to create a human?
+[08:01:49] And the beauty of the Hermes agent proposition is that you can run it however you want, wherever you want.
+[08:01:55] Modify it as you see fit.
+[08:01:57] If you're not having fun anymore, you can take your ball and you can go home.
+[08:02:01] The moat has changed.
+[08:02:03] The moat is no longer entrapping you.
+[08:02:05] The moat is in reputation.
+[08:02:08] And that's what Hermes Agent offers you.
+[08:02:11] And so, what do I want out of all of this?
+[08:02:15] Well, I want to build a standard.
+[08:02:18] Hermes Agent today is the most used and downloaded open source agent in the world.
+[08:02:23] It is orders of magnitude more downloaded than some of its closed competitors.
+[08:02:28] And I want everybody to be able to build on these open foundations.
+[08:02:33] Because as long as one of us, us, is willing to open source these tools and these agentic systems, water will continue to flow downhill.
+[08:02:42] And I want to be downhill so that I can work with you to provide support, safety, scalability to go along with the world's best open agent.
+[08:02:50] I've seen where this goes, and we've seen where the moats will lie: network effects, reliability, and reputation.
+[08:02:59] People are going to continue to solve hard problems with agentic systems.
+[08:03:04] People are going to solve lucrative problems with agentic systems.
+[08:03:08] Somebody is going to earn back the trillion-dollar investments that we've made.
+[08:03:12] Make sure that it's you.
+[08:03:14] Make sure that you are in control of your own destiny.
+[08:03:17] You can have your cake and eat it too.
+[08:03:19] You can have state-of-the-art features and reliability without sacrificing your autonomy.
+[08:03:23] Build on something you own.
+[08:03:25] Build with us.
+[08:03:26] Thank you.
+[08:03:28] And now, for a few closing thoughts and remarks, please welcome back to the stage our MC and the managing partner at 10X, Alex Lieberman.
+[08:03:38] Okay, let's close this thing out.
+[08:03:42] Look at the range we just had in the last 30 minutes.
+[08:03:45] We had Pim talking about world models going from pixels to actions.
+[08:03:49] We had Dylan talking about building agents on owned versus rented land.
+[08:03:54] And then we had Frank talking about how they think about leveraging applied AI as it relates to making decisions around investments.
+[08:04:00] First of all, let's just give a round of applause to all the speakers.
+[08:04:01] Tevernu made the event possible and all the sponsors today.
+[08:04:02] And then two final housekeeping items before we close out the day.
+[08:04:31] First, very important one, go speak to humans.
+[08:04:35] That is housekeeping item one.
+[08:04:37] There's been incredible content covered today.
+[08:04:40] Again, that is surface area for you to be able to connect with others and live in edge city by having intellectually stimulating conversations.
+[08:04:48] Don't let the opportunity pass you by.
+[08:04:50] And then second, this is just one day of an amazing event.
+[08:04:55] So tomorrow things kick off again right before 9 a.
+[08:04:58] m.
+[08:04:59] So make sure you get here bright and early.
+[08:05:01] Thank you all for coming.
+[08:05:02] Thanks for having me, and see you tomorrow.

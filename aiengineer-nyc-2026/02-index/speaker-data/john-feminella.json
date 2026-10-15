@@ -1,0 +1,18 @@
+{
+ "slug": "john-feminella",
+ "name": "John Feminella",
+ "role": "SVP Architecture",
+ "company": "Two Sigma",
+ "bio": "John Feminella is SVP Architecture at Two Sigma, where he is responsible for building AI tools and infrastructure for the company at scale. He comes to Two Sigma from Pivotal, ThoughtWorks, VMware, and EY, where he served as a technology executive. He focuses building platforms, large-scale agentic AI and transformation efforts, and improving the experiences of enterprise developers, modelers, and product managers. In past efforts, he helped to build the U.S. EPA's National Emissions Inventory, the world's largest and longest-lived database of climatology and emissions data; a United Nations system for tracking aid to refugees; a tax-filing platform that automates and simplifies filing tax returns; and FedNow, an instant payment infrastructure developed by the U.S. Federal Reserve that lets banks and credit unions process transactions in real time.\n\nJohn lives in Charlottesville, VA and likes meta-jokes, milkshakes, and referring to himself in the third person in speaker bios.",
+ "linkedin": "https://linkedin.com/in/johnxf",
+ "twitter": "",
+ "website": "https://bsky.app/profile/jxf.me",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FlnWs2X3MQFe9dO6hntME_headshot-1790283785326.png",
+ "sessions": [
+  {
+   "title": "Balancing Acceleration and Safety for AI Agents",
+   "time": "9:36am - 9:54am",
+   "id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1"
+  }
+ ]
+}

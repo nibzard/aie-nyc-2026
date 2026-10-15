@@ -1,0 +1,18 @@
+{
+ "slug": "george-cameron",
+ "name": "George Cameron",
+ "role": "Co-Founder",
+ "company": "Artificial Analysis",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "https://artificialanalysis.ai/",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FpUw5jAqZRe6kdAZLmuYQ_headshot-1790808616672.jpg",
+ "sessions": [
+  {
+   "title": "Artificial Analysis - Optimizing the Cost of Intelligence",
+   "time": "1:40pm - 1:58pm",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "sharish-gagar",
+ "name": "Sharish Gagar",
+ "role": "Staff Software Site Reliability Engineer",
+ "company": "Intuit Credit Karma",
+ "bio": "Technology leader with more than two decades of experience building secure, scalable infrastructure for AI and data platforms that improve developer productivity. At Intuit Credit Karma he is a Staff Software Site Reliability Engineer who manages the company's data infrastructure and developed enterprise AI infrastructure for the secure deployment of agents in air-gapped cloud environments, including an MCP gateway designed from the ground up to let developers and AI agents reach internal systems through dedicated MCP servers for each backend. Author of the book \"MCP for the Enterprise\" (2026), he also publishes journal articles and research, speaks at industry conferences, and has served on program committees, mentored researchers, and reviewed AI research papers. Note: credited in the conference transcript as \"Sharish Gagar\"; his actual name is Harish Gaggar.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://devops.com/wp-content/uploads/2026/09/Harish_Gaggar_Photo.png",
+ "identified_from_session": true,
+ "sessions": [
+  {
+   "order": 22
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://devops.com/author/harish-gaggar/",
+  "https://coder.com/blog/how-credit-karma-elevated-developer-productivity-with-coder",
+  "https://daily.dev/posts/paving-the-road-to-production-governed-enterprise-ai-agents-harish-gaggar-credit-karma-zbwmh2e4q",
+  "https://www.youtube.com/watch?v=tZycGA_Fbfo",
+  "https://www.amazon.in/MCP-Enterprise-Building-Gateways-User-ebook/dp/B0HGJX3GD6"
+ ]
+}

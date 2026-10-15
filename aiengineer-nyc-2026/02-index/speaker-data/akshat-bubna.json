@@ -1,0 +1,26 @@
+{
+ "slug": "akshat-bubna",
+ "name": "Akshat Bubna",
+ "role": "CTO",
+ "company": "Modal",
+ "bio": "Akshat Bubna is the co-founder and CTO of Modal, a code-first cloud platform for AI and data workloads. He started Modal with Erik Bernhardsson in 2021. Before Modal, he was an early engineer at Scale AI and worked at D.E. Shaw and at database and fintech startups. He studied computer science and mathematics at MIT. He is a competitive programmer and won gold and bronze medals at the International Olympiad in Informatics. His 2014 gold was the first for a competitor from India.",
+ "linkedin": "https://www.linkedin.com/in/akshat-bubna-188885103",
+ "twitter": "https://x.com/akshat_b",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FuFiDw5SOq80XArvu43wn_headshot-1791233257980.jpg",
+ "sessions": [
+  {
+   "title": "Great Agents Start with Great Infrastructure",
+   "time": "2:05pm - 2:23pm",
+   "id": "3803afe2-3761-4fee-a6c2-dae9c6a1066e"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/akshat-bubna-188885103",
+  "https://www.amplifypartners.com/blog-posts/modal",
+  "https://scale.com/blog/scale-engineering-team",
+  "https://x.com/akshat_b",
+  "https://www.latent.space/p/modal2026"
+ ]
+}

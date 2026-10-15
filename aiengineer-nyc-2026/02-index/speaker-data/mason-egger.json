@@ -1,0 +1,19 @@
+{
+ "slug": "mason-egger",
+ "name": "Mason Egger",
+ "role": "Senior Solutions Architect",
+ "company": "Temporal",
+ "bio": "Mason is currently a Senior Solutions Architect at Temporal Technologies, where he works with customers to architect and implement durable execution solutions. He specializes in Python, distributed systems, building community, and creating developer-focused educational content. He has held roles in the Developer Relations departments at Temporal, Gretel, and DigitalOcean. Prior to moving to Developer Relations, he held engineering roles at Forcepoint (Raytheon) and Vrbo (Expedia). He’s an avid programmer, speaker, educator, and writer/blogger. He is President of the PyTexas Foundation, Conference Chair of the PyTexas Conference, and a founding organizer of the PyTexas Meetup. He was made a PSF Fellow in October 2025.",
+ "linkedin": "https://www.linkedin.com/in/mason-egger/",
+ "twitter": "",
+ "website": "https://mason.dev",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2Fu6MaVSFVTjjyFYIl2BSA_headshot-1790873153982.jpg",
+ "sessions": [
+  {
+   "title": "Secure, durable agents with Keycard and Temporal",
+   "time": "3:30pm - 4:30pm",
+   "id": "b98dba99-c5ab-4ed2-aaf5-df02f502202f",
+   "note": "official record from another program slot"
+  }
+ ]
+}

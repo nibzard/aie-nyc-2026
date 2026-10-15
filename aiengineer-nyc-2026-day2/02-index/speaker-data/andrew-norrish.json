@@ -1,0 +1,18 @@
+{
+ "slug": "andrew-norrish",
+ "name": "Andrew Norrish",
+ "role": "Director of Field Engineering",
+ "company": "Sourcegraph",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F9h0bW4DHRdasRaykXBDe_headshot-1791300760693.jpg",
+ "sessions": [
+  {
+   "title": "AI's Trust Layer for Wall Street: SRE & Platform Engineering",
+   "time": "2:05pm - 2:23pm",
+   "room": "Sutton Room (NY Ballroom W)"
+  }
+ ]
+}

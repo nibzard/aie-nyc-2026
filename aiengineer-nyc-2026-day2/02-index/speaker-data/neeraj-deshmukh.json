@@ -1,0 +1,18 @@
+{
+ "slug": "neeraj-deshmukh",
+ "name": "Neeraj Deshmukh",
+ "role": "Field CTO",
+ "company": "Blitzy",
+ "bio": "Neeraj Deshmukh is Field CTO at Blitzy, where he works with enterprises applying autonomous development to massive, interconnected software systems -- where understanding the system is often harder than writing the code.\n\nHe previously led Blitzy’s research and engineering efforts in large-scale code understanding, agent orchestration, evaluation, and the knowledge layer that gives AI the context to understand millions of lines of software, reason across entire systems, and execute complex engineering work at scale; while keeping humans in the lead.\n\nNeeraj has spent his career turning frontier AI into production technology -- from speech recognition and deep learning to today’s agentic systems. His focus now is on what comes after the coding agent: fundamentally changing how software -- and ultimately technology itself -- gets built.",
+ "linkedin": "https://www.linkedin.com/in/neerajdeshmukh/",
+ "twitter": "",
+ "website": "https://blitzy.com",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F4UNaErSQTWC3liIS6Xev_headshot-1790944295738.png",
+ "sessions": [
+  {
+   "title": "The Map Beneath Modern Finance",
+   "time": "12:20pm - 12:38pm",
+   "room": "Sutton Room (NY Ballroom W)"
+  }
+ ]
+}

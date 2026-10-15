@@ -1,0 +1,25 @@
+{
+ "slug": "keon-shahab",
+ "name": "Keon Shahab",
+ "role": "Applied AI Architect",
+ "company": "Anthropic",
+ "bio": "Keon Shahab is an Applied AI Architect at Anthropic, where he works with financial services firms on adopting frontier AI and Claude. Before joining Anthropic, he spent about five years at Databricks as a Senior Solutions Architect, working with large financial services organizations on data lakehouse adoption and enterprise GenAI platforms. He is a co-author of the Databricks blog post \"FactSet: Implementing an Enterprise GenAI Platform with Databricks\" (June 2024) and has spoken at TDWI webcasts, FactSet Developer Days, and other data and AI events.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FHsLZvasPT264l37iikzv_headshot-1791821815149.jpg",
+ "sessions": [
+  {
+   "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+   "time": "9:18am - 9:36am",
+   "id": "68a1e78b-569e-4314-a56f-f20508123cbe"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://aie-nyc-2026-talks.swyxio.workers.dev/talks/anthropic-financial-services",
+  "https://tdwi.org/webcasts/2024/04/ta-all-simplifying-scalable-cloud-analytics-data-science-and-machine-learning-workflows",
+  "https://www.databricks.com/blog/author/keon-shahab",
+  "https://www.linkedin.com/posts/jd-davenport_pumped-to-be-at-the-ai-engineer-conference-activity-7515450034331586561-ozqA"
+ ]
+}

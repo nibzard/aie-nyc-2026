@@ -1,0 +1,493 @@
+{
+  "source": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/media/jiUC6IUMdvc-audio-hls.m4a",
+  "total_duration": 31876.281569,
+  "target_len": 600.0,
+  "chunks": [
+    {
+      "index": 0,
+      "name": "chunk_000",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_000.ogg",
+      "start": 0.0,
+      "end": 513.829,
+      "duration": 513.829,
+      "bytes": 2287154
+    },
+    {
+      "index": 1,
+      "name": "chunk_001",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_001.ogg",
+      "start": 513.829,
+      "end": 1199.85,
+      "duration": 686.021,
+      "bytes": 2964061
+    },
+    {
+      "index": 2,
+      "name": "chunk_002",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_002.ogg",
+      "start": 1199.85,
+      "end": 1798.655,
+      "duration": 598.805,
+      "bytes": 2372380
+    },
+    {
+      "index": 3,
+      "name": "chunk_003",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_003.ogg",
+      "start": 1798.655,
+      "end": 2399.755,
+      "duration": 601.1,
+      "bytes": 2375202
+    },
+    {
+      "index": 4,
+      "name": "chunk_004",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_004.ogg",
+      "start": 2399.755,
+      "end": 3000.555,
+      "duration": 600.8,
+      "bytes": 2386421
+    },
+    {
+      "index": 5,
+      "name": "chunk_005",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_005.ogg",
+      "start": 3000.555,
+      "end": 3600.185,
+      "duration": 599.63,
+      "bytes": 2266333
+    },
+    {
+      "index": 6,
+      "name": "chunk_006",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_006.ogg",
+      "start": 3600.185,
+      "end": 4199.035,
+      "duration": 598.85,
+      "bytes": 2290429
+    },
+    {
+      "index": 7,
+      "name": "chunk_007",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_007.ogg",
+      "start": 4199.035,
+      "end": 4800.535,
+      "duration": 601.5,
+      "bytes": 2338833
+    },
+    {
+      "index": 8,
+      "name": "chunk_008",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_008.ogg",
+      "start": 4800.535,
+      "end": 5398.865,
+      "duration": 598.33,
+      "bytes": 2339388
+    },
+    {
+      "index": 9,
+      "name": "chunk_009",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_009.ogg",
+      "start": 5398.865,
+      "end": 6000.945,
+      "duration": 602.08,
+      "bytes": 2349306
+    },
+    {
+      "index": 10,
+      "name": "chunk_010",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_010.ogg",
+      "start": 6000.945,
+      "end": 6655.995,
+      "duration": 655.05,
+      "bytes": 2534085
+    },
+    {
+      "index": 11,
+      "name": "chunk_011",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_011.ogg",
+      "start": 6655.995,
+      "end": 7197.47,
+      "duration": 541.475,
+      "bytes": 2114028
+    },
+    {
+      "index": 12,
+      "name": "chunk_012",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_012.ogg",
+      "start": 7197.47,
+      "end": 7799.835,
+      "duration": 602.365,
+      "bytes": 2347166
+    },
+    {
+      "index": 13,
+      "name": "chunk_013",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_013.ogg",
+      "start": 7799.835,
+      "end": 8390.49,
+      "duration": 590.655,
+      "bytes": 2288556
+    },
+    {
+      "index": 14,
+      "name": "chunk_014",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_014.ogg",
+      "start": 8390.49,
+      "end": 8997.48,
+      "duration": 606.99,
+      "bytes": 2327392
+    },
+    {
+      "index": 15,
+      "name": "chunk_015",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_015.ogg",
+      "start": 8997.48,
+      "end": 9600.275,
+      "duration": 602.795,
+      "bytes": 2314944
+    },
+    {
+      "index": 16,
+      "name": "chunk_016",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_016.ogg",
+      "start": 9600.275,
+      "end": 10199.05,
+      "duration": 598.775,
+      "bytes": 2258278
+    },
+    {
+      "index": 17,
+      "name": "chunk_017",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_017.ogg",
+      "start": 10199.05,
+      "end": 10798.35,
+      "duration": 599.3,
+      "bytes": 2404182
+    },
+    {
+      "index": 18,
+      "name": "chunk_018",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_018.ogg",
+      "start": 10798.35,
+      "end": 11385.0,
+      "duration": 586.65,
+      "bytes": 2311327
+    },
+    {
+      "index": 19,
+      "name": "chunk_019",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_019.ogg",
+      "start": 11385.0,
+      "end": 11997.45,
+      "duration": 612.45,
+      "bytes": 2408144
+    },
+    {
+      "index": 20,
+      "name": "chunk_020",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_020.ogg",
+      "start": 11997.45,
+      "end": 12602.0,
+      "duration": 604.55,
+      "bytes": 2367404
+    },
+    {
+      "index": 21,
+      "name": "chunk_021",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_021.ogg",
+      "start": 12602.0,
+      "end": 13200.1,
+      "duration": 598.1,
+      "bytes": 2309428
+    },
+    {
+      "index": 22,
+      "name": "chunk_022",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_022.ogg",
+      "start": 13200.1,
+      "end": 13798.05,
+      "duration": 597.95,
+      "bytes": 2328690
+    },
+    {
+      "index": 23,
+      "name": "chunk_023",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_023.ogg",
+      "start": 13798.05,
+      "end": 14399.2,
+      "duration": 601.15,
+      "bytes": 2279693
+    },
+    {
+      "index": 24,
+      "name": "chunk_024",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_024.ogg",
+      "start": 14399.2,
+      "end": 15000.7,
+      "duration": 601.5,
+      "bytes": 2337316
+    },
+    {
+      "index": 25,
+      "name": "chunk_025",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_025.ogg",
+      "start": 15000.7,
+      "end": 15600.2,
+      "duration": 599.5,
+      "bytes": 2330928
+    },
+    {
+      "index": 26,
+      "name": "chunk_026",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_026.ogg",
+      "start": 15600.2,
+      "end": 16199.85,
+      "duration": 599.65,
+      "bytes": 2249961
+    },
+    {
+      "index": 27,
+      "name": "chunk_027",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_027.ogg",
+      "start": 16199.85,
+      "end": 16799.75,
+      "duration": 599.9,
+      "bytes": 1900806
+    },
+    {
+      "index": 28,
+      "name": "chunk_028",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_028.ogg",
+      "start": 16799.75,
+      "end": 17401.1,
+      "duration": 601.35,
+      "bytes": 2031249
+    },
+    {
+      "index": 29,
+      "name": "chunk_029",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_029.ogg",
+      "start": 17401.1,
+      "end": 17999.2,
+      "duration": 598.1,
+      "bytes": 2057994
+    },
+    {
+      "index": 30,
+      "name": "chunk_030",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_030.ogg",
+      "start": 17999.2,
+      "end": 18600.45,
+      "duration": 601.25,
+      "bytes": 2354671
+    },
+    {
+      "index": 31,
+      "name": "chunk_031",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_031.ogg",
+      "start": 18600.45,
+      "end": 19204.0,
+      "duration": 603.55,
+      "bytes": 2408015
+    },
+    {
+      "index": 32,
+      "name": "chunk_032",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_032.ogg",
+      "start": 19204.0,
+      "end": 19798.75,
+      "duration": 594.75,
+      "bytes": 2361987
+    },
+    {
+      "index": 33,
+      "name": "chunk_033",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_033.ogg",
+      "start": 19798.75,
+      "end": 20400.4,
+      "duration": 601.65,
+      "bytes": 2426725
+    },
+    {
+      "index": 34,
+      "name": "chunk_034",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_034.ogg",
+      "start": 20400.4,
+      "end": 21001.3,
+      "duration": 600.9,
+      "bytes": 2380106
+    },
+    {
+      "index": 35,
+      "name": "chunk_035",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_035.ogg",
+      "start": 21001.3,
+      "end": 21598.2,
+      "duration": 596.9,
+      "bytes": 2348192
+    },
+    {
+      "index": 36,
+      "name": "chunk_036",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_036.ogg",
+      "start": 21598.2,
+      "end": 22204.4,
+      "duration": 606.2,
+      "bytes": 2328400
+    },
+    {
+      "index": 37,
+      "name": "chunk_037",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_037.ogg",
+      "start": 22204.4,
+      "end": 22802.3,
+      "duration": 597.9,
+      "bytes": 2383735
+    },
+    {
+      "index": 38,
+      "name": "chunk_038",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_038.ogg",
+      "start": 22802.3,
+      "end": 23411.85,
+      "duration": 609.55,
+      "bytes": 2425379
+    },
+    {
+      "index": 39,
+      "name": "chunk_039",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_039.ogg",
+      "start": 23411.85,
+      "end": 24001.05,
+      "duration": 589.2,
+      "bytes": 2330253
+    },
+    {
+      "index": 40,
+      "name": "chunk_040",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_040.ogg",
+      "start": 24001.05,
+      "end": 24599.3,
+      "duration": 598.25,
+      "bytes": 2396566
+    },
+    {
+      "index": 41,
+      "name": "chunk_041",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_041.ogg",
+      "start": 24599.3,
+      "end": 25157.2,
+      "duration": 557.9,
+      "bytes": 2233383
+    },
+    {
+      "index": 42,
+      "name": "chunk_042",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_042.ogg",
+      "start": 25157.2,
+      "end": 25797.95,
+      "duration": 640.75,
+      "bytes": 2512823
+    },
+    {
+      "index": 43,
+      "name": "chunk_043",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_043.ogg",
+      "start": 25797.95,
+      "end": 26399.0,
+      "duration": 601.05,
+      "bytes": 2384258
+    },
+    {
+      "index": 44,
+      "name": "chunk_044",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_044.ogg",
+      "start": 26399.0,
+      "end": 26991.95,
+      "duration": 592.95,
+      "bytes": 2312444
+    },
+    {
+      "index": 45,
+      "name": "chunk_045",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_045.ogg",
+      "start": 26991.95,
+      "end": 27599.65,
+      "duration": 607.7,
+      "bytes": 2302276
+    },
+    {
+      "index": 46,
+      "name": "chunk_046",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_046.ogg",
+      "start": 27599.65,
+      "end": 28209.0,
+      "duration": 609.35,
+      "bytes": 2356297
+    },
+    {
+      "index": 47,
+      "name": "chunk_047",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_047.ogg",
+      "start": 28209.0,
+      "end": 28799.55,
+      "duration": 590.55,
+      "bytes": 2372585
+    },
+    {
+      "index": 48,
+      "name": "chunk_048",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_048.ogg",
+      "start": 28799.55,
+      "end": 29399.5,
+      "duration": 599.95,
+      "bytes": 2390290
+    },
+    {
+      "index": 49,
+      "name": "chunk_049",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_049.ogg",
+      "start": 29399.5,
+      "end": 30000.15,
+      "duration": 600.65,
+      "bytes": 2334868
+    },
+    {
+      "index": 50,
+      "name": "chunk_050",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_050.ogg",
+      "start": 30000.15,
+      "end": 30602.1,
+      "duration": 601.95,
+      "bytes": 2363273
+    },
+    {
+      "index": 51,
+      "name": "chunk_051",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_051.ogg",
+      "start": 30602.1,
+      "end": 31201.75,
+      "duration": 599.65,
+      "bytes": 2384916
+    },
+    {
+      "index": 52,
+      "name": "chunk_052",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_052.ogg",
+      "start": 31201.75,
+      "end": 31798.6,
+      "duration": 596.85,
+      "bytes": 2349637
+    },
+    {
+      "index": 53,
+      "name": "chunk_053",
+      "file": "/home/agent/ainy26/aiengineer-nyc-2026-day2/00-original/chunks/chunk_053.ogg",
+      "start": 31798.6,
+      "end": 31876.282,
+      "duration": 77.682,
+      "bytes": 187608
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+# transcript slice 14
+window: t=25480..27300 (07:04:40..07:35:00 video time; 3:52:32 PM..4:22:52 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[07:10:05] For Fortune 500 businesses.
+[07:10:08] And we are most of the way through the first session today, and hopefully it's been filled with incredible conversation, which I'm going to share a little bit about some of the conversations I've had offstage in a minute.
+[07:10:22] But hopefully the mix of the programming, the conversation you've had amongst everyone has been really fruitful today.
+[07:10:29] Now, before we hop into the final block of the day, let's just take a moment again to give a round of applause to our partners who make this entire event possible.
+[07:10:39] So let's start with our presenting sponsor, Arize.
+[07:10:43] Let's give a shout out to Arize.
+[07:10:46] Yeah, Arize.
+[07:10:47] Next up, we have our platinum sponsors, Oracle, Sonar, WorkOS, and Exa.
+[07:10:53] Let's give a shout out for them.
+[07:10:55] And then two more.
+[07:10:56] We have gold sponsors.
+[07:10:58] I love them all.
+[07:10:58] They're all my favorite children.
+[07:11:00] Can't read them all off right now, but thank you so much.
+[07:11:04] Our silver sponsors, and to all of our supporting partners who make this possible.
+[07:11:10] Thank everyone.
+[07:11:11] Yeah, I don't know if that was the first person who said they have the most energy, but that person has a lot of energy.
+[07:11:17] So before we hop into the next block, one thing that I just wanted to share, and I'm sure a lot of you are already feeling this already, is not only is the energy palpable across the room, in between all of the sessions, but what you realize when you come to AI Engineer is that the content is incredible.
+[07:11:38] The speakers that are curated are incredible.
+[07:11:41] The depth by which they talk about the work they're doing is incredible.
+[07:11:45] But this is also just surface area that acts as a starting point for conversation amongst everyone in the room.
+[07:11:52] And so for me, not only has it been incredible to stand in the back of the room at various points in the day and just listen to these incredible speakers who are truly living in Edge City, but then to use all of these conversations, all of these talks as surface area to have conversations with folks.
+[07:12:10] So a few conversations that come to mind that I've had throughout the day because of the content.
+[07:12:16] One was a conversation with Swix, one of the people behind this incredible event.
+[07:12:22] We were talking about Just the diffusion gap that exists in enterprise AI right now.
+[07:12:28] And just some fun stats for you all.
+[07:12:30] We talk to hundreds of big enterprises at 10x across financial services, healthcare, industrials, et cetera.
+[07:12:38] And the way I think about diffusion of AI across these organizations is almost in milestones of a race.
+[07:12:45] So the first big milestone at an enterprise is just adopting a general purpose LLM.
+[07:12:52] Out of curiosity, of the, let's call it 100 firms we talked to, what percentage of those firms do you think have adopted and rolled out an LLM to all of their employees?
+[07:13:01] Someone scream out a number.
+[07:13:04] Nine percent, I think I heard.
+[07:13:07] Seventeen percent.
+[07:13:08] So specific.
+[07:13:10] Ninety percent.
+[07:13:11] So 90% of the enterprises we work with have rolled out a general purpose LLM.
+[07:13:17] Under that is people actually getting trained in how to use the technology, how to actually use these surfaces in their work.
+[07:13:23] That's like 60%.
+[07:13:25] Next up is coding agents, agents that are actually used within engineering and product workflows.
+[07:13:30] That's around 50% of all the enterprises we've been in.
+[07:13:33] And then the final one, where we are truly still day one, is agents actually working in non-engineering workflows in an organization.
+[07:13:43] That is around 5% right now.
+[07:13:45] So going back to what I said earlier, this community really is edge city.
+[07:13:50] The topics that are being talked about, we are going to continue to see those play out over the next 12, 24, 36 months.
+[07:13:58] I've had a variety of conversations like this throughout the day: diffusion gap, open source versus fine-tuned models, how hard it is to hire great AI engineers at scale.
+[07:14:09] And so as we go about the rest of today, but also as you think about the conference in general, use the content as a starting point to have interesting conversations at the edge.
+[07:14:20] With that, I would love to introduce you to our next talk, which is with Frank Long, the head of AI at Kotu.
+[07:14:28] He's going to be talking about a hedge fund as a function.
+[07:14:30] Let's welcome Frank.
+[07:14:48] Exciting to be here.
+[07:14:49] My name is Frank.
+[07:14:50] I work at Coatue, which is a technology investment firm across public and private markets.
+[07:14:54] So in our business, what you really need to do is be able to take high conviction bets on big themes and watch those play out.
+[07:15:03] I think, honestly, a career is the same way.
+[07:15:06] And last year when I joined Coatue, the bet that I wanted to make was, I think that agents will have an even bigger impact in investing than they did at coding.
+[07:15:15] I know that's a big statement.
+[07:15:16] We're all here because of the transformative impact that AI has had in coding, but I really believe it strongly.
+[07:15:23] And today I want to talk a little bit about the framework that we use to actually realize that impact.
+[07:15:29] So at a high level, you can think about a hedge fund as a function that takes in two parameters, context external and context internal, and spits out one tuple: selection, size, timing.
+[07:15:43] What stock, how much, when, right?
+[07:15:48] And I think this is a good framework to actually ground our work, which is we're trying to solve this compression problem of how do you take all the information in the world and spit out this one simple tuple.
+[07:16:01] And the product that we provide is essentially a time series of this tuple that constructs a portfolio.
+[07:16:08] So let's start from the top, which is the inputs.
+[07:16:11] Very simple philosophy.
+[07:16:13] We use our screens, we look at stuff, we do work.
+[07:16:17] Every single thing that a human can see in pixels on the screen, an agent in your building should be able to see via API.
+[07:16:23] The analogy I use is imagine you brought the smartest people ever, the greatest investors alive, and you brought them into your company, but you gave them a computer without logins to 75% of your services.
+[07:16:36] It's almost immaterial how smart this system is if it doesn't have the tools to actually action that.
+[07:16:42] So the two parts: external context, right?
+[07:16:45] No surprises here.
+[07:16:46] Think the news, prices, filings.
+[07:16:49] All of that should be easily accessible and not via dragging and dropping, copy and pasting, like directly via API.
+[07:17:00] Internal context is just as important, right?
+[07:17:04] So this is your own firm situation.
+[07:17:06] So that might be our current positions, potential liquidity and risk requirements we have around certain names, and past case studies or, you know, history with a certain sector or stock or management team.
+[07:17:20] That stuff's all super important.
+[07:17:22] So this is the foundation, and I think, no credit to me, Kotu has been an amazing leader on this for over a decade.
+[07:17:29] It's both technological and cultural.
+[07:17:31] We have an amazing data science team, amazing, amazing processes, amazing, amazing systems that bring all this in.
+[07:17:37] And just as importantly, we have a culture that is super, super rigorous and built from the ground up to capture all this insight.
+[07:17:45] For decades, we filed every single note about every single trade, about every single decision we made or didn't make, about what went well and what didn't go well, and that's poised us to expose us to AI.
+[07:17:57] So if you think about it, I probably can't just take all of those things, jam them into a context window, and get my magic three numbers and go home, right?
+[07:18:08] It can't be that easy.
+[07:18:09] You probably have to break down this function a bit further, right?
+[07:18:14] So maybe the first step is I take in that external and internal context and I gather it, right?
+[07:18:21] I want to gather it.
+[07:18:22] I want to filter out what's relevant and not relevant.
+[07:18:25] Okay, well, I pulled some news articles about the NBA.
+[07:18:28] That probably isn't material to stocks, but oh, well, this is actually related to some local permitting that might actually impact data centers, like.
+[07:18:37] There's a lot of nuance in this gather step.
+[07:18:41] Then you'll see probably the next step is I need to analyze that information and form a view, right?
+[07:18:46] I actually need to think about what that means for the markets, public and private.
+[07:18:53] And then I need to take that view and turn it into a decision.
+[07:18:57] A decision object has these three parameters, right?
+[07:19:01] These three sort of subpieces.
+[07:19:03] So you can see every single step has an input and an output, and the input for the subsequent step is the output that the previous function generated.
+[07:19:14] I think as an engineer, this is a way for me to conceptualize the problem in a way that makes a lot of sense.
+[07:19:21] But even this, it really can't be as simple as writing three functions, right?
+[07:19:27] So let's just, to really appreciate the scope and understand the full complexity of the problem, let's look into the first step, a tiny subpiece of a tiny subpiece of just gathering information, and let's do a case study on interpreting the news, right?
+[07:19:45] So it's probably no secret to you guys that, you know, news from Asia and Korean media outlets has been super important this year because semis, AI have been a huge, huge theme in the market.
+[07:19:59] Huge theme.
+[07:19:59] And I think this is an area where AI is poised to have a lot of impact, is reading Korean language news better than our completely non-Korean-speaking staff, right?
+[07:19:59] Huge theme.
+[07:20:13] I think I have a good thesis that this might be a good use case.
+[07:20:15] So you can imagine the first step is I have articles.
+[07:20:21] I need to collect the articles, right?
+[07:20:23] So this could be an MCP.
+[07:20:25] This could be a CLI.
+[07:20:27] License the data feeds, clean the data feeds.
+[07:20:29] There's actually a lot of ways to do this, and a lot of dimensions of freedom for how you can even just write this simple piece.
+[07:20:36] How do I chunk it when I pass it to the LLM?
+[07:20:39] Do I want to pull the images as images?
+[07:20:42] Do I want to pull the images and then turn the images into text?
+[07:20:46] There's actually a lot of knobs here, and I almost think about those knobs as like hyperparameters in a traditional machine learning system, right?
+[07:20:54] I think about each of these knobs as something for me to tune and optimize against.
+[07:20:59] Obviously, filtration.
+[07:21:02] We talked about it.
+[07:21:03] There are probably Korean NBA fans, right?
+[07:21:07] There's probably a bunch of stuff that's not necessarily material to the names and themes and stocks in our portfolio that really, really matter, right?
+[07:21:17] So I want to make sure that I filter those out.
+[07:21:22] There's this like translate slash extract slash should I summarize?
+[07:21:26] Should I extract this into some sort of structured form?
+[07:21:30] Again, so, so many ways to do this, so many ways to experiment how to expose information to the model.
+[07:21:35] And one of the reasons this is hard is it keeps changing.
+[07:21:40] And obviously checking.
+[07:21:41] Checking like our own internal notes, our own internal views, potential conversations we've had, meeting recordings against these things.
+[07:21:49] We actually need to cross-reference those things.
+[07:21:52] Actually, the idea of pulling information from disparate sources and cross-referencing them, that's super powerful.
+[07:21:59] So you'll see on the right here, I have code, LLM, LLM, code, person.
+[07:22:04] There's many, many ways to run these functions.
+[07:22:06] I think about, oh yeah, and finally update, potentially we update our views.
+[07:22:14] So there's many ways to run these functions.
+[07:22:16] I think of each line as having a runner, and the most obvious one is code.
+[07:22:23] Code is very good.
+[07:22:24] It's fast, it's cheap, it's reliable.
+[07:22:27] So for something like, if the price to earnings ratio is less than 15, I should just use deterministic code for that.
+[07:22:36] Runner number two is statistics, classical machine learning, and you can imagine fitting a line to a regression for a specific pattern.
+[07:22:46] This is very powerful because you can model much more complex relationships than just pure deterministic code, right?
+[07:22:53] And for even more complex relationships, the reason we're all here, LLMs, AI agents, that's another type of runner, right?
+[07:23:00] So for something like summarization, that's the state of the art, right?
+[07:23:05] It's probably totally impossible to build a bunch of if statements that can summarize better than a modern LLM.
+[07:23:13] And of course, people.
+[07:23:15] People are important runners in the system, right?
+[07:23:18] So imagine a function meeting the management team of a company.
+[07:23:22] I probably don't want to send, I mean, I like the new Unitary robots, but I probably don't want to send an LLM or an AI agent in to do that.
+[07:23:29] I probably don't want to send an if statement into that meeting.
+[07:23:31] I think there's many cases where because of judgment and the ability to navigate the real world and all of these things, a person is the best runner for a given piece of the function.
+[07:23:43] And I think this is like a super, super important point.
+[07:23:46] There is no glory in automating things for the sake of automating things.
+[07:23:50] The goal is not to take as many things and make them LLM as possible for us.
+[07:23:54] The goal is, for any given piece of this function, what can I do to maximize absolute quality?
+[07:24:04] And if you actually think about the function, it probably looks something like this.
+[07:24:08] It's probably not just a linear statement of a bunch of different things.
+[07:24:12] There's probably all kinds of branching logic and all kinds of ways to actually fork this.
+[07:24:16] So maybe I want to collect the information and then translate it.
+[07:24:20] And my main goal is to extract quotes and check those against sources to make sure that these are actually things that people said, and that's my approach.
+[07:24:27] But that might be totally wrong.
+[07:24:29] Maybe actually what I want to do is I want to dedupe, and then I want to filter, and then I want to pull external figures.
+[07:24:34] Or maybe I want to do something totally different.
+[07:24:37] I actually want to—I'm passing in a note first, and I actually just want to find other confirmatory data points.
+[07:24:42] Or maybe I'm training a red team.
+[07:24:44] There's a million different ways to configure this.
+[07:24:46] So yet again, more hyperparameters within the control flow, right?
+[07:24:53] So, so many ways to think about just this very simple problem: appending, filtering, summarizing, aggregating the news for LLMs.
+[07:25:02] And each of these boxes probably has an optimal runner, right?
+[07:25:10] So the optimal runner might be deterministic code for collection, right?
+[07:25:15] I'm pulling last 24 hours for a given source.
+[07:25:20] That's deterministic code.
+[07:25:22] Filtration, decision models maybe.
+[07:25:25] LLMs.
+[07:25:26] Statistical methods.
+[07:25:28] A combination, right?
+[07:25:30] So this probably understates the complexity.
+[07:25:32] The reality is most things are multi-runner.
+[07:25:35] Most things have deterministic code plus LLM plus statistical method, or a human with LLM in conjunction.
+[07:25:42] The reality is it's probably combinatorics between my four buckets, and there's even more buckets than that, because within the LLM category, I can tune the model.
+[07:25:53] I can choose big model, small model, medium model.
+[07:25:56] I can tune thinking effort: X high, high, medium.
+[07:25:59] I can tune harness.
+[07:26:01] I can choose the harness.
+[07:26:02] I can choose which skills load with the harness.
+[07:26:03] I can choose which hooks load with the skills.
+[07:26:06] So yet again, more hyperparameters within my search space.
+[07:26:09] I have an absolutely enormous amount of hyperparameters within my search space.
+[07:26:13] And this is just for this one tiny problem, right, of just filtering the news.
+[07:26:17] So the way to think about breaking down these problems is, what can I actually compartmentalize in a way that we can understand and evaluate?
+[07:26:27] Because that's what I'm hill climbing against, right?
+[07:26:29] Otherwise, I'm just tuning these things.
+[07:26:30] I'm, okay, well, that should actually be a machine learning system instead of an LLM.
+[07:26:35] That should be a little model that we train.
+[07:26:36] Oh no, that actually shouldn't be a model at all.
+[07:26:38] That should be an if statement.
+[07:26:40] Or, oh man, LLMs are really, really bad at translating that to portfolio impact.
+[07:26:44] It should really be a human on that step, but they're using a deterministic system to help them search and pull the information.
+[07:26:51] It could be all different things, right?
+[07:26:53] And if you don't have a North Star to hill climb against, you're just kind of, you're just fidgeting around.
+[07:27:00] And I think I cannot convey enough that this is just one tiny thing we do.
+[07:27:05] Imagine every single data source that we pull in, there's probably more than just three transformations to get them to the intermediate output.
+[07:27:12] So the actual graph of Co2 and funds like Co2, it actually probably looks—oh, not like this.
+[07:27:20] This is my screensaver.
+[07:27:23] The actual graph probably looks something like this, right?
+[07:27:27] It's probably massively complex.
+[07:27:28] In each of those nodes, we just talked about at least 10 hyperparameters with at least 20 different valid values for them.
+[07:27:37] So the search space is basically infinite.
+[07:27:40] And figuring out how to actually lay this out in a way that you can comprehend, both from a technical perspective, but also absorb culturally, organizationally, that is the great challenge of applying AI and investing.
+[07:27:54] And beyond investing.
+[07:27:55] What we're really talking about is creating a state machine that can take information from the world and understand it well enough to make coherent decisions.
+[07:28:06] There's use cases for this far and above wider than just investment firms, in policy, in nonprofits, in drug discovery, in corporate strategy.
+[07:28:17] I think one of the most exciting things for me about being in forums like this is talking to other people in different spaces with different problems that kind of congeal on the same problem space.
+[07:28:28] I'd love to keep talking about this.
+[07:28:29] I'll hang out in the hallway afterwards.
+[07:28:31] Here are my socials, and thank you everyone for your time.
+[07:28:53] And now, let's take a look at frontier models built to act in space and time.
+[07:28:59] Please welcome co-founder and CEO of General Intuition, Pim de Wit.
+[07:29:20] Hello.
+[07:29:23] I want you to zoom out for a second and think about if somebody were to tell you today that we would take all the information on the internet, and then we would train a model on it, and we would use that in order to solve scientific problems that were not on the internet.
+[07:29:39] I think a lot of people would tell you that that's crazy.
+[07:29:43] And what we're doing has a lot of parallels to that story.
+[07:29:49] And so if you think about how intelligence works, imagine for a second that you're in the movie Frozen and you're Olaf, the snowman.
+[07:30:00] If Olaf was an LLM, and it—
+[07:30:03] There's a scene which is one of my favorites, which is where he rolls down the mountain, and there's a little stone that pops up, and Olaf spreads out, temporarily becomes a disassembled snowman, and then becomes an assembled snowman.
+[07:30:17] And Olaf knows how to do that because Olaf can observe as he is acting.
+[07:30:23] Olaf can, unlike LLMs, which autoregressively predict tokens, constantly, part of that behavior is that it's constantly observing as it is acting.
+[07:30:34] And so this is the big difference between, you know, when you see LLMs try to solve robotics problems or when you look at native architectures like what we're working on.
+[07:30:45] It's very, very easy to think of LLMs and the demos you see on Twitter as the thing that will solve everything.
+[07:30:50] There's fundamental limitations that we see where purpose-built models are much better fit.
+[07:30:55] Now, today I'm going to talk a little bit about what the other side of that coin looks like.
+[07:31:01] And so for us, it all started with Metal.
+[07:31:05] We built the largest video game recorder in the world, and we think of that as the internet.
+[07:31:11] So people use Metal to record themselves playing tens of thousands of different video games.
+[07:31:17] And if you think about it, as a human, we can teleoperate a robot with the exact same brain that we played that video game.
+[07:31:27] And in fact, in many cases, we also can use the same controller.
+[07:31:35] So what this means is that the action space of video games, often because of game controllers, and the action space of teleoperations, or the real world, in many cases is the same.
+[07:31:45] And so every single robot below certain degrees of freedom ships with the game controller.
+[07:31:50] A majority of the supply chains already work this way.
+[07:31:52] And so we thought, what if you just take all of the action data that we get through the video recorder, which associates the inputs and the actions with the actual frames.
+[07:32:03] We label the actions so we understand semantic meaning behind every action, and we use it to give it to a vision-based model.
+[07:32:11] And so what you see here on the left is just an intuitive way of how the model works.
+[07:32:16] So you give the model a set of keys to choose from, essentially a computer use model.
+[07:32:21] It gives frames as the input, so you can give it a text prompt as well.
+[07:32:25] And you send it through API, and you say somebody waves at you, wave back.
+[07:32:30] In the input space, the model understands that you have a greet action available.
+[07:32:33] It will output the action associated with that.
+[07:32:37] One way of intuitively understanding how this works.
+[07:32:40] So I've obviously simplified here because it's predicting the next token, not the next word, but bear with me here.
+[07:32:48] LLMs took large-scale internet data, then trained it to predict the next text token, and now use it for writing software.
+[07:32:56] And these are all workloads that are really, really well fit for futures that are not simultaneously unfolding as you are predicting, right?
+[07:33:04] Code is turn-based.
+[07:33:05] You can say something, the model will do something.
+[07:33:08] You can say something again, the model will do something again.
+[07:33:11] And you can use it for lots of valuable work, but at the end of the day, because it's turn-based, it's very, very difficult for it to generalize to environments, especially that include space and time.
+[07:33:24] And so our models, the way that they work is they're continuously receiving frames, or receiving batches of essentially information from the camera of the robot, or it could be a screen, and it predicts everything as if it were just a video game.
+[07:33:43] So you can think of the way that Anthropic focused on just nailing coding.
+[07:33:48] So, you know, they were never frontier in just base text generation.
+[07:33:52] They always focused on being the best at generating code.
+[07:33:55] And then what the bet that they made is that more people would start bringing more problems into coding space.
+[07:34:00] If you think of general intuition, our bet is that you can, as humans, we are generally Pixel-to-action converters plus senses, which in many cases you can convert into pixels as well, and you can output actions at the same time.
+[07:34:14] Those actions are, in this case, either a keyboard and mouse or a game controller.
+[07:34:17] So the output tokens of the model are essentially equivalent to that of an enhanced computer use model with more actions on the output space to internalize it.
+[07:34:26] So you send frames and you get actions.
+[07:34:29] This works, again, because every single thing that you see here can control all of these different embodiments, right?
+[07:34:36] So as humans, we do not know how to predict motor torque.
+[07:34:46] We do not know what value to send to a machine.
+[07:34:50] There is this beautiful device that has been made for many years, which actually does that work for us, so we can control them.
+[07:34:57] Most robotics companies today are trying to solve the problem at the end-to-end level, trying to predict exact poses or exact values in the motor, instead of just looking and picking up the thing that every robotics company has built to generalize our very limited abilities to have physics understanding and predict exact values and solve for it.
+[07:35:25] And so our approach is, let's just use that.
+[07:35:29] And so Meta, at the moment, sees about a billion videos uploaded per year.
+[07:35:37] This year we're on track for three billion, which lead to over a trillion and a half action tokens per month.
+[07:35:45] So just for comparison, think about the bet.
+[07:35:47] The total amount of data that Frontier Labs use today to train robotics models, we collect in, at the moment, half a day.
+[07:35:55] And so, the type of bet, and again, think of the fact that humans can use the exact same controllers and their eyes to play video games that they can't tell operate robots.

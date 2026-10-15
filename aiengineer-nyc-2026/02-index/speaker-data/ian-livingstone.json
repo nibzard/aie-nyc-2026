@@ -1,0 +1,18 @@
+{
+ "slug": "ian-livingstone",
+ "name": "Ian Livingstone",
+ "role": "CEO and Co-Founder",
+ "company": "Keycard",
+ "bio": "Ian Livingstone is the Co-Founder & CEO of Keycard, the identity and access platform for AI agents. A three-time founder, prolific angel investor, and massive infrastructure nerd, Ian has spent 15+ years building developer tools and security infrastructure and is now focused on identity, authorization, and access control for autonomous software. Previously, he shaped platform strategy at Snyk and held senior engineering roles at Salesforce. He co-hosts The Infra Pod, covering the technical and economic shifts reshaping how software gets built and run.",
+ "linkedin": "https://www.linkedin.com/in/irlivingstone/",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FzPF1Rb8ySgO9wQKxlbtY_headshot-1789701775412.png",
+ "sessions": [
+  {
+   "title": "Intent Based Auth",
+   "time": "11:30am - 12:15pm",
+   "id": "e65f74f9-2174-406d-bd32-2d7073eb677d"
+  }
+ ]
+}

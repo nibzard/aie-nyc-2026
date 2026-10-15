@@ -1,0 +1,36 @@
+{
+ "slug": "alex-lieberman",
+ "name": "Alex Lieberman",
+ "role": "Managing Partner",
+ "company": "Tenex",
+ "bio": "Serial entrepreneur best known as co-founder of Morning Brew, the business media company he started as a college newsletter and grew to 2M+ daily readers before its ~$75M sale to Business Insider in 2020. He is now co-founder and Managing Partner of Tenex, an AI engineering and transformation firm (co-founded with Arman Hezarkhani) that helps companies go from AI-absent to AI-native. He also founded Storyarb and Distro, hosts the Founder's Journal podcast, and co-hosts The Crazy Ones. Recognized on Forbes 30 Under 30 and AdAge 40 Under 40; based in New York City. At AI Engineer NYC 2026 he served as MC, delivering the welcome, keynote intros, and closing remarks.",
+ "linkedin": "https://www.linkedin.com/in/alex-lieberman",
+ "twitter": "https://x.com/businessbarista",
+ "website": "https://alexlieberman.com",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FJXUASg3YS0WtVnHzy2Vq_headshot-1791395273162.jpg",
+ "sessions": [
+  {
+   "title": "Welcome Remarks",
+   "time": "8:56am - 9:00am",
+   "id": "56c18e0d-b727-4f1a-a04e-ee769e5e45e9"
+  },
+  {
+   "title": "Welcome Back - Featured Keynotes",
+   "time": "4:25pm - 4:30pm",
+   "id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9"
+  },
+  {
+   "title": "Closing Remarks",
+   "time": "5:25pm - 5:30pm",
+   "id": "dd25c0a8-d64f-4d6e-a597-7dd576eabc16"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://alexlieberman.com",
+  "https://www.tenex.co/about-us",
+  "https://www.linkedin.com/in/alex-lieberman",
+  "https://x.com/businessbarista/status/2109975308400996827",
+  "https://mixergy.com/interviews/why-is-morning-brews-founder-selling-ai-transformation"
+ ]
+}

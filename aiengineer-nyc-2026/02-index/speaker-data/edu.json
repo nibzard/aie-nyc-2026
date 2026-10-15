@@ -1,0 +1,27 @@
+{
+ "slug": "edu",
+ "name": "Edu",
+ "full_name": "Eduardo Simón Picón",
+ "role": "Senior Software Engineer, AI Platform Experience Team",
+ "company": "Flywire",
+ "bio": "Eduardo Simón Picón (who goes by Edu) is a senior software engineer at Flywire in Valencia, Spain, on the company's AI Platform Experience team, the group he represented (with co-presenter Javi, Javier Casal) at AI Engineer NYC 2026. He has about seven years of full-stack experience: React and TypeScript frontends, Ruby and TypeScript backends, AWS cloud infrastructure, and DevSecOps. At the conference he presented Flywire's internal AI platform: Orbit, a YAML-defined workflow platform that pairs deterministic code with isolated LLM steps, running on Victoria, Flywire's internal platform as a service built on GitLab and AWS. The team's stance is 'workflows, not autopilot': agentic AI as structured workflows (over 11,000 executions at a 99% success rate in a recent 30-day window, including 9,700+ automated code-review runs) rather than autonomous agents, because PCI/PII/PHI data must stay inside Flywire's control environment. Before the AI platform work, his LinkedIn notes he built foundational components of Flywire's public API that power partner payment processing. He studied at Universidad Jaume I and describes his current focus as exploring agentic AI.",
+ "linkedin": "https://www.linkedin.com/in/eduardo-simon",
+ "twitter": "",
+ "website": "https://edusimon.dev",
+ "github": "https://github.com/eduardosimon",
+ "location": "Valencia, Spain",
+ "photo": "",
+ "enriched": true,
+ "sources": [
+  "https://finance.biggo.com/podcast/f724bd7100a67219",
+  "https://es.linkedin.com/in/eduardo-simon",
+  "https://github.com/eduardosimon",
+  "https://edusimon.dev/"
+ ],
+ "sessions": [
+  {
+   "title": "Extra lunch talk: Flywire's internal AI platform — structured workflow automation (Orbit on the Victoria PaaS)",
+   "order": 30
+  }
+ ]
+}

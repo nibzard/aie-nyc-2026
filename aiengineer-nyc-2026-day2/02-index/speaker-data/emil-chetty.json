@@ -1,0 +1,18 @@
+{
+ "slug": "emil-chetty",
+ "name": "Emil Chetty",
+ "role": "Group Head of Data & AI",
+ "company": "Wise",
+ "bio": "Emil Chetty is Group Head of Data & AI at Wise, where he leads product strategy for platforms supporting generative AI, machine learning, analytics and foundational data infrastructure. He has more than ten years of experience building production data and AI systems across financial services, public transport and open knowledge. His work includes streaming data, machine learning infrastructure, LLM gateways, agent runtimes, evaluation and governance. At Wise, Emil works with engineering, security, privacy, risk and compliance teams to make AI systems easier to deploy safely and operate reliably.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "https://www.wise.com",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FLLPYkj4FRZqW50C4r6jf_headshot-1790654264347.jpg",
+ "sessions": [
+  {
+   "title": "Stop turning your Humans Into APIs for your Agents",
+   "time": "2:05pm - 2:23pm",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ]
+}

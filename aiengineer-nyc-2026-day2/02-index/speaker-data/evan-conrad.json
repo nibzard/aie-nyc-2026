@@ -1,0 +1,18 @@
+{
+ "slug": "evan-conrad",
+ "name": "Evan Conrad",
+ "role": "CEO",
+ "company": "San Francisco Compute Company",
+ "bio": "Evan Conrad is the co-founder and CEO of San Francisco Compute Company. Prior to founding SFC in 2023, Evan co-founded Room Service, a distributed systems startup, and served as an engineer at Segment. He was a key contributor to OpenAI's ChatGPT enterprise, their most commercially successful product. Additionally, Evan ran admissions for Nat Friedman and Daniel Gross’ Venture fund, “AI Grant,” for its first batch, where he supported early-stage AI research. Evan holds a degree from Gonzaga University and has a background in building and advising startups.",
+ "linkedin": "https://www.linkedin.com/in/evan-conrad/",
+ "twitter": "https://x.com/evanjconrad",
+ "website": "https://sfcompute.com/",
+ "photo": "https://content-cdn.sessionboard.com/n3PZvCk1SauZdSfk4KwD_headshot-1789391595720.jpg",
+ "sessions": [
+  {
+   "title": "How Compute Markets Work",
+   "time": "11:30am - 11:48am",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ]
+}

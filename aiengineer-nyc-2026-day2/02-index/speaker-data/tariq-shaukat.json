@@ -1,0 +1,24 @@
+{
+ "slug": "tariq-shaukat",
+ "name": "Tariq Shaukat",
+ "role": "CEO",
+ "company": "Sonar",
+ "bio": "Tariq Shaukat is the CEO of Sonar, the code quality and security company behind SonarQube. He joined Sonar in September 2023 as co-CEO and member of the Board of Directors alongside founder Olivier Gaudin, and later became sole CEO. Before Sonar, he was President of Bumble Inc. from 2020 to 2023, where he helped lead the company's 2021 NASDAQ listing and scale revenue past $900M. From 2016 to 2020 he was President of Google Cloud, helping grow the business to more than $10B in annual recurring revenue. Earlier in his career he held senior roles at Caesars Entertainment and McKinsey & Company. He serves as an independent director on the boards of Gap Inc. and Public Storage. He holds a B.S. in Mechanical Engineering and an M.S. in Technology and Policy from MIT, and an M.S. in Mechanical Engineering from Stanford University.",
+ "linkedin": "https://www.linkedin.com/in/tariq-shaukat",
+ "twitter": "https://x.com/tariqshaukat",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/event-files%2Flrx8Hn3SvW9IwspxohPY_Tariq_Shaukat_headshot.png",
+ "sessions": [
+  {
+   "title": "The Machine that Changed the World, vAI",
+   "time": "9:18am - 9:36am",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.sonarsource.com/company/press-releases/tariq-shaukat-joins-sonar-as-co-ceo",
+  "https://www.linkedin.com/in/tariq-shaukat",
+  "https://x.com/tariqshaukat"
+ ]
+}

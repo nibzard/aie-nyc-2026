@@ -1,0 +1,26 @@
+{
+ "slug": "karthic-rao",
+ "name": "Karthic Rao",
+ "role": "CTO",
+ "company": "Perpetual",
+ "bio": "Karthic Rao is CTO at Perpetual, an AI-native wealth platform for independent RIA firms that also acts as a buyer and long-term capital partner for the firms it serves. He described this wealth management roll-up model in his AI Engineer NYC 2026 extra lunch talk on reliable and intelligent workflows for finance, wealth, and insurance. Before Perpetual he worked on data infrastructure at MinIO, including the Iceberg-compatible implementation for AIStor. He is a long-time open-source contributor to the Caddy web server, creator of IncredibleDevHQ, and is based in Bengaluru, India. Note: the session title and early transcript said \"Perplexity\", but both his closing self-intro and outside sources confirm the company is Perpetual (ASR mishearing).",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "",
+ "identified_from_session": true,
+ "sessions": [
+  {
+   "order": 29
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://finance.biggo.com/podcast/8b543b1bbf71477a",
+  "https://daily.dev/posts/reliable-smart-workflows-for-finance-wealth-and-insurance-karthic-rao-perpetual-kwibl5toe",
+  "https://in.linkedin.com/in/hackintoshrao",
+  "https://github.com/hackintoshrao",
+  "https://investperpetual.com"
+ ],
+ "name_note": "ASR misheard the self-intro as \"Kartik, CTO at Perplexity\"; closing self-intro and outside sources confirm Karthic Rao, CTO of Perpetual."
+}

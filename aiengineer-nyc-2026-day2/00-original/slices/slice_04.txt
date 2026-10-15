@@ -1,0 +1,253 @@
+# transcript slice 04
+window: t=7280..9100 (02:01:20..02:31:40 video time; 10:41:56 AM..11:12:16 AM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[02:00:22] Quick show of hands, how many people in here have used user instinct in the last day?
+[02:00:26] All right, I expected more hands, but maybe people are too shy to raise them.
+[02:00:32] And how many people know an analyst in finance that fully delegates their work to AI, like fully hands-off running it autonomously?
+[02:00:40] All right, one, but a lot fewer.
+[02:00:44] I think if you think about the question, why did personal agents take off within the last three months?
+[02:00:49] Internally, we came up with three main answers.
+[02:00:52] The first, reliable background agents.
+[02:00:54] You can delegate a task, book a restaurant, book a flight, and it'll do it reliably now.
+[02:01:00] Computer use agents have gotten sophisticated.
+[02:01:02] The models themselves have gotten better.
+[02:01:06] The second is proactivity.
+[02:01:07] It'll do things without you asking.
+[02:01:09] It's part of that magical experience when Instinct wakes you up saying it's your wife's anniversary.
+[02:01:13] Go buy some flowers, or better yet, I already bought the flowers for you.
+[02:01:17] And finally, integrations.
+[02:01:19] It's connected to the systems of context that matter most for you: email, Drive, calendar.
+[02:01:26] But all the factors that make personal agents work so well doesn't really translate to institutional finance today.
+[02:01:34] If we think about background tasks, something as simple as booking a restaurant reservation, the analog equivalent in buy-side finance might be, how do you go from a data room to a fully prepared set of IC models, slides, and memos?
+[02:01:48] Taking a process that would normally take four weeks, multiple rounds of iteration and review, and compressing that to a few days.
+[02:01:57] If we think about proactivity, your managing director doesn't really want agent rogue running around doing a bunch of things and burning tokens without them providing and soliciting input.
+[02:02:07] And then finally, if you think about the context that matters, it's not just email, it's not just calendar.
+[02:02:13] It could be a data room with 15,000 files.
+[02:02:16] It could be SharePoint, Box with petabytes of unstructured data the firm has collected in its 40-year history.
+[02:02:21] So how do you deal with these problems?
+[02:02:24] So the purpose of today's talk is to discuss a bit more about how we at Compound have approached the problem of solving long-running agents in finance.
+[02:02:33] On one hand, it's creating a real teammate that collaborates with you in the deal team.
+[02:02:38] So that's multiplayer, embedding that into the app.
+[02:02:41] On the other hand, it's solving for how can you run long tasks in parallel in the background, reliably execute them.
+[02:02:49] And so for that, we actually rebuilt Office from scratch.
+[02:02:53] And then finally, it's how do you manage the context of everything, everything we just discussed, petabytes of data in SharePoint inbox.
+[02:02:59] And we'll talk a little bit about how we've designed a solution for that.
+[02:03:04] So the first question we have to ask, I think, is why does multiplayer actually matter for finance?
+[02:03:08] If you look at the anatomy on a deal team, right, the type of tasks that matter for long-running type of workflows, for example, going from a data room into all the sorts of materials that make its way in front of an investment committee, it doesn't work for the single-player siloed workflows.
+[02:03:24] Today, for people who have deployed Claude or ChatGPT in their institutions, it's all single-player.
+[02:03:31] People working in a plugin, people working in the web app, producing outputs.
+[02:03:36] But invariably, those people need to collaborate with their team.
+[02:03:39] And what does that look like?
+[02:03:40] It means downloading the file, uploading it into email, uploading it into Teams, asking for feedback.
+[02:03:46] I think the right way to approach this, and this is the way we've thought about at Compound, is how do you get every person who matters on a deal onto the same thread?
+[02:03:54] How can they all talk to the same agent so that one agent can share the context of everyone who matters for any particular workstream?
+[02:04:02] When we thought about how do we actually bring multiplayer into a familiar context, we looked again towards personal agents.
+[02:04:09] Why did they work so well?
+[02:04:10] Well, you can easily text one in iMessage, or you can text one in WhatsApp.
+[02:04:15] So for agents at Compound, every single one you create comes with a built-in inbox.
+[02:04:19] Because ultimately, at the end of the day, for institutional finance, most workflows run through Outlook.
+[02:04:24] You'll have chains of emails, 20 or more running.
+[02:04:27] You want an agent to be part of every single one of those conversations.
+[02:04:32] Designing email for agents is actually non-trivial.
+[02:04:35] It's not just as simple as hooking it up with an email inbox.
+[02:04:39] It requires, A, authenticating, making sure everyone part of that thread has read and write access to that agent.
+[02:04:45] Ultimately, at these financial firms, privacy is incredibly important.
+[02:04:49] You're always under NDA no matter what deal you look at, and so you want to make sure everyone on that thread can actually talk to the agent.
+[02:04:55] But then beyond authentication, you also have to think about how do you design a real human-like experience?
+[02:05:00] Because after all, we're trying to create a real teammate.
+[02:05:02] If multiple people email in the same thread in quick succession, you don't want multiple acknowledgments spamming that group.
+[02:05:09] You actually want to bake in some more latency to make it feel more human.
+[02:05:13] And so there are other design decisions when thinking about how to create real email agents for enterprise finance.
+[02:05:20] But multiplayer aside, we realized even after you solicit the input of everyone who matters, if you wanted to scale up the number of tasks and run them all in parallel, existing off-the-shelf solutions simply don't cut it.
+[02:05:32] We evaluated a lot: the desktop plugins of Excel, PowerPoint, and Word.
+[02:05:37] We evaluated computer use using virtual machines to try to scale up the number of agents that could work in Excel, PowerPoint, and Word natively.
+[02:05:44] And we also evaluated a ton of off-the-shelf engines, whether those are open-source packages like OpenPyXL or commercial engines that are available for purchase.
+[02:05:53] None of them really cut it for what we were trying to look at.
+[02:05:56] And with coding agents dramatically improving and bringing the cost of software down, we decided to just build our own office from scratch.
+[02:06:05] And like a great AI engineer would, we ran agents in many loops, spent 1.
+[02:06:09] 5 trillion input-output tokens and over 8 million lines of code to rewrite Office from scratch.
+[02:06:15] And I'll walk through a little bit of how we approached it, but it's as simple as pointing agents at an objective function, which is recreate Office in full fidelity and then letting it run.
+[02:06:26] So take Excel as an example.
+[02:06:29] We started with an open-source solution called IronCalc.
+[02:06:31] We decided, okay, how can you recreate this perfectly for Excel, use Office as an oracle, and just run loops, benchmarking it on real files from both real-world corpus that we grabbed online and also ones that internally we created.
+[02:06:45] And 800,000 lines of Rust later, we had a performant, much more performant compared to Excel, one-for-one replica of the product.
+[02:06:55] With this, we're actually able to do that for not only Excel, but also PowerPoint and Word, right?
+[02:07:00] So we ran loops across every single one of these products, and we have faithful recreations.
+[02:07:04] You can try it for yourself today at getcompound.
+[02:07:07] ai.
+[02:07:08] And it's the same method: loop agents against Office as a judge, using Rust renderers to make sure that the rendering of these products was pixel perfect.
+[02:07:18] So what you see in Compound is what you see when you download to Office.
+[02:07:22] We needed one-for-one parity because at the end of the day, these firms only trust what they can download and what they can send.
+[02:07:30] Now, let's talk about performance.
+[02:07:32] Why is a headless engine so much better compared to using a VM or using desktop Excel?
+[02:07:37] Well, for one, desktop Excel or PowerPoint or Word is bound to that CPU.
+[02:07:42] With headless engines, you can do tasks in parallel much, much faster.
+[02:07:46] You can build out a complex model in a much shorter amount of time.
+[02:07:50] You can recalculate 20 megabyte Excels 4x faster.
+[02:07:54] So every single piece of work an analyst would expect an agent to do, because again, their expectation is quality of a human at much lower speed and much lower cost.
+[02:08:03] You have to have a headless engine to do this.
+[02:08:06] If you tried to scale this up with Excel and PowerPoint, I think you'd be going down the wrong path.
+[02:08:13] But it's not just about performance.
+[02:08:15] Owning the editor actually allows you to create a much richer product experience that allows you to work and collaborate with agents asynchronously much better than you can with other products.
+[02:08:24] So this entire slide deck you're seeing today, I built in Compound just by dropping in comments.
+[02:08:31] I had it create a first draft, and then as you can see here on the UI, I dropped in comments for every single piece of formatting.
+[02:08:37] For my consulting days, for my K2 days, all the learnings I had on what makes a great slide, I imparted with the agent.
+[02:08:44] This can also work for multiplayer.
+[02:08:45] You can have multiple people part of the same team using the same multiplayer infrastructure we set up, dropping in comments.
+[02:08:51] So for a team of five, you can rip through a 100-page deck in an afternoon rather than sitting in a room revising it for multiple weeks.
+[02:08:59] Finally, with respect to building your own engine, it also allows us to run iterative checking loops much more as well.
+[02:09:06] So if you have a task that, for example, is writing a complex model, it might take a few hours.
+[02:09:13] But how can we make that faster?
+[02:09:14] How can we make it more accurate?
+[02:09:16] If you're using, for example, an OpenPyXL code library, there's no renderer you can use to check formatting.
+[02:09:21] You're just guessing and hoping that the model writes the right thing, and maybe you do some parsing to see a cell is a particular color or has a particular font.
+[02:09:29] If you try to use Microsoft's own interface, you're going to be limited by what Microsoft provides you, which is admittedly very little.
+[02:09:36] So with an own engine, you actually own the write, render, check, and fix loop.
+[02:09:41] So you can rapidly iterate on the output for the user.
+[02:09:47] So the last thing I sort of want to discuss today, beyond multiplayer and building our own office, is how to deal with the context that these firms have.
+[02:09:57] For firms on the buy side, they deal with situations where
+[02:10:08] Situations where it crosses both breadth and depth of data.
+[02:10:11] You may have situations where you have a data room over 15,000 files, and then files in that data room might be well over 20 megabytes.
+[02:10:19] People in finance complain all the time, Hey, I have an Excel model that's 30 megabytes.
+[02:10:23] It takes five minutes to recalculate because we have two million formulas and five sensitivity tables that need to recalculate every single time.
+[02:10:29] So how do you deal with this?
+[02:10:31] Well, for breadth, I think, again, we take a look at a page out of the coding book and apply agent swarms to the large number of files.
+[02:10:37] No longer do you have to index everything in a vector DB unless it's for a very specific use case.
+[02:10:39] It's actually much preferable to use coding agents to read files, either through grep or through some other methodology, and then have a lead agent slice the contents of the file directory and then have swarms of agents come back to you with insights.
+[02:10:41] And then you iterate that in a loop until you're satisfied with the output required.
+[02:10:44] Furthermore, through this process, you're actually able to ground every single finding in citations in the source document, so that you know exactly what you show on the screen is linked to some number that the analyst can trust.
+[02:11:06] If we think about the depth of data, right, take that 30 megabyte workbook.
+[02:11:12] How can you actually process this more accurately?
+[02:11:14] In today's world, if you were to just use ChatGPT or Claude off the shelf to process that 30 megabyte model, it would write code.
+[02:11:16] It would use open source packages like OpenPyXL.
+[02:11:18] It would be expensive and slow because it's printing out every single piece of context about that model in code for the model to read.
+[02:11:20] But because we've developed our own engine for Excel, we're actually not only more accurate, but a lot faster and cheaper because the engine processes it and then lays it out in a very easy to read and easy to process format for the model.
+[02:11:21] This means we can expose a much richer set of APIs and a much richer set of tools for the agent to work over.
+[02:11:22] And that allows us to process these models in a much faster manner.
+[02:11:22] So if we sort of take a step back and think about, okay, what is all of this context built for?
+[02:11:25] At the end of the day, what we want to do is prevent people from spending time finding files, from reminding the model this is how to do things.
+[02:11:27] Instead, they should be focused on imparting their judgment on the deal process.
+[02:11:27] They should be focused on tailoring, training agents and deploying them on every part of the deal flow.
+[02:11:28] And so it goes from the bottom level, connected sources, off-the-shelf connectors to SharePoint or Outlook, to the cited findings grounded in the sources that matter, and then finally embedding in the preferences, company knowledge that matters.
+[02:11:29] How do you do a model?
+[02:11:31] How should it look?
+[02:11:33] Which differs by every single firm, so that for humans, they spend most of their time imparting judgment.
+[02:11:35] They spend most of the time thinking about, is this actually a good deal?
+[02:11:36] Not, did all the numbers tie?
+[02:11:37] Does the model look right?
+[02:11:37] Will my VP yell at me because it looks a different way?
+[02:11:40] So, Cursor needs to update.
+[02:12:40] If we take a step back and think about the type of tasks that currently are on autopilot versus what are on Copilot, I would say there's already several finance tasks you can do pretty well with off-the-shelf tools: spreading comps.
+[02:13:16] As the ChatGPT head of finance mentioned earlier, they have now their own products for this.
+[02:13:22] But I think there are a lot of longer-running tasks that are not capable with existing solutions.
+[02:13:26] How do you draft a 50-page IC presentation off the cuff?
+[02:13:30] How do you get agents to build out a model exactly the way you want it?
+[02:13:35] For a private equity professional or a hedge fund professional, I think those are tasks that, with off-the-shelf tools, still exist as sort of within the copilot realm.
+[02:13:45] People want to be embedded deeply in that process without letting go.
+[02:13:50] But with some of the tools we've built today, I think we're able to expand the aperture for which autopilot can take over in finance firms.
+[02:13:57] So rather than just using tools embedded in Excel as plugins, hand-holding along the way, you can start delegating.
+[02:14:05] You can start becoming more ambitious about what AI is capable of.
+[02:14:09] If I think about where we are today in the world of finance, it very much reminds me of when OpenAI 4.
+[02:14:14] 5 launched last December, where people stopped using code as a simple copilot to generate the next file or the next line of code, but they started delegating far more ambitious tasks.
+[02:14:26] They started realizing, maybe I can just truly vibe it.
+[02:14:30] If I have sufficient checks, if I have sufficient tests, maybe I can just trust all the code it writes.
+[02:14:36] I think with some of the tooling we've built today, along with what we're planning in the future, these are the type of problems you have to solve before you get to that point for finance.
+[02:14:46] How can analysts, how can the entire deal team become more ambitious with AI?
+[02:14:50] How can they just drop in a data room and decide, okay, I'm going to trust every single one of the outputs, and then let's do that tenfold so we can see more deals, so we can expand the aperture of what matters.
+[02:15:01] So to conclude, enterprise agents are certainly coming to finance.
+[02:15:05] I strongly believe we're at an inflection point in the adoption curve, and that people are slowly becoming more ambitious and they're moving away from copilots to autopilots.
+[02:15:13] And so this was sort of how we've approached it here at Compound.
+[02:15:17] If you work at a firm and you're interested in deploying our agents to drive more of your deal work, please reach out.
+[02:15:23] Or if you're an engineer and you're curious about talking about our approach and sharing ideas, please either reach out online or I'll be around if you want to find me.
+[02:15:30] Thanks so much.
+[02:25:08] GPUs are deployed the same.
+[02:25:11] Thank you, everyone, for taking the time to be here today.
+[02:25:14] My name is Oliver Kennan.
+[02:25:16] I am a research analyst at SemiAnalysis.
+[02:25:18] Time and attention are the most valuable things any of us have, unless, of course, you're an early-stage investor in OpenAI or Anthropic.
+[02:25:26] With that, let's get into it.
+[02:25:29] Not all GPUs are deployed the same.
+[02:25:31] A GPU falls to the level of the operator.
+[02:25:33] Buying hardware gives you potential.
+[02:25:35] Operating capability is what determines how much useful work you actually are able to deliver.
+[02:25:42] That leads us to the question I will attempt to answer with all of you today: who can produce the intelligence you need at the lowest cost?
+[02:25:50] Cost matters.
+[02:25:51] In today's presentation, I want to show you guys why and how operating capability changes that cost and why it matters in the commodity market that is compute.
+[02:26:01] What matters in a commodity market?
+[02:26:06] A lot of tech investors or technologists may not be familiar with this framework, so a little crash course.
+[02:26:13] In a commodity market, producers compete to deliver comparable output.
+[02:26:17] A lower production cost gives more room to compete when prices fall.
+[02:26:21] That's what a cost curve shows: producers lined up by what they spend to deliver the same usable work.
+[02:26:28] If two producers earn the same price, the one spending less to deliver the work gets to keep more of it.
+[02:26:34] Pretty simple, right?
+[02:26:37] For us, intelligence is the economic output we care about.
+[02:26:42] Eventually, our North Star metric will be price per successfully completed task at the required quality.
+[02:26:48] Unfortunately, we're not quite there yet.
+[02:26:50] That's a pretty hard thing to standardize.
+[02:26:52] Today, price per token is a useful practical proxy, especially for comparable workloads and quality requirements, and gets us closer to delivered output, much closer than the often quoted, all you finance bros out here will have heard this, GPU dollar per hour price, or as we view it, a cost.
+[02:27:15] We view GPU hours as a measure of input, not output, the cost versus price distinction.
+[02:27:22] Customer prices are different from the producer's cost of doing the work.
+[02:27:29] GPU hours are the input.
+[02:27:31] Intelligence is the output.
+[02:27:33] On this slide, we can visualize the inputs needed to create useful intelligence.
+[02:27:38] We start with hardware and electricity, GPUs for this presentation.
+[02:27:44] Software and operations can be thought of as a multiplier on those first two inputs, with the end product being useful intelligence.
+[02:27:54] The operator is who chooses and implements the software that serves the model and keeps requests moving through the system.
+[02:28:01] The machines might be available, but you still need someone to make them deliver responses customers can actually use.
+[02:28:09] What matters is how much useful work you get and whether it meets your requirements for the specified task.
+[02:28:15] The conversion can differ with the same kind of chip.
+[02:28:18] Let's look at that in the measured example.
+[02:28:22] Here's a concrete example from our InfenceX public InfenceX calculator.
+[02:28:26] You guys can all check it out, semianalysis.
+[02:28:29] com.
+[02:28:30] Both estimates use B200 GPUs serving the same model with roughly 8,000 input tokens and 1,000 output tokens, a pretty standard ratio.
+[02:28:40] The P50 target is 100 output tokens per second for each user.
+[02:28:45] The serving stack is the software handling the model's responses.
+[02:28:49] In the P90 scenario, one of these stacks gives about 200 generated output tokens per second, while the other one gives about 300.
+[02:28:57] That's a big difference and comes down to software, settings, and number of requests running, all choices made by the operator.
+[02:29:09] Same chip, same target interactivity, about 50% more output.
+[02:29:13] That's a lot.
+[02:29:14] So what does that mean for the buyer's bill?
+[02:29:21] What does that intelligence actually cost the customer?
+[02:29:24] For this example, let's assume the hourly bill is the same for both deployments and both meet your requirements.
+[02:29:31] At roughly one and a half times the output, your rental spend per acceptable token is proportionally lower.
+[02:29:37] That is to say, the hour buys you more usable and useful output.
+[02:29:43] What counts as useful intelligence?
+[02:29:46] Useful intelligence has to do the job you hired it to do.
+[02:29:50] Pretty simple, right?
+[02:29:50] The answer needs to be good enough for the task, arrive quickly enough, and be available when you need it.
+[02:29:57] Your information also needs to stay within the access boundaries you've agreed upon, AKA, it needs to be secure.
+[02:29:57] This is an overlooked requirement that is not captured in a chip's performance metrics, but it is essential for a chip to be usable and useful.
+[02:30:15] In our published security work, we found monitoring access that exposed another customer's logs and metrics.
+[02:30:21] This is a case, and an unfortunately common one at that, where the GPUs were fast, in the case I'm referencing, really, really fast, which makes the whole thing sadder, and the service still failed horrifically.
+[02:30:35] Ensuring cluster security takes ongoing work, just as delivering the promised performance does.
+[02:30:42] In most cases, it is the operator that owns that responsibility.
+[02:30:48] Someone has to make the system work in production.
+[02:30:51] Suppose a faster serving update becomes available.
+[02:30:54] Someone has to test it on the customer's workload, check whether the output still meets the requirements, and then decide when, where, and how to deploy it.
+[02:31:03] That means checking the actual responses, testing it under load, and keeping a way to return to previous version if the update causes problems once it's deployed.
+[02:31:14] Once it is deployed, someone has to maintain it and respond when issues come up.
+[02:31:20] That work may sit with your provider, your own team, or both.
+[02:31:25] Irregardless, you need to know who's responsible and whether they can actually do it.
+[02:31:33] So how do we assess the operator?
+[02:31:36] Semi Analysis ClusterMax, we're on version 3.
+[02:31:39] 0 at this point, assesses operating capability on managed GPU clusters, couple hundred growing.
+[02:31:47] Please reach out if you want to be on ClusterMax 4.
+[02:31:49] 0.
+[02:31:49] We look at provisioning, reliability, monitoring, and security.
+[02:31:54] Hands-on testing, documentation, and customers' feedback help us understand how the service runs, not just on a good day, but also when a machine fails.
+[02:32:05] I want to take the chance to reiterate that ClusterMax ratings apply to managed clusters, different from bare metal, very different.
+[02:32:14] With bare metal, more operating work usually sits with the customer.
+[02:32:17] Applying a managed service rating there does not automatically cover every product a provider sells.
+[02:32:24] The tiers are relative to peers.
+[02:32:25] A little bit of a tongue twister.
+[02:32:28] I nailed it.
+[02:32:29] Pretty happy with that.
+[02:32:31] And pricing and availability are also important factors in this assessment.
+[02:32:35] These are metrics that do not directly measure token output, but are incredibly important.

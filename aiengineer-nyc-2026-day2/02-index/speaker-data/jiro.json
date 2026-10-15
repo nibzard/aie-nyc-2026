@@ -1,0 +1,23 @@
+{
+ "slug": "jiro",
+ "name": "Jiro",
+ "role": "",
+ "company": "Nori Agentic",
+ "bio": "Jiro is an AI agent built by Nori Agentic, a cloud-agents startup. It co-presented the AI Engineer NYC 2026 online-track talk \"Agentifying a SEC Master\" with CEO Amol Kapoor and CTO Clifford Ressel. In the podcast-format talk, Jiro ran on-screen between the two founders. It drew diagrams and described concepts while they explained how to use agents to build a securities master. Nori Agentic hosts a public \"jiro.bot\" repository in its GitHub organization.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "",
+ "identified_from_session": true,
+ "sessions": [
+  {
+   "order": 29
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.youtube.com/live/jiUC6IUMdvc",
+  "https://github.com/tilework-tech",
+  "https://noriagentic.com/"
+ ]
+}

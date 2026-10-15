@@ -1,0 +1,24 @@
+{
+ "slug": "steve-jamison",
+ "name": "Steve Jamison",
+ "role": "AI Research & Engineering Leader",
+ "company": "Jellyfish",
+ "bio": "Steve Jamison, PhD, is the AI Research & Engineering Leader at Jellyfish, based in the Greater Boston area. He leads analysis for the Jellyfish AI Engineering Trends dataset, which spans tens of millions of pull requests, studying AI spend, developer throughput, and cost per merged pull request. His LinkedIn headline notes that he combines 10+ years of academic research and engineering training with startup data science, analytics, and engineering leadership experience.",
+ "linkedin": "https://www.linkedin.com/in/stevetjamison",
+ "twitter": "",
+ "website": "",
+ "photo": "",
+ "identified_from_session": true,
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/stevetjamison",
+  "https://www.linkedin.com/posts/stevetjamison_jellyfish-surpasses-100-million-pull-requests-activity-7509228423609860096-siTv",
+  "https://finance.biggo.com/podcast/a07787bfb295657a",
+  "https://benchmark.useimagine.ai/dashboard/person/steve-jamison-phd"
+ ],
+ "sessions": [
+  {
+   "order": 26
+  }
+ ]
+}

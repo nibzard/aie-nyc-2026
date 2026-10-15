@@ -1,0 +1,24 @@
+{
+ "slug": "branislav-brzak",
+ "name": "Branislav Brzak",
+ "role": "AI Security Researcher",
+ "company": "Stealthium",
+ "bio": "Branislav Brzak is an AI security researcher at Stealthium and a member of the Stealthium Core Team. His focus is low-level GPU security research, together with Linux kernel, virtualization, and performance engineering. He is the author of the Stealthium research post \"Return of a Nosy Neighbor: More Detail, More Noise\" (September 2026), which extends the USENIX Security '26 \"Behind Bars\" work on NVIDIA MIG. It shows that a GPU co-tenant can fingerprint a victim LLM's architecture and depth with about 97% accuracy and its decode speed with about 99.3% accuracy from timing alone, both within a MIG-partitioned H100 and across an NVSwitch/NVLink fabric. His AI Engineer NYC 2026 lunch talk presented this research. Based in Serbia.",
+ "linkedin": "https://rs.linkedin.com/in/branislav-brzak",
+ "twitter": "",
+ "website": "",
+ "photo": "",
+ "sessions": [
+  {
+   "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+   "order": 25
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://stealthium.io/blog/reading-the-work-multi-tenant-gpu-not-private",
+  "https://stealthium.io/blog",
+  "https://rs.linkedin.com/in/branislav-brzak",
+  "https://daily.dev/posts/your-gpu-neighbor-can-hear-your-model-branislav-brzak-stealthium-ox7qazc7f"
+ ]
+}

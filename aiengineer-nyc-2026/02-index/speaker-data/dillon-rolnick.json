@@ -1,0 +1,24 @@
+{
+ "slug": "dillon-rolnick",
+ "name": "Dillon Rolnick",
+ "role": "CEO",
+ "company": "Nous Research",
+ "bio": "CEO of Nous Research, the New York-based open-source AI lab behind the Hermes model family and the MIT-licensed Hermes agent. He came to Nous from a quantitative trading background and studied at Vanderbilt University. Rolnick led the company's $90 million Series B at a $1.5 billion valuation, announced in October 2026, writing that Nous is 'building for everyone to own their intelligence, and we're doing it in the open.' At AI Engineer NYC 2026 he presented 'Hermes gives you wings: Build on open foundations.'",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/event-files%2FDViV1MwTy6AOuTHQVreQ_Dillon%20Rolnick.png",
+ "sessions": [
+  {
+   "title": "Hermes gives you wings: Build on open foundations.",
+   "time": "5:06pm - 5:24pm",
+   "id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/dillon-rolnick-a29501128",
+  "https://nousresearch.com/a-note-on-our-fundraise",
+  "https://www.wsj.com/pro/venture-capital/nous-research-scores-90-million-to-bring-open-source-ai-assistant-to-enterprises-516f9208"
+ ]
+}

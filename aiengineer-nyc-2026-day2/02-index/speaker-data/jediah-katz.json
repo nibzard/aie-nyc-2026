@@ -1,0 +1,18 @@
+{
+ "slug": "jediah-katz",
+ "name": "Jediah Katz",
+ "role": "Engineer, Agent Harness",
+ "company": "SpaceX Super Intelligence",
+ "bio": "Jediah is an early engineer at Cursor, where he works on product, platform, and evals for the agent harness. Previously he built out Figma's AI evals platform and served as an instructor at the University of Pennsylvania, where he designed and taught Penn's CIS1921 course on constraint optimization and the gap between theory and practice.",
+ "linkedin": "https://www.linkedin.com/in/jediah-katz/",
+ "twitter": "https://twitter.com/jediahkatz",
+ "website": "https://cursor.com/home",
+ "photo": "https://content-cdn.sessionboard.com/OgNWBwYmQSu4Ap8JFoQC_headshot-1789391601005.png",
+ "sessions": [
+  {
+   "title": "The Model Ate the Coding Harness. Now What?",
+   "time": "11:55am - 12:13pm",
+   "room": "Shannon Room (NY Ballroom E)"
+  }
+ ]
+}

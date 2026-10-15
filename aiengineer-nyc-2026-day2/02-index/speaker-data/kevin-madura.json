@@ -1,0 +1,18 @@
+{
+ "slug": "kevin-madura",
+ "name": "Kevin Madura",
+ "role": "Director, Advanced Technology",
+ "company": "AlixPartners",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FB79IFpYTmqb63uPbF1gr_headshot-1789692912319.png",
+ "sessions": [
+  {
+   "title": "Claude Code, Financial Analyst: Turning a Coding Agent Loose on Governed Enterprise Data",
+   "time": "11:05am - 11:23am",
+   "room": "Sutton Room (NY Ballroom W)"
+  }
+ ]
+}

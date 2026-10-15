@@ -1,0 +1,310 @@
+# transcript slice 05
+window: t=9100..10920 (02:31:40..03:02:00 video time; 11:12:16 AM..11:42:36 AM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[02:30:42] In most cases, it is the operator that owns that responsibility.
+[02:30:48] Someone has to make the system work in production.
+[02:30:51] Suppose a faster serving update becomes available.
+[02:30:54] Someone has to test it on the customer's workload, check whether the output still meets the requirements, and then decide when, where, and how to deploy it.
+[02:31:03] That means checking the actual responses, testing it under load, and keeping a way to return to previous version if the update causes problems once it's deployed.
+[02:31:14] Once it is deployed, someone has to maintain it and respond when issues come up.
+[02:31:20] That work may sit with your provider, your own team, or both.
+[02:31:25] Irregardless, you need to know who's responsible and whether they can actually do it.
+[02:31:33] So how do we assess the operator?
+[02:31:36] Semi Analysis ClusterMax, we're on version 3.
+[02:31:39] 0 at this point, assesses operating capability on managed GPU clusters, couple hundred growing.
+[02:31:47] Please reach out if you want to be on ClusterMax 4.
+[02:31:49] 0.
+[02:31:49] We look at provisioning, reliability, monitoring, and security.
+[02:31:54] Hands-on testing, documentation, and customers' feedback help us understand how the service runs, not just on a good day, but also when a machine fails.
+[02:32:05] I want to take the chance to reiterate that ClusterMax ratings apply to managed clusters, different from bare metal, very different.
+[02:32:14] With bare metal, more operating work usually sits with the customer.
+[02:32:17] Applying a managed service rating there does not automatically cover every product a provider sells.
+[02:32:24] The tiers are relative to peers.
+[02:32:25] A little bit of a tongue twister.
+[02:32:28] I nailed it.
+[02:32:29] Pretty happy with that.
+[02:32:31] And pricing and availability are also important factors in this assessment.
+[02:32:35] These are metrics that do not directly measure token output, but are incredibly important.
+[02:32:41] Obviously, very important.
+[02:32:44] Assessment helps us understand who can deliver.
+[02:32:46] Now we can move on to the next question.
+[02:32:48] What does it actually cost to produce useful intelligence?
+[02:32:51] Let's start with the compute bill and other costs that producers still has to cover.
+[02:32:57] Rental price and production costs are different.
+[02:33:00] In our example, the GPU provider rents out hours, the inference producer buys those hours and sells responses.
+[02:33:08] The rental bill is revenue to the provider and an input cost to the inference producer.
+[02:33:13] The GPU owner pays for the equipment, power, space, and support.
+[02:33:17] The inference producer's full cost includes rent plus whatever software, staff, and other services it pays for beyond that rental.
+[02:33:25] If the inference producer owns its equipment instead, we spread the equipment investment over its working life and add running costs.
+[02:33:32] What the producer charges and what it spends are separate numbers.
+[02:33:36] To understand the cost of useful intelligence, we need to know how much useful work the spending actually produces.
+[02:33:42] Better operations lowers that cost of useful intelligence.
+[02:33:46] The B200 comparison showed why the amount of output matters.
+[02:33:50] More acceptable responses from the same paid hours can spread the inference producer's rental expense over more useful work.
+[02:33:57] For a producer that owns its GPUs, the same logic spreads the equipment investment and running costs over more output.
+[02:34:03] Count all the spending needed to deliver the service over the same period, then divide by the output customers can actually use.
+[02:34:13] That gives us cost per acceptable token for a comparable workload.
+[02:34:19] Better operations also require investment.
+[02:34:23] Testing and update, deploying it safely, and keeping it working take people and money.
+[02:34:30] The extra output has to justify the extra spending.
+[02:34:34] This advantage can persist when a team repeats that work as software and workloads change, but one good benchmark doesn't establish it.
+[02:34:42] You have to earn it every single day.
+[02:34:45] Each new workload still needs checking, but a repeatable operating process, from what we've observed, can support a lasting cost advantage and a price advantage too.
+[02:34:56] Even if you do keep improving, though, your competitors are not sitting still.
+[02:35:01] Your position on the cost curve is relative.
+[02:35:04] This slide, out of all the slides, should make clear the importance of the commodity framework in all of this.
+[02:35:10] Your position on the cost curve depends on what your competitors can deliver, not just yourself.
+[02:35:15] It's a relative measure.
+[02:35:17] Here's a simple hypothetical.
+[02:35:18] We're comparing the same task, the same required quality, using made-up cost units.
+[02:35:24] I like to imagine bars of gold.
+[02:35:26] Your full cost per successful task falls from 10 to 8.
+[02:35:31] In the same period, your competitors falls from 6 to 12.
+[02:35:37] You improved.
+[02:35:38] That's awesome.
+[02:35:39] But both of you did.
+[02:35:40] And in this example, you started as the cheaper producer and ended as the more expensive one.
+[02:35:45] That gives the competitor more room to lower its selling price, provided customers find the two services equally acceptable.
+[02:35:53] Getting better does not automatically move you ahead.
+[02:35:56] Applying the commodity framework makes you realize that you have to compare your cost per useful work on a relative basis.
+[02:36:02] Comparing your own product with what your competitors can deliver.
+[02:36:07] That comparison can be easy to overlook in moments like today, where demand far outstrips supply and will for the foreseeable future.
+[02:36:14] Two to three years.
+[02:36:19] Visibility, good.
+[02:36:22] Scarcity can obscure those differences.
+[02:36:24] When demand is strong and supply is constrained, producers with very different costs can find customers.
+[02:36:30] Strong revenue can make those differences feel less urgent.
+[02:36:33] If you're a CEO, why would you focus on your precious time and energy and money shoring up your spot on the cost curve when you can be building a massive new data center?
+[02:36:43] In moments like this, it's important to step back and have a little perspective, take a little historical perspective.
+[02:36:49] Every commodity in the history of humanity has had swings in supply and demand.
+[02:36:53] Just because we don't see when that will be yet does not mean that this cycle will be any different.
+[02:36:57] Unless you're a total AI maxi, which some of us are, so I'm very open to being wrong.
+[02:37:03] I'm wrong every day.
+[02:37:06] But I would say if you're a business with leverage, you need to be especially conscientious of this.
+[02:37:11] Being proactive with building your cost advantage might not be as sexy as making your top line bigger, but it matters deeply if you want to survive through a business cycle.
+[02:37:22] That's why you want to build your operating capability and cost advantage while you have the opportunity, when the sun is shining, when you can raise capital.
+[02:37:31] They matter even more when customers have more choices to make and prices come under pressure.
+[02:37:36] So how do we make clear what the buyer actually gets?
+[02:37:42] Comparable compute needs clear grades.
+[02:37:44] Now let's look at the compute that an intelligence producer is buying.
+[02:37:48] We've already seen that the same chip can deliver different results depending on how it's operated.
+[02:37:54] And two offers for B200 GPU hours can include different services and leave different operating jobs with the customer.
+[02:38:01] A commodity framework needs a way to describe these differences so buyers know which services they can treat as comparable.
+[02:38:08] That's the job of a grade.
+[02:38:12] The grade describes a particular compute service and what its buyers can expect.
+[02:38:16] It doesn't make intelligence interchangeable across every task.
+[02:38:20] Once we've defined that service, we can ask what its rental price tells us.
+[02:38:27] What does a rental price benchmark measure?
+[02:38:30] A rental price benchmark summarizes the price of GPU hours within its defined market.
+[02:38:35] It isn't the producer's production cost or a measure of intelligence delivered.
+[02:38:40] We need to know where those prices come from, and advertised offer and a completed trade are not the same thing.
+[02:38:47] Service scope, contract terms, whose prices are sampled, and how they're combined all shape that reference point.
+[02:38:57] Operating quality can influence those prices without the index measuring it separately.
+[02:39:01] Running a rental reference doesn't tell you how much useful work your deployment will produce.
+[02:39:06] To use it as a hedge, you need to understand how it tracks the rent you actually pay or earn.
+[02:39:13] What can compute futures hedge?
+[02:39:16] There's been a lot of excitement lately about compute futures.
+[02:39:19] For all of you that don't know, a futures contract sets a standardized term for future delivery or cash settlement.
+[02:39:25] Cash settlement depends on a price reference.
+[02:39:28] Buyers and sellers both face uncertainty about rental prices.
+[02:39:31] Think back to the serving stacks and the monitoring failure.
+[02:39:35] Assessing who runs the system helps describe the service buyers get.
+[02:39:39] That helps us define grade so buyers know which compute services are comparable.
+[02:39:44] The benchmark then needs to track the rent they actually pay or earn.
+[02:39:48] That's why I make this argument.
+[02:39:51] Rating the operator is an essential building block for building a credible compute futures market.
+[02:39:57] A rating informs that work.
+[02:39:58] It doesn't by itself define a futures grade.
+[02:40:00] futures grade, establish a sound benchmark, or create enough trading to buy and sell easily.
+[02:40:06] It also doesn't necessarily make a hedge effective.
+[02:40:09] A rental price hedge can help offset rental price changes.
+[02:40:13] It does not fix a failed deployment or ensure that your customer pays.
+[02:40:19] Charging more than the index does not by itself make it a bad hedge.
+[02:40:24] What matters is whether changes in the reference track changes in your rent.
+[02:40:27] Unexpected changes in that relationship leave real price risk.
+[02:40:32] Those tools can help you understand what you're buying and manage the rental price risk.
+[02:40:37] For an intelligence producer, rent is one part of the cost.
+[02:40:40] The operator still has to turn that compute into work that the customer can actually use.
+[02:40:47] This brings us full circle.
+[02:40:54] So a GPU falls to the level of the operator.
+[02:40:57] So who can produce the intelligence you need at the lowest cost?
+[02:41:02] The producer who can repeatedly meet your requirements at the lowest full cost per successfully completed task.
+[02:41:09] Count everything spent to deliver the service, then divide by the output that the customer can actually use.
+[02:41:15] Operating capability affects both sides of that equation: what you spend and how much more useful work you can deliver.
+[02:41:22] Also, your position depends on that of your competitors.
+[02:41:25] You can improve and still fall behind if your competitors improve faster than you.
+[02:41:31] That's why understanding the operator matters through the cycle, not just at one point in time, especially when customers have more choices and prices come under more pressure.
+[02:41:42] In conclusion, if you just walked in and want the TLDR, this is it.
+[02:41:45] A GPU falls to the level of the operator.
+[02:41:50] Help build a better informed compute market.
+[02:41:52] Ladies and gentlemen, thank you so much for your time today.
+[02:41:55] At Semi Analysis, we know that markets do not become informed and efficient on their own.
+[02:41:59] We seek to be an active, engaged partner in that work.
+[02:42:03] It takes two to tango, though.
+[02:42:05] Ideally more than two, actually.
+[02:42:08] If you'd like to partner with us, contribute, or join the team, we would love to hear from you.
+[02:42:13] We are always hiring great people.
+[02:42:15] Please reach out.
+[02:42:17] If this resonated, please go ahead and email sales at semianalysis.
+[02:42:22] com for partnership opportunities.
+[02:42:24] And if you're interested in potentially joining the team, my email is kenan at semianalysis.
+[02:42:32] com, K-E-N-N-O-N.
+[02:42:33] Thank you all for listening, and have a fantastic rest of your day.
+[02:49:59] So this is a talk about compute markets, but it's kind of more of a talk about why to make a compute market.
+[02:50:08] If you don't know me, I'm Evan.
+[02:50:11] We run a company called San Francisco Compute.
+[02:50:14] We make a physically settled order, physically settled forwards market.
+[02:50:18] So if you were here for the last talk, the last talk was basically why all the operators of GPU clusters don't really work very well.
+[02:50:27] When we say physically settled, we mean we're the operator.
+[02:50:31] We're both the operator of the hardware in the same way that a cloud is the operator of the hardware, and then we're also the market at the same time.
+[02:50:38] It's kind of like a grid for compute.
+[02:50:40] So the general gist of this is that in order to run and operate a supercomputer, we think problems start right at the design of the supercomputer, right in the design of the bill of materials, its control of the backplane fabric as well.
+[02:50:58] It's also control of bare metal orchestration.
+[02:51:00] It's also services on top, VMs and so on.
+[02:51:03] There's a lot of different parts of the stack that you have to do effectively.
+[02:51:07] Otherwise, the folks who have a data center and would like to make more money on that data center by becoming the GPU cloud end up failing for the customer.
+[02:51:20] So that's what we do.
+[02:51:22] We offer what's called supercomputing as a service.
+[02:51:25] We go to folks who want to become a cloud.
+[02:51:27] That's like folks who want to become what Nvidia would call an NCP, or venture firms that want to have clusters for their portfolio and want to be able to reallocate that capacity when a company like Instinct is taking off, or AI companies who would like the residual value on the compute because they've realized that's really important for their financials, but don't want to operate a supercomputer.
+[02:51:48] So that's physical settlement.
+[02:51:50] And then on top of that, we run a live order book for capacity that you can buy reserved, either right now or in the future.
+[02:51:58] This together is not at all what we thought we were going to be doing.
+[02:52:03] Originally, we were this company called June Lark that was trying to make kind of like Suno or Udio, but prior to Suno or Udio.
+[02:52:11] At the time, what you needed to do to realistically start a lab was you needed to raise a big deposit, a huge one, which was $10 million at the time.
+[02:52:22] We thought that was a crazy amount of money, and so we thought, no, that's stupid.
+[02:52:25] We're going to raise 500K, and obviously what we're going to do is we're going to rent from somebody else.
+[02:52:31] Obviously today, it's not $10 million, it's a billion dollars.
+[02:52:35] And nonetheless, we had raised our 500K, we buy a big cluster, and then we're underwater on our cluster every month.
+[02:52:44] And if we didn't sublease our cluster, we would have gone bankrupt.
+[02:52:48] So if you've heard of GPU brokers, we were the first GPU broker because we were forced into being a GPU broker.
+[02:52:52] So the first year of the company was us just trying to sell our cluster, otherwise we would go bankrupt.
+[02:52:57] So I would wander around with these, like, actual pieces of paper at NeurIPS, which both say H100 and A100 at the same time, because that's how I made the posters so quickly.
+[02:53:11] And so this talk is not really about necessarily, like, how a compute market works.
+[02:53:17] It's how a compute market gets to exist.
+[02:53:21] We like to think about it like there's this pamphlet, and on the pamphlet, on the front side, it's like, man, starting a neolab sucks.
+[02:53:27] There's all these different, like, financial and economic problems.
+[02:53:30] On the back of the pamphlet, it says, compute markets.
+[02:53:34] It's not super clear how one gets to the other until you open the pamphlet and then, like, holy shit, there's, like, so much stuff in this pamphlet, and it keeps going, and there's so many folds.
+[02:53:43] It's just a very difficult and challenging problem because you need to solve two, like, miracle problems to get working.
+[02:53:48] You have to both make a market, which is a uniquely difficult problem because it has a cold start problem.
+[02:53:54] You also have to build a cloud, and then you have to not become a cloud, which is a whole separate challenge.
+[02:53:59] But these are the problems that the labs are facing, and it's about to be the problems that everyone is about to facing.
+[02:54:05] So if you work at a startup, these are your problems now.
+[02:54:08] Right now, everybody is sold out of compute.
+[02:54:10] This is probably not going to change for a while.
+[02:54:15] So that means that you're going to have to buy a new cluster, a net new one, and there's a lead time.
+[02:54:19] You have no way to pay for that cluster to come online now.
+[02:54:22] You're going to pay for it to come online later.
+[02:54:24] There's nothing in the market that can realistically get that cluster online for you now.
+[02:54:28] Meanwhile, you're going to pay your entire bank balance as a deposit.
+[02:54:33] The reason you're paying your entire bank balance as a deposit is because the lender has no idea how to underwrite AGI.
+[02:54:39] How in the world are you supposed to do that?
+[02:54:41] You've got two-person startups in San Francisco, who, or maybe New York, who say, I'm going to build superintelligence.
+[02:54:49] No lender knows how to underwrite superintelligence, so they have no idea what the asset is worth.
+[02:54:55] Meanwhile, your cluster is very likely to be delayed.
+[02:54:58] That's because the lender needed to underwrite against the credit risk of the customer, and so they needed to know who is the customer first before you deploy the cluster.
+[02:55:05] So right when the customer signs is the riskiest point in the entire operation.
+[02:55:10] You wanted it to be the case that you built the cluster first and then you sell it.
+[02:55:14] This also helps reduce all sorts of different types of problems where clusters break.
+[02:55:18] Meanwhile, most of the people who are setting up clusters are people who have the actual asset that makes the thing cheap, like you've got the data center space already.
+[02:55:27] What that doesn't get is supercomputing expertise.
+[02:55:30] As we saw in the last talk, if you've watched that one.
+[02:55:34] Meanwhile, you're going to run into the exact same problem that Jun Lark did, which is you're going to either way overbuy or you're going to way underbuy.
+[02:55:42] That's because AI doesn't have margins that look like SaaS companies, and so you don't have very much margin for error.
+[02:55:47] And so the chances that you either underbuy and somebody else wins because they did it correctly, or you overbuy and then you just become Stability AI or you blow up, you end up like Character AI, are really high.
+[02:56:00] So these are all the same problem.
+[02:56:01] They're all just different types of risk.
+[02:56:03] They're technical risk, they're financial risk, they're credit risk.
+[02:56:06] They're all one big bundled risk problem, which is the problem that we end up solving, and it's also the problem that we think compute markets broadly, the entire industry solves.
+[02:56:15] So we'll walk through each one of these and walk how that gets to a compute market, because if you don't understand these, it's kind of like unclear why you would want a compute market.
+[02:56:22] And they almost seem like this problem that somebody thinks, Oh wow, compute markets are cool, so I'm going to go start one.
+[02:56:27] We think they should be derived from the actual problems that people face, which is first, everyone is sold out.
+[02:56:33] Why are they sold out?
+[02:56:34] Because the lender couldn't finance the cluster unless you had a long-term offtake agreement.
+[02:56:38] In CPUs, this wasn't the case because CPU buyers are SaaS companies.
+[02:56:44] SaaS companies have high margins, and because they have high margins, you can build a product that rewards you with high margins for your CPUs.
+[02:56:58] Think about it like this way.
+[02:57:00] If you're a SaaS company and your underlying cloud doubles their prices, you don't go bankrupt.
+[02:57:04] You hate your cloud.
+[02:57:06] You're mad, but you don't go bankrupt.
+[02:57:07] If you're an AI company and your underlying cloud doubles their prices, you go bankrupt unless you go to some other underlying cloud.
+[02:57:13] And what that means is that you're actually price sensitive.
+[02:57:16] And because you're actually price sensitive, and there's nothing keeping you at any particular cloud, so you can't sell on demand because your customers will immediately leave to whoever is cheaper.
+[02:57:27] And so that means that in order to finance GPU clusters, you have to have long-term take-or-pay contracts, hopefully with someone who has investment grade credit.
+[02:57:35] However, if you don't have liquidity on those, if you're selling reserved and your customer can't get out, then that also means that some other customer who wants the capacity right now because they're like instinct and their product is taking off can't pay for anything.
+[02:57:47] They have to finance a new cluster, which has a lead time because the physical world just exists and it's going to take a while.
+[02:57:53] Sometimes you even have to build a damn data center.
+[02:57:56] And then because you're financing a new cluster, you're going to pay a deposit because almost nobody in AI has any reasonable credit.
+[02:58:02] And because this is a brand new technology, all these companies are new.
+[02:58:06] Meanwhile, even as you start to scale up that ladder, you're still going to run into credit issues all the way through.
+[02:58:12] It's the number one bottleneck of AI at the moment.
+[02:58:14] It's not power.
+[02:58:15] You hit credit way before you hit power.
+[02:58:20] So what that means is every inference company, every NeoLab, their bottlenecks by how much cash do they have in the bank account.
+[02:58:28] And so they go back to the venture capitalist who says, Oh, I'm going to fund at the model layer, the application layer, the inference layer, because I don't want to fund all of that CapEx stuff.
+[02:58:37] And so the venture capitalist then funds all the CapEx stuff by giving the new NeoLab or new inference company the check that they then send to the cloud, which is The deposit for the cluster, and that's how you underwrite the customer.
+[02:58:53] So, the clusters then are delayed because the cloud couldn't actually deploy the cluster until they had the customer in hand.
+[02:59:04] And so that was the riskiest point.
+[02:59:06] So therefore, what should have happened was the cloud had bought the cluster ahead of time and then waited until it was landed in the data center and then sold it.
+[02:59:17] And that means you have way less likelihood of delays.
+[02:59:20] Meanwhile, the cluster is very likely to break when you get the cluster as the customer because you don't have liquidity.
+[02:59:26] And so if the failure rate is higher than what you expect and you don't have the ability to transition a node in, then you don't have anywhere you can pull nodes from, which means that if you need new nodes to make up for the failed ones, you have to RMA them, which means you have to get a new node.
+[02:59:40] And then that gets us back to several steps before where you have the lead time problem again.
+[02:59:46] And so everything breaks for everybody all the time.
+[02:59:50] Once you have gotten through all of that as a new AI lab, your problems are, you know, nobody was sold, like everyone was sold out.
+[02:59:57] You then had to wait.
+[03:00:10] and had to wait a lead time.
+[03:00:11] You pay this big deposit.
+[03:00:12] The thing was delayed, and then it broke.
+[03:00:14] And finally, you got through all of that.
+[03:00:16] And the likelihood that you predict your demand correctly is very low.
+[03:00:19] And so you're either going to be way overprovisioned or way underprovisioned, and you have no way out.
+[03:00:23] There's no way to sell your capacity to somebody else, and there's no way to buy more capacity if you need it.
+[03:00:31] So, compute markets.
+[03:00:31] To solve these problems, you need to solve a bunch of different problems all at once.
+[03:00:32] You need to underwrite the value of the GPU cluster rather than underwriting the value, underwriting the credit risk of the customer.
+[03:00:36] This is how it could work.
+[03:00:38] It's not guaranteed to work like this.
+[03:00:40] In other industries, what happened is everything just consolidated.
+[03:00:46] You got one big creditworthy customer that does the whole damn industry.
+[03:00:49] That's what the path of AI is currently on track to do.
+[03:00:52] It's instead of going to be a liquid market where anybody can participate, it's going to look like TSMC.
+[03:00:56] You're going to get one buyer or a few buyers that are the clouds.
+[03:00:57] You're going to get a few model labs that are the AI labs, and then you won't get other startups.
+[03:01:00] This is what we think is going to happen, and this is why three years ago, when we were doing our AI lab, we had a chance.
+[03:01:06] We could have said, no, we're not going to do our new, we're not going to, like, stick it out for several years just trying to keep our company alive.
+[03:01:15] We're just going to go do a new AI lab.
+[03:01:17] But we saw this problem, and we said, oh shit, if we don't do anything about this, then we will just hit this three years from now.
+[03:01:24] And here we are three years from now hitting this problem, and where everyone's going to hit this problem.
+[03:01:32] So, as if you watched the last talk, it's very hard to solve this problem unless you are operating both the market and the clusters at the same time.
+[03:01:39] So this is Dylan Page.
+[03:01:41] Dylan is the co-chair of the CNCF Infrastructure Group.
+[03:01:44] That's the organization that makes Kubernetes.
+[03:01:46] He formerly worked at Lambda doing infrastructure there, and he joined the San Francisco Compute because GPU compute.
+[03:01:53] isn't sufficiently standardized or reliable for the market operator to be divorced from the physical infrastructure.
+[03:01:58] It doesn't work if you aren't the one who's buying the thing.
+[03:02:01] Sorry, it doesn't work if the person you're buying from isn't operating it.
+[03:02:04] To give an example of why this doesn't work is I'm sure some of you are flying in from overseas or out of town, and you have a hotel room.
+[03:02:13] Wouldn't it be great if you could, you know, sell that hotel room to somebody else?
+[03:02:18] I go to you and I want to buy that hotel room, and I say, can I get room service?
+[03:02:22] Can I get my room cleaned?
+[03:02:24] I've got a problem with my room.
+[03:02:26] Who do I call?
+[03:02:27] If you don't operate the hotel, you can't fix any of those problems.
+[03:02:31] That's why brokering clusters doesn't work.
+[03:02:33] You have to operate the cluster like the hotel.
+[03:02:36] You have to run the whole damn thing.
+[03:02:38] Otherwise, you can't actually make a market.
+[03:02:40] It doesn't work.
+[03:02:41] You can't do physical settlement.
+[03:02:43] So why does nobody do physical settlement?
+[03:02:46] The problem is there's a very strong incentive to never do physical settlement.
+[03:02:50] That's because if you build out physical settlement for compute, what that literally means is you're building out the entire operating capacity of a GPU cloud.
+[03:02:58] And if you are building out the entire operating capacity of a GPU cloud, you should just be a GPU cloud because it looks to be the case that you will make an ungodly amount of money.

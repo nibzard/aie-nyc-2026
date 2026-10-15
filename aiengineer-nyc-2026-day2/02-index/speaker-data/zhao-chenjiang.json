@@ -1,0 +1,21 @@
+{
+ "slug": "zhao-chenjiang",
+ "name": "Zhao Chenjiang",
+ "role": "Staff Product Manager",
+ "company": "Coder",
+ "bio": "Self-introduced at 4:17 PM ET on the AI Engineer NYC 2026 day-two livestream as \"Zhao Chenjiang, staff product manager at a company called Coder\", presenting the off-agenda talk \"Scary stories of AI gone wrong\" (segment 042). Public sources could not confirm the name's romanization or a public profile (searched 2026-10-15); the company is coder.com, the enterprise AI development infrastructure vendor. Treat the spelling as ASR-approximate.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "",
+ "identified_from_session": true,
+ "enriched": true,
+ "sources": [
+  "https://coder.com"
+ ],
+ "sessions": [
+  {
+   "order": 42
+  }
+ ]
+}

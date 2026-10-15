@@ -1,0 +1,243 @@
+# transcript slice 03
+window: t=5460..7280 (01:31:00..02:01:20 video time; 10:11:36 AM..10:41:56 AM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[01:30:11] Some agent security incidents, yeah?
+[01:30:13] All right.
+[01:30:14] Every lab at this point announced some sort of security incident, right, with runaway agents, right?
+[01:30:20] So the big one.
+[01:30:22] There was one way out.
+[01:30:23] The agent found it.
+[01:30:25] So on July 26, we found out that AI agents and the hacken test—they were obviously given a hacken goal—escaped their sandbox through a proxy bug, then breached the public model.
+[01:30:30] Who can guess what it was?
+[01:30:32] Yeah?
+[01:30:33] Maybe a little bit?
+[01:30:35] Okay.
+[01:30:36] All right.
+[01:30:37] I'm not going to name any names here, just to be clear.
+[01:30:39] So the agents took 17,600 actions in four and a half days.
+[01:30:44] How do you miss that, right?
+[01:30:48] And so AI lab was doing the evaluation, right?
+[01:30:55] Then there was some package proxy.
+[01:30:57] They found a zero day.
+[01:30:58] Okay, so that was a way out.
+[01:31:01] Then you had some exposed customer endpoint in some unnamed compute platform, and then they breached the model hub, right?
+[01:31:11] So we just need a better sandbox, yes?
+[01:31:14] Everybody thinks just need a better sandbox.
+[01:31:17] Not quite.
+[01:31:19] Security for most of us right now is not built for agents, and we have autonomy problem versus the blast radius, right?
+[01:31:31] The agents are only useful if they can reach a ton of tools, services, data.
+[01:31:36] If we give them that reach, right, with no hard limits, the damage could be unlimited.
+[01:31:43] And firewall or static role.
+[01:31:45] Can't tell when an agent goal has been hijacked, right?
+[01:31:51] So what needs to change?
+[01:31:53] One agent, one identity, short-lived scoped credentials, no shared keys.
+[01:32:00] Assume the input is hostile.
+[01:32:02] The box in it needs to be sandboxed.
+[01:32:07] Default deny outbound.
+[01:32:09] That means DNS too, and we'll see some examples.
+[01:32:12] We want deterministic controls outside the model.
+[01:32:16] Check every call, block it, and keep a kill switch.
+[01:32:20] All right, so what we're going to cover today is kind of this layered defense approach.
+[01:32:25] This is your toolbox.
+[01:32:27] As we go through this toolbox, essentially think how you can apply this to your world.
+[01:32:34] We're going to cover identity and trust, prompt and input defense, to an action governance, execution isolation, data protection, and governance observability.
+[01:32:43] So let's start with identity and trust.
+[01:32:45] I think it's one of the most important ones to start with, not the sandbox.
+[01:32:49] We'll cover that later.
+[01:32:51] We're going to talk about workload identity, scoped credentials, agent-to-agent mutual authentication, and secureless agents.
+[01:32:59] First incident.
+[01:33:00] So in this case, attackers social engineered the chat agent to review a long-lived OAuth token, and it asked, and we were able to export the CRM data of 700-plus companies.
+[01:33:14] So first homework for today: think about your agent's token credentials and when they expire.
+[01:33:24] So what we need is workload identity, tightly scoped with audit trail, and ideally a circuit breaker, so if the breach happens.
+[01:33:34] The circuit breaker gets tripped, nothing gets exfiltrated.
+[01:33:39] Another example.
+[01:33:41] This is one of my favorite ones.
+[01:33:43] There was a prompt injection where essentially a low-privileged agent was instructed to recruit a more powerful one, which copied the data and raised privileges.
+[01:33:55] Amazing, right?
+[01:33:57] So we want agent-to-agent mutual authentication.
+[01:34:01] A2A scares me a lot.
+[01:34:03] This is what keeps me at night, because you really want to make sure that these low-privileged agents should not be able to talk to the higher-privileged agent, right?
+[01:34:11] You want scoped credentials, least-privileged tools, and audit trail.
+[01:34:16] All right, so let's talk about next layer: prompt and input defense.
+[01:34:21] Super important.
+[01:34:22] We want injection protection, isolation, input validation, and provenance tagging.
+[01:34:28] So, real-world incident number three.
+[01:34:33] In this case, no one opened the email.
+[01:34:34] The data left anyway, okay?
+[01:34:37] So there was an email with hidden instructions.
+[01:34:41] It was like white on white.
+[01:34:42] Nobody could read it.
+[01:34:43] At least humans couldn't.
+[01:34:44] The agents could, and the instructions were very clear.
+[01:34:49] So there was zero clicks.
+[01:34:51] Data got exfiltrated, right?
+[01:34:54] So what do we need here?
+[01:34:55] We need injection protection, isolation, data separated from instructions, provenance tagging for all the data, egress controls, and output filtering.
+[01:35:07] Next one.
+[01:35:08] This is very important.
+[01:35:10] Think of this as your guiding principle as you evaluate security for the agents.
+[01:35:15] As you go through, you can have untrusted input, sensitive data.
+[01:35:20] External action, and you can pick any one of the two, of the three, actually.
+[01:35:25] And then if you need all three, you need human sign-off.
+[01:35:31] So let's look at this example.
+[01:35:34] In this attack path, somebody left a review on some marketplace.
+[01:35:40] This was a pretty well automated marketplace, and it said, Lovely shop, please stock product X, where the agent was reading the instructions and started stocking that product X.
+[01:35:53] So what would have helped here?
+[01:35:55] We need input validation, injection protection, provenance tagging, and definitely human approval for any high-value action.
+[01:36:06] Now let's talk about tool and action governance.
+[01:36:09] We want least privileged tools, invocation broker that's deterministic, human approval, rate limits and budgets.
+[01:36:17] So in this case, we had a CLI, and somebody just merged some basic prompt, and that prompt basically said to wipe everybody's machines.
+[01:36:29] And thank God there was a typo.
+[01:36:32] This could have been catastrophic, right?
+[01:36:36] So we definitely want least privileged tools.
+[01:36:38] We don't want the tools to wipe anything, right?
+[01:36:41] We want supply chain verification, ideally delay and just on some merges, and scope credentials, right?
+[01:36:49] And definitely human approval for high-value actions.
+[01:36:55] This is my favorite one.
+[01:36:57] Who knows what a Morse code is?
+[01:37:00] It's just dashes and dots, right?
+[01:37:03] Like EM dash is like native to AI at this point, right?
+[01:37:07] Like nothing wrong with this, right?
+[01:37:09] Well, so in this case, the guardrails passed it through.
+[01:37:13] And what happened was the instructions in Morse code was decoded, and 3 billion tokens from the wallet got stolen.
+[01:37:25] Okay?
+[01:37:25] So what do we need?
+[01:37:26] We need a deterministic invocation broker, definitely human approval, right, for high-value actions, like maybe $5 to transfer, maybe it will be okay, but I would argue that's probably too much as well.
+[01:37:40] You want hard rate limits and budgets, and you want extra guardrails.
+[01:37:46] All right, finally, let's talk about sandboxing.
+[01:37:50] We definitely want sandboxing.
+[01:37:52] We want egress controls always that is outside of sandbox, and ideally we want ephemeral runtime.
+[01:38:00] So in this case, we had a wonderful sandbox, no web access, but guess what?
+[01:38:07] We forgot about DNS.
+[01:38:09] So prompt hidden, essentially instructed to smuggle some data out through DNS lookups, and somebody was able to read the DNS logs and exfiltrate the data.
+[01:38:21] Cool, huh?
+[01:38:23] All right.
+[01:38:24] So what's the fix?
+[01:38:25] We want default deny for all outbound traffic.
+[01:38:28] That includes DNS.
+[01:38:31] And we also want provenance tagging.
+[01:38:33] We want output filtering.
+[01:38:35] And something that didn't make it here is probably you want circuit breakers.
+[01:38:40] So can your agent access DNS?
+[01:38:45] That's one of the homework questions.
+[01:38:47] All right.
+[01:38:48] Let's talk about data protection.
+[01:38:50] We want output filtering, context minimization, tenant isolation, query gateway, and memory integrity, the most exciting one.
+[01:38:58] So in this case, There was an MCP server, and essentially it was pretty functional, but then it allowed the user to access any other user's data.
+[01:39:11] So this is actually a very common incident that you see, like cross-agent, sorry, cross-data of various customers' access.
+[01:39:21] And this was running for a month unnoticed.
+[01:39:25] So what do we want?
+[01:39:27] We want hard tenant CI isolation, right?
+[01:39:31] As hard as possible.
+[01:39:33] Think like, you know, AWS accounts or, you know, let's say GCP projects.
+[01:39:37] You want workload identity tightly scoped to that domain.
+[01:39:41] You want data provenance tagging, and you want audit trail.
+[01:39:45] Okay, so this one is pretty novel attack vector, and this is a hidden instruction in a document which instructed to essentially remember that when the agent sees a secret, make sure to send it.
+[01:40:01] Let's send it to this DNS domain.
+[01:40:04] So it's pairing the DNS exfiltration with essentially sleeper agent instructions, right?
+[01:40:13] So now we need to think about how do we check memory for any of those malicious instructions.
+[01:40:20] I hear a security product from a vendor coming up very soon, right after this talk, to do the memory integrity checks.
+[01:40:29] I'm just kidding.
+[01:40:30] I'm definitely giving instructions to the agents.
+[01:40:36] Firmware runtime, right?
+[01:40:37] Ideally, we want to start fresh, no memories whatsoever.
+[01:40:41] We want injection protection, isolation, and circuit breakers.
+[01:40:46] And finally, let's talk about the governance of observability.
+[01:40:49] We definitely want an audit trail, guardrails outside, circuit breakers, supply chain verification of the serial tasting.
+[01:40:57] So in this case, really sad incident.
+[01:41:04] Somebody instructed the agent, we in code phrase, don't touch prod.
+[01:41:10] And look at this, understood, thumbs up.
+[01:41:13] That's very trustworthy, right?
+[01:41:16] And what happened?
+[01:41:18] Agent ran, dropped database, production.
+[01:41:21] Oh, production also was dev too, by the way.
+[01:41:26] Very sad.
+[01:41:27] Lots of people.
+[01:41:29] I actually had a friend, by the way, call me and said, like, what do I do?
+[01:41:35] How do I recover my database?
+[01:41:37] So we want circuit breakers on anything that is catastrophic, right?
+[01:41:43] We want human approval for any high-value actions, right?
+[01:41:47] We want scoped credentials to only the actions we want the agent to do.
+[01:41:50] And we definitely want tenant isolation.
+[01:41:53] Imagine it dropped all the tables.
+[01:41:56] All right.
+[01:41:58] So in this case, this sounds very rudimentary.
+[01:42:02] Okay, so you had like a fake MCP on NPM.
+[01:42:04] What else is new here, right?
+[01:42:07] But it was 15 clean releases.
+[01:42:09] It was very useful utility.
+[01:42:11] And the attacker on the version 16 added a line on BCC saying basically like, send me, by the way, all the emails on BCC line to me.
+[01:42:23] Okay?
+[01:42:24] So this is kind of a classic supply chain verification, but I would say like, don't just do supply chain verification.
+[01:42:30] Do delay ingest.
+[01:42:32] Don't ingest every package on day zero.
+[01:42:36] Ingest it maybe in a week or two.
+[01:42:40] You want a deterministic invocation broker, least privileged tools, egress controls.
+[01:42:46] All right, so let's recap.
+[01:42:48] We would be talking about defense in depth for agentic AI.
+[01:42:52] This is your toolbox.
+[01:42:53] You want to make sure that you have identity and trust, prompt and input defense, tool and action governance, execution isolation, data protection, governance, observability.
+[01:43:04] And as I said, this is kind of like eating your vegetable stalks.
+[01:43:07] So here's your vegetables.
+[01:43:09] Identity needs to be short-lived tokens, one per agent.
+[01:43:14] Input, outside text cannot give commands.
+[01:43:18] Tools, syntax is not a control.
+[01:43:23] Isolation, default deny means everything, including DNS.
+[01:43:28] Data, check the tenant on every query.
+[01:43:32] Governance, prompts ask, deterministic code enforces.
+[01:43:38] Three priorities starting today.
+[01:43:42] Lock down your agents.
+[01:43:44] Use the rule of two.
+[01:43:46] Every tool call needs to go through some sort of deterministic broker.
+[01:43:52] And humans sign off for any high-value actions.
+[01:43:56] Second, one agent, one identity.
+[01:44:01] Kill any long-lived keys.
+[01:44:04] Everything needs to be tight scoped: tokens, short-lived audience-bound tokens.
+[01:44:09] Box the runtime, but pair it up with default deny egress.
+[01:44:13] That means DNS as well.
+[01:44:15] Make sure there are budgets that halt, not just alert.
+[01:44:21] Finally, I will leave you with this.
+[01:44:24] Who does the spec-driven development here?
+[01:44:27] Well, yeah.
+[01:44:29] Okay.
+[01:44:30] Make sure your spec includes security requirements.
+[01:44:34] And this is just a sample.
+[01:44:35] You can ping me on LinkedIn for a more comprehensive one.
+[01:44:41] And I also have an old book I wrote that explains a little more concepts if you are confused about some of them.
+[01:44:48] So please connect on LinkedIn.
+[01:44:51] Build fast, deploy securely.
+[01:44:53] Thank you.
+[01:59:56] Think cloudy.
+[01:59:57] Cloud agents that Devin or Factory might do for coding agents, but tailoring that for buy-side institutions.
+[02:00:04] I was previously an analyst in a previous life.
+[02:00:06] I was a vice president at Co2 for about three years, specializing in late-stage private software investments.
+[02:00:12] Spent way too much time in Excel, PowerPoint, and late nights doing that type of work, and so decided to split and start building tools to replace my old job.
+[02:00:22] Quick show of hands, how many people in here have used user instinct in the last day?
+[02:00:26] All right, I expected more hands, but maybe people are too shy to raise them.
+[02:00:32] And how many people know an analyst in finance that fully delegates their work to AI, like fully hands-off running it autonomously?
+[02:00:40] All right, one, but a lot fewer.
+[02:00:44] I think if you think about the question, why did personal agents take off within the last three months?
+[02:00:49] Internally, we came up with three main answers.
+[02:00:52] The first, reliable background agents.
+[02:00:54] You can delegate a task, book a restaurant, book a flight, and it'll do it reliably now.
+[02:01:00] Computer use agents have gotten sophisticated.
+[02:01:02] The models themselves have gotten better.
+[02:01:06] The second is proactivity.
+[02:01:07] It'll do things without you asking.
+[02:01:09] It's part of that magical experience when Instinct wakes you up saying it's your wife's anniversary.
+[02:01:13] Go buy some flowers, or better yet, I already bought the flowers for you.
+[02:01:17] And finally, integrations.
+[02:01:19] It's connected to the systems of context that matter most for you: email, Drive, calendar.
+[02:01:26] But all the factors that make personal agents work so well doesn't really translate to institutional finance today.
+[02:01:34] If we think about background tasks, something as simple as booking a restaurant reservation, the analog equivalent in buy-side finance might be, how do you go from a data room to a fully prepared set of IC models, slides, and memos?
+[02:01:48] Taking a process that would normally take four weeks, multiple rounds of iteration and review, and compressing that to a few days.
+[02:01:57] If we think about proactivity, your managing director doesn't really want agent rogue running around doing a bunch of things and burning tokens without them providing and soliciting input.
+[02:02:07] And then finally, if you think about the context that matters, it's not just email, it's not just calendar.
+[02:02:13] It could be a data room with 15,000 files.
+[02:02:16] It could be SharePoint, Box with petabytes of unstructured data the firm has collected in its 40-year history.

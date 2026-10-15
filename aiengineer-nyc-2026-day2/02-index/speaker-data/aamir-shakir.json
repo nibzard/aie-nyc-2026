@@ -1,0 +1,18 @@
+{
+ "slug": "aamir-shakir",
+ "name": "Aamir Shakir",
+ "role": "CEO",
+ "company": "Mixedbread",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FLjktN34eRyib3bggM8ap_headshot-1789767933971.jpg",
+ "sessions": [
+  {
+   "title": "Building an Evidence Layer for Financial Agents",
+   "time": "3:20pm - 3:38pm",
+   "room": "McCarthy Room (Riverside Suite)"
+  }
+ ]
+}

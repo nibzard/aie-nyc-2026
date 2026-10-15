@@ -1,0 +1,1296 @@
+[
+ {
+  "file": "000-pre-show-hold-before-opening-no-speech-until-welcome-at-15-0.md",
+  "session_id": "000",
+  "title": "Pre-show hold before opening (no speech until welcome at 15:01; hold audio likely, on-screen text unverifiable)",
+  "speakers": [],
+  "start_wall": "8:40:36 AM ET",
+  "end_wall": "8:55:37 AM ET",
+  "video_start": "00:00:00",
+  "video_end": "00:15:01",
+  "session_type": "dead-air",
+  "tags": [
+   "pre-show",
+   "dead-air",
+   "hold-audio",
+   "no-speech",
+   "stream-opening",
+   "day-3-morning"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=0s",
+  "one_liner": "The day-three stream went live at 8:40:36 AM ET and carried roughly 15 minutes of non-speech hold audio before the first spoken words, \"Good morning and welcome back,\" at 00:15:01."
+ },
+ {
+  "file": "001-welcome-remarks-mc-intro-final-day-welcome-sponsor-acknowled.md",
+  "session_id": "001",
+  "title": "Welcome Remarks",
+  "speakers": [
+   "Ksenia Se",
+   "Unidentified host (stream opening)"
+  ],
+  "start_wall": "8:55:37 AM ET",
+  "end_wall": "9:00:50 AM ET",
+  "video_start": "00:15:01",
+  "video_end": "00:20:14",
+  "session_type": "keynote",
+  "tags": [
+   "welcome-remarks",
+   "mc-intro",
+   "sponsor-acknowledgments",
+   "day-three",
+   "program-overview",
+   "ai-engineer-nyc"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=901s",
+  "one_liner": "Ksenia Se of Turing Post, introduced by an unnamed host voice, opens the third and final day of AI Engineer New York with sponsor thanks, a room-by-room program overview, and a hand-off to the first Ramp keynote."
+ },
+ {
+  "file": "002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app.md",
+  "session_id": "002",
+  "title": "Chasing capabilities while waiting for the frontier",
+  "speakers": [
+   "Alexander Shevchenko",
+   "Ksenia Se"
+  ],
+  "start_wall": "9:00:35 AM ET",
+  "end_wall": "9:15:01 AM ET",
+  "video_start": "00:19:59",
+  "video_end": "00:34:25",
+  "session_type": "keynote",
+  "tags": [
+   "ramp",
+   "applied-research",
+   "post-training",
+   "kv-cache-cartridges",
+   "agentic-swarms",
+   "penetration-testing",
+   "bitter-lesson"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=1199s",
+  "one_liner": "Ramp Labs' Alexander Shevchenko argues that an application-layer company should not wait for the next frontier model, and shows three Ramp cases where applied research closed the gap: a post-trained Qwen 3.5 specialist, KV-cache cartridges, and 10,000-agent pen-test swarms."
+ },
+ {
+  "file": "003-host-hand-off-introduces-tarek-shaukat-sonar.md",
+  "session_id": "003",
+  "title": "Host hand-off: introduces Tarek Shaukat (Sonar)",
+  "speakers": [
+   "Unidentified host/MC"
+  ],
+  "start_wall": "9:15:03 AM ET",
+  "end_wall": "9:15:38 AM ET",
+  "video_start": "00:34:27",
+  "video_end": "00:35:02",
+  "session_type": "announcement",
+  "tags": [
+   "host-hand-off",
+   "announcement",
+   "sonar",
+   "verification",
+   "session-intro",
+   "keynote-transition"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=2067s",
+  "one_liner": "A 35-second voiceover bridge between the Ramp and Sonar keynotes: an unnamed host asks how agent-generated code can be trusted to ship, then welcomes Tarek Shaukat, CEO of Sonar, to the stage."
+ },
+ {
+  "file": "004-the-machine-that-changed-the-world-vai-engineering-confidenc.md",
+  "session_id": "004",
+  "title": "The Machine that Changed the World, vAI",
+  "speakers": [
+   "Tariq Shaukat"
+  ],
+  "start_wall": "9:15:03 AM ET",
+  "end_wall": "9:31:57 AM ET",
+  "video_start": "00:34:27",
+  "video_end": "00:51:21",
+  "session_type": "keynote",
+  "tags": [
+   "agentic-software-factories",
+   "code-verification",
+   "code-confidence",
+   "ai-code-quality",
+   "toyota-production-system",
+   "keynote"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=2067s",
+  "one_liner": "Sonar CEO Tariq Shaukat argues that agentic coding makes code abundant and confidence scarce, and presents a four-part code confidence formula (intent, guardrails, verification, evidence) for engineering trust into agentic software factories."
+ },
+ {
+  "file": "005-trusting-agents-in-policy-driven-workflows-policies-as-code.md",
+  "session_id": "005",
+  "title": "Trusting Agents in Policy-Driven Workflows",
+  "speakers": [
+   "Evan Kormos"
+  ],
+  "start_wall": "9:32:03 AM ET",
+  "end_wall": "9:49:55 AM ET",
+  "video_start": "00:51:27",
+  "video_end": "01:09:19",
+  "session_type": "keynote",
+  "tags": [
+   "policies-as-code",
+   "agent-workflows",
+   "dag-dcg",
+   "llm-evaluations",
+   "human-in-the-loop",
+   "autonomy",
+   "financial-services"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=3087s",
+  "one_liner": "Coinbase engineering manager Evan Kormos maps policy-driven workflows as deterministic DAGs on the outside, lets agents loop adaptively inside each node, and turns autonomy on only when measured evaluation quality clears a policy threshold."
+ },
+ {
+  "file": "006-host-hand-off-introduces-evan-kormos-coinbase.md",
+  "session_id": "006",
+  "title": "Host hand-off: introduces Evan Kormos (Coinbase)",
+  "speakers": [
+   "Unidentified host/MC"
+  ],
+  "start_wall": "9:32:04 AM ET",
+  "end_wall": "9:32:33 AM ET",
+  "video_start": "00:51:28",
+  "video_end": "00:51:57",
+  "session_type": "announcement",
+  "tags": [
+   "host-hand-off",
+   "announcement",
+   "coinbase",
+   "policy-driven-workflows",
+   "session-intro",
+   "keynote-transition"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=3088s",
+  "one_liner": "A 29-second voiceover bridge between the Sonar and Coinbase keynotes: an unnamed host asks where AI agents should take control and where humans should stay in charge, then welcomes Evan Kormos, engineering manager at Coinbase, to the stage."
+ },
+ {
+  "file": "007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan.md",
+  "session_id": "007",
+  "title": "Building the Next Chapter of AI in Finance",
+  "speakers": [
+   "Joseph Kim"
+  ],
+  "start_wall": "9:50:08 AM ET",
+  "end_wall": "10:09:24 AM ET",
+  "video_start": "01:09:32",
+  "video_end": "01:28:48",
+  "session_type": "keynote",
+  "tags": [
+   "chatgpt",
+   "financial-services",
+   "openai",
+   "product-demo",
+   "capability-overhang",
+   "model-trends",
+   "agents"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=4172s",
+  "one_liner": "Joseph Kim, head of ChatGPT for financial services at OpenAI, presents the month-old product built with Morgan Stanley and Evercore, frames it as a way to close the \"capability overhang\", and predicts models will outperform the best human experts on financial judgment tasks by 2027."
+ },
+ {
+  "file": "008-host-hand-off-introducing-joseph-kim-openai.md",
+  "session_id": "008",
+  "title": "Host hand-off: introducing Joseph Kim (OpenAI)",
+  "speakers": [
+   "Unidentified host/MC"
+  ],
+  "start_wall": "9:50:09 AM ET",
+  "end_wall": "9:50:25 AM ET",
+  "video_start": "01:09:33",
+  "video_end": "01:09:49",
+  "session_type": "announcement",
+  "tags": [
+   "host-hand-off",
+   "announcement",
+   "openai",
+   "chatgpt-for-financial-services",
+   "keynote-transition",
+   "joseph-kim"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=4173s",
+  "one_liner": "A 16-second voiceover bridge between the Coinbase policy keynote and the OpenAI finance keynote: an unnamed host asks what it takes to turn AI advances into meaningful progress for financial services, then welcomes Joseph Kim, head of ChatGPT for financial services at OpenAI, to the stage."
+ },
+ {
+  "file": "009-host-hand-off-introducing-andrey-rybka-bloomberg.md",
+  "session_id": "009",
+  "title": "Host hand-off: introducing Andrey Rybka (Bloomberg)",
+  "speakers": [
+   "Unidentified host/MC"
+  ],
+  "start_wall": "10:09:25 AM ET",
+  "end_wall": "10:09:52 AM ET",
+  "video_start": "01:28:49",
+  "video_end": "01:29:16",
+  "session_type": "announcement",
+  "tags": [
+   "host-hand-off",
+   "announcement",
+   "bloomberg",
+   "ai-security",
+   "session-intro",
+   "keynote-transition"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=5329s",
+  "one_liner": "A 27-second unnamed-host voiceover bridges the OpenAI finance keynote and the Bloomberg security keynote: it frames AI as changing both sides of the security equation, then welcomes Andrey Rybka to the stage."
+ },
+ {
+  "file": "010-security-in-the-age-of-ai-recent-attacks-incidents-defenses.md",
+  "session_id": "010",
+  "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+  "speakers": [
+   "Andrey Rybka"
+  ],
+  "start_wall": "10:09:25 AM ET",
+  "end_wall": "10:25:29 AM ET",
+  "video_start": "01:28:49",
+  "video_end": "01:44:53",
+  "session_type": "keynote",
+  "tags": [
+   "agent-security",
+   "defense-in-depth",
+   "prompt-injection",
+   "sandbox-escape",
+   "agent-identity",
+   "supply-chain-security",
+   "keynote"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=5329s",
+  "one_liner": "Bloomberg's Andrey Rybka walks through a catalog of unnamed real agent incidents \u2014 runaway agents, a July 26 sandbox escape with 17,600 actions in 4.5 days, zero-click email exfiltration, Morse-code payloads, DNS smuggling, and a dropped production database \u2014 and maps each one to a six-layer defense-in-depth toolbox anchored by one agent one identity and deterministic controls outside the model."
+ },
+ {
+  "file": "011-post-keynote-hold-and-the-10-30-10-40am-et-break-room-turnov.md",
+  "session_id": "011",
+  "title": "Post-keynote hold and the 10:30-10:40am ET break (room turnover, no transcribed content)",
+  "speakers": [],
+  "start_wall": "10:25:29 AM ET",
+  "end_wall": "10:40:32 AM ET",
+  "video_start": "01:44:53",
+  "video_end": "01:59:56",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "dead-air",
+   "scheduled-break",
+   "post-keynote-hold",
+   "interstitial",
+   "simons-room"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=6293s",
+  "one_liner": "A roughly 15-minute non-speech interstitial on the main-stage stream: the Bloomberg security keynote closed about five minutes early at 10:25:29 AM ET, hold and break audio filled the scheduled 10:30-10:40am ET agenda gap, and the stream resumed mid-intro with the next Simons Room talk at 10:40:31 AM ET."
+ },
+ {
+  "file": "012-towards-autonomous-analysts-in-finance-compound-long-running.md",
+  "session_id": "012",
+  "title": "Towards Autonomous Analysts in Finance",
+  "speakers": [
+   "Yijia Liang"
+  ],
+  "start_wall": "10:40:32 AM ET",
+  "end_wall": "10:56:06 AM ET",
+  "video_start": "01:59:56",
+  "video_end": "02:15:30",
+  "session_type": "talk",
+  "tags": [
+   "autonomous-agents",
+   "finance",
+   "buy-side",
+   "multiplayer-agents",
+   "office-engine",
+   "long-running-agents",
+   "context-at-scale"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=7196s",
+  "one_liner": "A former Coatue VP and Compound AI co-founder explains how Compound rebuilt Excel, PowerPoint, and Word from scratch with coding agents so multiplayer, long-running agents can move buy-side finance work from copilot to autopilot."
+ },
+ {
+  "file": "013-session-turnaround-networking-break-10-56-11-06am-et-nothing.md",
+  "session_id": "013",
+  "title": "Session turnaround / networking break (10:56-11:06am ET, nothing transcribed)",
+  "speakers": [],
+  "start_wall": "10:56:06 AM ET",
+  "end_wall": "11:05:44 AM ET",
+  "video_start": "02:15:30",
+  "video_end": "02:25:08",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "networking-break",
+   "session-turnaround",
+   "dead-air",
+   "interstitial",
+   "simons-room"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=8130s",
+  "one_liner": "A roughly 9.6-minute non-speech interstitial on the main-stage stream: the Compound AI talk ended about two minutes early at 10:56:06 AM ET, the stream carried no speech across the scheduled 10:58-11:05am ET block gap, and the SemiAnalysis talk opened at 11:05:43 AM ET."
+ },
+ {
+  "file": "014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig.md",
+  "session_id": "014",
+  "title": "Not All GPU's Are Deployed The Same",
+  "speakers": [
+   "Oliver Kennon"
+  ],
+  "start_wall": "11:05:43 AM ET",
+  "end_wall": "11:23:11 AM ET",
+  "video_start": "02:25:07",
+  "video_end": "02:42:35",
+  "session_type": "talk",
+  "tags": [
+   "gpu-economics",
+   "compute-markets",
+   "cost-curves",
+   "inference-performance",
+   "clustermax",
+   "compute-futures",
+   "semianalysis"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=8707s",
+  "one_liner": "A SemiAnalysis research analyst argues that identical GPUs deliver very different amounts of useful intelligence depending on who operates them, so compute buyers, benchmarks, and futures markets must grade the operator, not just the chip."
+ },
+ {
+  "file": "015-session-changeover-dead-air-between-talks-11-23-11-30am-et.md",
+  "session_id": "015",
+  "title": "Session changeover / dead air between talks (11:23-11:30am ET)",
+  "speakers": [],
+  "start_wall": "11:23:11 AM ET",
+  "end_wall": "11:30:35 AM ET",
+  "video_start": "02:42:35",
+  "video_end": "02:49:59",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "dead-air",
+   "session-changeover",
+   "no-speech",
+   "simons-room",
+   "livestream-gap"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=9755s",
+  "one_liner": "A 7 minute 24 second block changeover on the Simons Room stream with zero transcribed speech, between Oliver Kennon's SemiAnalysis talk and Evan Conrad's 11:30am compute-markets talk."
+ },
+ {
+  "file": "016-how-compute-markets-work-supercomputing-as-a-service-credit.md",
+  "session_id": "016",
+  "title": "How Compute Markets Work",
+  "speakers": [
+   "Evan Conrad"
+  ],
+  "start_wall": "11:30:35 AM ET",
+  "end_wall": "11:48:12 AM ET",
+  "video_start": "02:49:59",
+  "video_end": "03:07:36",
+  "session_type": "talk",
+  "tags": [
+   "compute-markets",
+   "gpu-compute",
+   "credit-risk",
+   "physical-settlement",
+   "supercomputing-as-a-service",
+   "ai-infrastructure",
+   "market-design"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=10199s",
+  "one_liner": "Evan Conrad of San Francisco Compute explains why a compute market only works if it is physically settled, why credit (not power) is the number-one AI bottleneck, and what happens to startups if nobody builds one."
+ },
+ {
+  "file": "017-between-session-transition-11-48-11-55am-et.md",
+  "session_id": "017",
+  "title": "Between-session transition (11:48-11:55am ET)",
+  "speakers": [],
+  "start_wall": "11:48:12 AM ET",
+  "end_wall": "11:55:57 AM ET",
+  "video_start": "03:07:36",
+  "video_end": "03:15:21",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "between-session-transition",
+   "no-speech",
+   "stage-changeover",
+   "simons-room",
+   "livestream-gap"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=11256s",
+  "one_liner": "A 7 minute 46 second untranscribed gap on the Simons Room stream between the close of Evan Conrad's \"How Compute Markets Work\" at 11:48:12 AM ET and the first audible words of Jump Trading's \"The Dark Pools of Compute\" at 11:55:57 AM ET."
+ },
+ {
+  "file": "018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p.md",
+  "session_id": "018",
+  "title": "The Dark Pools of Compute",
+  "speakers": [
+   "Affaan Mustafa",
+   "Alejandro Soumah Fernandez"
+  ],
+  "start_wall": "11:55:58 AM ET",
+  "end_wall": "12:16:20 PM ET",
+  "video_start": "03:15:22",
+  "video_end": "03:35:44",
+  "session_type": "talk",
+  "tags": [
+   "compute-markets",
+   "otc-trading",
+   "gpu-pricing",
+   "jevons-paradox",
+   "infrastructure-financing",
+   "export-controls"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=11722s",
+  "one_liner": "Jump Trading's compute trading leads map the unlit, chat-brokered over-the-counter market for physical GPU compute, from Jevons-paradox demand and the prepayment squeeze on middle-market buyers to the microstructure and policy that could turn compute into a real market."
+ },
+ {
+  "file": "019-silence-room-transition-before-the-12-20pm-session.md",
+  "session_id": "019",
+  "title": "Silence / room transition before the 12:20pm session",
+  "speakers": [],
+  "start_wall": "12:16:22 PM ET",
+  "end_wall": "12:20:23 PM ET",
+  "video_start": "03:35:46",
+  "video_end": "03:39:47",
+  "session_type": "dead-air",
+  "tags": [
+   "dead-air",
+   "room-transition",
+   "no-speech",
+   "break",
+   "simons-room",
+   "livestream-gap"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=12946s",
+  "one_liner": "A 4 minute 1 second silent room changeover on the Simons Room stream, with zero transcribed speech between the close of the Jump Trading \"Dark Pools of Compute\" talk and Carmen Li's 12:20pm Compute Exchange session."
+ },
+ {
+  "file": "020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico.md",
+  "session_id": "020",
+  "title": "CEO, Compute Exchange",
+  "speakers": [
+   "Carmen Li"
+  ],
+  "start_wall": "12:20:23 PM ET",
+  "end_wall": "12:38:20 PM ET",
+  "video_start": "03:39:47",
+  "video_end": "03:57:44",
+  "session_type": "talk",
+  "tags": [
+   "gpu-marketplace",
+   "compute-exchange",
+   "term-structure",
+   "gpu-futures",
+   "residual-values",
+   "silicon-data",
+   "cme-indices"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=13187s",
+  "one_liner": "Carmen Li, CEO of both Compute Exchange and Silicon Data, argues for a neutral GPU exchange that owns no hardware, verifies both sides of every trade, and publishes the term-structure curves and residual values that now feed CME futures, NVIDIA's investor deck, and bank appraisals."
+ },
+ {
+  "file": "021-applause-stage-transition-after-carmen-li-s-talk.md",
+  "session_id": "021",
+  "title": "Applause / stage transition after Carmen Li's talk",
+  "speakers": [],
+  "start_wall": "12:38:20 PM ET",
+  "end_wall": "12:39:24 PM ET",
+  "video_start": "03:57:44",
+  "video_end": "03:58:48",
+  "session_type": "filler",
+  "tags": [
+   "applause",
+   "stage-transition",
+   "filler",
+   "session-boundary",
+   "no-speech",
+   "carmen-li"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=14264s",
+  "one_liner": "A roughly 63-second applause and stage-changeover gap with no transcribed speech, between Carmen Li's Compute Exchange talk and the Intuit Credit Karma talk that follows."
+ },
+ {
+  "file": "022-moving-ai-agents-from-experiment-to-enterprise-production-in.md",
+  "session_id": "022",
+  "title": "Moving AI agents from experiment to enterprise production (Intuit Credit Karma: LangGraph, MCP gateway, evals, memory, PII blocking) -- off-agenda",
+  "speakers": [
+   "Sharish Gagar"
+  ],
+  "start_wall": "12:39:23 PM ET",
+  "end_wall": "1:08:52 PM ET",
+  "video_start": "03:58:47",
+  "video_end": "04:28:16",
+  "session_type": "talk",
+  "tags": [
+   "ai-agents",
+   "mcp-gateway",
+   "mcp-servers",
+   "langgraph",
+   "agent-evals",
+   "pii-blocking",
+   "context-optimization",
+   "enterprise-production"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=14327s",
+  "one_liner": "An Intuit Credit Karma engineer maps the full enterprise agent stack: LangGraph agents, a self-built MCP gateway with JWT auth, OpenTelemetry monitoring, memory, tracking and evals, a PII trimmer, and a context optimizer that cut token use about 90% in a live demo."
+ },
+ {
+  "file": "023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv.md",
+  "session_id": "023",
+  "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+  "speakers": [
+   "Harisha P C"
+  ],
+  "start_wall": "12:39:24 PM ET",
+  "end_wall": "1:08:53 PM ET",
+  "video_start": "03:58:48",
+  "video_end": "04:28:17",
+  "session_type": "talk",
+  "tags": [
+   "mcp",
+   "agent-gateway",
+   "enterprise-agents",
+   "observability",
+   "context-optimization",
+   "pii-redaction",
+   "recorded-playback"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=14328s",
+  "one_liner": "A recorded, off-agenda talk in which a senior staff engineer from Intuit Credit Karma shows how to move AI agents from experiment to enterprise: an MCP gateway with JWT auth and Redis sessions, security-reviewed FastMCP servers, OpenTelemetry-based monitoring, LangGraph with human-in-the-loop, memory, eval tables, a PII trimmer, and a context optimizer that cut tokens 70-78%."
+ },
+ {
+  "file": "024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas.md",
+  "session_id": "024",
+  "title": "The Agent Works. Does Anyone Trust It?",
+  "speakers": [
+   "Michele Grant"
+  ],
+  "start_wall": "1:08:59 PM ET",
+  "end_wall": "1:24:15 PM ET",
+  "video_start": "04:28:23",
+  "video_end": "04:43:39",
+  "session_type": "talk",
+  "tags": [
+   "agent-trust",
+   "value-case",
+   "three-lines-model",
+   "autonomy-scorecard",
+   "m-and-a-integration",
+   "human-oversight",
+   "governance"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=16103s",
+  "one_liner": "Michele Grant, creator of Leading at Scale, uses a $15 billion M&A integration case to argue that a working agent earns enterprise trust only through a written value case with baselines, assigned ownership under the three lines model, and engineering evidence gated by a four-stage autonomy scorecard."
+ },
+ {
+  "file": "025-applause-stage-transition-between-speakers.md",
+  "session_id": "025",
+  "title": "Applause / stage transition between speakers",
+  "speakers": [],
+  "start_wall": "1:24:16 PM ET",
+  "end_wall": "1:24:40 PM ET",
+  "video_start": "04:43:41",
+  "video_end": "04:44:05",
+  "session_type": "filler",
+  "tags": [
+   "filler",
+   "applause",
+   "stage-transition",
+   "networking-break",
+   "off-agenda",
+   "caption-gap"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=17021s",
+  "one_liner": "A 24-second caption-free gap between two pre-recorded talks, consistent with applause and a stage changeover during the 12:40-2:05pm ET networking break."
+ },
+ {
+  "file": "026-tokens-are-the-cheap-part-ai-spend-developer-throughput-and.md",
+  "session_id": "026",
+  "title": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR",
+  "speakers": [
+   "Steve Jamison"
+  ],
+  "start_wall": "1:24:40 PM ET",
+  "end_wall": "1:42:06 PM ET",
+  "video_start": "04:44:04",
+  "video_end": "05:01:30",
+  "session_type": "talk",
+  "tags": [
+   "ai-spend",
+   "cost-per-merged-pr",
+   "developer-throughput",
+   "intelligence-costs",
+   "jellyfish-research",
+   "diminishing-returns",
+   "off-agenda"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=17044s",
+  "one_liner": "Jellyfish research on the industry's largest engineering-workflow-plus-AI-telemetry dataset shows AI is only about 2.5% of the cost of a merged PR, so token bills are still cheap relative to salary - track cost per merged PR, not the token bill."
+ },
+ {
+  "file": "027-end-screen-transition-music-after-recorded-jellyfish-talk.md",
+  "session_id": "027",
+  "title": "End screen / transition music after recorded Jellyfish talk",
+  "speakers": [],
+  "start_wall": "1:42:07 PM ET",
+  "end_wall": "1:42:26 PM ET",
+  "video_start": "05:01:31",
+  "video_end": "05:01:50",
+  "session_type": "dead-air",
+  "tags": [
+   "dead-air",
+   "end-screen",
+   "transition-music",
+   "between-talks",
+   "recorded-playback",
+   "networking-break"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=18091s",
+  "one_liner": "A 19-second non-speech gap of end-screen/transition music on the main-stage stream, between the sign-off of the pre-recorded Jellyfish talk and the off-mic pre-roll of the next online-track video."
+ },
+ {
+  "file": "028-off-air-pre-roll-two-speakers-planning-edits-and-naming-thei.md",
+  "session_id": "028",
+  "title": "Off-air pre-roll: two speakers planning edits and naming their agent 'Jiro'",
+  "speakers": [
+   "Amol Kapoor",
+   "Clifford Ressel"
+  ],
+  "start_wall": "1:42:26 PM ET",
+  "end_wall": "1:42:54 PM ET",
+  "video_start": "05:01:50",
+  "video_end": "05:02:18",
+  "session_type": "filler",
+  "tags": [
+   "off-air",
+   "pre-roll",
+   "filler",
+   "production-chatter",
+   "nori-agentic",
+   "jiro",
+   "aie-online-track"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=18110s",
+  "one_liner": "A 28-second off-mic pre-roll in which the two Nori Agentic presenters settle on the name \"Jiro\" for their agent and plan their opening edit, immediately before their recorded online-track talk."
+ },
+ {
+  "file": "029-agentifying-a-sec-master-nori-agentic-podcast-format-aie-onl.md",
+  "session_id": "029",
+  "title": "Agentifying a SEC Master",
+  "speakers": [
+   "Amol Kapoor",
+   "Clifford Ressel",
+   "Jiro"
+  ],
+  "start_wall": "1:42:54 PM ET",
+  "end_wall": "2:02:56 PM ET",
+  "video_start": "05:02:18",
+  "video_end": "05:22:20",
+  "session_type": "talk",
+  "tags": [
+   "cloud-agents",
+   "sec-master",
+   "finance-data",
+   "private-assets",
+   "agentic-automation",
+   "online-track",
+   "podcast-format"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=18138s",
+  "one_liner": "Nori Agentic's CEO Amol Kapoor and CTO Clifford Ressel, joined on screen by their agent Jiro, explain in a podcast-format online-track talk how cloud agents can maintain a securities master whose every cell change today sends a person hunting for provenance in Google Drive, email, and contract PDFs."
+ },
+ {
+  "file": "030-session-changeover-after-nori-talk-applause-reset.md",
+  "session_id": "030",
+  "title": "Session changeover after Nori talk (applause/reset)",
+  "speakers": [],
+  "start_wall": "2:02:56 PM ET",
+  "end_wall": "2:03:17 PM ET",
+  "video_start": "05:22:20",
+  "video_end": "05:22:41",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "session-changeover",
+   "applause-reset",
+   "stage-transition",
+   "nori-agentic",
+   "norm-ai"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=19340s",
+  "one_liner": "A roughly 21-second untranscribed changeover between the close of the off-agenda Nori Agentic online-track talk and Scott Worland's opening of the next session."
+ },
+ {
+  "file": "031-built-to-scale-future-proofing-your-technology-roadmap-black.md",
+  "session_id": "031",
+  "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+  "speakers": [
+   "John Stecher",
+   "Scott Worland"
+  ],
+  "start_wall": "2:03:17 PM ET",
+  "end_wall": "2:23:50 PM ET",
+  "video_start": "05:22:41",
+  "video_end": "05:43:14",
+  "session_type": "fireside",
+  "tags": [
+   "technology-roadmap",
+   "ai-agents",
+   "data-strategy",
+   "evals",
+   "bitter-lesson",
+   "poc-velocity",
+   "enterprise-ai"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=19361s",
+  "one_liner": "A fireside chat in which Scott Worland (CTO, Norm Ai) interviews John Stecher (CTO, Blackstone) on keeping a technology roadmap durable while frontier AI jumps every few months: fix the data strategy first, treat evals as the quality bar, build throwaway POCs fast, and leave conduits open for frontier intelligence instead of dams."
+ },
+ {
+  "file": "032-applause-stage-reset-and-incoming-speaker-mic-check-before-k.md",
+  "session_id": "032",
+  "title": "Applause, stage reset, and incoming-speaker mic check before Kepler talk (2:23-2:30pm ET agenda gap)",
+  "speakers": [
+   "Vinoo Ganesh"
+  ],
+  "start_wall": "2:23:50 PM ET",
+  "end_wall": "2:30:33 PM ET",
+  "video_start": "05:43:14",
+  "video_end": "05:49:57",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "stage-transition",
+   "applause",
+   "mic-check",
+   "agenda-gap",
+   "kepler"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=20594s",
+  "one_liner": "A roughly seven-minute agenda gap after the \"Built to Scale\" fireside, with no speech except a one-line mic check from the incoming Kepler speaker."
+ },
+ {
+  "file": "033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d.md",
+  "session_id": "033",
+  "title": "Why Wall Street Still Doesn\u2019t Trust AI",
+  "speakers": [
+   "Vinoo Ganesh"
+  ],
+  "start_wall": "2:30:20 PM ET",
+  "end_wall": "2:48:35 PM ET",
+  "video_start": "05:49:44",
+  "video_end": "06:08:00",
+  "session_type": "talk",
+  "tags": [
+   "verification",
+   "deterministic-retrieval",
+   "hallucination",
+   "finance-ai",
+   "rag-security",
+   "provenance",
+   "wall-street"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=20984s",
+  "one_liner": "Kepler CEO Vinoo Ganesh argues that Wall Street's distrust of AI is structural, not a model-quality problem, and shows how making code write every number through deterministic pointers yields citations that are verified, corrected at search time, or refused."
+ },
+ {
+  "file": "034-between-session-transition-2-48-2-55pm-et-agenda-gap-applaus.md",
+  "session_id": "034",
+  "title": "Between-session transition (2:48-2:55pm ET agenda gap; applause/room changeover)",
+  "speakers": [],
+  "start_wall": "2:48:36 PM ET",
+  "end_wall": "2:52:53 PM ET",
+  "video_start": "06:08:00",
+  "video_end": "06:12:17",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "between-session-transition",
+   "agenda-gap",
+   "applause",
+   "stage-changeover",
+   "no-speech",
+   "simons-room"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=22080s",
+  "one_liner": "A roughly 4 minute 17 second untranscribed changeover on the Simons Room stream between the close of Kepler's \"Why Wall Street Still Doesn't Trust AI\" at 2:48:35 PM ET and the first words of Philipp Schmid's Gemini co-worker talk at 2:52:53 PM ET."
+ },
+ {
+  "file": "035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag.md",
+  "session_id": "035",
+  "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+  "speakers": [
+   "Philipp Schmid"
+  ],
+  "start_wall": "2:52:53 PM ET",
+  "end_wall": "3:10:06 PM ET",
+  "video_start": "06:12:17",
+  "video_end": "06:29:30",
+  "session_type": "talk",
+  "tags": [
+   "gemini",
+   "managed-agents",
+   "digital-coworker",
+   "agent-credentials",
+   "mcp",
+   "finance",
+   "live-demo",
+   "google-deepmind"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=22337s",
+  "one_liner": "Philipp Schmid of Google DeepMind builds \"Bug\", an autonomous Wall Street co-worker, live on Gemini managed agents \u2014 with skills, MCP connectors, write-only credentials behind a network proxy, hooks, cron triggers, and a Gemini 4.0 recap."
+ },
+ {
+  "file": "036-post-talk-applause-and-stage-changeover-before-the-3-20pm-bl.md",
+  "session_id": "036",
+  "title": "Post-talk applause and stage changeover before the 3:20pm block (3:13-3:20pm ET agenda gap)",
+  "speakers": [],
+  "start_wall": "3:10:11 PM ET",
+  "end_wall": "3:19:18 PM ET",
+  "video_start": "06:29:35",
+  "video_end": "06:38:42",
+  "session_type": "break",
+  "tags": [
+   "break",
+   "stage-changeover",
+   "applause",
+   "dead-air",
+   "agenda-gap",
+   "simons-room"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=23375s",
+  "one_liner": "A roughly nine-minute untranscribed changeover on the Simons Room main stage between Philipp Schmid's 2:55pm talk and Joao Wenzel's 3:20pm Citadel Securities talk."
+ },
+ {
+  "file": "037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo.md",
+  "session_id": "037",
+  "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+  "speakers": [
+   "Joao Wenzel"
+  ],
+  "start_wall": "3:19:18 PM ET",
+  "end_wall": "3:38:08 PM ET",
+  "video_start": "06:38:42",
+  "video_end": "06:57:32",
+  "session_type": "talk",
+  "tags": [
+   "world-model",
+   "institutional-memory",
+   "state-estimator",
+   "enterprise-agents",
+   "rag-limitations",
+   "citadel-securities",
+   "agent-evals"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=23922s",
+  "one_liner": "Citadel Securities' Joao Wenzel argues that the one person who \"seems to know everything\" is a company's only world model, and shows the state-estimator loop (update, age, observe, grade, correct) his team uses to bootstrap one from decks, Slack, meetings, code changes, and agent traces \u2014 a job RAG cannot do."
+ },
+ {
+  "file": "038-applause-and-stage-changeover-between-wenzel-and-brown-talks.md",
+  "session_id": "038",
+  "title": "Applause and stage changeover between Wenzel and Brown talks",
+  "speakers": [],
+  "start_wall": "3:38:08 PM ET",
+  "end_wall": "3:39:53 PM ET",
+  "video_start": "06:57:32",
+  "video_end": "06:59:17",
+  "session_type": "filler",
+  "tags": [
+   "applause",
+   "stage-changeover",
+   "filler",
+   "transition",
+   "no-speech",
+   "simons-room"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=25052s",
+  "one_liner": "A roughly 105-second applause and stage changeover gap on the Simons Room stage, with no transcribed speech between the end of Jo\u00e3o Wenzel's talk and the start of Will Brown's."
+ },
+ {
+  "file": "039-self-improving-organizations-ai-native-enterprises-open-sour.md",
+  "session_id": "039",
+  "title": "Self-Improving Organizations",
+  "speakers": [
+   "Will Brown"
+  ],
+  "start_wall": "3:39:53 PM ET",
+  "end_wall": "4:06:22 PM ET",
+  "video_start": "06:59:17",
+  "video_end": "07:25:46",
+  "session_type": "talk",
+  "tags": [
+   "continual-learning",
+   "ai-native-enterprise",
+   "open-source-models",
+   "institutional-knowledge",
+   "evals",
+   "decision-models",
+   "prime-intellect"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=25157s",
+  "one_liner": "Will Brown of Prime Intellect argues that after chatbots, reasoners, agents, and innovators, the next stage of AI progress is the AI-native enterprise: an organization that compounds its implicit institutional knowledge by continually training its own open-source models, instead of re-teaching agents in context on every run."
+ },
+ {
+  "file": "040-applause-stage-transition-between-talks.md",
+  "session_id": "040",
+  "title": "Applause / stage transition between talks",
+  "speakers": [],
+  "start_wall": "4:06:22 PM ET",
+  "end_wall": "4:07:06 PM ET",
+  "video_start": "07:25:46",
+  "video_end": "07:26:31",
+  "session_type": "filler",
+  "tags": [
+   "applause",
+   "stage-transition",
+   "filler",
+   "caption-gap",
+   "off-agenda",
+   "simons-room"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=26747s",
+  "one_liner": "A roughly 44-second caption-free gap on the Simons Room stage between the end of Will Brown's Prime Intellect talk and the start of Jemima Abu's accessibility talk, with no host voiceover."
+ },
+ {
+  "file": "041-stop-wasting-tokens-on-products-people-can-t-use-cost-of-acc.md",
+  "session_id": "041",
+  "title": "Stop Wasting Tokens on Products People Can\u2019t Use",
+  "speakers": [
+   "Jemima Abu"
+  ],
+  "start_wall": "4:07:06 PM ET",
+  "end_wall": "4:17:07 PM ET",
+  "video_start": "07:26:30",
+  "video_end": "07:36:31",
+  "session_type": "talk",
+  "tags": [
+   "accessibility",
+   "ai-agents",
+   "vibe-coding",
+   "cost-of-ownership",
+   "front-end-engineering",
+   "inclusive-design"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=26790s",
+  "one_liner": "Jemima Abu (CAIS) argues that letting AI agents ship inaccessible products wastes tokens, time, and money \u2014 her experiment saw a 58% cost reduction and one-third the build time when the agent ran with an accessibility skill."
+ },
+ {
+  "file": "042-scary-stories-of-ai-gone-wrong-three-real-incidents-and-the.md",
+  "session_id": "042",
+  "title": "Scary stories of AI gone wrong: three real incidents and the infrastructure controls that prevent them",
+  "speakers": [
+   "Zhao Chenjiang"
+  ],
+  "start_wall": "4:17:09 PM ET",
+  "end_wall": "4:22:24 PM ET",
+  "video_start": "07:36:33",
+  "video_end": "07:41:48",
+  "session_type": "talk",
+  "tags": [
+   "ai-governance",
+   "agent-safety",
+   "infrastructure-controls",
+   "coding-agents",
+   "llm-risks",
+   "off-agenda"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=27393s",
+  "one_liner": "Coder staff product manager Zhao Chenjiang opens a talk about three real incidents of AI usage gone wrong at real companies by arguing they were all preventable with infrastructure controls you mostly already own \u2014 not with a smarter, more expensive frontier model \u2014 but the stream cut to a music interstitial before the stories themselves began."
+ },
+ {
+  "file": "043-untranscribed-break-interstitial-stream-cuts-from-the-coder.md",
+  "session_id": "043",
+  "title": "Untranscribed break interstitial: stream cuts from the Coder talk (Zhao Chenjiang) mid-flow to a music slate; captions resume at the welcome-back voiceover for the final block",
+  "speakers": [],
+  "start_wall": "4:22:19 PM ET",
+  "end_wall": "4:26:04 PM ET",
+  "video_start": "07:41:43",
+  "video_end": "07:45:28",
+  "session_type": "filler",
+  "tags": [
+   "interstitial",
+   "break",
+   "stream-cut",
+   "music-slate",
+   "no-speech",
+   "final-block-transition"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=27703s",
+  "one_liner": "A 3-minute-45-second non-speech interstitial in which the main-stage stream cut mid-flow from Zhao Chenjiang's off-agenda Coder talk to an AI Engineer branded music slate, then returned with the welcome-back voiceover for the final keynote block."
+ },
+ {
+  "file": "044-welcome-back-final-keynote-block-intro-sponsor-roll-arise-or.md",
+  "session_id": "044",
+  "title": "Welcome Back - Featured Keynotes",
+  "speakers": [
+   "Ksenia Se"
+  ],
+  "start_wall": "4:26:03 PM ET",
+  "end_wall": "4:30:48 PM ET",
+  "video_start": "07:45:27",
+  "video_end": "07:50:12",
+  "session_type": "announcement",
+  "tags": [
+   "mc-welcome",
+   "sponsor-roll",
+   "final-block-intro",
+   "hiring-networking",
+   "agent-workflow-idea",
+   "apollo-handoff"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=27927s",
+  "one_liner": "MC Ksenia Se reopens the main stage for the final keynote block, runs the sponsor roll call, shares a build-an-agent-to-rank-employers-by-salary networking idea, and hands off to the Apollo fireside."
+ },
+ {
+  "file": "045-ai-in-practice-an-inside-look-at-apollo-s-approach-rowspace.md",
+  "session_id": "045",
+  "title": "AI in Practice: An Inside Look at Apollo's Approach",
+  "speakers": [
+   "Michael Manapat",
+   "Jack McDonald"
+  ],
+  "start_wall": "4:30:26 PM ET",
+  "end_wall": "4:49:52 PM ET",
+  "video_start": "07:49:50",
+  "video_end": "08:09:16",
+  "session_type": "fireside",
+  "tags": [
+   "fireside-chat",
+   "ai-adoption",
+   "finance",
+   "structured-credit",
+   "clo-management",
+   "data-quality",
+   "enterprise-agents"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=28190s",
+  "one_liner": "Rowspace co-founder Michael Manapat interviews Jack McDonald, COO of Apollo's Redding Ridge Capital, about turning AI from a nice-to-have into mission-critical infrastructure for structured credit and CLO management."
+ },
+ {
+  "file": "046-stage-voiceover-intro-for-mitchell-troyanovsky-basis.md",
+  "session_id": "046",
+  "title": "Stage voiceover intro for Mitchell Troyanovsky (Basis)",
+  "speakers": [],
+  "start_wall": "4:49:53 PM ET",
+  "end_wall": "4:50:19 PM ET",
+  "video_start": "08:09:17",
+  "video_end": "08:09:43",
+  "session_type": "announcement",
+  "tags": [
+   "announcement",
+   "stage-voiceover",
+   "keynote-transition",
+   "basis",
+   "process-supervision",
+   "long-horizon-agents"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=29357s",
+  "one_liner": "A 26-second unnamed stage voiceover bridging the Apollo/Redding Ridge fireside and the Basis keynote: it frames agent evaluation around the decisions made along the way, not just the final answer, then welcomes Mitchell Troyanovsky, co-founder of Basis, to the stage."
+ },
+ {
+  "file": "047-process-supervision-for-agents-that-do-long-horizon-work-beh.md",
+  "session_id": "047",
+  "title": "Process Supervision for Agents That Do Long-Horizon Work",
+  "speakers": [
+   "Mitchell Troyanovsky"
+  ],
+  "start_wall": "4:49:53 PM ET",
+  "end_wall": "5:09:32 PM ET",
+  "video_start": "08:09:17",
+  "video_end": "08:28:56",
+  "session_type": "keynote",
+  "tags": [
+   "process-supervision",
+   "behavior-specs",
+   "long-horizon-agents",
+   "agent-evals",
+   "forking",
+   "simulations",
+   "agent-reliability",
+   "accounting-automation"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=29357s",
+  "one_liner": "Basis co-founder Mitchell Troyanovsky argues that agents only earn end-to-end production use when they are simple and reliable, and shows three tools \u2014 behavior specs, forking, and simulations \u2014 that supervise the process of long-horizon work, not just the outcome."
+ },
+ {
+  "file": "048-stage-voiceover-intro-for-crist-bal-valenzuela-runway.md",
+  "session_id": "048",
+  "title": "Stage voiceover intro for Crist\u00f3bal Valenzuela (Runway)",
+  "speakers": [],
+  "start_wall": "5:09:44 PM ET",
+  "end_wall": "5:10:03 PM ET",
+  "video_start": "08:29:08",
+  "video_end": "08:29:27",
+  "session_type": "announcement",
+  "tags": [
+   "announcement",
+   "voiceover-intro",
+   "runway",
+   "world-models",
+   "final-block",
+   "stage-transition"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=30548s",
+  "one_liner": "A 19-second unnamed stage voiceover bridges the Basis keynote and the Runway keynote, framing \"Everything will be Simulated\" around world models before welcoming Crist\u00f3bal Valenzuela to the stage."
+ },
+ {
+  "file": "049-everything-will-be-simulated-runway-video-models-next-frame.md",
+  "session_id": "049",
+  "title": "Everything will be Simulated",
+  "speakers": [
+   "Crist\u00f3bal Valenzuela"
+  ],
+  "start_wall": "5:09:44 PM ET",
+  "end_wall": "5:26:46 PM ET",
+  "video_start": "08:29:08",
+  "video_end": "08:46:10",
+  "session_type": "keynote",
+  "tags": [
+   "video-models",
+   "world-models",
+   "next-frame-prediction",
+   "simulation",
+   "runway",
+   "continuum",
+   "robotics"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=30548s",
+  "one_liner": "Runway co-founder Crist\u00f3bal Valenzuela argues that next-frame prediction, scaled far enough, turns video models into universal simulation engines, and demos Continuum, a video-model operating system that Runway plans to release within 8 to 12 months."
+ },
+ {
+  "file": "050-conference-close-out-voiceover-and-mc-hand-off.md",
+  "session_id": "050",
+  "title": "Conference close-out voiceover and MC hand-off",
+  "speakers": [
+   "Ksenia Se"
+  ],
+  "start_wall": "5:26:59 PM ET",
+  "end_wall": "5:27:25 PM ET",
+  "video_start": "08:46:23",
+  "video_end": "08:46:49",
+  "session_type": "announcement",
+  "tags": [
+   "conference-close",
+   "closing-ceremony",
+   "voiceover",
+   "mc-hand-off",
+   "announcement"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=31583s",
+  "one_liner": "A 26-second production voiceover thanks attendees as AI Engineer New York 2026 comes to a close, then hands the stage back to MC Kseniya Se of Turing Post for the final closing remarks."
+ },
+ {
+  "file": "051-closing-remarks-and-thanks-mc-kseniya-se-hand-off-to-swyx.md",
+  "session_id": "051",
+  "title": "Closing Remarks",
+  "speakers": [
+   "Ksenia Se"
+  ],
+  "start_wall": "5:27:25 PM ET",
+  "end_wall": "5:28:30 PM ET",
+  "video_start": "08:46:49",
+  "video_end": "08:47:54",
+  "session_type": "announcement",
+  "tags": [
+   "closing-remarks",
+   "mc",
+   "thank-yous",
+   "hand-off",
+   "swyx",
+   "conference-close"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=31609s",
+  "one_liner": "MC Ksenia Se thanks the speakers, team, crew, sponsors, and attendees, recaps the three days of AI Engineer New York 2026 in one sentence, and hands the stage to Swyx, the event's curator."
+ },
+ {
+  "file": "052-swyx-closing-remarks-thanks-ai-engineer-europe-london-februa.md",
+  "session_id": "052",
+  "title": "Swyx closing remarks: thanks, AI Engineer Europe (London, February), World's Fair San Francisco -- off-agenda",
+  "speakers": [
+   "Swyx"
+  ],
+  "start_wall": "5:28:30 PM ET",
+  "end_wall": "5:30:36 PM ET",
+  "video_start": "08:47:54",
+  "video_end": "08:50:00",
+  "session_type": "announcement",
+  "tags": [
+   "closing-remarks",
+   "swyx",
+   "ai-engineer",
+   "community-thanks",
+   "event-announcements",
+   "ai-engineer-europe",
+   "worlds-fair"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=31674s",
+  "one_liner": "AI Engineer cofounder Swyx closes the New York 2026 event by thanking the MC and the New York AI community, then announces AI Engineer Code, AI Engineer Europe in London in February, and the 10,000-person World's Fair in San Francisco next summer."
+ },
+ {
+  "file": "053-post-close-applause-stream-filler-to-end-of-stream.md",
+  "session_id": "053",
+  "title": "Post-close applause / stream filler to end of stream",
+  "speakers": [],
+  "start_wall": "5:30:37 PM ET",
+  "end_wall": "5:31:52 PM ET",
+  "video_start": "08:50:01",
+  "video_end": "08:51:16",
+  "session_type": "filler",
+  "tags": [
+   "post-close",
+   "applause",
+   "stream-filler",
+   "no-speech",
+   "end-of-stream",
+   "day-3-close"
+  ],
+  "confidence": "high",
+  "video_url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=31801s",
+  "one_liner": "The final 75 seconds of the day-three stream carry no speech: applause after Swyx's \"See you next year.\" decays into near-silence, then low-level non-speech audio runs to the hard cut at stream end."
+ }
+]

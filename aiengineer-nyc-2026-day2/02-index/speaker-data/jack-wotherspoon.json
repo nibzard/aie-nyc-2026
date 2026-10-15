@@ -1,0 +1,18 @@
+{
+ "slug": "jack-wotherspoon",
+ "name": "Jack Wotherspoon",
+ "role": "Member of Technical Staff",
+ "company": "Google DeepMind",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FK1NZ14zETHmY4Wkc4Cxz_headshot-1790805704004.jpg",
+ "sessions": [
+  {
+   "title": "Build your own team of managed agents",
+   "time": "2:55pm - 3:13pm",
+   "room": "Shannon Room (NY Ballroom E)"
+  }
+ ]
+}

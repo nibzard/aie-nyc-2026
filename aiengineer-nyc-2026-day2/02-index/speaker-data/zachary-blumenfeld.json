@@ -1,0 +1,18 @@
+{
+ "slug": "zachary-blumenfeld",
+ "name": "Zachary Blumenfeld",
+ "role": "AI Research Engineer",
+ "company": "Neo4j",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F0iMUZxnsSmuTGo676G50_headshot-1789772248835.jpg",
+ "sessions": [
+  {
+   "title": "Graph Engineering 101: Predictability, Governance, Portability",
+   "time": "3:20pm - 3:38pm",
+   "room": "Shannon Room (NY Ballroom E)"
+  }
+ ]
+}

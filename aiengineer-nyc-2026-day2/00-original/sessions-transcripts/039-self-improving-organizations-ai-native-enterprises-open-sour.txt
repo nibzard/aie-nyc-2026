@@ -1,0 +1,171 @@
+[06:59:17 | 3:39:53 PM] I'm Will Brown.
+[06:59:17 | 3:39:53 PM] I lead applied research at Prime Intellect, and hope you are all having a great AI Engineer Conference.
+[06:59:17 | 3:39:53 PM] This is always one of my favorites.
+[06:59:18 | 3:39:54 PM] It's always just so cool to see what everyone's working on and building, and I feel like it is a place where people get to talk about what the future looks like and, like, start seeing the trends in the industry and seeing the progress and what works and what doesn't.
+[06:59:19 | 3:39:54 PM] And that's kind of the theme I want to think about for this talk today, is, like, what comes next from what we're doing right now, and what are some of the things that we've been working on and also just been seeing in research that's unfolding that kind of points at what we think the future of AI might look like at the organization level.
+[06:59:19 | 3:39:55 PM] Because we've seen a lot of very cool progress in agents and interfaces and bots and things like that over the past several months, years.
+[06:59:19 | 3:39:55 PM] But there's always, like, there's always more coming.
+[06:59:19 | 3:39:55 PM] Things are just moving so fast, and I think it's a very exciting time to just imagine and speculate and plan for what comes next.
+[06:59:19 | 3:39:55 PM] And so I don't know if any of you remember back in the early ChatGPT days, OpenAI had kind of spelled out their framing of, like, what are the different stages of AI progress on the road to AGI.
+[06:59:20 | 3:39:55 PM] And I think we've moved along this faster than we thought we would.
+[06:59:20 | 3:39:55 PM] We, like, I remember 18 months ago, I was here in New York at AI Engineer giving a talk where we had gotten reasoners and chatbots had been around for a while, and reasoners were, like, the new thing, but we didn't really have agents yet.
+[06:59:48 | 3:40:23 PM] And now we've climbed pretty quickly through agents and innovators and— The question next seems to be, okay, what happens for organizations?
+[06:59:48 | 3:40:23 PM] Like, what does it mean for an organization to truly, like, be AI native, not just as, like, a startup that uses a lot of agents and builds everything with cloud code, but, like, at the, like, large enterprise scale?
+[06:59:48 | 3:40:23 PM] What do companies of the future look like that involve, like, deep integration of agents throughout the lifecycle of the organization?
+[06:59:48 | 3:40:23 PM] And what do we need to build on the path there?
+[06:59:48 | 3:40:23 PM] So, a bit about Prime Intellect, just for some backdrop.
+[06:59:48 | 3:40:23 PM] We build a lot of different things around AI infrastructure for training, deploying, continuously improving models, and especially open source models and open source tooling.
+[06:59:48 | 3:40:23 PM] And so we do a lot of things, and, like, we roughly do the sorts of things that you would do inside of a big lab.
+[06:59:51 | 3:40:26 PM] And these are our products.
+[07:00:04 | 3:40:39 PM] And the reason we do this is because we are imagining a future that is coming pretty quickly, it seems, where open source models are readily available to train and deploy on your own workflows, on your own data, in your own harnesses, and can be the sorts of things that organizations can have grow with them over time, that allow compounding their institutional knowledge, their institutional advantage from their workflows, from their data, from their people and their processes, in addition to using the models from the frontier labs.
+[07:02:21 | 3:42:56 PM] And so this talk will be a bit about how we see that evolving and unfolding, where, like, what is the role of training in an AI native enterprise?
+[07:03:25 | 3:44:00 PM] How does this coexist with the frontier models?
+[07:03:32 | 3:44:07 PM] And, like, what do we think is going to be the version of this that really unlocks the most value for people?
+[07:03:52 | 3:44:27 PM] And what does it look like?
+[07:04:02 | 3:44:37 PM] And so organizations have lots of knowledge, and, like, the longer an organization's been around and the kind of more established it is, the more implicit knowledge there is that kind of doesn't ever get written down.
+[07:05:26 | 3:46:02 PM] There are things that do get written down.
+[07:05:37 | 3:46:13 PM] There's code bases, there's emails, there's processes.
+[07:05:47 | 3:46:22 PM] Some of these are very explicit.
+[07:06:07 | 3:46:43 PM] They're like rules of, like, you must do this, this thing works like that.
+[07:07:18 | 3:47:53 PM] But a lot of things kind of live in people's heads, and they live in between the lines of the emails, of the meeting notes, of the kind of who talks to who.
+[07:09:48 | 3:50:24 PM] Like, a lot of companies will have, like, an on-paper org chart and then a real org chart of, like—
+[07:09:58 | 3:50:33 PM] Of, like, who actually makes decisions and, like, how does change get adopted throughout the company?
+[07:09:58 | 3:50:33 PM] What sorts of mandates are likely to take effect?
+[07:09:58 | 3:50:33 PM] And people have kind of built up this knowledge from being at companies for a long time of, like, oh, this is kind of how things work.
+[07:09:58 | 3:50:33 PM] This is where the friction points are.
+[07:09:58 | 3:50:33 PM] And I think, in many cases, and I think this is really one of the big opportunities for AI at the organizational level is, is that many individual people are kind of not in a position where they can change the things that are broken in an organization because no one is actually spelling it out.
+[07:10:31 | 3:51:07 PM] No one is, like, taking a bird's-eye view of looking at everything that happens in an organization and saying, hey, this over here is inefficient.
+[07:10:37 | 3:51:13 PM] This could be better.
+[07:10:39 | 3:51:14 PM] This thing keeps happening across all these different teams, but nobody's figured out that the solution has actually been discovered by that team.
+[07:10:46 | 3:51:22 PM] And these are the sorts of things that, like, agents are great for.
+[07:10:49 | 3:51:25 PM] Like, agents are very capable at combing through large amounts of textual data that's unstructured and finding these kinds of patterns and turning them into something useful and surfacing them as, like, okay, this workflow has a problem because it is wasting time and it's inefficient and it could be different instead.
+[07:11:09 | 3:51:44 PM] And we don't want to just do this once, though.
+[07:11:10 | 3:51:46 PM] We want this to kind of become the way that organizations adopt AI broadly, where agents are able to get the context they need, but also they're able to improve both the agents themselves as well as the organizations.
+[07:11:23 | 3:51:59 PM] And we want agents to be more like our coworkers, but human coworkers learn on the job.
+[07:11:30 | 3:52:06 PM] Agents currently learn on the job in relatively primitive ways, and they do this via in-context learning.
+[07:11:36 | 3:52:12 PM] And, oops, sorry.
+[07:11:38 | 3:52:14 PM] I'm going to go back a few seconds so we can edit this on the recording.
+[07:11:49 | 3:52:25 PM] Agents learn in relatively primitive ways through, like, in-context learning.
+[07:11:53 | 3:52:29 PM] And this typically looks like them kind of having a skill file written by somebody or, like, looking around a code base, but they don't get the institutional-level latent knowledge that human employees really do.
+[07:12:06 | 3:52:41 PM] And so they relearn a lot.
+[07:12:07 | 3:52:43 PM] They have to rediscover things.
+[07:12:08 | 3:52:44 PM] They spend a lot of input tokens.
+[07:12:10 | 3:52:46 PM] And I think nowadays people are realizing that, like, cached input is, like, the bottleneck in many agent costs.
+[07:12:16 | 3:52:52 PM] And even if you do get great cache rates and cache costs go down, you still have to, like, reprocess a lot of input to redo a workflow every single time.
+[07:12:25 | 3:53:00 PM] And so to get around this, you kind of want to be able to bake in more into the model, especially for things that are harder to write down as rules.
+[07:12:31 | 3:53:07 PM] So I like thinking about this spectrum from, like, rules to patterns, as well as, like, conceptually, like, code versus data.
+[07:12:39 | 3:53:14 PM] And so lots of things live as, like, code, and, like, skills are kind of like this, rules are kind of like this.
+[07:12:44 | 3:53:20 PM] But things like preferences and friction and heuristics and trends, these are all data.
+[07:12:49 | 3:53:25 PM] And institutions have so much data that they are, like, running on, and the employees of the organization implicitly learn that models never really get a chance to learn.
+[07:12:59 | 3:53:35 PM] And this is the sort of thing that we see as blocking them from becoming true coworkers.
+[07:13:05 | 3:53:41 PM] And so there is a question of, like, okay, what goes in context, what goes in the weights?
+[07:13:09 | 3:53:44 PM] And part of it is you kind of need to earn it.
+[07:13:11 | 3:53:46 PM] Like, things don't just go in the weights right away.
+[07:13:13 | 3:53:49 PM] But if you see kind of every new generation of models, the models get better.
+[07:13:18 | 3:53:54 PM] Not because the prompt is better, but because they trained them more.
+[07:13:22 | 3:53:57 PM] Like, training is useful.
+[07:13:23 | 3:53:58 PM] Training works.
+[07:13:24 | 3:53:59 PM] Training is why we see the progress we do.
+[07:13:27 | 3:54:02 PM] And the models roughly are, like, trained on lots of data that is aiming to approximate things that the labs expect will be, like, high-value repeatable workflows at organizations.
+[07:13:39 | 3:54:14 PM] And I like this.
+[07:13:40 | 3:54:15 PM] Like, I think there's a process that currently it works.
+[07:13:42 | 3:54:18 PM] It's how the models get better.
+[07:13:44 | 3:54:19 PM] But if you, like, spell it out, it's relatively inefficient.
+[07:13:46 | 3:54:21 PM] So, like, the way that a model would learn how to get really good at, like, using some combination of, like, Salesforce tools, for example, let's say, is someone who knows how those tools get used has to be looking for work, and maybe they previously worked at a place that were using these tools, and now they are browsing kind of expert network sites to make some money in their free time, and they are sharing their knowledge to someone who works at an expert network company.
+[07:14:12 | 3:54:47 PM] This person at this network company will then take this data from the human and pass it to someone else whose job is to create RL environments.
+[07:14:21 | 3:54:56 PM] This RL environment might get sold then to buy someone who doesn't have this expert knowledge to a researcher at a lab who also really isn't the expert in the domain, who then will be refining it to put it into a training pipeline to go into the next frontier model run to make a model that has kind of, through this game of telephone, gotten some knowledge of that human originally.
+[07:14:44 | 3:55:19 PM] But there's so many steps in this pipeline, and it's a relatively secret pipeline.
+[07:14:48 | 3:55:23 PM] Like, people talk across two stages of it, but, like, the human who knows this thing is not supervising the training run, is not really directly inputting, like, how the model gets trained in the way that a human could if they were doing it for their coding agent that they're working with day to day.
+[07:15:02 | 3:55:38 PM] And so what we see as an opportunity, and kind of also where we would hope to go, is, like, to close this gap and to allow the person who, the same way that when we work with our coding agents, we're prompting them, like, the same things every time, telling them to, like, not repeat the same mistakes.
+[07:15:18 | 3:55:53 PM] This is how you could train models.
+[07:15:19 | 3:55:55 PM] You can tell the models things, and they will learn these things durably, not just as, like, a line in your agent's MD, which kind of accumulates and then you have to refactor it all the time.
+[07:15:30 | 3:56:06 PM] You can do some of that, but a lot of times what you really want is you're giving kind of contextual preference.
+[07:15:34 | 3:56:10 PM] You're saying, in this setting, this thing that you did was not exactly what I wanted, and I would have preferred this instead.
+[07:15:40 | 3:56:16 PM] And we'd want systems that can compound this into, like, durable learning.
+[07:15:44 | 3:56:20 PM] And training is a very effective way of doing this because the shape of data you're giving there is quite close to what you would want from, like, an actual training pipeline.
+[07:15:57 | 3:56:33 PM] And so there's several different types of learning.
+[07:15:59 | 3:56:35 PM] There's things that people do.
+[07:16:00 | 3:56:36 PM] There's things that you can do at the harness layer with skills and memory.
+[07:16:04 | 3:56:39 PM] There's knowledge that just lives throughout an organization in file systems and databases that you retrieve with tools and with code.
+[07:16:12 | 3:56:48 PM] Then there's the models themselves, which have this really broad world knowledge.
+[07:16:15 | 3:56:51 PM] But, like, we all have, I'm sure, experienced frustration when using a model whose, like, cutoff of knowledge is, like, a while back, and, like, you can't really talk to the models about the news of the past six months nowadays.
+[07:16:29 | 3:57:04 PM] Like, they don't really—they have to go, like, relearn a world model in context every single time, and this just does not allow them to really operate as fluently as they can discuss things that happened longer ago.
+[07:16:40 | 3:57:16 PM] And so organizations, to get the most value out of models, we imagine they will want to increasingly have models that really understand what is going on in the organization at an intuitive level.
+[07:16:52 | 3:57:27 PM] And this is the sort of thing that you want to train for.
+[07:16:55 | 3:57:30 PM] And so how do you get there?
+[07:16:56 | 3:57:32 PM] Like, what is the road for an organization to go from, like— Having this idea in the abstract of, like, we're going to train models on our data to actually getting there.
+[07:17:06 | 3:57:41 PM] And I think one really useful starting point is evals as essentially test cases.
+[07:17:10 | 3:57:45 PM] I think, like, with code, we've gotten to a point of maturity around, like, testing and life cycles and software development life cycles for ensuring that codebases grow healthily over time, usually.
+[07:17:23 | 3:57:59 PM] And agents are doing so much of this work for us.
+[07:17:26 | 3:58:02 PM] And the version of continual learning that I think is, like, most practical for most organizations is just treating a model kind of like a codebase, where it is the sort of thing that you can have a lifecycle around.
+[07:17:37 | 3:58:13 PM] You can add test cases to.
+[07:17:39 | 3:58:14 PM] You can add features to.
+[07:17:40 | 3:58:16 PM] You can add assets to.
+[07:17:43 | 3:58:18 PM] And this is the sort of thing that the process of using agents, like initially you collect traces.
+[07:17:48 | 3:58:24 PM] These traces have your prompts and they have your feedback to things that models did.
+[07:17:53 | 3:58:28 PM] And this, just from the process of using these models, you are accumulating the assets you need to create evals.
+[07:17:59 | 3:58:35 PM] It's just that making evals historically has been a little bit painful, and a lot of organizations have not necessarily wanted to do it manually.
+[07:18:07 | 3:58:42 PM] But the agents are quite quickly getting to the point where, thankfully, we have robots that can do a lot of the eval curation for us, especially as we train them more on the best practices of making evals in ways that are robust and amenable to learning.
+[07:18:23 | 3:58:58 PM] And so I think another useful example here is decision model Craze that has kind of been taking the world by storm in the past couple weeks with with Jev, and also the parallels around routing and people being very excited about cost optimization because we see that, like, it's possible to spend very large amounts of money on cloud every month, and we figure out, like, when should we use a cheaper model?
+[07:18:45 | 3:59:20 PM] And this is the sort of thing that I think people are recognizing needs to kind of live in the harness.
+[07:18:49 | 3:59:24 PM] But it also is an attribute that looks relatively similar to decision models.
+[07:18:54 | 3:59:29 PM] And the reason I bring both these up together is because there's things with very clear labels where there's a right answer, and there's an opportunity for a human or another agent to give feedback.
+[07:19:02 | 3:59:37 PM] You can have the big model and a small model do the same task, judge whether the small model was as good as the big model.
+[07:19:08 | 3:59:43 PM] If so, then this is now data of, like, for this kind of thing, we can start routing to the small model more.
+[07:19:13 | 3:59:49 PM] Same for a decision model that's learning to kind of mimic the way that a human in a certain situation would make a judgment.
+[07:19:20 | 3:59:55 PM] This is a great labelable action where the human might be doing the approval the same way that, like, we approve our tool calls in cloud code sometimes.
+[07:19:27 | 4:00:03 PM] But I think most people have turned on, like, auto tool acceptance.
+[07:19:32 | 4:00:08 PM] But every organization, for more bespoke things that aren't just about, like, tool security, are going to have their own rules and preferences.
+[07:19:38 | 4:00:13 PM] And these are the sorts of things that you could then compound into a decision model.
+[07:19:42 | 4:00:17 PM] And so this is, like, a very believable form of continual learning that a lot of people could just plug into tomorrow and see immediate value from.
+[07:19:50 | 4:00:25 PM] But more broadly, what we see people wanting to do, and this is a lot of the work that we do at Prime Intellect, is working with organizations that are looking to do relatively ambitious training projects.
+[07:19:59 | 4:00:35 PM] Around turning their traces from deploying a model in production for a high-volume use case into rich, robust environments that are blended real and synthetic that kind of capture the complexity of the real tasks they want to be using long-running agents for.
+[07:20:17 | 4:00:52 PM] And agents are very useful with sufficient orchestration around them, sufficient tooling, and humans in the loop at turning these into environments that are rich enough to train in.
+[07:20:27 | 4:01:02 PM] And we see that this is getting more and more automated with every new generation of open and closed models.
+[07:20:32 | 4:01:08 PM] And this means that we have an opportunity to start having this whole thing of taking the stuff that we're already doing and turning it into a self-improvement loop just kind of fall out magically from applying agents to curation of the data and creating interfaces for humans to give signal about what they want.
+[07:20:51 | 4:01:27 PM] This is an idea that I've been, for my own setup, been like playing around with a lot that I think will become a popular interface for interacting with models more in the future.
+[07:21:01 | 4:01:37 PM] You're seeing it a little bit in some of the bots, but I think it, especially now that models are good at, like, writing code on the fly, these kind of widget card features that are like, think a very practical form of dynamic UI that are also really useful for eliciting human decisions.
+[07:21:16 | 4:01:51 PM] So they're kind of like the tool call approval thing, but much more personalized, much more specific, and also kind of get around the problem of like, okay, you have 20 different bots that are going and you have to remember which ones are where and who is curating all of this for you.
+[07:21:32 | 4:02:07 PM] And then people are like, Do you want one bot?
+[07:21:33 | 4:02:09 PM] And then you're like, Oh, one's great, but I actually want two.
+[07:21:36 | 4:02:11 PM] Then you have two, then you have 20.
+[07:21:38 | 4:02:13 PM] And I think we kind of are oscillating back and forth between this single-stream and the multi-stream agent threads.
+[07:21:43 | 4:02:18 PM] But what we really want to do are make decisions.
+[07:21:45 | 4:02:20 PM] We want to give ideas to the agents, let them run with the ideas, and then come back to us when we need to make decisions.
+[07:21:51 | 4:02:27 PM] And the agents hopefully should make good choices about when to bring us decisions.
+[07:21:56 | 4:02:31 PM] And if agents can create interfaces on the fly for us that allow us to very directly give them the information they need.
+[07:22:02 | 4:02:38 PM] One, this kind of is much more ergonomic for us as humans than, like, reading, trying to parse through a long thread message to see, like, okay, where was the question?
+[07:22:12 | 4:02:47 PM] It's also kind of like the human dual side of the decision model, Jevons style.
+[07:22:17 | 4:02:53 PM] But it also is perfect data.
+[07:22:20 | 4:02:55 PM] And so it's a setting where we've been experimenting with this as a way of training models to kind of get this feedback loop going from having human input with these kinds of natural interfaces be the sort of thing that directly acts as a label and is the sort of thing that a model can directly improve on because there is a very explicit target.
+[07:22:39 | 4:03:15 PM] And it gets around a lot of the problems that we kind of hear about in reward hacking and whatnot.
+[07:22:44 | 4:03:20 PM] Those things are worth addressing too, but, like, this is, like, where we see a very useful starting point being for a lot of these problems.
+[07:22:51 | 4:03:26 PM] And this can be done.
+[07:22:52 | 4:03:27 PM] It doesn't have to be with every model in your stack.
+[07:22:53 | 4:03:29 PM] It can be the orchestration layer models.
+[07:22:55 | 4:03:30 PM] It can be the decision models.
+[07:22:56 | 4:03:32 PM] But it is an entry point for kind of starting to have this compounding of preferences and latent knowledge happen in the models.
+[07:23:07 | 4:03:43 PM] And so I think there was a recent example today.
+[07:23:09 | 4:03:45 PM] I just added this earlier from a company called Paper Instruments that they use some of our tooling to do this.
+[07:23:16 | 4:03:51 PM] They're friends of ours.
+[07:23:17 | 4:03:53 PM] But they trained a model for 300K that is kind of Pareto frontier optimal for knowledge work for things like spreadsheets and slides.
+[07:23:27 | 4:04:02 PM] And it's like an employee-scale investment for an org to do, where, like, you could, like, go hire a software engineer or you could, like, train a model.
+[07:23:35 | 4:04:11 PM] And you can also spread this out over a longer period of time if you're kind of compounding the knowledge over time.
+[07:23:40 | 4:04:15 PM] But it's the sort of thing that is increasingly becoming quite practical.
+[07:23:42 | 4:04:18 PM] And it's the sort of thing that a lot of organizations we see wanting to do now, and we kind of see the trend of how much more the demand for this is growing month after month.
+[07:23:54 | 4:04:29 PM] As people start recognizing, one, the value of this and how kind of the open models are good enough that you can get them to be much better and also much more personalized by turning your knowledge for your domain, your harness, your environment into a training setting for them.
+[07:24:11 | 4:04:47 PM] But also, it's the sort of thing that naturally lends itself to a learning loop.
+[07:24:15 | 4:04:51 PM] And so this is a prototype of something we're doing internally around kind of how we're imagining people can really deploy continual learning in the world, which is that you can have traces, you can start collecting these, and you can then, like, every night, see the proposed experiment, look at the things that have been flagged as issues, and kick off a training run for the night.
+[07:24:36 | 4:05:11 PM] Maybe your inference capacity in the day is serving your agents; at night, employees are not using them as much, and you can use that capacity for training instead.
+[07:24:44 | 4:05:19 PM] And so this is a very natural way that we see organizations able to, like, quite soon actually do for real continual learning in the weights of the models and start compounding their knowledge into better and better capabilities for their agents.
+[07:25:00 | 4:05:35 PM] And so this is kind of where we see a lot of this culminating towards.
+[07:25:03 | 4:05:39 PM] There's so many things you do first.
+[07:25:05 | 4:05:40 PM] You discover your workflow, you create skills, you make evals, you do routing, and then eventually you start to want to get the economies of scale, get the compounding benefits that come from the data inside of your companies, your organizations, and have the organizations become increasingly self-improving in ways that get better and better over time.
+[07:25:28 | 4:06:03 PM] That's what I got.
+[07:25:29 | 4:06:04 PM] I can maybe take questions if there's any time.
+[07:25:32 | 4:06:08 PM] I don't know, no questions.
+[07:25:34 | 4:06:10 PM] And yeah, we're at Prime Intellect.
+[07:25:36 | 4:06:12 PM] We are working on a lot of this stuff.
+[07:25:38 | 4:06:13 PM] A lot of it is open source and public, and we blog about it and tweet about it.
+[07:25:42 | 4:06:17 PM] But also, we work with companies and we're hiring and growing, and so get in touch if you want to get in touch.
+[07:25:47 | 4:06:22 PM] Thanks.

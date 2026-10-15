@@ -1,0 +1,13 @@
+[08:46:50 | 5:27:25 PM] Thank you, Christabel, and thank you to all of our speakers.
+[08:46:52 | 5:27:27 PM] And I would like to ask you to stay for one more minute.
+[08:46:55 | 5:27:30 PM] We have someone very special to see.
+[08:46:59 | 5:27:34 PM] We've covered a remarkable range over these three days, from building agents to changing how financial institutions work and how to simulate the world.
+[08:47:09 | 5:27:45 PM] I imagine quite a few of us have a longer list of things to investigate than we arrived with.
+[08:47:16 | 5:27:51 PM] That seems like a, you know, reasonable outcome for a conference full of engineers.
+[08:47:21 | 5:27:56 PM] Thank you, the team who put this program together, and the crew, and our sponsors and partners, and to everyone of you who came ready to share their work and ask questions and do clap, clap, clap.
+[08:47:37 | 5:28:12 PM] Please.
+[08:47:38 | 5:28:13 PM] Thank you.
+[08:47:39 | 5:28:15 PM] I hope some of the conversations that you started here turn into things we will hear about at the next AI Engineer.
+[08:47:48 | 5:28:23 PM] And I want to welcome to the stage the guy who has been behind the curation, the one and only Swyx.
+[08:47:54 | 5:28:29 PM] She just did.
+[08:47:54 | 5:28:30 PM] Hi.

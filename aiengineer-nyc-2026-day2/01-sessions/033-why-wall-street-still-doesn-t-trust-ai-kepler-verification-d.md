@@ -1,0 +1,266 @@
+---
+session_id: "033"
+title: "Why Wall Street Still Doesn’t Trust AI"
+agenda_title: "Why Wall Street Still Doesn’t Trust AI -- Vinoo Ganesh (Kepler)"
+speakers: ["Vinoo Ganesh"]
+start_wall: "2:30:20 PM ET"
+end_wall: "2:48:35 PM ET"
+video_start: "05:49:44"
+video_end: "06:08:00"
+video_url: "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=20984s"
+stage: "Simons Room (Metropolitan East) - main stage livestream"
+session_type: "talk"
+tags: ["verification", "deterministic-retrieval", "hallucination", "finance-ai", "rag-security", "provenance", "wall-street"]
+confidence: "high"
+---
+
+# Why Wall Street Still Doesn’t Trust AI
+
+> Kepler CEO Vinoo Ganesh argues that Wall Street's distrust of AI is structural, not a model-quality problem, and shows how making code write every number through deterministic pointers yields citations that are verified, corrected at search time, or refused.
+
+## TL;DR
+- Wall Street's distrust of AI is structural. "You know another word for hallucination? Alpha." Estimation is also how firms make money, so better models cannot eliminate it.
+- Wrong numbers come from three sources: the wrong document retrieved, the wrong number pulled from the right source, and models doing mental math. Each needs a different fix.
+- Kepler's architecture makes the model a planner, not a producer. Preprocessing assigns pointers to facts; code and math retrieve numbers at search time. "A lookup cannot get it wrong. Search can."
+- Retrieval runs ANN plus BM25 over up to 200 candidates, reciprocal-rank fused to about 60, then cross-encoders. LLMs avoid wide search because it is expensive.
+- Security is the layer nobody discusses. Five failure modes exist, such as a forgotten tenant filter: "All of a sudden, Citadel can search all of Millennium's documents."
+- The contract for buyers: every citation is verified, corrected at search time, or refused. Production refusals dropped drastically but not to zero, because inference is still probabilistic.
+
+## Key lessons
+1. Diagnose wrong numbers into three failure sources, and fix each one differently: retrieve the right document (piece one), check each citation when the right source yields the wrong number — his example is reading Palantir's 2023 revenue out of a 2025 10-K — and stop asking models to do mental math: "Models don't do math. They predict the next token." Use deterministic tools instead, even "one CPU cycle that's good at adding two numbers together."
+2. Make the model a planner, not a producer. Kepler's preprocessing assigns pointers to unique identifiers — facts such as a number in a 10-K — moving unstructured data into a structured store. The model then plans ("retrieve this source and retrieve this entity"), and code and math do the retrieval by pulling the number out of a 10-K at search time. This also cuts token cost; he jokes that people used to get "bonuses from token maxing."
+3. Structure beats a bolt-on verification step. A citation-check filter "only applies after the fact," because the wrong output already exists. Competitors that copied Kepler's verification layer without the structural preprocessing "copied the wrong part" — the same lesson he draws from the VC who handed Kepler's pitch deck to a competitor.
+4. Prefer lookups over search. "A lookup cannot get it wrong. Search can." Running the same 10 searches with the same query has inherent entropy from the probabilistic nature of models. He reframes that entropy as an opportunity to change the architecture.
+5. Search wide with classic information retrieval, not with the model. Kepler uses ANN plus BM25 to get up to 200 candidate documents, reciprocal rank fusion down to about 60, then cross-encoders over query and chunk. LLMs plan depth-first and stop at the first rewarding hit, because searching across many sources is expensive.
+6. Scope retrieval with security built in. He lists five failure modes for builders: a forgotten tenant filter ("All of a sudden, Citadel can search all of Millennium's documents"), a caller impersonating another firm, search results that are out of date, direct reads that skip search rules or allow lists, and queries against an unpopulated index.
+7. Turn verification into a contract: citations are either verified, corrected at search time, or flat out refused. "If a model cannot de-resolve that pointer, it cannot print that number out." His production data shows refusals dropping drastically but not to zero, because models can still make up numbers during inference — so one more post-processing step remains.
+8. Ask vendors the uncomfortable questions. Does the model write pointers? Is every citation source checked? Is arithmetic source checked? Is there a mechanism to stop files that should not reach clients? And most importantly, "what happens to a number that came from nowhere?"
+
+## Notable quotes
+- [05:52:01 | 2:32:37 PM] "Alpha is how a firm makes money."
+- [05:55:39 | 2:36:15 PM] "Code writes every number, and what code does and pre-processing does is we assign pointers to unique identifiers, meaning facts, meaning something like a number in a 10K."
+- [06:03:53 | 2:44:29 PM] "If a model cannot de-resolve that pointer, it cannot print that number out."
+- [06:04:44 | 2:45:19 PM] "It's gotten to the point where the vast majority of finance AI tools right now are being used to format PowerPoint presentations."
+
+## Session narrative
+Vinoo Ganesh opens by framing the talk as a sequel. Three months earlier he spoke at AIE World Fair about verification and why institutions need it in the trust ecosystem of AI. The day before, he and Jack — who "ran Citadel's biggest book and started Candlestick Capital" — were on stage discussing why Jack still does not trust AI. Since then, about $270 million of venture money poured into formal verification layers, and a VC handed Kepler's own pitch deck to a competitor that shipped a product with Kepler's tagline. His punchline: "they copied the wrong part." Verification was copied, but the structure underneath was not. (Boundary note: raw whisper audio shows he opened with "Hi, everyone." about 13 seconds before the first captioned sentence.)
+
+The core argument follows. Most people blame hallucination, and he concedes it is a component. But the real problem is structural. He flips the slur: "You know another word for hallucination? Alpha." Estimation and creativity are how a firm differs — "Otherwise, there should be only one company on Earth" — so waiting for models that "eliminate hallucination" waits on a "nonsensical term." Meanwhile, everyone with a checkbook buys RAG platforms, runs agent pilots, or claims to be an "AI-first firm" with one copilot. Yet fundamental investing has not switched over. His explanation: to ship work product you must trust it, and trust means "you have to blame somebody who gets it wrong." He cites the recurring statistic that 88% of finance execs trust numbers while 31% find errors in them.
+
+The technical core walks through the three sources of wrong numbers and Kepler's answer to each. Preprocessing assigns pointers to unique identifiers, so code writes every number; the model acts as a "smart analyst" that plans, while code and math pull numbers out of sources such as a 10-K at search time. He describes the retrieval stack: ANN plus BM25 to about 200 candidates, reciprocal rank fusion to about 60, then cross-encoders — run over hybrid storage that includes TurboPuffer. LLMs search narrow, he argues, because wide search is expensive and the first rewarding hit pays the reward function. A security interlude addresses builders directly with five failure modes, from unfiltered tenants to impersonated callers, and the fix: scope every search with security built in.
+
+The close returns to the verification layer Kepler is known for. Source IDs are hashes; the model can only read pointers that exist in the database — "If I grab something out of a hash map that doesn't exist, I don't get anything back." The contract: citations are verified, corrected at search time, or refused. Production data shows refusals dropping drastically but not to zero, because models remain probabilistic at inference, so another post-processing step exists. He ends with fear and an ask. The fear: "the vast majority of finance AI tools right now are being used to format PowerPoint presentations," and no cradle-to-grave DCF exists despite claims. The ask: "We're now out of the search phase of AI. We need to be building infrastructure." Builders and buyers should demand pointer-writing models and per-citation, per-arithmetic source checks. He closes with a challenge — build something compelling that you can trust — and a final "Thank you." There is no Q&A.
+
+## Speaker details
+**Vinoo Ganesh** - CEO and co-founder, Kepler. He spent seven years at Palantir on the search and indexing backend, the Spark/YARN compute platform, and Project Frontline, Palantir's FDE rotation program. He was then CTO of Veraset, a geospatial data startup that grew to $15M ARR before it was acquired, and then Head of Business Engineering at Citadel, overseeing data pipelines and investment platforms across the hedge fund — a role he also self-describes in this talk at [05:57:19 | 2:37:54 PM]. At Kepler, language models interpret financial questions and plan the analysis, while deterministic software retrieves source data, runs calculations, and records how every result was produced. Kepler is backed by founders of OpenAI, Facebook, MotherDuck, dbt, Square, and others.
+
+Website: https://www.kepler.ai
+
+## Full timestamped transcript
+```
+[05:49:57 | 2:30:33 PM] I'm the CEO and co-founder of Kepler.
+[05:50:02 | 2:30:38 PM] This is going to be kind of an interesting talk because it comes from what happened three months ago.
+[05:50:08 | 2:30:43 PM] So three months ago, I think there's a little bit of an overlap, but I gave a talk at AIE World Fair really around verification and why that most institutions need verification in some form of the trust ecosystem of AI.
+[05:50:23 | 2:30:59 PM] Well, yesterday, most of you saw Jack and I were on stage talking about why Jack, who ran Citadel's biggest book and started Candlestick Capital, still doesn't trust AI.
+[05:50:34 | 2:31:10 PM] Since that three-month period, there's been about $270 million of VC money that got poured into formal verification layers.
+[05:50:45 | 2:31:20 PM] A VC actually took Kepler's own pitch deck and gave it to a competitor and produced something that has our same tagline.
+[05:50:51 | 2:31:27 PM] I'm not bitter, just a little.
+[05:50:53 | 2:31:29 PM] But the funny thing is they copied the wrong part.
+[05:50:56 | 2:31:31 PM] And so what I want to do is actually give you, the practitioners, today, you can't just tack verification on at the end.
+[05:51:03 | 2:31:39 PM] And so when I gave that chat or that talk a few months ago, Anthropic had just published an article on how Kepler does what it does and why it's really powerful and really unique.
+[05:51:15 | 2:31:51 PM] So what I want to do is get into the technical side of how we do the thing that we do.
+[05:51:20 | 2:31:56 PM] And ultimately, this is driven by one very simple insight: Wall Street still doesn't trust AI.
+[05:51:27 | 2:32:02 PM] Most people think that's because of this.
+[05:51:29 | 2:32:04 PM] AI will estimate things.
+[05:51:31 | 2:32:06 PM] It will hallucinate things.
+[05:51:32 | 2:32:08 PM] A frontier model will make stuff up.
+[05:51:35 | 2:32:11 PM] And ultimately, it is, and that's a component of it.
+[05:51:38 | 2:32:13 PM] But the actual core underlying problem is we have a structural problem in this technology that we're all so desperate to use.
+[05:51:45 | 2:32:20 PM] Meaning, if you actually chat with people that are building RAG platforms, most of what they'll say is, well, the models will eventually get good or get better to the point that they will eliminate hallucination.
+[05:51:55 | 2:32:30 PM] That is a nonsensical term.
+[05:51:58 | 2:32:34 PM] You know another word for hallucination?
+[05:52:00 | 2:32:36 PM] Alpha.
+[05:52:01 | 2:32:37 PM] Alpha is how a firm makes money.
+[05:52:03 | 2:32:39 PM] The creativity that you have and that your analysts have is a mechanism through which you can be a unique firm.
+[05:52:10 | 2:32:45 PM] Otherwise, there should be only one company on Earth.
+[05:52:13 | 2:32:48 PM] So when you ask these types of simple questions around where data comes from, there is a piece of this that the model will just make things up.
+[05:52:20 | 2:32:55 PM] And there's a piece of this that your firm's internal data is never actually reflected in this setup.
+[05:52:27 | 2:33:02 PM] So what are we seeing right now?
+[05:52:29 | 2:33:04 PM] We're seeing everyone with a checkbook buy everything they can.
+[05:52:32 | 2:33:07 PM] Every RAG platform.
+[05:52:33 | 2:33:09 PM] Some firms are trying to build.
+[05:52:35 | 2:33:11 PM] Some firms are running agent pilots.
+[05:52:38 | 2:33:13 PM] I had a customer meeting this morning where someone said they were actually an AI-first firm, which means they have one copilot agent running all the stuff.
+[05:52:46 | 2:33:22 PM] So why are we not seeing the complete switch of fundamental investing becoming effectively, why are we not all Jane Street?
+[05:52:54 | 2:33:30 PM] Why has that not happened yet?
+[05:52:56 | 2:33:32 PM] And so the challenge really comes from this idea of, in order for you to produce work product that you believe in, you have to trust it, meaning you have to blame somebody who gets it wrong.
+[05:53:07 | 2:33:43 PM] So we see numbers like this all the time, where 88% of finance execs trust numbers, but then 31% find those errors.
+[05:53:15 | 2:33:51 PM] So what do we actually need?
+[05:53:17 | 2:33:53 PM] We need a situation where the reviews that we're getting for AI apps, as builders ourselves, do more than just RAGify things.
+[05:53:27 | 2:34:02 PM] And these are quotes we've actually pulled from specific—I don't want to say our competitors, but other people—where things demo super well and they behave like a really smart intern.
+[05:53:37 | 2:34:13 PM] Or things are right if you just hook up the right structured information, but that last 10% still gets things wrong.
+[05:53:45 | 2:34:20 PM] So what I want to do is, we're lucky, we have great partners and folks like TurboPuffer, and I gave a similar chat yesterday about this.
+[05:53:51 | 2:34:26 PM] But how do we actually do the verification?
+[05:53:53 | 2:34:29 PM] How do we architecturally build a system that does not hallucinate numerically?
+[05:53:59 | 2:34:34 PM] So let's talk about it.
+[05:54:00 | 2:34:36 PM] Now, wrong numbers or wrong facts come from three sources.
+[05:54:05 | 2:34:40 PM] Either one, you retrieved the wrong document.
+[05:54:08 | 2:34:43 PM] So I pulled a document, some random thing from somewhere else.
+[05:54:12 | 2:34:47 PM] How do you fix this?
+[05:54:13 | 2:34:48 PM] Well, by retrieving the right document.
+[05:54:15 | 2:34:51 PM] But that in itself is complicated.
+[05:54:17 | 2:34:53 PM] Is the right document my own firm's internal analysis of what this stock is going to be worth?
+[05:54:22 | 2:34:58 PM] Is it, let's say, some analyst who I really trust more than anyone else?
+[05:54:27 | 2:35:03 PM] That's piece one.
+[05:54:28 | 2:35:04 PM] Now, failure two, we get the right source and we pull the wrong number out of that source.
+[05:54:33 | 2:35:09 PM] Let's say we're trying to figure out what the revenue for Palantir was back in 2023.
+[05:54:40 | 2:35:16 PM] Well, if I look at the 2025 10-K that says Palantir's 2023 revenue was this, I better make sure that that number corresponds to 2023 and not 2025.
+[05:54:50 | 2:35:26 PM] So the fix here is really, we have a filter that actually checks each citation.
+[05:54:55 | 2:35:31 PM] But this is still a problem because that filter only applies after the fact, and formal verification doesn't actually help here because the thing has already been produced.
+[05:55:05 | 2:35:40 PM] Three is the mental math.
+[05:55:07 | 2:35:42 PM] Models don't do math.
+[05:55:08 | 2:35:44 PM] They predict the next token.
+[05:55:10 | 2:35:45 PM] Now, for those of you who are going to say we have deterministic models, great, we do.
+[05:55:14 | 2:35:50 PM] We also have one CPU cycle that's good at adding two numbers together.
+[05:55:17 | 2:35:53 PM] Why don't I use that CPU cycle?
+[05:55:20 | 2:35:55 PM] So third failure is, let's use deterministic tools that we already have to actually compute numbers and entities rather than relying on some external tool.
+[05:55:30 | 2:36:05 PM] So here's what we do.
+[05:55:31 | 2:36:07 PM] This is the magic behind Kepler, at least for piece one.
+[05:55:34 | 2:36:10 PM] There's a whole bunch of other stuff.
+[05:55:36 | 2:36:12 PM] We are architected fundamentally differently.
+[05:55:39 | 2:36:15 PM] Code writes every number, and what code does and pre-processing does is we assign pointers to unique identifiers, meaning facts, meaning something like a number in a 10K.
+[05:55:50 | 2:36:26 PM] This operates in a giant pre-processing and contextualization step such that all of this exists, going from unstructured data to a structured data store.
+[05:55:59 | 2:36:35 PM] Then the model is effectively a smart analyst.
+[05:56:02 | 2:36:38 PM] It figures out how to go about solving the problem, but not actually being the thing to solve the problem itself.
+[05:56:09 | 2:36:45 PM] So it plans.
+[05:56:11 | 2:36:46 PM] It says, I'm going to go here and retrieve this source and retrieve this entity and do this thing.
+[05:56:16 | 2:36:52 PM] Code and math do the retrieval by actually pulling a number out of a 10K at search time.
+[05:56:23 | 2:36:58 PM] That's a hugely expensive token cost.
+[05:56:25 | 2:37:00 PM] And Anthropic and OpenAI should thank you for paying all those tokens in token maxing, but most of your firms don't like that, at least anymore.
+[05:56:31 | 2:37:06 PM] I know there were people getting bonuses from token maxing for a while.
+[05:56:35 | 2:37:11 PM] Now, the next piece of this is really, once the model has actually read both these pointers, it can't structurally generate numbers, meaning unless the model actually has a mechanism of dereferencing that pointer, that number or that fact cannot be generated in Kepler's output.
+[05:56:54 | 2:37:29 PM] Now, we do run a post-processing step, which is the verification step.
+[05:56:57 | 2:37:33 PM] And this is the piece that was kind of funny, where the last company just copied the verification piece, but all the structural stuff beforehand didn't make it.
+[05:57:06 | 2:37:41 PM] So what you as a consumer actually see is you see something like the revenue was this amount to this amount, and you physically can click on these chips and see exactly how we got the information.
+[05:57:17 | 2:37:52 PM] Now, in my past life, I had an opportunity.
+[05:57:19 | 2:37:54 PM] I was head of business engineering at Citadel.
+[05:57:21 | 2:37:56 PM] So I worked across the firm to figure out effectively what do we need to produce software that helps us generate alpha.
+[05:57:28 | 2:38:03 PM] You know the crazy thing with Citadel?
+[05:57:30 | 2:38:05 PM] PMs are so talented and so smart, but they work when they're paired with deterministic tools and technology.
+[05:57:37 | 2:38:13 PM] That's kind of the magical insight behind fundamental investing.
+[05:57:41 | 2:38:16 PM] Fundamental investors are so good at understanding data, but that data has to be right.
+[05:57:46 | 2:38:22 PM] And so, when you build a system like Kepler, what you effectively have to do is look up the right information and then be clever about the information you don't have.
+[05:57:55 | 2:38:31 PM] So let me give you the parallel.
+[05:57:58 | 2:38:33 PM] Most folks and most buy-side researchers or buy-side investors try to use tooling or build DCFs on their own, and then they find and search for information they don't have.
+[05:58:09 | 2:38:44 PM] They schedule GLG or Guidepoint calls.
+[05:58:11 | 2:38:46 PM] They find experts.
+[05:58:12 | 2:38:48 PM] They speak to management.
+[05:58:14 | 2:38:49 PM] The same system actually applies here.
+[05:58:16 | 2:38:52 PM] So what we do is we pick a path and we store the information deterministically that we can actually store deterministically.
+[05:58:24 | 2:38:59 PM] When we have information we can't store deterministically, we run similar preprocessing steps to grab information, store that information in a hybrid storage mechanism, which is a combination of TurboPuffer, who's awesome, by the way, and a bunch of other mechanisms.
+[05:58:38 | 2:39:14 PM] And then we ultimately use a combination of reranking with literally old-school, like pointer dereferencing, like .
+[05:58:45 | 2:39:20 PM] get methods to pull things into our system.
+[05:58:49 | 2:39:25 PM] Now, why this matters is a lookup cannot get it wrong.
+[05:58:55 | 2:39:30 PM] Search can.
+[05:58:56 | 2:39:31 PM] If you're running the same 10 searches with the same query, the probabilistic nature of models means there's inherent entropy.
+[05:59:03 | 2:39:39 PM] That's actually an opportunity.
+[05:59:05 | 2:39:40 PM] So that's what we've changed here.
+[05:59:08 | 2:39:43 PM] Now, how we do this is we break this down, and this occurs across the SEC world as well.
+[05:59:14 | 2:39:49 PM] We are frequently throwing candidate documents away.
+[05:59:17 | 2:39:52 PM] Meaning, we consistently have to look at not only what source is the right source for what information, but also which documents should we stop looking at kind of globally.
+[05:59:27 | 2:40:03 PM] So we're an ANN plus BM25 to get back a set of documents.
+[05:59:32 | 2:40:08 PM] It's usually up to 200.
+[05:59:34 | 2:40:09 PM] We do reciprocal.
+[05:59:35 | 2:40:11 PM] We effectively get 60 documents back is probably the best way to think about this.
+[05:59:40 | 2:40:15 PM] Then we do cross encoders.
+[05:59:42 | 2:40:17 PM] We try to figure out exactly the query and the actual document chunked together and get those results that way.
+[05:59:50 | 2:40:25 PM] What that allows us to do is we can search really wide.
+[05:59:53 | 2:40:28 PM] You know what LLMs aren't good at doing?
+[05:59:56 | 2:40:31 PM] Searching really wide.
+[05:59:57 | 2:40:33 PM] What they try to do is create a plan.
+[05:59:59 | 2:40:35 PM] Create a plan and find either the fastest or easiest breadth-first search mechanism—actually, depth-first search mechanism—of actually, like, getting the first document and moving forward.
+[06:00:09 | 2:40:44 PM] So we allow this to search really wide and then narrow from there.
+[06:00:14 | 2:40:49 PM] The reason LLMs don't like searching wide is because it's expensive.
+[06:00:18 | 2:40:54 PM] It's because looking across a bunch of different sources is significantly worse than getting the reward function back with your first hit and going from there.
+[06:00:26 | 2:41:02 PM] Okay, so I want to talk a little bit about security here because it's super important.
+[06:00:34 | 2:41:09 PM] Kepler was built with a security-first mindset and security-first mentality.
+[06:00:39 | 2:41:14 PM] Now, client documents, and this is specifically targeted towards the builders here, this is the thing that no one's chatting about.
+[06:00:44 | 2:41:20 PM] No one is actually talking about the security of what OAuth token is used and what user scope mechanism of retrieving documents, which is actually pretty scary.
+[06:00:53 | 2:41:29 PM] So let's talk about how things go wrong in these systems that people are trying to build and how you can fix it.
+[06:00:59 | 2:41:34 PM] First and foremost, you forget to filter the tenant.
+[06:01:01 | 2:41:37 PM] All of a sudden, Citadel can search all of Millennium's documents.
+[06:01:04 | 2:41:39 PM] You will be in a lot of trouble.
+[06:01:05 | 2:41:41 PM] Second, a caller claims to be another firm, meaning I can claim that I am impersonating this other entity and querying documents that way.
+[06:01:14 | 2:41:50 PM] Third, search returns information that's out of date.
+[06:01:18 | 2:41:53 PM] We've had this problem kind of globally in even Google search results.
+[06:01:21 | 2:41:57 PM] Fourth, direct read skips the search rules, meaning you're not actually querying the full corpus of information, or there's not an allow list.
+[06:01:28 | 2:42:03 PM] You only get back the single document that you did the search.
+[06:01:31 | 2:42:06 PM] Five, you hit an index that isn't populated.
+[06:01:34 | 2:42:10 PM] The way to actually solve all these problems, and there's individual things listed here, is actually scoping searches with security built in.
+[06:01:43 | 2:42:19 PM] That's kind of another critical piece that I think a lot of people miss when they're trying to build these systems themselves.
+[06:01:49 | 2:42:24 PM] Inevitably, people will start caring about the security associated with querying this information.
+[06:01:54 | 2:42:29 PM] Alpha is the most elusive thing out there, especially for folks on Wall Street.
+[06:01:58 | 2:42:34 PM] So making sure you have a good mechanism of actually constraining the set of documents that come back with each query is really important.
+[06:02:06 | 2:42:41 PM] Okay, now let's talk about verification, which is the last piece here.
+[06:02:11 | 2:42:47 PM] This is probably what we're known most for, but we do the other stuff I mentioned as well.
+[06:02:16 | 2:42:52 PM] How we do this is by pre-processing information and storing it deterministically.
+[06:02:22 | 2:42:57 PM] We have systems like code that actually write individual pointers.
+[06:02:27 | 2:43:03 PM] The model can only then read those pointers and grab information back if they exist in the database.
+[06:02:33 | 2:43:08 PM] If I grab something out of a hash map that doesn't exist, I don't get anything back.
+[06:02:38 | 2:43:13 PM] And so this combination is what allows us to actually make sure the information that we retrieved actually came from the source that it came from.
+[06:02:45 | 2:43:20 PM] Now, this is a kind of hidden version of what our source IDs look like, but these are hashes, and these are very simple things that you can do in your own system and your own setup to ensure that you're pulling back facts that in fact do exist.
+[06:03:00 | 2:43:36 PM] Cool.
+[06:03:01 | 2:43:37 PM] So that's a little bit about how we do verification.
+[06:03:05 | 2:43:40 PM] Now I want to chat a little bit about what this enables kind of globally.
+[06:03:10 | 2:43:46 PM] This enables us to verify facts that come out of our grounded corpus of data.
+[06:03:17 | 2:43:52 PM] Now, you as a builder, or you as a startup creator, or you as someone who is trying to figure out, how do I trust my outputs, really just need to do a couple of things.
+[06:03:25 | 2:44:01 PM] You need to show people that as you're creating these agents that are theoretically looking for alpha or whatever they'd be looking for, you're using information that is actually relevant and concrete and, most importantly, accurate to the set of people that you're trying to service.
+[06:03:41 | 2:44:16 PM] So we end up with a contract where citations are either verified, corrected at search time, or flat out refused.
+[06:03:50 | 2:44:26 PM] This is crazy if you think about it.
+[06:03:53 | 2:44:29 PM] If a model cannot de-resolve that pointer, it cannot print that number out.
+[06:03:59 | 2:44:35 PM] So that's kind of an insane thing.
+[06:04:02 | 2:44:37 PM] It means that the whole—and not just a number, let's talk about facts.
+[06:04:06 | 2:44:41 PM] Like, we see these court cases all over of precedents being hallucinated.
+[06:04:11 | 2:44:46 PM] Well, why can't we create a system that just has the precedent stored deterministically and allows us to search through that list and not have a random court case that never existed all of a sudden start existing?
+[06:04:21 | 2:44:57 PM] So this mechanism and this technology actually becomes fairly globally applicable.
+[06:04:26 | 2:45:02 PM] And the reason I'm on stage telling you how we do what we do is because I'm terrified that Wall Street never trusts this technology because of the fear that so many other companies or so many build-it-at-home folks have been instituting in these organizations.
+[06:04:44 | 2:45:19 PM] It's gotten to the point where the vast majority of finance AI tools right now are being used to format PowerPoint presentations.
+[06:04:51 | 2:45:26 PM] We still haven't actually built a DCF cradle to grave, despite what most people are saying.
+[06:04:55 | 2:45:31 PM] And if we had, every single company on Wall Street would have adopted that overnight.
+[06:05:00 | 2:45:36 PM] So this is my fear.
+[06:05:01 | 2:45:37 PM] My fear comes from a very simple fact.
+[06:05:04 | 2:45:39 PM] For us to actually get value out of this technology, we need to be able to build technology that people actually can trust and can verify.
+[06:05:12 | 2:45:47 PM] That isn't just true in finance; it's true in a bunch of different industries.
+[06:05:15 | 2:45:50 PM] So please take what you need to from this presentation and get people using this technology.
+[06:05:20 | 2:45:55 PM] Otherwise, we're all going to be out of a job.
+[06:05:23 | 2:45:58 PM] Now, I want to chat through what happened when we saw this.
+[06:05:25 | 2:46:01 PM] So when we went through this whole process, this is actually some of our real production data here.
+[06:05:31 | 2:46:07 PM] Refusals are when the model is not able to produce a number.
+[06:05:38 | 2:46:13 PM] Meaning, the model will say, I couldn't dereference this pointer, therefore I could not produce this number.
+[06:05:44 | 2:46:20 PM] We saw that drop super drastically.
+[06:05:47 | 2:46:22 PM] Now, the reason that it didn't drop to zero is because models are still probabilistic, meaning it can still make up numbers after the fact during inference.
+[06:05:56 | 2:46:32 PM] So there is another post-processing step after this that we have as well.
+[06:06:00 | 2:46:36 PM] But my point with this slide is, just by creating a system where the models have to dereference their own pointers, you can actually create a very powerful, very verifiable AI platform.
+[06:06:13 | 2:46:49 PM] And that to me is my ask to all of you.
+[06:06:15 | 2:46:51 PM] As you go through the building process, as you go through the scoping process, any tool that you use, ask them if you can actually verify the numbers.
+[06:06:23 | 2:46:58 PM] Ask them if you can see where the sources are, not in terms of some after-the-fact annotation, but click on the number, whether it's a calculation, whether it's an extraction, or some combination of the two, to make sure you trust the insight.
+[06:06:37 | 2:47:12 PM] And all of this ultimately is going to be the unlock.
+[06:06:40 | 2:47:16 PM] So you, as a vendor or you as a builder, ask these questions.
+[06:06:45 | 2:47:21 PM] Does the model actually write pointers?
+[06:06:47 | 2:47:22 PM] Does it actually create a mechanism for verifying the output?
+[06:06:50 | 2:47:26 PM] Is every citation source checked?
+[06:06:52 | 2:47:28 PM] Is arithmetic source checked?
+[06:06:55 | 2:47:30 PM] Do you have a mechanism for stopping files that reach clients or customers that it shouldn't reach?
+[06:07:01 | 2:47:36 PM] And most importantly, what happens to a number that came from nowhere?
+[06:07:04 | 2:47:40 PM] What happens when a fact comes from nowhere?
+[06:07:07 | 2:47:43 PM] And how do I actually handle these kinds of hallucinations?
+[06:07:12 | 2:47:47 PM] So this whole platform is actually, to make a very simple statement very obvious, which is we can have the smartest models in the world.
+[06:07:21 | 2:47:57 PM] We can hit some crazy cool piece of technology.
+[06:07:24 | 2:48:00 PM] But we still have the same database problems that we've had from the beginning, which are: I cannot, if I search through a row and that column, that value doesn't exist, I won't get a retrieval back.
+[06:07:39 | 2:48:14 PM] We're now out of the search phase of AI.
+[06:07:41 | 2:48:16 PM] We need to be building infrastructure.
+[06:07:43 | 2:48:18 PM] We need to be building scaffolding and harnesses and substrates, or whatever the cool VC term is these days, that actually enable us to make use of this technology.
+[06:07:50 | 2:48:26 PM] So this is my challenge and my ask to all of you.
+[06:07:55 | 2:48:30 PM] I hope you go out there and build something compelling, but I hope you build something compelling that you can trust.
+[06:07:59 | 2:48:35 PM] Thank you.
+```

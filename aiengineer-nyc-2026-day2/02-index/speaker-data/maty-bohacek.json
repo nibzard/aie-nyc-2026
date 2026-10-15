@@ -1,0 +1,18 @@
+{
+ "slug": "maty-bohacek",
+ "name": "Maty Bohacek",
+ "role": "AI Researcher",
+ "company": "Stanford University",
+ "bio": "Maty Bohacek is a researcher at Stanford University working at the intersection of AI and media integrity. He previously conducted research at UC Berkeley and MIT, and worked at Google DeepMind’s integrity team. In a world that is becoming increasingly AI-mediated, his goal is to build AI systems and networks that are inherently trustworthy and interpretable, resulting in productive, democratic discourse. In the past, he developed AI systems to translate sign language from video to text, detect deepfakes, attribute training data of generative AI models, and more. Maty’s work has been featured in Science and PNAS, as well as top AI conferences including ICML, ICLR, CVPR, ICCV, and others; he appeared on Forbes 30 under 30, and also received the Silver Medal of the Czech Senate.",
+ "linkedin": "https://www.linkedin.com/in/maty-bohacek/",
+ "twitter": "",
+ "website": "https://www.matybohacek.com",
+ "photo": "https://content-cdn.sessionboard.com/qP4juzxTGicQQBEj7HoN_headshot-1789391600805.jpg",
+ "sessions": [
+  {
+   "title": "The Human Verification Bottleneck: What agents do when a human is the only thing in the way",
+   "time": "11:55am - 12:13pm",
+   "room": "McCarthy Room (Riverside Suite)"
+  }
+ ]
+}

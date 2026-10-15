@@ -1,0 +1,18 @@
+{
+ "slug": "affaan-mustafa",
+ "name": "Affaan Mustafa",
+ "role": "Compute Trading Lead",
+ "company": "Jump Trading",
+ "bio": "Affaan Mustafa leads the compute trading division at Jump Trading, focused on trading, financing, and structuring transactions across compute and inference markets. Prior to joining Jump, Affaan co-founded Itô Markets, building a platform for compute procurement, financing, and risk management. He also created ECC, an open source agentic engineering toolkit used by millions globally, and built automated trading systems and infrastructure for prediction markets. Previously, Affaan conducted research involving high-dimensional data processing on HPC clusters at the San Diego Supercomputer Center. His background spans AI engineering, financial markets, and hardware commerce, including running an electronics business that sold thousands of GPUs and other components.",
+ "linkedin": "https://linkedin.com/in/affaanmustafa",
+ "twitter": "",
+ "website": "https://jumptrading.com",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2Fy3g2n8kQ3m4bg0T9oHQv_headshot-1790972615966.png",
+ "sessions": [
+  {
+   "title": "The Dark Pools of Compute",
+   "time": "11:55am - 12:13pm",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ]
+}

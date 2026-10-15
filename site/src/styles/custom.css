@@ -1,0 +1,136 @@
+/* YouTube embed, 16:9, responsive */
+.yt-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-block: 1.25rem;
+}
+
+.yt-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+/* One-line session facts under the embed */
+.session-meta {
+  font-size: 0.9em;
+  opacity: 0.75;
+  margin-block: 0.5rem 1.5rem;
+}
+
+:root {
+  --sl-content-width: 52rem;
+  --sl-color-accent-low: #171d4d;
+  --sl-color-accent: #6573ff;
+  --sl-color-accent-high: #dce0ff;
+}
+:root[data-theme='light'] {
+  --sl-color-accent-low: #eef0ff;
+  --sl-color-accent: #3f4cdb;
+  --sl-color-accent-high: #2733a8;
+}
+
+/* The digest uses the full reading area instead of the documentation columns. */
+:root:not([data-has-sidebar]) .hero {
+  display: block;
+  padding-block: 1.5rem 0.5rem;
+}
+:root:not([data-has-sidebar]) .hero .stack,
+:root:not([data-has-sidebar]) .hero .copy {
+  text-align: start;
+  align-items: flex-start;
+}
+:root:not([data-has-sidebar]) .hero h1 {
+  max-width: 28ch;
+  font-size: clamp(2.35rem, 4vw, 3.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  font-weight: 700;
+}
+:root:not([data-has-sidebar]) .hero .tagline {
+  max-width: 54ch;
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+:root:not([data-has-sidebar]) .hero .actions {
+  justify-content: flex-start;
+  gap: 0.75rem 1.5rem;
+}
+:root:not([data-has-sidebar]) .content-panel + .content-panel {
+  border-top: 0;
+}
+.digest-kicker,
+.card-label {
+  color: var(--sl-color-accent-high);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.digest-navigation { margin-block: 0.5rem 2rem; font-size: 0.95rem; }
+.reading-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 1.5rem 3rem;
+}
+.reading-grid > .reading-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.75rem;
+  background: var(--sl-color-bg-nav);
+}
+.reading-card h3 {
+  font-size: 1.22rem;
+  line-height: 1.35;
+  margin-top: 0.75rem;
+  letter-spacing: -0.02em;
+}
+.reading-card > p:not(.card-label):not(.card-links) {
+  font-size: 0.95rem;
+  margin-block: 0.75rem 1.25rem;
+}
+.reading-card .card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.card-links a { text-decoration: none; }
+.card-links a:hover { text-decoration: underline; }
+.sl-markdown-content :is(a, summary):focus-visible {
+  outline: 2px solid var(--sl-color-accent);
+  outline-offset: 4px;
+}
+.sl-markdown-content > :is(ul, ol) > li + li { margin-top: 1rem; }
+.sl-markdown-content h2 { letter-spacing: -0.025em; }
+.digest-footer {
+  border-top: 1px solid var(--sl-color-gray-5);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+}
+.digest-footer p:last-child { font-size: 0.85rem; }
+.session-list .session-card {
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--sl-color-gray-5);
+}
+.session-card h2 { font-size: 1.3rem; margin: 0; border: 0; padding: 0; }
+.session-card h2 a { text-decoration: none; }
+.session-card h2 a:hover { text-decoration: underline; }
+.session-card .session-meta { margin-block: 0.5rem; }
+.session-card > p { margin-block: 0.75rem; }
+.read-session { font-size: 0.95rem; font-weight: 600; }
+@media (max-width: 40rem) {
+  .reading-grid { grid-template-columns: 1fr; }
+  .reading-grid > .reading-card { padding: 1.25rem; }
+  :root:not([data-has-sidebar]) .hero { padding-block: 1.5rem 0.5rem; }
+}

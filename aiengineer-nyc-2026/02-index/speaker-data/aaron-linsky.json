@@ -1,0 +1,23 @@
+{
+ "slug": "aaron-linsky",
+ "name": "Aaron Linsky",
+ "role": "Head of Product Engineering",
+ "company": "Bridgewater",
+ "bio": "Aaron Linsky is Head of Engineering for Bridgewater's Alpha Engine and a Partner of the firm, which he joined in 2008. He was previously the founding Chief Technology Officer of AIA Labs, Bridgewater's AI unit, where he built the technology platform behind AI-first investment research and strategies, and his current mandate is extending and scaling those capabilities across the Alpha Engine. Earlier in his tenure he began as a data analyst on the Equities team before moving into Technology, helped migrate the firm's research platform to the cloud, and led the redesign and consolidation of the application stack used for portfolio operations. He graduated magna cum laude from Princeton University with a degree in Operations Research and Financial Engineering.",
+ "linkedin": "https://www.linkedin.com/in/aaronlinsky",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FpfrCkEvTxucmWKouiHCO_headshot-1789757044363.jpg",
+ "sessions": [
+  {
+   "title": "Vault: Making Unstructured Data Work for Investing",
+   "time": "9:00am - 9:18am",
+   "id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.bridgewater.com/aaron-linsky",
+  "https://www.linkedin.com/in/aaronlinsky"
+ ]
+}

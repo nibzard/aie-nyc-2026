@@ -1,0 +1,28 @@
+{
+ "slug": "frank-long",
+ "name": "Frank Long",
+ "role": "Head of AI",
+ "company": "Coatue",
+ "bio": "Frank Long is Head of AI and a Partner on the investment staff at Coatue Management, the New York-based technology investment firm. He covers what he calls the AI stack \"from tokens down to electrons\" (applications through infrastructure). He joined Coatue in January 2026 from Goldman Sachs, where he worked at the Goldman Sachs Global Institute on AI and the intersection of emerging technology and geopolitics, and where his name appeared in the Managing Director class of 2025. At Goldman Sachs he wrote on AI infrastructure themes, including how AI agents could drive a generational infrastructure buildout and how power density disrupts AI infrastructure. At Coatue he co-authored the July 2026 piece \"Agents Are the New Users of CPUs\" with Nick Gagnet, which argues that AI agents are inverting the GPU-to-CPU demand ratio. He is based in New York, studied at The University of Texas at Austin, describes himself as a \"technology enthusiast\", and posts on X as @fyxlong.",
+ "linkedin": "https://www.linkedin.com/in/franklong1",
+ "twitter": "https://x.com/fyxlong",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F80YgJt1WR1qLMp8z5Kbi_headshot-1790105618341.jpg",
+ "sessions": [
+  {
+   "title": "A Hedge Fund as a Function",
+   "time": "4:30pm - 4:48pm",
+   "id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.linkedin.com/in/franklong1",
+  "https://www.linkedin.com/posts/coatue_hires-activity-7419475446775357440-DtAr",
+  "https://www.coatue.com/c/takes/agents-are-the-new-users-of-cpus",
+  "https://www.goldmansachs.com/insights/articles/a-generational-infrastructure-buildout-might-hinge-on-ai-agents",
+  "https://www.goldmansachs.com/insights/articles/rising-power-density-disrupts-ai-infrastructure",
+  "https://www.goldmansachs.com/pressroom/press-releases/2025/managing-director-announcement-06-nov-2025",
+  "https://x.com/fyxlong"
+ ]
+}

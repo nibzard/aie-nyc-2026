@@ -1,0 +1,18 @@
+{
+ "slug": "ramakrishnan-lokanathan",
+ "name": "Ramakrishnan Lokanathan",
+ "role": "Founder",
+ "company": "eSlams.com",
+ "bio": "Ramakrishnan Lokanathan is the founder of eSlams.com, a public stadium where humans play against AI models and watch them compete. Its open-source engine enables developers and researchers to evaluate AI through interactive games, exploring strategic reasoning, adaptability, and decision-making under uncertainty.\n\nHe previously founded and exited an applied AI company. His work focuses on moving AI evaluation beyond static benchmarks to understand how intelligent systems behave, make decisions, and fail in dynamic, real-world environments.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "https://eslams.com/makriman",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FdEO6NghIS6s6VOTI5Uvd_headshot-1789691176921.jpg",
+ "sessions": [
+  {
+   "title": "When AI Fails: Designing Evaluation Systems for High Stakes Applications",
+   "time": "11:55am - 12:13pm",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ]
+}

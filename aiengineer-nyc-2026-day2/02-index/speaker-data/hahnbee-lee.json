@@ -1,0 +1,18 @@
+{
+ "slug": "hahnbee-lee",
+ "name": "Hahnbee Lee",
+ "role": "Co-Founder & CTO",
+ "company": "Mintlify",
+ "bio": "Hahnbee Lee is the co-founder of Mintlify, which she launched with Han Wang to reimagine documentation for the AI era. Under her leadership, Mintlify has raised over $67M in funding, scaled to serve 300 million users across more than 20,000 companies, and earned a spot on Forbes' 2026 30 Under 30 list for AI.",
+ "linkedin": "",
+ "twitter": "https://x.com/hahnbeelee",
+ "website": "https://www.mintlify.com/",
+ "photo": "https://content-cdn.sessionboard.com/RYAVnZcQRVqxJe0zqtkE_headshot-1789391585878.jpg",
+ "sessions": [
+  {
+   "title": "Developer Docs as Knowledge Infrastructure for Fintech",
+   "time": "10:40am - 10:58am",
+   "room": "Sutton Room (NY Ballroom W)"
+  }
+ ]
+}

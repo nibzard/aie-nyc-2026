@@ -1,0 +1,24 @@
+{
+ "slug": "hrishi-olickel",
+ "name": "Hrishi Olickel",
+ "role": "Founder & CEO",
+ "company": "Southbridge AI",
+ "bio": "Hrishi Olickel is the founder and CEO of Southbridge AI, a San Francisco and Singapore company building data agents and what he calls the stack for Data AGI. Southbridge turns messy, long-tail data such as health records, financial filings, and decades of sensor readings into usable form. Before Southbridge, he spent about five years as co-founder and CTO of Greywing (YC W21), a maritime software company, where his team built SeaGPT, an early maritime AI agent, and helped tens of thousands of stranded seafarers return home during Covid. He co-authored Oyente (ACM CCS 2016), a symbolic-execution tool that flagged more than $62M in exploitable Ethereum smart contracts. Forbes named him to 30 Under 30 Asia 2023 in Enterprise Technology. He did research at Yale-NUS College and writes about LLMs, RAG, and agents on his blog.",
+ "linkedin": "https://sg.linkedin.com/in/hrishioa",
+ "twitter": "https://x.com/hrishioa",
+ "website": "https://olickel.com",
+ "photo": "",
+ "sessions": [
+  {
+   "title": "Extra lunch talk: no universal schema — just-in-time ontologies, model priors, and Pareto surfing (Southbridge)",
+   "order": 28
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://olickel.com/about-me",
+  "https://sg.linkedin.com/in/hrishioa",
+  "https://www.forbes.com/profile/hrishi-olickel",
+  "https://daily.dev/posts/just-in-time-ontologies-what-cheap-intelligence-means-for-data-hrishi-olickel-southbridge-ai-bj6vhbk4y"
+ ]
+}

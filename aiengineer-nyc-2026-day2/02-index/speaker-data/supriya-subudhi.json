@@ -1,0 +1,18 @@
+{
+ "slug": "supriya-subudhi",
+ "name": "Supriya Subudhi",
+ "role": "Staff Product Manager",
+ "company": "Bumble",
+ "bio": "Staff PM with ~10 years of experience spanning engineering, fintech, ad-tech, and consumer tech — with hands-on technical roots as a software and data engineer at Microsoft. Ran multi-country A/B tests at the scale of tens of millions of users, improving ecosystem health through data-driven product decisions during a critical business transition. Shipped a Gen AI feature covered by TechCrunch that directly improved women's D1 retention — a core north-star metric — by improving match quality at scale",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FKp8mByvBRsq67MX0kZpY_headshot-1789654975917.jpg",
+ "sessions": [
+  {
+   "title": "A/B Testing AI Products Is Weird: What Changes When the Product Is Probabilistic",
+   "time": "12:20pm - 12:38pm",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ]
+}

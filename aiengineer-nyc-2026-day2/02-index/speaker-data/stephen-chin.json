@@ -1,0 +1,18 @@
+{
+ "slug": "stephen-chin",
+ "name": "Stephen Chin",
+ "role": "VP of Developer Relations",
+ "company": "Neo4j",
+ "bio": "Stephen Chin is VP of Developer Relations at Neo4j, program chair and board member for the LF AI & Data Foundation, and author of numerous titles including the upcoming GraphRAG: The Definitive Guide for O'Reilly. He has given keynotes and main stage talks at numerous conferences around the world including AI Engineer Summit, AI DevSummit, Open Source Summit, Devoxx, Jfokus, DevNexus, JNation, JavaOne, Shift, Joker, swampUP, and GIDS. Stephen is an avid motorcyclist who has done evangelism tours in Europe, Japan, and Brazil, interviewing developers in their natural habitat. When he is not traveling, he enjoys teaching kids how to do AI, embedded, and robot programming together with his daughters.",
+ "linkedin": "https://www.linkedin.com/in/steveonjava/",
+ "twitter": "https://twitter.com/steveonjava",
+ "website": "https://neo4j.com/",
+ "photo": "https://content-cdn.sessionboard.com/h0yr8rKTxWQ6pTv13wib_headshot-1789391590325.jpg",
+ "sessions": [
+  {
+   "title": "The Map Beneath Modern Finance",
+   "time": "12:20pm - 12:38pm",
+   "room": "Sutton Room (NY Ballroom W)"
+  }
+ ]
+}

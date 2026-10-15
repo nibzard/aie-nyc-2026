@@ -1,0 +1,269 @@
+---
+title: Balancing Acceleration and Safety for AI Agents
+description: Two Sigma's John Feminella retells Citibank's $900 million Revlon
+  wire error to show why agent safety and speed are not a tradeoff, then lays
+  out five composable controls — an agent registry, risk-scored review,
+  declared-purpose tool access, shared evals, and classifier-governed runtime —
+  that let a regulated firm run
+sidebar:
+  order: 8
+  hidden: false
+pagefind: true
+prev: false
+next: false
+---
+
+Two Sigma's John Feminella retells Citibank's $900 million Revlon wire error to show why agent safety and speed are not a tradeoff, then lays out five composable controls — an agent registry, risk-scored review, declared-purpose tool access, shared evals, and classifier-governed runtime — that let a regulated firm run agents with real autonomy.
+
+## TL;DR
+- Feminella opens with the August 2020 Citibank/Revlon incident: a Flexcube operator error sent the entire ~$900 million loan principal to 300+ lenders instead of ~$8 million of interest, even though the software warned and three humans approved.
+- The lesson for AI agents: agents are non-deterministic, but so are humans. Firms already solve this with boundaries and visibility, not lockdown. Safety and innovation can coexist.
+- Two Sigma rejected three tempting approaches: sandbox everything (safe but useless), let agents run wild (unsuitable for regulated enterprises), and policy documents in prompts (not enforceable at runtime).
+- Five composable controls do the work: an agent registry for legibility, risk scoring for proportionate review, declared-purpose tool access enforced at initialization, a firm-run shared eval platform, and classifier-based runtime governance instead of human approval of every action.
+- Review fatigue is a real failure mode: an AI lab director's OpenAI agent deleted hundreds of emails after context compaction dropped the "wait for approval" instruction.
+- Closing metaphor: cars have brakes not just to stop, but to go fast and stop safely. Agent controls work the same way.
+
+## Key lessons
+1. The Revlon failure shows how controls fail when everyone follows procedure. On August 11, 2020, Citi was administrative agent for Revlon's 2016 term loan, split across 300+ lenders. The plan was to pay about $8 million of accrued interest and roll principal into a new facility (an exchange of paper, not cash). In Flexcube, the easy way to book this was to record it as if Revlon were paying off the entire loan, with the principal routed to an internal wash account. The wash-account boxes were not checked, so Flexcube sent about $900 million of principal to all 300 lenders instead. Lenders kept it — the loans traded around 60 cents on the dollar — and commercial loan agreements everywhere grew a new clause afterward to prevent this scenario.
+2. A correct warning that fires routinely gets overridden. Flexcube popped a warning that money was about to leave the bank, but money was supposed to leave, because the interest payment was real. Three human approvers reviewed it, said "Yep, that's the right thing," and overrode the warning. The control failed even though the software worked and everyone did what they thought was right.
+3. Treat agents like humans, not like bombs. You cannot know in advance what a non-deterministic agent will do, but firms do not lock humans in rooms and force them to double-check everything. They grant autonomy with boundaries, visibility, and systems that let people do their jobs. In this model, safety and innovation are not opposite ends of a spectrum.
+4. Three approaches did not work at Two Sigma: sandbox or lock down everything (a sandbox with no real access is safe but not useful); let agents go wild (weak isolation, unsuitable for highly regulated enterprises); and policy documents inside prompts or specs (not enforceable at runtime, so they cannot be part of the enforcement controls).
+5. Control 1 — an agent registry makes agents legible. Building with one of the firm's approved agent frameworks auto-registers the owner, product, declared tools, and endpoints. Humans, programs, and other agents can then discover what exists and reuse it. The tempting alternative — gate everything behind onerous registration and approval — creates a queue where a notebook experiment waits behind genuinely risky systems, so people give up or move to shadow IT, and the firm sees nothing at all.
+6. Control 2 — score agents so human review lands in the right spot. A Jira/Linear ticket summarizer carries very different risk from a production deployment agent that touches a running system. Most enterprise agents are purpose-built with circumscribed purpose, unlike open-ended coding agents such as "Pi or Claude Code," so their declared tools, endpoints, and controls let you route review appropriately. One heavy queue means a trivial summarizer waits two months for the same sign-offs as a production-touching agent, reviewers drown in low-risk requests, and people route around the process.
+7. Control 3 — declared-purpose access, enforced at initialization. Agents declare the tools they need (for example, a research summarizer gets a web tool; a release deployer does not and will not get it by default). When agents run in managed environments, they look up their registry policy at initialization, which is translated into enforceable statements: which endpoints, hosts, and resource types are allowed. No ticket to IT, no approvals outside the team — as long as the agent conforms to its risk score, it is governed and approved. Blanket allow-lists that block everything else are "safe, but also useless," because the agent cannot do its intended work.
+8. Control 4 — shared evals; Control 5 — classifier-governed runtime. Evals are the agent equivalent of unit tests: models are runtime dependencies, and an agent that changes models cannot know what happens to output quality without evals. A firm-run shared eval platform covers the common parts, so each team only writes what is true about its own agent. At runtime, do not make a human approve every action — one recent example: a director at an AI research lab told her OpenAI agent to suggest emails to delete and wait for approval, but the inbox was so large the agent compacted its context, lost the wait-for-approval instruction, and deleted hundreds of emails without stopping. Use deterministic fast paths when explicit rules apply, independent conservative classifiers for ambiguous routine calls, humans only for the requests that matter most, and outright denial for the clearly dangerous. If you would say yes 99.9999999% of the time, "that's probably just a rule that the agent should follow, not a request you need to ask the human for permission for."
+
+## Watch this session
+
+<div class="yt-embed">
+<iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=3033&rel=0" title="Balancing Acceleration and Safety for AI Agents" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p class="session-meta">John Feminella &middot; 9:38:25 AM ET-9:57:32 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=3033s" rel="noopener">Watch on YouTube from 00:50:33</a></p>
+
+## Notable quotes
+- "So the principal never went to the wash account, and instead, Flexcube sent the entire outstanding principal of the loan to all of the 300 lenders, about $900 million instead of $8 million." [00:54:57 | 9:42:49 AM]
+- "So in this sort of model, safety and innovation are not opposite ends of a spectrum that you must trade off on." [00:56:51 | 9:44:42 AM]
+- "And as author John Shed wrote, a ship in harbor is safe, but that is not what ships are for." [01:04:01 | 9:51:52 AM]
+- "It's so that you can go fast and stop safely." [01:09:34 | 9:57:26 AM]
+
+## Session narrative
+The host introduced John Feminella as SVP of Architecture at Two Sigma, "to explore how serious organizations can accelerate innovation without compromising trust." Feminella opened with a joke about his precariously balanced water bottle and a mandatory legal disclaimer slide — he promised not to sell securities and noted everything was his own opinion, not Two Sigma's, quipping that if he did not say the magic words, "the 5G microchips implanted in me will explode." He used the slide as a springboard: as a regulated company, the interesting question is what happens when controls fail, because that reveals why the controls existed at all.
+
+The core of the talk was a story: the August 2020 Citibank/Revlon wire error. He explained it first with a lemonade-stand analogy, then in detail. Revlon had borrowed under a big 2016 term loan split across 300-plus lenders, with Citi as administrative agent doing the plumbing between borrower and lenders. The plan for August 11, 2020 was roughly $8 million of interest out and principal rolled over. Inside Citi's Flexcube software, the practical way to book this was to record it as a full loan payoff, with principal sent to an internal wash account so it never left the bank's perimeter. The wash-account checkboxes were not checked. Flexcube did warn that money was about to leave the bank, but money was supposed to leave — the interest payment was real — so three approvers approved and the operators overrode the warning. Flexcube sent the entire outstanding principal, about $900 million, to all the lenders. Because Revlon was in trouble and its loans traded near 60 cents on the dollar, the lenders refused to give the windfall back, and afterward a new contract clause started appearing in commercial loan agreements everywhere to prevent exactly this.
+
+The pivot: what does a payment error at a bank have to do with AI agents? "Every day, we're giving real agents real autonomy over systems like Flexcube." The crux is that you cannot know in advance what a non-deterministic agent will do — but humans are also non-deterministic, and firms handle that with boundaries, visibility, and systems, not lockdowns. He walked through approaches Two Sigma rejected (sandboxing everything, letting agents run wild, unenforceable policy documents) and then presented five composable controls, each introduced through the failed "tempting answer" it replaces: an agent registry (versus approval gates that breed shadow IT), risk-scored review (versus one-size-fits-all queues that make a summarizer wait like a production deployer), declared-purpose tool access enforced at initialization (versus blanket allow-lists, closing with the "ship in harbor" line), a firm-run shared eval platform (versus central committees approving every prompt tweak), and runtime classification — deterministic fast paths for explicit rules, conservative classifiers for ambiguity, humans only for what matters.
+
+He closed by putting the five pieces back together — registry for visibility, scoring for review routing, guardrails for scope, shared evals for a common bar, runtime governance for classification — and left the audience with one question: "Why do cars have brakes?" Not just to stop — "It's so that you can go fast and stop safely. So controls for our agents work the same way." He signed off: "I'm John Femenella, and I hope you had a good time." (Note: the agenda slot was 9:36–9:54 AM; actual speech ran 9:38–9:57 AM ET. The transcript's automatic spelling "Femenella" is an ASR variant of Feminella.)
+
+## Speaker details
+**John Feminella** - SVP Architecture, Two Sigma. Responsible for building AI tools and infrastructure for the company at scale. He came to Two Sigma from Pivotal, ThoughtWorks, VMware, and EY, where he served as a technology executive, and focuses on building platforms, large-scale agentic AI and transformation efforts, and improving the experience of enterprise developers, modelers, and product managers. Past work includes the U.S. EPA's National Emissions Inventory, a United Nations system for tracking aid to refugees, an automated tax-filing platform, and FedNow, the U.S. Federal Reserve's instant payment infrastructure.
+
+Links: [LinkedIn](https://linkedin.com/in/johnxf) | [Bluesky](https://bsky.app/profile/jxf.me)
+
+## Full timestamped transcript
+```
+[00:50:33 | 9:38:25 AM] And now, to explore how serious organizations can accelerate innovation without compromising trust, please welcome John Femenella, SVP of Architecture at Two Sigma.
+[00:51:02 | 9:38:54 AM] Hey, everyone.
+[00:51:03 | 9:38:55 AM] All right, I precariously balanced my water over there.
+[00:51:08 | 9:38:59 AM] My name is John Femenella.
+[00:51:09 | 9:39:00 AM] I work on AI architecture and engineering at Two Sigma, which is a hedge fund here in New York.
+[00:51:14 | 9:39:06 AM] Before I get too far into things, I have a legal disclaimer slide that I have to show you.
+[00:51:19 | 9:39:11 AM] It says two things.
+[00:51:21 | 9:39:12 AM] One, I promise not to sell or market or offer you any securities at any point in this talk.
+[00:51:26 | 9:39:18 AM] And two, everything in this is my own opinion and not the opinion of Two Sigma.
+[00:51:31 | 9:39:22 AM] Thanks for indulging me.
+[00:51:32 | 9:39:24 AM] If I don't say those magic words, the 5G microchips implanted in me will explode.
+[00:51:39 | 9:39:30 AM] So that slide is a good example, actually, of how our industry is regulated.
+[00:51:43 | 9:39:35 AM] And as a regulated company with lots of controls, I think one thing that's always interesting is to explore what happens when controls fail, because that gives you a good idea about why the controls were there in the first place.
+[00:51:54 | 9:39:46 AM] And so I'd like to tell you a story about that by showing you another legal slide.
+[00:52:00 | 9:39:51 AM] After August 2020, a very interesting contract clause suddenly started showing up in a bunch of commercial loan agreements.
+[00:52:07 | 9:39:58 AM] And this clause essentially tries to prevent a certain scenario from happening.
+[00:52:11 | 9:40:02 AM] And it's complicated, but I'll explain it like this.
+[00:52:13 | 9:40:04 AM] Let's say that you're a lemonade stand business and you borrow money from a lender to capitalize your lemonade stand.
+[00:52:20 | 9:40:11 AM] And the bank that's overseeing that transaction, that's in the middle between the borrower and the lender, sends the lender all of the money that you owe in a catastrophic mistake.
+[00:52:32 | 9:40:24 AM] You'd probably be mad and want the money back, but the lender might also say, No thanks.
+[00:52:36 | 9:40:28 AM] You paid us back and we're all good, so we'd rather keep the money.
+[00:52:40 | 9:40:32 AM] Something like this happened in August 2020.
+[00:52:43 | 9:40:34 AM] Revlon, the cosmetics company, had borrowed money under a big 2016 term loan.
+[00:52:49 | 9:40:40 AM] And that loan was split up into a bunch of pieces across 300-plus lenders: hedge funds, credit funds, CLOs, other banks.
+[00:52:57 | 9:40:48 AM] And in the middle is Citibank, the administrative agent.
+[00:53:00 | 9:40:51 AM] Being the agent in this kind of transaction means that you're performing the plumbing that connects the borrowers with the lenders and managing the life cycle of the loan.
+[00:53:08 | 9:41:00 AM] So in this transaction, Revlon pays Citi, and then Citi pays the lenders.
+[00:53:12 | 9:41:03 AM] And Citi is not lending its own money; it's just in the middle moving people's money around.
+[00:53:17 | 9:41:09 AM] So here's the plan for August 11, 2020.
+[00:53:21 | 9:41:12 AM] Revlon would pay about eight million bucks of accrued interest to both groups, and the lender's principal would roll into this new facility.
+[00:53:28 | 9:41:19 AM] That's an exchange of paper, not cash, so the remaining lender's principal would stay put.
+[00:53:33 | 9:41:24 AM] And the idea here is that only interest should be going out; principal should not be moving at all.
+[00:53:39 | 9:41:30 AM] And the bank had a piece of internal processing software called Flexcube.
+[00:53:43 | 9:41:35 AM] Isn't that a fun enterprise software name?
+[00:53:46 | 9:41:37 AM] So in Flexcube, the easiest way to do this kind of transaction is to pretend to record it like Revlon were paying off the entire loan.
+[00:53:55 | 9:41:46 AM] And that triggers the correct interest payment calculations to everyone.
+[00:53:59 | 9:41:50 AM] You can probably guess what's about to happen next.
+[00:54:01 | 9:41:52 AM] So you're supposed to send the principal portion to an internal wash account that you own as the bank so that it's booked and recorded correctly, but it never leaves the bank's perimeter.
+[00:54:12 | 9:42:03 AM] So keep your eye on that wash account.
+[00:54:14 | 9:42:05 AM] What was supposed to happen is that the boxes labeled front and fund and principal should all include the wash account number and should all have a checkbox checked next to them.
+[00:54:24 | 9:42:16 AM] So unfortunately, it turned out that was what needed to happen.
+[00:54:27 | 9:42:18 AM] But for various arcane reasons, the boxes were not checked.
+[00:54:32 | 9:42:23 AM] And although Flexcube pops up a warning notification that says, Uh-oh, money is about to leave the bank.
+[00:54:37 | 9:42:28 AM] Are you sure you want to do this?
+[00:54:38 | 9:42:30 AM] That was correct.
+[00:54:39 | 9:42:31 AM] Money was supposed to leave the bank because they were making the interest payments.
+[00:54:43 | 9:42:34 AM] So the three approvers who were supposed to approve that looked at it and said, Yep, that's the right thing that's supposed to happen.
+[00:54:48 | 9:42:40 AM] And although that warning notification popped up, the human operators carrying out the transaction overrode that.
+[00:54:55 | 9:42:46 AM] Remember, Revlon was making that interest payment.
+[00:54:57 | 9:42:49 AM] So the principal never went to the wash account, and instead, Flexcube sent the entire outstanding principal of the loan to all of the 300 lenders, about $900 million instead of $8 million.
+[00:55:09 | 9:43:00 AM] So every lender got the amount that they would have been owed if Revlon had paid the loan in full.
+[00:55:14 | 9:43:06 AM] But Revlon didn't want to pay off the loan.
+[00:55:16 | 9:43:07 AM] It wanted to hold on to its money.
+[00:55:17 | 9:43:09 AM] That was a great deal for the lenders because remember, Revlon was in trouble at the time, so its loans weren't trading at face value.
+[00:55:23 | 9:43:14 AM] And getting all your money back on a deal that you thought was only worth 60 cents on the dollar is a great deal for you.
+[00:55:29 | 9:43:21 AM] So they didn't want to give the money back.
+[00:55:32 | 9:43:23 AM] Even after Citi called them and said, Please, that was a mistake.
+[00:55:34 | 9:43:25 AM] Give us the money back.
+[00:55:35 | 9:43:26 AM] And their argument was, We shouldn't have to give the money back because you paid us in full, and that's how loans work.
+[00:55:40 | 9:43:31 AM] You eventually pay them back.
+[00:55:41 | 9:43:32 AM] And just because you paid it back at a different time than you were supposed to doesn't mean that we should have to give it back now.
+[00:55:47 | 9:43:38 AM] And so to prevent that from happening, commercial loan agreements everywhere started including a clause like that one.
+[00:55:53 | 9:43:44 AM] So what does a payment error at a bank have to do with AI agents?
+[00:55:56 | 9:43:48 AM] Well, the bank had this procedure, it had these controls, and everybody did what they thought the right thing to do was.
+[00:56:02 | 9:43:54 AM] That's the problem I want to talk about for the rest of this talk.
+[00:56:04 | 9:43:56 AM] Every day, we're giving real agents real autonomy over systems like Flexcube.
+[00:56:10 | 9:44:01 AM] And how do we prevent accidents like that one from either from happening without locking everything down or just hoping we'll get lucky that they won't happen?
+[00:56:18 | 9:44:10 AM] So here's the crux of the issue.
+[00:56:19 | 9:44:11 AM] You can't really know in advance what an agent will do, right?
+[00:56:22 | 9:44:13 AM] They're these non-deterministic systems.
+[00:56:24 | 9:44:16 AM] And that sounds scary until you remember that humans are also non-deterministic systems, and they're going to make mistakes too.
+[00:56:30 | 9:44:22 AM] And so most firms don't choose to say, well, in order to reduce the risk of humans making a mistake, we're going to, like, lock them in rooms and prevent them from talking to each other, and they're all going to double-check everybody else's work, right?
+[00:56:40 | 9:44:31 AM] We allow them a certain amount of autonomy along with a certain amount of control.
+[00:56:44 | 9:44:36 AM] So we give them boundaries, visibility, and we equip them with systems and controls that let them do their jobs effectively.
+[00:56:51 | 9:44:42 AM] So in this sort of model, safety and innovation are not opposite ends of a spectrum that you must trade off on.
+[00:56:57 | 9:44:48 AM] There are things that you can have at the same time.
+[00:56:59 | 9:44:50 AM] So I think you can have your cake and eat it too.
+[00:57:02 | 9:44:53 AM] And when we were thinking about what controls we wanted to apply to agents, we also looked at some approaches that didn't work for us.
+[00:57:07 | 9:44:59 AM] We don't want to sandbox or lock down everything because a sandbox with no real access to systems is safe, but it's not very interesting or useful.
+[00:57:15 | 9:45:06 AM] If you let agents go wild and do whatever they want, that's, you know, maybe powerful and freeing from a cognitive perspective, but the isolation is very weak there, and that approach is generally not suitable for highly regulated enterprises.
+[00:57:29 | 9:45:20 AM] And then if you just have policy documents that agents look at or that are part of your specification for the prompts, that's also not very enforceable at runtime.
+[00:57:38 | 9:45:30 AM] You can't guarantee that that will be part of the enforcement controls.
+[00:57:42 | 9:45:33 AM] So what did work for us was thinking about what mix of controls would get us both safety and innovation at the same time.
+[00:57:49 | 9:45:40 AM] So how do we provide boundaries and stop problems, but don't hinder folks from operating correctly?
+[00:57:55 | 9:45:46 AM] So we have a number of these controls, but today I'll talk about five of them.
+[00:57:58 | 9:45:49 AM] And when I say controls here, what I mean are the guardrails and shared capabilities that let teams move in ways that don't hinder what they're trying to do.
+[00:58:08 | 9:45:59 AM] And we don't want to reach some chasm that we need to cross to let people get their work done before, and then make everyone wait while we build a bridge to get there.
+[00:58:18 | 9:46:10 AM] So if these controls are composable, each one does one job, and then together they let us run agents with real autonomy at an appropriate level of safety.
+[00:58:29 | 9:46:21 AM] So the first problem is that agents were showing up everywhere.
+[00:58:32 | 9:46:24 AM] We have big teams with lots of agents running.
+[00:58:35 | 9:46:27 AM] We have small teams with a few.
+[00:58:36 | 9:46:28 AM] We have individual people running stuff in an uncontrolled way.
+[00:58:40 | 9:46:32 AM] And these come in every shape.
+[00:58:41 | 9:46:33 AM] It could be random chatbots.
+[00:58:42 | 9:46:34 AM] It could be MPC servers glued together in this Frankenstein hodgepodge.
+[00:58:47 | 9:46:39 AM] It could be cool notebook experiments.
+[00:58:49 | 9:46:40 AM] It could be really useful web tools for folks.
+[00:58:52 | 9:46:43 AM] But it's hard to answer when you look at that a few simple questions like, who owns this?
+[00:58:57 | 9:46:49 AM] What tools does it have access to?
+[00:58:59 | 9:46:51 AM] What should it be doing?
+[00:59:00 | 9:46:52 AM] What should it not be doing?
+[00:59:01 | 9:46:53 AM] And if you can't answer those kinds of questions, if you can't govern them, then you can't really also reuse that.
+[00:59:07 | 9:46:58 AM] So you're tempted to build multiple solutions to the same problem if you don't know about what exists already.
+[00:59:13 | 9:47:05 AM] And then the firm can't also govern those in any kind of legible way.
+[00:59:18 | 9:47:09 AM] So one thing that firms sometimes do here is add some kind of gate, like don't let anything run until everything is registered and approved and has gone through this very onerous process.
+[00:59:27 | 9:47:19 AM] And that sounds safe, but if you look at what it does to the work, every idea, even some simple notebook experiment, is going to wait in line behind something that's really risky.
+[00:59:37 | 9:47:28 AM] And we don't want to subject everybody who's given the diversity of agents to exactly the same process.
+[00:59:44 | 9:47:36 AM] So most people are going to give up, or they'll just get pushed to some shadow IT, less governed path that is less visible, and then we don't get to see anything at all.
+[00:59:53 | 9:47:45 AM] So that's what motivated the first control, is an agent registry.
+[00:59:56 | 9:47:48 AM] You can't govern it.
+[00:59:57 | 9:47:48 AM] You can't see.
+[00:59:57 | 9:47:49 AM] Can't see.
+[00:59:57 | 9:47:49 AM] So the agent registry makes agents legible, and it registers, retrieves, and discovers the key facts about agents that we want to know for any agent.
+[01:00:08 | 9:47:59 AM] So those are things like which tools it declares, what endpoints it's going to talk to, which product does it belong to, who owns it.
+[01:00:14 | 9:48:06 AM] And humans, other programs, other agents can then use the agent registry to decide what's available at the firm, whether that's useful for them, and to go use that as a source of truth for other questions.
+[01:00:27 | 9:48:18 AM] So this doesn't require extra effort on your part.
+[01:00:29 | 9:48:20 AM] It just happens when you use one of the firm's approved agent building frameworks, is automatically registered all that information is recorded there for you.
+[01:00:36 | 9:48:28 AM] And if you want to do a manual registration, you can certainly do that.
+[01:00:40 | 9:48:32 AM] So the second problem we have is that now that we've got all these agents doing all these things, we quickly notice that what they're doing is really different.
+[01:00:49 | 9:48:41 AM] And that means our agents carry really different risks, right?
+[01:00:53 | 9:48:44 AM] So a thing that summarizes Jira or linear tickets is really different than a production deployment agent that can touch a running system.
+[01:01:01 | 9:48:53 AM] And if we can use the same, if we try to use the same review process to cover all of these agents, then every agent is waiting in the same queue for weeks for human review.
+[01:01:10 | 9:49:01 AM] And if people are going to route around slow processes, then we wind up in the same situation that we had before.
+[01:01:16 | 9:49:07 AM] So again, you might be tempted to say the answer is something like really detailed heavy manual review by all of these different constituencies.
+[01:01:23 | 9:49:14 AM] Again, that feels safe, but now we've got a trivial summarizer waiting two months for the same sign-offs as an agent that is touching production systems.
+[01:01:33 | 9:49:24 AM] And most of a good agent ideas, most of the ones that have value right away, start out as small experiments, and you don't want those people to wait in the same line as the stuff that's touching production right away.
+[01:01:44 | 9:49:36 AM] So the reviewers are drowning in these like low-risk requests, and the high-risk ones have to share that attention pool.
+[01:01:50 | 9:49:42 AM] So we don't want to trade away that speed if we can help it.
+[01:01:53 | 9:49:45 AM] So again, because not every agent needs the same review, and because most agents are purpose-built rather than open-ended.
+[01:01:59 | 9:49:51 AM] And when I say open-ended here, you can imagine coding agents like Pi or Claude Code.
+[01:02:04 | 9:49:56 AM] When you open them and you start typing, Claude Code or Pi doesn't know what you're about to ask.
+[01:02:10 | 9:50:02 AM] It doesn't circumscribe its purpose in any particular way.
+[01:02:14 | 9:50:05 AM] But most of the agents that are deployed in enterprises do have very specific purposes.
+[01:02:18 | 9:50:09 AM] When you're engaging with that agent, it's to do something specific that's well known and well understood.
+[01:02:23 | 9:50:15 AM] So they have a very specific reason for existing and a very circumscribed purpose.
+[01:02:27 | 9:50:18 AM] And you can tell these agents apart from each other by looking at what they declare upfront, their tools, the endpoints they access, the controls that are applied to them, etc.
+[01:02:39 | 9:50:30 AM] So the third problem is that if you know about your agents and what they're doing, you'll quickly notice that many agents don't talk to each other, or sorry, they don't talk to just one thing or in just one capacity.
+[01:02:50 | 9:50:41 AM] The more open-ended the agent is, the more it looks like a Claude Code or Pi, the more it can do a variety and a diversity of different things.
+[01:02:58 | 9:50:50 AM] Call an internal API, run a tool like a web search, that sort of thing.
+[01:03:03 | 9:50:54 AM] And each one of those is opening a different door to a different kind of risk.
+[01:03:07 | 9:50:59 AM] And if you give an agent an entitlement for a role account, then it can do a lot more damage than something that's just going to read a public web page, for example.
+[01:03:16 | 9:51:08 AM] So the question is not, can this agent do X, but what's the granularity that we need to solve for for the agent to act successfully?
+[01:03:25 | 9:51:17 AM] And again, one tempting answer is to kind of be heavy-handed here or to give every agent the same short allow list of stuff that's safe to do and then block everything else.
+[01:03:35 | 9:51:27 AM] That's safe, but it's also useless.
+[01:03:37 | 9:51:28 AM] An agent that can't search or can't call an API or can't do any of those things without asking somebody first can't really do the work that it was intended for.
+[01:03:46 | 9:51:38 AM] And then teams either give up on those agents or they find a way around the wall, and both outcomes are costly.
+[01:03:52 | 9:51:43 AM] So a wide kind of blanket block on everything trades away the innovation that we want to preserve and avoids making a real decision about risk.
+[01:04:01 | 9:51:52 AM] And as author John Shed wrote, a ship in harbor is safe, but that is not what ships are for.
+[01:04:07 | 9:51:59 AM] So the fix here is to let agents declare their purpose upfront and say what tools they're going to use or what tools they need access to.
+[01:04:17 | 9:52:09 AM] So in the second column here, we might say that a research summarizer is going to be allowed to use a web tool to access research, but for a release deployer agent, we're not going to allow them to do that because they have no reason to use that tool.
+[01:04:33 | 9:52:25 AM] And so if they try to ask for it, they won't get it by default.
+[01:04:37 | 9:52:29 AM] So we don't need to make this kind of decision for every tool.
+[01:04:40 | 9:52:31 AM] The agents just have to say which tools they want, right?
+[01:04:42 | 9:52:34 AM] And you're, as the agent author, you're in the best position to say, I need these four things out of the 500 that are available.
+[01:04:51 | 9:52:42 AM] So the way we need to enforce that is that when agents run in our managed environments, they look at the registry that we talked about before to look up what policies apply to it at initialization time.
+[01:05:03 | 9:52:54 AM] And that policy gets translated into enforceable statements like which endpoints are you allowed to access, which hosts are you allowed to access, what other types of resources are available or not available to you.
+[01:05:15 | 9:53:06 AM] And in this way, nobody's writing a ticket every time they need to change the access.
+[01:05:19 | 9:53:11 AM] Nobody's going to talk to IT or some other group outside of your team.
+[01:05:24 | 9:53:16 AM] As long as you conform to the risk score that we talked about before and you're in the agent registry, you're governed, you're approved.
+[01:05:32 | 9:53:23 AM] So this is how we keep the cost to teams really low for deploying, building, running agents.
+[01:05:38 | 9:53:29 AM] And the same control architecture works in a variety of settings.
+[01:05:41 | 9:53:33 AM] The next thing we noticed was that teams were building a ton of different ways to evaluate agents, and every stack looks different, and some teams don't build anything at all.
+[01:05:50 | 9:53:41 AM] Sometimes you build, like, this really detailed stack for how your models work.
+[01:05:54 | 9:53:45 AM] Sometimes there's nothing.
+[01:05:56 | 9:53:48 AM] And I think in general we'd be upset if teams were not writing unit tests, right?
+[01:06:01 | 9:53:53 AM] And we consider evals to be kind of the same thing.
+[01:06:04 | 9:53:55 AM] If models are changing, that's like a runtime dependency that your application has.
+[01:06:08 | 9:54:00 AM] And if your agent is going to change models, it doesn't know without the evals what's going to happen to its outputs and to the quality of those outputs.
+[01:06:18 | 9:54:10 AM] So again, one tempting answer here is let's have some kind of central evaluation methodology that waits for a full eval suite and a committee sign-off.
+[01:06:28 | 9:54:19 AM] But now every, like, prompt tweak, every one-line change is going to sit in that same queue.
+[01:06:33 | 9:54:25 AM] So we don't want to put more decisions on more reviewers for things like that.
+[01:06:38 | 9:54:29 AM] We don't want to trade away that iteration.
+[01:06:40 | 9:54:31 AM] So again, you wouldn't ship software without unit tests, so agents need evaluations for the same reason.
+[01:06:45 | 9:54:37 AM] And we want to provide this stuff at the level of the firm that's going to be the same for everybody.
+[01:06:51 | 9:54:43 AM] So team A writing evals, team B writing evals, they're both going to have many of the same features.
+[01:06:57 | 9:54:48 AM] So we want to have one shared approach to how we do evals, and have the shared approach be something that's run by the firm and available to everybody for doing their evals.
+[01:07:05 | 9:54:57 AM] So that covers all the common parts of evals, and all you've got to do is just write what's true about your agent.
+[01:07:13 | 9:55:05 AM] And finally, maybe you've had the experience of being asked to approve lots and lots of individual agent actions when there's a human in the loop.
+[01:07:20 | 9:55:12 AM] So that's fine at a small scale, but once you're operating agents in parallel or in production, this becomes completely onerous, and review requests come in faster than anybody can be expected to approve them.
+[01:07:32 | 9:55:24 AM] And after the first few times of this happening, you succumb to review fatigue where you just see yes, yes, yes, yes, yes, and eventually you click yes on something that's, you know, activating the nuclear bomb, right?
+[01:07:42 | 9:55:33 AM] So you don't want to click yes by reflex, but that's going to happen inevitably.
+[01:07:47 | 9:55:39 AM] And one recent example of this is earlier this year, a director at an AI research lab told her OpenAI agent to suggest emails to delete from her inbox and then wait for her approval.
+[01:07:57 | 9:55:48 AM] But her inbox was so large that eventually the agent compacted its context and lost the part that said, wait for my approval, and then it deleted hundreds of emails and didn't stop when she told it to stop from her phone.
+[01:08:08 | 9:55:59 AM] So again, you might be tempted here to make a human approve every action, but that's not the right way to do it.
+[01:08:13 | 9:56:04 AM] A better approach is to let these independent, conservative classifiers make decisions about routine calls and then send the person only the requests that are most important, the ones that are most likely to make a difference.
+[01:08:26 | 9:56:18 AM] If you're saying yes 99.
+[01:08:28 | 9:56:19 AM] 9999999% of the time, then that's probably just a rule that the agent should follow, not a request you need to ask the human for permission for.
+[01:08:36 | 9:56:27 AM] And the stuff that's unclear or ambiguous or potentially dangerous, yes, surface that to a human, or if it's definitely just dangerous, deny it outright.
+[01:08:43 | 9:56:35 AM] So this is a way to not have to do all the review work all the time.
+[01:08:48 | 9:56:40 AM] So we don't want to take the same approach for both explicit—when explicit rules apply, we want deterministic fast paths.
+[01:08:56 | 9:56:48 AM] When explicit rules don't apply and there's some ambiguity, we want a classifier to do that work instead.
+[01:09:02 | 9:56:53 AM] So putting those five pieces back together, you create a registry so every agent is visible from the day it's created.
+[01:09:08 | 9:56:59 AM] You score each agent so human review goes in the right spot.
+[01:09:11 | 9:57:03 AM] You run agents on guardrails so that they only touch what they need.
+[01:09:15 | 9:57:06 AM] You share evals and metrics so everybody is reaching the same bar without having to reinvent the wheel.
+[01:09:20 | 9:57:11 AM] And then finally, you govern your runtime to make sure that classification happens there and not somewhere else.
+[01:09:26 | 9:57:17 AM] So each of these controls works together.
+[01:09:28 | 9:57:20 AM] So I'll leave you with one question: Why do cars have brakes?
+[01:09:32 | 9:57:24 AM] It's not just so that you can stop.
+[01:09:34 | 9:57:26 AM] It's so that you can go fast and stop safely.
+[01:09:37 | 9:57:28 AM] So controls for our agents work the same way.
+[01:09:39 | 9:57:31 AM] Thank you very much.
+[01:09:41 | 9:57:32 AM] I'm John Femenella, and I hope you had a good time.
+```

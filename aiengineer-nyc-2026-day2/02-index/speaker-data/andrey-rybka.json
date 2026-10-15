@@ -1,0 +1,18 @@
+{
+ "slug": "andrey-rybka",
+ "name": "Andrey Rybka",
+ "role": "Head of Architecture & Emerging Technologies in the Office of the CTO",
+ "company": "Bloomberg",
+ "bio": "Andrey Rybka is the Head of Architecture & Emerging Technologies in the Office of the CTO at Bloomberg.\n\n \n\nAt Bloomberg, he sets the technical direction for how the firm adopts emerging technology and open source at scale. This entails leading the design of cross-functional architecture for the company’s new strategic products and initiatives, such as the company’s Open Source-first strategy, its AI Cloud-first strategy, its adoption of Model Context Protocol (MCP) and Agentic AI, and its approach to AI Security.\n\n \n\nHe previously worked on guiding and delivering corporate strategy around Compute Fabric and Cloud, Storage, IaaS, PaaS, Middleware, Frameworks and Applications. Before joining Bloomberg in 2014, he worked at a number of financial technology organizations and various startups.\n\n \n\nHe holds a master’s degree in software engineering from Rensselaer Polytechnic Institute, a doctorate degree in applied computing from Pace University, and a bachelor’s degree in computer information systems from Post University.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F6h6nv5feSfmuPP7h4M0x_headshot-1789485847925.jpg",
+ "sessions": [
+  {
+   "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+   "time": "10:12am - 10:30am",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ]
+}

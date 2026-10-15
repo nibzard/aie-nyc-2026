@@ -1,0 +1,4 @@
+[01:09:42 | 9:57:34 AM] Here to help us understand the missing principles around code quality.
+[01:10:01 | 9:57:52 AM] Quality and finding a path through competing viewpoints.
+[01:10:04 | 9:57:56 AM] Please welcome Max Kanat-Alexander, principal software engineer at Capital One and author of Code Simplicity.
+[01:10:15 | 9:58:07 AM] All right.

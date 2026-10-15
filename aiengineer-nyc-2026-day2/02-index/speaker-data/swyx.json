@@ -1,0 +1,22 @@
+{
+ "slug": "swyx",
+ "name": "Swyx",
+ "role": "",
+ "company": "AI Engineer (Software 3.0 Inc.)",
+ "bio": "Shawn 'swyx' Wang is the cofounder and CEO of AI Engineer, the conference company behind the AI Engineer Summit and the AI Engineer World's Fair, and the writer and podcast host of Latent Space. His 2023 essay 'The Rise of the AI Engineer' named the new engineering role and led to the first AI Engineer Summit in October 2023. A developer, writer, and community builder based in San Francisco, he previously worked in developer experience at Netlify, AWS, Temporal, and Airbyte after starting his career in finance, wrote The Coding Career Handbook, and is known for 'Learn in Public'. He also works on Cognition and invests in AI and developer-tool startups.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "",
+ "identified_from_session": true,
+ "enriched": true,
+ "sources": [
+  "https://swyx.io/about",
+  "https://ai.engineer/about"
+ ],
+ "sessions": [
+  {
+   "order": 52
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "slug": "ryan-stevens",
+ "name": "Ryan Stevens",
+ "role": "Director of Applied Science",
+ "company": "Ramp",
+ "bio": "I am currently Director of Applied Sciences at Ramp, leading a team of Applied Scientists and Analytics Engineers. Our teams build the core ML models and data products powering Risk Management and Growth at Ramp. Prior to joining Ramp, I worked as a Data Scientist at Meta on their Ads Core ML team. Before that, I completed my Economics PhD at New York University. My academic research interests were primarily focused on industrial organization, applied econometrics and behavioral economics. Outside of work, I like to code, play around with interesting datasets, bike around, and spend time with my wife and our pup, Archie.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/3F2bkw3SVGovo5okGiEY_headshot-1789391590689.jpg",
+ "sessions": [
+  {
+   "title": "Building Better Agents Through End-to-End Evals",
+   "time": "11:05am - 11:23am",
+   "room": "Shannon Room (NY Ballroom E)"
+  }
+ ]
+}

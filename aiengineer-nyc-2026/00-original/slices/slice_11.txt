@@ -1,0 +1,195 @@
+# transcript slice 11
+window: t=20020..21840 (05:33:40..06:04:00 video time; 2:21:32 PM..2:51:52 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[05:33:58] I'm going to talk a little bit about going from beyond the model card, how evaluations can be used to measure this jagged frontier, with a special focus on finance for this audience as well.
+[05:34:07] Yeah, so first off, talking about model cards themselves, we've built some of the most important benchmarks over the last couple of years that the major foundation model labs have included in their model releases.
+[05:34:18] So people, I think, are familiar with artifacts like this.
+[05:34:21] Last week we have Sundar talking about our Vals index on stage, and then even just yesterday, Muse Models citing our finance agent benchmark.
+[05:34:29] It keeps our lives interesting to have to keep re-updating these slides as new models come out.
+[05:34:34] I had to double-check level numbers.
+[05:34:35] You can get a sense of how capable a model is for valuable work, but that is actually driving value for a lot of companies.
+[05:34:43] And I think two interesting stats that jump out at me: the groups that are able to actually track AI cost and spend are much, much more likely to have inferior performance.
+[05:34:50] But we also have, from the X-axis marks again, it's not immediately obvious which is number one or what will be consistently two or three.
+[05:34:57] On the X-axis, you've got cost, in particular it's cost per task, not just token in Excel models.
+[05:35:01] You've got cost, in particular it's cost per task, not just token in Excel models, that are core to the results may be intuitive, unintuitive.
+[05:35:08] When we actually build benchmarks, one of the most important things that we need to look at is the metric we use to report accuracy.
+[05:35:14] And so you have a different takeaway if you pick a different metric.
+[05:35:17] A lot of benchmarks deal with partial credit, and so what this is answering is, in expectation, if I were to give a question or task to a model, what percentage of the points would I expect to see satisfied by the work output of that model, especially compared to humans?
+[05:35:32] And then the fully correct answers metric is more looking at, of the percentage of questions that I give to models, what percentage of them will come back perfect?
+[05:35:41] And that's a very different metric.
+[05:35:43] It may mean that a model is very good at producing an incremental response that you can work with to build a better response.
+[05:35:49] But if you were to pass this directly to a client, it would be a coin toss of whether it was meeting all the criteria that you have.
+[05:35:57] And so picking the right metric is very important to accurately representing the performance of a model and actually forming good intuition of what it can do.
+[05:36:05] There's another three components that we think a lot about.
+[05:36:07] So validity: are you actually evaluating what's going on in the real world?
+[05:36:11] That means, are the questions or tasks reflective of actual work going on, or are they contrived?
+[05:36:15] And then are the rubrics actually describing what we're looking for, or the standard of excellence we want to see?
+[05:36:20] Reliability: this is usually a function of the number of tasks or the sample count.
+[05:36:24] A lot of companies, they have maybe five or six samples, and they're kind of vibe-checking new models or products as they get access.
+[05:36:31] But it's actually really important to have a rigorous approach and have enough tasks and samples to make sure your repeated runs actually show consistent results.
+[05:36:39] And then last is discriminability.
+[05:36:40] So we don't think it's that valuable to have benchmarks where all models score 100% or all models score 0%.
+[05:36:46] Ideally, we can actually discriminate between models and see what the frontier looks like.
+[05:36:50] In particular, we also want to make sure we're building benchmarks forward-looking.
+[05:36:54] So what are the new set of tasks that are even more ambitious than what models can do today to make sure that there's room at the frontier for us to continue to see model progress as they get better?
+[05:37:04] Okay, so, and then some of the high-level problems that we've seen, and I think others can and do run into.
+[05:37:12] The first is that agents solve the test, not the problem.
+[05:37:14] So this is talked a lot about as reward hacking, and we've seen a lot of instances where we'll have a sandbox and models will be run with our model proxy, and sometimes they may try and actually call other models within that proxy to escape the sandbox or make use of the internet.
+[05:37:30] So it's really important to build the containers in a way that you're actually testing for what matters.
+[05:37:36] Can they do the task at hand, or are they actually leveraging other tools or maybe even other models to get there?
+[05:37:41] We've also seen this issue in finance in particular, where a lot of the times evals are looking at a set of rubrics or items that we want to see included in the response.
+[05:37:50] And so models can hedge and give three possible answers, which has a higher chance of satisfying all the criteria.
+[05:37:56] But in practice, that's way too much.
+[05:37:59] A person does not want to consider three different answers.
+[05:38:01] They just want to get the first answer and have it be right.
+[05:38:05] And so.
+[05:38:05] The goal here is to try and build evals that are reflective of the actual work people are doing and the work output they want to see, not to build these contrived evals that the models can actually game.
+[05:38:16] The second is, I think a lot of people are starting to see that the cost of software is coming down and it's actually very, very easy to produce code.
+[05:38:24] But unfortunately, we still see in practice that running evals is incredibly challenging, especially from an infrastructure side of things.
+[05:38:31] And in particular, as we get to longer-running agents, it means that it's really important to have infrastructure that can stay consistent over a long period of time and then, if interrupted, can be resumed and respun back up.
+[05:38:42] We have, I think, just recently crossed six trillion tokens just in evaluation.
+[05:38:47] So we run a considerable set of evals, and we run everything in as high a degree of parallel as possible.
+[05:38:53] So I think this has really been load tested, but I think other people are going to run into this even on a much smaller scale.
+[05:39:00] And the last is that I think a lot of the existing benchmarks, they deal with a single prompt, single response, but in practice, everything is multi-turn.
+[05:39:08] You have an initial spec which you think covers everything, but then you get questions back or you have additional feedback once something's built, and then it takes more of this iteration to actually drive to the end output.
+[05:39:18] And so I think benchmarks and evals need to actually cover this multi-turn component.
+[05:39:21] That's not going to go away.
+[05:39:23] So to look at a case study in particular, when we looked at our team, we did a little token maxing experiment where we got free access to some tools and just gave it to all the engineers, and they really made use of these unlimited tokens.
+[05:39:36] And if we actually look back for that month, we spent $1.
+[05:39:40] 5 million worth of tokens.
+[05:39:41] This is like a team of, I think, 10 or 12.
+[05:39:43] So it's roughly 10 times the amount we were spending on salary for tokens in that month.
+[05:39:47] And so that was pretty insane, but we saw great output.
+[05:39:50] And so our goal was to try and maintain the same level of output across all these engineers, but massively cut down on cost.
+[05:39:57] And really our solution to do that was, of course, to build an eval.
+[05:40:01] We built a bunch of tools.
+[05:40:02] of tools internally and then have now exposed this as a product called Val Smith.
+[05:40:06] And so this is what we're doing in coding, and I think it's, again, a sign of what's going to come in other parts of knowledge work.
+[05:40:12] So what we were able to do is look at the GitHub repo as a centralized way of seeing what work has already been done and what work is continuing to happen.
+[05:40:21] And in particular, GitHub repos are comprised of PRs, or pull requests, which have a GitHub issue and a resolution.
+[05:40:26] And so what we can do is unwind the clock and give those same tasks to agents to see if they could have equivalently done the work of humans.
+[05:40:34] And in doing that, we found a much clearer understanding of which models were overkill, were way too expensive and did not need to be used, and then which ones were actually capable of getting the task done.
+[05:40:43] And I think, again, this is another place where the intuitions that a lot of people have may not be what's actually borne out in practice.
+[05:40:49] So I think you may see, oh, we're using a lot of closed-source models.
+[05:40:52] We should try and cut costs and use our own self-hosted open-source model.
+[05:40:55] You can see the comparison here.
+[05:40:57] We have between GPT-5.
+[05:40:58] 6-Sol and Kimi K3, and we see that 5.
+[05:41:01] 6-Sol is better.
+[05:41:03] It's going 2% better on this internal eval.
+[05:41:04] It's also considerably cheaper than hosting it through a very inference-optimized stack.
+[05:41:10] So it's $2.
+[05:41:11] 50 instead of $11, and it's faster half the time.
+[05:41:14] And so there's no real reason why this kind of intuitive sense of using open source would be a legitimate way to drive down costs.
+[05:41:21] And so this has resulted in two main differences.
+[05:41:23] One, we can actually figure out which tools we're going to procure, what the usage limits of those things should be across the organization.
+[05:41:30] But then also, we can give recommendations for engineers and say, we think that for this GitHub issue, you should actually use this particular coding tool with this model.
+[05:41:40] And this is able to drive the cost down considerably.
+[05:41:42] I think we're spending 90% less, but still able to get the same output.
+[05:41:48] I think the question I would have for you all, we're continuing to expand this approach and take this model of coding to other domains, knowledge work, legal, finance, things like that.
+[05:41:57] But the key question is— Where are you tracking the history of work that has already been done by that firm?
+[05:42:02] Some of these law firms have been around for like a hundred years.
+[05:42:05] And so where is that, I think, quality of the organization stored?
+[05:42:08] Where are you tracking the standard of excellence?
+[05:42:11] And so that today may exist in places like email from the history of responses that people have had with their clients.
+[05:42:17] It may exist in SharePoints, it may exist in Databricks dumps.
+[05:42:20] But I think this is the key treasure trove that a lot of companies have and don't realize will be the major unlock for evals and then the unlock for AI adoption more systematically.
+[05:42:36] Once these evals are constructed, they can enable adoption to happen.
+[05:42:40] But we've also seen that there's more advantageous ways that they can be used.
+[05:42:43] So first is right-sizing.
+[05:42:45] So rather than just token maximizing, how do you figure out what the right usage limit should be across the organization?
+[05:42:52] Negotiation.
+[05:42:53] Once you realize you have actual leverage, you can take that to the conversation you have in bulk pricing.
+[05:42:59] Then routing.
+[05:42:59] This is becoming a core primitive in a lot of AI products, but can also be done by users directly.
+[05:43:06] And so they can build intelligent routers that actually figure out the right model to use.
+[05:43:11] And then fine-tuning or post-training.
+[05:43:13] This can be the most reliable way for you to actually mint the tasks and then have an external eval set to make sure that this approach is working.
+[05:43:22] The last thought I'd leave you with is I think for a lot of companies, they have a competitive advantage that has existed in the heads of employees through things like institutional knowledge.
+[05:43:32] And what evals allow you to do is actually codify the competitive advantage and put that down in words or in scripts, in language.
+[05:43:38] And that will actually be the biggest unlock for making sure that a company succeeds in the agentic era.
+[05:43:44] Okay, that's all.
+[05:43:46] Thanks, everyone.
+[05:55:58] Kepler, excited to have Jack Woodruff with me.
+[05:56:00] Quickly introduce yourself.
+[05:56:01] Yeah, hi, I'm Jack Woodruff.
+[05:56:03] I am the founder and former CIO of Candlestick Capital Management, a long-short equity hedge fund based in Greenwich, Connecticut.
+[05:56:11] Before founding Candlestick, I was a partner and portfolio manager at Surveyor Capital, which is a division of Citadel.
+[05:56:22] Very cool.
+[05:56:23] Thanks, Jack.
+[05:56:24] So the reason we did this this way is we've had this conversation before, and I think this is one of the most enlightening folks to chat with, given that Jack has spent his career picking stocks in an environment that's changing more than it ever was before.
+[05:56:38] So we'll treat this really as a fireside chat.
+[05:56:41] So, Jack, paint the picture for us.
+[05:56:44] What does fundamental investing look like in the age of AI, say five years from now?
+[05:56:49] Well, it's hard to say.
+[05:56:50] Like, long-term stock picking, I don't believe is really going to change much at all.
+[05:56:57] There's always been a mosaic, and there's always been alpha creation by finding a divergent view.
+[05:57:04] So that isn't going to change at all.
+[05:57:07] I think that that still will stay the same.
+[05:57:09] Now, how people synthesize all of the information and where table stakes go to in terms of, like, what everybody has, and then how you synthesize that data is going to change completely.
+[05:57:23] The roles, the traditional roles of, say, a portfolio manager or an analyst are going to be completely thrown upon their heads.
+[05:57:31] And I still think it's, like, too early to say what that's all going to look like, as these tools are just so new, especially to the users.
+[05:57:42] You've got a lot of people doing a few things, but it's just not clear to me.
+[05:57:46] That it's like we're there and, oh my gosh, it's going to be these new things.
+[05:57:51] Like, we have a bunch of other things to kind of talk about, but I think it's going to be super fascinating to watch how it all plays out.
+[05:58:01] Very cool.
+[05:58:02] So at Citadel, you had 18 people covering 400 stocks, and at Candlestick, you had 30 stock pickers.
+[05:58:08] Could one great analyst cover all 400 by 2030?
+[05:58:12] So the biggest issue is humans are still the bottleneck.
+[05:58:16] I mean, like, at the end of the day, you have to get the information into your head.
+[05:58:24] So it's really all about sort of how man and machine can work together.
+[05:58:32] Investment management is a time management exercise.
+[05:58:36] What I mean by that, if I spent all of my time working on one stock, that'd be great.
+[05:58:42] I'd probably know it better than anyone else in the world.
+[05:58:45] But, like, if there wasn't anything to do in that stock, I'd be kind of—there isn't much to do.
+[05:58:50] Well, if I do two, well, then I have half as much time and so forth until I go.
+[05:58:55] So you start getting diminishing returns on how much time you could spend on any particular stock.
+[05:59:03] So, you know, what can AI do?
+[05:59:06] Can AI help me cover more names?
+[05:59:09] Perhaps.
+[05:59:11] Maybe it allows me to raise the table stakes on what I just kind of, like, have as a general knowledge, because that work used to take me hours to prepare to get me ready for what it was, and now maybe, you know, an AI program can, you know, help me prepare a lot of that work in five minutes, which used to take me six to eight hours.
+[05:59:33] So that allows me to do other things.
+[05:59:36] Again, like it's a very competitive industry, so it's not like if I get rid of all these people or if I have like five analysts, whereas before I had 30, yeah, maybe those people can do more.
+[05:59:47] But now all of a sudden this opens up other time.
+[05:59:51] This opens up time that I could spend doing either more proprietary research, channel checks, more sort of like...
+[05:59:59] Like industry backdrop work, because again, like you're going to need to find these divergent views.
+[06:00:04] So it's like, if I do the exact same thing I was doing before and it's like, hey, wow, I can get my work done in two hours, well, someone else is going to be still working 16 hours a day trying to find, like, that extra thing that's going to make you money.
+[06:00:21] Because, you know, just doing this stuff is obviously, like, what we used to pay an analyst to do, you know, a year or two ago is not what we're going to be paying an analyst to be doing, you know, in a year.
+[06:00:36] Very cool.
+[06:00:37] And on that, what is something today that a junior analyst does that you think will be absurd if they're still doing in five years?
+[06:00:44] Well, it's funny.
+[06:00:45] Like, it's like, oh, you're not going to be reading 10-Ks, you're not going to be reading, you know, transcripts.
+[06:00:51] I actually don't believe that to be true.
+[06:00:53] Like, if you're truly close to a name, you're going to still need to, like, process a lot of that information.
+[06:01:01] Now, you might be able to get, like, summarized versions that can cut down the time it takes you to do those things, but you still need to get that information sort of into your head.
+[06:01:11] Like, we used to have a lot of analysts that would be going through a lot of, like, sort of like big data and things like that.
+[06:01:17] I definitely think that that can sort of be outsourced, and that'll be super easy to, you know, I would be surprised if a lot of these guys aren't necessarily doing that stuff.
+[06:01:27] But what I believe the AI is going to do, or the agent or whoever it is, is going to be pushing you in the right direction to work on the right names.
+[06:01:41] Like I said, this is time management.
+[06:01:43] It's all about how do I know to work on the right things, and that's where the winners are going to be, is the people who can figure out how to use these tools to get you to spend the right amount of time working on potentially finding, like, a divergent view.
+[06:01:59] Very cool.
+[06:02:37] And on.
+[06:03:50] All right.
+[06:03:51] Hello, everyone.
+[06:03:52] Welcome.
+[06:03:53] My name is David.
+[06:03:54] I lead AI operations at a company called Revolut.
+[06:04:02] We have 50 minutes today together.
+[06:04:05] We'll talk about high-performance engineering and self-hosting open-source model on the dedicated GPU.
+[06:04:12] How does that sound?
+[06:04:13] Cool.
+[06:04:14] So it's going to be a technical one, so bear with me.
+[06:04:19] So maybe to start off, because I know this is the US and you may not know Revolut, quick words about our company.
+[06:04:26] We're a digital bank in Europe.
+[06:04:29] We have 80 million customers.
+[06:04:31] We're live in 45 markets with the most downloaded financial app in Europe for the last year.
+[06:04:39] And as of July, we're Europe's largest private company.
+[06:04:45] So we're doing okay.
+[06:04:48] The emphasis of Revolut is, you know, shipping a lot of product, and so there's a high focus on engineering culture and excellence on that domain.
+[06:04:59] And so we'll talk about that.

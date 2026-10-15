@@ -1,0 +1,330 @@
+# transcript slice 16
+window: t=29120..30940 (08:05:20..08:35:40 video time; 4:45:56 PM..5:16:16 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[08:04:27] I think if it's— Adapted and utilized properly, it will make you more competitive.
+[08:04:33] I think at its core, and especially around asset management and investing-type companies that are in the actively traded markets, like, it comes down to your process and the information at your fingertips.
+[08:04:44] So knowing that you have a strong process in place to go out and execute, and knowing your available liquidity or, you know, where things are pricing and what the value is at any given point is crucial.
+[08:04:55] So that just gives you, you know, more competitive edge.
+[08:04:57] And I think, like, that exists today in the, you know, actively traded markets, but in the private markets, it's evolving, which we've kind of been at the forefront of trying to move on the broader Apollo machine.
+[08:05:10] And I think having that will just turn into a competitive advantage over time, where firms will be able to get further ahead as they're, you know, having access to better information.
+[08:05:23] They know, their teams know that it's accurate and, like, stuff is not misaligned, because the last thing we want to do is, you know, do something or make a decision that was misinformed or had misinformation, and then that streamlines down the chain to both the enterprise and to the, you know, our investor base at the end of the day.
+[08:05:41] Yeah, that makes sense.
+[08:05:43] So I wanted to ask you what your prediction was for what Apollo would be like when we're talking five years, observing all the change.
+[08:05:50] I think that's unfair.
+[08:05:51] I can't even predict if my team's going to use Codex or Claude Code next week, so I won't ask you about five years in the future.
+[08:05:58] But I'm curious for you personally, what are you hoping to see in terms of your job, team, how AI use at Apollo evolves?
+[08:06:07] What conditions have to hold for the technology to actually be truly valuable?
+[08:06:12] How are you thinking about things over the next few months?
+[08:06:16] Yeah, I think it comes back to some of the stuff I touched on before of just, one, having just full confidence in any type of information that's flowing out at the end of the day to our investor base that's accurate, correct, and we don't have to spend hours manually checking that to make sure that that's validated, and having the confidence that we're sharing no issues or mistakes, because we do have just a wide investor base, over 400 global investors.
+[08:06:45] I would also say being much more tech-enabled in mindset.
+[08:06:50] I think our team has not lacked that to date, but it's kind of been an afterthought around the use of technology.
+[08:06:56] And I think the more that we can develop and enhance these tools that make routine tasks more efficient, it frees up capacity to add more thought or think more creatively around why does this process exist and how does it work today, and how can we actually enhance that, or should we change that, or should we bring in a new type of technology and adopt that going forward?
+[08:07:19] And our team has not lacked that to date, but it's kind of been a secondary thought where I think ideally our workforce is positioned to think about that more on a go-forward basis, and that's kind of their primary thought as they're tackling different problems, specifically at Redding Ridge day to day and kind of scaling our organization.
+[08:07:38] I think we have time for one more.
+[08:07:40] I think one of my learnings from working with you has just been how unimaginably complex and creative the work is, and how it takes a lot of effort, both human and AI, to get things to work.
+[08:07:50] A lot of people in this room who either want to work on the technology side of AI in finance, or perhaps finance side, is there anything that you would mention to them from a, here's something that you should know or keep in mind when trying to apply AI to domains like yours?
+[08:08:05] Yeah, I would say it comes down to we are extremely complex organizations, and it's not as straightforward.
+[08:08:11] And typically things might look a little bit novel or strange and out of place, but it's probably actually there for a reason or structured in a specific way.
+[08:08:21] I'm sure as you guys have come in, you appreciate that we're super nuanced and complicated.
+[08:08:26] So spending the time and really putting boots on the ground to sit with whatever team or front office professional that you're working to build a tool for or enhance is time well spent.
+[08:08:38] And I think the success and, you know, where we are today with the RoSpace product and kind of being ahead of our roadmap and expectations has been, you know, due to the fact that Michael and the team have spent ample time sitting on the ground with our team, like pretty much every single day and, you know, understanding our workflows, which I think is crucial.
+[08:08:57] Awesome.
+[08:08:59] Well, I guess last thing I'll say is that, shameless plug, both RoSpace and Apollo Technology are hiring people who want to apply AI to finance, so please reach out to either of us if you are interested.
+[08:09:11] Jack, thanks so much, and great chatting.
+[08:09:15] This is great.
+[08:09:16] Thank you, guys.
+[08:09:17] When AI agents tackle complex tasks, the final answer is only part of the story.
+[08:09:33] To explore how we can evaluate the decisions they make along the way, please welcome Mitchell Troyanovsky, co-founder of Basis.
+[08:09:44] Hello, hello.
+[08:09:47] Hello, New York.
+[08:10:02] I'm Mitch.
+[08:10:04] I'm one of the two co-founders of Basis.
+[08:10:07] We are based right here in New York City, and the thing that we focus on is how can we get agents to do production-scale work reliably enough so that we are trusted and used end-to-end by accounting firms across the country.
+[08:10:26] So a lot of our research really focuses on this.
+[08:10:29] How can you get these agents to do real work in the real economy?
+[08:10:33] So I wanted to start with a question, which is, if you're at this conference, honestly, if you're watching this talk, you probably increased your own productivity a lot.
+[08:10:46] You're using CoWork or Codex or Claude Code, whatever it is.
+[08:10:50] And yet, if you go look at the average company, the average enterprise, the average firm, their productivity hasn't gone up 10x, 100x.
+[08:11:02] I know my productivity has gone up maybe 100x, but if I were working inside of a company, it wouldn't be anywhere near that order of magnitude.
+[08:11:10] And so why is that?
+[08:11:13] At Basis, one of the things we have is that humans are already used to working with non-deterministic systems.
+[08:11:20] It's just those systems are normally their coworkers, not their computers.
+[08:11:24] And so I actually think to answer this question, it's useful to maybe look at the existing way we organize intelligent systems, which are companies.
+[08:11:33] So how do organizations scale their own productivity, right?
+[08:11:40] Organizations need to trust that the people doing the work at every level are doing it in a way that is going to produce good outputs consistently at scale, right?
+[08:11:51] If you look at this image here, here I'm showing an accounting firm, but this could honestly be any company, traditional company.
+[08:11:58] The person who is the head of the firm.
+[08:12:01] They have literally no idea about the exact day-to-day of the people at the very bottom.
+[08:12:07] And yet somehow they trust the work is going to be done.
+[08:12:10] How does that happen?
+[08:12:13] It doesn't happen through deterministic systems, right?
+[08:12:16] People are not deterministic.
+[08:12:17] They're intelligent entities.
+[08:12:19] And instead, there are processes that are put in place.
+[08:12:23] And those processes, if we believe the people who put them in place think that those processes will generalize to good outcomes, then they can be comfortable that even though the people executing the processes are not deterministic, you will generally get to good outcomes if you follow the process.
+[08:12:40] This is true, by the way, even in the smallest steps.
+[08:12:42] So in this example, earlier I was showing the process of maybe doing the monthly accounting work for a client at an accounting firm.
+[08:12:49] But even within that process, say you wanted to see, how do I reconcile the cash?
+[08:12:55] Well, I need to get the bank data.
+[08:12:58] And even that has a process.
+[08:13:00] The process could be really basic.
+[08:13:02] It could just be use the approved software to extract the data.
+[08:13:05] But there's still some process that is put in place.
+[08:13:08] You wouldn't expect the firm to just let anyone Google, extract PDF and then just use whatever they want to go extract it, because now you wouldn't have process.
+[08:13:21] Now let's talk about agents.
+[08:13:25] As I said earlier, everyone already has CoWork, ChatGPT, Codex, Claude Code, but where is that productivity?
+[08:13:33] Our opinion is there are two main problems that come with what I'll call coding-style agent products, where you're working with an agent and you just tell it to go and do something.
+[08:13:44] The first problem is that there is a competency gap.
+[08:13:48] Because agents, as you think of them as you think of them today, they outsource the complexity to the user.
+[08:13:55] Right?
+[08:13:55] If I'm the user, I now have to manage my skill and memories and think about how to, when I should use the agent.
+[08:14:06] I have to have, like, theory of mind over it.
+[08:14:08] This is really hard.
+[08:14:10] And for those who are here, maybe you guys find it easy, but I promise, for the wide majority of knowledge workers, they have no idea how to do any of this.
+[08:14:21] And there's a second problem, which is there is a process gap.
+[08:14:24] Right?
+[08:14:25] If you are saying, Hey, user, here's your agent.
+[08:14:28] Do what you want.
+[08:14:30] Well, now suddenly the way the work is being done is essentially up to whoever the user is to customize the way the agent is behaving, which goes entirely against the way that organizations scale.
+[08:14:43] The process should be coming from senior leadership down, not from any individual employee deciding how they're going to do their job.
+[08:14:51] Right?
+[08:14:52] If you, going back to my example, if every employee just made up their own way of extracting data, you know, even back in 2018, that wouldn't be a good outcome.
+[08:15:02] And so we believe strongly that the key to building production agents that actually do work end to end is solving these two problems.
+[08:15:09] You have to solve the competency gap by making it simple.
+[08:15:13] To the user, you shouldn't even have to know it's an agent, or you probably know, but you don't have to really feel it.
+[08:15:20] It should be as simple as just working with a coworker.
+[08:15:23] You just tell it what you want it to do, and all the things you expect to work should work.
+[08:15:27] And the second is the process gap.
+[08:15:28] You need agents to be reliable, not having a stroke of genius one day and forgetting something the other day.
+[08:15:35] It's not about being perfect.
+[08:15:39] Humans are not perfect, right?
+[08:15:41] Nobody is looking for perfect.
+[08:15:42] What you're looking for is reliability and consistency and trustworthiness.
+[08:15:48] So what does that actually look like?
+[08:15:52] We think that to be simple and reliable, where you know you don't have to think about what to do, the agent can just do it for you without the user knowing the internals.
+[08:16:04] To do it the same way consistently, you have to be opinionated.
+[08:16:11] Just to show you actually one slide back here, I want to point out that getting it right isn't actually the main task, because again, humans are imperfect themselves.
+[08:16:21] The point is to do it in a similar way.
+[08:16:24] It's okay if you can't do something, but you should be consistently able to not do something, and then you get better, just like a person does.
+[08:16:31] If you suddenly one day are an expert at something, and then you miss something very basic that would be expected, now you're not reliable.
+[08:16:38] So you have to be opinionated.
+[08:16:42] What's an example of an opinion?
+[08:16:46] Let's say we have an agent and we need to go and read a PDF.
+[08:16:50] So in this case, what is the best way to read a PDF?
+[08:16:53] There's many ways.
+[08:16:54] You can throw it into a VLM.
+[08:16:56] You can go write some Python code and use an open source OCR library.
+[08:17:00] You can work with one of the many OCR-specific model providers.
+[08:17:04] You could do an OCR, and then you could have the VLM check its work.
+[08:17:09] You could have five VLMs check its work.
+[08:17:10] You could do a hundred VLMs and take the best of N.
+[08:17:13] There's literally infinite possibilities here.
+[08:17:16] And so if you just said, agent extract PDF, you might get good outcomes, but they're not going to be reliable.
+[08:17:25] Right, not because the process it did was bad, but because the process it did was not opinionated.
+[08:17:31] So, the way we develop opinions is you use initial intuition, right?
+[08:17:42] Some things you know what the opinions are from expertise.
+[08:17:44] For example, if I'm trying to get an agent to do tax work well, I know that if the agent goes and reads the primary source before returning to the user, it is more likely to be accurate.
+[08:17:58] I don't need a set of evals to tell me that.
+[08:18:00] I don't need to divine that from first principles.
+[08:18:03] We know that, right?
+[08:18:05] I know that if I have an agent make a PowerPoint, if it takes a picture of the PowerPoint before it returns to the user, it is less likely to have a formatting issue.
+[08:18:13] That is obvious.
+[08:18:16] And so there are lots of different ways to develop opinions.
+[08:18:19] And one of the key points here I'll just make before I move on to talking about how to use the opinions is that opinions are not just about accuracy, right?
+[08:18:26] We just talked about the example of taking a picture of a PowerPoint.
+[08:18:28] Well, that adds latency, right?
+[08:18:31] You may not want that.
+[08:18:32] Maybe the agent only makes formatting mistakes one out of a hundred times, and you're okay with that.
+[08:18:38] And so therefore you don't have it take a picture of the PowerPoint.
+[08:18:41] The point isn't exactly what the opinion is, and this talk we're going to focus not on how to develop opinions, but why opinions matter, and then how to leverage those opinions as you scale in production.
+[08:18:53] So, say you have a bunch of outcome-based evals.
+[08:19:00] And when I say outcome-based evals, I mean what we traditionally think of as evals.
+[08:19:05] It has a right answer.
+[08:19:06] We have some rubric.
+[08:19:07] We're trying to judge what the agent did.
+[08:19:09] How do you know that the evals generalize to production?
+[08:19:13] Right, you might have a thousand cases or a hundred cases, but in production, if you're doing real work, you're going to have hundreds of thousands of situations.
+[08:19:21] And that's only going to increase as the trajectories get much longer, because the amount of decisions that are made in a trajectory just grow exponentially as the long horizon abilities of agents increase.
+[08:19:38] And so, I can't prove, if you look at all these distribution of trajectories, you can't prove every one of them is correct.
+[08:19:46] You don't have a ground truth for every trajectory.
+[08:19:49] But you can potentially look at the trajectories to decide if the behavior, the opinion that you have, is actually happening.
+[08:19:57] And you can then infer that if it's actually happening.
+[08:20:00] Actually happening, it's more likely to generalize to production.
+[08:20:00] It's not perfect.
+[08:20:05] You don't know for sure, but at least you are having an opinion.
+[08:20:10] Let's run through a real example.
+[08:20:12] So let's say that I, for a behavior, this is an accounting example where if there is a mistake in the bank reconciliation, I don't want the agent to, like, post an entry to make it tie.
+[08:20:32] I want it to sort of explain the difference instead of putting a plug.
+[08:20:36] Again, this is subjective.
+[08:20:38] You might want the other way.
+[08:20:40] But what you don't want is a customer getting one way one time and another way the other time.
+[08:20:45] And so what would you do?
+[08:20:46] Well, first, let's understand what governs the behavior, right?
+[08:20:50] The behavior is not just you write the two sentences into your system prompt and it just works.
+[08:20:55] That might work for very simple, narrow agents, but when you're building these big agent systems, the behavior is actually a combination of the system prompt, your progressive disclosures, potentially tool descriptions, obviously the training of the model.
+[08:21:08] There's a lot of things that govern the behavior.
+[08:21:11] And one tip, by the way, I have for when you think about building production agents is really think of the context the agent is going to see as it's working as runtime training data.
+[08:21:22] The word prompt, I think, trivializes it a bit, right?
+[08:21:24] At the end of the day, this is the data that the agent is being trained on at runtime, not literally trained on, but effectively trained on.
+[08:21:32] And so you want to care about every single token and understand how that data causes the agent to behave in certain ways.
+[08:21:40] So when you're putting behaviors into production, it might be very difficult for one behavior to put it in exactly one, you know, paragraph that you know exactly because, again, the behavior is all of the data at once, not just one thing.
+[08:21:55] And one of the things that we developed at Basis was this concept of a behavior spec.
+[08:22:03] And the idea of a behavior spec is essentially saying, before we update the context or write the context, what do we actually want?
+[08:22:13] What is our intent?
+[08:22:14] You can kind of think of this a little bit as like a product spec for the agent era.
+[08:22:19] And you shouldn't be writing every detail down.
+[08:22:21] You should be taking the most important opinions and putting it, because if you put everything, you'll be duplicating a lot of states.
+[08:22:26] So you define the ones that matter the most.
+[08:22:29] And then you can use them as a way to align your team from a spec perspective.
+[08:22:36] But then you can also use them as a rubric.
+[08:22:38] And you can say, in this particular trajectory, whether that is in any trajectory that doesn't have a ground truth, did the agent get into a situation in which this behavior was relevant?
+[08:22:50] And then if so, did it actually exhibit the behavior?
+[08:22:55] And this way, you can scale the amount of signal that you get on your trajectories far larger than trying to increase the amount of outcome-based evals, ground truths, and rubrics that you have.
+[08:23:05] Those are really important, but you cannot scale those anywhere near as fast as you can scale the ability to supervise what the behaviors of the agent are.
+[08:23:16] Let's just take a quick example here.
+[08:23:20] This is actually the second concept, which is called forking, which we can combine here with behavior specs to think about.
+[08:23:27] Forking, if you've ever used Cloud Code or Codex, the web apps, there's this little fork icon under each message, where you can essentially create a copy of the agent using the same thing, which works really well on your local computer.
+[08:23:40] It's hard to build a system that does this in the cloud perfectly with.
+[08:23:44] Recreating the database environment and recreating the prompts, all the different environments.
+[08:23:51] But forking is another tool that we use to check the behavior.
+[08:23:54] So a flow that you can imagine is saying, we had a trajectory, could be in an eval set, it could be in testing or in production, and it failed the behavior eval.
+[08:24:06] And now you're trying to understand why.
+[08:24:08] Why did it fail the behavior eval?
+[08:24:11] Why did it not exhibit the behavior?
+[08:24:12] And then you can go into the trajectory, go right before the point in which the agent made the decision that was in contrast to the behavior, assuming again your behavior is good and it's actually producing signal.
+[08:24:24] And then you can fork it.
+[08:24:27] And when you fork it, you can ask the agent, or you would fork it right after it made the decision, you could ask it, why'd you do that?
+[08:24:36] Or you can go and update the context of the agent and see if that improves the behavior.
+[08:24:42] And so with forking, you can start to actually take the signal and start to figure out, okay, how can we then improve the harness to now leverage the signal?
+[08:24:52] Versus if you're just looking at signal from an outcome-based eval, you can't do that anywhere near as easily because it failed the outcome.
+[08:24:59] How do you know why?
+[08:25:01] You have potentially a thousand inference calls in your five-hour-long agent trajectory run.
+[08:25:06] And then we have the last tool that I like to talk about.
+[08:25:09] This is actually my favorite, which is called simulations.
+[08:25:13] It's going to sound silly, but I promise it's very effective, which is that you can, when working with coding agents, ask the coding agent to make a sub-agent that pretends to be your production agent.
+[08:25:25] And you have to tell it to not cheat, and you give it the system prompt and the skills, and you render everything perfectly.
+[08:25:30] And what you can do is you can ask it what it would do in some scenario.
+[08:25:33] You can give it the situation and see if you can recreate the situation that you saw in your eval or in production.
+[08:25:38] And if you can recreate it, now you can tweak your context to see if the sub-agent would change its behavior based on your tweaks.
+[08:25:46] And the reason to do this, it's obviously far worse than forking, but you do this because this is much cheaper, much faster, and allows you as an agent builder to really easily iterate on ideas without needing to go through the expensive process of actually forking an entire environment.
+[08:26:04] And you can do this today without building anything.
+[08:26:06] I did this for literally a year, year and a half plus before we built forking into our internal systems.
+[08:26:15] And the main idea here is understanding that if you look at the distribution from earlier, you're trying to understand, is the agent generalizing to that distribution?
+[08:26:28] And so you don't know purely based on the outcome evals.
+[08:26:30] You can try to choose the best outcome evals that represent the curve, but you don't really know.
+[08:26:35] And so supervising the process through some of these methods gives you some additional signal in order to understand if it's generalizing properly.
+[08:26:45] And what's really cool is as you start to get more signal, you can actually start to close the loop.
+[08:26:53] And an opinion is what lets you do that, right?
+[08:26:55] If you don't have opinions about your system, you're not going to be able to develop that signal.
+[08:27:00] And now if we go back to the firm, we talked about supervision.
+[08:27:05] We talked about how the agent, if user opinionated, can be more reliable and actually can be simpler.
+[08:27:13] What that means is the agent, maybe it starts doing something narrow, but because people will work with it, they see that it's easy to use and they see that it's reliable.
+[08:27:23] As it gets better and better, they will trust it more.
+[08:27:25] It's just like a coworker.
+[08:27:26] You have a coworker day one.
+[08:27:29] Imagine someone sends you a PR.
+[08:27:32] You're not gonna, if it's, you're looking at two axes whenever someone sends you a PR, it's these two axes.
+[08:27:37] What's the blast radius of the PR?
+[08:27:38] And what is your perception of how competent that person is?
+[08:27:42] Right?
+[08:27:43] If the least competent person at your company is sending you a PR that's editing a core service, you're going to look at it.
+[08:27:50] If the most competent person is sending you a PR that's editing an internal document, you may not look at it as much.
+[08:27:56] And so this idea is true with humans working with agents, just like it is with humans working with humans.
+[08:28:02] And I think I just want to make one last point to close here, which is that one of the things that people say when they hear this is, Well, wait a second.
+[08:28:09] If you let the agents just do what they want, won't they find a better way?
+[08:28:13] Won't they move 37 your work?
+[08:28:15] And the answer is, they might.
+[08:28:18] But that's not how you scale GDP and scale output.
+[08:28:22] Nobody wants their agent to move 37 their tax return.
+[08:28:27] They want it done reliably, at scale, in a way that they can trust and in a way that their people know how to work with.
+[08:28:34] And so the thing I will leave you with is, for agents to diffuse, they need to be simple.
+[08:28:39] For teams to trust them, they need to be reliable.
+[08:28:42] The way you get to simple and reliable is you develop opinions on how the agent behaves, and then opinions allow you to build that additional signal that helps you start to close the loop so that you can achieve self-improving agents in production.
+[08:28:56] Thank you very much.
+[08:29:08] What if AI could do more than generate content and actually simulate the physical world?
+[08:29:15] To explore the next frontier of world models and what they could unlock, please welcome Cristóbal Valenzuela, co-founder and co-CEO of Runway.
+[08:29:29] Hey, guys.
+[08:29:38] Very, very excited to be here.
+[08:29:42] Thank you for staying for the last talk.
+[08:29:45] Welcome to my talk about the Matrix and how we're living through it.
+[08:29:51] So, you know, I've been working on Runway for almost a decade now.
+[08:29:54] Started here in New York, actually, maybe around 10 years ago.
+[08:29:58] And I want to walk you through some of the learnings we've seen through, you know, building the company.
+[08:30:02] You know, building the company, building this research lab here in New York, and where do we see a lot of the work that we do in video, in pixel generation, really moving forward?
+[08:30:11] And so, I don't kind of exaggerate and I joke that this might be a simulation or not.
+[08:30:17] And so, for maybe for perspective, I'll walk you through a piece of history.
+[08:30:21] This is like watching prehistoric ancient ruins.
+[08:30:26] This is our first AI film we ever made.
+[08:30:28] It was done in 2019.
+[08:30:30] It's called The Orange because, as you can tell very clearly, it's an orange that falls from the tree and walks through different parts of the world.
+[08:30:39] This is done—this is a video model, an image model that we had back then that was creating pixels in 128 pixels by 128 pixels that we then forcefully upsample to this kind of resolution.
+[08:30:52] I think of this as art now.
+[08:30:55] This is like looking at a film from the 1900s, you know?
+[08:30:57] It's beautiful.
+[08:30:58] There's a lot of history behind it.
+[08:31:00] But this is 2019.
+[08:31:02] We started the company in 2018, 2017, and so when we're trying to figure out if this had any legs, we were trying to convince ourselves that if you scale this, it will naturally improve to the point where we can get somewhere close to this.
+[08:31:16] This is state-of-the-art video today.
+[08:31:18] This is all generated.
+[08:31:20] None of these characters are real.
+[08:31:22] None of those locations are real.
+[08:31:23] I'm sure if you're probably here, you know this by now.
+[08:31:26] You probably have seen this online, on Twitter.
+[08:31:29] The models are just incredibly good.
+[08:31:31] And the most interesting thing is that when I look at stuff like this, I still believe this will look like The Orange in just a couple more years.
+[08:31:39] And so I want to walk you through, you know, how we're thinking not only through what we're doing at Runway today, but also in the next couple of years and the research that's shaping that.
+[08:31:50] We are a company that's at the intersection of both art and science.
+[08:31:54] We have deep roots in artistic and creative communities, and we have some of the best researchers in the world working on diffusion models and large video models.
+[08:32:04] And I like that combination because it allows us to, you know, bring the best of both worlds.
+[08:32:09] We're a team of scientists and artists thinking about the problem of scaling video and world models.
+[08:32:15] But in a way, the core idea of the company was already discovered by cinema and by moving pictures 120, 130 years ago, which is, if you think about video, and maybe you remember this from high school, video is an optical illusion.
+[08:32:28] Video is the illusion of movement, that if you do, if you stitch frames fast enough, you will create movement.
+[08:32:35] You will create the illusion of movement.
+[08:32:36] You create motion pictures.
+[08:32:37] And so at Runway, we're doing kind of something very similar.
+[08:32:40] We're taking that idea really to the next level.
+[08:32:43] How do we do next frame prediction fast enough, scale enough, in such a way that we can hopefully do more than just pretty and nice creative videos.
+[08:32:54] And so.
+[08:32:55] A lot is powered by, of course, scaling laws.
+[08:32:59] I think we believed in scaling laws not only apply for language models, but also for video, and this has been true.
+[08:33:06] We're now really ramping up the amount of compute that we put behind the models that you already have seen.
+[08:33:12] And I think the interesting thing about, you know, seeing the models scale over time is the emerging properties that appear, the intelligence that appears when you start taking this very simple idea that cinema found itself figuring out 120 years ago, which is next frame prediction, and taking next frame prediction really to the next level, right?
+[08:33:31] So if I take an image like this, which is not real, those two people are not real, and I just keep on predicting what the next frame will look like based on the previous frames, and if I do it fast enough, and if I do it with a network that's big enough, I'll get movement.
+[08:33:46] I'll get the illusion of movement.
+[08:33:47] I'll get something that looks so real to us that we humans can't distinguish.
+[08:33:52] I look at that video, and I've been doing this for 10 years, I can't tell you if that's real or not.
+[08:33:58] And we measure that.
+[08:33:59] We actually measure and try to quantify if people can distinguish between real and generated videos, and I think that touring test we already passed.
+[08:34:06] People are not able to distinguish.
+[08:34:08] But the most interesting thing is here, is that really what's happening as you predict next frames is you're learning a lot more than just pretty frames.
+[08:34:16] You're learning about physics.
+[08:34:18] You're learning about object permanence.
+[08:34:19] You're learning about gravity.
+[08:34:20] You're learning about occlusion.
+[08:34:22] You're learning about movements.
+[08:34:23] You're learning about how the objects work in the real world, and you're doing that all through just video, through images, through next frame prediction.
+[08:34:33] So if you look at a complex thing like this, a good video model, for it to understand how to make this a consistent video will need to naturally understand what all these objects are, how each of them relate to one another, how a camel might probably stand on a ball like that, what water in a container looks like, and if I do all of that together and I do it fast enough.
+[08:34:56] With fast enough, I'll get, hopefully, a consistent video that looks real to us.
+[08:35:00] So a lot of the benchmarks that we use to evaluate our video models are not only creative.
+[08:35:07] Creative basically means, do you like it or do you don't, are actually based on physics, on geometries, on how objects behave in the real world and how those objects behave in also simulator or digital worlds.
+[08:35:21] So you take that idea of next frame prediction and you do it fast enough, and you get, of course, now something that looks more like what we should expect from a video application or a game application.
+[08:35:30] Again, this is just video, right?
+[08:35:33] And you take that idea to the next level.
+[08:35:35] What happens if we start this idea of next frame prediction, but do it in the context of through the environment or something that looks similar to a game?
+[08:35:42] You can start actually getting closer to a physics engine, a simulation system.
+[08:35:46] But the simulation system has no physics laws.
+[08:35:49] We didn't describe what the behavior of the object should be.
+[08:35:54] The model just knows how to do that by brute force of scale.
+[08:36:00] And this kind of gets kind of interesting because you can only think about playing worlds.
+[08:36:05] This is not GTA.
+[08:36:06] This is someone playing someone else in an environment and a software that doesn't exist.
+[08:36:13] It's all simulation of a simulation, which gets really meta, right?
+[08:36:17] And so I'm not kidding when I said, welcome to my metric simulation.
+[08:36:22] But the most interesting thing for me is that everything you saw before was not real time, meaning that it took a couple minutes or seconds for those videos to be made.
+[08:36:31] A lot of what we're seeing right now, when we think about the next three, four years of video models and world models, is to deeply think about what happens when you start not only scaling the models and making them much, much, much bigger, with much more emerging properties, but also what happens when you start making them interactive, right?

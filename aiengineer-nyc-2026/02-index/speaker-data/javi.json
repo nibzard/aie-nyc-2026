@@ -1,0 +1,24 @@
+{
+ "slug": "javi",
+ "name": "Javi",
+ "full_name": "Javier Casal",
+ "role": "Senior Software Engineer, AI Platform Experience Team",
+ "company": "Flywire",
+ "bio": "Javier \"Javi\" Casal is a Senior Software Engineer at Flywire, based in Valencia, Spain. He works on Flywire's AI Platform Experience Team, which builds Orbit, the company's internal platform for structured agentic workflow automation. Orbit runs on Victoria, Flywire's internal platform as a service built on GitLab and AWS. Workflows are defined in YAML on the Claude Agents SDK, and each LLM step is isolated by network, tool, skill, and MCP access rules with strict JSON schemas. At AI Engineer NYC 2026 he co-presented the extra lunch talk on Orbit with Eduardo Simon. The same pair appeared on the AI Engineer show podcast episode \"Agents in Orbit: Workflows, Not Autopilot\". He studied at Universidad Politécnica de Valencia.",
+ "linkedin": "https://es.linkedin.com/in/jacarui",
+ "twitter": "",
+ "website": "https://github.com/jacarui",
+ "photo": "",
+ "sessions": [
+  {
+   "title": "Extra lunch talk: Flywire's internal AI platform — structured workflow automation (Orbit on the Victoria PaaS)",
+   "order": 30
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://finance.biggo.com/podcast/f724bd7100a67219",
+  "https://es.linkedin.com/in/jacarui",
+  "https://pulse.adyog.com/insights/flywire-ran-over-11-000-agent-executions-with-no-online-evaluation-yet"
+ ]
+}

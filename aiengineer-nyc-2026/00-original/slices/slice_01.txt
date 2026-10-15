@@ -1,0 +1,357 @@
+# transcript slice 01
+window: t=1820..3640 (00:30:20..01:00:40 video time; 9:18:12 AM..9:48:32 AM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[00:29:30] You can see here the card that an investor sees in order to decide whether to dig in deeper into the same AI impact on currencies question that we looked at earlier in the talk.
+[00:29:40] And the investor receives everything they need: an agentic summary if they want a quick scan across the agent's findings.
+[00:29:47] They also get the exact evidence that the agent was drawing on so that they can assess for themselves what was leading to this recommendation.
+[00:29:56] And if they choose to dig deeper, they have a direct connection to the research output from the analytical tools that Aaron was just...
+[00:30:02] Aaron was just describing.
+[00:30:02] And when they dig deeper alongside the agent to look at the dynamics driving this question, the learnings are automatically captured.
+[00:30:12] The results of their collaboration are automatically captured back in the vault.
+[00:30:19] And so this, for us, is the key lesson.
+[00:30:21] The vault enables compounding because it provides the right evidence, the right internal and external information at the fingertips of our investors and agents, and it automatically captures the synthesis that they generate and puts it back in the corpus for the next turn.
+[00:30:38] And that makes us go around the circle faster and better.
+[00:30:41] And so when we think back to the question we began with, what it takes to make an agent work is the right context and the right understanding of what's going on in your world.
+[00:30:51] And so our question for you is, does your AI know what's going on in the world, and does it remember what your firm has learned about it?
+[00:30:57] Because we are teaching ours too.
+[00:30:59] And if these sound like an exciting challenge, we'd love to talk.
+[00:31:03] Thank you.
+[00:31:21] Coming up next, we're delighted to welcome two speakers from Anthropic.
+[00:31:26] Please put your hands together for Belinda Neal, Managing Director of Financial Services, and Keon Shahab, Applied AI Architect.
+[00:31:49] Good morning.
+[00:31:50] I'm Belinda, and this is Keon, and we're from Anthropic.
+[00:31:53] We work with financial services firms.
+[00:31:57] As Keon gets set up here, we'll start with a little bit of background.
+[00:32:01] My name is Belinda Neal, and I'm the managing director of financial services at Anthropic.
+[00:32:06] Previously to joining Anthropic this year, I worked at Goldman Sachs for 19 years across engineering, global markets, and equity research.
+[00:32:12] My role at Anthropic sits at the confluence of our industry, our product, our research, and our go-to-market teams, really in accelerating the adoption of AI within financial services.
+[00:32:22] Keon.
+[00:32:23] Good morning, everyone.
+[00:32:24] Thanks for being here.
+[00:32:25] My name is Keon Shahab.
+[00:32:26] I'm an applied AI architect at Anthropic.
+[00:32:29] Prior to Anthropic, I spent five years at Databricks helping financial services companies modernize their data and AI architecture.
+[00:32:35] So we're excited to speak to you this morning, and our talk is going to cover three ideas.
+[00:32:41] Firstly, the frontier of intelligence.
+[00:32:44] How is this room taking the frontier models and applying it in ways that create alpha or edge within your firm?
+[00:32:50] The second is the frontier of adoption.
+[00:32:53] How are you scaling what you've built based on the foundation of a few to many?
+[00:32:58] And then last, how are we applying it to financial services?
+[00:33:00] We're going to bring an example in here about how we've been innovating in the wealth industry in Claude for Financial Advisors, and that paradigm compounds potentially to other areas of financial services as well.
+[00:33:11] So let's get started and talk about the frontier of intelligence.
+[00:33:15] So every so often, a model crosses a threshold, and when it does, a way of working changes.
+[00:33:21] We first saw this in coding last year with Opus 4.
+[00:33:25] 5 and Claude Code.
+[00:33:27] Many of you in the room are using these tools, and you've gone from autocomplete in coding to managing fleets of agents where you're really driving and accelerating a multiple effect of how you're doing coding.
+[00:33:37] We also saw this threshold cross this year in cyber with Claude Mithos preview, and many of you are also spending time on the cyber programs in your firms.
+[00:33:47] What's next?
+[00:33:48] Finance.
+[00:33:49] We've started now in finance with early agents and bringing Claude into the products and services that you use day to day.
+[00:33:56] One example here is Citadel told us at our briefing event in May that their investment professionals started to use Claude for Excel, and it gives them a step change function in how they can test, build, and trust their work.
+[00:34:09] We're really excited for the potential of Claude within the tools and the use cases that this room is building.
+[00:34:15] But here's the challenge.
+[00:34:18] Intelligence is ahead of adoption.
+[00:34:20] What a model can do on its own is doubling every four months.
+[00:34:24] PwC published early this year that the capabilities of AI are going to three quarters of companies—sorry, three quarters of the economic gains of AI are going to a fifth of companies.
+[00:34:36] This is what we call the diffusion gap.
+[00:34:38] If you're not building close enough to the curve, there's opportunity for you to take the frontier and be able to apply it in your workflows.
+[00:34:46] We work with firms across financial services, across our model family, most of which hopefully this room is familiar with.
+[00:34:52] We have Haiku for speed and volume, Sonnet for everyday work, Opus as the daily driver for financial services, complex tasks, and agentic coding, and Fable, our frontier model that can effectively be used for the hardest work in your firms.
+[00:35:08] One example here from Millennium on our most recent model blog was a PM used Fable to find a piece of code that had a bug, and it was unexplained in five years.
+[00:35:20] Fable was able to find it.
+[00:35:21] We're starting to see our models get used in this industry in new and creative ways, and we believe the frontier of intelligence is just getting started.
+[00:35:30] Every model release gets smarter, cheaper, and safer.
+[00:35:32] So it's really important to take a minute to call out how the model frontier is continuing to develop here.
+[00:35:37] Firstly, the intelligence is going up.
+[00:35:40] Now a model can work for 16-plus hours on its own.
+[00:35:43] This is up from just minutes in 2023.
+[00:35:47] In terms of cost per task, it's going down.
+[00:35:49] The most recent Opus 5.
+[00:35:52] 5 model was 40% more cost efficient than Opus 5.
+[00:35:56] You can also see those impact metrics for Haiku, Sonnet, and Fable.
+[00:36:00] And lastly, safety.
+[00:36:01] This is something we care a lot about at Anthropic.
+[00:36:04] In the most recent model of Fable 5.
+[00:36:07] 1, only 1% of prompt injection attacks were successful.
+[00:36:10] This is relative to other frontier models in the region of 9 to 53%.
+[00:36:13] So we're really investing in safety alongside capability at Anthropic.
+[00:36:18] And the banks know this.
+[00:36:20] The most recent Evident AI 2026 report that came out last week showed us that banks are 26% ahead of their AI maturity scores.
+[00:36:28] We're really investing in scaling, in applying this technology to our industry.
+[00:36:32] A few use cases to call out from this report, which are publicly citable use cases that have been reported, is firstly on areas like fraud.
+[00:36:40] One bank found that with auto loans, they were able to reduce $120 million of potential fraud in 12 months.
+[00:36:48] In another area, in post-earnings research, a draft of a report was able to be generated in 15 minutes relative to 45 minutes.
+[00:36:55] And you can see other use cases here and more broadly across the industry as we start to talk about the value of AI and the impact we're generating on our business.
+[00:37:04] So where are we?
+[00:37:06] In 2023, we built chatbots.
+[00:37:08] Everyone was asking a question and going backwards and forwards with the model.
+[00:37:12] In 2024, we brought pilots to firms and we started to get more knowledge bases and data into these AI systems.
+[00:37:19] From 2025 to now, we're now building agents.
+[00:37:22] And in the most case in this room, we're building them hand by hand, one by one.
+[00:37:26] And our opportunity here to scale is not the model.
+[00:37:30] Our opportunity here to scale is building the foundation for agents that can go from one to many.
+[00:37:34] So the next part of the talk, we wanted to spend time focusing on how you can build the agent foundation that will allow you to scale the frontier of adoption.
+[00:37:42] So over to you, Kion.
+[00:37:44] Amazing.
+[00:37:45] Thank you, Belinda.
+[00:37:46] So, Belinda, as you've just said, there's no better time than now to start experimenting and building with agents.
+[00:37:52] For this portion of the talk, we want to talk a little bit about how you can go from that experimentation phase towards productionizing and scaling agents.
+[00:38:01] But first, some observations that we've seen across the industry.
+[00:38:04] A year ago, we could think about this as the year of exploration, where engineers were working on a handful of use cases.
+[00:38:11] They were in POC and pilot mode, and they took their learnings and transitioned that into this year, where we've seen this be the age of production.
+[00:38:20] So we've seen these handful of agents go to production.
+[00:38:23] A lot of them have been built by hand.
+[00:38:25] What I think will happen next year is we'll go into the age of scale, where we'll have many agents built on one solidified foundation.
+[00:38:36] And as Belinda just mentioned, the models are now the easiest part of the equation here.
+[00:38:41] We know that the models can handle high-quality tasks, and we're confident about that.
+[00:38:46] But what we want to talk about here is building this five-layer framework for scaling and productionizing your agents.
+[00:38:52] Starting from the bottom, we first want to look at what the agent can do.
+[00:38:57] So we can give it context for our business use cases via connectors so that it can reach our systems and data.
+[00:39:04] Then we want to give it context for our actual business rules and processes via skills.
+[00:39:09] Once that's done, we want to think about building the trust layer for the agents.
+[00:39:13] We can think about that in three general steps: who the agent is acting as, with an identity and permissions layer; how we can sandbox and determine the approval layer of the agent so that someone is signing off before it acts; and lastly, how we know the agent will still work once we adjust any variables over time.
+[00:39:33] So let's look at each of these five.
+[00:39:36] Perfect.
+[00:39:37] So if you've started building agents already, you may think of giving those agents access to your underlying systems and data, manually wiring them by hand to a handful of different source systems.
+[00:39:49] And that could work for maybe five agents and five systems.
+[00:39:52] Then you'll have 25 systems to maintain and manage.
+[00:39:55] But as you think about scaling up your agents into new specialized
+[00:40:01] Various tasks.
+[00:40:01] You'll want to have those agents work off of one secure connectivity layer, which is MCP.
+[00:40:08] That'll make it a lot easier for you to build at scale with one repeatable framework.
+[00:40:15] Next, let's say now we have the agent have context to our underlying business data and systems.
+[00:40:25] Now we want to give it more context into our actual business rules and processes, and that's done through skills.
+[00:40:32] And this is where the SMEs that really do the work and understand the process and the work come into the picture.
+[00:40:38] And from here on, we're going to look at an agent use case for a trade break investigation agent, and we're going to follow this across for the next steps.
+[00:40:48] In this case, a trade break agent is meant to look at two records of a single trade that don't match.
+[00:40:55] And it's here you can see steps one through three, a little bit of a simplified version, but this is the business context that an SME provides.
+[00:41:02] And we think about skills as living, breathing, versioned code, essentially.
+[00:41:07] Even though they're just plain text, they're meant to be dynamic.
+[00:41:11] They're meant to be updated frequently.
+[00:41:15] All right.
+[00:41:16] So now we have our context layer for the agent.
+[00:41:19] We have the agent having access to our source systems and data.
+[00:41:24] We have the agent that understands how to go from a generalized model to a specialized agent with skills.
+[00:41:31] Now we want to talk about building the trust layer with that agent.
+[00:41:34] And first, let's start with the identity and permissions layer.
+[00:41:37] So here you can see the identity of the agent.
+[00:41:40] We're going to assign it.
+[00:41:41] It's going to be the trade break investigator.
+[00:41:43] We're going to give it a role with permissions called ops analyst.
+[00:41:46] And you can see here, once that agent needs to go and reach our source systems, like our order data and our market data, it'll have permission to read.
+[00:41:53] But if it tries to go reach for our CRM data, it'll be denied.
+[00:41:57] And we will do that on purpose so that it won't overreach for sources of data that it shouldn't have access to.
+[00:42:03] And lastly, we don't necessarily want this agent to perform on behalf of us.
+[00:42:07] We want it to just propose new amendments to our orders data, not actually make those amendments.
+[00:42:12] And that's where we'll look at, on the next slide, how we can keep the human in the loop here.
+[00:42:18] All right.
+[00:42:19] So this is kind of the layer of who signs off before the agent acts, right?
+[00:42:25] Many of you have heard the term sandbox.
+[00:42:26] We can use that terminology here as well for putting an approval layer around the agent, so that you can see here the four-step process.
+[00:42:35] The agent will actually go and propose a booking amendment.
+[00:42:39] It'll actually try to proceed through the process with the context that it has and the source systems and data that it has access to.
+[00:42:47] But then it'll look for a human, an SME, someone in the loop in the process to approve, right?
+[00:42:53] Once they approve, then that amendment will be made and the change will be applied.
+[00:42:58] This is the layer where you can also put guardrails, deterministic guardrails called hooks, around your agent so that it's never overreaching beyond what you would like it to do within its confines.
+[00:43:09] All right.
+[00:43:12] So now we have a full agent.
+[00:43:14] Let's say it's in production, it's working great.
+[00:43:17] And let's say that we want to make an adjustment to this agent.
+[00:43:20] Let's say that a new model is shipped, or we want to make an adjustment to the business context layer with the skills.
+[00:43:28] How do we actually know if these adjustments are improving the agent or if they're causing a regression?
+[00:43:35] So that's our evals layer.
+[00:43:37] This is where your SMEs, your business users who are in the loop, who understand the process, help determine a set of test cases to test the agent against with a benchmark or baseline, so that once you apply any change to any variable, you'll be able to determine whether that variable change actually improved.
+[00:43:56] The behavior of the agent, or if it caused it to regress, as you'll see here in some of the examples.
+[00:44:03] All right.
+[00:44:07] So hopefully you've seen by building once with a foundational layer that you trust, you can work at speed to deploy many agents at scale.
+[00:44:19] For us, financial services and regulated industries doesn't mean slow.
+[00:44:23] It means that we're seeing a lot of innovation from the financial sector, and we're seeing it go hand in hand with security and safety as well.
+[00:44:32] And those three layers that we just walked through, who the agent is acting as, who signs off, and how you still know that agent works, are the key components of building a safe and secure agent framework.
+[00:44:46] And once you have this framework that you've built, you can use it to apply to any new agent that you want to build for any specialty use case.
+[00:44:54] So you can see at the top, you'll have your foundation.
+[00:44:57] And then at the bottom, you'll see where you can actually bring in more specialty along the way as you continue to scale.
+[00:45:04] That specialty is worked in combination with the business and engineering to make sure that the proper business rules and context are being integrated into the agent workflow.
+[00:45:18] And you might be wondering, we haven't mentioned anything like Claude Code yet.
+[00:45:22] Well, everything that we've talked about so far has, let's say, four different doors that you can access it from.
+[00:45:29] So a business person can access it from Claude CoWork, an engineer can access it from Claude Code, or you can take this to the next step and give the agent more work to do in your own UI environment via things like Managed Agents or Agent SDK.
+[00:45:50] Now, so far we've talked about building a secure, trustable agent foundation framework.
+[00:45:57] Now let's talk a little bit about the operating model.
+[00:46:00] Some observations that we've seen, especially in financial services, is that the business is now becoming closer to engineering.
+[00:46:08] And the way that we're observing this is that the business will directly work with the agent that engineering has built.
+[00:46:14] They'll have direct capabilities to correct that agent or amend it, propose adjustments, and that's where engineering is in the loop as well.
+[00:46:23] Once you see the list of proposed adjustments, you can solidify that as a scale change after you've reviewed and tested all that within your eval framework.
+[00:46:34] And then anything new that you ship goes right back to the business, and they'll go through the same loop again to continuously improve the overall agent and the process.
+[00:46:46] All right.
+[00:46:47] So, so far we've talked about building the agent framework in a way that you can build once for scale, and we've talked about how you can turn a generalized, highly intelligent model into a specialized agent.
+[00:47:01] Now I want to hand it off to Belinda to talk a little bit more about what we're seeing in the industry by building some of the foundations ourselves for the next step here, which is Claude for financial advisors.
+[00:47:11] Thank you, Kian.
+[00:47:14] So what you've just seen is us building the foundation once in a firm.
+[00:47:18] Now I want to talk about how we could take that same approach to our industry.
+[00:47:22] This foundation we've built in Claude for financial advisors, and whilst you might not all in the room sit in the wealth or the advisor space, I want you to take this as a pattern and an opportunity to start to think about how we can actually coordinate at an industry level.
+[00:47:36] So in September, we launched Cloudera Financial Advisors, the orchestrator across the stack of an advisor.
+[00:47:41] This was built on the foundation that advisors only spend approximately 20% of their time with clients.
+[00:47:48] We wanted to find a way where advisors could spend more time with clients and more time growing their franchise.
+[00:47:53] So what did we do?
+[00:47:55] We went through the agent foundation and found ways to scale.
+[00:47:58] At layer one, we brought connectors in, the industry system, the deterministic numbers, and the scaled system that advisors trust, we brought into the ecosystem.
+[00:48:08] Layer two, we built skills.
+[00:48:10] We built a plugin that is available on GitHub that builds eight skills and workflows that an advisor can take out of the box, use today, and amend for tomorrow.
+[00:48:20] Layer four, approval.
+[00:48:22] The advisor approves everything that comes out of Claude.
+[00:48:25] Nothing is saved or sent without the advisor, and that trust principle holds here too.
+[00:48:30] And so you can see here on the diagram on the left, CRM, market data, custodians, all the tools and foundations an advisor needs brought into Claude.
+[00:48:39] So let's go through layer one, the connectors.
+[00:48:41] We brought in 25 platforms across custody, portfolio, planning, data, and CRM, names such as Schwab, Adapar, Salesforce, and more.
+[00:48:52] And there's more connectors that you can find on the Claude Marketplace.
+[00:48:55] This is where the industry builds once, the advisor can integrate once, and this is what compounding looks like.
+[00:49:02] Layer two, skills.
+[00:49:04] These are the workflows we built for the advisor that they can start with and adjust and amend to their own firm.
+[00:49:09] For example, pre-meeting prep allows an advisor to bring a full family plan into one brief across multiple systems.
+[00:49:17] The follow-up allows the advisor to bring those meeting notes into them into the CRM system and actually follow through the existing systems and tools.
+[00:49:26] Nothing goes out until the advisor approves it.
+[00:49:28] And this skill foundation is a baseline of which we imagine advisors will start to innovate and bring Claude into more and more of their workflows, allowing them to drive impact in their business.
+[00:49:39] So, in closing, with 28 seconds on the clock, three questions to take to your firm today.
+[00:49:46] The first one is the workflow.
+[00:49:48] How are you applying the frontier intelligence to your firm?
+[00:49:51] How are you gaining edge and alpha from the frontier models today?
+[00:49:55] The second is the foundation.
+[00:49:57] Do you all have a foundation that you trust for building and scaling agents for the future?
+[00:50:02] Future as things become more and more specialized.
+[00:50:06] One connector.
+[00:50:07] How are you actually building the foundations that others can use?
+[00:50:10] Are you building connectors and skills for your users, for your firm, and for the industry?
+[00:50:15] With that, thank you so much for having us.
+[00:50:17] Enjoy the rest of the conference.
+[00:50:18] Great.
+[00:50:33] And now, to explore how serious organizations can accelerate innovation without compromising trust, please welcome John Femenella, SVP of Architecture at Two Sigma.
+[00:51:02] Hey, everyone.
+[00:51:03] All right, I precariously balanced my water over there.
+[00:51:08] My name is John Femenella.
+[00:51:09] I work on AI architecture and engineering at Two Sigma, which is a hedge fund here in New York.
+[00:51:14] Before I get too far into things, I have a legal disclaimer slide that I have to show you.
+[00:51:19] It says two things.
+[00:51:21] One, I promise not to sell or market or offer you any securities at any point in this talk.
+[00:51:26] And two, everything in this is my own opinion and not the opinion of Two Sigma.
+[00:51:31] Thanks for indulging me.
+[00:51:32] If I don't say those magic words, the 5G microchips implanted in me will explode.
+[00:51:39] So that slide is a good example, actually, of how our industry is regulated.
+[00:51:43] And as a regulated company with lots of controls, I think one thing that's always interesting is to explore what happens when controls fail, because that gives you a good idea about why the controls were there in the first place.
+[00:51:54] And so I'd like to tell you a story about that by showing you another legal slide.
+[00:52:00] After August 2020, a very interesting contract clause suddenly started showing up in a bunch of commercial loan agreements.
+[00:52:07] And this clause essentially tries to prevent a certain scenario from happening.
+[00:52:11] And it's complicated, but I'll explain it like this.
+[00:52:13] Let's say that you're a lemonade stand business and you borrow money from a lender to capitalize your lemonade stand.
+[00:52:20] And the bank that's overseeing that transaction, that's in the middle between the borrower and the lender, sends the lender all of the money that you owe in a catastrophic mistake.
+[00:52:32] You'd probably be mad and want the money back, but the lender might also say, No thanks.
+[00:52:36] You paid us back and we're all good, so we'd rather keep the money.
+[00:52:40] Something like this happened in August 2020.
+[00:52:43] Revlon, the cosmetics company, had borrowed money under a big 2016 term loan.
+[00:52:49] And that loan was split up into a bunch of pieces across 300-plus lenders: hedge funds, credit funds, CLOs, other banks.
+[00:52:57] And in the middle is Citibank, the administrative agent.
+[00:53:00] Being the agent in this kind of transaction means that you're performing the plumbing that connects the borrowers with the lenders and managing the life cycle of the loan.
+[00:53:08] So in this transaction, Revlon pays Citi, and then Citi pays the lenders.
+[00:53:12] And Citi is not lending its own money; it's just in the middle moving people's money around.
+[00:53:17] So here's the plan for August 11, 2020.
+[00:53:21] Revlon would pay about eight million bucks of accrued interest to both groups, and the lender's principal would roll into this new facility.
+[00:53:28] That's an exchange of paper, not cash, so the remaining lender's principal would stay put.
+[00:53:33] And the idea here is that only interest should be going out; principal should not be moving at all.
+[00:53:39] And the bank had a piece of internal processing software called Flexcube.
+[00:53:43] Isn't that a fun enterprise software name?
+[00:53:46] So in Flexcube, the easiest way to do this kind of transaction is to pretend to record it like Revlon were paying off the entire loan.
+[00:53:55] And that triggers the correct interest payment calculations to everyone.
+[00:53:59] You can probably guess what's about to happen next.
+[00:54:01] So you're supposed to send the principal portion to an internal wash account that you own as the bank so that it's booked and recorded correctly, but it never leaves the bank's perimeter.
+[00:54:12] So keep your eye on that wash account.
+[00:54:14] What was supposed to happen is that the boxes labeled front and fund and principal should all include the wash account number and should all have a checkbox checked next to them.
+[00:54:24] So unfortunately, it turned out that was what needed to happen.
+[00:54:27] But for various arcane reasons, the boxes were not checked.
+[00:54:32] And although Flexcube pops up a warning notification that says, Uh-oh, money is about to leave the bank.
+[00:54:37] Are you sure you want to do this?
+[00:54:38] That was correct.
+[00:54:39] Money was supposed to leave the bank because they were making the interest payments.
+[00:54:43] So the three approvers who were supposed to approve that looked at it and said, Yep, that's the right thing that's supposed to happen.
+[00:54:48] And although that warning notification popped up, the human operators carrying out the transaction overrode that.
+[00:54:55] Remember, Revlon was making that interest payment.
+[00:54:57] So the principal never went to the wash account, and instead, Flexcube sent the entire outstanding principal of the loan to all of the 300 lenders, about $900 million instead of $8 million.
+[00:55:09] So every lender got the amount that they would have been owed if Revlon had paid the loan in full.
+[00:55:14] But Revlon didn't want to pay off the loan.
+[00:55:16] It wanted to hold on to its money.
+[00:55:17] That was a great deal for the lenders because remember, Revlon was in trouble at the time, so its loans weren't trading at face value.
+[00:55:23] And getting all your money back on a deal that you thought was only worth 60 cents on the dollar is a great deal for you.
+[00:55:29] So they didn't want to give the money back.
+[00:55:32] Even after Citi called them and said, Please, that was a mistake.
+[00:55:34] Give us the money back.
+[00:55:35] And their argument was, We shouldn't have to give the money back because you paid us in full, and that's how loans work.
+[00:55:40] You eventually pay them back.
+[00:55:41] And just because you paid it back at a different time than you were supposed to doesn't mean that we should have to give it back now.
+[00:55:47] And so to prevent that from happening, commercial loan agreements everywhere started including a clause like that one.
+[00:55:53] So what does a payment error at a bank have to do with AI agents?
+[00:55:56] Well, the bank had this procedure, it had these controls, and everybody did what they thought the right thing to do was.
+[00:56:02] That's the problem I want to talk about for the rest of this talk.
+[00:56:04] Every day, we're giving real agents real autonomy over systems like Flexcube.
+[00:56:10] And how do we prevent accidents like that one from either from happening without locking everything down or just hoping we'll get lucky that they won't happen?
+[00:56:18] So here's the crux of the issue.
+[00:56:19] You can't really know in advance what an agent will do, right?
+[00:56:22] They're these non-deterministic systems.
+[00:56:24] And that sounds scary until you remember that humans are also non-deterministic systems, and they're going to make mistakes too.
+[00:56:30] And so most firms don't choose to say, well, in order to reduce the risk of humans making a mistake, we're going to, like, lock them in rooms and prevent them from talking to each other, and they're all going to double-check everybody else's work, right?
+[00:56:40] We allow them a certain amount of autonomy along with a certain amount of control.
+[00:56:44] So we give them boundaries, visibility, and we equip them with systems and controls that let them do their jobs effectively.
+[00:56:51] So in this sort of model, safety and innovation are not opposite ends of a spectrum that you must trade off on.
+[00:56:57] There are things that you can have at the same time.
+[00:56:59] So I think you can have your cake and eat it too.
+[00:57:02] And when we were thinking about what controls we wanted to apply to agents, we also looked at some approaches that didn't work for us.
+[00:57:07] We don't want to sandbox or lock down everything because a sandbox with no real access to systems is safe, but it's not very interesting or useful.
+[00:57:15] If you let agents go wild and do whatever they want, that's, you know, maybe powerful and freeing from a cognitive perspective, but the isolation is very weak there, and that approach is generally not suitable for highly regulated enterprises.
+[00:57:29] And then if you just have policy documents that agents look at or that are part of your specification for the prompts, that's also not very enforceable at runtime.
+[00:57:38] You can't guarantee that that will be part of the enforcement controls.
+[00:57:42] So what did work for us was thinking about what mix of controls would get us both safety and innovation at the same time.
+[00:57:49] So how do we provide boundaries and stop problems, but don't hinder folks from operating correctly?
+[00:57:55] So we have a number of these controls, but today I'll talk about five of them.
+[00:57:58] And when I say controls here, what I mean are the guardrails and shared capabilities that let teams move in ways that don't hinder what they're trying to do.
+[00:58:08] And we don't want to reach some chasm that we need to cross to let people get their work done before, and then make everyone wait while we build a bridge to get there.
+[00:58:18] So if these controls are composable, each one does one job, and then together they let us run agents with real autonomy at an appropriate level of safety.
+[00:58:29] So the first problem is that agents were showing up everywhere.
+[00:58:32] We have big teams with lots of agents running.
+[00:58:35] We have small teams with a few.
+[00:58:36] We have individual people running stuff in an uncontrolled way.
+[00:58:40] And these come in every shape.
+[00:58:41] It could be random chatbots.
+[00:58:42] It could be MPC servers glued together in this Frankenstein hodgepodge.
+[00:58:47] It could be cool notebook experiments.
+[00:58:49] It could be really useful web tools for folks.
+[00:58:52] But it's hard to answer when you look at that a few simple questions like, who owns this?
+[00:58:57] What tools does it have access to?
+[00:58:59] What should it be doing?
+[00:59:00] What should it not be doing?
+[00:59:01] And if you can't answer those kinds of questions, if you can't govern them, then you can't really also reuse that.
+[00:59:07] So you're tempted to build multiple solutions to the same problem if you don't know about what exists already.
+[00:59:13] And then the firm can't also govern those in any kind of legible way.
+[00:59:18] So one thing that firms sometimes do here is add some kind of gate, like don't let anything run until everything is registered and approved and has gone through this very onerous process.
+[00:59:27] And that sounds safe, but if you look at what it does to the work, every idea, even some simple notebook experiment, is going to wait in line behind something that's really risky.
+[00:59:37] And we don't want to subject everybody who's given the diversity of agents to exactly the same process.
+[00:59:44] So most people are going to give up, or they'll just get pushed to some shadow IT, less governed path that is less visible, and then we don't get to see anything at all.
+[00:59:53] So that's what motivated the first control, is an agent registry.
+[00:59:56] You can't govern it.
+[00:59:57] You can't see.
+[00:59:57] Can't see.
+[00:59:57] So the agent registry makes agents legible, and it registers, retrieves, and discovers the key facts about agents that we want to know for any agent.
+[01:00:08] So those are things like which tools it declares, what endpoints it's going to talk to, which product does it belong to, who owns it.
+[01:00:14] And humans, other programs, other agents can then use the agent registry to decide what's available at the firm, whether that's useful for them, and to go use that as a source of truth for other questions.
+[01:00:27] So this doesn't require extra effort on your part.
+[01:00:29] It just happens when you use one of the firm's approved agent building frameworks, is automatically registered all that information is recorded there for you.
+[01:00:36] And if you want to do a manual registration, you can certainly do that.
+[01:00:40] So the second problem we have is that now that we've got all these agents doing all these things, we quickly notice that what they're doing is really different.
+[01:00:49] And that means our agents carry really different risks, right?
+[01:00:53] So a thing that summarizes Jira or linear tickets is really different than a production deployment agent that can touch a running system.
+[01:01:01] And if we can use the same, if we try to use the same review process to cover all of these agents, then every agent is waiting in the same queue for weeks for human review.
+[01:01:10] And if people are going to route around slow processes, then we wind up in the same situation that we had before.
+[01:01:16] So again, you might be tempted to say the answer is something like really detailed heavy manual review by all of these different constituencies.
+[01:01:23] Again, that feels safe, but now we've got a trivial summarizer waiting two months for the same sign-offs as an agent that is touching production systems.
+[01:01:33] And most of a good agent ideas, most of the ones that have value right away, start out as small experiments, and you don't want those people to wait in the same line as the stuff that's touching production right away.

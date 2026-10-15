@@ -1,0 +1,18 @@
+{
+ "slug": "brooke-hopkins",
+ "name": "Brooke Hopkins",
+ "role": "Founder & CEO",
+ "company": "Coval",
+ "bio": "Brooke Hopkins is the founder and CEO of Coval, the evaluation platform for enterprise voice AI. She started her career building voice technology at Google Assistant, before going on to lead the evaluation infrastructure team at Waymo, where she coded the first versions of the dataset storage and foundational simulation systems, and her team built the developer tools for launching and running evals at scale. It was there that she identified the parallel that became Coval: self-driving systems and conversational AI face the same challenges.\n\nWith Coval, Brooke is helping cross-functional teams replace slow, manual testing with automated simulation and observability for conversational AI agents, expanding test coverage, accelerating development, and enabling agents to be deployed with confidence in real production environments. She has collaborated with hundreds of voice systems across industries, giving the Coval team unique insight into the cutting edge of voice AI capabilities and where things go wrong.",
+ "linkedin": "https://www.linkedin.com/in/bnhop/",
+ "twitter": "",
+ "website": "https://coval.ai",
+ "photo": "https://content-cdn.sessionboard.com/event-files%2FJXbCgggUTCyGIa0KRUSS_Brooke_Hopkins_headshot.png",
+ "sessions": [
+  {
+   "title": "From Human Review to Self-Healing Agents: How Upstart Evaluates Voice AI at Regulated-Lending Scale",
+   "time": "10:40am - 10:58am",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ]
+}

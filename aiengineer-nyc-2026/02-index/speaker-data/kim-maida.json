@@ -1,0 +1,26 @@
+{
+ "slug": "kim-maida",
+ "name": "Kim Maida",
+ "role": "Founding GTM Engineer",
+ "company": "Keycard",
+ "bio": "Kim Maida is the Founding GTM Engineer and Head of Developer Relations at Keycard, where she works on nonhuman identity, delegated access, and governance for AI agents. She is a Google Developer Expert in Identity and an Agentic AI Foundation ambassador. She has led developer relations, content, and documentation strategy teams at Auth0, Okta, FusionAuth, Gatsby, Ionic, and Cloudinary. Kim began her career in animal behavior and neurobiology, taught herself to code, and moved into engineering and DevRel leadership. She created the Keystone DevRel Metrics framework and the Developer Empowerment Flywheel, and maintains open source projects such as auth-architecture and rota-slackbot.",
+ "linkedin": "https://www.linkedin.com/in/kimmaida",
+ "twitter": "https://x.com/KimMaida",
+ "website": "https://maida.kim",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2Ftn9pRl0oSESXjSxzJ7yg_headshot-1789767984473.png",
+ "sessions": [
+  {
+   "title": "Secure, durable agents with Keycard and Temporal",
+   "time": "3:30pm - 4:30pm",
+   "id": "b98dba99-c5ab-4ed2-aaf5-df02f502202f",
+   "note": "official record from another program slot"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://ai.engineer/speakers/kim-maida",
+  "https://maida.kim/bio",
+  "https://www.linkedin.com/in/kimmaida",
+  "https://auth0.com/blog/authors/kim-maida"
+ ]
+}

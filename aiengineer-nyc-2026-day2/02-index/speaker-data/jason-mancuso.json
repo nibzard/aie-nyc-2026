@@ -1,0 +1,18 @@
+{
+ "slug": "jason-mancuso",
+ "name": "Jason Mancuso",
+ "role": "Member of Technical Staff, Research",
+ "company": "Modal",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FgAuDSRDVTcWSalQqH4JQ_headshot-1791298349594.jpg",
+ "sessions": [
+  {
+   "title": "Scaling Agentic RL Across the Globe",
+   "time": "2:05pm - 2:23pm",
+   "room": "Shannon Room (NY Ballroom E)"
+  }
+ ]
+}

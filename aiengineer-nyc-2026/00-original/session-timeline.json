@@ -1,0 +1,729 @@
+{
+ "source": "workflow wf1-detect-structure (71 agents): synthesis titles + verified boundaries",
+ "stream_summary": "Day-one main-stage (Simons Room) feed of AI Engineer NYC 2026, Oct 13: all 19 scheduled sessions on the agenda appeared on this stream and were matched, but from roughly 2 pm ET onward the day ran 25-30 minutes ahead of the published agenda, so items the agenda annotated as \"after stream end\" (Hermes gives you wings, Closing Remarks) did in fact air before the cut at t=29150. The agenda's 12:15-2:05 pm \"Networking Break\" slot was not a break on this feed: it carried seven unlisted lunch talks (Range, Keycard, Celtium, Railway, Southbridge, Perplexity, Flywire) plus an early Modal start. The stream opens with an 8-minute pre-show hold, has long untranscribed changeover gaps between afternoon talks (some possibly off-mic Q&A or sponsor reels), and ends with applause after Alex Lieberman's closing remarks.",
+ "agenda_gaps": [
+  "Networking Break (t=12428-19028, 12:15pm-2:05pm ET) — the only agenda item with no matching segment: this feed carried seven unlisted lunch talks (Range, Keycard, Celtium, Railway, Southbridge, Perplexity, Flywire) plus an early Modal start instead of a quiet break. Note: 'Hermes gives you wings' and 'Closing Remarks' are annotated in the agenda as starting after stream end, but both actually aired (t=28101 and t=29018) because the day ran ~25-30 minutes ahead of the published schedule; they are not gaps."
+ ],
+ "segments": [
+  {
+   "order": 0,
+   "t_start": 0,
+   "t_end": 491,
+   "kind": "dead-air",
+   "title": "Pre-show countdown hold before show open (holding slide, pre-show music, no speech)",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "Transcript and OCR sections empty for the first 8:11 of the stream; first spoken line arrives at [00:08:11] (08:56:03 ET).",
+   "verify_notes": "Boundaries confirmed exactly (0 to 491 s). First spoken sentence in transcript-master.json has t_start=491.0 (\"Good morning, and welcome to AI Engineer New York 2026.\" — off-stage announcer VO opening the show; belongs to the next segment, not this one). Visual frames corroborate the end boundary: countdown timer reads 07:15 at t=0, 03:15 at t=240, 1:15 at t=360, 00:04 at t=480 (frames every 120 s in 00-original/frames/), so it reaches zero near t=484 with speech at 491. Title was corrected: the segment is NOT without on-screen text — frames show an \"AI Engineer NEW YORK\" holding slide with an \"Event Starts in\" countdown and footer \"View Full Schedule at ai.engineer/nyc/2026/schedule\"; audio (00-original/chunks/chunk_000.ogg) carries continuous quiet music (mean ~-33 dB, one silence gap 411-425 s), so \"dead-air\" holds only in the no-speech sense. The empty OCR section in slice_00.txt caused the original wrong claim; OCR simply missed the stylized slide text. Speakers correctly empty (no speech in range)."
+  },
+  {
+   "order": 1,
+   "t_start": 491,
+   "t_end": 629.3,
+   "kind": "announcement",
+   "title": "Show open + AIE welcome from GM Lia (Leah) McBride",
+   "agenda_match": "AIE Welcome from GM, Lia McBride",
+   "speakers": [
+    "Lia McBride (AI Engineer, General Manager)",
+    "Unseen announcer (show-open voice-over)"
+   ],
+   "confidence": "high",
+   "evidence": "\"please welcome to the stage AI Engineer's General Manager, Leah McBride\" then \"Good morning, everyone, and welcome to New York. This is our third event in New York.\"",
+   "verify_notes": "Verified against /home/agent/ainy26/aiengineer-nyc-2026/00-original/transcript-raw/transcript-master.json. t_start=491 is the first sentence of the entire transcript (show-open VO: \"Good morning, and welcome to AI Engineer New York 2026.\" + hand-off \"please welcome to the stage AI Engineer's General Manager...\"); no transcript content exists before 491. Lia McBride speaks from \"Hi. Good morning, everyone, and welcome to New York.\" [491.6] through \"Take care.\" [603.4]; the closing announcer hand-off line to MC Alex Lieberman spans 603.36-629.26, and Alex's first words start at 629.76 (\"What's up, everyone?\") in the NEXT segment, so t_end=629.3 (proposed 629 was already within tolerance). Title corrected: drop \"(Leah)\" — ASR heard \"Leah\" but the official agenda and speaker data (02-index/speaker-data/lia-mcbride.json, sessions-full.json) spell it \"Lia McBride\" (AI Engineer, General Manager); also reworded \"Show open\" to \"show-open voice-over\" since the actual show open / MC welcome is Alex Lieberman's following segment. Speakers confirmed: unseen VO announcer + Lia McBride only. Swyx is mentioned (\"a huge welcome from myself and Swyx\") but does not speak here. Note: the wall-clock agenda mapping (t=428-488) is offset ~63 s by stream delay; 491-629 is the real content. Timestamp quirk: ASR sentence timings are quantized (several zero-duration sentences at 491.0 and a cluster at 603.363), so sentence-level t_start values near the end are unreliable; use audio-end 629.26 / next-start 629.76 as the boundary."
+  },
+  {
+   "order": 2,
+   "t_start": 629,
+   "t_end": 846,
+   "kind": "announcement",
+   "title": "Welcome remarks: MC Alex Lieberman on Edge City, conference framing, sponsor thanks, first-keynote intro",
+   "agenda_match": "Welcome Remarks",
+   "speakers": [
+    "Alex Lieberman (Tenex / 10X, MC)"
+   ],
+   "confidence": "high",
+   "evidence": "\"I'm Alex Lieberman. I'm one of the co-founders and co-managing partners at 10X\" ... \"We have two amazing folks from Bridgewater who are in the weeds of production AI every single day.\"",
+   "verify_notes": "Verified against transcript-master.json. Start: previous segment ends at [603] with the handoff line \"please welcome to the stage your MC... Alex Lieberman\"; Alex's first words are [629.4] \"What's up, everyone?\" — exact t_start 629 (proposal 630, 1 s off). End: Alex's last sentence is [846.1-849.3] \"Welcome, guys.\" closing his Bridgewater keynote intro — exact t_end 846. Next segment starts at [852.5] with a different announcer voice (\"Coming up next... two speakers from Anthropic... Belinda Neal... Keon Shahab\") plus \"Just waiting for our slides\" [869], then the keynote itself opens at [886-887] with Sam Green and Aaron Linsky of Bridgewater. Caveat for the next segment's verifier: the [852] intro names Anthropic speakers (Belinda Neal, Keon Shahab) but the actual first keynote speakers are Bridgewater's Sam Green and Aaron Linsky — likely ASR garble or a pre-recorded stinger; the [852-884] transition block belongs to the next segment. Content of 629-849 matches the title exactly: self-intro (10X co-founder, Morning Brew), X/Twitter audience question, Edge City framing, \"AI Engineer New York 2026, where AI engineering meets Wall Street\", AIE team thanks, sponsor roll call (Arize presenting; Oracle/Sonar/WorkOS/Exa platinum; gold, silver, supporting), first-keynote intro. Only Alex Lieberman speaks in the window; speakers list correct."
+  },
+  {
+   "order": 3,
+   "t_start": 829,
+   "t_end": 1863,
+   "kind": "keynote",
+   "title": "Vault: Making Unstructured Data Work for Investing (Bridgewater) — data platform lessons for humans and agents",
+   "agenda_match": "Vault: Making Unstructured Data Work for Investing",
+   "speakers": [
+    "Sam Green (Bridgewater, Applied AI team lead)",
+    "Aaron Linsky (Bridgewater, product engineering)"
+   ],
+   "confidence": "high",
+   "evidence": "\"I'm Sam Green, team lead for Applied AI at Bridgewater Associates, and this is my colleague Aaron Linsky\"; closing \"The vault enables compounding because it provides the right evidence...\" [00:31:03]. Merged from slice_00 (886-1863) and slice_01 tail (1770-1863), which agree.",
+   "verify_notes": "Boundaries pinned at sentence level. t_end=1863 is exact: \"Thank you.\" [1862-1863] closes the talk, music runs to ~1880, and the MC intro for the next session (Anthropic keynote, agenda t=1808) starts at 1880. t_start moved from 886 back to 829 to include the host intro that clearly belongs to this slot: [829] \"So we are going to hop into the first keynote of the day... two amazing folks from Bridgewater... Welcome, guys.\" [829-849]; sponsor thanks before 829 stays with the previous segment. CAVEAT for the session writer: at [852-867] the MC read the NEXT session's intro card verbatim (\"Coming up next... two speakers from Anthropic... Belinda Neal... Keon Shahab\") while the speakers waited for slides (\"Just waiting for our slides.\" [869], \"There we go.\" [884]); this line is confirmed in both raw whisper and gpt chunk_001 transcripts and is duplicated verbatim by the MC at [1880-1894] where it belongs. Annotate or footnote it, do not treat it as Vault content. Title and speakers verified: agenda item \"Vault: Making Unstructured Data Work for Investing\" (Featured Keynote, agenda t=728-1808; actual talk 886-1863, started ~2.6 min late). The title gloss matches the three lessons stated in the opening minute (build separately for humans vs agents; one tool meeting both; agents as proactive participants). Exactly two speakers, no Q&A: Sam Green (Team Lead, Applied AI - AIA Labs) opens, hands to Aaron Linsky (Head of Product Engineering) mid-talk (\"Thanks, Sam... I run product engineering at Bridgewater\"), Aaron hands back at [1714] (\"Now I'll hand it to Sam\"), Sam closes. Talk also references AIA (Artificial Investment Associate), PAT analyst agents, the Researcher, the Forecaster, and the investor workbench."
+  },
+  {
+   "order": 4,
+   "t_start": 852.5,
+   "t_end": 886.1,
+   "kind": "announcement",
+   "title": "MC fill during slide delay: teaser for the upcoming Anthropic keynote",
+   "agenda_match": null,
+   "speakers": [
+    "Alex Lieberman (likely, MC)"
+   ],
+   "confidence": "high",
+   "evidence": "\"Coming up next, we're delighted to welcome two speakers from Anthropic... Belinda Neal, Managing Director of Financial Services, and Keon Shahab, Applied AI Architect\" / \"Just waiting for our slides.\"",
+   "verify_notes": "Segment confirmed with a small start correction. Announcement proper begins at 852.5 s (00:14:12) \"Coming up next, we're delighted to welcome two speakers from Anthropic\" (proposed 846 was \"Welcome, guys.\", the tail of the MC's Bridgewater handoff; recommend attaching the 829.4-846.1 host intro of Bridgewater to the Bridgewater keynote segment, not this one). Ends at 886.1 s (00:14:46) where Sam Green opens the Bridgewater keynote with \"Good morning, everyone\"; the announcement's last sentence is \"There we go.\" at 884.2, so 886 is the clean seam and no announcement content is lost. Key nuance for the summary: the teaser is mis-timed/premature, not an actual handoff — the identical two sentences repeat verbatim at 1880.9/1886.1 right before the real Anthropic session starts at 1909.6 (00:31:50), so Anthropic did NOT speak next; Bridgewater did. Speaker confirmed: Alex Lieberman self-introduces at 634 s and speaks throughout this block; the \"(likely)\" qualifier can be dropped, keeping him credited as MC (co-founder of Morning Brew, co-managing partner at 10X). agenda_match=null is appropriate since this is an interstitial announcement, not an agenda session."
+  },
+  {
+   "order": 5,
+   "t_start": 1863,
+   "t_end": 1909,
+   "kind": "announcement",
+   "title": "Applause, then host welcome introducing Anthropic speakers Belinda Neal and Keon Shahab",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "\"Please put your hands together for Belinda Neal, Managing Director of Financial Services, and Keon Shahab, Applied AI Architect.\" Includes 18 s applause lead-in (absorbed) and a 23 s walk-on gap before \"Good morning.\"",
+   "verify_notes": "Segment exists and boundaries are pinned. t_start=1863 is exact: previous talk ends with \"Thank you.\" [1862.9-1863.4], and the ~17 s applause gap (1863.4-1880.9) is correctly absorbed into this announcement. Host MC lines: \"Coming up next, we're delighted to welcome two speakers from Anthropic.\" [1880.9] and \"Please put your hands together for Belinda Neal, Managing Director of Financial Services, and Keon Shahab, Applied AI Architect.\" [1886.1-1894.1] (verbatim match with evidence). t_end: announcement speech ends 1894.1; ~14.5 s walk-on silence until Belinda's first words \"Good morning.\" [1908.6] and \"I'm Belinda, and this is Keon, and we're from Anthropic.\" [1909.6]. Proposed 1909 is within 1 s of the ideal 1908.6; the next (talk) segment should start at 1908.6-1909.6 so \"Good morning.\" opens the talk. Title accurate; both name spellings confirmed by self-introductions inside the following talk (Belinda Neal, MD Financial Services, ex-Goldman Sachs 19 yrs [1921]; Keon Shahab, Applied AI Architect, ex-Databricks [1945]). Speakers=[] stays correct: only the unnamed stage MC speaks in this segment (day's MC is Alex Lieberman per [603], probable but not verifiable in-segment). Minor evidence nit: the \"23 s walk-on gap\" is 14.5 s of actual silence (1894.1-1908.6); also, identical announcement wording appears earlier at [852], likely a rehearsal/teaser read - the [1880] occurrence is the live one. agenda_match=null is right for an announcement."
+  },
+  {
+   "order": 6,
+   "t_start": 1880,
+   "t_end": 3017,
+   "kind": "keynote",
+   "title": "Anthropic: Accelerating frontier AI in Financial Services (frontier of intelligence, five-layer agent foundation, Claude for advisors)",
+   "agenda_match": "Anthropic: Accelerating frontier AI in Financial Services.",
+   "speakers": [
+    "Belinda Neal (Anthropic, MD Financial Services)",
+    "Keon Shahab (Anthropic, Applied AI Architect)"
+   ],
+   "confidence": "high",
+   "evidence": "\"My name is Belinda Neal, and I'm the managing director of financial services at Anthropic\"; \"My name is Keon Shahab. I'm an applied AI architect at Anthropic\"; closes \"With that, thank you so much for having us.\" [00:50:18]. Belinda 1909-2262, Keon 2262-2821, Belinda 2821-3018.",
+   "verify_notes": "Boundaries pinned. t_start=1880: host intro at [1880] \"Coming up next, we're delighted to welcome two speakers from Anthropic\" and [1886] naming both speakers clearly belongs to this slot; previous segment ends with \"Thank you.\" at [1862]. Speaker words begin [1908] \"Good morning.\" / [1909] \"I'm Belinda\". t_end=3017: closing sentences [3015] \"With that, thank you so much for having us.\" and [3016.9-3017.7] \"Enjoy the rest of the conference.\"; the one-word \"Great.\" at [3017.9] is a transition artifact (excluded), next session intro (John Femenella, Two Sigma) starts [3033]. Title matches agenda and content (frontier of intelligence [1961], frontier of adoption [1970], five-layer agent foundation [2372], Claude for Financial Advisors [2842]/[2855]). Speakers confirmed by self-intros: Belinda Neal, MD financial services at Anthropic, 19 years at Goldman Sachs [1921-1931]; Keon Shahab, applied AI architect, 5 years at Databricks [1945-1948]. Handoff Belinda->Keon->Belinda is consistent with the transcript. Transcription notes for downstream summarizers: [2855] \"Cloudera Financial Advisors\" is a mis-transcription of \"Claude for Financial Advisors\"; [2921] \"Adapar\" should be \"Addepar\"; \"the vault\" segments before [1862] belong to the prior session, not this one."
+  },
+  {
+   "order": 7,
+   "t_start": 3018,
+   "t_end": 3062,
+   "kind": "announcement",
+   "title": "Applause, then host welcome introducing John Feminella, SVP of Architecture at Two Sigma",
+   "agenda_match": null,
+   "speakers": [
+    "John Feminella (Two Sigma)"
+   ],
+   "confidence": "high",
+   "evidence": "\"Please welcome John Femenella, SVP of Architecture at Two Sigma.\" 15 s applause lead-in absorbed; walk-on gap before \"Hey, everyone.\" [00:51:02].",
+   "verify_notes": "Verified against transcript-master.json and slice_01.txt. Segment 3018-3062 is the applause + host welcome transition between the Morgan Stanley agent talk and John Feminella's keynote. t_start=3018 exact: previous talk ends [3016] \"Enjoy the rest of the conference.\" + [3017] \"Great.\" (host ack left with previous segment), applause 3018-3032, host line at [3033] \"And now, to explore how serious organizations can accelerate innovation without compromising trust, please welcome John Femenella, SVP of Architecture at Two Sigma.\" t_end=3062 exact: 29 s applause/walk-on, then [3062] \"Hey, everyone.\" = first words of next segment (keynote starts there). Title correct; transcript ASR spells \"Femenella\" but agenda-reference.txt confirms \"Feminella\" (agenda slot t=2888-3968, 9:36-9:54am ET keynote \"Balancing Acceleration and Safety for AI Agents -- John Feminella (Two Sigma)\"), which the title already uses. Speakers list acceptable per convention (name heard in host intro); only the unnamed host actually speaks in this window; Feminella self-intros at [3067] in the next segment. Note the agenda slot began at t=2888 but the prior talk ran long, so the real keynote starts at 3062."
+  },
+  {
+   "order": 8,
+   "t_start": 3033,
+   "t_end": 4180,
+   "kind": "keynote",
+   "title": "Balancing Acceleration and Safety for AI Agents (Citi/Revlon $900M wire error; composable controls for agent autonomy)",
+   "agenda_match": "Balancing Acceleration and Safety for AI Agents",
+   "speakers": [
+    "John Feminella (Two Sigma)"
+   ],
+   "confidence": "high",
+   "evidence": "\"My name is John Femenella. I work on AI architecture and engineering at Two Sigma\"; five governance controls (agent registry, risk scoring, tool allow-lists, shared evals, HITL review); closes \"Thank you very much... I hope you had a good time.\" [01:09:41]. Merged slice_01 (3062-3693) + slice_02 (3640-4181).",
+   "verify_notes": "Segment confirmed; boundaries pinned within 1-2 s after one correction. t_start corrected 3062 -> 3033: host intro at [3033] (\"And now, to explore how serious organizations can accelerate innovation without compromising trust, please welcome John Femenella, SVP of Architecture at Two Sigma\") explicitly introduces this session and belongs to its slot; previous session ends at [3016-3017] (\"Enjoy the rest of the conference.\"/\"Great.\"), nothing between 3017 and 3033. t_end 4180 (proposal 4181, within 1 s): last line [4180] \"I'm John Femenella, and I hope you had a good time.\"; next session's host intro for Max Kanat-Alexander begins at [4182]. Checked merge point 3640-3720 (slice_01+slice_02 overlap): continuous single-speaker talk on agent risk scoring, merge valid. Scanned full 3033-4181 range: no other speakers, no host interruptions, no Q&A; single self-intro at [3067]. Transcript ASR spells the name \"Femenella\"; the proposal's \"John Feminella (Two Sigma)\" is the correct spelling - keep it. Title matches agenda and content: Citi/Revlon $900M wire error story opens the talk, five composable controls (agent registry, risk scoring, tool guardrails, shared evals, runtime HITL governance) are recapped at [4141-4159], and the \"Why do cars have brakes? ... so you can go fast and stop safely\" closing at [4168-4179] is the acceleration-vs-safety thesis."
+  },
+  {
+   "order": 9,
+   "t_start": 4182,
+   "t_end": 4215,
+   "kind": "announcement",
+   "title": "Host hand-off introducing Max Kanat-Alexander",
+   "agenda_match": null,
+   "speakers": [
+    "Max Kanat-Alexander (Capital One, introduced)"
+   ],
+   "confidence": "high",
+   "evidence": "\"Please welcome Max Kanat-Alexander, principal software engineer at Capital One and author of Code Simplicity.\" [01:10:04]",
+   "verify_notes": "Confirmed against transcript-master.json and slice_02.txt (lines 104-110). t_start pinned to 4182: first host sentence \"Here to help us understand the missing principles around code quality.\" [4182.36]; John Femenella's close at [4179]-[4180] belongs to the previous segment. t_end corrected 4234 -> 4215: the last host sentence is \"Please welcome Max Kanat-Alexander, principal software engineer at Capital One and author of Code Simplicity.\" [4204.2-4213.3]. The proposed 4234 pointed at Max's first talk sentence (\"So today I figured I'd just pick a nice, uncontroversial topic...\"), and [4215] \"All right.\" (spanning 4215.0-4224.6 over applause) is Max's first words on stage; both belong to the next segment, the keynote \"Does Code Quality Even Matter?\" (agenda slot t=3968-5048). Recommend the next segment set t_start=4215 so the timeline stays gapless. Title and kind are accurate; agenda_match=null is right because the hand-off is not an agenda item. Speakers: Max Kanat-Alexander is introduced only and does not speak here; the host is unnamed in the transcript (no diarization available; hand-off may be the day MC or the prior speaker staying on stage - not confirmable from text)."
+  },
+  {
+   "order": 10,
+   "t_start": 4182,
+   "t_end": 5196,
+   "kind": "keynote",
+   "title": "Does Code Quality Even Matter? (understanding + execution; durable vs disposable software)",
+   "agenda_match": "Does Code Quality Even Matter?",
+   "speakers": [
+    "Max Kanat-Alexander (Capital One)"
+   ],
+   "confidence": "high",
+   "evidence": "\"So today I figured I'd just pick a nice, uncontroversial topic that nobody has any opinions about, right?\" [01:10:34]; closes \"Thank you very much.\" [01:26:36].",
+   "verify_notes": "Segment exists. t_end=5196 exact: [5196] \"Thank you very much.\" closes the talk; next host intro (Aparna Dhinakaran, Arize AI) starts [5217]. t_start corrected 4234 -> 4182: previous talk (John Femenella) ends [4180]; host intro [4182]/[4204] explicitly names Max Kanat-Alexander (Capital One, author of Code Simplicity) and the code quality topic, so it belongs to this slot; Max's first words [4215] \"All right.\", main opener [4234]. Single speaker throughout. Title correct: talk builds an understanding+execution framework and answers \"does code quality even matter for disposable software? No. For durable software? Yes.\" [5178-5187]."
+  },
+  {
+   "order": 11,
+   "t_start": 5197,
+   "t_end": 5217,
+   "kind": "filler",
+   "title": "Applause and stage transition after Max Kanat-Alexander",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "No transcript lines between \"Thank you very much.\" [01:26:36] and next host line [01:26:57] (~21 s).",
+   "verify_notes": "Verified via transcript-master.json. Gap confirmed: \"Thank you very much.\" [5196.085-5196.835] is the last line of Max Kanat-Alexander's talk (introduced at [4204] as principal software engineer at Capital One, author of Code Simplicity); next transcript line is the host intro at [5217.085] (\"As AI takes on more of the building...\") welcoming Aparna Dhinakaran (co-founder, CPO at Arize AI). That is a 20.2 s gap with no transcript lines, matching the applause/stage-transition hypothesis. Adjusted t_start 5196 -> 5197 so the closing \"Thank you very much.\" sentence stays with Max's preceding segment (proposed 5196 pointed at that sentence's start); t_end 5217 is exact (next session's intro begins 5217.085). Title correct (speaker name verified against intro). Empty speakers list correct — no speech in the gap. Both boundaries pinned well within +/-15 s."
+  },
+  {
+   "order": 12,
+   "t_start": 5217,
+   "t_end": 5222,
+   "kind": "announcement",
+   "title": "Host hand-off introducing Aparna Dhinakaran (Arize AI)",
+   "agenda_match": null,
+   "speakers": [
+    "Host/MC (unnamed)",
+    "Aparna Dhinakaran (Arize AI) — introduced only, first speaks at 5245 in the next segment"
+   ],
+   "confidence": "high",
+   "evidence": "\"please welcome Aparna Dhinakaran, co-founder and chief product officer at Arize AI.\" [01:27:03]",
+   "verify_notes": "Segment exists as a genuine host hand-off announcement. t_start=5217 (01:26:57) is exact: previous talk ends at [5196] \"Thank you very much.\" with ~21 s applause, then the host opens with \"As AI takes on more of the building, what does it mean to be an engineer?\" The announcement is exactly two host sentences, [5217] and [5222] (01:27:03, the \"please welcome Aparna Dhinakaran\" line). t_end corrected from 5245 to 5222: sentence [5245] (01:27:25) is Aparna's first words \"Hey, New York.\" and belongs to her keynote (agenda: \"What does an AI engineer do?\", 10:12-10:30am), so the next segment must start at 5245; keeping 5245 here would leak her opening line into the announcement. Title is accurate. Speakers corrected: the only speaker within 5217-5222 is the unnamed host/MC (same voice that introduced Max Kanat-Alexander at [4204]); Aparna Dhinakaran is introduced but does not speak in this segment. Slug note: use plain \"Aparna Dhinakaran\" for the speaker-data file (02-index/speaker-data/aparna-dhinakaran.json exists)."
+  },
+  {
+   "order": 13,
+   "t_start": 5217,
+   "t_end": 6162,
+   "kind": "keynote",
+   "title": "What does an AI engineer do? (build the loop, not the feature; Arize Signal always-on observability agent)",
+   "agenda_match": "What does an AI engineer do?",
+   "speakers": [
+    "Aparna Dhinakaran (Arize AI)"
+   ],
+   "confidence": "high",
+   "evidence": "\"Thought, given we're at AI Engineer New York, we'd kind of revisit the question of what does an AI engineer do?\" [01:27:31]; closing \"But thank you so much for listening to us.\" [01:42:33]; \"we built Signal to actually run this loop for AI engineers.\" Merged slice_02 (5245-5515) + slice_03 (5460-6155).",
+   "verify_notes": "Boundaries verified against transcript-master.json. t_start moved 5245 -> 5217 to include the short host intro that explicitly names this session (\"Here to explore why defining success may become the essential skill, please welcome Aparna Dhinakaran, co-founder and chief product officer at Arize AI.\" [5217-5234]); previous talk ends \"Thank you very much.\" [5196]. t_end 6155 -> 6162 (end timestamp of the final sentence \"But thank you so much for listening to us.\" [6153.1-6161.7]); the venue PA announcement starts at 6162.7 and is excluded. Title matches content: talk opens and closes on \"what does an AI engineer do?\" ([5251], [6092]), body covers building the loop instead of the feature [5388-5434] and Arize Signal, the always-on observability agent [5445-5470]. Single speaker confirmed: continuous solo voice through the full session body (scanned 5217-6162); \"Kripati\" [5265] is a tweeted-funnel reference and \"Lance\" [5917] refers to yesterday's talk, neither is a speaker. Speaker name and affiliation confirmed by the host intro [5222]."
+  },
+  {
+   "order": 14,
+   "t_start": 6162,
+   "t_end": 6170,
+   "kind": "announcement",
+   "title": "House announcement: session over, clear the room",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "\"The current program has finished its run. Please collect your belongings and proceed through the main doors for your next scheduled task.\" [01:42:43]-[01:42:46].",
+   "verify_notes": "Verified against transcript-master.json and slice_03.txt lines 110-111. The segment is real: an automated house announcement of exactly two sentences, [6162-6165] \"The current program has finished its run.\" and [6165-6170] \"Please collect your belongings and proceed through the main doors for your next scheduled task.\" Boundary corrections: t_start 6155 -> 6162, because [6153-6161] \"But thank you so much for listening to us.\" is the closing of the previous talk (an Arize/Signal session on agents, tracing, and evals) and must stay in the prior segment; t_end 6168 -> 6170, the actual t_end of the final announcement sentence. After 6170 the transcript is empty until the next session starts at 6685 (01:51:25, Wells Fargo foundation model talk), so the announcement is cleanly isolated. Title \"House announcement: session over, clear the room\" matches the content; keep it. Empty speakers list is correct: automated venue voice, no names in the transcript. Both proposed boundaries were within 15 s of the verified values."
+  },
+  {
+   "order": 15,
+   "t_start": 6163,
+   "t_end": 6685,
+   "kind": "break",
+   "title": "Session break / room transition (PA room-clearing announcements at 102:42-102:50, then no transcribed audio; agenda 10:30-10:40am gap between Arize AI keynote and Wells Fargo talk)",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "Zero transcript lines between [01:42:46] and [01:51:25] (~8.6 min), matching the unlisted agenda gap t=6128-6728.",
+   "verify_notes": "Break verified. Master transcript has 0 sentences strictly between t=6166 and t=6685. Last speech before gap: PA announcements at 6162.7 (\"The current program has finished its run.\") and 6165.6-6170.5 (\"Please collect your belongings...\", ends 6170.5); the Arize keynote itself ends at 6162.7 (\"But thank you so much for listening to us.\"). First speech after gap: t=6685.1, already mid-flow Wells Fargo foundation-model talk (Freddy Lecue, agenda 10:40-10:58am t=6728-7808) - the stream joined it ~43s before its agenda slot, so the talk's opening intro is not on the stream. Wall clock: gap = 10:30:42-10:39:17 ET, inside the unlisted agenda gap t=6128-6728. t_start corrected 6168->6163: 6168 fell mid-announcement; starting at 6163 puts both PA lines in the break and keeps them out of the keynote segment (5s shift, within tolerance). t_end=6685 exact. Title corrected because \"no transcribed audio\" is inaccurate once the PA announcements are inside the break. Speakers [] correct (unnamed PA voice). Timing caveat: chunk_011 whisper-1 output is 100% looping hallucination (\"This is a recording of a live AI engineering conference...\", no_speech_prob 0.40-0.98, filtered from master), so the 24 sentences sharing t=6685.1 rest on gpt-transcribe chunk onset; the following chunk_011 timestamps (6693.7-7199) are weakly anchored. Audio loudness stays flat ~-28dB through the gap (continuous break music/room tone, never digital silence). Next segment should start at 6685."
+  },
+  {
+   "order": 16,
+   "t_start": 6685,
+   "t_end": 7971,
+   "kind": "talk",
+   "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale (pre-training, tokenization, results vs XGBoost)",
+   "agenda_match": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+   "speakers": [
+    "Freddy Lecue (Wells Fargo)"
+   ],
+   "confidence": "high",
+   "evidence": "\"...building our first foundation model, a Wells Fargo foundation model\" [01:51:25]; \"that foundation model has been built on billions of transactions from Wells Fargo customers\" [02:12:02]; closes \"thank you for having me, and thank you.\" [02:12:51]. Merged slice_03 (6685-7331) + slice_04 (7280-7971).",
+   "verify_notes": "Boundaries pinned exactly at transcript evidence. Start: first session sentence at 6685.09 (\"And I'm going to show you the work we've been doing lastly on building our first foundation model, a Wells Fargo foundation model.\"); previous segment ends 6170.18 with the venue interstitial, and 6170-6685 is break/hold audio with no speech, so no host intro belongs to this segment. End: closing sentence 7971.095-7974.479 (\"And yeah, thank you for having me, and thank you.\"); next session (Arca, Aman Singh) starts 8394.11. Caveats: (1) the speaker's greeting/self-intro fell inside the 6170-6685 stream gap — the stream resumed mid-talk, so 6685 is the earliest available audio; (2) intermediate sentence timestamps inside 6685-7199 are unreliable because whisper hallucinated a hold-music loop over that chunk and the master interpolated timings (several sentences share the un-timed 6685.09 stamp); the 7199+ timings (chunk_012/013) are real. (3) The agenda gloss appended to the title (pre-training, tokenization, results vs XGBoost) is accurate to the content: pre-trained from scratch on billions of transactions, tabular tokenization with a unique financial vocabulary, and fraud results beating the production XGBoost on detection rate, false positives, and latency (under the 250 ms decline budget). Single speaker throughout, no Q&A; agenda speaker Freddy Lecue (Wells Fargo) is consistent with the content."
+  },
+  {
+   "order": 17,
+   "t_start": 7974.5,
+   "t_end": 8394.1,
+   "kind": "break",
+   "title": "Break / stage changeover between Wells Fargo and Arca talks",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "No transcript or OCR lines at all between [02:12:51] 'thank you' and [02:19:54] 'All right. Good morning, everybody.' (~7 min).",
+   "verify_notes": "Confirmed break segment. Last speech before gap: \"And yeah, thank you for having me, and thank you.\" at t=7971.1-7974.5, the closing line of the Wells Fargo talk (transaction foundation model for fraud detection). Next speech: \"All right.\" at t=8394.1 followed by \"Good morning, everybody... My name is Aman. I lead AI at Arca\" — this is the Arca speaker's own opening, not a host intro, so it belongs to the next segment. Zero transcript sentences between 7974.5 and 8394.1 (~6 min 40 s of silence), consistent with a stage changeover. Tightened t_start from 7971 to 7974.5 (actual end of the final Wells Fargo sentence) and t_end from 8394 to 8394.1; both within ±15 s of the proposal. Title and empty speakers list are correct for a break."
+  },
+  {
+   "order": 18,
+   "t_start": 8394,
+   "t_end": 9201,
+   "kind": "talk",
+   "title": "Inside Arca's long-horizon agents that run the business",
+   "agenda_match": "Inside Arca’s long-horizon agents that run the business",
+   "speakers": [
+    "Aman Singh (Arca, Head of AI)"
+   ],
+   "confidence": "high",
+   "evidence": "\"My name is Aman. I lead AI at Arca, and today I'm going to talk to you about Arca's long horizon agents that run our business.\" [02:20:26]; closes \"we're hiring... And thank you for listening.\" [02:33:04]-[02:33:20]. Merged slice_04 (8394-9100) + slice_05 (9100-9210).",
+   "verify_notes": "Verified against transcript-master.json. Start: previous session (Wells Fargo foundation-model talk) ends at t=7974 followed by a silent gap; Aman's opening \"All right. / Good morning, everybody. / ... My name is Aman. I lead AI at Arca\" begins at t=8394, so t_start=8394 is exact (no host intro in gap). End: final sentence \"And thank you for listening.\" spans 9199-9201; proposed t_end 9210 was 9 s late, pinned to 9201 (within +/-15 s tolerance). Next session (Allie Howe, Keycard) does not start until t=9793, so no Q&A or outro belongs here. Title matches speaker's own words: \"Arca's long horizon agents that run our business\" [8426]. Single speaker confirmed: \"My name is Aman. I lead AI at Arca\" — all 142 sentences in range are one first-person voice. Segment exists; boundaries pinned."
+  },
+  {
+   "order": 19,
+   "t_start": 9202,
+   "t_end": 9793,
+   "kind": "break",
+   "title": "Transition between Arca talk and Intent Based Auth panel (~9.7 min, applause/room changeover/dead air)",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "No transcript or OCR lines between [02:33:20] 'thank you for listening' and [02:43:13] 'Hey, Dick.'",
+   "verify_notes": "Confirmed. Zero transcript sentences between t=9202 and t=9793 (checked all 3990 sentences in transcript-master.json). Break begins after the Arca talk's closing line \"And thank you for listening.\" (t_start 9199.91, t_end 9201.894); pinned t_start=9202, 8 s before the proposed 9210, within tolerance. Break ends at the panel's first words \"Hey, Dick.\" (t_start 9793.125); proposed t_end=9793 is exact. Title is correct: previous session is the Arca talk (\"that is our ambition at Arca, and we're hiring\") and the next session is the intent-based authorization panel (\"super excited to talk to all of them about intent-based authorization\"). Minor refinement only: true duration is 591 s (~9.9 min), not ~9.7 min. Speakers empty is correct for a break. Context for the adjacent panel segment: moderator Allie Howe (Member of Technical Staff, Keycard); panelists Ian (CEO of Keycard), Michael Davis (Global Chief Security Architect, J.P. Morgan Chase), and Dick Hart (transcription garble; almost certainly Dick Hardt, described as \"founder of Aoth and co-creator of Oath\", likely OAuth)."
+  },
+  {
+   "order": 20,
+   "t_start": 9793,
+   "t_end": 12382,
+   "kind": "panel",
+   "title": "Intent Based Auth (panel): runtime authorization for agents using intent, AOF budgets, sandboxing, audit logs",
+   "agenda_match": "Intent Based Auth",
+   "speakers": [
+    "Allie Howe (Keycard, moderator)",
+    "Ian Livingstone (Keycard CEO)",
+    "Michael Davis (JPMC, Global Chief Security Architect)",
+    "Dick Hardt (AAuth, founder)"
+   ],
+   "confidence": "high",
+   "evidence": "[02:43:22] \"My name is Allie Howe... We have Ian, CEO of Keycard... Michael Davis... Dick Hart, the founder of Aoth and co-creator of Oath\" (ASR garble of Hardt/AAuth/OAuth); closes \"Thank you each for your expertise and your time here on this panel today\" [03:26:14]; \"Dick, how is AI helping unlock the future of agentic commerce?\" Merged slice_05 (9793-10920) + slice_06 (10920-12383).",
+   "verify_notes": "Boundaries pinned exactly. t_start=9793: master transcript has no sentences from 9400 to 9793 (break gap); panel opens at [9793] with panelist greetings (\"Hey, Dick. Hey, Davis. Hey, Ian.\") then moderator Allie Howe's intro [9802]. t_end=12382: moderator closes [12374] \"Thank you each for your expertise and your time here on this panel today\", final words [12382] \"Thanks so much.\"; next talk (Matt Ragone, Range) begins [12420]. Proposed t_end 12383 is 1 s late; corrected to 12382. Speakers: all four confirmed by intro [9802]-[9817] and agenda JSON (Allie Howe- Keycard moderator; Ian Livingstone- Keycard CEO; Michael Davis- JPMC Global Chief Security Architect; Dick Hardt- AAuth founder). \"Dick Hart/Aoth/Oath\" at [9817] are ASR garbles. Two \"Dave\" mentions ([10522],[12162],[12338]) are ASR garbles of \"Davis\" (moderator addresses him as Davis at [10047],[10809],[11671],[11891]); agenda lists no Dave, so no fifth panelist. Title corrected only for \"AOF budgets\" -> \"AAuth budgets\" (garble; AAuth appears correctly at [10522] and in agenda); all other subtitle topics verified in transcript: runtime auth [9830]-[9841], intent [9867], budgets [11305], sandboxing [10086],[11493]-[11502], audit logs [12035]-[12121], agentic commerce [10809],[10980]."
+  },
+  {
+   "order": 21,
+   "t_start": 12383,
+   "t_end": 12419,
+   "kind": "filler",
+   "title": "Panel close / stage transition (applause before lunch-talk block)",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "Transcript gap between \"[03:26:23] Thanks so much.\" and \"[03:27:01] Hi, everyone.\"",
+   "verify_notes": "Filler segment exists and is now pinned. t_start=12383 is correct: the previous panel (the 11:30 AM slot, \"Intent Based Auth\" panel) ends with the moderator close at [12374] \"Thank you each for your expertise and your time here on this panel today... we'll catch you next time.\" plus [12381] \"Thank you.\" and [12382] \"Thanks so much.\" — those closing words belong to the previous panel segment, so the filler starts right after at 12383. Raw Whisper (chunk_020.whisper.json, abs 12382.5-12419.4) shows the gap holds only applause and two faint off-mic \"Thank you.\" utterances at ~12388-12390; no nameable speakers, so speakers=[] stays. t_end corrected 12421 -> 12419: the next session starts at [12420] \"Hi, everyone.\" followed by [12421] \"I'm Matt Ragone, and I'm a financial planner at Range\" (agenda: \"We Let Our Financial Planners Write the Agents\" — Matt Ragone, carried on the stream during the 12:15-2:05 PM Networking Break, i.e. the lunch-talk block). The proposed t_end=12421 would have absorbed the first sentences of the Ragone talk into this filler; ending at 12419 keeps the boundary contiguous with no overlap. Title and empty speaker list are accurate for a pure transition/applause segment. Boundaries within ±2 s of proposal (well inside ±15 s)."
+  },
+  {
+   "order": 22,
+   "t_start": 12420,
+   "t_end": 12949,
+   "kind": "talk",
+   "title": "Extra lunch talk: financial planners building their own agents — a five-step method for expert-written Claude skills (Range)",
+   "agenda_match": null,
+   "speakers": [
+    "Matt Ragone (Range, certified financial planner)"
+   ],
+   "confidence": "high",
+   "evidence": "\"I'm Matt Ragone, and I'm a financial planner at Range. I want to show you how our financial planners ended up writing the agents that we use every day.\" [03:27:01]; \"Six months in, we have 24 skills across the company, and 17 of them are in planning.\"; closes \"reach me at matt@range.com\" [03:35:45]. Merged slice_06 (12421-12796) + slice_07 (12740-12955). Not in the published agenda.",
+   "verify_notes": "Segment exists and boundaries pinned within +/-15 s. t_start: talk opens directly with the speaker (no host intro) at [12420] \"Hi, everyone.\" followed by [12421] \"I'm Matt Ragone, and I'm a financial planner at Range.\"; previous panel ended at [12382]. t_end: sign-off ends with [12949] \"Have a great day.\"; next talk starts at [12957] (\"lethal trifecta\"), so 12949 is the last sentence start (proposed 12955 fell in the 8 s gap and was also acceptable). Title verified against content: non-coder financial planners at Range building their own agents via skills; five steps named at [12620] \"pick, teach, pack, test, and then ship\"; Claude skills explicit at [12622] and [12664]; stats at [12844] (24 skills company-wide, 17 in planning). Single speaker throughout; name spelled \"Ragone\" in the self-intro [12421] vs \"Ragon\" in the sign-off [12944] — kept the intro spelling. \"Extra lunch talk\" label and agenda absence cannot be confirmed from audio but are consistent with the slot's position between the panel and the afternoon talks."
+  },
+  {
+   "order": 23,
+   "t_start": 12957,
+   "t_end": 14484,
+   "kind": "talk",
+   "title": "Extra lunch talk: Your Agent Is a Lethal Trifecta — task-scoped access with token exchange and intent-based authorization (Keycard)",
+   "agenda_match": null,
+   "speakers": [
+    "Kim Maida (Keycard, founding GTM engineer / head of DevRel)"
+   ],
+   "confidence": "high",
+   "evidence": "Opens \"Today I'm going to talk to you about how your agent is a lethal trifecta and what to do about it.\" [03:35:57]; \"this is Keycard's approach to implementing intent-based authorization\" [03:50:39]; self-intro close [04:01:14]. Not in the published agenda.",
+   "verify_notes": "Boundaries verified in transcript-master.json. No host intro: previous talk (Matt Ragon, Range, skills for planners) ends at 12950.0; this talk starts at 12957.4 with \"Today I'm going to talk to you about how your agent is a lethal trifecta and what to do about it.\" then jumps into an on-call triage agent demo. Last sentence spans 14474.9-14483.6: \"I'm the founding GTM engineer and head of DevRel at Keycard, and I really appreciate your time today, so thank you very much.\" Next session (Branislav Brzak, Celtium, GPU timing side-channel on shared-GPU LLM inference) starts at 14504, so t_end=14484 leaves a clean gap. Content confirms the title: lethal-trifecta framing, then fix via OAuth 2.0 token exchange (open standard, STS-issued task-scoped ephemeral access), policy/intent-based authorization, human-in-the-loop approval backed by policy, MCP servers. Single speaker, self-identified close as Kim Maida (Keycard, founding GTM engineer / head of DevRel). Original proposal (12955/14480) was within tolerance; adjusted to exact sentence timestamps 12957/14484."
+  },
+  {
+   "order": 24,
+   "t_start": 14484,
+   "t_end": 14505,
+   "kind": "filler",
+   "title": "Transition/applause between lunch talks",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "No transcript lines between Kim Maida's thanks at [04:01:15] and \"Hello everyone.\" at [04:01:45] (~25 s).",
+   "verify_notes": "Confirmed filler segment. Transcript shows a clean 30.0 s gap: Kim Maida's closing sentence (\"...founding GTM engineer and head of DevRel at Keycard... thank you very much\") runs t=14474.89-14483.60, then no lines until \"Hello everyone.\" at t=14504.89, which opens Branislav Brzak's talk (AI security researcher at Celtium) on LLM information leaks via shared GPU hardware (MIG side-channel timing). Adjusted t_start from 14480 to 14484 so it starts when Maida's speech actually ends (applause begins) instead of overlapping her last sentence by ~4 s; t_end=14505 matches the next talk's first words at 14504.89. Title is accurate: wall clock is ~12:49 PM ET and the official agenda lists a Networking Break (lunch) 12:15pm-2:05pm (t=12428-19028) with no scheduled items, so both neighbors are off-agenda lunch talks and agenda_match=null is correct. Empty speakers list is correct (no speech in the gap). The following segment should start at t=14504/14505 with speaker Branislav Brzak. Evidence file: /home/agent/ainy26/aiengineer-nyc-2026/00-original/slices/slice_07.txt lines 283-284 ([04:01:15] -> [04:01:45])."
+  },
+  {
+   "order": 25,
+   "t_start": 14504,
+   "t_end": 15305,
+   "kind": "talk",
+   "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+   "agenda_match": null,
+   "speakers": [
+    "Branislav Brzak (Celtium, AI security researcher)"
+   ],
+   "confidence": "high",
+   "evidence": "Opens \"This talk is about the danger of your LLMs information leak in through shared GPU hardware.\" [04:01:45]; \"I'm Branislav Brzak, AI security researcher employed at Celtium.\" [04:02:17]; ends \"Thank you all for watching.\" [04:15:05]. Merged slice_07 (14505-14560) + slice_08 (14505-15305). Not in the published agenda.",
+   "verify_notes": "Boundaries verified in transcript-master.json. t_start pinned to 14504 (\"Hello everyone.\") — first words of the talk; previous segment (Kim Maida / Keycard token-exchange talk) ends at 14474 (\"...thank you very much.\") with no host intro in between, so 14505 was off by 1 s. t_end exactly 15305 (\"Thank you all for watching.\"); next segment (Railway internal-tools talk, recorded in Edinburgh) begins at 15330. Title accurate: content covers MIG memory-barrier timing leaks, NVLink side channels, model fingerprinting (97%), decode speed (99.3%), workload classification, and Celtium detection; not in published agenda, so \"Extra lunch talk\" prefix is plausible. Single speaker confirmed at [14536]: \"I'm Branislav Brzak, AI security researcher employed at Celtium.\" (transcript renders the company as \"Celtium\"/\"Celty\"; \"Behind Bars at USENIX Security\" credit at 15299 is to prior researchers, not a speaker)."
+  },
+  {
+   "order": 26,
+   "t_start": 15305,
+   "t_end": 15331,
+   "kind": "filler",
+   "title": "Transition between pre-recorded lunch talks (applause / stream filler)",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "~26 s with no transcript between [04:15:05] \"Thank you all for watching.\" and [04:15:31] \"People have been saying that SaaS is dead for a while now.\"",
+   "verify_notes": "Segment exists and boundaries are exact as proposed. Previous talk (GPU timing side-channel / NVLink fingerprinting talk, closes by crediting \"Behind Bars\" researchers) ends with sentence 2271 \"Thank you all for watching.\" at t_start=15305.409 (t_end 15306.938); next sentence is 15330.68 \"People have been saying that SaaS is dead for a while now.\" — a 23.7 s transcript-free gap with zero sentences strictly inside (verified in transcript-master.json, 3990 sentences). t_start=15305 matches the rounded anchor (15305.409); t_end=15331 matches the rounded anchor of the next talk's first sentence (15330.68 -> [04:15:31] in slice_08.txt). Title verified: wall-clock time of the gap is 2026-10-13 13:02:57-13:03:23 ET (stream epoch 1791895672 = 08:47:52 ET start), inside the day-1 Walkaway Lunch break (12:05-1:15 PM). Both neighbors are pre-recorded video talks: the earlier one signs off to camera, and the following talk (Railway employee replacing SaaS with agent-built internal tools, mentions GPT-6) is recorded outdoors in Edinburgh, Scotland — not on the NYC stage — and cold-opens with no host intro. Empty speakers list is correct for a filler gap. Optional enrichment for the downstream summary: the next segment is the Railway \"SaaS is dead / build your own tools with agents\" talk."
+  },
+  {
+   "order": 27,
+   "t_start": 15330,
+   "t_end": 16128,
+   "kind": "talk",
+   "title": "Extra lunch talk: become your company's SaaS layer — principles for building polished internal tools with agents (Railway)",
+   "agenda_match": null,
+   "speakers": [
+    "Name not heard (Railway engineer, internal marketing tooling, recording from Edinburgh)"
+   ],
+   "confidence": "high",
+   "evidence": "[04:15:57] \"I actually went on a journey to replace a bunch of SaaS providers we were using internally at Railway\"; closes [04:28:45] \"I hope that you too can become your company's SaaS layer.\" Not in the published agenda.",
+   "verify_notes": "Segment confirmed. Start: previous talk (GPU side-channel attack / Celtium) ends at [15305] \"Thank you all for watching.\"; the Railway talk opens directly at [15330] \"People have been saying that SaaS is dead for a while now.\" with no host intro in between (pre-recorded talk, no live host handoff), so exact t_start=15330 (1 s from proposed). End: talk closes at [16128] \"And with that, thank you so much for watching, and I'll see you in the next one.\" — exact t_end=16128 (1 s from proposed). Next segment (DuckDB / Pareto surfing talk, Southbridge) begins at [16137]. Title matches content: replacing internal SaaS providers at Railway with a polished all-in-one tool built with agents; closing line [16124] \"I hope that you too can become your company's SaaS layer\" matches verbatim. Speaker never states a name anywhere in the session (searched 15330-16128); descriptive placeholder confirmed — Railway engineer, internal marketing tooling, recorded outdoors in Edinburgh [15429]. Boundaries pinned within ±1 s, well inside the ±15 s tolerance."
+  },
+  {
+   "order": 28,
+   "t_start": 16137,
+   "t_end": 17412,
+   "kind": "talk",
+   "title": "Extra lunch talk: no universal schema — just-in-time ontologies, model priors, and Pareto surfing (Southbridge)",
+   "agenda_match": null,
+   "speakers": [
+    "Hrishi Olickel (co-founder, Southbridge AI)"
+   ],
+   "confidence": "high",
+   "evidence": "Opens [04:28:57] \"I really love this article from Hannes at DuckDB\"; \"Doing that merge when the decision space is known instead of ahead of time is what I mean by a just-in-time ontology.\" [04:34:16]; closes \"...at Perplexity, we're working as hard as we can to make that future a reality. Thank you.\" [04:50:12]. Merged slice_08 (16137-16437) + slice_09 (16380-17412); 8 s start-gap absorbed. Affiliation mentions (SoftRidge/Perplexity) are ASR noise per slice_09; slice_08 self-identifies Southbridge. Not in the published agenda.",
+   "verify_notes": "Segment exists; boundaries pinned. t_start corrected 16129 -> 16137: sentence \"So I really love this article from Hannes at DuckDB...\" is the first sentence of the talk; the previous talk's outro ends at [16128] and there is no host intro in between (8 s gap is silence). t_end 17412 exact: last sentence \"Thank you.\" [17412]; next talk starts [17430] \"Hello, I'm Kartik, CTO at Perplexity\". Title is accurate to content: the speaker's own agenda [16209] lists \"why single ontologies always fail, the three roles models play in pipelines, intersecting model priors for better results, and Pareto surfing\", and the close [17380]-[17385] states \"there is no ontology. Not a universal one, at least.\" Speaker never says their name; self-identifies as founder of Southbridge [16275]. \"SoftRidge\" [16549] and \"Perplexity\" [17407] are ASR mis-hearings of Southbridge (single continuous speaker throughout). Web verification identifies the speaker as Hrishi Olickel, co-founder of Southbridge AI; the talk is publicly listed on the AI Engineer podcast as \"What Cheap Intelligence Means for Data\" (https://finance.biggo.com/podcast/1275b60f6221c37c, https://finance.biggo.com/news/1275b60f6221c37c) - consider using that as the session title. Not in the published agenda, consistent with an unscheduled extra talk slot."
+  },
+  {
+   "order": 29,
+   "t_start": 17430,
+   "t_end": 18356,
+   "kind": "talk",
+   "title": "Extra lunch talk: reliable and intelligent workflows for finance, wealth, and insurance — determinism vs judgment boundary (Perplexity CTO)",
+   "agenda_match": null,
+   "speakers": [
+    "Kartik (self-intro: CTO at Perplexity; ASR variants 'Karthik'/'Perpetual')"
+   ],
+   "confidence": "high",
+   "evidence": "\"Hello, I'm Kartik, CTO at Perplexity. In this presentation, I'll talk about building workflows that are both reliable and intelligent for finance, wealth, and insurance.\" [04:50:30]; closes \"Ask where the boundary is. Thank you.\" [05:05:30]-[05:05:50]. Merged slice_09 (17430-18200) + slice_10 (18200-18365); 18 s applause lead-in absorbed. Not in the published agenda.",
+   "verify_notes": "Boundaries pinned from transcript-master.json. START corrected 17412 -> 17430: [17412.483] \"Thank you.\" is the closing line of the PREVIOUS talk (just-in-time ontologies; ends \"And at Perplexity, we're working as hard as we can...\" [17407]); no host intro follows, only ~17 s of applause, and this session opens at [17430.15] \"Hello, I'm Kartik, CTO at Perplexity.\" END corrected 18365 -> 18356: talk closes \"Ask where the boundary is.\" [18347.22] / \"Thank you.\" [18348.5], then the title-recap outro (verify_hint confirmed) \"I'm Karthik, CTO at Perpetual.\" [18349.5] and \"If you're building AI into regulated work, I'd love to compare notes.\" [18352.7-18356.11]; next segment (Flywire, Edu + Javi) begins [18379.5], leaving a 23 s gap. TITLE correct: content is exactly the determinism-vs-judgment boundary for finance/wealth/insurance workflows (wealth-management roll-up, IRS W-9 example, 95% flash-tier / 5% frontier split, path to privately hosted models). SPEAKERS correct: single speaker, self-intro and self-recap only; \"Karthik\"/\"Perpetual\" are ASR variants of Kartik/Perplexity; no Q&A, no host. Segment exists; boundaries now exact (both corrections within/at the +-15 s tolerance, start was 18 s early)."
+  },
+  {
+   "order": 30,
+   "t_start": 18379,
+   "t_end": 18542,
+   "kind": "talk",
+   "title": "Extra lunch talk: Flywire's internal AI platform — structured workflow automation (Orbit on the Victoria PaaS)",
+   "agenda_match": null,
+   "speakers": [
+    "Edu (Flywire AI platform experience team)",
+    "Javi (Flywire AI platform experience team)"
+   ],
+   "confidence": "high",
+   "evidence": "[05:06:22] \"My name is Edu, and alongside Javi, we represent the AI platform experience team at Flywire\"; talk cut short mid-slide: [05:08:58] \"Sorry, I'm good.\" 15 s gap from previous talk absorbed. Not in the published agenda.",
+   "verify_notes": "Segment exists and is now pinned. t_start=18379: Edu's first words \"[05:06:19] Hello everyone, and welcome.\" at 18379.5 (no host intro; 23 s applause gap after Karthik/Perpetual ends at 18356.1; proposed 18365 sat inside that gap, 14.5 s early). t_end=18542: last sentence \"[05:08:58] Sorry, I'm good.\" runs 18538.5-18541.9; next session (Akshat Bubna, Modal) begins at 18543.6, so proposed 18544 overlapped it by 0.4 s. Talk is cut short mid-slide: audio degrades after 18518 (\"Victoria, it starts and shares the main request with scorecards, measures how.\") before Orbit's demo completes. Title correct: Edu and Javi represent the \"AI platform experience team at Flywire\"; talk covers structured workflow automation, Victoria (internal PaaS on GitLab + AWS), and Orbit (internal workflow platform). \"Extra lunch talk\" label accurate: wall clock ~13:54-13:57 ET, inside the agenda's Networking Break (12:15pm-2:05pm ET), not in the published agenda. Speakers correct: only Edu speaks (he opens and delivers everything); Javi is announced as co-presenter but gets no turn before the cutoff — keep both listed."
+  },
+  {
+   "order": 31,
+   "t_start": 18543,
+   "t_end": 19407,
+   "kind": "talk",
+   "title": "Great Agents Start with Great Infrastructure (Modal sandboxes, volumes, sidecars; pets-cattle-microbes)",
+   "agenda_match": "Great Agents Start with Great Infrastructure",
+   "speakers": [
+    "Akshat Bubna (Modal, CTO)"
+   ],
+   "confidence": "high",
+   "evidence": "[05:09:04] \"Hey everyone, I'm Akshat, CTO of Modal\" ... closing [05:23:27] \"Thank you.\" Started ~484 s before its agenda slot t=19028 (day running early).",
+   "verify_notes": "Boundaries pinned. Opens [18543] (05:09:03) \"Hey everyone, I'm Akshat, CTO of Modal\" with no host intro; previous Flywire talk (Edu + Javi) ends at [18538] \"Sorry, I'm good.\" after garbled audio at [18518]. Closes [19407] (05:23:27) \"Thank you.\" following the pets-cattle-microbes recap; transcript is then silent until [20037], where the next talk (Vals AI, \"Beyond the Model Card\", agenda slot 15) already begins. Title matches agenda slot 14 (t=19028-20108, \"Great Agents Start with Great Infrastructure -- Akshat Bubna (Modal)\"); the parenthetical is accurate to content: modal sandboxes with multiple containers/microVMs per sandbox [18627-18660], sidecar [18687], shared volumes striped per spreadsheet row [18693-18710], pets-cattle-microbes analogy with credit to Swyx [19296-19375]. Single speaker throughout, matches proposed list. Talk ran ~485 s ahead of its agenda slot (day running early after shortened networking break). Original timestamps off by 1 s (start) and 3 s (end), both within tolerance."
+  },
+  {
+   "order": 32,
+   "t_start": 19408,
+   "t_end": 20038,
+   "kind": "dead-air",
+   "title": "Hold after Modal talk ends early: no speech or OCR for 10.5 minutes before the Vals AI session",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "Zero transcript lines and zero OCR between [05:23:27] (t=19407) and [05:33:58] (t=20038); could be silence, ambient crowd noise, or a non-transcribable music loop.",
+   "verify_notes": "Verified against transcript-master.json: zero sentences between Modal's closing \"Thank you.\" (t=19407.43-19407.93, [05:23:27]) and the Vals AI speaker's first sentence (t=20037.6, [05:33:58]) — a 629.7 s (10.5 min) gap, matching the proposal. Preceding talk confirmed as Modal (\"I and us at Modal...\" at [05:23:16]); following talk confirmed as Vals AI (\"our Vals index\", \"our finance agent benchmark\"). Pinned t_start to 19408 (2 s earlier than proposed 19410; last speech ends 19407.93). t_end=20038 confirmed (Vals session starts at 20037.6, rounds to 20038; no host intro transcribed, so dead air abuts the speaker's own opening). Caveat on evidence: slice_10.txt's OCR section is empty for its whole window, not just this gap, so the \"zero OCR\" claim is technically true but weak; transcript silence is the decisive evidence and the 10.5-minute hold is real. Title accurate; empty speakers correct for dead-air."
+  },
+  {
+   "order": 33,
+   "t_start": 20038,
+   "t_end": 20626,
+   "kind": "talk",
+   "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance (Vals AI index, finance agent benchmark, Val Smith)",
+   "agenda_match": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+   "speakers": [
+    "Rayan Krishnan (Vals AI)"
+   ],
+   "confidence": "high",
+   "evidence": "[05:33:58] \"going from beyond the model card, how evaluations can be used to measure this jagged frontier, with a special focus on finance\"; \"now exposed this as a product called Val Smith\" [05:40:02]; close [05:43:46] \"Okay, that's all. Thanks, everyone.\" Merged slice_10 (20038-20075) + slice_11 (20020-20630); no host intro visible.",
+   "verify_notes": "Boundaries pinned exactly. Start: first sentence t_start=20037.6 \"I'm going to talk a little bit about going from beyond the model card... jagged frontier... special focus on finance\" (05:33:58). No host intro exists: the prior session (Modal talk on agent primitives) ends at 19407.9 and a ~630 s transcript gap follows, so the speaker starts cold; t_start=20038 is exact. End: final sentences [20623] \"Okay, that's all.\" and [20625.97-20626.47] \"Thanks, everyone.\"; proposed t_end=20630 was 3.5 s past the last spoken word, trimmed to 20626. Next session (fireside chat introducing Jack Woodruff, Candlestick Capital) does not begin until 21358, so the segment is cleanly isolated on both sides. Title: core title matches agenda (session dc91422b, Rayan Krishnan, Simons room, 2:30-2:48 PM Oct 13); corrected only to strip the auto-added parenthetical \"(Vals AI index, finance agent benchmark, Val Smith)\" which is not part of the official session title. Speakers: single continuous presenter, no Q&A or second voice anywhere in 20038-20626; content matches Vals AI precisely (\"our Vals index\" cited by Sundar, \"our finance agent benchmark\" cited by Muse Models, \"product called Val Smith\", \"six trillion tokens just in evaluation\"). The speaker is never named aloud in the transcript, but the agenda confirms Rayan Krishnan, Co-Founder & CEO, Vals AI, so the attribution stands. Content fully matches the agenda description (benchmark failure modes, validity/reliability/discriminability, reward hacking, multi-turn evals, cost-per-task, right-sizing/negotiation/routing/post-training, codifying institutional knowledge)."
+  },
+  {
+   "order": 34,
+   "t_start": 20626,
+   "t_end": 21358,
+   "kind": "break",
+   "title": "Break / stage changeover after Vals AI evals talk (~12 min, no speech in transcript; off-mic Q&A, applause, or stage reset possible) — followed by fireside chat with Jack Woodruff (Kepler)",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "No transcript lines at all between [05:43:46] 'Thanks, everyone.' and [05:55:58] 'Kepler, excited to have Jack Woodruff with me.'; OCR section empty.",
+   "verify_notes": "Verified against transcript-master.json and 00-original/slices/slice_11.txt. Zero transcript sentences exist between the prior talk's last word (\"Thanks, everyone.\", t_start 20625.97, ends 20626.47) and the next session's first word (\"Kepler, excited to have Jack Woodruff with me.\", t_start 21358.0) — a 731.5 s (~12.2 min) silent gap, exactly as proposed. Boundaries pinned tighter than the proposal: t_start moved 20630 -> 20626 (speech end) and t_end 21355 -> 21358 (next intro's first word), both well within ±15 s, so segments tile with no dead zone. Prior talk confirmed as the Vals AI talk (product name appears as \"Val Smith\" in the transcript — a mis-transcription of Vals; talk covers evals, right-sizing, negotiation, routing, post-training). Next session is a Kepler-hosted fireside chat with Jack Woodruff, founder and former CIO of Candlestick Capital Management and ex-Partner/PM at Surveyor Capital (Citadel). Title kept with a light refinement that names the follow-on session; speakers list correctly empty for a no-speech break. agenda_match stays null — no agenda slot could be confirmed from the transcript alone."
+  },
+  {
+   "order": 35,
+   "t_start": 21358,
+   "t_end": 21830,
+   "kind": "fireside",
+   "title": "AI and the Future of Fundamental Investing — Kepler fireside with Jack Woodruff (analyst roles, time management, 10-Ks)",
+   "agenda_match": "AI and the Future of Fundamental Investing",
+   "speakers": [
+    "Jack Woodruff (founder and former CIO, Candlestick Capital; ex-Surveyor Capital/Citadel)",
+    "Vinoo Ganesh (Kepler, host)"
+   ],
+   "confidence": "high",
+   "evidence": "[05:56:01] \"I'm Jack Woodruff. I am the founder and former CIO of Candlestick Capital Management\"; [05:56:38] \"we'll treat this really as a fireside chat\"; last speech [06:02:37] \"And on.\", then ~73 s silence absorbed into segment end.",
+   "verify_notes": "Verified against transcript-master.json. START: t=21358 \"[Kepler,] excited to have Jack Woodruff with me\" is the true first sentence; previous segment (evals talk) ends at 20625 (\"Thanks, everyone.\") with a ~733 s gap, so the host intro clearly belongs to this session (proposal's 21355 is 3 s early). Jack's self-intro follows at 21361 (05:56:01, matches evidence). END: last attributed speech is \"And on.\" spanning 21756.5-21793.3 (ASR stretched over applause/closing), then dead air; next session intro (David, AI operations lead at Revolut) begins at 21830.18, so t_end=21830 is the exact partition point and matches the proposal. TITLE: correct; exact agenda match in agenda-2026-10-13.json (\"AI and the Future of Fundamental Investing\", Simons, Stage Talk 18 mins, description calls it a fireside chat with Vinoo Ganesh); fireside confirmed in transcript at 21397, and parenthetical topics all present: analyst roles 21442, Citadel/Surveyor 18 people covering 400 stocks 21481, time management 21700, 10-Ks 21645. SPEAKERS: correct, two speakers only. Jack Woodruff's self-intro (founder/former CIO of Candlestick Capital; ex-partner and PM at Surveyor Capital, a division of Citadel) matches the proposed label. The host's name is never spoken - the first sentence begins mid-thought with \"Kepler,\" (ASR likely dropped the name) - but the agenda confirms Vinoo Ganesh, CEO of Kepler and former Head of Business Engineering at Citadel, as host; agenda also lists Woodruff as Senior Advisor at Kepler, worth adding to his session-file bio. Note: the stream ran ~12 min ahead of the agenda grid (agenda slot t=22028-23108; actual 21358-21830, ~8 min including an apparent early finish), consistent with the \"agenda is a prior, not a grid\" rule; content match is decisive. 59 sentences in the verified range."
+  },
+  {
+   "order": 36,
+   "t_start": 21830,
+   "t_end": 22523,
+   "kind": "talk",
+   "title": "Shipping like a startup, regulated like a bank — self-hosting open-source models on dedicated GPUs (56x B200, GLM, compliance sandbox)",
+   "agenda_match": "Shipping like a startup, regulated like a bank",
+   "speakers": [
+    "David Abitbol (Revolut, AI operations lead)"
+   ],
+   "confidence": "high",
+   "evidence": "[06:03:51] \"Hello, everyone... My name is David. I lead AI operations at a company called Revolut\"; [06:04:05] \"We'll talk about high-performance engineering and self-hosting open-source model on the dedicated GPU\"; ends [06:15:22] \"Thanks, everyone. That was all for my talk.\" Merged slice_11 (21830-21840) + slice_12 (21830-22522).",
+   "verify_notes": "Boundaries pinned exactly. Start: sentence idx 3114 at t=21830.18 (\"All right. / Hello, everyone. / My name is David. I lead AI operations at a company called Revolut.\"); prior sentence ends 21756 (previous session's Q&A tail, 74 s gap), so 21830 is the speaker's true first word with no host intro. End: last sentence idx 3264 \"That was all for my talk.\" spans 22521.89-22522.757; next transcript sentence is at 23337.4 after a ~13.5 min break, so nothing of this talk follows. t_end reported as 22523 (nearest second to 22522.757); the proposed 22522 is within 1 s and also acceptable. Title verified: agenda entry \"Shipping like a startup, regulated like a bank\" (David Abitbol, Simons, 3:20-3:38pm, session id 2a07765d-fe3a-48df-be0f-75c111dbee6a) matches agenda-snapshot.md and speaker-data/david-abitbol.json; all parenthetical claims confirmed in transcript: \"self-hosting open-source model on the dedicated GPU\" [21845], \"to serve 2,000 engineers, we roughly need 56 B200... to host GLM-4.3\" (~800B params; also GLM 5.1 upgrade timeline and a GLM vision model), \"EU-regulated bank... most strict regime in terms of compliance\" [22414], compliance sandbox with human-in-the-loop [22437-22450]. Speakers verified: single speaker throughout (solo talk, \"That was all for my talk\" close); name David from transcript self-intro, surname Abitbol and company Revolut from agenda/speaker data; \"AI operations lead\" matches his own words \"I lead AI operations at... Revolut\". No corrections needed."
+  },
+  {
+   "order": 37,
+   "t_start": 22522,
+   "t_end": 23337,
+   "kind": "break",
+   "title": "Break / room turnaround in Simons Room: after \"Shipping like a startup, regulated like a bank\" (David Abitbol, Revolut), before \"Everyone Has AI. Who Has the Advantage?\" (Sid Pednekar) — ~13.6 min, no transcribed audio",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "Zero transcript lines between [06:15:22] \"That was all for my talk.\" and [06:28:57] \"Good afternoon, everyone present here.\" — likely applause/room reset/dead air; could be off-mic Q&A the transcription missed.",
+   "verify_notes": "Verified against transcript-master.json. Gap is exact: previous talk ends with \"That was all for my talk.\" (t 22521.89, t_end 22522.757); next session opens with \"Good afternoon, everyone present here.\" (t_start 23337.4). Zero sentences in (22522.76, 23337.4) = 814.6 s (~13.6 min). No OCR frames sampled in 22000-24000 s. Preceding talk identified as \"Shipping like a startup, regulated like a bank\" (David Abitbol, Revolut; content: Revolut, self-hosted GLM, 2000 engineers, EU-regulated bank). Following talk: speaker self-identifies at t 23380 (\"I'm Dr. Sid Pednekar\") — \"Everyone Has AI. Who Has the Advantage?\" (Simons Room, Oct 13). Both boundaries within 1 s of proposal, so original t_start/t_end stand. Original title was substantively correct; corrected_title only adds the surrounding talk names for context. Empty speaker list is right for a break. Note: agenda wall-clock times (3:20-3:38 PM, 3:45-4:03 PM) disagree with the slice_12 stream-time mapping (~3:03-3:17 PM ET) by roughly 25 min — day-of drift or mapping offset; video-second boundaries are unaffected."
+  },
+  {
+   "order": 38,
+   "t_start": 23337,
+   "t_end": 24416,
+   "kind": "talk",
+   "title": "Everyone Has AI. Who Has the Advantage? (three pillars: design the right problem, build shared capabilities, compound the advantage)",
+   "agenda_match": "Everyone Has AI. Who Has the Advantage?",
+   "speakers": [
+    "Dr. Sid Pednekar (AI technology and data exec, asset management)"
+   ],
+   "confidence": "high",
+   "evidence": "\"The topic of my talk today is: everyone has AI, who has the advantage?\" [06:29:11]; \"I'm Dr. Sid Pednekar.\" [06:29:41]; title-drop close [06:46:54]-[06:46:56] \"Everyone has AI. Who has the advantage? Thank you.\" Merged slice_12 (23337-23717) + slice_13 (23605-24416). Ran ~17 min ahead of agenda slot t=25028.",
+   "verify_notes": "Boundaries pinned exactly. t_start=23337 (sentence 23337.4: \"Good afternoon, everyone present here.\") — speaker's first words; no host intro exists because the previous transcript content ends at 22521.89 and a ~13.5 min break follows, so nothing to attach from the previous segment. t_end=24416 (sentence 24416.37: \"Thank you.\") — final sentence after the title-drop close; next transcript content is the MC (Alex Lieberman) returning for the closing keynote block at 25179.7, which belongs to the next segment. Title confirmed by title drop at open [23351] and close [24414]-[24415]; the three pillars (design the right problem, build shared capabilities, compound the advantage) are stated verbatim at [23519]-[23530]. Speaker confirmed by self-introduction [23379]-[23381] (\"I'm Dr. Sid Pednekar. I am an AI technology and data exec in asset management.\"); scan of all 172 sentences found no second speaker or host interjection. Solo talk, duration ~17 min 39 s. Proposed values needed no correction."
+  },
+  {
+   "order": 39,
+   "t_start": 24417,
+   "t_end": 25179,
+   "kind": "break",
+   "title": "Untranscribed gap after afternoon talk, before MC returns (12m44s; room changeover / idle stream)",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "No transcript lines and no OCR frames between '[06:46:56] Thank you.' and the '[06:59:40]' announcer intro; silence vs music vs cut stream cannot be distinguished.",
+   "verify_notes": "Gap is real. Transcript master has zero sentences between index 3436 (\"Thank you.\", t_start=24416.37, t_end=24416.87) and index 3437 (\"To guide us back into the closing keynotes...\", t_start=25179.724). Slice 13 matches exactly ([06:46:56] Thank you. then [06:59:40] announcer). No OCR frames exist in the window; frame sampling (every 120 s) stops at ~7080 s video time, so silence vs music vs cut stream stays indistinguishable, as the evidence field states. Refined boundaries: t_start=24417 (after \"Thank you.\" ends at 24416.87) keeps the closing line with the previous talk; t_end=25179 (just before 25179.724) puts the announcer intro at the start of the next segment. Both are within 1 s of the proposed values. Context: the talk before the gap ends with \"Everyone has AI. Who has the advantage?\" which matches the agenda title \"Everyone Has AI. Who Has the Advantage?\" (Sid Pednekar, Simons, 3:45-4:03 PM slot, day 1); the speech after is an off-stage announcer returning MC Alex Lieberman for the closing keynote block, so the gap is the changeover between a breakout-room feed and the main-stage closing block. Title is accurate in substance; actual duration is 762.85 s (12m43s), not 12m44s, and \"afternoon talk\" could be named as the Pednekar talk, but neither warrants a correction. Empty speakers list is correct for a no-speech break. Minor clock note: the slice video-to-ET offset (8:47:52) places the gap at about 3:35-3:48 PM ET, slightly ahead of the agenda slot end; this is live-versus-published drift and does not affect the boundary."
+  },
+  {
+   "order": 40,
+   "t_start": 25179.7,
+   "t_end": 25183.4,
+   "kind": "announcement",
+   "title": "Welcome back: brief MC return (Alex Lieberman) opening the closing-keynote block",
+   "agenda_match": "Welcome Back - Featured Keynotes",
+   "speakers": [
+    "Alex Lieberman (10X, co-founder and co-managing partner, MC)",
+    "Unidentified stage announcer (voice-off)"
+   ],
+   "confidence": "high",
+   "evidence": "[06:59:40] \"please welcome once again to the stage our MC, Alex Lieberman, managing partner at 10X\"; [06:59:43] \"I'm Alex Lieberman, co-founder, co-managing partner at 10X\" — then speech stops (slice_13 window ends at t=25480 but its last line is [06:59:43]).",
+   "verify_notes": "Segment verified against transcript-master.json. Announcer's intro starts at t=25179.7 [06:59:40]: \"To guide us back into the closing keynotes of today's program, please welcome once again to the stage our MC, Alex Lieberman, managing partner at 10X.\" Alex then speaks (25181.3-25183.4 [06:59:43]): \"How's it going? ... welcome back for the closing keynote block here at AI Engineer New York 2026. I'm Alex Lieberman, co-founder, co-managing partner at 10X, Applied AI partner for...\" Both boundaries match the proposal within 2 s (well inside ±15 s). Important context: after t=25183.4 the stream carries ~622 s of dead air/music until t=25805.3 — chunk_042 gpt-transcribe produced only 409 chars and whisper-1 hallucinated looping filler (\"This is a recording of a live AI engineering conference...\") from 25208-25808, so no real speech exists in the gap. Alex's audio resumes mid-sentence at t=25805.3 (\"For Fortune 500 businesses.\", completing \"Applied AI partner for...\") with sponsor thanks and the next-block intro; that belongs to the following segment, which should start at t=25805.3. Previous talk ended at t=24416.9 (\"Thank you.\") followed by a break (chunk_041 gpt_chars=0), so this announcement correctly opens the closing-keynote block. Speaker fix only: transcript says \"10X\" throughout (\"Tenex\" in the proposal is a mishearing), and Alex styles himself co-founder, co-managing partner at 10X. Evidence timestamps [06:59:40]-[06:59:43] correspond exactly to 25179.7-25183.4."
+  },
+  {
+   "order": 41,
+   "t_start": 25183,
+   "t_end": 25805,
+   "kind": "break",
+   "title": "Untranscribed gap inside the welcome-back block (~10.3 min; possible sponsor reel, video, or dead air before the MC resumes)",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "No transcript or OCR lines between [06:59:43] (slice_13's final line, verified against file tail) and [07:10:05] (slice_14's first line, t=25805); replaces slice_14's 25480-25805 filler whose start was a window-edge artifact.",
+   "verify_notes": "Gap verified as real non-speech audio, not a missed talk. Master transcript has zero sentences between t=25183.408 (t_end of \"I'm Alex Lieberman, co-founder, co-managing partner at 10X, Applied AI partner for...\") and t=25805.35 (\"For Fortune 500 businesses.\"), a 621.9 s (10.4 min) hole. Corroboration from transcript-raw: chunk_041.gpt.json (519 s) is fully empty; chunk_042.gpt.json (628 s) contains only the ~4 s welcome-back island; chunk_042.whisper.json holds only a repeated synthetic placeholder line (\"This is a recording of a live AI engineering conference...\") every 30 s across the window — the same non-speech stand-in pattern seen in chunks 011/041 — which the master correctly excludes. Boundaries: t_start pinned to 25183 (end of the MC's cut-off sentence; proposal 25185 is 1.6 s late, within tolerance); t_end 25805 matches exactly. Note the monologue resumes mid-sentence across the gap (\"Applied AI partner for...\" -> \"...For Fortune 500 businesses.\"), so the MC likely kept talking while the stream audio carried slate/break content. Keep the 25179.7-25183.4 stage-voice + MC welcome-back island at the end of the previous segment, not inside this break. Title and empty speaker list are correct: it is an untranscribed gap inside the welcome-back block (true length 10.4 min vs stated ~10.3). Context: prior talk ends \"Thank you.\" at 24416, then a separate 12.7 min gap precedes the welcome-back island; after this gap Alex Lieberman thanks sponsors (Arize presenting; Oracle, Sonar, WorkOS, Exa platinum) and introduces Frank Long (Coatue) for \"A hedge fund as a function\" at [26059]-[26087], so the next session segment starts at 25805."
+  },
+  {
+   "order": 42,
+   "t_start": 25805,
+   "t_end": 26071,
+   "kind": "announcement",
+   "title": "MC resumes: sponsor acknowledgments, conference reflections, enterprise AI diffusion-gap stats, intro of Frank Long",
+   "agenda_match": "Welcome Back - Featured Keynotes",
+   "speakers": [
+    "Alex Lieberman (Tenex / 10X; 'We talk to hundreds of big enterprises at 10x')"
+   ],
+   "confidence": "high",
+   "evidence": "\"before we hop into the final block of the day... a round of applause to our partners\" [07:10:29]; \"We talk to hundreds of big enterprises at 10x\" [07:12:30]; \"I would love to introduce you to our next talk, which is with Frank Long, the head of AI at Kotu [Coatue]\". Continuation of the welcome-back block introduced at [06:59:40]; ran ~25 min ahead of agenda slot t=27428.",
+   "verify_notes": "Boundaries verified against /home/agent/ainy26/aiengineer-nyc-2026/00-original/transcript-raw/transcript-master.json. t_start=25805 confirmed exactly (25805.35, \"For Fortune 500 businesses.\"): it is the first speech after a ~10.4 min no-speech gap following the MC's initial welcome-back lines at 25179-25182, and it completes his self-intro (\"...Applied AI partner for... Fortune 500 businesses\"), so it belongs to this resumed MC block. t_end corrected 26088 -> 26071: the MC's last sentence \"Let's welcome Frank.\" runs 26070.39-26071.03; the proposed 26088 is the end time of Frank Long's first on-stage sentence \"Exciting to be here.\" (26087.63-26088.65) and would swallow Frank's opening line into the announcement. The next segment (Frank Long, \"A Hedge Fund as a Function\", agenda 4:30-4:48pm) should start at 26087.63 with Frank's first words. Title accurate: block covers sponsor acknowledgments (presenting: Arize; platinum: Oracle, Sonar, WorkOS, Exa; plus gold/silver), conference reflections, enterprise AI diffusion-gap stats (90% LLM rollout, 60% trained users, 50% coding agents, 5% non-engineering agents), and intro of Frank Long (\"head of AI at Kotu\" is a transcription of Coatue, per 02-index/speaker-data/frank-long.json). Speakers confirmed: Alex Lieberman, co-founder and co-managing partner at 10X (Tenex per sessionboard data), listed as host of the \"Welcome Back - Featured Keynotes\" slot; sole speaker throughout. Segment exists as proposed; only t_end needed pinning (17 s off, just outside the +/-15 s window)."
+  },
+  {
+   "order": 43,
+   "t_start": 26060,
+   "t_end": 26914,
+   "kind": "keynote",
+   "title": "A Hedge Fund as a Function (Coatue)",
+   "agenda_match": "A Hedge Fund as a Function",
+   "speakers": [
+    "Frank Long (Coatue, head of AI)"
+   ],
+   "confidence": "high",
+   "evidence": "\"My name is Frank. I work at Coatue, which is a technology investment firm across public and private markets\"; host: \"He's going to be talking about a hedge fund as a function\". Actual start 4:02:40 PM ET vs agenda 4:30 PM.",
+   "verify_notes": "Boundaries pinned sentence-exact. t_start=26059.99 opens the session-specific host intro (\"...our next talk, which is with Frank Long, the head of AI at Coatue... He's going to be talking about a hedge fund as a function. Let's welcome Frank.\"); the prior interstitial (10x host: sponsor shout-outs, enterprise diffusion-gap stats) ends at 26059.55 and stays in the previous segment. Frank's first words \"Exciting to be here.\" at 26087.63; proposed t_start 26088 was Frank's second sentence. t_end=26913.84 closes the last sentence (\"Here are my socials, and thank you everyone for your time.\"); next intro (General Intuition CEO Pim de Witte) begins 26933.15. Title matches host intro verbatim and Frank's framing (\"a hedge fund as a function that takes in two parameters... spits out one tuple: selection, size, timing\"). Single speaker throughout; no Q&A. Transcriber misspells Coatue as \"Kotu\"/\"Co2\" in places. Content covers the hedge-fund-as-function framework: external/internal context inputs, gather/analyze/decompose steps, LLM vs deterministic vs human runner buckets, hyperparameter search space, and broader state-machine applications. Proposed t_end 26911 was within the final sentence (starts 26010.75 [sic: 26910.75]); corrected to its true end 26914."
+  },
+  {
+   "order": 44,
+   "t_start": 26914,
+   "t_end": 26933,
+   "kind": "break",
+   "title": "Applause / stage transition after Frank Long (Coatue) talk (19 s)",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "Gap of 22 s between Frank Long's close (t=26911) and the host hand-off line at t=26933; exceeds the 20 s absorb threshold, so kept explicit.",
+   "verify_notes": "Break segment exists. Real gap: end of Frank Long's closing sentence at t=26913.84 (\"Here are my socials, and thank you everyone for your time.\") to start of host hand-off at t=26933.15 (\"And now, let's take a look at frontier models built to act in space and time.\"), about 19.3 s with no transcribed speech. Proposed t_start=26911 overlapped the tail of the previous sentence by ~2.8 s; pinned to 26914. t_end=26933 confirmed. Title corrected on two points: the gap is ~19 s, not 22 s, and the previous session was introduced at t=26059 as \"our next talk ... with Frank Long, the head of AI at Coatue\" — a talk, not a keynote. Speakers list stays empty: no speech inside the gap. The host hand-off lines at 26933-26952 introduce Pim de Wit (General Intuition) and belong to the next segment, which starts at 26933."
+  },
+  {
+   "order": 45,
+   "t_start": 26933,
+   "t_end": 26960,
+   "kind": "announcement",
+   "title": "Host hand-off: MC Alex Lieberman introduces General Intuition CEO Pim de Witte (frontier models that act in space and time)",
+   "agenda_match": null,
+   "speakers": [
+    "Alex Lieberman (MC, co-founder and co-managing partner at 10X)"
+   ],
+   "confidence": "high",
+   "evidence": "\"And now, let's take a look at frontier models built to act in space and time. Please welcome co-founder and CEO of General Intuition, Pim de Wit.\"",
+   "verify_notes": "Boundaries pinned exactly. Segment spans the two host sentences: [26933] \"And now, let's take a look at frontier models built to act in space and time.\" and [26939] \"Please welcome co-founder and CEO of General Intuition, Pim de Wit.\" Previous segment (Frank Long, Coatue, \"a hedge fund as a function\") ends at [26910]; applause fills the gap. Next sentence [26960] \"Hello.\" is Pim de Witte's first word, so t_end=26960 is the correct shared boundary with the next talk segment. Speaker upgraded from \"likely\" to confirmed: the hand-off is by MC Alex Lieberman, identified at [603]/[634] and re-welcomed at [25179] for the closing keynote block, where he also introduced Frank Long at [26059] in the same style. Title content matches; corrected_title only names the host and adds the talk subject. Transcription notes for downstream summaries: \"Pim de Wit\" is Pim de Witte (co-founder/CEO of General Intuition); \"Metal\" at [27061] is Medal, the game-clip recorder he co-founded. Next talk is a solo keynote on purpose-built spatiotemporal \"pixel-to-action\" models trained on Medal gameplay data."
+  },
+  {
+   "order": 46,
+   "t_start": 26933,
+   "t_end": 28070,
+   "kind": "keynote",
+   "title": "Frontier Models for Acting in Space and Time — pixels to actions: one model that plays games and controls robots",
+   "agenda_match": "Frontier Models for Acting in Space and Time",
+   "speakers": [
+    "Pim de Witte (General Intuition, co-founder and CEO)"
+   ],
+   "confidence": "high",
+   "evidence": "\"for us, it all started with Metal. We built the largest video game recorder in the world\"; \"we just bet on scaling pixel space the same way that anthropic scaled coding space\"; confirmed by MC recap \"We had Pim talking about world models going from pixels to actions\". Merged slice_14 (26960-27355) + slice_15 (27300-27972). Completed on stream despite agenda note claiming it would be cut mid-item.",
+   "verify_notes": "Segment exists; boundaries pinned to exact sentences. t_start moved 26960 -> 26933 to include the MC intro that names this session (\"let's take a look at frontier models built to act in space and time... Please welcome co-founder and CEO of General Intuition, Pim de Wit\"); previous talk ended at 26910. t_end moved 27972 -> 28070: 27972 is only where the speaker OPENS Q&A (\"I have time for one or two questions\"); the Q&A (audience JEPA question answered at 27979-28056, plus one more) belongs to the session and the closing is \"Thank you, everyone. Have a good one.\" at 28069-28070; the next session's MC intro (Dylan Rolnick, Noose Research, \"final talk of the day\") starts at 28071. Title correct: matches agenda item and MC intro; subtitle accurate (Metal video game recorder as data, pixels-to-actions, games and robot teleoperation, world models). Speakers correct: single keynote speaker, MC-names him co-founder and CEO of General Intuition; transcript spells \"Pim de Wit\", correct spelling \"Pim de Witte\". Talk ran to completion on stream including Q&A, consistent with the merge of slice_14 + slice_15 and the note that it continued past the agenda's nominal cut."
+  },
+  {
+   "order": 47,
+   "t_start": 27972,
+   "t_end": 28070,
+   "kind": "qna",
+   "title": "Audience Q&A after General Intuition keynote: JEPA comparison, action labels vs world models",
+   "agenda_match": null,
+   "speakers": [
+    "Pim de Witte (General Intuition)",
+    "Unidentified audience member"
+   ],
+   "confidence": "high",
+   "evidence": "\"I have time for one or two questions, and then I think we can wrap\" followed by audience question \"how's it different from JEPA?\"; ends \"Thank you, everyone. Have a good one.\"",
+   "verify_notes": "Boundaries pinned against transcript-master.json. t_start=27972 is exact: \"I have time for one or two questions, and then I think we can wrap.\" (slice_15.txt line 119, 07:46:12). Proposed t_end=28069 landed on \"Thank you, everyone.\"; the actual final sentence is [28070] \"Have a good one.\" — adjusted to 28070, still within ±15 s. Next segment (host intro for final talk by Dylan Rolnick, Noose Research) starts at 28071, so no overlap. Only one audience question was asked and answered (\"how's it different from JEPA?\"); the invited second question never materialized (\"one more and then I got to run\" at 28060, then wrap). Speaker identity confirmed by host intro at [26939]: \"co-founder and CEO of General Intuition, Pim de Wit\" (transcript omits trailing 'e'; agenda spelling 'Pim de Witte' retained) and by later cross-reference at [29024] \"We had Pim talking about world models going from pixels to actions.\" Title and speaker list need no correction."
+  },
+  {
+   "order": 48,
+   "t_start": 28071,
+   "t_end": 28099,
+   "kind": "announcement",
+   "title": "Stage introduction of the final talk of the day (Nous Research CEO)",
+   "agenda_match": null,
+   "speakers": [
+    "Alex Lieberman (MC for the day, co-founder and co-managing partner at 10X)"
+   ],
+   "confidence": "high",
+   "evidence": "\"Ladies and gentlemen, for our final talk of the day, please welcome to the stage the CEO of Noose Research, Dylan Rolnick.\"",
+   "verify_notes": "Segment exists and is now pinned exactly. Evidence: [28071.16-28099.2] \"Ladies and gentlemen, for our final talk of the day, please welcome to the stage the CEO of Noose Research, Dylan Rolnick.\" followed by Dylan's first words at [28100.6] \"Hey, everyone.\" and self-intro at [28112] \"I'm Dylan Rolnick. I'm the CEO of Noose Research...\". Boundary corrections: (1) t_start moved 28069->28071; the sentences at 28069.16 \"Thank you, everyone.\" and 28070.16 \"Have a good one.\" are the Q&A wrap of the previous session and belong to the prior segment. (2) t_end moved 28101->28099 (= t_end 28099.2 of the intro sentence); 28100.6 starts Dylan's talk, so 28101 clipped it by ~1 s. Speaker correction: MC is confirmed as Alex Lieberman, introduced at [603] \"your MC for the day, Managing Partner at 10X, Alex Lieberman\", self-intro at [634], and hosting the closing keynote block containing this final talk ([25179], [29007]). Transcription note: \"Noose Research\" throughout the transcript = Nous Research. Title is accurate as proposed; next segment (the talk itself) should start at 28100."
+  },
+  {
+   "order": 49,
+   "t_start": 28071,
+   "t_end": 29006,
+   "kind": "keynote",
+   "title": "Hermes gives you wings: build agents on open foundations you own",
+   "agenda_match": "Hermes gives you wings: Build on open foundations.",
+   "speakers": [
+    "Dillon Rolnick (Nous Research, CEO)"
+   ],
+   "confidence": "high",
+   "evidence": "Self-intro \"I'm Dylan Rolnick. I'm the CEO of Noose Research\"; \"Build on open foundations. Build on Hermes Agent.\"; \"Hermes Agent today is the most used and downloaded open source agent in the world.\" Aired on stream despite agenda note placing it after stream end (day ran early).",
+   "verify_notes": "Segment exists and is pinned to exact sentences. Start corrected 28101 -> 28071: the MC intro at 28071.16 (\"Ladies and gentlemen, for our final talk of the day, please welcome to the stage the CEO of Noose Research, Dylan Rolnick.\") explicitly names this speaker and slot and belongs to this segment; the prior world-models talk ends at 28070.91 (\"Have a good one.\"). Proposed start had skipped this 28 s intro. End confirmed: last talk sentence \"Thank you.\" (29005.85-29006.35); MC closing remarks (Alex Lieberman) begin at 29007.85, so 29006 is exact. Title correct: talk is entirely about building agents on open, owned foundations (Hermes Agent, moats, commoditization; closes \"Build on something you own. Build with us.\"), matching agenda \"Hermes gives you wings: Build on open foundations.\" Single speaker confirmed via agenda data (02-index/speaker-data/dillon-rolnick.json: Dillon Rolnick, CEO, Nous Research); ASR renderings \"Dylan Rolnick\"/\"Noose Research\" are mishearings. Talk aired on stream despite agenda listing it after the scheduled stream end."
+  },
+  {
+   "order": 50,
+   "t_start": 29007,
+   "t_end": 29017,
+   "kind": "announcement",
+   "title": "Voice-over hand-off: MC returns for closing remarks",
+   "agenda_match": null,
+   "speakers": [
+    "Unidentified announcer"
+   ],
+   "confidence": "high",
+   "evidence": "\"And now, for a few closing thoughts and remarks, please welcome back to the stage our MC and the managing partner at 10X, Alex Lieberman.\"",
+   "verify_notes": "Confirmed. The announcement sentence spans exactly 29007->29017: \"And now, for a few closing thoughts and remarks, please welcome back to the stage our MC and the managing partner at 10X, Alex Lieberman.\" Preceded by the prior keynote's final \"Thank you.\" (29005->29006, the open-source Hermes Agent talk the MC later recaps as \"Dylan talking about building agents on owned versus rented land\"). Followed at 29017 by Alex Lieberman's first words (\"Okay, let's close this thing out.\"), whose closing remarks run to the end of the transcript (29101). Refined t_start 29006->29007 and t_end 29018->29017 to avoid one-second overlap into Lieberman's remarks; next segment (closing remarks) should start at 29017. Title and speaker list are correct: the announcer is unnamed in the transcript; Alex Lieberman is introduced here but speaks in the following segment."
+  },
+  {
+   "order": 51,
+   "t_start": 29007,
+   "t_end": 29103,
+   "kind": "announcement",
+   "title": "Closing remarks: speaker applause, sponsors, housekeeping (network in Edge City, back before 9 a.m.), day-one wrap",
+   "agenda_match": "Closing Remarks",
+   "speakers": [
+    "Alex Lieberman (Tenex)",
+    "Unidentified second voice (single line [08:05:02] 'Thanks for having me')"
+   ],
+   "confidence": "high",
+   "evidence": "\"Okay, let's close this thing out\" ... \"go speak to humans\" ... \"tomorrow things kick off again right before 9 a.m. ... Thank you all for coming.\" Last speech t=29102. Aired on stream despite agenda note placing it after stream end. Merged slice_15 (29018-29120) + slice_16 (29071-29103).",
+   "verify_notes": "Segment exists and boundaries pinned. t_start corrected 29018 -> 29007: sentence [29007] is the stage announcer's explicit intro of this slot (\"And now, for a few closing thoughts and remarks, please welcome back to the stage our MC... Alex Lieberman\"); Alex's first words at [29017] (\"Okay, let's close this thing out\"). Previous segment (Hermes keynote) ends at [29005] \"Thank you.\", so 29007 gives a clean split. t_end=29103 confirmed exact: [29101] \"Thanks for having me, and see you tomorrow.\" is the last sentence of the entire transcript (video continues silent to ~29150). Title accurate: applause for speakers [29039], sponsor thanks [29041], housekeeping \"go speak to humans\"/\"live in edge city\" [29070-29087], \"tomorrow things kick off again right before 9 a.m.\" [29089-29098], \"Thank you all for coming\" [29100]. Applause gap 29041->29070 (no sentences) sits inside the segment, consistent with the applause line. Speakers: agenda lists Alex Lieberman, Managing Partner, Tenex; transcript renders the homophone \"10X\" (self-intro at t=634-635 \"co-founders and co-managing partners at 10X\") - same person, keep Tenex per canonical agenda. The final line [29101] cannot be attributed from text (no diarization); it may be Alex himself replying, so keep the cautious \"unidentified second voice\" label. Note [29041] \"Tevernu made the event possible\" is a likely transcription artifact of a sponsor name. Agenda slot: Closing Remarks - Alex Lieberman, 5:25-5:30 PM; on stream it aired ~4:53 PM ET, before the stream cut, as the proposal noted."
+  },
+  {
+   "order": 52,
+   "t_start": 29104,
+   "t_end": 29150,
+   "kind": "dead-air",
+   "title": "Silence after final sign-off until the livestream cuts (applause or outro, untranscribed)",
+   "agenda_match": null,
+   "speakers": [],
+   "confidence": "high",
+   "evidence": "Last transcript line is [08:05:02] (t=29102); no transcript lines and no OCR frames through stream end t=29150.17 (08:05:50 video time, 4:53:42 p.m. ET).",
+   "verify_notes": "Confirmed dead-air segment at the very end of the stream. Last transcript sentence \"Thanks for having me, and see you tomorrow.\" (MC Alex Lieberman's sign-off) ends at t=29103.6; nothing is transcribed after it. Audio forensics on the source m4a: room noise/applause onset t=29103.6-29106.5, near-digital silence (mean -91 dB) t=29106.5-29125.7, then sustained untranscribed sound at about -37 dB mean (consistent with applause/outro music) from t=29126 until the stream cuts. t_end=29150 matches the exact media duration 8h05m50s (t=29150.17) recorded in 00-original/media/MEDIA.md. Note: the OCR frame sweep intentionally covers only t=0-6600 (partial sweep per MEDIA.md), so the \"no OCR frames\" evidence is expected, not an anomaly. t_start pinned to 29104 (proposal 29103, +1 s) so the segment does not overlap the final sentence; both boundaries within ±15 s. Title and empty speakers list are correct: the parenthetical \"applause or outro, untranscribed\" matches the measured audio. Evidence files: /home/agent/ainy26/aiengineer-nyc-2026/00-original/transcript-raw/transcript-master.json, /home/agent/ainy26/aiengineer-nyc-2026/00-original/slices/slice_16.txt, /home/agent/ainy26/aiengineer-nyc-2026/00-original/media/MEDIA.md."
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "slug": "mikyo-king",
+ "name": "Mikyo King",
+ "role": "Head of Open Source",
+ "company": "Arize AI",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FGG8MFQ9QrI3Conl0ujgC_headshot-1790815262381.jpg",
+ "sessions": [
+  {
+   "title": "Code Mode: your agent should write code",
+   "time": "3:45pm - 4:03pm",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "slug": "ashwin-paranjape",
+ "name": "Ashwin Paranjape",
+ "role": "Founding AI Lead",
+ "company": "Samaya AI",
+ "bio": "Ashwin Paranjape is the founding AI lead at Samaya AI, where he builds the AI foundations for agents that tens of thousands of investors at hedge funds, asset managers, and banks use for research and modeling. He co-authored \"Lost in the middle\" (TACL 2024) on how position in the context window changes what a language model actually uses. He has a PhD in CS from Stanford, advised by Christopher Manning, on retrieval-grounded language generation, and a BTech in CSE from IIT Bombay.",
+ "linkedin": "https://www.linkedin.com/in/ashwinparanjape/",
+ "twitter": "https://x.com/AshwinParan",
+ "website": "https://samaya.ai",
+ "photo": "https://content-cdn.sessionboard.com/a2iUuawmSICRRlgsPkPF_headshot-1787684755962.jpg",
+ "sessions": [
+  {
+   "title": "Agents Can Rewrite Compilers. Why Can't They Pick Stocks?",
+   "time": "12:20pm - 12:38pm",
+   "room": "McCarthy Room (Riverside Suite)"
+  }
+ ]
+}

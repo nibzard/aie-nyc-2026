@@ -1,0 +1,26 @@
+{
+ "slug": "harisha-p-c",
+ "name": "Harisha P C",
+ "role": "",
+ "company": "Intuit Credit Karma",
+ "bio": "Senior staff software engineer at Intuit Credit Karma, where he builds and owns AI analytics infrastructure and services (per his self-introduction at AI Engineer NYC 2026, where he presented 'Building an enterprise agent ecosystem with MCP'). Independent AI researcher, author, and Lead Generative AI Engineer based in Bengaluru, India, focusing on agentic AI frameworks, quantum AI, neuro-symbolic systems, and large language models. Author of 'The Agentic Enterprise with MCP' (2026) and other AI books, and founder of Rish AI Labs; advisor, author, reviewer, and program committee member for research organizations.",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "",
+ "identified_from_session": true,
+ "sessions": [
+  {
+   "order": 23
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.youtube.com/live/jiUC6IUMdvc",
+  "https://www.amazon.com/Agentic-Enterprise-MCP-Comprehensive-Interoperable/dp/B0HC59LDB3",
+  "https://harishapc.com/",
+  "https://harishapc.com/llms.txt",
+  "https://in.linkedin.com/in/harisha-p-c-207584b2",
+  "https://www.researchgate.net/profile/Harisha-P-C-2"
+ ]
+}

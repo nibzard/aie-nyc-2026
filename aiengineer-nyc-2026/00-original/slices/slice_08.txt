@@ -1,0 +1,364 @@
+# transcript slice 08
+window: t=14560..16380 (04:02:40..04:33:00 video time; 12:50:32 PM..1:20:52 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[04:01:45] Hello everyone.
+[04:01:49] This talk is about the danger of your LLMs information leak in through shared GPU hardware.
+[04:01:54] If you're running a model in the cloud on a GPU shared with other tenants, someone next to you can learn things about it.
+[04:02:00] They can tell what model you're running, how fast it's responding, and even what kind of work it's doing right now, all without touching your data, just by watching timing.
+[04:02:08] That's what this talk covers: what a co-tenant on the same hardware can learn about your LLM from timing alone and what you can do about it.
+[04:02:17] To start, I'm Branislav Brzak, AI security researcher employed at Celtium.
+[04:02:22] At Celtium, we specialize in securing and providing observability into the environments AI systems run on.
+[04:02:28] My area of focus is low-level GPU-related security research.
+[04:02:32] That's something this talk covers.
+[04:02:35] When you share a GPU between tenants, you would expect full isolation, but the isolation provided may not prove to be sufficient.
+[04:02:42] In the case of this attack, the attacker doesn't even need any special permissions like root access.
+[04:02:47] It doesn't need any traditional exploit either.
+[04:02:49] The only thing it does is time the parts of the hardware that are still shared among tenants.
+[04:02:56] This is a demonstration video of what the victims and the attacker's dashboards look like.
+[04:03:01] On the left, we have Qwen3 model doing inference.
+[04:03:04] On the right, the attacker uses a side channel that Qwen3 leaks into as it's running.
+[04:03:09] From that, it determines exactly what model it is and what kind of text it's producing right now.
+[04:03:17] These are just the headline claims, but not the whole story.
+[04:03:20] We can tell which model it is, architecture and depth, within 97% accuracy.
+[04:03:25] We can tell how fast is the coding within 99.
+[04:03:28] 3% accuracy.
+[04:03:29] We can tell when and how much, the busy periods, token counts, and the answer length.
+[04:03:35] We can tell what kind of work it's doing: code, JSON, or retrieval.
+[04:03:41] What we cannot tell, though, are the actual prompts, answers, or contents, just timing.
+[04:03:47] And all of this on real H100s serving real LLMs.
+[04:03:51] If you're using NVIDIA hardware, GPU isolation is achieved using multi-instance GPU, or MIG for short.
+[04:03:58] Each isolated MIG slice has its own physical compute units and dedicated VRAM.
+[04:04:04] That provides hardware isolation on those parts.
+[04:04:07] In our example, the LLM we're serving runs on a slice with three compute units and 40 gigabytes of VRAM.
+[04:04:13] The attacker runs on just one compute unit and 10 gigabytes of VRAM.
+[04:04:20] What's isolated are compute units, memory capacity, bandwidth quotas, and false errors.
+[04:04:25] The L2 cache is partitioned per instance too.
+[04:04:28] There is no cross-instance eviction, so it's not shared in that sense.
+[04:04:32] The actual leaks are memory barriers or members, which are GPU-wide.
+[04:04:37] One instance's barrier still touches every L2 partition on the card.
+[04:04:42] Timing is the one thing that isn't isolated.
+[04:04:45] So when one tenant is busy, the other tenants' own reads get slightly slower.
+[04:04:50] The key point is the GPU-wide memory barrier takes effect in every L2 partition on the card.
+[04:04:58] The next slide builds the whole attack on that one fact.
+[04:05:03] The vector is that the attacker only ever reads its own memory.
+[04:05:08] It only times its own reads.
+[04:05:09] It never touches the victim's memory.
+[04:05:10] There are three steps: hold from its own small buffer, time the load, and repeat every five microseconds.
+[04:05:17] This primitive and the MIG member leak itself isn't our discovery.
+[04:05:21] Credit goes to the researchers behind Bars at Using Security.
+[04:05:27] A big thanks for their work.
+[04:05:31] Now try looking at the timing differences.
+[04:05:33] With the naked eye, comparing your tenant's idle versus serving an LLM, you wouldn't even be able to discern them.
+[04:05:40] The median latency is only three microseconds higher.
+[04:05:42] To the attacker, though, those three microseconds are all it needs.
+[04:05:47] That's enough to gather all the information we already talked about.
+[04:05:53] Quantree with 8 billion parameters is running on the victim's slice throughout this one.
+[04:05:58] All captured data was taken from a live model.
+[04:06:00] At the top is GPU activity over time, one burst per token.
+[04:06:05] Below is the frequency spectrum of the attacker's own latency trace.
+[04:06:08] There is a fundamental 881 hertz, which is just tokens per second plus harmonics, since each token is a mix of distinct frequencies, not one clean one.
+[04:06:21] This is a real trace, one token in the time domain.
+[04:06:24] The token shows a total of 39 bumps.
+[04:06:27] The bumps with green peaks are the layer invocations, while orange ones are additional between-layer processing.
+[04:06:34] In the later slides, we will demonstrate how we determined the actual layer counts even when those extra bumps are present.
+[04:06:42] Here we look at the decode speed itself.
+[04:06:45] Just by timing, we found the token rate completely bind.
+[04:06:49] So speed alone is something an attacker can recover accurately.
+[04:06:52] But speed by itself isn't the clean fingerprint.
+[04:06:55] Qwen 3 8 billion and Llama 3 8 billion decode only 1.
+[04:07:00] 6% apart in their token rate.
+[04:07:02] So from speed alone, you'd think they're the same model.
+[04:07:05] It narrows things down, but it doesn't nail it.
+[04:07:08] We need something sharper: layer counts.
+[04:07:11] That's what the next few slides get into.
+[04:07:13] We use the same fold and average trick from before.
+[04:07:18] This time, we run it once per model instead of once per token.
+[04:07:21] What comes out is a bit count that lands almost exactly on a whole number.
+[04:07:27] The mean distance from an integer across 22 traces is just 0.
+[04:07:32] 028.
+[04:07:33] That's the tell.
+[04:07:34] If this were just a fixed hardware artifact divided by different token rates, we'd expect fractions, not whole numbers.
+[04:07:41] Each count works out to the model's layer count plus one to three additional peaks.
+[04:07:50] Every model keeps its own signal fingerprints, a mix of tempo and harmonic structure.
+[04:07:55] To be clear, this is not a trained machine learning classifier.
+[04:07:58] There's no training set, no labels, no configuration.
+[04:08:01] It's under 30 lines of code.
+[04:08:03] The method checks each candidate's depth from 16 to 48.
+[04:08:07] It measures how strongly that depth's expected signature shows up in the real trace.
+[04:08:13] Then it picks whichever fits best.
+[04:08:15] For Qwen 3 8 billion, 36 layers wins clearly by 4.
+[04:08:19] times over the next candidate.
+[04:08:21] Because this is a best-fit test, not a lookup table, it also works for models it never seen before.
+[04:08:27] That includes proprietary or unreleased ones.
+[04:08:30] Since there is nothing it needs to have seen in the first place.
+[04:08:39] And this works surprisingly well.
+[04:08:41] The layer feed classifier also outputs the confidence level.
+[04:08:45] Across our testing, only two least confident answers ended up being wrong ones.
+[04:08:53] This same method also picks up fine-tunes and distillations that share the same base model.
+[04:08:59] That's because the architecture and layer count carry over unchanged.
+[04:09:04] Take three related models as an example.
+[04:09:06] Llama 3 8 billion from Meta has 32 layers.
+[04:09:09] Llama 3.
+[04:09:10] 1 8 billion, also from Meta, uses that same 32-layer backbone with minor upgrades.
+[04:09:16] And R1 is still Llama 8 billion from DeepSeek is an improvement on top of that.
+[04:09:22] The per-layer timing comes out to only 1.
+[04:09:26] 6 nanoseconds median latency shifts of each other.
+[04:09:29] The rest of the signal looks the same.
+[04:09:32] Regardless of this, our classifier is still able to discern between them.
+[04:09:38] Now we ask a deeper question on the same channel: not which model, but what is doing right now.
+[04:09:43] We look at four worklet types: prose, code, JSON, and retrieval.
+[04:09:47] We give a worklet on every half second based on the last five seconds of timing.
+[04:09:52] Out of 40 half-second worklets, 31 were right, and four full responses were correctly identified by majority votes.
+[04:10:02] This sees the same classifier from the video earlier, misses included.
+[04:10:07] One condition is worth stating.
+[04:10:09] This was measured with speculative decoding turned on.
+[04:10:12] That's an opt-in in vLLM, not the default.
+[04:10:15] Here's the mechanism: how predictable the text is changes how many drafted tokens get accepted at each step.
+[04:10:22] That changes step time, and that's the signal we're picking up.
+[04:10:26] We tested 11 configurations, dense and mixture of experts, BF16 and FP8.
+[04:10:31] The same figure page showed up every time, just at very different strengths: 70.
+[04:10:37] 2% spread on GPT-OSS 20 billion versus 0.
+[04:10:40] 9% on GLM 4 9 billion.
+[04:10:43] Then out of 11 run pros fastest when the chance alone would only give you one in four.
+[04:10:49] So say the attacker already knows the model from the earlier slides and speculative decoding happens to be on.
+[04:10:56] It can also tell what kind of text is coming out.
+[04:10:59] Now we take the shared chip out of the picture entirely.
+[04:11:02] MLG needs the attacker on the same physical die.
+[04:11:06] This attack doesn't.
+[04:11:08] The setup here is an 8x H100 server connected over an NVSwitch fabric.
+[04:11:14] The victim runs Tensor Parallel across GPU 0 and 1.
+[04:11:18] The attacker just needs any other GPU in that same server, GPU 2 in this case.
+[04:11:24] Peer access over NVSwitch is a real intended feature.
+[04:11:27] It's how multi-GPU jobs normally work, not a bug being abused.
+[04:11:32] MLG tensor parallelism also can't coexist on the same device.
+[04:11:37] So this is really a different population of deployments, not just the same attack repeated.
+[04:11:45] The probe runs on GPU 2.
+[04:11:47] It points to Chase's memory that actually is on GPU 0 over NVLink, timing every hop along the way.
+[04:11:55] An idle hop takes about 890 nanoseconds.
+[04:11:58] Once the victim starts working, that climbs up to 300 microseconds.
+[04:12:04] These are three half-second captures, and you can actually count the tokens by eye.
+[04:12:11] What we lose compared to MIG is the layer bits.
+[04:12:15] It's below the noise at this distance.
+[04:12:18] So over NVLink, the fingerprints we were left with is mostly tempo, not layer counts.
+[04:12:25] Here, we test the five models on identical serving setup.
+[04:12:30] Only the model itself gives away which one it is.
+[04:12:34] This method gives 79.
+[04:12:36] 2% accuracy.
+[04:12:37] Now, it fails exactly where you'd expect the tempo to fail.
+[04:12:41] Llama 3.
+[04:12:42] 8 billion and R1 Distill are both 8 billion models that decode three cards apart, so they blur together, where MIG's layer counts would have separated them easily.
+[04:12:53] The takeaway is that the NVLink signal-to-noise ratio is worse than MIG's, since it loses the layer bits.
+[04:13:00] But worse signal-to-noise ratio isn't the same as safety.
+[04:13:04] 79% against a 20% baseline is still real fingerprints, not noise.
+[04:13:10] First, some good news.
+[04:13:11] Our own product at work called the attack straight out of the box.
+[04:13:16] Celty monitors every single kernel launch across every GPU, analyzes suspicious workloads, and runs them through a full alert pipeline, which is something not every vendor can do.
+[04:13:26] Here is what made this one stand out: a single kernel relaunched about 3,000 times, hitting the exact same 40 kilobytes of memory over and over instead of moving to new data.
+[04:13:38] Only one kilobyte of data was sent back to the CPU the entire time because the timing itself was the payload, not the output.
+[04:13:46] In real terms, that is under six milliseconds start to finish with fewer than 50 tokens of reply.
+[04:13:53] We caught it before the response was ever half typed.
+[04:14:00] So, three takeaways.
+[04:14:01] First, placement is something operators actually control, so do not put an untrusted tenant's MIG slides right next to sensitive model.
+[04:14:12] Second, know the trade-off.
+[04:14:13] MIG rules out peer-to-peer communication, meaning there is no tensor parallelism on MIG.
+[04:14:19] Sharding over NVLink instead limits what leaks to timing alone rather than layer counts.
+[04:14:26] Third, watch the GPU itself.
+[04:14:29] Make sure the host infrastructure is actively verifying that no malicious workloads are running on the hardware.
+[04:14:37] That's exactly what Celtium does by catching these probes straight from the Chrome behavior.
+[04:14:44] Sharing a GPU means timing alone can give away the model, the speed, and the workload.
+[04:14:49] That's true even across NVLink without needing any exploit at all.
+[04:14:54] Celtium sees this happen in real time.
+[04:14:56] Most organizations still don't have that kind of visibility.
+[04:15:00] Thanks again to the researchers of Behind Bars.
+[04:15:03] This whole talk builds upon their work.
+[04:15:05] Thank you all for watching.
+[04:15:31] People have been saying that SaaS is dead for a while now.
+[04:15:33] It's not even a hot take at this point.
+[04:15:35] Why pay someone to build and maintain the tools you use when you could just do it yourself?
+[04:15:40] Just ask your agent to do it.
+[04:15:43] And for me, there's one missing piece that rarely gets mentioned, and it's the fact that there's a gap, a big gap, between working software that got one-shotted and software I would actually use, software that sparks joy, that is polished, that feels good.
+[04:15:57] And I actually went on a journey to replace a bunch of SaaS providers we were using internally at Railway for marketing purposes, and I just built an all-in-one tool that we use.
+[04:16:06] The tool allows us to manage content for the Railway website, changelog, blog.
+[04:16:10] We can use it to send emails, post on all of our social platforms at the same time, manage the website's media.
+[04:16:16] There's even a mini CRM so that when we're working with, like, external creators, we can keep track of that.
+[04:16:22] There is task tracking, launch planning, because, you know, you want to coordinate multiple things and when they'll go out.
+[04:16:28] There's a calendar, and at the same time, there's, like, comments, real-time editing, and it's all built using agents.
+[04:16:35] I would say I felt the breakthrough when GPT-6 came out, and all of this is running on Railway.
+[04:16:43] Everything just auto-deploys, and let me essentially now walk you through the principles I use to actually make sure that when I want to add a feature, it's, you know, actually polished and matches the rest of the app, and at the same time, the principles that you can pull from and apply when building tools of your own.
+[04:17:03] So instead of doing my talk from my boring office, I decided to switch things up and do it outside.
+[04:17:08] It is absolutely beautiful.
+[04:17:10] Right now I'm in Edinburgh, Scotland, and it's just unreal.
+[04:17:14] Like, I'm on a bench outside, and this is my view.
+[04:17:18] Definitely a 10 out of 10 bench.
+[04:17:21] Now, this type of talk for me feels a little bit different than what I'm used to because I essentially will walk you through the journey of me building our own internal tools and the opinions I've developed.
+[04:17:34] But I also understand that the landscape changes very, very quickly.
+[04:17:39] So, like, anything I say might change completely in, like, the span of months.
+[04:17:44] Who knows?
+[04:17:45] So I don't know.
+[04:17:47] Consider this my disclaimer.
+[04:17:49] Like, but the time of recording is fall 2026.
+[04:17:53] It's October, and yeah.
+[04:17:55] So anyway, with that out of the way, let's talk about the first point, which is tech stacks don't matter.
+[04:18:02] Now, a lot of people say that it doesn't matter what programming language you use, what framework you use.
+[04:18:08] You can just ask your agent to build you anything and they'll just be able to do it.
+[04:18:12] And while I agree to some extent, what I found is when you're building a tool that you will actually use, when you give the agent a proper codebase with solid abstractions, what ends up happening is whenever you're working, let's say, on a new feature, you end up with a much more consistent result that is similar to what you've already built before.
+[04:18:34] And the reason is, like, it's very simple.
+[04:18:37] The agent doesn't need to reinvent the same, like, wheel every time it tries to add a new feature, or it doesn't need to introduce new patterns.
+[04:18:46] It will just essentially follow existing patterns.
+[04:18:48] And when it comes to, like, what you choose, I feel like it kind of doesn't really matter as long as you have a codebase that is properly structured.
+[04:18:58] But, like, my go-to choice today is, one, TanStack libraries for anything when building on the web.
+[04:19:04] And if you're building anything content-related, I would say definitely go with Payload.
+[04:19:10] Solid experience, great abstraction.
+[04:19:11] I went down, like, a big rabbit hole of, like, comparing CMSs at some point because I don't believe that I should build it from scratch, even though I can.
+[04:19:20] But again, who knows?
+[04:19:22] Maybe the future will change.
+[04:19:24] But yeah, and that's kind of like the main first item that I kind of ran into.
+[04:19:31] When you use, like, a lot of SaaS products out there that you actually love, that you use every day, when you're a user, there's, like, a lot of things you don't notice.
+[04:19:43] But when you actually try to, like, replicate an experience, you quickly find out how much care and thought goes into different flows.
+[04:19:51] So, like, something as simple as, oh, I want to be able to send an email or to publish something.
+[04:19:59] You can easily do it.
+[04:20:02] We do it by having like a good old, you know, just like server-side rendered app with like forms that you submit.
+[04:20:09] But if you try to build something that is going to be used every day that you will reach for a lot, you're like, oh, it shouldn't feel that way.
+[04:20:18] And there are kind of like a bunch of patterns that I found that agents don't typically do unless you explicitly ask them to.
+[04:20:26] And this is my list.
+[04:20:28] So we'll go through them one by one.
+[04:20:30] And the first one is like auto-save.
+[04:20:32] I found that if, like, let's say I'm building some form of document editor, auto-save is kind of like a table stakes feature.
+[04:20:40] So rather than manually clicking save to save things, you just ask it to automatically save progress in the background and to make sure that it's like a non-blocking action so that you can, let's say, as you're typing, you're able to type and then it just automatically saves.
+[04:21:00] And one other kind of like step further that you could do is to also prevent the browser tab from closing if there are unsaved changes.
+[04:21:10] So it's kind of like these two layers that kind of guarantee that whatever it is that you're working on is just not going to be lost.
+[04:21:18] Now, you can also go a step further and to add like real-time collaboration so that you can have like concurrent edits.
+[04:21:26] And again, my agent didn't struggle at all with adding the feature.
+[04:21:30] It was like, I don't know, asking about it, reviewing how it would work, and then once that's done, just 700 million tokens later and I had real-time.
+[04:21:41] So I would say in general, this is the first thing that I find agents just don't do well from a product experience perspective.
+[04:21:49] Another pattern I found that agents completely forget to implement is optimistic updates.
+[04:21:54] So rather than showing your users a bunch of loading spinner whenever they're taking any action, you essentially show them the success state optimistically, and in the background you're going to sync whatever change they made.
+[04:22:06] Now, if the sync or the operation fails for whatever reason, you just roll it back and then tell them like, oh, the operation didn't work.
+[04:22:14] Now, of course, you shouldn't blindly have optimistic updates for everything.
+[04:22:18] There are some scenarios where you want to show the user a loading spinner and you're going to wait to check that everything worked properly.
+[04:22:26] But in general, Having optimistic updates makes the overall experience feel significantly faster, much snappier, and it will just feel much more instant.
+[04:22:36] So pretty sure you can just ask your agent, like, Hey, I would like to implement optimistic updates where it makes sense.
+[04:22:43] Let's come up with a plan, and it will tell you all the areas where it makes sense to do.
+[04:22:46] Again, it's like, it's not difficult for the agent to build it.
+[04:22:49] You just need to ask and know exactly what to ask for.
+[04:22:53] Now, an extension of optimistic updates, in my opinion, is giving users the ability to undo certain actions.
+[04:22:59] Now, for example, if you ask your agent to implement the ability to delete records, what it will typically do is it will give you a delete button.
+[04:23:08] You click it, might show a confirmation dialog, you hit confirm, and then it will actually do the deletion.
+[04:23:14] But a much nicer experience is actually allowing the user to undo that action.
+[04:23:19] So they hit delete, you immediately remove the item they want to delete from the UI, but you tell them, like, Hey.
+[04:23:25] You have like a couple of seconds where you could change your mind.
+[04:23:29] And if they don't do anything, that means you actually want to delete the thing, then you actually implement the operation.
+[04:23:37] Otherwise, if they hit undo, you just bring back the change.
+[04:23:40] So it's kind of like you do the operation in the background as well.
+[04:23:44] It's just kind of a delayed action, which kind of ties into the next point, which is archiving.
+[04:23:50] You should tell your agent you want the ability to archive records and be able to unarchive them, because sometimes you want to hide something from the UI completely or, let's say, from search results, and archiving will be the way to do it.
+[04:24:04] And you shouldn't force your user to be like, well, if you don't want to see this, you have to delete it.
+[04:24:09] Any much better experience is just the ability to archive records.
+[04:24:12] So I think it is a pattern that should definitely exist.
+[04:24:17] Another big one for me is URL state.
+[04:24:18] You should ask your agent to persist state in the URL whenever it makes sense, of course.
+[04:24:22] And it's so useful because whenever you have, let's say, a list of records and you want the ability to filter or sort them, and you just have a bunch of like conditions, maintaining these things in the URL makes it trivial for you to give them to someone else.
+[04:24:38] And then, let's say, another team member is just going to be able to see exactly what you want them to see.
+[04:24:43] Now, another small detail that agents don't implement out of the box is infinite scroll.
+[04:24:47] I don't want to be clicking on load more over and over and over, or like a next page button.
+[04:24:53] As I scroll, I should just get the data.
+[04:24:55] I shouldn't need to click next page, and then in the end, I'll just see that, oh, I've reached the end.
+[04:25:00] It's a very minor thing, but also when you use something every day, I think it makes a huge difference.
+[04:25:06] Now, another pattern I found that made the output significantly better is telling the agent explicitly to use existing pages as references when it comes to the UI, the data fetching and how it works, and how the thing is overall structured.
+[04:25:21] And that made it possible for me to essentially define what good looks like once.
+[04:25:26] And then just reuse it for more features.
+[04:25:30] Now, to be completely honest, sometimes even when you tell the agent like, hey, use page X as a reference, sometimes it just doesn't follow it.
+[04:25:39] I don't know if models, like, get dumber sometimes, but sometimes it does happen.
+[04:25:43] But overall, I would say that my success rate is higher whenever I tell the agent to, like, well, use an existing page as a reference, because you also just end up with a more consistent experience.
+[04:25:54] So, like, as you're using your app, you're like, oh, this just matches the other part of the app if they both share, like, the same concept.
+[04:26:02] So, like, if two parts of the app are essentially lists of records that you can create, update, and delete and, like, list, well, both of these parts should be pretty much identical.
+[04:26:15] This list kind of brings me to my next point, which is whenever we have opinions about something, they should be packaged as agent skills.
+[04:26:20] And then this way, your agent, whenever it's building something, it will actually follow those skills pretty closely.
+[04:26:27] And as I was building all of our internal tooling, I found myself reaching for three agent skills.
+[04:26:32] Two of them are related to design engineering.
+[04:26:34] So one made it easier to have better UI, better typography, better layouts, as well as, like, better error messages in general.
+[04:26:43] And the second one was a set of design engineering skills that made it easier to just have better animations and other things like that.
+[04:26:49] And then last but not least is the Railway agent skills, of course.
+[04:26:53] So, like, everything that I built for us internally at Railway runs on Railway, of course.
+[04:26:59] Like, everything.
+[04:27:00] So, like, buckets, databases, the app itself, the real-time server, everything.
+[04:27:05] And for the agent to effectively work with Railway and be able to deploy everything, you just give it the Railway agent skills, and it was just able to do it.
+[04:27:14] And yeah, so, like, once you have all of your agent skills and everything, in my opinion, the final step, and I think this is the most important step, is verification.
+[04:27:25] So the agents typically, whenever you ask it to build something, it's going to be like, okay, I implemented the feature, build passed, test passed, all good, right?
+[04:27:33] But what I found is when you actually try out what happens, you sometimes end up with just like a very broken experience.
+[04:27:41] So once you have like a verification loop in place, it's like a night and day difference because the agent, you can literally see it be like, okay, I built this thing, I tried it, it failed, I'm going to fix it, and it just keeps going.
+[04:27:55] And then in the end it's like, okay, I fully tested it.
+[04:27:57] And I felt this breakthrough with computer use once it got really, really good.
+[04:28:02] And now every time I want to add a new feature, I literally just in the end say, well, you should verify that the feature works end to end and use it by actually running infrastructure end to test things end to end.
+[04:28:17] And the agents are very capable of doing this.
+[04:28:19] You just have to tell them.
+[04:28:21] And once you have all of those pieces, I would say you will end up with solid internal tools that you can build quickly, that work properly and work in a consistent way.
+[04:28:31] And that's it.
+[04:28:32] This was my list of principles that I use whenever I'm building any internal tools.
+[04:28:35] Hope you found them useful.
+[04:28:36] But more importantly, that you're inspired to build your own internal tools that feel good, that are polished, and spark joy.
+[04:28:45] And I hope that you too can become your company's SaaS layer.
+[04:28:49] And with that, thank you so much for watching, and I'll see you in the next one.
+[04:28:57] So I really love this article from Hannes at DuckDB, where he asks if we lost a decade chasing distributed architectures that presumed compute and storage were slow and expensive.
+[04:29:31] Capability in every era, though, defines architecture and tooling, and the tooling lags behind consistently.
+[04:29:37] We first made compute cheaper than storage, and then we gave it to everybody, and then we made it faster.
+[04:29:43] And every single time, architectures undergo this massive change.
+[04:29:47] All of our data infrastructure today is built on the idea that transformation is expensive.
+[04:29:53] What if that wasn't true anymore?
+[04:29:56] I believe we've solved the final bottleneck in transformation.
+[04:30:00] General intelligence or judgment.
+[04:30:02] And we've made it accessible on tap all along the Pareto frontier, which puts us right on the verge of a paradigm shift.
+[04:30:10] So in this talk, we're going to cover why single ontologies always fail, the three roles models play in pipelines, intersecting model priors for better results, and Pareto surfing, how today's models can tune a workload for cost, speed, and accuracy all at the same time.
+[04:30:28] Here's a quick example.
+[04:30:29] When Jeff launched, we already had an entity resolution pipeline running, working out Ohio's campaign finance records and whether they belong to the same person, company, or committee.
+[04:30:40] It was projected to cost about $10,000.
+[04:30:43] Our systems took that new model, worked out where it fit, tested over a dozen approaches, and integrated it.
+[04:30:50] Ten days after that first call, we had final ground truth for every donor case in Ohio under $800.
+[04:30:57] That is the power of Pareto surfing and just-in-time transformations.
+[04:31:02] So let's get into it.
+[04:31:06] Ontologies are the enterprise version of mind maps.
+[04:31:11] It's this tarpit that sucks us all in, including me.
+[04:31:15] I talked about a single universal schema when I founded Southbridge two years ago.
+[04:31:20] The popular conception, and it's not wrong, it's just a small part of the picture, is that migrations in ontologies fail because of a lack of buy-in and there are abandoned halfway through, that organizations and people never switch over.
+[04:31:34] All of that is true, 100%.
+[04:31:36] But buy-in isn't the primary reason.
+[04:31:39] Say if you could integrate and migrate all of your information into a single superschema in the blink of an eye.
+[04:31:46] You still have to contend with the truth that there is no super schema.
+[04:31:50] There actually are four schemas.
+[04:31:53] The first one belongs to the source, wherever the information comes from.
+[04:31:57] Let's take temperature as an example.
+[04:31:59] Say I ask you to write down the temperature.
+[04:32:02] The source schema is whatever you have access to.
+[04:32:05] Your phone gives you your region's temperature, sensor on your desk, which is less accurate but is more local, or your watch.
+[04:32:11] But even your patience in following through on my request is part of that source schema.
+[04:32:16] The second one is the storage schema.
+[04:32:19] There's only so much you can write down.
+[04:32:22] You can't write down the firmware of the device you're using.
+[04:32:25] You can't even write the time down to the second because you couldn't finish writing all of that inside of a second.
+[04:32:31] This is the schema imposed on you by storage.
+[04:32:34] The third one belongs to the decision.
+[04:32:36] Why do I need you to write the temperature down?
+[04:32:40] Maybe I'm figuring out what makes you comfortable, in which case I need temperatures from you spread throughout the day, and I need to make sure that it's you that's doing the measurement.
+[04:32:48] Maybe I'm building weather migration maps, in which case I don't care who does the measuring, but I care a lot about your exact location, the time, the device you used, and whether that's changed.
+[04:32:59] Or maybe I'm deciding whether to install sensitive equipment and where, and you yourself become this variable that I need to cancel out.
+[04:33:08] There's a fourth one, though, which we'll get to when we talk about priors.
+[04:33:12] It's this recent addition.
+[04:33:13] The true problem is that you will never know all four schemas at the same time except at the moment that the decision is being made.
+[04:33:21] In almost every enterprise and every home, most of the data being recorded has little idea what it's going to be used for.
+[04:33:29] Take a customer, the first box in every ontology.
+[04:33:32] To billing, a customer is whoever pays.
+[04:33:35] To support, it's whoever calls.
+[04:33:37] To compliance, it's whoever we're on the hook for.
+[04:33:40] And the only time you know is when the decision is known.
+[04:33:43] Should we refund this order?
+[04:33:45] Can we extend this account more credit?
+[04:33:47] Suddenly, what you need to know, how and to what degree, becomes extremely clear.
+[04:33:52] This is why I was wrong.
+[04:33:55] There is no universal schema.
+[04:33:57] There is no concept of a customer that's divorced from the question that you want to answer.

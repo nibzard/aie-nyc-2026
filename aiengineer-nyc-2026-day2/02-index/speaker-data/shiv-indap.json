@@ -1,0 +1,18 @@
+{
+ "slug": "shiv-indap",
+ "name": "Shiv Indap",
+ "role": "Senior Engineering Manager",
+ "company": "Upstart",
+ "bio": "",
+ "linkedin": "",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F48KlBbJRx6HmLEN2ld1k_headshot-1789787057235.jpg",
+ "sessions": [
+  {
+   "title": "From Human Review to Self-Healing Agents: How Upstart Evaluates Voice AI at Regulated-Lending Scale",
+   "time": "10:40am - 10:58am",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ]
+}

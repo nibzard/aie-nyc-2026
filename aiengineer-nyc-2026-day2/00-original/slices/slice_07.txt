@@ -1,0 +1,339 @@
+# transcript slice 07
+window: t=12740..14560 (03:32:20..04:02:40 video time; 12:12:56 PM..12:43:16 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[03:31:23] And the same term can mean different things when you're negotiating very quickly.
+[03:31:26] If someone's talking about memory, are we talking about, you know, VRAM?
+[03:31:30] Are we talking about the CPU memory?
+[03:31:32] Are we talking about additional storage here?
+[03:31:34] Like, what did you exactly mean there?
+[03:31:35] It affects quite a bit what type of loads can be run and, you know, the actual end user's needs, and also with pricing and delivery dates.
+[03:31:45] So there's a lot of back and forth before anyone can really compare, and this is where the concept of, like, non-fungibility kind of comes into place and how to partition that out.
+[03:31:51] What parts can be fungible?
+[03:31:53] What parts hold the most of the weight, such as the SKU, et cetera, and what parts are still, like, traded as if it was a product, e-commerce, et cetera, where, you know, it's only for that particular cluster that this price applies.
+[03:32:06] And so prices can update daily or faster.
+[03:32:08] Quotes still a good starting point.
+[03:32:09] Bids can get chopped.
+[03:32:10] Creditworthiness changes what's on offer.
+[03:32:12] There's all these kind of latent factors, hidden factors as well, why we're calling it a dark market.
+[03:32:17] These are some public H100 references Snap charted today.
+[03:32:20] I updated them, so take a look at those.
+[03:32:23] Those are the references for if you wanted to go on their websites to see.
+[03:32:27] This is just an example here of, like, what a public on-demand or spot pricing looks like for an H100 today.
+[03:32:35] You can see kind of various prices here.
+[03:32:38] And so people might use this, or they might use their own kind of internal, what they've seen, to actually, like, assume or use it to charge what they want to charge on their actual cluster specification, taking into account every other kind of factor that goes into it.
+[03:32:54] And so why are these new structures kind of needed, and what are these microstructures interesting?
+[03:32:58] It's mainly to solve for these mismatches, right?
+[03:33:00] Bridging capacity, more flexible commitments, resale rights, and protection against price moves.
+[03:33:05] You know, you're selling a fixed price service from an inference cloud point of view.
+[03:33:09] You'd be selling a fixed price service while the GPU bill floats, and that creates price exposure.
+[03:33:14] And so locking capacity for years can solve a part of that, but it'll create idle hour exposure elsewhere as well, unless you're always using it.
+[03:33:22] Reselling spare capacity only helps if someone actually can buy the hours.
+[03:33:25] A financial hedge can address a reference price, but it can't deliver the cluster right now in terms of cash settlement or guarantee a utilization.
+[03:33:33] So the useful structure has to start with the particular risk that the business has and needs to manage.
+[03:33:41] And I'll go pretty fast on this policy section because we're running out of time.
+[03:33:47] Everything that Afan has said sits inside of a structure that is Regulated and is affected by policy in various ways.
+[03:33:59] One way is export controls, one of the examples.
+[03:34:03] In January, the U.
+[03:34:04] S.
+[03:34:04] Commerce Department moved qualifying H-200 class license reviews for China and Macau to case-by-case review with conditions.
+[03:34:13] Furthermore, open-weight models connect policy back to the U.
+[03:34:17] S.
+[03:34:17] economics we started with.
+[03:34:19] The U.
+[03:34:20] S.
+[03:34:20] AI Action Plan explicitly encourages open-source and open-weight AI and recommends improving the financial market for compute so that startups and academics can access large-scale computing power.
+[03:34:34] So I'm going to tie this out right here.
+[03:34:37] But where does this opportunity lie?
+[03:34:38] We have this growing middle market.
+[03:34:40] We need balance sheets that can bridge buyer and supplier needs.
+[03:34:42] There needs to be some level of standardization, a standard capacity contract, common specs, common terms, and definitions.
+[03:34:49] And so growing companies with needs and commitment do not fit the contracts that hyperscalers and frontier labs can sign.
+[03:34:54] Those companies have real workloads.
+[03:34:56] We want them to grow.
+[03:34:57] They still face this financing problem, a timing problem, a specification problem.
+[03:35:01] A supplier might want the long-term commitment for the buildout, while the buyer wants to expand in smaller blocks as demand becomes clearer as it's so volatile, front of curve.
+[03:35:08] The buyer needs a way to avoid paying for capacity it can't use yet, and so participants with strong balance sheets that are uncorrelated with the market and the ability to assess those risks with a strong credit profile can help bridge the gap between what buyers need and what suppliers offer.
+[03:35:22] That requires more than quoting the actual GPU hour.
+[03:35:24] It means understanding the delivery, workload, all of that.
+[03:35:27] And so there's very few kind of players in the market, and, you know, a very well-suited player can be a firm that's uncorrelated with the market, with strong balance sheets, strong credit rating, and incredible amounts of hardware talent that sits inside for high-performance computing.
+[03:35:41] And so just making a CTA here, let's build this together.
+[03:35:44] Thank you guys so much for attending our talk.
+[03:39:47] Happy Thursday.
+[03:39:48] I like how full this room is.
+[03:39:52] It's Wednesday.
+[03:39:53] It's Wednesday?
+[03:39:54] Oh, sorry, I'm clearly ahead of everybody here.
+[03:39:59] Happy Wednesday.
+[03:40:00] My name is
+[03:40:00] My name is Carmen Li.
+[03:40:02] I'm the CEO for Compute Exchange as well as Silicon Data.
+[03:40:06] I love the, you know, the previous session.
+[03:40:09] We talked a lot about the whole ecosystem, the financials and the spot market traders and the hedgers.
+[03:40:17] So what we're sitting in is really cool.
+[03:40:19] Our company, Compute Exchange, the world's actually the only neutral marketplaces for GPU procurement.
+[03:40:27] We started in 2024 when there were, I don't know, five neoclouds, three hyperscalers.
+[03:40:34] Essentially, we sort of foresee, interestingly enough, the proliferation of the GPU ecosystem.
+[03:40:41] So you think about stock market today, right?
+[03:40:45] When you try to buy and sell stocks, you can call brokers.
+[03:40:48] Obviously, you can call a few banks to say, Hey, I want to buy and sell X amount of Tesla or X SpaceX, right?
+[03:40:56] And you can do that, or you can transact through your app at NYSE or Nasdaq.
+[03:41:02] Doesn't mean you get the best price at NYSE or Nasdaq just because it's more efficient.
+[03:41:07] And you know the liquidity will be there.
+[03:41:09] You know the trade will be settled, it will be cleared.
+[03:41:11] You can get what you're looking for at the prices you're looking for in a very efficient manner, right?
+[03:41:17] For capital markets and resource allocation, it's about efficiency.
+[03:41:22] So in compute world, obviously now we have a huge proliferation, which is great.
+[03:41:27] We have over 300 neocloud providers globally.
+[03:41:30] We have a lot of token factories.
+[03:41:32] We have a lot of API routers, which is all good for end customers.
+[03:41:38] But at the same time, introduce a very interesting variable is how do we make transaction efficient, right?
+[03:41:45] Do you want to call 300 salespeople?
+[03:41:47] I mean, it's great to make friends, right?
+[03:41:49] You want to talk to them on a regular basis.
+[03:41:51] They know a lot of things.
+[03:41:52] But at the same time, when you need compute in the next 48 hours on reserved contracts, the easiest way is go to an exchange and then go to the verified compute resources, just like go to Nasdaq, NYSE to buy stocks, right?
+[03:42:06] So it's one of the things compute does extremely well is we have this neutral platform.
+[03:42:13] And by design, we do not own GPUs.
+[03:42:17] Once we start owning GPUs, that would translate to, just like Nasdaq owning stocks, translate to I have a conflict of interest with you and with the providers.
+[03:42:26] I could cherry-pick clients, right?
+[03:42:29] I could hold relationships, because Compute Exchange does not own anything by design.
+[03:42:34] We work really well with our providers globally.
+[03:42:39] And one very important thing is, we treat every single transaction individually, meaning we want to find you as a customer the most suited compute resources.
+[03:42:52] And we focus on reserved compute, forward contracts, as well as token packages.
+[03:42:58] So give you some high level.
+[03:43:04] So today, we have over 100 verified providers and over 80,000 GPU in supply.
+[03:43:12] We cover all regions, obviously ex-China.
+[03:43:17] Our commitment is 24-hour turnaround.
+[03:43:20] The difference between us and other so-called brokers is we do verify GPUs.
+[03:43:26] If it's existing reserved capacity, meaning things are actually in a functional stage, we'll verify the UIDs, the inventories, the performances.
+[03:43:36] We run the NVIDIA DGX, Inferentia, MLPerf, make sure you get resources you're promised to get.
+[03:43:44] So we're the middle sort of trusted platform.
+[03:43:47] So if it's forward capacity, let's say you need GPUs starting Jan 1st, 2027, we actually look through the purchase orders, all the permits they get, make sure, you know, we help you do the due diligence level.
+[03:44:01] And on the flip side, right, if you're a new cloud, your concern is there's a zillion clients looking for compute.
+[03:44:07] How do you know who has the ability to pay at a scheduled rate?
+[03:44:12] That's where Compute Exchange comes in.
+[03:44:13] We do KYB, KYC of the clients.
+[03:44:16] Obviously, you want to make sure your client is the client you think they who they are.
+[03:44:21] So we step in and do that kind of verification, just like any exchange would do.
+[03:44:25] And everything we do in the forward markets is actually the precursor to physically delivered futures.
+[03:44:32] I'll also give you some context who I am, what I do.
+[03:44:35] Sorry, I probably should say that.
+[03:44:36] I started my career as energy option market maker at DRW Trading in Chicago.
+[03:44:42] So I did that for four or five years.
+[03:44:43] So as an energy market maker, everything is very intuitive.
+[03:44:47] You have double TI, you have Brent, right?
+[03:44:50] WTI is a physically delivered commodity contracts.
+[03:44:53] Brent is cash settled.
+[03:44:55] They also have very distinct use cases.
+[03:44:58] If you're looking for hedging in the financial sense, right, your price volatility, your cost volatility, you go to Brent.
+[03:45:06] You're looking physically procure resources, use WTI.
+[03:45:10] So we're creating the WTI at Compute Exchange.
+[03:45:17] So the ways to buy compute through Compute Exchange right now, you can get reserve contracts, you can get forward contracts on both GPU and token.
+[03:45:26] Let me explain.
+[03:45:27] The forward contracts on GPU is very reasonable, right?
+[03:45:30] You want something starting in the future, nothing available right now.
+[03:45:34] So that's something we're doing on a regular basis.
+[03:45:36] Token forward, I think, can be a newer-ish concept.
+[03:45:40] Basically, you can think about as a dedicated deployment, on-premise deployment, right?
+[03:45:46] Similarly, you reserve a bare metal GPU clusters, you reserve a cluster, but you have dedicated token deployment on top of that.
+[03:45:54] So you get guaranteed SLAs, some of that particular models.
+[03:45:59] You get quantization, precision, everything is fixed for you for a period of time.
+[03:46:04] So we try to solve the on-demand token API volatility pricing problem here.
+[03:46:12] The third is we have a huge market, open hardware market.
+[03:46:15] It's really interesting.
+[03:46:16] The secondary server transactions started last year when people just pinging me, say, Hey Carmen, I have like 20,000 H100 sitting x data center.
+[03:46:27] Can you take it away from me?
+[03:46:29] So I was like, I don't know.
+[03:46:30] I can't store in my home, obviously.
+[03:46:32] So we started having the marketplace for secondary server sales.
+[03:46:36] This has been a very vibrant market for the past, I would say, 12 months.
+[03:46:41] We cover, again, all servers, even V200.
+[03:46:45] You see secondary transaction is happening, sometimes trading above MSRP, right?
+[03:46:51] Can't make sense.
+[03:46:52] Think about like COVID times when secondary cars trading above, right?
+[03:46:55] It's a brand new car price.
+[03:46:58] So we cover the three major layers of compute.
+[03:47:04] So reserved GPU, obviously, I think the previous speaker covered extremely well.
+[03:47:09] What's the terms?
+[03:47:10] The minimum we do is one node starting at one month, and then we can go all the way to three, four, five years, right?
+[03:47:17] It all depends on the availability, the providers, but you get a chance to state your preferences.
+[03:47:24] We don't do on-demand.
+[03:47:27] And another thing really works really well for compute exchanges, we do provide flexibility.
+[03:47:33] Let's say if you overcommit in terms of quantity or duration, you can sell it back to Compute Exchange, right?
+[03:47:39] So that's something we commit to do, so you don't have to worry too much if you overbought.
+[03:47:44] All right, segment live.
+[03:47:49] So I will actually do a quick demo later.
+[03:47:52] So we have a lot of listings, marketplace listings.
+[03:47:54] You can browse and chat with the providers and figure out the best delivery mechanisms.
+[03:47:59] You can also RFQ.
+[03:48:01] If you don't see anything you liked, we actually seeing over a billion RFQs every month.
+[03:48:08] Sounds big, but we all know full compute is not that huge, right?
+[03:48:12] But still, you see the activities, which I love, is we see a big range of RFQ requests, from one node all the way to 20,000 nodes.
+[03:48:24] So our clients are, you know, all different shapes and forms, different use cases, which is great.
+[03:48:30] Yeah, so you set timing, submit, and we route it.
+[03:48:34] So behind the scene, we have inventory tracking.
+[03:48:39] So with over 100 providers globally, we know who has what, roughly when, right, the forward capacity.
+[03:48:44] And then let's say you submit a request saying that, hey, I need 3,300 GPUs, B200, US East, starting Jan 1st.
+[03:48:53] We say, you know, we have three providers.
+[03:48:55] We think they have those.
+[03:48:56] We'll route it to the three.
+[03:48:58] They will respond to you through the platforms, and give you a rubric spec: pricing, specs, SLAs.
+[03:49:05] We benchmark them if it's existing servers, and then it's your choice, right?
+[03:49:10] Price is not the only indicator.
+[03:49:12] We believe give you as much transparency as we can, and then you will make a decision.
+[03:49:19] So everything in one place.
+[03:49:20] Again, it's rubrics pinging back.
+[03:49:22] You will see everything, and we introduce you to each other.
+[03:49:25] We never hold relationships, right?
+[03:49:27] We'll make sure you know who you're dealing with.
+[03:49:30] So buy tomorrow's compute, today's price.
+[03:49:32] So it's a physically procured platform.
+[03:49:37] This is the used refurbished GPUs.
+[03:49:41] So again, we have extremely exciting ecosystem participants in this secondary GPU sales.
+[03:49:49] We cover from full NIOs to B200, AMD, everything.
+[03:49:57] Evenjoy is.
+[03:49:58] Humanity is live, and we do connect with you through all different channels, Slack, email, chat, however you want to do this.
+[03:50:06] We track end to end.
+[03:50:08] We actually have a score in for everybody.
+[03:50:11] We score you, our customers.
+[03:50:13] We score our providers.
+[03:50:15] You can't see it quite yet, but, you know, it will be really fun.
+[03:50:18] We're gonna have end of year celebration for our providers.
+[03:50:22] We're gonna give out the best provider in APAC, best provider in Europe, best provider in US, most responsive providers.
+[03:50:28] So we're gonna have a lot of provider awards coming up.
+[03:50:32] Stay tuned.
+[03:50:33] Verify network.
+[03:50:34] So everything is, you know, verified, which is negotiates the exchange.
+[03:50:42] So we help in terms of be the middleman.
+[03:50:45] Sometimes things are not very clear.
+[03:50:47] We try to make sure people understand what's the best practices we have seen in the ecosystem.
+[03:50:55] I'm gonna quickly show you guys the platform.
+[03:50:59] I think that's more fun.
+[03:51:05] Here.
+[03:51:10] So this is the platform.
+[03:51:12] You can see a bunch of available inventories.
+[03:51:14] By the way, anyone can sign up.
+[03:51:15] It's completely free.
+[03:51:16] There's no downside using us.
+[03:51:18] You don't have to buy.
+[03:51:19] You can browse.
+[03:51:20] You can request for quote if you're interested in something we don't have.
+[03:51:25] You can start with your vendor type.
+[03:51:27] Again, we're agnostic of GPUs.
+[03:51:29] You can select your model.
+[03:51:30] You can select your deployment type.
+[03:51:33] You can select number of GPUs.
+[03:51:35] You can select your compute interconnect preferences, CPU platforms, storages, everything you need, and then some optional items with system software stacks, regions.
+[03:51:46] Obviously, we encourage you to select multiple regions if you're open to that.
+[03:51:50] You can add head nodes, tell us your use cases, anything you want, and then submit RFQ.
+[03:51:57] So these have been extremely robust, and we, you know, obviously we want to make sure if you have any feedback, let us know.
+[03:52:05] So I'm going to pause on Compute Change side.
+[03:52:09] I think I have some time left, which I'd love to show you some of the numbers we see in terms of term structure.
+[03:52:17] Also, context: I'm CEO for Compute Change.
+[03:52:20] I'm also CEO for another company called Silicon Data.
+[03:52:23] So I'm founder CEO for Silicon Data, which is the Bloomberg for compute.
+[03:52:28] So we provide indices for CME to settle their futures on, which will be happening in a few weeks.
+[03:52:35] I'm very excited about this.
+[03:52:37] So the ones going to start trading at CME will be the H100 Neo Cloud on-demand rate, as well as B200 prices.
+[03:52:48] What I want to show you is implied forward curve.
+[03:52:51] So as I said, Compute Change, we do a lot of forward capacities.
+[03:52:55] So essentially, a lot of longer-term contracts is going to be very critical.
+[03:52:59] You think about even in your cloud or your consumers.
+[03:53:03] Let me just make it larger.
+[03:53:06] So the yellow line was last year, right?
+[03:53:09] The x horizontal line is the duration, and the dollar amount is the Y-axis.
+[03:53:16] So last year was complete downward-sloping curve from the yellow line, right?
+[03:53:20] Meaning the longer-term contract you signed, the cheaper it was per GPU power.
+[03:53:26] And this year, starting early this year, the whole curve shifted up and became contango.
+[03:53:31] You see the red line, right?
+[03:53:33] So translate to people not getting enough discount for longer-term contract implies that people assume the price is going to rise down the line.
+[03:53:44] And now you see the price, the whole term keeps shifting up, but got flattened, right?
+[03:53:49] So meaning people will now either get penalized or get, you know, awarded by signing long-term contract.
+[03:53:56] This is reserve contract we observe.
+[03:53:58] And if you look at implied forward rates, this is the implied forward rates, right?
+[03:54:03] Because we don't have a future trading, so this is calculated based on our term structure, and we use similar methodology as treasury futures curve.
+[03:54:12] So you can see market consensus view is the price could go up in the future, next 36 months.
+[03:54:20] Again, market consensus doesn't mean it's right.
+[03:54:24] If you look at B200, again, last year was contango, and this year the whole curve shifted up.
+[03:54:30] Every single term is more expensive, and it's got flattened, right?
+[03:54:35] Implied forward rates, similarly, people think the price is going to go up.
+[03:54:39] I want to point this out, the term structure, is this shows you that GPU behaves just like every commodity, have a very clear term structure risks, which data futures are excellent hedging.
+[03:54:53] So we have seen a lot of block trading happening around the term structure.
+[03:54:57] So you think about this, right?
+[03:54:59] If you have servers on your balance sheet, you have financing obligation for the next five, six years, and you have reserve contracts for first three, then you're exposed essentially year four, five, or six, right?
+[03:55:12] So you want to hedge that risk out by entering, you know, a swap or block trading.
+[03:55:18] So those are things.
+[03:55:19] Or there are trades happening even for the first three years, which you have reserve contracts on.
+[03:55:25] What if the reserve contract defaulted, right?
+[03:55:29] What's your guarantee from some other players?
+[03:55:33] So we saw block trading happening around indices, treated as a floating rate.
+[03:55:42] This chart actually is being used differently by Nvidia team.
+[03:55:51] Nvidia's latest September investor day deck, they said us with only data provider actually cited in their deck.
+[03:56:01] This is very interesting.
+[03:56:02] Second data becomes the appraisal for a few banks when they have GPU servers on their balance sheet.
+[03:56:09] This, everything you see here, forward-looking view, right?
+[03:56:12] So discounted cash flow.
+[03:56:15] So as I said, we have a term structure.
+[03:56:16] So assume A100s, right?
+[03:56:19] A100s have been around for six years.
+[03:56:21] If today you sign a three-year long lease on A100s and you have a rate, if you discount the cash back to time zero, you have how much the asset is worth, right?
+[03:56:33] Obviously, there's a lot of things baked in: utilization rate, what is your cost, a bunch of assumptions which we're pretty transparent about.
+[03:56:42] We actually calculated the residual value for normalized value, obviously, across all A100, H100, B200 servers globally.
+[03:56:51] And then we'll compare that with the straight-line depreciation, which is everybody using the five-year depreciation.
+[03:56:57] What's interesting, you see A100, right?
+[03:56:59] Even though it is downward sloping, you know, means things are depreciating, but it's above the accounting depreciation curve, straight line.
+[03:57:08] And H100, obviously, is going bananas now.
+[03:57:12] The price actually went up.
+[03:57:14] My analogy would be just like secondary cars during COVID time.
+[03:57:19] The price went up, right?
+[03:57:21] And B200 obviously went above the MSRP at this point.
+[03:57:26] So this gives you some view about what's going on on the residual value side.
+[03:57:30] I think I'm out of time, but, you know, feel free to grab me, Carmen, CLI at computeengine.
+[03:57:36] com, CLI seconddata.
+[03:57:38] com.
+[03:57:39] Feel free to grab me on Twitter, Carmen Lee.
+[03:57:41] My Twitter handle is just Carmen LI.
+[03:57:44] That's it.
+[03:58:48] Hello everyone.
+[03:58:49] I would like to walk you through that how we can transition an AI agents from an experiment to the real enterprise environment.
+[03:58:57] So before I begin, a quick introduction about me.
+[03:58:59] My name is Sharish Gagar.
+[03:59:01] I'm a senior staff software engineer at Intuit Credit Karma, where I build and own the AI analytics infrastructure and services.
+[03:59:09] And beside that, I'm advisor, author, researcher, and also a program committee member for various organizations where I mentor the young researchers as well.
+[03:59:27] All right.
+[03:59:29] So let's walk through the agenda here.
+[03:59:33] So first, we would like to talk about what are the challenges we have when we build an AI agents and deploy into the production systems.
+[03:59:41] And how we can build a different framework to address that different challenges here.
+[03:59:48] Then how the architecture looks like for it.
+[03:59:51] Then how you can build your own MCP servers and MCP gateway, and then some monitoring on top of that.
+[03:59:59] On top of that gateway as well.
+[04:00:01] Then further, we're going to talk about what are the different type of agent framework you can have, and then some additional framework around managing the memories, tracking in eval, how you can block the PII data going before the LLMs, and then context optimizer to save your token, right?
+[04:00:19] So without delay, let me walk you through the challenge.
+[04:00:24] Of course, like there are many agents generally get fail in productions because their foundation controls are missing.
+[04:00:31] And the key reason behind is that, you know, like most of the people are missing the gateway to make sure that the agent can, you know, communicate to the gateway to get authenticated first with the right auth providers so that they can redirect to the right MCP servers, right?
+[04:00:49] Second, that MCP servers are missing the right tool to execute your query.
+[04:00:54] Third, do we have like enough tracking and evaluation system to make sure that every query when you are sending to the agents, whether they've been tracked or not, and are you evaluating the quality response or not, right?
+[04:01:05] Do we have any memory management system or not in terms of, let's say you are doing the interaction with agent for long or for many days, is it able to recall that what you have been asked in the past, right?
+[04:01:17] And then there are other framework, of course, like do you have a context optimizers to save the token, or do you have enough production in place to make sure that your any secrets should not go into LLM or tracking or tracing or any memory DB or so, right?
+[04:01:31] So a lot of open questions.
+[04:01:34] So in order to resolve this, we are not going to, you know, like build a magical agent here in this demo.
+[04:01:41] We're going to talk about like different framework that you can build to address this.
+[04:01:46] So first is the agent framework.
+[04:01:49] This is where, like, we use the, like, we choose to use the LangGraph framework, which is provided by LangChain community.
+[04:01:55] This has helped us in building the task-specific node based on your questions, and which is easy to plug in any, like, marketplace plugins or skills and prompts to make sure that agents respond efficiently based on your query.
+[04:02:12] Further, the second part is we are also building the MCP gateway to make sure that whenever agent make the call or any service account from that agent make the call, make sure that they are securely get authenticated to that MCP gateway and then get redirected to the right MCP servers.
+[04:02:29] Third is the customized MCP, which means that you are building your own MCP servers with the right tool in place to execute your query.
+[04:02:37] And then finally some audit on top of what actually operation you are performing, right?
+[04:02:42] And then we talk about some additional framework around, you know, like how you can block the PI secrets, how you're going to store the tracking eval into the cloud, and how you're going to persist the memories, especially any threats and checkpoints on every context, and then also how you can optimize overall your context to make sure that you don't burn too many tokens when you run your query.
+[04:03:08] All right.
+[04:03:09] So we'll talk about now the agent infrastructure.
+[04:03:13] So firstly, we'll go through the local development, the way...
+[04:03:17] The approach should be is that, you know, like whenever you build an agent, right, first you have to register your agent into some system.
+[04:03:25] You usually tell that, hey, look, this is my use case, and these are the use case going to use for this particular vertical or system, and you feed all those information and generate an ID for your agent, right?
+[04:03:38] Once you have that, then you can have a dev portal, internal portal, where you can ingest all the details saying that, hey, look, this is my agent use case, this is my agent ID, this is the framework I'm going to use, either LangGraph, LangChain, or so.

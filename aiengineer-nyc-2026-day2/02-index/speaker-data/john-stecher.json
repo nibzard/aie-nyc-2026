@@ -1,0 +1,23 @@
+{
+ "slug": "john-stecher",
+ "name": "John Stecher",
+ "role": "CTO",
+ "company": "Blackstone",
+ "bio": "John Stecher is the Chief Technology Officer of Blackstone and a Senior Managing Director in the firm's Technology and Innovations group (BXTI), based in New York. He is responsible for all aspects of technology across Blackstone, advises the firm's investment teams, and acts as a resource to portfolio companies on technology-related matters. Before joining Blackstone, he was a Managing Director, the Chief Technology Officer and the Chief Innovation Officer at Barclays in New York, and a member of the Barclays Technology Management Committee. Prior to Barclays, he worked for Goldman Sachs, where he held senior management and engineering roles across capital markets and technology and most recently built the Marcus-branded consumer finance division. Earlier in his career he was appointed an IBM Master Inventor and led application development, architecture and strategy for IBM's WebSphere product line, with more than 45 patents. He holds a BS in Computer Science from the University of Wisconsin-Madison and an MS in Computer Science from the University of Minnesota.",
+ "linkedin": "https://www.linkedin.com/in/johnstecher",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FnjQvb4rtTO629553o3TN_headshot-1790808491693.jpg",
+ "sessions": [
+  {
+   "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+   "time": "2:05pm - 2:23pm",
+   "room": "Simons Room (Metropolitan East)"
+  }
+ ],
+ "enriched": true,
+ "sources": [
+  "https://www.blackstone.com/people/john-stecher",
+  "https://www.linkedin.com/in/johnstecher"
+ ]
+}

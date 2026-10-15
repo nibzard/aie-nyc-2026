@@ -1,0 +1,208 @@
+# transcript slice 10
+window: t=18200..20020 (05:03:20..05:33:40 video time; 1:51:12 PM..2:21:32 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[05:02:28] Once a plan is approved, a state machine runs it.
+[05:02:32] It picks every step and records every result.
+[05:02:35] When a step needs judgment, it makes one fixed schema model call: compose an email, judge a reply, spot missing values, extract fields, verify a document.
+[05:02:46] The answer comes back typed, and the state machine decides what to do with it.
+[05:02:50] Side effects get a life cycle of their own: prepared, dispatching, succeeded, or, when the world doesn't answer cleanly, outcome unknown and manual review.
+[05:03:01] There are no automatic retries.
+[05:03:03] A chat message can approve a step or answer a question.
+[05:03:07] It can't change an already approved plan.
+[05:03:09] The model steers; it never drives.
+[05:03:17] Now look at what is left for the model to do.
+[05:03:20] Outside the planner, the judgments are small and typed.
+[05:03:24] Is this reply complete?
+[05:03:25] Does this document match?
+[05:03:27] Which field is which?
+[05:03:28] They don't need frontier intelligence.
+[05:03:30] A fast small model, the flash tier, can handle them.
+[05:03:34] In this illustrative run of 20 decisions, 19 go to the flash tier and one goes to the frontier.
+[05:03:41] That is why we designed for about 95 percent of model decisions in a workflow never needing a frontier model, and the flash tier can run on hardware you control.
+[05:03:52] Only the genuinely hard cases go to a frontier model.
+[05:03:56] And the 5 percent is not a permanent tax, because every judgment is typed and logged, and the provisional ones are confirmed or rejected by a person.
+[05:04:06] Each frontier decision produces eval-grade distribution real training data by construction.
+[05:04:13] That data can post-train the flash tier.
+[05:04:17] Logging and evals exist today.
+[05:04:19] The training loop is next.
+[05:04:21] So the frontier share shrinks, release over release, until even the hard cases run locally.
+[05:04:26] Remember the requirement we started with, because data is sensitive, you need a path to move workflows entirely to privately hosted LLMs.
+[05:04:43] So can this design really get there?
+[05:04:45] Take one typed call from the Harper Bourbonine plan.
+[05:04:49] Every model call is small, typed, and checked against a schema.
+[05:04:53] So pointing it at a privately hosted model is a configuration change, not a rewrite.
+[05:04:58] One line changes, and the same answer comes back.
+[05:05:02] Every other call has that same small typed shape, so the same change applies to almost all of them.
+[05:05:09] That is how about 95 percent local inference becomes viable, as an architectural consequence, not a policy promise.
+[05:05:16] That is the path that sensitive data demands, and compliance risk goes down as an engineering roadmap, release by release.
+[05:05:25] So if you remember one thing, don't ask whether your system should have more agency or less.
+[05:05:30] Ask where the boundary is.
+[05:05:33] Let determinism govern control flow, evidence, and side effects.
+[05:05:37] Let intelligence handle interpretation and judgment.
+[05:05:41] At typed points, you can inspect and use every judgment you log to need less of it next time.
+[05:05:47] Ask where the boundary is.
+[05:05:48] Thank you.
+[05:05:50] I'm Karthik, CTO at Perpetual.
+[05:05:53] If you're building AI into regulated work, I'd love to compare notes.
+[05:06:20] Hello everyone, and welcome.
+[05:06:22] My name is Edu, and alongside Javi, we represent the AI platform experience team at Flywire.
+[05:06:27] Our core mission is to build practical agentic infrastructure that empowers our software engineers while following our established engineering standards and practices.
+[05:06:37] Today, we'll share how structure workflow automation delivers real enterprise value, ensuring control, safety, and reliability across our development process.
+[05:06:48] Before we dive into the deep technical details of our AI platform, let us give you some essential context about Flywire.
+[05:06:56] Flywire is built to process the world's most complex payments across global industries like education, healthcare, travel, and business services.
+[05:07:06] Today, we serve over 5,000 clients across more than 240 countries around the world.
+[05:07:13] Because we process high-value international transactions, regulatory compliance, privacy, and security are not optional add-ons.
+[05:07:21] They are core requirements of our business.
+[05:07:24] We operate under strict compliance frameworks like PCI, DSS, and SOC 2.
+[05:07:30] This means that customer data, personal identification, and payment details must remain completely safe.
+[05:07:37] We cannot simply take sensitive context and pass it to third-party services without strict governance and architectural boundaries.
+[05:07:45] To give you an idea of our engineering organization, we have around 400 software engineers distributed globally.
+[05:07:53] Across our teams, we maintain diverse technology stacks, including Java, Ruby, Go, Python, .
+[05:08:01] NET, and PHP.
+[05:08:03] Almost everything we build and run is deployed on Victoria, our internal platform as a service that operates on top of GitLab and AWS infrastructure.
+[05:08:12] This brings us to Orbit, our on-call killer.
+[05:08:15] Orbit is an internal platform that eliminates daily engineering is call only work every day.
+[05:08:22] It also keeps the codebase that the other AI services and tools we use across Flywire can start workflows directly.
+[05:08:28] For example, an engineer will be able to ask Claude in Slack use cases, send messages, can start workflows directly.
+[05:08:38] Victoria, it starts and shares the main request with scorecards, measures how.
+[05:08:58] Sorry, I'm good.
+[05:09:04] Hey everyone, I'm Akshat, CTO of Modal, and I'm going to talk about a really need from their infrastructure.
+[05:09:14] So I'm told this audience is very finance adjacent, so I thought I'd talk about what if every cell in a spreadsheet could be backed by an agent.
+[05:09:28] And imagine you're a financial analyst at a fund.
+[05:09:36] You want to run a complex analysis on every company in your portfolio.
+[05:09:42] Normally in the past, this would take days.
+[05:09:46] You'd have to connect every portfolio company, look at their data sources, run some Python for each of them.
+[05:09:54] And now obviously with agents, this should be much easier.
+[05:09:59] Well, actually, one of our customers, Hebbia, built something that's exactly this.
+[05:10:06] You can go in right now in their product.
+[05:10:10] You have a spreadsheet, and you can run a query where literally every cell is backed by a different agent.
+[05:10:21] And I wanted to talk about what does building this really look like?
+[05:10:27] Well, first, every agent is backed by a modal sandbox.
+[05:10:34] So a sandbox is a secure environment for running untrusted code.
+[05:10:42] And it used to be that every sandbox was one-to-one with a container or microVM.
+[05:10:50] That's actually no longer the case.
+[05:10:52] Today, actually, Modal has this feature where you can run multiple containers or microVMs inside a sandbox.
+[05:11:00] And you actually need to do that for doing something like this, where in this architecture, you run the harness.
+[05:11:08] The harness is the agent loop that does things like running the, calling the model API for inference, running the tool calls, and then looping over it.
+[05:11:19] You want to separate that from the place where the tool calls actually run for security and isolation and a bunch of other things.
+[05:11:27] So you have the sandbox that's running multiple containers, including a sidecar.
+[05:11:33] You also want shared storage because you want your agents to be able to talk to each other.
+[05:11:39] And it's up to you how you stripe it.
+[05:11:41] Like maybe you have every row gets the same volume, and agents in that row in the spreadsheet can collaborate.
+[05:11:50] And you also want to share storage between your main container and the sidecar for some cases.
+[05:11:55] And finally, you need all of this to spin up really, really fast because your spreadsheet can have lots of cells.
+[05:12:02] If someone runs a query, you want to launch thousands of agents, and then you want to spin them back down when it's over.
+[05:12:09] So before I talk more about that, I just wanted to take a quick aside to talk about what is Modal.
+[05:12:17] Modal is a platform of primitives that is built for AI applications.
+[05:12:23] So we've basically built this platform from scratch.
+[05:12:27] We've built our own file systems, the scheduling, and the runtime to give you really great performance and DevEx for use cases like inference, including LLM inference, sandboxes, training, and functions, running a lot of batch processing and whatnot.
+[05:12:43] And today in particular, I'm going to talk about sandboxes, what this primitive is, and how it's evolving.
+[05:12:49] So if you want to build something like this, or even further, and we'll talk more about what that means, what are the primitives you need for that?
+[05:12:57] So the first thing is, if you're building an agent, you need a workspace.
+[05:13:01] And I have some examples from some of our current customers.
+[05:13:05] You might have heard of Ramp Inspect.
+[05:13:07] Ramp Inspect is Ramp's internal coding agent that I think at this point pushes almost every single PR at Ramp.
+[05:13:17] And if you're building a coding agent, you need your repo, your GitHub repo.
+[05:13:22] You need your dependencies.
+[05:13:24] You need your dev services, all in the same workspace for each agent.
+[05:13:32] Another example is Basis.
+[05:13:35] What it looks like is your documents might arrive, your agent is then triggered to work on them, but then it's waiting for a response from the accountant, and you don't know how long this could take.
+[05:13:47] It could take many days.
+[05:13:49] When you want to persist this state over time memory, your usage is going to change.
+[05:13:56] And in the second chart, you can see usage per sandbox, and there's definitely some consistent trends, but it's all over the place.
+[05:14:04] So if you were provisioning this, it doesn't make sense, and then reliably get them when the sandbox needs them, and only pay for them for that duration.
+[05:14:16] The other interesting emerging thing is agents need a lot more cloud science, where pre-process some data on CPUs, or spin up GPUs for running pre-process some data on CPUs, or spin up GPUs for running a scientific model, it will offload that to a model sandbox.
+[05:14:42] And we're seeing this show up RSI about what happens when you give an agent sandboxes to hill climb.
+[05:14:51] The next emerging thing is agents are collaborating a lot more, and that means that you share a file system with your sub-agent.
+[05:15:03] You share file system.
+[05:15:05] The next emerging thing is agents are collaborating a lot more, and that means that you share a file systems and files with your human, where you're all collaborating on the same thing.
+[05:15:20] And this needs file systems that are fast, have consistency, and devex you can reason about, something we're working on with Modal Volumes.
+[05:15:31] Related thing is we're seeing a lot more self-improvement.
+[05:15:35] So agents will save and update memory.
+[05:15:37] They'll run background tasks, which is now called dreaming, to update this memory over time.
+[05:15:44] And actually, this also just looks like files in a file system.
+[05:15:48] But again, you want really great performance from this file system.
+[05:15:56] And the scary thing about agents is they can mess up, and they don't really know when they might leak your sensitive data to a German forum or something.
+[05:16:10] So you need to have a lot of control over what they can and cannot do.
+[05:16:14] And you need things like controlling what IPs can even talk to the agent, how do you authenticate it, what domains can it talk to, and also if you're using credentials for talking to services, basically you want to inject them in a way that the agent cannot actually see them and then exfiltrate them somewhere later.
+[05:16:38] And the interesting evolution of this is we've realized that domain-related allow lists are actually not enough.
+[05:16:46] A lot of our users actually want very specific control over even, like, what paths can I talk to on, let's say, Datadog or GitHub.
+[05:16:56] Like maybe I want to reason about specific operations that the agent is doing.
+[05:17:00] And going back to sidecars, we've seen this emerging as a pattern where users actually write their own lightweight proxy that has custom rules about what exactly it can do, and Ramp is another example of a company that's been using this successfully.
+[05:17:19] And the final underrated thing is it's really important to have really great observability.
+[05:17:25] So going back to the example of auto research and an agent doing a lot of training, what happens when the training run fails?
+[05:17:33] You want your agent to be able to easily look at the logs of the failure, reason about what happened, and do another iteration with a different set of parameters.
+[05:17:44] And while training is running, you want it to be able to look at the metrics.
+[05:17:48] You want to look at GPU utilization and make sure it's not stalled.
+[05:17:51] Maybe you want to look at the budget and make sure you're not spending too much in your sandbox.
+[05:17:57] And obviously all of this is really important for humans, but as agents are driving a lot more compute, we're spending a lot of time exposing all of this to the agents themselves so they can reason about all of this.
+[05:18:10] All right, I think we know what we need.
+[05:18:14] Why don't we have Astra build us an agent platform?
+[05:18:19] Well, I don't think it's a good idea.
+[05:18:20] I don't think you should vibe code a sandbox platform.
+[05:18:24] And there's three main reasons for that.
+[05:18:26] Number one is reliability.
+[05:18:27] I think we're all painfully aware how hard it is to get right.
+[05:18:33] Certain websites we use every day keep going down.
+[05:18:37] And the reason for that is even with AI, it's actually really hard to reason about the feedback loop of, like, what happens in the case of this tail event when the system breaks.
+[05:18:49] And this is why you need to be very careful when building systems.
+[05:18:52] Security is another one.
+[05:18:54] You could vibe code a sandbox platform, but who is going to do all the work to, like, continually reason about the security boundaries and make sure it's defensible in an age when everything is...
+[05:19:06] Evolving very fast.
+[05:19:09] And finally, scale.
+[05:19:11] We have a blog post about how we scale to millions of sandboxes, which involves a lot of very interesting engineering design and reasoning about systems.
+[05:19:20] And this is, again, something that you kind of don't want to leave up to a vibe-coded platform, because when you get to scale, you want it to work.
+[05:19:30] And on that point, we're actually seeing massive scale for a lot of things I mentioned.
+[05:19:35] So, for example, for the snapshots I mentioned, it's growing quite fast.
+[05:19:40] We're seeing 20 million snapshots a week.
+[05:19:43] We're processing about 8 petabytes of data a day for each of these snapshots.
+[05:19:51] And our users are creating almost 2.
+[05:19:54] 6 million volumes a week, and all of this is growing super fast.
+[05:19:59] And just to take a
+[05:20:01] To take a customer workload for a personal assistant, you need to create 10,000 sandboxes a second.
+[05:20:08] You need to run almost a million sandboxes.
+[05:20:12] And they're not going to last very long.
+[05:20:14] They'll just last for like two or three minutes.
+[05:20:16] But when they come up, you want them to be interactive in less than a second.
+[05:20:21] That's what this workload really demands.
+[05:20:26] And the other interesting thing on scale is you actually cannot get all this scale from a single cloud platform.
+[05:20:33] The world is actually getting crunched on CPUs as well, not just GPUs.
+[05:20:37] So one thing we spend a lot of time doing is actually aggregating cloud capacity from a bunch of hyperscalers and neoclouds.
+[05:20:45] So our users have access to CPU capacity across the world when they need it, but we cannot rely on one cloud provider to do that.
+[05:20:53] Okay, so where is all this going?
+[05:20:56] I hinted at this earlier, but the harnesses are really good at making use of dynamic environments.
+[05:21:04] And what this is leading to is a lot of separation of the brains, which is the harness, from the hands, which is the sandbox or the runtime where stuff is running.
+[05:21:15] And what this means, I have an example here, is the harnesses are going to be able to spin up environments based on what they need right now.
+[05:21:26] They're good at snapshotting them and keeping them around as artifacts that they need later, and again adjusting all of this as necessary.
+[05:21:36] So I think this points at an interesting evolution of the pets to cattle analogy we're all familiar with.
+[05:21:46] To recap.
+[05:21:47] In the olden days, people thought of services like pets.
+[05:21:52] Each one was bespoke.
+[05:21:53] You had to manage it.
+[05:21:55] You had to reason about this individual deployment specifically.
+[05:22:00] And then over time, with containerization and Kubernetes, people started to think about it as homogeneous templates of these servers are all the same.
+[05:22:12] You can scale them up and down.
+[05:22:14] If one of them fails, it's not an issue because our system can heal from that.
+[05:22:19] And I think this is where a lot of people deploying agents are today.
+[05:22:23] They're kind of using these homogeneous environments and scaling up these agents.
+[05:22:27] But I think that's really limiting because the models are so good at reasoning about dynamic environments, snapshotting, creating lots of environments when needed and working across them.
+[05:22:38] So what does the new world look like?
+[05:22:42] One analogy here is it kind of looks like an ocean of microbes, of all these organisms that are self-evolving and working with each other.
+[05:22:52] And credit to Swyx for the analogy here.
+[05:22:56] But one thing I'm really excited about is as you give agents these really rock-solid primitives for compute and storage and networking, they will be able to actually do a lot more by doing the stuff I talked about, like spinning up lots of environments, working with each other, and being very dynamic.
+[05:23:16] So yeah, I and us at Modal really think that great primitives let your agents do more.
+[05:23:24] And yeah, if you're interested in talking about this more, reach out to us.
+[05:23:27] Thank you.
+[05:33:58] I'm going to talk a little bit about going from beyond the model card, how evaluations can be used to measure this jagged frontier, with a special focus on finance for this audience as well.
+[05:34:07] Yeah, so first off, talking about model cards themselves, we've built some of the most important benchmarks over the last couple of years that the major foundation model labs have included in their model releases.
+[05:34:18] So people, I think, are familiar with artifacts like this.
+[05:34:21] Last week we have Sundar talking about our Vals index on stage, and then even just yesterday, Muse Models citing our finance agent benchmark.
+[05:34:29] It keeps our lives interesting to have to keep re-updating these slides as new models come out.
+[05:34:34] I had to double-check level numbers.
+[05:34:35] You can get a sense of how capable a model is for valuable work, but that is actually driving value for a lot of companies.

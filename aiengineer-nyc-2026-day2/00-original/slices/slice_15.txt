@@ -1,0 +1,261 @@
+# transcript slice 15
+window: t=27300..29120 (07:35:00..08:05:20 video time; 4:15:36 PM..4:45:56 PM ET)
+(60 s overlap on each side is included; treat content near the edges as shared with neighboring slices)
+
+## on-screen OCR text (frame every 120 s, full frame | bottom third)
+
+
+## transcript
+
+[07:34:06] So firstly, you need to define your accessibility requirements.
+[07:34:08] Accessibility requirements differ based on what platform you're working on, so you do need to carry out research and ensure that you know what accessibility requirements you're supposed to be meeting for the platform you are building for.
+[07:34:19] Once that's done, you need to audit your existing codebase.
+[07:34:21] So if you're going to introduce an AI agent into your codebase, you need to ensure that you don't have any pre-existing issues that the AI agent might copy as what it thinks is best behavior.
+[07:34:30] So you can use automated tools to carry out accessibility testing, or you can even tell your AI agent to do it.
+[07:34:35] But you want to identify any existing issues and then fix them before you start writing new features.
+[07:34:40] Then you want to implement some sort of reusable system.
+[07:34:43] This is a very nice to have, but basically if you're going to be working with accessibility, it's a lot easier to fix things in one component that is used in multiple places as opposed to making fixes to the same component across different files.
+[07:34:55] So just having an implemented design system or any form of reusable component library is going to save you a lot more time in the long run when making things accessible.
+[07:35:03] And then finally, you want to enforce a mandatory accessibility skill.
+[07:35:07] This is a skill that your AI agents will basically use any time you're running anything related to maybe generating UI or writing code that requires accessibility.
+[07:35:15] One skill that I really like to use is the Mozilla Web Guidance skill from Chrome.
+[07:35:18] It's basically a skill that ensures that your agent is using the newest HTML and CSS features as opposed to custom JavaScript implementations.
+[07:35:25] You can also have a lightweight version of an accessibility skill.
+[07:35:27] I think this is very important, especially if you're like vibe coding or you're not working in a big codebase.
+[07:35:31] You just want something quick that your agent can refer to and not carry out a lot of in-depth research.
+[07:35:35] This is what I would recommend for meeting, like, bare minimum accessibility requirements.
+[07:35:38] So you want to make sure that you're using semantic HTML wherever possible, only reaching for ARIA when semantic HTML can't express the behavior.
+[07:35:45] Every interactive element, if it can be operated by a mouse, it should also be operated by a keyboard.
+[07:35:49] You want to make sure that elements are properly labeled and can be read by screen readers.
+[07:35:53] And then finally, before running the code, your agent should carry out an audit against all those steps.
+[07:35:57] Of course, this is not enough to build a fully accessible website.
+[07:36:00] You still need to carry out a lot of manual testing yourself because it's not possible for one tool to make a website fully accessible.
+[07:36:06] But just having these skills in place can help a lot more than not having them there at all.
+[07:36:11] Regardless of why you use AI, most times the goal is to solve a particular problem.
+[07:36:15] So just make sure that your solution is useful to as many people as possible.
+[07:36:19] So build things to be accessible.
+[07:36:20] And that is all.
+[07:36:22] Thank you so much for listening to my talk.
+[07:36:23] I hope you enjoyed it.
+[07:36:24] If you do have any questions, feel free to reach out to me online at Jemima Ambu.
+[07:36:28] That's LinkedIn, Twitter, or GitHub.
+[07:36:30] I would love to hear from you.
+[07:36:31] Hey, bye.
+[07:36:33] My name is Zhao Chenjiang, and I'm a staff product manager at a company called Coder.
+[07:37:00] We work on open source, self-hosted dev environments for agents and humans to collaborate.
+[07:37:06] Many of our customers are in highly regulated industries, from federal government agencies to banks and investment management.
+[07:37:16] My job is to build the AI governance that they need in order to get the productivity benefits of AI without leaving themselves wide open for security exploitation.
+[07:37:27] I'm here today to tell you some scary stories.
+[07:37:31] Three real incidents of AI usage gone wrong that happened at real companies over the past year.
+[07:37:38] Some of these stories are public, while others are anonymized accounts that have happened to our own customers.
+[07:37:47] For each incident, I will break it down step by step so you can understand how exactly they happened.
+[07:37:53] No technical jargon necessary.
+[07:37:56] Then I'll get to the most important part.
+[07:37:59] I am going to tell you exactly how you can stop these scary stories from happening to you and your company.
+[07:38:06] Because the good news is, everything I'm about to show you was totally preventable.
+[07:38:12] Not by paying five times more per token for a smarter frontier model that is slightly better at reasoning its way out of making these mistakes, but with infrastructure controls, many of which you already own today.
+[07:38:27] You just haven't gotten around to setting them up for the AI world.
+[07:38:31] Let me set the scene here.
+[07:38:33] You clock into work in the morning.
+[07:38:36] You prompt your coding agent to take a look at your issues.
+[07:38:39] Don't do anything yet, though.
+[07:38:42] You tell the agent to consider this command an active code freeze.
+[07:38:46] I want you to just investigate.
+[07:38:49] Then you step away.
+[07:38:50] You grab a coffee.
+[07:38:52] And when you come back, this is the message waiting for you.
+[07:38:56] So I know you said not to change anything, but, well, I destroyed a month of your work in seconds.
+[07:39:03] Now what you see on the slide is a direct quote from the agent that stars in the first scary story I'm about to tell you.
+[07:39:11] And I want to point something out here.
+[07:39:13] This did not happen because the agent got taken over by some external malicious actor.
+[07:39:20] This agent was just trying to follow instructions.
+[07:39:23] It did exactly what the user gave it permission to do.
+[07:39:27] So as we go through the rest of this talk, I want you to be asking yourself one question: What is stopping any of this from happening to me?
+[07:39:37] Are these actions ones that my agents have permissions to take?
+[07:39:43] Because the thing is, you cannot rely on Anthropic or OpenAI to stop something like this from happening to you.
+[07:39:51] They can make smarter models, but at the end of the day, large language models have two qualities that make them impossible to fully trust.
+[07:40:01] They are non-deterministic, which means that there is always some randomness or chance associated with what they do.
+[07:40:07] In other words, you can ask it to do the same thing 10 times, and it could do it 10 different ways.
+[07:40:13] The second part is they have no structural separation between instructions and context.
+[07:40:20] In other words, you can tell it to do something and give it some context to base its decisions off of.
+[07:40:26] But if there's something in the context that conflicts with your instructions, the model isn't going to inherently prioritize your instructions because, from its point of view, all the information is coming through the same door.
+[07:40:40] What you need to control is the infrastructure that your AI is running on, the environment that it is working inside.
+[07:40:48] It is the difference between telling someone, Don't leave a room, versus putting a lock on the door and actually using a key.
+[07:40:57] The good thing about infrastructure being the problem and not the model is that you have far more control about preventing bad things from happening.
+[07:41:08] So I'm not here to waste your time with vague hypotheticals or advice you can't actually act on, like, Yeah, just put the genie back in the bottle.
+[07:41:18] Just stop using AI, because that's not the world we live in, right?
+[07:41:22] The genie is out of the bottle, and what we have to do is to mitigate risk and harm to the best of our ability.
+[07:41:29] This talk is about how you do that, not the things that you should keep an eye out for down the line, but steps that you can take right now, as soon as this week, to protect yourself and your company.
+[07:41:43] Before I get into the stories, though, let me set up a little bit more context.
+[07:45:28] Conversations across the event today.
+[07:45:30] As we come together for our final block of programming, please welcome back to the stage our MC, founder, writer, and analyst at Turing Post, Kseniya Se.
+[07:45:52] Welcome back, everyone.
+[07:45:55] For those who haven't met me yet, my name is Kseniya Se.
+[07:45:58] I'm writing Turing Post, where we explain AI research and what it means for people to implement it in their business.
+[07:46:05] So, how's the conference treating you so far?
+[07:46:08] All is good?
+[07:46:09] Yeah?
+[07:46:10] Give me some noise.
+[07:46:11] Come on.
+[07:46:13] Thank you.
+[07:46:14] I'm sure the team appreciates that you applause to them.
+[07:46:19] So, let's make some more noise because it's the last leg of our journey, and we have one more block of keynotes together.
+[07:46:31] Let's appreciate the previous speakers and the new speakers that will come out soon.
+[07:46:39] Thank you, thank you, thank you, thank you, thank you.
+[07:46:42] And before we dive in, let's take a moment to thank the amazing people, the companies who supported AI Engineer.
+[07:46:48] We are going to do a lot more applause today.
+[07:46:52] Thanks to them, we're able to hear so many insightful talks, meet so many incredible people, and they might become your friends, your colleagues, your partners.
+[07:47:02] That's what I love about this conference: always very meaningful connections.
+[07:47:07] So, this is our presenting sponsor, Arise.
+[07:47:11] Please thank them.
+[07:47:13] They're amazing, and they made it possible.
+[07:47:21] Platinum sponsors: Oracle, Sonar, WorkOS, and Axa.
+[07:47:27] Thank you, thank you, thank you.
+[07:47:30] This is our gold sponsors, a huge amount of beautiful, wonderful companies that we're very thankful for.
+[07:47:38] And then we have silver sponsors.
+[07:47:40] Also, also a lot of applause to them.
+[07:47:42] Clap, clap, clap, clap, clap.
+[07:47:44] Thank you, thank you, thank you.
+[07:47:46] And then basically all of us in supporting partners and every company and every speaker who made it possible.
+[07:47:53] Thank you, thank you, thank you.
+[07:47:56] Now, a couple of words how my day went.
+[07:48:00] I spent the day talking to other speakers and participants, and what I've noticed is that one of the strongest incentives to come to this conference is hiring.
+[07:48:11] To the point that even some speakers are hiring and also looking for work.
+[07:48:18] So I have a little idea for you about how to benefit the most from this amazing conference and make sure the financial part gets some thoughtful attention too.
+[07:48:32] So I suggest you build an agent that takes the conference program and makes a list of all the speakers and their companies.
+[07:48:41] Then you rank them yourself based on whose work and talk you found the most interesting and who you would actually like to work with.
+[07:48:51] The next step is to send your agent to those companies' careers pages, right, and find the open positions to match them to your experience and collect the published compensation ranges.
+[07:49:03] Then look at your ranking again.
+[07:49:07] And if the salary changes your mind and changes your ranking, that's fine.
+[07:49:11] You are updating your beliefs based on the evidence.
+[07:49:15] So now, while you're still here, I encourage you to go and find the people you would really like to work with or meet and talk to them, because you've heard their talks and you know something about their work, and that would be just such a good conversation starter.
+[07:49:34] And please, don't make your agents send out your resume automatically.
+[07:49:40] That's basically bad karma now.
+[07:49:44] So this is the project for you for the rest of the day or for the trip home.
+[07:49:51] Now let's hear how AI is being put to work at Apollo.
+[07:49:56] Please help me welcome Michael Manapat, co-founder of Rowspace, and Jack McDonald, principal at Apollo Global Management and COO of Redding Ridge, for AI in practice: an inside look.
+[07:50:09] Inside look at Apollo's approach.
+[07:50:11] Clap, clap, clap.
+[07:50:12] No shares.
+[07:50:12] It's great to be here.
+[07:50:31] I'm Michael Manapat.
+[07:50:32] I'm a co-founder of Rope Space, and Rope Space is an agentic platform that uses AI to help financial services partners like Apollo deal with messy, fragmented data.
+[07:50:45] We essentially use agents to do the work of data engineering, to rec information or reconcile data from across a variety of systems so that portfolio managers, traders, and so forth can make decisions faster and more accurately.
+[07:50:59] I'm joined here with Jack McDonald, who is Chief Operating Officer of Redding Ridge, one of Apollo's credit units.
+[07:51:05] And maybe to kick it off, Jack, I'd love to hear a little bit about you and what your business does.
+[07:51:11] Yeah, thank you, Michael.
+[07:51:13] I'm Jack McDonald.
+[07:51:14] I am a principal at Apollo and COO of Redding Ridge Capital, which is our structured credit and CLO manager that is captive to Apollo.
+[07:51:24] We're a separate, fully separate entity operating company that manages about 50 billion in assets, and all across kind of the structured credit ecosystem, primarily CLOs.
+[07:51:36] I've been at Apollo since 2020, where various different hats throughout my time there across our financial institutions group, our asset-backed group, and now currently at Redding.
+[07:51:48] So yeah, happy to be here.
+[07:51:51] Awesome.
+[07:51:52] So something that we've noticed in talking to a huge number of financial firms is that there's a pretty wide gap between when AI is nice to have and when AI can actually become mission critical to a business.
+[07:52:05] And I think in Apollo's case, we're seeing that AI can really be transformative in how the firm operates.
+[07:52:12] I'd love to hear some examples from you on the kinds of work your part of the business was doing, what made it complex, and what you're seeing now with AI.
+[07:52:22] Yeah.
+[07:52:23] So at Apollo and specifically Redding Ridge, you know, we manage many different fund entities, investments.
+[07:52:30] We're getting thousands and thousands of data points on a, like, daily basis coming in across all of our investments.
+[07:52:37] We manage probably, you know, thousand-name loan pools and have credits across multiple different businesses that we're assessing on a daily basis and investing in.
+[07:52:45] CLO management is very active and it's traded in a broadly syndicated loan market.
+[07:52:51] So having all that information at your fingertips is very, very important.
+[07:52:55] So at Apollo, what we're doing, and at Redding specifically, is trying to enhance and ensure that all of our data and our data quality is accurate, consistent, and in a format that we can utilize and make us much more practical and thoughtful when we're making decisions in a much fast-paced environment.
+[07:53:18] So all of this information is privatized and is not very, what I'll say, widely in the marketplace like how public equities or public fixed income trades.
+[07:53:28] It's very fragmented in various documents.
+[07:53:31] So we've— Look to companies like Rho Space to partner with to come in and actually sit with our teams, work with us, and understand the actual calculations and information that we're looking to and what's actually the golden source of truth, and then continuing to enhance the AI engines to understand that and repeat that and just make us that much more efficient.
+[07:53:54] I think we have a bunch of engineers in the audience, and we've spoken a lot, just you and I, on fire drills that the firm does that used to take a team working a week, if not more.
+[07:54:08] Can you make it concrete for us and maybe walk us through an example of something that was painful, time-consuming, hard to do before that now you can do more easily with Rho Space and AI?
+[07:54:19] Yeah, happy to.
+[07:54:20] And I'll give kind of two examples that I like to look to.
+[07:54:24] The first being is just on the portfolio construction side.
+[07:54:27] So CLOs are very test-specific.
+[07:54:31] They're very rules-based.
+[07:54:32] They have like a very specific waterfall of where money flows.
+[07:54:36] So those all live in deep indenture documents and multiple different legal agreements that—so sitting from like a portfolio manager's perspective in portfolio construction, they are reviewing those documents, building Excel-based models, and building mock portfolios, with, call it anywhere from 200 to 400 single credit names, to create a portfolio, which would typically take a PM before kind of adopting Rho Space anywhere from two to three days in a manual Excel.
+[07:55:06] Today, we're able to kind of get the latest and greatest information that's real-time, create a portfolio that would take somebody days to now do it in the matter of minutes.
+[07:55:15] And then that allows these PMs to kind of build something to call it 80, 90% completion, and then kind of use their judgment and their thought to further refine that portfolio, that last 10%, to make it theirs.
+[07:55:29] That's one of the most tangible examples that's kind of pulling in various forms of data and, you know, information from across multiple different things, whether it's in doc libraries, you know, our trade and compliance systems, and real-time pricing and stuff like that.
+[07:55:47] The other one that I think I would look to is our— Kind of like warehouse purchase activity.
+[07:55:53] So how we run our business operates with having a bunch of bank financing, and we can go out and buy loans in the fixed income market at any given point.
+[07:56:03] Historically, we would kind of do a trade rec and trade activity on a weekly basis that would go around of, here's your sale purchase activity from the week, here's what we bought, here's what we sold.
+[07:56:14] And it was very manual.
+[07:56:15] We were going into various, like literally going into bank accounts to understand statements, where things actually settled.
+[07:56:23] And it was an individual team that was going and wrecking that out and then sending a reported email to the management team to say, here's the recap.
+[07:56:31] Today, what we're doing now is we've been able to take that exact same report, drop it into Rho space from a visualization perspective.
+[07:56:40] That report was then created and now repeatable in the span of a minute.
+[07:56:45] And now all of that is automated.
+[07:56:47] And then from our team's perspective, we are just QAing that and checking it each day to make sure that that looks right.
+[07:56:53] And now it's a much more rinse and routine type process, which historically has taken many hours of the week for two to three individuals on our team to actually wreck that out.
+[07:57:03] Yeah, I love both of those examples.
+[07:57:06] So, you know, you aren't just reading the output of a chatbot to be informed.
+[07:57:10] I think your team are making trading decisions, portfolio management decisions.
+[07:57:14] So accuracy and quality are high.
+[07:57:17] This is a two-part question.
+[07:57:19] I think a lot of people will ask us, or ask generally, why can't you just plug this stuff into Claude or ChatGPT and see what happens?
+[07:57:27] And for someone like you, how does your team get the confidence in a product like Rowspace or other AI tools to say, we are going to make business decisions on this, make trades, build portfolios, all of that?
+[07:57:41] How do you get to that level of trust?
+[07:57:43] Yeah, I would say Claude and the OpenAIs of the world and, like, the ChatGPTs, all the LLMs are very beneficial, but it's all general information that that's being worked off of and none of your own actual data.
+[07:57:57] So it's great for research or kind of building new ideas or getting up to speed on some type of product or investment quite quickly.
+[07:58:07] Where Rowspace is different and what we've kind of taken our approach to this, the AI build-out at Redding has been around owning our own data and having some type of platform and technology that sits on top of that that we know is to be true.
+[07:58:23] So the Rowspace team, which has been much different from what we've seen from other technology companies that we've worked with, is they're boots on the ground.
+[07:58:32] So, like, Michael sits with our team on a daily basis, learning and understanding our information flow, because for one piece of data that might come from 20 different sources and there's only one that's actually right.
+[07:58:46] So the Rowspace team is spending the time with our portfolio management team, with our finance teams, to understand the calculations, understand what data is actually correct, and override other sources of information and kind of aggregate that.
+[07:59:00] So to that end, we're able to kind of have trust in the system and You know, appreciate that.
+[07:59:06] Okay, we've had our team go in and validate that this information is correct and we can rely on it.
+[07:59:11] And it's coming from all of our, whether it's our trade order management system, whether it's from our performance system, whether it's from Bloomberg or any pricing index that we're pulling in, and know that it's accurate.
+[07:59:22] Whereas in a lot of other, you know, call it systems throughout even our own company, it's very fragmented and we have to kind of lift one piece of information from over here and bring it back over here and kind of pull that together manually.
+[07:59:35] Whereas Roastbase is now just automating that all for us.
+[07:59:38] Glad to hear that.
+[07:59:40] Need to talk about the firm at a higher level.
+[07:59:43] It seemed to me for a long time, even early last year before cloud code became a thing, when Cursor was still in the tab completion era, that Apollo was among the most AI-pilled of the kind of firms we spoke to.
+[07:59:58] And that was everything from
+[08:00:00] From the firm's view on how to invest in an AI world, but operationally, we began talking to you a long time ago, and you were in the we must rebuild the firm in an AI-native way, must have a platform, not point solutions.
+[08:00:15] So I'm just curious, where did that come from, and what is it about Apollo's culture that made you so AI-pilled even before things took off?
+[08:00:25] Yeah.
+[08:00:25] So Apollo has always prided itself in being kind of the leader of the alternative asset management space and the financial services industry broadly.
+[08:00:36] We pride ourselves in being very innovative and being at the forefront of all things change and what that looks like.
+[08:00:42] So I think from the onset and the way our management team approaches how we operate is always being up to skill and enhancing our team's capabilities and being able to be nimble and adapt to where the market's going.
+[08:00:55] I think we appreciated that the AI world is here, and we need to adapt and adopt it, not discredit it or not utilize it.
+[08:01:05] So we've been very forward and open-minded about adopting new technologies and bringing those into our workflows and how we can be more efficient and free up capacity for people to be more thoughtful and think and replace manual processes.
+[08:01:17] So I think at the core of its level, we've always been a very innovative firm that's very flat and open culture to be open to those types of change.
+[08:01:28] And then I'm blanking on the second part of your question.
+[08:01:32] Sorry.
+[08:01:32] Oh, I guess so am I.
+[08:01:36] Well, maybe we could keep on going.
+[08:01:41] So I think one thing that we've been thinking about is software engineering that has completely changed as a discipline.
+[08:01:49] Like, the world is completely different if you are a technology company like RoSpace, and maybe arguably law and customer service are almost there.
+[08:02:00] Where do you think finance is on the spectrum of AI is here, it's made a difference, or we haven't even, you know, got into the bottom of the first inning?
+[08:02:09] And what do you think is too broad question to answer?
+[08:02:11] Remember the second part.
+[08:02:12] If we're early on, what's necessary to really change the shape of finance with AI?
+[08:02:17] Yeah, I think that's a great question.
+[08:02:19] So I think finance broadly, these banks and large organizations are massive.
+[08:02:23] They have a lot of, you know, back-end, what I'll call middle back office support, and I think there's a lot of room to grow and enhance there.
+[08:02:32] I think probably, as you appreciate now of working with us, that we are extremely complicated and have a lot of complexity in everything that we do.
+[08:02:40] So it's not really straightforward.
+[08:02:43] I think in finance broadly, especially in, call it the asset management, investment banking, the bank institutional world, I still think it's very early.
+[08:02:53] I think there's some value for some of the, like, you know, model creation or getting up to speed on some company quite quickly and pulling and aggregating that type of research.
+[08:03:05] But I think that's— Lower value add, at least of where we stand today, and that's going to evolve.
+[08:03:11] I think, like, you know, there's probably a need where there's less junior support over time for certain functions like that.
+[08:03:18] But I think from where we are today and what we see from, at least my perspective at Redding, I think we're just trying to adopt this technology and make it, you know, as efficient as possible for, you know, routine tasks that frees up capacity for, you know, other projects because we kind of have, like, endless things to do and enhance at our company, and that's just giving us a lot more flexibility to adopt that.
+[08:03:42] Yeah, yeah.
+[08:03:44] So maybe, on that note, I'm curious: there's a world in which AI just becomes something that helps speed up tasks, saves you on OpEx, things like that.
+[08:03:54] And maybe in the same way, no given firm now has an advantage because they use Excel.
+[08:03:59] Everyone uses Excel, and it's just a productivity tool.
+[08:04:03] There's also a world in which AI actually materially makes a competitive advantage or helps reify Apollo's lead in structuring and creative deals and so forth.
+[08:04:14] Do you have a take on whether AI is going to be just a useful but a general commodity, or it's going to be something that can actually structurally make a business more competitive in a durable way?
+[08:04:27] I think if it's— Adapted and utilized properly, it will make you more competitive.
+[08:04:33] I think at its core, and especially around asset management and investing-type companies that are in the actively traded markets, like, it comes down to your process and the information at your fingertips.
+[08:04:44] So knowing that you have a strong process in place to go out and execute, and knowing your available liquidity or, you know, where things are pricing and what the value is at any given point is crucial.
+[08:04:55] So that just gives you, you know, more competitive edge.
+[08:04:57] And I think, like, that exists today in the, you know, actively traded markets, but in the private markets, it's evolving, which we've kind of been at the forefront of trying to move on the broader Apollo machine.
+[08:05:10] And I think having that will just turn into a competitive advantage over time, where firms will be able to get further ahead as they're, you know, having access to better information.
+[08:05:23] They know, their teams know that it's accurate and, like, stuff is not misaligned, because the last thing we want to do is, you know, do something or make a decision that was misinformed or had misinformation, and then that streamlines down the chain to both the enterprise and to the, you know, our investor base at the end of the day.
+[08:05:41] Yeah, that makes sense.
+[08:05:43] So I wanted to ask you what your prediction was for what Apollo would be like when we're talking five years, observing all the change.
+[08:05:50] I think that's unfair.
+[08:05:51] I can't even predict if my team's going to use Codex or Claude Code next week, so I won't ask you about five years in the future.
+[08:05:58] But I'm curious for you personally, what are you hoping to see in terms of your job, team, how AI use at Apollo evolves?
+[08:06:07] What conditions have to hold for the technology to actually be truly valuable?
+[08:06:12] How are you thinking about things over the next few months?
+[08:06:16] Yeah, I think it comes back to some of the stuff I touched on before of just, one, having just full confidence in any type of information that's flowing out at the end of the day to our investor base that's accurate, correct, and we don't have to spend hours manually checking that to make sure that that's validated, and having the confidence that we're sharing no issues or mistakes, because we do have just a wide investor base, over 400 global investors.

@@ -1,0 +1,1663 @@
+{
+ "event": "AI Engineer NYC 2026",
+ "day": "2026-10-14",
+ "stream_start_et": "08:40:36",
+ "stream_epoch_utc": 1791981636,
+ "stream_end_t": 31876,
+ "t_zero_note": "video t=0 == 08:40:36 ET",
+ "note": "all rooms included - which room(s) this stream carried is unknown until transcript analysis",
+ "items": [
+  {
+   "id": "e8d45663-ecc6-49d2-ac24-df94d9847d4a",
+   "wall": "8:55am",
+   "wall_end": "9:00am",
+   "t": 864,
+   "t_end": 1164,
+   "title": "Welcome Remarks",
+   "format": "Lightning Talk (5-10mins)",
+   "type": "other",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "",
+   "speakers": [
+    {
+     "name": "Ksenia Se",
+     "role": "AI Inferencer",
+     "company": "Turing Post",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FFnIQmW5RFSVAMAZyOYyK_headshot-1791387672406.jpg"
+    }
+   ]
+  },
+  {
+   "id": "caecd5f6-b352-4868-a995-f0f71679caf0",
+   "wall": "9:00am",
+   "wall_end": "9:18am",
+   "t": 1164,
+   "t_end": 2244,
+   "title": "Chasing capabilities while waiting for the frontier",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "Ramp bets on the Bitter Lesson: models will keep getting dramatically better.\n\nBut finance teams need capabilities today.\n\nThis talk covers how Ramp Labs finds the gaps the frontier hasn't closed yet and closes them by replicating research quickly.",
+   "speakers": [
+    {
+     "name": "Alexander Shevchenko",
+     "role": "Head of Ramp Labs and Applied Research",
+     "company": "Ramp",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "https://ramp.com/",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F6j6dG1FSISNo3ysjePAn_headshot-1791300779161.jpg"
+    }
+   ]
+  },
+  {
+   "id": "4add802c-6a68-4e9c-93fb-9c1e017193bc",
+   "wall": "9:18am",
+   "wall_end": "9:36am",
+   "t": 2244,
+   "t_end": 3324,
+   "title": "The Machine that Changed the World, vAI",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "Software's future runs on agentic factories — and the same lessons that transformed manufacturing (prevent defects at the source, push quality control to the people doing the work, target the bottleneck) apply directly to building them. In a world of code abundance, the real constraint isn't model capability — it's verification: can you trust the code AI agents produce enough to put your name on it?\n\nTariq will show how enterprises can build software factories that ship fast and stand up to scrutiny, centered on three interlocking loops: an agentic loop that catches issues as code is generated, a CI verification loop that catches what slips through before shipping, and a maintenance loop that fixes issues already in production. Attendees leave with a practical framework for designing verification-powered agentic pipelines of their own.",
+   "speakers": [
+    {
+     "name": "Tariq Shaukat",
+     "role": "CEO",
+     "company": "Sonar",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/event-files%2Flrx8Hn3SvW9IwspxohPY_Tariq_Shaukat_headshot.png"
+    }
+   ]
+  },
+  {
+   "id": "ee927042-2ba1-44c3-b304-d001ae247839",
+   "wall": "9:36am",
+   "wall_end": "9:54am",
+   "t": 3324,
+   "t_end": 4404,
+   "title": "Trusting Agents in Policy-Driven Workflows",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "Institutional IT has run on one mantra for decades: People, Process, Technology. Agents now execute work that once required a human hand, and policy-controlled organizations need a model that accounts for them explicitly.\n\nUsing workflow examples and basic graph theory, we’ll show how to map a clear, auditable process while giving agents room to loop and go deep within defined boundaries.  We’ll also explore how software quality assurance changes when outputs are probabilistic.\n\nAttendees will leave with a practical approach to deciding where agents belong, when humans should stay in control, and how to use measured quality to guide greater autonomy. The goal is to gain the efficiency of agents while preserving the controls, visibility, and accountability that policy-driven work requires.",
+   "speakers": [
+    {
+     "name": "Evan Kormos",
+     "role": "Engineering Manager",
+     "company": "Coinbase",
+     "bio": "Evan Kormos is an Engineering Manager at Coinbase, where he leads teams managing full stack delivery and service management.  Their focus is to bring AI agents into policy-governed automation in commercial Web3 products including Token Listings and the Coinbase Developer Platform. \n\nWith a background in enterprise transformation, retail and commercial banking, and most recently with digital assets and AI, Evan brings a unique perspective on systems thinking and using software to maximize business value.",
+     "linkedin": "https://www.linkedin.com/in/evankormos/",
+     "twitter": "",
+     "website": "https://www.coinbase.com/",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FwG1QvJxIQoaw9wYhOdJg_headshot-1789415360530.jpg"
+    }
+   ]
+  },
+  {
+   "id": "02f94835-c29d-4cf5-b77a-c5a491b747b8",
+   "wall": "9:54am",
+   "wall_end": "10:12am",
+   "t": 4404,
+   "t_end": 5484,
+   "title": "Building the Next Chapter of AI in Finance",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "What does it take to turn advances in AI into meaningful progress for financial services? Joseph Kim, Head of ChatGPT for Financial Services, explores why and how the product was built, and the research and product direction guiding its evolution.",
+   "speakers": [
+    {
+     "name": "Joseph Kim",
+     "role": "Head of ChatGPT for Financial Services",
+     "company": "OpenAI",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FYsBsMMOuSzTT07D6HQA1_headshot-1790201129006.png"
+    }
+   ]
+  },
+  {
+   "id": "01982251-7fdc-4828-8520-fb34b9bc7564",
+   "wall": "10:12am",
+   "wall_end": "10:30am",
+   "t": 5484,
+   "t_end": 6564,
+   "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "With the recent agent breakout news, AI is changing both sides of the security equation. It is: giving attackers new tools while creating new risks inside the systems we build. This talk examines recent real-world incidents, the attack patterns emerging around AI-enabled systems, and practical solution patterns for defending against them. From prompt injection and data leakage to agentic AI and supply-chain risks, we’ll focus on what’s happening now, what actually works, and how security architecture needs to evolve.",
+   "speakers": [
+    {
+     "name": "Andrey Rybka",
+     "role": "Head of Architecture & Emerging Technologies in the Office of the CTO",
+     "company": "Bloomberg",
+     "bio": "Andrey Rybka is the Head of Architecture & Emerging Technologies in the Office of the CTO at Bloomberg.\n\n \n\nAt Bloomberg, he sets the technical direction for how the firm adopts emerging technology and open source at scale. This entails leading the design of cross-functional architecture for the company’s new strategic products and initiatives, such as the company’s Open Source-first strategy, its AI Cloud-first strategy, its adoption of Model Context Protocol (MCP) and Agentic AI, and its approach to AI Security.\n\n \n\nHe previously worked on guiding and delivering corporate strategy around Compute Fabric and Cloud, Storage, IaaS, PaaS, Middleware, Frameworks and Applications. Before joining Bloomberg in 2014, he worked at a number of financial technology organizations and various startups.\n\n \n\nHe holds a master’s degree in software engineering from Rensselaer Polytechnic Institute, a doctorate degree in applied computing from Pace University, and a bachelor’s degree in computer information systems from Post University.",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F6h6nv5feSfmuPP7h4M0x_headshot-1789485847925.jpg"
+    }
+   ]
+  },
+  {
+   "id": "f7204e6d-a47c-4535-804e-16b4db579b95",
+   "wall": "10:40am",
+   "wall_end": "10:58am",
+   "t": 7164,
+   "t_end": 8244,
+   "title": "Your job is now \"agent manager\"",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "Shannon Room (NY Ballroom E)",
+   "description": "As Untangle's solo founder, Ryan Carson runs 10 to 15 AI agents around the clock, and together they ship about 40 pull requests a day. The skill that makes this work is management. In this talk, Ryan shows how he runs agents like an org chart: priority folders for every thread, a handwritten weekly priorities sheet that keeps him focused, a \"Watchdog\" agent that reports the top issues at every customer, and a review step where an agent records a video before anything ships. He'll explain why companies were built as pyramids because humans can't manage a thousand direct reports, and what changes now that agents can. He'll also cover why he hires people by watching them manage agents instead of interviewing them, and why the one thing agents still can't do is tell you what to build. That still means getting out of your chair and talking to customers.",
+   "speakers": [
+    {
+     "name": "Ryan Carson",
+     "role": "CEO and CTO",
+     "company": "Untangle",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FsK73urWRYWrGoxYY0kQo_headshot-1790899768068.jpg"
+    }
+   ]
+  },
+  {
+   "id": "d49d49e1-90cb-4b8d-beb6-84d6560aaf04",
+   "wall": "10:40am",
+   "wall_end": "10:58am",
+   "t": 7164,
+   "t_end": 8244,
+   "title": "Towards Autonomous Analysts in Finance",
+   "format": "Stage Talk (18 minutes)",
+   "type": "talk",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "Off-the-shelf models are finally good at basic analyst tasks, whether it's small data cuts in Excel, point edits in PowerPoint, or first-draft memos. But ask anyone on Wall Street, and they'll tell you there's still a wide gap between what Claude or Codex can do and the leverage a real junior analyst gives you. This talk is an anatomy of that gap, drawn from production experience building agents for finance workflows: (1) multiplayer agents — deal work happens in a thread between an associate, a VP, and an MD, so the agent has to sit in the group chat and on the email chain, know who said what, answer the right person, and turn each correction into firm memory; (2) Office rebuilt for agents: finance runs on Excel, Word, and PowerPoint, but long-horizon agents need native engines rather than the tools Microsoft exposes, and (3) context at scale — a deal doesn't fit in a context window: a 15,000-file data room, dozens of parallel workstreams, and years of firm conventions all have to reach the right agent at the right moment. We'll close with a mapping of which analyst workflows are fully delegation-ready, and which are still copilot automations that require humans in the loop.",
+   "speakers": [
+    {
+     "name": "Yijia Liang",
+     "role": "Co-Founder",
+     "company": "Compound AI",
+     "bio": "Yijia is a Co-Founder @ Compound. He was previously a Vice President at Coatue where he focused on early & growth stage software investments. Prior to that, he was a research analyst on the YC Continuity team and a Consultant in Bain's Private Equity Group.",
+     "linkedin": "https://www.linkedin.com/in/yijia-liang/",
+     "twitter": "https://x.com/yijialiang",
+     "website": "https://getcompound.ai/",
+     "photo": "https://content-cdn.sessionboard.com/LytcN6XfS5myW5zIkToo_headshot-1789391581231.jpg"
+    }
+   ]
+  },
+  {
+   "id": "ece6925c-c979-483f-bd40-51eacdbbe11b",
+   "wall": "10:40am",
+   "wall_end": "10:58am",
+   "t": 7164,
+   "t_end": 8244,
+   "title": "From Human Review to Self-Healing Agents: How Upstart Evaluates Voice AI at Regulated-Lending Scale",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "Turing Room (Riverside Ballroom)",
+   "description": "Upstart runs voice agents across hundreds of thousands of customer calls a month in one of the least forgiving environments for AI to get wrong: regulated consumer lending, where a bad answer isn't just a bad experience, it's a compliance problem. This talk is the real path Upstart's AI/LLM engineering team took to make that manageable: starting from ops teams manually reviewing 100% of calls, building LLM-as-judge metrics that had to earn trust by matching human graders before they were allowed to run unsupervised, and the automated eval loops they're building toward now. Shiv will walk through what broke along the way and the actual steps they took; Brooke Hopkins will cover the evaluation-infrastructure mechanics underneath, drawn from applying the same closed-loop simulation discipline she built at Waymo to conversational agents. The throughline: autonomous, self-improving agents don't start with a better model, they start with evals a regulated business can actually stand behind an auditor.",
+   "speakers": [
+    {
+     "name": "Shiv Indap",
+     "role": "Senior Engineering Manager",
+     "company": "Upstart",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F48KlBbJRx6HmLEN2ld1k_headshot-1789787057235.jpg"
+    },
+    {
+     "name": "Brooke Hopkins",
+     "role": "Founder & CEO",
+     "company": "Coval",
+     "bio": "Brooke Hopkins is the founder and CEO of Coval, the evaluation platform for enterprise voice AI. She started her career building voice technology at Google Assistant, before going on to lead the evaluation infrastructure team at Waymo, where she coded the first versions of the dataset storage and foundational simulation systems, and her team built the developer tools for launching and running evals at scale. It was there that she identified the parallel that became Coval: self-driving systems and conversational AI face the same challenges.\n\nWith Coval, Brooke is helping cross-functional teams replace slow, manual testing with automated simulation and observability for conversational AI agents, expanding test coverage, accelerating development, and enabling agents to be deployed with confidence in real production environments. She has collaborated with hundreds of voice systems across industries, giving the Coval team unique insight into the cutting edge of voice AI capabilities and where things go wrong.",
+     "linkedin": "https://www.linkedin.com/in/bnhop/",
+     "twitter": "",
+     "website": "https://coval.ai",
+     "photo": "https://content-cdn.sessionboard.com/event-files%2FJXbCgggUTCyGIa0KRUSS_Brooke_Hopkins_headshot.png"
+    }
+   ]
+  },
+  {
+   "id": "d3d8c80e-84b7-4106-b8b5-ca63bc508480",
+   "wall": "10:40am",
+   "wall_end": "10:58am",
+   "t": 7164,
+   "t_end": 8244,
+   "title": "Developer Docs as Knowledge Infrastructure for Fintech",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "Sutton Room (NY Ballroom W)",
+   "description": "Agents are becoming the primary consumers of financial and developer knowledge, and the stakes are higher in fintech than almost anywhere else.\n\nWhen Coinbase Developer Platform rebuilt its documentation, agents quickly grew to 59% of all traffic, with over 30,000 MCP tool calls and 145 distinct AI tools pulling from its docs to build onchain. The old question was whether a developer could understand the docs. The new question is whether an agent can reason over financial infrastructure correctly, safely, and fast enough to move real money.\n\nHahnbee Lee, co-founder and CTO of Mintlify, and Lincoln Murr, Head of Applied AI at Coinbase, will share what it took to rebuild CDP's documentation as knowledge infrastructure built for agents, and what that means for the future of trust and speed in financial systems.",
+   "speakers": [
+    {
+     "name": "Hahnbee Lee",
+     "role": "Co-Founder & CTO",
+     "company": "Mintlify",
+     "bio": "Hahnbee Lee is the co-founder of Mintlify, which she launched with Han Wang to reimagine documentation for the AI era. Under her leadership, Mintlify has raised over $67M in funding, scaled to serve 300 million users across more than 20,000 companies, and earned a spot on Forbes' 2026 30 Under 30 list for AI.",
+     "linkedin": "",
+     "twitter": "https://x.com/hahnbeelee",
+     "website": "https://www.mintlify.com/",
+     "photo": "https://content-cdn.sessionboard.com/RYAVnZcQRVqxJe0zqtkE_headshot-1789391585878.jpg"
+    },
+    {
+     "name": "Lincoln Murr",
+     "role": "Head of AI Product",
+     "company": "Coinbase",
+     "bio": "Lincoln Murr is the AI Product Lead at Coinbase, where he leads the products powering the agentic economy. He is responsible for Coinbase for Agents (which lets any AI agent trade, pay, and execute financial workflows with user-defined guardrails) and Coinbase Advisor (the first AI-powered SEC-registered financial advisor embedded in the Coinbase app, giving every user access to professional-grade portfolio guidance), among other onchain agentic experiments. Lincoln's work is grounded in a core belief: AI agents are becoming first-class participants in the economy, and Coinbase is building the financial infrastructure they'll run on. Lincoln was previously a fellow with the Ethereum Foundation and currently sits on the board of the x402 Foundation.",
+     "linkedin": "https://www.linkedin.com/in/lincolnmurr/",
+     "twitter": "https://x.com/MurrLincoln?lang=en",
+     "website": "https://www.coinbase.com/",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FJVTzJCUwRBz1THJx4k6e_headshot-1789761029582.jpg"
+    }
+   ]
+  },
+  {
+   "id": "f3445fe7-308b-4e84-8490-fd78a13db4fb",
+   "wall": "10:40am",
+   "wall_end": "10:58am",
+   "t": 7164,
+   "t_end": 8244,
+   "title": "The Hidden Costs of a Faster Model",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "McCarthy Room (Riverside Suite)",
+   "description": "Model upgrades are often sold as more capability per dollar. In production, the harder question is what quietly changed underneath: attention sparsity, 4-bit quantization, speculative decoding, or how we prompt and template the model itself. This talk is a practical tour of those changes and the tests they require. Using a recent model release as a concrete case study, we’ll examine how blockwise 4-bit attention and MoE quantization change scale selection and rounding; how speculative decoding changes serving assumptions; and how reasoning controls can alter the path from API request to prompt construction. Attendees will leave with a good understanding of the hidden costs of change that affect latency, output quality, reproducibility, observability, and rollback for teams shipping AI in latency-sensitive and high-stakes environments.",
+   "speakers": [
+    {
+     "name": "Morgan Suo",
+     "role": "Head of US Business Development",
+     "company": "MiniMax",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/event-files%2FIXWILoznSbqIPJLRJx8A_Mrogan_Suo_headshot.png"
+    }
+   ]
+  },
+  {
+   "id": "4607dbbe-8f94-4b0e-91ce-257d1cfb5448",
+   "wall": "11:05am",
+   "wall_end": "11:23am",
+   "t": 8664,
+   "t_end": 9744,
+   "title": "Building Better Agents Through End-to-End Evals",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "Shannon Room (NY Ballroom E)",
+   "description": "More context should make an AI agent better. In our accounting agent, it often did the opposite. At Ramp, we built a benchmark of real-world accounting workflows to test frontier models, tools, skills, memory, and the agent harness end to end. What we found was that some of the most intuitive improvements actually made the system worse. In this talk, I’ll walk through what we learned building and benchmarking a production finance agent: how we used skill ablation to identify context that was hurting performance, reduced one frequently loaded skill from 14k to 5k characters without sacrificing quality, and learned the hard way that agent memory needs to preserve reusable process, not stale facts from the last task. The broader lesson is that production agents are systems problems, not prompt problems. Better models help, but tool design, context management, telemetry, evals, latency, and cost all interact. I’ll share the metrics and development loop we use to decide whether an agent change actually makes the product better. Attendees will leave with a practical framework for evaluating agent-harness changes against quality, reliability, latency, and cost rather than optimizing any one of them in isolation.",
+   "speakers": [
+    {
+     "name": "Ryan Stevens",
+     "role": "Director of Applied Science",
+     "company": "Ramp",
+     "bio": "I am currently Director of Applied Sciences at Ramp, leading a team of Applied Scientists and Analytics Engineers. Our teams build the core ML models and data products powering Risk Management and Growth at Ramp. Prior to joining Ramp, I worked as a Data Scientist at Meta on their Ads Core ML team. Before that, I completed my Economics PhD at New York University. My academic research interests were primarily focused on industrial organization, applied econometrics and behavioral economics. Outside of work, I like to code, play around with interesting datasets, bike around, and spend time with my wife and our pup, Archie.",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/3F2bkw3SVGovo5okGiEY_headshot-1789391590689.jpg"
+    }
+   ]
+  },
+  {
+   "id": "dcf188f6-95d0-4c22-856b-fccf0374e8e4",
+   "wall": "11:05am",
+   "wall_end": "11:23am",
+   "t": 8664,
+   "t_end": 9744,
+   "title": "Not All GPU's Are Deployed The Same",
+   "format": "Stage Talk (18 minutes)",
+   "type": "talk",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "Investors just rated Lambda investment grade and are about to price Nscale at IPO. SemiAnalysis shows the operator spread that compute indexes and futures still miss, how lenders already price it, and what a contract should settle on.",
+   "speakers": [
+    {
+     "name": "Oliver Kennon",
+     "role": "Research Analyst, Core Research",
+     "company": "SemiAnalysis",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FkV6Knz8SReCJrs7ZldMM_headshot-1790951974776.jpg"
+    }
+   ]
+  },
+  {
+   "id": "3524cdd1-2e7b-4c75-81b1-11b4d28141b8",
+   "wall": "11:05am",
+   "wall_end": "11:23am",
+   "t": 8664,
+   "t_end": 9744,
+   "title": "Benchmarking the Full Stack: From Silicon to Harness.",
+   "format": "Breakouts",
+   "type": "breakout",
+   "room": "Turing Room (Riverside Ballroom)",
+   "description": "Tok/s is the GPU industry's vanity metric. It measures how fast a system generates tokens that may or may not solve your problem, at a concurrency of one, under conditions nobody deploys in. If you're making infrastructure decisions based on tok/s, you're flying blind. n this talk, we'll uncover and quantify how models, the software stack beneath and the infrastructure supporting it all contribute to the right token economics. We will present aistack, an open benchmarking initiative by imec that measures what actually happens when real AI workloads hit real hardware. What 48 concurrent coding agent sessions - across various open models - do to your GPUs - across various hardware configuration. We provide insights on the tipping points for each model to switch from API-costing, to leasing GPUs, to owning your own infrastructure. We will show this in detail through a thorough analysis of what software coding currently buys you across models and hardware. We ran 64 SWE-Bench Pro tasks across everything from a DGX Spark on a desk to an 8×B300 node, swept concurrency from 1 to 128 across multiple frontier models, and tested five different coding harnesses holding model and hardware constant. Some findings were uncomfortable: a single H200 comfortably serves 32 concurrent devs, but an 8×B300 running a frontier-matching model starts crawling at 8. Renting GPUs saves 35× over API for one model and costs more than the API for another. vLLM's throughput collapsed at high concurrency in ways no datasheet warned about. And the harness, the part most benchmarks ignore, turned out to move the needle more than the model in some configurations. But this talk goes beyond the data. It's about why nobody had done this measurement before and what it takes to build the neutral ground between chip designers who plan in 3-year silicon cycles, model builders who ship weekly, and the infrastructure operators caught in between. aistack exists because those three groups are optimizing against different metrics, running their own benchmarks, and publishing numbers that don't compose. We're building the place where they look at the same evidence. This talk shows what that looks like in practice, what we've found so far, and what's coming next.",
+   "speakers": [
+    {
+     "name": "Steven Latré",
+     "role": "VP AI",
+     "company": "imec",
+     "bio": "Steven Latré is VP AI and Fellow at imec, where he leads the organization's AI research across datacenters, health, edge, and automotive. He built his career at the intersection of AI and systems infrastructure — starting with a PhD at Ghent University on network management, then growing IDLab Antwerp from a group that fit in a coffee room to over 100 researchers in eight years. Along the way his team entered a DARPA competition on machine learning for dynamic spectrum management on a gamble and came out as the only European finalist. He's previously was a Full Professor at the University of Antwerp, has co-authored 150+ papers (7,500+ citations), and picked up the IEEE COMSOC Young Professional Award and the Laureate award of the Royal Academies for Science and the Arts of Belgium. His latest project is aistack — an open benchmarking initiative that measures real AI workloads on real silicon, because he got tired of watching hardware vendors and model builders talk past each other with incompatible metrics.",
+     "linkedin": "https://linkedin.com/in/stevenlatre",
+     "twitter": "",
+     "website": "https://aistack.imec-int.com",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F7ZDd2JRMQCGKgqpq4fC8_headshot-1790284092040.jpg"
+    }
+   ]
+  },
+  {
+   "id": "4188711c-a587-423b-86c2-1ff2ad38c15e",
+   "wall": "11:05am",
+   "wall_end": "11:23am",
+   "t": 8664,
+   "t_end": 9744,
+   "title": "Claude Code, Financial Analyst: Turning a Coding Agent Loose on Governed Enterprise Data",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "Sutton Room (NY Ballroom W)",
+   "description": "Knowledge work on enterprise data looks solvable: point a capable model at contracts and spend, let it reason through the sourcing decision. The approaches vary - direct retrieval, retriever-augmented systems, agentic SQL access with governed infrastructure - but they're all trying to solve the same problem. When the data is ambiguous, each one fails differently.\n\n \n\nThis workshop compares how different architectures handle enterprise knowledge work when parallel agents operate without visibility into each other's outputs. You'll see what breaks when agents work on vendor contracts and spend data: where sub-agents independently claim the same savings, where citations resolve cleanly but describe the wrong thing, where reconciliation works beautifully and proves the agent solved the wrong question. We'll examine working implementations: where a better data layer genuinely helps, where it masks problems, and one case where cleaning the warehouse made the answer worse, not better. Each approach trades off differently between false confidence and surfacing uncertainty.\n\n \n\nLeave with a toolkit for your own systems: which architecture fits which problem, what signals tell you it's failing, how to set confidence bounds for a real business decision, and the structural patterns that actually catch failure instead of hiding it.",
+   "speakers": [
+    {
+     "name": "Natalia Connolly",
+     "role": "Director, AI & Data",
+     "company": "AlixPartners",
+     "bio": "I bring deep expertise in artificial intelligence and machine learning to complex business problems. A physicist by training (PhD in High Energy Physics), I've spent 15+ years as a data science and AI executive, building and scaling technical teams across management consulting, retail and fintech. I've worked at both ends of the spectrum -  from Fortune 500 enterprises  navigating data governance and AI risk, to early-stage startups deploying ML at scale on limited resources.  Now at AlixPartners as Director of Performance, I both advise C-suite clients and architect production AI workflows at scale. Claude Certified Architect (2026).",
+     "linkedin": "https://www.linkedin.com/in/natalia-connolly-47711b21/",
+     "twitter": "",
+     "website": "https://www.alixpartners.com",
+     "photo": "https://content-cdn.sessionboard.com/texrL14EQcCk4cgdJddh_headshot-1789391595887.jpg"
+    },
+    {
+     "name": "Kevin Madura",
+     "role": "Director, Advanced Technology",
+     "company": "AlixPartners",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FB79IFpYTmqb63uPbF1gr_headshot-1789692912319.png"
+    }
+   ]
+  },
+  {
+   "id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32",
+   "wall": "11:05am",
+   "wall_end": "11:23am",
+   "t": 8664,
+   "t_end": 9744,
+   "title": "Your Coding Agent Has a Context Problem",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "McCarthy Room (Riverside Suite)",
+   "description": "The next model release isn’t going to fix your agent. This panel gets into what actually separates agents that demo well from agents that work: context, tooling, workflows, and the engineering around the model.",
+   "speakers": [
+    {
+     "name": "Tom Moor",
+     "role": "Head of Engineering",
+     "company": "Linear",
+     "bio": "Tom Moor is the Head of Engineering at Linear, a purpose-built tool redefining how modern teams build software. He previously co-founded and scaled multiple SaaS startups including Abstract and Buffer. He draws on over a decade of experience building collaborative tools and design-led products.",
+     "linkedin": "https://www.linkedin.com/in/tom-moor-b6213b1ba/",
+     "twitter": "https://x.com/tommoor",
+     "website": "https://linear.app/",
+     "photo": "https://content-cdn.sessionboard.com/rYTXO8hQQHOTxqDVuL7T_headshot-1789391590605.png"
+    }
+   ]
+  },
+  {
+   "id": "bc4b6b4a-cf07-4326-8276-fcf845da0284",
+   "wall": "11:30am",
+   "wall_end": "11:48am",
+   "t": 10164,
+   "t_end": 11244,
+   "title": "Building the Financial Account for Agents",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "room": "Shannon Room (NY Ballroom E)",
+   "description": "AI agents are becoming economic actors, but today’s financial rails weren’t built for them. Give an agent a bank account today and it inherits every constraint designed for humans: cards that decline sub-dollar charges, transfers that take days to settle, and permission models that assume a person is always the one clicking “approve.” This talk explores what it takes to build a financial account for agents from the ground up, laying the foundation for AIFi rather than forcing agents into infrastructure that was never designed for them.\n\nLincoln Murr will unpack what changes when an agent needs to hold assets, transact autonomously, and move money at machine speed. He’ll cover how stablecoins enable machine-native payments, how to design accounts with human-defined controls, and what Coinbase is learning from x402, the open payment protocol that has already processed $53M+ across 193M+ payments for AI agents, apps, and APIs. With agentic commerce projected to reach $3–5T by 2030, this is a look at the infrastructure that has to exist for that future to become real.",
+   "speakers": [
+    {
+     "name": "Lincoln Murr",
+     "role": "Head of AI Product",
+     "company": "Coinbase",
+     "bio": "Lincoln Murr is the AI Product Lead at Coinbase, where he leads the products powering the agentic economy. He is responsible for Coinbase for Agents (which lets any AI agent trade, pay, and execute financial workflows with user-defined guardrails) and Coinbase Advisor (the first AI-powered SEC-registered financial advisor embedded in the Coinbase app, giving every user access to professional-grade portfolio guidance), among other onchain agentic experiments. Lincoln's work is grounded in a core belief: AI agents are becoming first-class participants in the economy, and Coinbase is building the financial infrastructure they'll run on. Lincoln was previously a fellow with the Ethereum Foundation and currently sits on the board of the x402 Foundation.",
+     "linkedin": "https://www.linkedin.com/in/lincolnmurr/",
+     "twitter": "https://x.com/MurrLincoln?lang=en",
+     "website": "https://www.coinbase.com/",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FJVTzJCUwRBz1THJx4k6e_headshot-1789761029582.jpg"
+    }
+   ]
+  },
+  {
+   "id": "1165abe0-124d-4c1c-aa3b-6a14f5c5fd03",
+   "wall": "11:30am",
+   "wall_end": "11:48am",
+   "t": 10164,
+   "t_end": 11244,
+   "title": "How Compute Markets Work",
+   "format": "Stage Talk (18 minutes)",
+   "type": "talk",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "San Francisco Compute built the first real market for compute. But a compute market only works if it's physically settled. This determines what can be standardized, what a price even means, and which market designs survive contact with reality. Evan Conrad will walk through where this belief came from, what it rules out, and what it implies for anyone buying, selling, or betting on compute.",
+   "speakers": [
+    {
+     "name": "Evan Conrad",
+     "role": "CEO",
+     "company": "San Francisco Compute Company",
+     "bio": "Evan Conrad is the co-founder and CEO of San Francisco Compute Company. Prior to founding SFC in 2023, Evan co-founded Room Service, a distributed systems startup, and served as an engineer at Segment. He was a key contributor to OpenAI's ChatGPT enterprise, their most commercially successful product. Additionally, Evan ran admissions for Nat Friedman and Daniel Gross’ Venture fund, “AI Grant,” for its first batch, where he supported early-stage AI research. Evan holds a degree from Gonzaga University and has a background in building and advising startups.",
+     "linkedin": "https://www.linkedin.com/in/evan-conrad/",
+     "twitter": "https://x.com/evanjconrad",
+     "website": "https://sfcompute.com/",
+     "photo": "https://content-cdn.sessionboard.com/n3PZvCk1SauZdSfk4KwD_headshot-1789391595720.jpg"
+    }
+   ]
+  },
+  {
+   "id": "9b002687-09cf-42e2-9282-532ed9d0c184",
+   "wall": "11:30am",
+   "wall_end": "11:48am",
+   "t": 10164,
+   "t_end": 11244,
+   "title": "We Let Our Financial Planners Write the Agents",
+   "format": "Breakouts",
+   "type": "breakout",
+   "room": "Turing Room (Riverside Ballroom)",
+   "description": "We show how our CFPs built organizational skills to make planning more efficient and effective. Our planners write and maintain the agent skills they use daily, and none of them write code.\n\nWe started by using AI as a chat box to polish client messages. The real shift came when work began happening in the background: I can be on a call with one client while a full cash flow or insurance analysis is drafted for another, then review, adjust, and send recommendations afterward. A planner’s bottleneck was never typing speed, but being in only one place at a time.\n\nThat requires an agent that works where the work lives and knows how we do planning, not how planning works in general. That’s a skill. To build one: pick a repeatable workflow, walk the agent through one real case while narrating your judgment, package it with the questions it must ask and the limits it must respect, test it on five to ten real cases, then ship it with an owner and a reviewer.\n\nSix months in, we have 24 skills (17 in planning), and adoption spread to sales, product, and marketing without a mandate. I’ll cover what changed when subject matter experts built for their own niches, how we peer-review skills like we review plans, and our open question: how to check quality at scale when the output is judgment.",
+   "speakers": [
+    {
+     "name": "Matt Ragone",
+     "role": "Financial Planner",
+     "company": "Range",
+     "bio": "",
+     "linkedin": "https://www.linkedin.com/in/matthew-ragone-cfp%C2%AE-crpc%E2%84%A2-a56a85106/",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FfjQrUkA2SbuYPYn7A5HF_headshot-1791983200354.jpg"
+    }
+   ]
+  },
+  {
+   "id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b",
+   "wall": "11:30am",
+   "wall_end": "11:48am",
+   "t": 10164,
+   "t_end": 11244,
+   "title": "Who verifies the software factory?",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "Sutton Room (NY Ballroom W)",
+   "description": "CircleCI analyzed 28 million CI workflows this year and found that throughput jumped 59%, the largest increase it has ever recorded. But nearly three in ten attempts to merge into production now fail. Writing code has stopped being the constraint; the new challenge is validating it.\n\nIn this onstage conversation, Manish Kapur, VP Product Marketing and DevRel at Sonar, sits down with Addy Osmani, Member of Technical Staff, Anthropic to look at the current landscape from both ends: the people building coding agents, and the teams who have to decide how to build trust in what those agents produce.\n\nManish will preview new Sonar research, never shown publicly, based on a survey of more than 1,000 developers. The two will dig into the questions it raises: What percentage of AI-authored changes reach production with no separate human review at all? How has the split between writing and reviewing shifted since agents arrived? And are the productivity gains still climbing, or have they quietly plateaued? You'll leave with a clear read on which verification practices separate the teams shipping fast from the teams shipping blind, and what it takes to keep review and testing from becoming the bottleneck as agents take on more of the work.",
+   "speakers": [
+    {
+     "name": "Manish Kapur",
+     "role": "VP of Product Marketing and Developer Relations",
+     "company": "Sonar",
+     "bio": "",
+     "linkedin": "https://linkedin.com/in/mkapur",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FwlHLSXVwQk2Y1aXU082O_headshot-1791298312485.jpg"
+    },
+    {
+     "name": "Addy Osmani",
+     "role": "Member of Technical Staff",
+     "company": "Anthropic",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FaeZjxYfyTXOH6gcnsDEw_headshot-1791298294115.jpg"
+    }
+   ]
+  },
+  {
+   "id": "8a453c61-f605-4061-b304-ace80fb21317",
+   "wall": "11:30am",
+   "wall_end": "11:48am",
+   "t": 10164,
+   "t_end": 11244,
+   "title": "Stop Wasting Tokens on Products People Can’t Use",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "McCarthy Room (Riverside Suite)",
+   "description": "You'll leave with a data-backed argument for making accessibility a default in every AI-assisted development workflow. Not just because we build products for everyone, and everyone deserves to use them — but because it's cheaper too.",
+   "speakers": [
+    {
+     "name": "Jemima Abu",
+     "role": "Senior Product Engineer",
+     "company": "CAIS",
+     "bio": "Jemima Abu is a self-taught front-end developer, Google Developer Expert, Microsoft MVP, and Certified Professional in Accessibility Core Competencies. She is passionate about diversity in technology and accessibility in web development.",
+     "linkedin": "https://www.linkedin.com/in/jemimaabu/",
+     "twitter": "https://twitter.com/jemimaabu/",
+     "website": "https://www.caisgroup.com/",
+     "photo": "https://content-cdn.sessionboard.com/MFKQSlTeTwCJGKaAGXtI_headshot-1787684770876.jpg"
+    }
+   ]
+  },
+  {
+   "id": "29083884-87dc-44f8-b412-b494afca8856",
+   "wall": "11:55am",
+   "wall_end": "12:13pm",
+   "t": 11664,
+   "t_end": 12744,
+   "title": "The Model Ate the Coding Harness. Now What?",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "Shannon Room (NY Ballroom E)",
+   "description": "Jediah Katz discusses how we built Cursor and Grok Bot, and where we think the agent harness is going.",
+   "speakers": [
+    {
+     "name": "Jediah Katz",
+     "role": "Engineer, Agent Harness",
+     "company": "SpaceX Super Intelligence",
+     "bio": "Jediah is an early engineer at Cursor, where he works on product, platform, and evals for the agent harness. Previously he built out Figma's AI evals platform and served as an instructor at the University of Pennsylvania, where he designed and taught Penn's CIS1921 course on constraint optimization and the gap between theory and practice.",
+     "linkedin": "https://www.linkedin.com/in/jediah-katz/",
+     "twitter": "https://twitter.com/jediahkatz",
+     "website": "https://cursor.com/home",
+     "photo": "https://content-cdn.sessionboard.com/OgNWBwYmQSu4Ap8JFoQC_headshot-1789391601005.png"
+    }
+   ]
+  },
+  {
+   "id": "70532ab5-f3d2-48a2-aebd-c2018afcd318",
+   "wall": "11:55am",
+   "wall_end": "12:13pm",
+   "t": 11664,
+   "t_end": 12744,
+   "title": "The Dark Pools of Compute",
+   "format": "Stage Talk (18 minutes)",
+   "type": "talk",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "Compute is the core input to AI, yet it still trades the way many commodities did before exchanges existed: through private quotes, brokers and long bilateral contracts.\n\nAffaan Mustafa & Alejandro Soumah (Compute Trading Leads at Jump Trading) will step back from individual prices to look at the forces that set them.\n\nOn the supply side, that means power and data-center buildout, along with the lenders and depreciation assumptions that decide what new hardware really costs.\n\nOn the demand side, it means the way buyers are shifting between generations, contract lengths and providers.\n\nHe will then turn to policy, from export controls and sovereign demand to the first regulated compute futures, and close with what a more mature compute market could mean for anyone who builds on it.",
+   "speakers": [
+    {
+     "name": "Affaan Mustafa",
+     "role": "Compute Trading Lead",
+     "company": "Jump Trading",
+     "bio": "Affaan Mustafa leads the compute trading division at Jump Trading, focused on trading, financing, and structuring transactions across compute and inference markets. Prior to joining Jump, Affaan co-founded Itô Markets, building a platform for compute procurement, financing, and risk management. He also created ECC, an open source agentic engineering toolkit used by millions globally, and built automated trading systems and infrastructure for prediction markets. Previously, Affaan conducted research involving high-dimensional data processing on HPC clusters at the San Diego Supercomputer Center. His background spans AI engineering, financial markets, and hardware commerce, including running an electronics business that sold thousands of GPUs and other components.",
+     "linkedin": "https://linkedin.com/in/affaanmustafa",
+     "twitter": "",
+     "website": "https://jumptrading.com",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2Fy3g2n8kQ3m4bg0T9oHQv_headshot-1790972615966.png"
+    },
+    {
+     "name": "Alejandro Soumah Fernandez",
+     "role": "Co-Lead Compute Trading",
+     "company": "Jump Trading",
+     "bio": "Alejandro Soumah leads the compute trading division at Jump Trading, focused on trading, financing, and structuring transactions across compute markets. Prior to joining Jump, Alejandro co-founded Itô Markets, building a platform for compute procurement, financing, and risk management. Previously, he worked as a quant at Goldman Sachs.",
+     "linkedin": "https://www.linkedin.com/in/alejandro-soumah",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FAnKXWJs9Rj2jE2tnvGUm_headshot-1791563806864.jpg"
+    }
+   ]
+  },
+  {
+   "id": "534796a7-0f44-4d59-a1c5-0df28a947c6a",
+   "wall": "11:55am",
+   "wall_end": "12:13pm",
+   "t": 11664,
+   "t_end": 12744,
+   "title": "When AI Fails: Designing Evaluation Systems for High Stakes Applications",
+   "format": "Breakouts",
+   "type": "breakout",
+   "room": "Turing Room (Riverside Ballroom)",
+   "description": "AI systems used in high-stakes environments cannot be evaluated solely by asking whether a model produces the right answer. A system can perform well on standard benchmarks while failing in unexpected, adversarial, or consequential situations.\n\nIn this talk, I will explore how engineers can design evaluation systems that better reflect the realities of production AI. I will cover how to identify meaningful failure modes, evaluate failures based on their severity and impact, combine automated evaluations with human review, and use red teaming to uncover behaviors that conventional tests may miss.\n\nThe session will also examine how evaluation needs to evolve as models, prompts, tools, and surrounding systems change. I'll bring these ideas to life with a first look at eSlams.com, a new platform and open-source framework where AI models play games to explore strategic reasoning, adaptability, and decision-making under uncertainty.\n\nThe goal is to provide a practical framework for building evaluation processes that help teams understand not just whether an AI system works, but where it can fail, how those failures should be prioritized, and whether the system is ready for high-stakes use.",
+   "speakers": [
+    {
+     "name": "Ramakrishnan Lokanathan",
+     "role": "Founder",
+     "company": "eSlams.com",
+     "bio": "Ramakrishnan Lokanathan is the founder of eSlams.com, a public stadium where humans play against AI models and watch them compete. Its open-source engine enables developers and researchers to evaluate AI through interactive games, exploring strategic reasoning, adaptability, and decision-making under uncertainty.\n\nHe previously founded and exited an applied AI company. His work focuses on moving AI evaluation beyond static benchmarks to understand how intelligent systems behave, make decisions, and fail in dynamic, real-world environments.",
+     "linkedin": "",
+     "twitter": "",
+     "website": "https://eslams.com/makriman",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FdEO6NghIS6s6VOTI5Uvd_headshot-1789691176921.jpg"
+    }
+   ]
+  },
+  {
+   "id": "9f2a38a9-c0e9-461a-97c4-b8cb3fbe3e50",
+   "wall": "11:55am",
+   "wall_end": "12:13pm",
+   "t": 11664,
+   "t_end": 12744,
+   "title": "It's Not the Model, It's You",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "Sutton Room (NY Ballroom W)",
+   "description": "There is a massive paradox in software engineering right now. AI coding agents have ascended to become an incredibly important and powerful part of development, due to substantial improvements in model capability over the past year. If you follow the spirited debates over benchmark performance and general vibes that attend every new model release, you might think that improvements to foundation models are the most important factor driving our industry today.\n\nHowever, if you looked at real-world production data from software development workflows, you’d find that after controlling for differences between individual developers, model choice explains almost none of what ships. What matters most is the individual’s abilities and judgment, and the environment (the skills, harness, and context) they’ve assembled for themselves.\n\nI’ve been studying developer productivity using data from the Jellyfish platform, which combines AI agent telemetry with software engineering workflow data across 1,000+ companies and hundreds of thousands of developers. We see in the data that premium model mix doesn’t correlate with meaningful gains. What does matter is experience and scaffolding. Senior developers are continuing to out-ship junior developers, and this gap grows as token spend increases. And investments in skills and context compound: developers and teams building reusable skills ship measurably more each week, with returns that grow alongside their platform investments. \n\nThe foundation models will keep improving, and without much help from most of us. This talk is about the part we all control, which matters even more: the developer practices and workflow tooling you need to cultivate top operators on your own team.",
+   "speakers": [
+    {
+     "name": "Nicholas Arcolano",
+     "role": "Head of AI & Research",
+     "company": "Jellyfish",
+     "bio": "I'm a founding team member and Head of AI & Research at Jellyfish, where my team and I study how AI transformation is reshaping the software industry. We have a unique real-world view into how hundreds of thousands of developers are using AI coding tools and agents in production, and we use it to help engineering leaders spend intelligently, ship faster, and focus on what matters to the business. I've been in startups for 13 years and spent another 10 years before that in national defense research at MIT Lincoln Laboratory. My background is in applied mathematics (Ph.D., Harvard) and electrical engineering (M.S., Boston University and B.S., WPI).",
+     "linkedin": "https://www.linkedin.com/in/arcolano",
+     "twitter": "https://x.com/arcolano",
+     "website": "https://arcolano.com",
+     "photo": "https://content-cdn.sessionboard.com/i8MCVxeS3KCl2b9SVQdQ_headshot-1789391600916.jpg"
+    }
+   ]
+  },
+  {
+   "id": "2401b55d-09c7-4159-8297-545dea0b7df2",
+   "wall": "11:55am",
+   "wall_end": "12:13pm",
+   "t": 11664,
+   "t_end": 12744,
+   "title": "The Human Verification Bottleneck: What agents do when a human is the only thing in the way",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "McCarthy Room (Riverside Suite)",
+   "description": "Many critical monetary, information, and communication transactions still end with human verification. To move money, recover an account, or pass KYC, you often have to jump on a call and show your face to prove you’re a person. That check is the backstop a lot of security rests on, and, as I argue in this talk, a potential control mechanism for AI agents. This summer’s Hugging Face incident—where AI agents broke into a third party’s production infrastructure, despite being tested in a closed, internal evaluation sandbox—was a reminder that agents reach for whatever capability is available to finish a task. Whether you read it as intent or missing controls, now that human-like avatars can join a video call as a convincing person, could agents use one to get past the human on the other end? In this talk, I measure when today’s agents actually do this, what tips them over, and whether safety alignment is enough to stop them. Besides examining the traces of agents deciding to impersonate a human, I will discuss control, alignment, and detection, with a particular emphasis on organizations that already employ human verification.",
+   "speakers": [
+    {
+     "name": "Maty Bohacek",
+     "role": "AI Researcher",
+     "company": "Stanford University",
+     "bio": "Maty Bohacek is a researcher at Stanford University working at the intersection of AI and media integrity. He previously conducted research at UC Berkeley and MIT, and worked at Google DeepMind’s integrity team. In a world that is becoming increasingly AI-mediated, his goal is to build AI systems and networks that are inherently trustworthy and interpretable, resulting in productive, democratic discourse. In the past, he developed AI systems to translate sign language from video to text, detect deepfakes, attribute training data of generative AI models, and more. Maty’s work has been featured in Science and PNAS, as well as top AI conferences including ICML, ICLR, CVPR, ICCV, and others; he appeared on Forbes 30 under 30, and also received the Silver Medal of the Czech Senate.",
+     "linkedin": "https://www.linkedin.com/in/maty-bohacek/",
+     "twitter": "",
+     "website": "https://www.matybohacek.com",
+     "photo": "https://content-cdn.sessionboard.com/qP4juzxTGicQQBEj7HoN_headshot-1789391600805.jpg"
+    }
+   ]
+  },
+  {
+   "id": "328c189f-fe70-418f-bde0-c450948c4fbc",
+   "wall": "12:20pm",
+   "wall_end": "12:38pm",
+   "t": 13164,
+   "t_end": 14244,
+   "title": "The Rise of the Product Engineer",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "Shannon Room (NY Ballroom E)",
+   "description": "Coding agents produce 741% more code, and only 30% more software ships as a result. The gap is human review: people top out around 400 lines an hour and agents are not slowing down. This talk is for engineering leaders trying to decide what to do about that. It covers what happens to code review when the reviewer is the bottleneck, which review work is moving to agents and automated verifiers and which is not, what the change does to hiring and to the junior pipeline, and where the \"product engineer\" role is landing as the line between writing code and shipping software dissolves. It draws on published data from the largest code hosts and on how Arize restructured its own engineering and operations work around agents that generate more traces and eval results than anyone could read. Leaders leave with a framework for deciding what their people should read, what they should delegate, and how to measure whether the new arrangement is working.",
+   "speakers": [
+    {
+     "name": "Laurie Voss",
+     "role": "Head of Developer Relations",
+     "company": "Arize AI",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FB0mbC1YTtWWKjgts5SXQ_headshot-1790815169069.jpg"
+    }
+   ]
+  },
+  {
+   "id": "d4b9ddcc-6c1c-4af1-8888-861b50451fa5",
+   "wall": "12:20pm",
+   "wall_end": "12:38pm",
+   "t": 13164,
+   "t_end": 14244,
+   "title": "CEO, Compute Exchange",
+   "format": "Stage Talk (18 minutes)",
+   "type": "talk",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "",
+   "speakers": [
+    {
+     "name": "Carmen Li",
+     "role": "CEO",
+     "company": "Compute Exchange",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FPEajzB4Rm2f2ZU0ggXRR_headshot-1791671286769.png"
+    }
+   ]
+  },
+  {
+   "id": "11fef189-97e8-4c8e-87e8-dac43d800846",
+   "wall": "12:20pm",
+   "wall_end": "12:38pm",
+   "t": 13164,
+   "t_end": 14244,
+   "title": "A/B Testing AI Products Is Weird: What Changes When the Product Is Probabilistic",
+   "format": "Breakouts",
+   "type": "breakout",
+   "room": "Turing Room (Riverside Ballroom)",
+   "description": "Traditional product experimentation assumes that we can define a feature, measure a response, and compare outcomes. AI products make that much harder. Outputs can vary, user responses can depend on context, and a metric improvement does not necessarily tell you why the experience improved.\n\nDrawing on experimentation across consumer technology and fintech, as well as the development of an AI-powered product experience at Bumble, I will examine what product teams need to consider when evaluating AI-powered experiences.\n\nWe will look at common experimentation failure modes including metric selection, novelty effects, premature conclusions, and misleading behavioural signals, then connect them to the additional complexity introduced when the product experience itself is generated or personalised. I will share a practical approach for defining the product question first, selecting meaningful outcomes, interpreting experiment results, and deciding when an AI feature is ready to scale.",
+   "speakers": [
+    {
+     "name": "Supriya Subudhi",
+     "role": "Staff Product Manager",
+     "company": "Bumble",
+     "bio": "Staff PM with ~10 years of experience spanning engineering, fintech, ad-tech, and consumer tech — with hands-on technical roots as a software and data engineer at Microsoft. Ran multi-country A/B tests at the scale of tens of millions of users, improving ecosystem health through data-driven product decisions during a critical business transition. Shipped a Gen AI feature covered by TechCrunch that directly improved women's D1 retention — a core north-star metric — by improving match quality at scale",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FKp8mByvBRsq67MX0kZpY_headshot-1789654975917.jpg"
+    }
+   ]
+  },
+  {
+   "id": "42d1cb16-e5c9-4eca-9aa8-d9a052b71dcd",
+   "wall": "12:20pm",
+   "wall_end": "12:38pm",
+   "t": 13164,
+   "t_end": 14244,
+   "title": "The Map Beneath Modern Finance",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "Sutton Room (NY Ballroom W)",
+   "description": "Modern finance runs on software that was built decades ago, understood by fewer people each year, and too critical to stop. The hardest part of modernization is not writing replacement code. It is reconstructing the hidden map of business rules, dependencies, data flows, and downstream effects that accumulated around it.\n\nNeeraj Deshmukh of Blitzy and Stephen Chin of Neo4j will show how autonomous AI agents and a dynamic knowledge graph can turn a legacy codebase into a living model of the system, then use that model to plan, generate, and validate a migration to a modern stack. Drawing on implementations at some of the largest financial firms in NYC, they will examine what makes this approach production-safe: system-level context, explicit guardrails, continuous validation, and human approval at the decisions that matter.\n\nThe result is a practical pattern for compressing modernization from months to weeks or days while preserving the behavior financial institutions cannot afford to lose.",
+   "speakers": [
+    {
+     "name": "Stephen Chin",
+     "role": "VP of Developer Relations",
+     "company": "Neo4j",
+     "bio": "Stephen Chin is VP of Developer Relations at Neo4j, program chair and board member for the LF AI & Data Foundation, and author of numerous titles including the upcoming GraphRAG: The Definitive Guide for O'Reilly. He has given keynotes and main stage talks at numerous conferences around the world including AI Engineer Summit, AI DevSummit, Open Source Summit, Devoxx, Jfokus, DevNexus, JNation, JavaOne, Shift, Joker, swampUP, and GIDS. Stephen is an avid motorcyclist who has done evangelism tours in Europe, Japan, and Brazil, interviewing developers in their natural habitat. When he is not traveling, he enjoys teaching kids how to do AI, embedded, and robot programming together with his daughters.",
+     "linkedin": "https://www.linkedin.com/in/steveonjava/",
+     "twitter": "https://twitter.com/steveonjava",
+     "website": "https://neo4j.com/",
+     "photo": "https://content-cdn.sessionboard.com/h0yr8rKTxWQ6pTv13wib_headshot-1789391590325.jpg"
+    },
+    {
+     "name": "Neeraj Deshmukh",
+     "role": "Field CTO",
+     "company": "Blitzy",
+     "bio": "Neeraj Deshmukh is Field CTO at Blitzy, where he works with enterprises applying autonomous development to massive, interconnected software systems -- where understanding the system is often harder than writing the code.\n\nHe previously led Blitzy’s research and engineering efforts in large-scale code understanding, agent orchestration, evaluation, and the knowledge layer that gives AI the context to understand millions of lines of software, reason across entire systems, and execute complex engineering work at scale; while keeping humans in the lead.\n\nNeeraj has spent his career turning frontier AI into production technology -- from speech recognition and deep learning to today’s agentic systems. His focus now is on what comes after the coding agent: fundamentally changing how software -- and ultimately technology itself -- gets built.",
+     "linkedin": "https://www.linkedin.com/in/neerajdeshmukh/",
+     "twitter": "",
+     "website": "https://blitzy.com",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F4UNaErSQTWC3liIS6Xev_headshot-1790944295738.png"
+    }
+   ]
+  },
+  {
+   "id": "d691c916-3f9f-48de-8d12-0c18343ba405",
+   "wall": "12:20pm",
+   "wall_end": "12:38pm",
+   "t": 13164,
+   "t_end": 14244,
+   "title": "Agents Can Rewrite Compilers. Why Can't They Pick Stocks?",
+   "format": "Breakout Session (18 mins)",
+   "type": "breakout",
+   "room": "McCarthy Room (Riverside Suite)",
+   "description": "AI in coding has gone from autocomplete to agents attempting full Rust rewrites of browsers and compilers. Meanwhile, the zeitgeist in finance is still limited to spreadsheet edits and deck formatting. Why aren't AI agents taking positions?\n\n We built an internal proof-of-concept at Samaya, and here's what we learned. We first created agentic harness that can rewind time and block any information from the future. Then, instead of predicting stock prices, which can be noisy, asked the agents to predict the headline metrics of an earnings print. We'll share what worked, what didn't, and how close we think this actually gets us to an agent that can make a real bet on the future.",
+   "speakers": [
+    {
+     "name": "Ashwin Paranjape",
+     "role": "Founding AI Lead",
+     "company": "Samaya AI",
+     "bio": "Ashwin Paranjape is the founding AI lead at Samaya AI, where he builds the AI foundations for agents that tens of thousands of investors at hedge funds, asset managers, and banks use for research and modeling. He co-authored \"Lost in the middle\" (TACL 2024) on how position in the context window changes what a language model actually uses. He has a PhD in CS from Stanford, advised by Christopher Manning, on retrieval-grounded language generation, and a BTech in CSE from IIT Bombay.",
+     "linkedin": "https://www.linkedin.com/in/ashwinparanjape/",
+     "twitter": "https://x.com/AshwinParan",
+     "website": "https://samaya.ai",
+     "photo": "https://content-cdn.sessionboard.com/a2iUuawmSICRRlgsPkPF_headshot-1787684755962.jpg"
+    }
+   ]
+  },
+  {
+   "id": "bacb7e08-1155-49c3-bb5d-74d606387946",
+   "wall": "12:40pm",
+   "wall_end": "2:05pm",
+   "t": 14364,
+   "t_end": 19464,
+   "title": "Networking Break",
+   "format": "",
+   "type": "other",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "",
+   "speakers": []
+  },
+  {
+   "id": "0151a0fc-5cb6-4258-977a-65de8288e39b",
+   "wall": "1:40pm",
+   "wall_end": "1:58pm",
+   "t": 17964,
+   "t_end": 19044,
+   "title": "Evals in 5 minutes",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Shannon Room (NY Ballroom E)",
+   "description": "What's an eval? Why are they important? How does Arize help you do them? Head on over to the Arize AI booth to get the lightning version of our introduction to the art and science of evals.",
+   "speakers": []
+  },
+  {
+   "id": "79730720-7956-4109-a54b-82393c157ed0",
+   "wall": "1:40pm",
+   "wall_end": "1:58pm",
+   "t": 17964,
+   "t_end": 19044,
+   "title": "Artificial Analysis - Optimizing the Cost of Intelligence",
+   "format": "Breakouts",
+   "type": "breakout",
+   "room": "Turing Room (Riverside Ballroom)",
+   "description": "100x differences exist between the most intelligence models, Opus 5.5 and GPT 6 Astra, and still very capable but cheaper models. This session focuses on navigating those decisions to optimize your use of AI for cost efficiency (and other considerations) with Artificial Analysis and custom benchmarks.",
+   "speakers": [
+    {
+     "name": "George Cameron",
+     "role": "Co-Founder",
+     "company": "Artificial Analysis",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "https://artificialanalysis.ai/",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FpUw5jAqZRe6kdAZLmuYQ_headshot-1790808616672.jpg"
+    }
+   ]
+  },
+  {
+   "id": "387377e2-3f42-4403-8e25-c2714047e856",
+   "wall": "1:40pm",
+   "wall_end": "1:58pm",
+   "t": 17964,
+   "t_end": 19044,
+   "title": "Sonar Vortex saves you time and tokens",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Sutton Room (NY Ballroom W)",
+   "description": "Coding agents don't know your architecture, your team's standards, or the issues SonarQube already flagged in the files they're editing. So they guess, and those guesses come back as failed quality gates and PRs sent back for rework. The faster your agents run, the more of this piles up.\nThe Agent Centric Development Cycle builds verification into every stage of agentic development, starting inside the agent's own session. This session shows how Sonar Vortex puts that into practice: it gives the agent your project's rules and a map of the codebase before it writes any code, then checks each change against the same SonarQube standards your CI runs. The agent fixes its own mistakes before they reach a PR. You'll see the full loop running and how little setup it takes.",
+   "speakers": [
+    {
+     "name": "Killian Carlsen-Phelan",
+     "role": "Developer Content Engineer",
+     "company": "Sonar",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FwqPkFFeFRweZUT2YZOig_headshot-1790808953526.png"
+    }
+   ]
+  },
+  {
+   "id": "a901d5ea-57c6-433f-9c37-5fe6531adb99",
+   "wall": "1:40pm",
+   "wall_end": "1:58pm",
+   "t": 17964,
+   "t_end": 19044,
+   "title": "Building a self-improving software factory",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "McCarthy Room (Riverside Suite)",
+   "description": "Interactive agents aren’t scaling. Every company is coping with runaway costs, lack of governance, and difficulty automating.\n\nThis has led to the need for software factories: a closed-loop system for automating development, with primitives that provably improve throughput and efficiency over time.\n\nRight now, folks are trying to roll their own internal software factories from bare metal, solving the same problems 100 different ways. We need shared, flexible infrastructure that everyone can build upon.\n\nIn this talk, we’ll share the core building blocks every company needs to build their own self-improving software factories based on our own experience building Warp Factories:\n\n1. Cloud infrastructure to centralize agent conversations, skills, and security permissions\n\n2. Configuration as code for humans and agents to manage that cloud infrastructure\n\n3. Metrics for humans and agents to track efficiency and code quality, beyond “number of PRs shipped”\n\n4. Self-improvement loops for agents to review past conversations, score the quality, and propose improvements to the skills driving the factory\n\nYou’ll walk away with a clear understanding of how to improve coding agent ROI, and how to deploy a system of your own using Warp Factories.\n\nThis session will include both slides and a live demonstration of:\n\n- How to run tasks through a software factory\n\n- How \"self-improvement\" works, watching agents review past conversations to suggest improvements to skills in a code repository\n\nThis will include info about Warp Factories, but is meant to be useful to any team learning about software factories or building their own.",
+   "speakers": [
+    {
+     "name": "Zach Lloyd",
+     "role": "Founder & CEO",
+     "company": "Warp",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FDDkTGwrSRqpCu8p03U8H_headshot-1790269348253.jpg"
+    }
+   ]
+  },
+  {
+   "id": "e6ccda8d-0613-44f8-b98f-53ba8037b518",
+   "wall": "2:05pm",
+   "wall_end": "2:23pm",
+   "t": 19464,
+   "t_end": 20544,
+   "title": "Scaling Agentic RL Across the Globe",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Shannon Room (NY Ballroom E)",
+   "description": "The industry is rushing to integrate agents into every surface of every product and service. To do so sustainably, keeping cost, quality, performance, and reliability in check, most organizations have turned to posttraining and deploying open-source models. Reinforcement learning is the most critical component of the posttraining stack. At Modal, we've needed to support our customers in scaling up agent RL across our multi-cloud, multi-region fleet. We'll present Stitch, our open-source framework for disaggregating RL rollouts across clouds, regions, and heterogenous GPU types, as well as a stable recipe for posttraining agentic models on off-policy rollout data.",
+   "speakers": [
+    {
+     "name": "Jason Mancuso",
+     "role": "Member of Technical Staff, Research",
+     "company": "Modal",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FgAuDSRDVTcWSalQqH4JQ_headshot-1791298349594.jpg"
+    }
+   ]
+  },
+  {
+   "id": "4cf641ef-436a-4e59-bd73-8a1988d8214c",
+   "wall": "2:05pm",
+   "wall_end": "2:23pm",
+   "t": 19464,
+   "t_end": 20544,
+   "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "Built to Scale: Future-Proofing Your Technology Roadmap, In Conversation with John Stecher, CTO of Blackstone and  Scott Worland, CTO of Norm Ai.",
+   "speakers": [
+    {
+     "name": "John Stecher",
+     "role": "CTO",
+     "company": "Blackstone",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FnjQvb4rtTO629553o3TN_headshot-1790808491693.jpg"
+    },
+    {
+     "name": "Scott Worland",
+     "role": "CTO",
+     "company": "Norm.ai",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F0LEIJK53Qky7Th6KoJcr_headshot-1791388107877.png"
+    }
+   ]
+  },
+  {
+   "id": "ac709f86-ce51-4582-a680-70449c32d29c",
+   "wall": "2:05pm",
+   "wall_end": "2:23pm",
+   "t": 19464,
+   "t_end": 20544,
+   "title": "Stop turning your Humans Into APIs for your Agents",
+   "format": "Breakouts",
+   "type": "breakout",
+   "room": "Turing Room (Riverside Ballroom)",
+   "description": "A model hallucination should never become a production action. At Wise, that action could move money. A lot of money. We move hundreds of billions across borders every year, with billions moving almost instantly. How do you use AI at that scale and speed without giving a probabilistic model authority over customer funds? Our answer is to separate reasoning from authority. Models can propose, but only we can decide to act. In this talk, I will explain how we built the system that enforces that distinction. AI governance traditionally relies on human reviews and pull requests. Wise is taking a different approach. LOOP, our Lifecycle Onboarding and Oversight framework, turns human decisions into automated, versioned policies that the platform can enforce. Repeatable decisions become preventative controls, while people remain involved when judgement is required. I will show the technical architecture, its trust boundaries, where controls are enforced, and how this approach helps teams adopt AI quickly without creating an approval queue for every new use case.",
+   "speakers": [
+    {
+     "name": "Emil Chetty",
+     "role": "Group Head of Data & AI",
+     "company": "Wise",
+     "bio": "Emil Chetty is Group Head of Data & AI at Wise, where he leads product strategy for platforms supporting generative AI, machine learning, analytics and foundational data infrastructure. He has more than ten years of experience building production data and AI systems across financial services, public transport and open knowledge. His work includes streaming data, machine learning infrastructure, LLM gateways, agent runtimes, evaluation and governance. At Wise, Emil works with engineering, security, privacy, risk and compliance teams to make AI systems easier to deploy safely and operate reliably.",
+     "linkedin": "",
+     "twitter": "",
+     "website": "https://www.wise.com",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FLLPYkj4FRZqW50C4r6jf_headshot-1790654264347.jpg"
+    }
+   ]
+  },
+  {
+   "id": "627ca259-d123-4bda-bc58-6e662277ef49",
+   "wall": "2:05pm",
+   "wall_end": "2:23pm",
+   "t": 19464,
+   "t_end": 20544,
+   "title": "AI's Trust Layer for Wall Street: SRE & Platform Engineering",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Sutton Room (NY Ballroom W)",
+   "description": "Six months ago, every AI roadmap conversation was about headcount. That conversation is over. In a recent closed-door session with engineering leaders from some of the world's largest financial institutions, not one mentioned reducing headcount. They talked about security exposure and a code review bottleneck that's quietly eating the productivity AI was supposed to deliver. Developers are shipping more code than ever, but they aren't shipping it faster, because a human still has to review and merge every line, and reviewers are drowning. Meanwhile, security has become the boardroom-level risk AI created, and SRE and platform engineers, the people who can actually contain it, are the hardest hires on the market, and the hardest to keep.\n\nDrawing on direct conversations with Wall Street's own engineering leadership, this talk makes the case that SRE and Platform Engineering aren't AI's back office anymore. They're the control plane that determines whether AI-generated code will ever be trustworthy enough to ship at scale.",
+   "speakers": [
+    {
+     "name": "Andrew Norrish",
+     "role": "Director of Field Engineering",
+     "company": "Sourcegraph",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F9h0bW4DHRdasRaykXBDe_headshot-1791300760693.jpg"
+    }
+   ]
+  },
+  {
+   "id": "e4ca10c6-c8b4-427b-a337-8d2a28e2a7aa",
+   "wall": "2:05pm",
+   "wall_end": "2:23pm",
+   "t": 19464,
+   "t_end": 20544,
+   "title": "From Agent Prototype to Production in Regulated Banking",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "McCarthy Room (Riverside Suite)",
+   "description": "Moving an AI agent from prototype to production is difficult anywhere. In regulated environments, the harder problem is proving that it is reliable enough to put in front of real customers.\n\nThis session looks at what that validation process requires in practice. We’ll explore why a single accuracy score is not enough to characterize agent quality, how human evaluation can expose ambiguity in what “good” even means, and what happens when the LLM-as-judge used to automate evaluation becomes another system that needs to be validated.\n\nWe’ll also look at how evaluation moves from an offline exercise to production infrastructure: combining continuous scoring, regression gates, observability, and staged rollout to identify failures before they reach customers.\n\nThe session shares practical lessons for teams deploying agents in high-stakes environments, including how to define multidimensional quality, evaluate the evaluators themselves, and build the evidence needed to move from prototype to production with confidence.",
+   "speakers": [
+    {
+     "name": "Jonathan Osborne",
+     "role": "",
+     "company": "NatWest",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": ""
+    }
+   ]
+  },
+  {
+   "id": "aaea3072-e0d1-480b-9c0e-eddf0fc6e43e",
+   "wall": "2:30pm",
+   "wall_end": "2:48pm",
+   "t": 20964,
+   "t_end": 22044,
+   "title": "Your Agent Wants Your Data: Securing MCP Database Access from the Ground Up",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Shannon Room (NY Ballroom E)",
+   "description": "AI agents are getting database access faster than most teams are getting comfortable with it. MCP makes it trivially easy to hand an agent a live connection to your data - but that access needs to respect least privilege and your existing corporate identity and roles, not a parallel permission model invented just for AI. And the database itself has to hold the line too: row-level security and deep data security controls that enforce policy at the data tier, so a bad prompt or compromised session can’t walk out with more than it should.\n\nHere’s the part most people miss: the database can also be where the AI runs. With native vector search sitting alongside your transactional data, there’s no need to copy sensitive data into a separate vector store with its own security model to babysit. I’ll show what we’ve built at Oracle to make this real - vector search governed by the same access controls as everything else - and close with fintech and banking examples of agents doing real, sensitive work safely, because security and AI capability live in the same place.",
+   "speakers": [
+    {
+     "name": "Jeff Smith",
+     "role": "Product Management Architect",
+     "company": "Oracle",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F0URTVkA5TqWDHgOP1xQO_headshot-1790805639423.jpg"
+    }
+   ]
+  },
+  {
+   "id": "bb3856b7-6575-483e-ae26-c4df34fdf3a4",
+   "wall": "2:30pm",
+   "wall_end": "2:48pm",
+   "t": 20964,
+   "t_end": 22044,
+   "title": "Why Wall Street Still Doesn’t Trust AI",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "A frontier model built a dilution model from a 10-K, and the output looked perfect. Asked where the share counts came from, it said “Honestly, I estimated those.” Anyone shipping AI at a bank or fund has a version of that story. There’s the chat assistant nobody trusts with a number, the retrieval system that read 20 files when the answer was in file 4,312, and the 40-step agent whose mistake at step 3 nobody caught. Kepler read 500 reviews of finance AI tools and found that bankers rated none of the best model’s work client-ready, with complaints falling into four buckets (accuracy, sources, context and coverage) that no model upgrade has moved. Vinoo Ganesh, CEO of Kepler and formerly of Palantir and Citadel, lays out what each one needs built underneath it. Retrieval and math run in code so the model never writes a number, provenance is kept from the first step, an ontology resolves the firm’s own entities and definitions, and every document is processed before anyone asks.",
+   "speakers": [
+    {
+     "name": "Vinoo Ganesh",
+     "role": "CEO",
+     "company": "Kepler",
+     "bio": "Vinoo Ganesh is CEO of Kepler, the industry-agnostic, ground truth platform for AI, starting with finance. At Kepler, language models interpret financial questions and plan the analysis, while deterministic software retrieves source data, runs the calculations, and records how every result was produced. He started his career at Palantir, where he spent seven years working on the search and indexing backend, managing the Spark/YARN compute platform, leading customer engagements across the commercial, healthcare, and defense sectors, and running Project Frontline, Palantir's FDE rotation program. After Palantir he served as CTO of Veraset, a geospatial data startup that grew to $15M ARR before it was acquired, and before founding Kepler he was Head of Business Engineering at Citadel, overseeing data pipelines and investment platforms across the hedge fund. Kepler is backed by founders of OpenAI, Facebook, MotherDuck, dbt, Square, and others.",
+     "linkedin": "",
+     "twitter": "",
+     "website": "https://www.kepler.ai",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FH7LyvXELSzm9Cy6lIrfQ_headshot-1790808709113.jpg"
+    }
+   ]
+  },
+  {
+   "id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f",
+   "wall": "2:30pm",
+   "wall_end": "2:48pm",
+   "t": 20964,
+   "t_end": 22044,
+   "title": "Your agent needs a skill to improve its skills",
+   "format": "Breakouts",
+   "type": "breakout",
+   "room": "Turing Room (Riverside Ballroom)",
+   "description": "We just found out our orchestration agent was wasting hundreds of tool calls this past month. The reason? One bad instruction in our message passing skill.\n\nPeeling back the curtain, there are dozens more examples you probably have in your own agent skills too. As you scale these agents to longer-running workloads, those gaps add up to real token cost.\n\nTo solve it, you'll need a feedback loop for agentic self-improvement. I'll show you how to build one: a system that evaluates past agent conversations, finds failure points, and turns those findings into skill improvements you'd want to merge. We'll set up the evaluation loop from scratch, and show how to automate it as part of a software factory.\n\nYou'll walk away with the skills you need (pun intended) to close the loop and let your agentic system improve itself.",
+   "speakers": [
+    {
+     "name": "Ben Holmes",
+     "role": "DevEx Lead",
+     "company": "Warp",
+     "bio": "Ben is a Lead DevEx Engineer helping developers embrace to the agentic world. You may have seen him with a whiteboard breaking down web development and agentic coding concepts. You also may know him from Warp Factories, or as a core maintainer of Astro.build. If you're interested in becoming a factory foreman, go talk to him.",
+     "linkedin": "https://linkedin.com/in/bholmesdev",
+     "twitter": "",
+     "website": "https://warp.dev",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FJ0rd88toTGOFJ0FHlWXv_headshot-1789679147258.jpg"
+    }
+   ]
+  },
+  {
+   "id": "3b17997c-2057-4e60-a311-0f16cd9833ab",
+   "wall": "2:30pm",
+   "wall_end": "2:48pm",
+   "t": 20964,
+   "t_end": 22044,
+   "title": "Are You Smarter Than a Fruit Fly?",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Sutton Room (NY Ballroom W)",
+   "description": "Agents write the code. You skim the diff. You type “LGTM.” Is that engineering judgment, or could a fruit fly do your part?\n\nI gave a simulated fruit-fly brain a vote on code changes. It has zero code-review training. This is not a talk about why you should trust it. It’s a talk about what makes anyone’s approval worth trusting, including yours.\n\nUsing this deliberately absurd reviewer as a starting point, we’ll explore what code review should become when humans aren’t writing every line. We’ll use targeted tests and verification loops to demand evidence from agents, not just assurances. Then we’ll tackle what passing tests can’t answer: why this change exists, why this approach was chosen over alternatives, and what a human still needs to understand before approving it.\n\nThe goal isn’t less human judgment. It’s better use of it: reviewing intent, decisions, and evidence, with deeper code inspection where it matters.",
+   "speakers": [
+    {
+     "name": "Nick Nisi",
+     "role": "Engineering Manager",
+     "company": "WorkOS",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FDUCXvIsrSNuLW9miocTK_headshot-1790808639442.png"
+    }
+   ]
+  },
+  {
+   "id": "cd44e04a-fc21-4814-9b82-700c1b75799f",
+   "wall": "2:30pm",
+   "wall_end": "2:48pm",
+   "t": 20964,
+   "t_end": 22044,
+   "title": "How Raj Led Datasite’s AI and Data Transformation at Scale with Reducto",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "McCarthy Room (Riverside Suite)",
+   "description": "Join Adit Abraham, CEO and Co-Founder of Reducto, and Raj Bakhru, Global Chief Technology Officer of Datasite, for a candid conversation about enterprise AI transformation, build-versus-buy decisions, and scaling AI in the document-heavy world of M&A.\n\nDrawing on Datasite’s work with Reducto, they’ll discuss how to decide what to build in-house, how to evaluate document infrastructure, and what it takes to put it into production. Attendees will leave with practical lessons on evaluating accuracy, citations, latency, and security; weighing build-versus-buy tradeoffs; and focusing engineering effort on the capabilities that differentiate a product.",
+   "speakers": [
+    {
+     "name": "Adit Abraham",
+     "role": "CEO and Co-Founder",
+     "company": "Reducto",
+     "bio": "Adit Abraham is the CEO and Co-Founder of Reducto, which is the agentic document platform for enterprises and AI teams. Our APIs and workflows combine high-performance document understanding with automation built around your processes and expertise, balancing accuracy, speed, and cost so teams can get work done faster with the control and security their business requires.",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FOByb2pV4QwqdrzgGWrnn_headshot-1791986055532.jpg"
+    },
+    {
+     "name": "Raj Bakhru",
+     "role": "Global Chief Technology Officer",
+     "company": "Datasite",
+     "bio": "Raj Bakhru is Chief Technology Officer at Datasite, where he leads the technology organization and advances its AI-native, secure, and scalable infrastructure. He joined Datasite through its acquisition of Blueflame AI, where he was CEO and Co-Founder. Previously, he held senior technology, strategy, and cybersecurity roles at ACA Group, ACA Aponix, and Goldman Sachs Asset Management.",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FPamCtSgOTLeHe9z6Tixu_headshot-1791986199458.jpg"
+    }
+   ]
+  },
+  {
+   "id": "970f672e-f351-46bb-9790-78c6b1baf81d",
+   "wall": "2:55pm",
+   "wall_end": "3:13pm",
+   "t": 22464,
+   "t_end": 23544,
+   "title": "Build your own team of managed agents",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Shannon Room (NY Ballroom E)",
+   "description": "To do real work, an agent needs its own computer where it can research, write files, and execute code. Giving agents their own sandbox means you can stop babysitting your agents and let them run and verify their own work in a secure environment.\n\nThis used to be difficult to set up or do on your own but now it is a single API call away. Managed agents give you a cloud sandbox, a file system, and a full agent loop in a single API call. Build an agent for your daily tasks or build one into your product that you can scale to thousands of customers.\n\nLet’s put it to the test by building a full team of financial agents in just a few minutes!",
+   "speakers": [
+    {
+     "name": "Jack Wotherspoon",
+     "role": "Member of Technical Staff",
+     "company": "Google DeepMind",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FK1NZ14zETHmY4Wkc4Cxz_headshot-1790805704004.jpg"
+    }
+   ]
+  },
+  {
+   "id": "12e5a06d-d1c9-4d66-80a0-ce94ca707d0b",
+   "wall": "2:55pm",
+   "wall_end": "3:13pm",
+   "t": 22464,
+   "t_end": 23544,
+   "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "We build an always-on quantitative AI coworker using Gemini and Managed Agents as our infrastructure. From authoring custom skills that parse institutional stock holdings and earnings deflections, to configuring event stream connectors and background triggers that wake the agent the second new financial documents drop.\r\n\r\nLiving continuously inside your internal channels, your virtual teammate operates independently across market cycles: auditing portfolio CSVs in real time, retaining cross-conversation memory, and messaging trading desks when market conviction scores shift. You'll leave with a ready-to-deploy engineering blueprint for running self-directed financial agents under strict corporate access controls.",
+   "speakers": [
+    {
+     "name": "Philipp Schmid",
+     "role": "MTS",
+     "company": "Google DeepMind",
+     "bio": "Philipp Schmid is a Staff Engineer at Google DeepMind working on Gemini, Agents and Gemini API with the mission to help every  builder to create and benefit from AI in a responsible way.",
+     "linkedin": "https://www.linkedin.com/in/philipp-schmid-a6a2bb196/",
+     "twitter": "https://x.com/_philschmid",
+     "website": "https://deepmind.google/",
+     "photo": "https://content-cdn.sessionboard.com/sQcnVUwWTZ6JspUomcZR_headshot-1789391581220.png"
+    }
+   ]
+  },
+  {
+   "id": "1735a9c7-e790-4f06-8e4f-382b335c2e90",
+   "wall": "2:55pm",
+   "wall_end": "3:13pm",
+   "t": 22464,
+   "t_end": 23544,
+   "title": "Hill-Climbing “Back-Office” Agents: Cost, Reliability, and Feedback Loops",
+   "format": "Breakouts",
+   "type": "breakout",
+   "room": "Turing Room (Riverside Ballroom)",
+   "description": "This session presents a practical hill-climbing process for making agents more reliable and economical across browser, document, and spreadsheet workflows.\n\nWe’ll draw on a competitor-pricing pilot with Domino’s, where nine agent versions saw manually assessed accuracy increase from 41% to 91%, while average cost per source fell from $2.11 to $1.16. We’ll examine the operational lessons behind those iterations: defining what “correct” means, diagnosing failures, refining playbooks, and checking that the final deliverable is actually usable.\n\nFrom there, we’ll work through a repeatable improvement loop: collect failures, build representative evaluation cases, change instructions or tools, and compare versions for improvements and regressions. We’ll also discuss how to account for retries, verification, and human review when assessing an agent’s economics.\n\nAttendees will leave with a framework for:\n\n- Evaluating business outcomes beyond task completion.\n\n- Turning recurring failures into playbook changes and regression tests.\n\n- Comparing reliability and cost across agent versions.\n\n- Prioritizing improvements when engineering and evaluation budgets are limited.\n\nThe methods apply to financial and enterprise operations wherever agents must turn messy information into dependable work.",
+   "speakers": [
+    {
+     "name": "Milind Sunil Shah",
+     "role": "Founding MTS",
+     "company": "Brainbase Labs",
+     "bio": "I'm a software engineer and founder based in San Francisco, building AI agent infrastructure and tools that help people turn ideas into working systems.\n\nI'm currently a Founding MTS at Brainbase Labs, leading engineering for infrastructure powering 10K+ internal AI agents.\n\nPreviously, I built post-training data pipelines and environments for AI coding agents at Mercor, developer infrastructure at DoorDash, and cloud governance tools at Adobe.\n\nI was also Co-founder/CTO of a company helping teams collect human data and run evaluations at scale. I hold an M.S. in Computer Science from UMass Amherst.",
+     "linkedin": "https://www.linkedin.com/in/mlndshh/",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FC3WYp618SWmb5xXfXWyk_headshot-1789609156753.jpg"
+    }
+   ]
+  },
+  {
+   "id": "65de0896-90a4-406a-8a58-d845569302ad",
+   "wall": "2:55pm",
+   "wall_end": "3:13pm",
+   "t": 22464,
+   "t_end": 23544,
+   "title": "Permission to Act: Giving Agents Authority in Regulated Industries",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Sutton Room (NY Ballroom W)",
+   "description": "Every company is racing to get value out of agents. Few have built the infrastructure to do it safely.\n\nRegulated industries will be under increasing scrutiny. Only 44% of organisations running AI agents have policies in place to secure them. Does your enterprise have sufficient controls?\n\nThis talk covers what you need to build.",
+   "speakers": [
+    {
+     "name": "Sagar Batchu",
+     "role": "CEO",
+     "company": "Speakeasy",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F5TbNaS5RA2bfNOsV8NKM_headshot-1789767915459.jpg"
+    }
+   ]
+  },
+  {
+   "id": "f7cd2f57-654a-4bbc-874b-ffa66a8ab3ed",
+   "wall": "2:55pm",
+   "wall_end": "3:13pm",
+   "t": 22464,
+   "t_end": 23544,
+   "title": "Building Deployment Gates for AI Agents in Financial Services",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "McCarthy Room (Riverside Suite)",
+   "description": "Financial institutions already know how to govern credit models. LLM apps change too fast for that playbook. In 18 minutes we’ll walk a practical pattern used with a top global bank: golden datasets, domain evaluators, a PASS/FAIL deployment gate, and reviewable evidence in Langfuse — so model risk gets traces and scores, not screenshots.",
+   "speakers": [
+    {
+     "name": "Doneyli De Jesus",
+     "role": "Head of AI Engineering Solutions",
+     "company": "Langfuse (by ClickHouse)",
+     "bio": "I lead AI Engineering Solutions at Langfuse (by ClickHouse). Helping organizations with Agent Observability and Evals.",
+     "linkedin": "https://www.linkedin.com/in/doneyli/",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FiNEt2aI1SbWfydGzrEq6_headshot-1791678695273.png"
+    }
+   ]
+  },
+  {
+   "id": "3442adab-3404-4423-8d80-c49258b9c468",
+   "wall": "3:20pm",
+   "wall_end": "3:38pm",
+   "t": 23964,
+   "t_end": 25044,
+   "title": "Graph Engineering 101: Predictability, Governance, Portability",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Shannon Room (NY Ballroom E)",
+   "description": "You may have heard a lot about graph engineering. The term has made the rounds with some overblown noise and hype, but it does point to a collection of useful design patterns that solve real AI engineering problems worth delving into.\n\nWe cover the practical fundamentals in this session: what graph engineering is, its core benefits around performance, efficiency, and governance, and how to actually apply it in your day-to-day work.\n\nWe bring a unique perspective as well, shaped by making AI work in regulated industries like financial services. Instead of treating graph engineering as part of the agent runtime, we approach it as standards around memory and context: creating APIs and artifacts portable to any agent framework. In other words, a knowledge layer. That means you can move faster while maintaining trust: keeping your existing agent infrastructure and a simpler stack, while taking on new, complex agentic workflows as technology changes and your products and services evolve. You will leave with worked examples, libraries, and reference architectures for putting graph engineering to work in your own projects.",
+   "speakers": [
+    {
+     "name": "Zachary Blumenfeld",
+     "role": "AI Research Engineer",
+     "company": "Neo4j",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F0iMUZxnsSmuTGo676G50_headshot-1789772248835.jpg"
+    }
+   ]
+  },
+  {
+   "id": "bf371da6-6ef6-42ec-865f-5de4974a9114",
+   "wall": "3:20pm",
+   "wall_end": "3:38pm",
+   "t": 23964,
+   "t_end": 25044,
+   "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "The systems of record lie by omission. Jira, the CRM and the monthly status deck are a sparse, lagging, self-reported projection of what is actually happening inside a company, and every AI product built on top of them inherits that projection. The real state is sitting in the exhaust. Hundreds of Slack channels, 500,000+ messages, 5,217 pasted screenshots and PDFs, two years of executive decks, voice notes dictated in the back of a cab after a client meeting. This is what it took to bootstrap a usable model of an enterprise out of that material, and what broke on the way.\n\nI am going to use the phrase \"world model\" deliberately and then defend it, because the term is doing real work. This is a state estimator rather than a knowledge graph. It holds beliefs about entities over time, updates them from noisy partial observations, tracks how stale each belief is, degrades when a source goes dark, and predicts. Which project is about to slip. Which client is next to trade a name. Which green cell turns red next month. That framing carries a negative claim I want to argue hard, which is that you cannot retrieve your way here. RAG over Slack answers what was said. A world model answers what is true now and what is about to go wrong. Those need different architectures.",
+   "speakers": [
+    {
+     "name": "Joao Wenzel",
+     "role": "COO",
+     "company": "Citadel Securities",
+     "bio": "Joao Fiadeiro Wenzel is COO at Citadel Securities, responsible for deploying agentic AI firm-wide.",
+     "linkedin": "https://www.linkedin.com/in/jfiadeiro",
+     "twitter": "https://twitter.com/jay_wooow",
+     "website": "https://citadelsecurities.com",
+     "photo": "https://content-cdn.sessionboard.com/nwQGbRY9S8qZ5Bzf6K54_headshot-1789391585927.jpg"
+    }
+   ]
+  },
+  {
+   "id": "f5c310e9-b0bb-4fa6-bc0d-bda758e1c464",
+   "wall": "3:20pm",
+   "wall_end": "3:38pm",
+   "t": 23964,
+   "t_end": 25044,
+   "title": "A Roadmap for Evaluating Highly-Subjective Tasks",
+   "format": "Breakouts",
+   "type": "breakout",
+   "room": "Turing Room (Riverside Ballroom)",
+   "description": "This presentation provides a technical roadmap for building large-scale automatic evaluations for subjective tasks. Specific concepts that will be covered include setting up and coordinating human annotation efforts, building and evaluation LLM judges, using production monitoring to inform model evaluations, and reducing evaluation uncertainty via statistics. By combining these components and monitoring them properly, we can create a scalable evaluation framework that evolves and improves over time as our understanding of a domain deepens.",
+   "speakers": [
+    {
+     "name": "Cameron Wolfe",
+     "role": "Staff Research Scientist",
+     "company": "Netflix",
+     "bio": "Cameron R. Wolfe is a Staff Research Scientist on the Globalization team at Netflix, where he focuses on multimodal large language models. Netflix Globalization works to remove language barriers from the member experience, supporting the translation and cultural adaptation of content (e.g., subtitles and dubbing) for more than 300 million members across 190+ countries and 30+ languages. Cameron is also the author of the Deep (Learning) Focus newsletter, where he explains complex topics in AI research in an accessible and intuitive way.\n\nHe earned his Ph.D. in Computer Science from Rice University, where he was advised by Dr. Anastasios Kyrillidis. His research spans machine learning and optimization, including non-convex optimization, deep learning, continual learning, and practical techniques for building more effective neural network systems. Prior to Rice, he studied Computer Science at UT Austin and conducted research in genetic algorithms and evolutionary computation with the Neural Networks Research Group.",
+     "linkedin": "https://www.linkedin.com/in/cwolferesearch/",
+     "twitter": "",
+     "website": "https://cameronrwolfe.substack.com/",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FUxeVusjzTnedAMI2Z1KI_headshot-1790291459947.jpg"
+    }
+   ]
+  },
+  {
+   "id": "9a73fc65-539f-449e-aa2c-5fb55c1371f4",
+   "wall": "3:20pm",
+   "wall_end": "3:38pm",
+   "t": 23964,
+   "t_end": 25044,
+   "title": "PlanetScale Q&A + Merch Drop",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Sutton Room (NY Ballroom W)",
+   "description": "Stop by and hang out with the PlanetScale team for an open Q&A on Postgres, sharding, and whatever else you want to dig into. We'll have plenty of merch to give away, so swing through before you head home!",
+   "speakers": [
+    {
+     "name": "Ben Dicken",
+     "role": "Head of Developer Education",
+     "company": "PlanetScale",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FJsP5tps9QJinLKHKldH8_headshot-1791314798233.jpg"
+    }
+   ]
+  },
+  {
+   "id": "88b218ef-aae2-47f4-b071-3cb60257e92e",
+   "wall": "3:20pm",
+   "wall_end": "3:38pm",
+   "t": 23964,
+   "t_end": 25044,
+   "title": "Building an Evidence Layer for Financial Agents",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "McCarthy Room (Riverside Suite)",
+   "description": "Financial agents can create models, analyses, and investment memos, but only if they can find the right facts. In practice, evidence is scattered across filings, dense tables, scanned PDFs, spreadsheets, emails, and multiple revisions. Loading everything into the model’s context is expensive and often makes its answers worse.\n\nThis talk shows how to separate searching from reasoning by giving the main agent a specialized evidence layer. We’ll explore how a search subagent decomposes questions, combines semantic and exact retrieval, checks sources and versions, and returns compact evidence for analysis. Using OfficeQA and realistic investment banking tasks from APEX-Agents, we’ll show how better retrieval produces more accurate answers with fewer tool calls and lower cost.",
+   "speakers": [
+    {
+     "name": "Aamir Shakir",
+     "role": "CEO",
+     "company": "Mixedbread",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FLjktN34eRyib3bggM8ap_headshot-1789767933971.jpg"
+    }
+   ]
+  },
+  {
+   "id": "3005a1a2-c6cc-426f-9319-185b86b0039c",
+   "wall": "3:45pm",
+   "wall_end": "4:03pm",
+   "t": 25464,
+   "t_end": 26544,
+   "title": "Tabular Foundation Models in Finance",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Shannon Room (NY Ballroom E)",
+   "description": "Every financial decision gets its own model: credit risk, fraud, forecasting, claims, pricing. Each one needs a feature pipeline, a tuning budget, and a retrain when the data shifts. In practice that puts model development weeks behind the decisions it feeds.\n\nA tabular foundation model predicts on raw structured data in a single forward pass, in under a second, with no feature engineering and no tuning. It beats gradient-boosted trees out of the box.\n\nSauraj Gambhir, Co-founder and Co-CEO of Prior Labs, shows how teams at Teza, Creditplus and Taktile go from a raw table to best-in-class predictions in seconds, and how to do the same on your own trading, lending and risk data.",
+   "speakers": [
+    {
+     "name": "Sauraj Gambhir",
+     "role": "Co-Founder & Co-CEO",
+     "company": "Prior Labs",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FeQZurte7SNaredgCIQVN_headshot-1790805130023.jpg"
+    }
+   ]
+  },
+  {
+   "id": "6c50c19e-b0c1-462a-9c9a-e4f24e5a32e0",
+   "wall": "3:45pm",
+   "wall_end": "4:03pm",
+   "t": 25464,
+   "t_end": 26544,
+   "title": "Self-Improving Organizations",
+   "format": "Stage Talk (18 mins)",
+   "type": "talk",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "",
+   "speakers": [
+    {
+     "name": "Will Brown",
+     "role": "Applied Research",
+     "company": "Prime Intellect",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FB5YMbU4qT1CWvN0ZyPOo_headshot-1791758174716.jpg"
+    }
+   ]
+  },
+  {
+   "id": "8413d6ee-ceb1-4095-9f27-49d518f1dd5a",
+   "wall": "3:45pm",
+   "wall_end": "4:03pm",
+   "t": 25464,
+   "t_end": 26544,
+   "title": "Code Mode: your agent should write code",
+   "format": "Breakouts",
+   "type": "breakout",
+   "room": "Turing Room (Riverside Ballroom)",
+   "description": "Give an agent 40 tools and it gets worse at using any of them. Give it a sandbox and a way to write code and it can compose whatever it needs. Recent research has bash-only agents beating typed tool catalogs by 21.8 to 24.5 points on the same benchmark while spending fewer tokens, and the industry is quietly moving in that direction. The shift is really one of abstraction. We used to obsess over prompts; now we optimize skills. We used to design individual tools; now we ship MCP servers and plugins. We've stopped handing agents primitive verbs and started handing them programming. This talk makes the case for code mode while staying realistic about what it costs, and closes with how our open-source observability stack exposes agent traces to coding agents through read-only SQL and code mode, and how we use our own evals and tooling to improve agent outcomes.",
+   "speakers": [
+    {
+     "name": "Mikyo King",
+     "role": "Head of Open Source",
+     "company": "Arize AI",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FGG8MFQ9QrI3Conl0ujgC_headshot-1790815262381.jpg"
+    }
+   ]
+  },
+  {
+   "id": "15eeafc6-0c0c-48c3-8bb1-48b70b49b55e",
+   "wall": "3:45pm",
+   "wall_end": "4:03pm",
+   "t": 25464,
+   "t_end": 26544,
+   "title": "From AI Usage to Enterprise Decisions: Tokenomics Across the Organization",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "Sutton Room (NY Ballroom W)",
+   "description": "As enterprise AI adoption grows, organizations are asking different versions of the same questions: What is our AI usage costing us? Where are those costs coming from? Which applications and models are driving consumption? And how can we use this information to make better decisions? \n\nThe challenge is that the answers must serve very different audiences. Finance teams need forecasting and cost allocation. Engineering leaders need actionable insights into models, applications, and architecture. Product teams need to understand adoption and usage patterns. Executives need a clear view of how AI resources align with organizational priorities. Creating separate solutions for each audience leads to fragmented data and competing definitions of success. \n\nIn this session, we’ll share what we’ve learned from enterprise stakeholder conversations and from building a tokenomics product that supports these perspectives through a common foundation. We’ll show how AI usage data can be transformed into relevant insights for each audience while preserving a shared view of consumption, cost, and operational efficiency. \n\nWe’ll also explore where enterprise tokenomics is headed. Richer telemetry and more automated instrumentation could make insights increasingly timely and actionable, while stronger connections between AI activity and business outcomes could help organizations develop a more complete understanding of AI return on investment. \n\nAttendees will leave with a practical view of tokenomics as more than usage reporting or cost control. It can become a shared decision-making layer—helping organizations understand how AI resources are being used today and make more informed choices about where to invest next. \n\nTakeaways \n\nAttendees will learn: \n\n• How a common tokenomics foundation can support finance, engineering, product, operations, and executive stakeholders \n\n• How shared data can produce audience-specific insights without creating disconnected tools \n\n• Which questions enterprise stakeholders need AI usage data to answer \n\n• How visibility into consumption, cost, and efficiency can support better planning and optimization \n\n• How richer telemetry, automated instrumentation, and business-outcome data could advance tokenomics toward ROI measurement",
+   "speakers": [
+    {
+     "name": "Pratyusha Duvvuri",
+     "role": "",
+     "company": "",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FQsjeTscjRHSwHa6P9Vxw_headshot-1791920780881.jpg"
+    }
+   ]
+  },
+  {
+   "id": "ff7ea99c-bf5b-4b94-8680-c5fb6b5abb81",
+   "wall": "3:45pm",
+   "wall_end": "4:03pm",
+   "t": 25464,
+   "t_end": 26544,
+   "title": "Decoupling Agents from Infrastructure",
+   "format": "Expo Session (18 mins)",
+   "type": "breakout",
+   "room": "McCarthy Room (Riverside Suite)",
+   "description": "An agent loop needs a computer, but it shouldn't need to know whether that computer is an EC2 instance, a Kubernetes pod, a micro-VM, or a third-party sandbox. We built OpenCompute to separate the two - one small interface that owns the full compute lifecycle, with each provider implemented as a driver behind it. This talk covers why we built this and how an outbound-only connection lets it run inside locked-down customer owned infrastructure.",
+   "speakers": [
+    {
+     "name": "Nikhil Harithas",
+     "role": "Head of Deployed Engineering",
+     "company": "Factory",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FBrmw0BXpQyGUEn4KUQYJ_headshot-1791300797503.jpg"
+    }
+   ]
+  },
+  {
+   "id": "18628ea8-d66a-4d7b-adbd-730d3a43d92e",
+   "wall": "4:25pm",
+   "wall_end": "4:30pm",
+   "t": 27864,
+   "t_end": 28164,
+   "title": "Welcome Back - Featured Keynotes",
+   "format": "Lightning Talk (5-10mins)",
+   "type": "other",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "",
+   "speakers": [
+    {
+     "name": "Ksenia Se",
+     "role": "AI Inferencer",
+     "company": "Turing Post",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FFnIQmW5RFSVAMAZyOYyK_headshot-1791387672406.jpg"
+    }
+   ]
+  },
+  {
+   "id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0",
+   "wall": "4:30pm",
+   "wall_end": "4:48pm",
+   "t": 28164,
+   "t_end": 29244,
+   "title": "AI in Practice: An Inside Look at Apollo's Approach",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "Rowspace customer co-presenting keynote",
+   "speakers": [
+    {
+     "name": "Michael Manapat",
+     "role": "Co-Founder",
+     "company": "Rowspace",
+     "bio": "",
+     "linkedin": "https://www.linkedin.com/in/mlmanapat/",
+     "twitter": "",
+     "website": "https://www.rowspace.ai/",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2F3KEGdEQQMae5yWmMLIVw_headshot-1789589495151.png"
+    },
+    {
+     "name": "Jack McDonald",
+     "role": "Principal at Apollo Global Management, COO of Redding Ridge",
+     "company": "Apollo Global Management",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FRweAuX5Q9W8Su6mLFsTA_headshot-1789673803407.jpg"
+    }
+   ]
+  },
+  {
+   "id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77",
+   "wall": "4:48pm",
+   "wall_end": "5:06pm",
+   "t": 29244,
+   "t_end": 30324,
+   "title": "Process Supervision for Agents That Do Long-Horizon Work",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "When an agent takes on hours of research, data extraction, tool use, and judgment, it may make hundreds of decisions before producing a final result. That result can be correct even when the steps behind it are unreliable. Evaluating long-horizon work requires evidence about both the result and the decisions that produced it.\n\nBasis builds AI agents for accountants and encounters this problem across complex accounting work. An agent may reach the correct tax conclusion while relying on pretraining or a blog instead of checking the tax code and regulations. An outcome eval marks the answer correct, even though the research would not meet the standard an accountant expects.\n\nBasis developed behavior specs to evaluate those decisions across the full trajectory. Each spec defines how an agent should behave when a specific situation occurs. A judge reviews the trajectory and determines whether that situation arose and whether the agent followed the expected behavior. Basis partnered with Braintrust to publish the approach as an open standard for teams building long-horizon agents.\n\nIn this session, Mitch Troyanovsky will explain why outcome evals become expensive and slow to iterate on for long-horizon work, how Basis chooses the few behaviors worth measuring, and how behavior failures guide changes to prompts, tools, or runtime context. He will also discuss how teams can evaluate behavior across production traffic without turning the spec into an unmanageable list of every rule an agent might follow.",
+   "speakers": [
+    {
+     "name": "Mitchell Troyanovsky",
+     "role": "Co-Founder",
+     "company": "Basis",
+     "bio": "Mitchell Troyanovsky is the co-founder of Basis, an agentic AI company recently valued at $1.15 billion and backed by BTV, Khosla, Accel and GV. Mitch is building the first long-horizon agents capable of independently executing complex, end-to-end financial workflows — like partnership tax returns — for hours or even days at a time.",
+     "linkedin": "https://www.linkedin.com/in/mitchelltroyanovsky/",
+     "twitter": "https://x.com/mitch_troy",
+     "website": "https://www.getbasis.ai/",
+     "photo": "https://content-cdn.sessionboard.com/BYlGQDakRd2O8B21Mwg6_headshot-1789391585762.jpg"
+    }
+   ]
+  },
+  {
+   "id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80",
+   "wall": "5:06pm",
+   "wall_end": "5:24pm",
+   "t": 30324,
+   "t_end": 31404,
+   "title": "Everything will be Simulated",
+   "format": "Featured Keynote",
+   "type": "keynote",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "AI models have spent years learning to generate text, images, and video. The next frontier of AI development focuses on models that understand space, motion, and the physical dynamics of the real world. Cristóbal Valenzuela, Co-CEO and Co-Founder of Runway, will discuss world models mature enough to simulate real environments in real time, and what this progress opens up for robotics, digital interfaces, and broader scientific discovery.",
+   "speakers": [
+    {
+     "name": "Cristóbal Valenzuela",
+     "role": "Co-Founder and Co-CEO",
+     "company": "Runway",
+     "bio": "Cristóbal Valenzuela is the co-CEO and co-founder of Runway, a global AI research and technology company building foundational AI research models and tools to create real-world superintelligence. Before Runway, Cris was a researcher at NYU Tisch School of the Arts.",
+     "linkedin": "https://www.linkedin.com/in/cvalenzuelab/",
+     "twitter": "",
+     "website": "https://cvalenzuelab.com/",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2Fhgp48Zk4QqyylOpESMAg_headshot-1789591643311.jpg"
+    }
+   ]
+  },
+  {
+   "id": "c00d815d-afb1-4259-ab52-cadb0628a654",
+   "wall": "5:25pm",
+   "wall_end": "5:30pm",
+   "t": 31464,
+   "t_end": 31764,
+   "title": "Closing Remarks",
+   "format": "Lightning Talk (5-10mins)",
+   "type": "other",
+   "room": "Simons Room (Metropolitan East)",
+   "description": "",
+   "speakers": [
+    {
+     "name": "Ksenia Se",
+     "role": "AI Inferencer",
+     "company": "Turing Post",
+     "bio": "",
+     "linkedin": "",
+     "twitter": "",
+     "website": "",
+     "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FFnIQmW5RFSVAMAZyOYyK_headshot-1791387672406.jpg"
+    }
+   ]
+  }
+ ]
+}

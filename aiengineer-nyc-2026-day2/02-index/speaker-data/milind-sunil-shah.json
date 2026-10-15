@@ -1,0 +1,18 @@
+{
+ "slug": "milind-sunil-shah",
+ "name": "Milind Sunil Shah",
+ "role": "Founding MTS",
+ "company": "Brainbase Labs",
+ "bio": "I'm a software engineer and founder based in San Francisco, building AI agent infrastructure and tools that help people turn ideas into working systems.\n\nI'm currently a Founding MTS at Brainbase Labs, leading engineering for infrastructure powering 10K+ internal AI agents.\n\nPreviously, I built post-training data pipelines and environments for AI coding agents at Mercor, developer infrastructure at DoorDash, and cloud governance tools at Adobe.\n\nI was also Co-founder/CTO of a company helping teams collect human data and run evaluations at scale. I hold an M.S. in Computer Science from UMass Amherst.",
+ "linkedin": "https://www.linkedin.com/in/mlndshh/",
+ "twitter": "",
+ "website": "",
+ "photo": "https://content-cdn.sessionboard.com/attendee-photo%2FC3WYp618SWmb5xXfXWyk_headshot-1789609156753.jpg",
+ "sessions": [
+  {
+   "title": "Hill-Climbing “Back-Office” Agents: Cost, Reliability, and Feedback Loops",
+   "time": "2:55pm - 3:13pm",
+   "room": "Turing Room (Riverside Ballroom)"
+  }
+ ]
+}
