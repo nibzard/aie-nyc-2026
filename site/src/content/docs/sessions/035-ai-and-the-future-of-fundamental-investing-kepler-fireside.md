@@ -1,9 +1,10 @@
 ---
 title: AI and the Future of Fundamental Investing
-description: In a Kepler-hosted fireside, former Citadel PM and Candlestick
-  Capital founder Jack Woodruff argues that AI will not change long-term stock
-  picking or divergent-view alpha, but will flatten analyst prep work and turn
-  investing into a time-management game where humans stay the bottleneck.
+description: Day 1 · Oct 13. In a Kepler-hosted fireside, former Citadel PM and
+  Candlestick Capital founder Jack Woodruff argues that AI will not change
+  long-term stock picking or divergent-view alpha, but will flatten analyst prep
+  work and turn investing into a time-management game where humans stay the
+  bottleneck.
 sidebar:
   order: 35
   hidden: false
@@ -12,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 In a Kepler-hosted fireside, former Citadel PM and Candlestick Capital founder Jack Woodruff argues that AI will not change long-term stock picking or divergent-view alpha, but will flatten analyst prep work and turn investing into a time-management game where humans stay the bottleneck.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/kepler-fundamental-investing">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Long-term stock picking will not change much: there has always been a mosaic, and alpha comes from divergent views. That stays.
@@ -38,7 +43,7 @@ In a Kepler-hosted fireside, former Citadel PM and Candlestick Capital founder J
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=21358&rel=0" title="AI and the Future of Fundamental Investing" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Jack Woodruff, Vinoo Ganesh &middot; 2:43:50 PM ET-2:51:42 PM ET &middot; fireside &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=21358s" rel="noopener">Watch on YouTube from 05:55:58</a></p>
+<p class="session-meta">Jack Woodruff, Vinoo Ganesh &middot; 2:43:50 PM ET–2:51:42 PM ET &middot; fireside &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=21358s" rel="noopener">Watch on YouTube from 05:55:58</a></p>
 
 ## Notable quotes
 - "So the biggest issue is humans are still the bottleneck." [05:58:12 | 2:46:03 PM]

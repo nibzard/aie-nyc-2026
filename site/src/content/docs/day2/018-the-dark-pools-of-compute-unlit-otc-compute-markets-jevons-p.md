@@ -1,9 +1,9 @@
 ---
 title: The Dark Pools of Compute
-description: Jump Trading's compute trading leads map the unlit, chat-brokered
-  over-the-counter market for physical GPU compute, from Jevons-paradox demand
-  and the prepayment squeeze on middle-market buyers to the microstructure and
-  policy that could turn compute into a real market.
+description: Day 2 · Oct 14. Jump Trading's compute trading leads map the unlit,
+  chat-brokered over-the-counter market for physical GPU compute, from
+  Jevons-paradox demand and the prepayment squeeze on middle-market buyers to
+  the microstructure and policy that could turn compute into a real market.
 sidebar:
   order: 18
   hidden: false
@@ -11,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Jump Trading's compute trading leads map the unlit, chat-brokered over-the-counter market for physical GPU compute, from Jevons-paradox demand and the prepayment squeeze on middle-market buyers to the microstructure and policy that could turn compute into a real market.
 
@@ -38,7 +40,7 @@ Jump Trading's compute trading leads map the unlit, chat-brokered over-the-count
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=11722&rel=0" title="The Dark Pools of Compute" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Affaan Mustafa, Alejandro Soumah Fernandez &middot; 11:55:58 AM ET-12:16:20 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=11722s" rel="noopener">Watch on YouTube from 03:15:22</a></p>
+<p class="session-meta">Affaan Mustafa, Alejandro Soumah Fernandez &middot; 11:55:58 AM ET–12:16:20 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=11722s" rel="noopener">Watch on YouTube from 03:15:22</a></p>
 
 ## Notable quotes
 > "Essentially what I'm referring to is an unlit market." — [03:16:09 | 11:56:45 AM]

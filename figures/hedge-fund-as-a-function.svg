@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">A hedge fund as a function</title>
+  <desc id="desc">Diagram of Frank Long's frame: a hedge fund is a function taking external context (news, prices, filings) and internal context (positions, risk limits, case-study history) and returning one tuple — selection, size, timing — whose time series constructs the portfolio. The function decomposes into gather, analyze, and decide steps, each run by the best of four runner types: deterministic code, classical statistics and ML, LLMs, or people.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="959" height="719" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+  <text x="48" y="66" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" letter-spacing="0.08em" fill="#52514e">CONCEPT — ARCHITECTURE</text>
+  <text x="48" y="92" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#0b0b0b">A hedge fund as a function</text>
+  <text x="48" y="116" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#52514e">A function that takes in two parameters — context external and context internal — and spits out one tuple.</text>
+
+  <!-- signature row -->
+  <rect x="48" y="142" width="204" height="52" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="60" y="164" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#0b0b0b">context external</text>
+  <text x="60" y="182" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">news · prices · filings</text>
+  <rect x="48" y="204" width="204" height="58" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="60" y="224" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#0b0b0b">context internal</text>
+  <text x="60" y="242" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">positions · risk limits</text>
+  <text x="60" y="256" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">case-study history</text>
+  <line x1="252" y1="168" x2="302" y2="192" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="252" y1="233" x2="302" y2="236" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="312" y="142" width="300" height="120" rx="8" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="330" y="176" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#0b0b0b">hedge_fund(context_external,</text>
+  <text x="330" y="196" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#0b0b0b">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;context_internal)</text>
+  <text x="330" y="230" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#52514e">returns one tuple</text>
+
+  <line x1="612" y1="202" x2="660" y2="202" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="668" y="142" width="244" height="120" rx="8" fill="#ffffff" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="684" y="166" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">one tuple out</text>
+  <circle cx="694" cy="198" r="4" fill="#2a78d6"/>
+  <text x="708" y="202" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#0b0b0b">selection</text>
+  <text x="892" y="202" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">what stock</text>
+  <circle cx="694" cy="222" r="4" fill="#eb6834"/>
+  <text x="708" y="226" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#0b0b0b">size</text>
+  <text x="892" y="226" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">how much</text>
+  <circle cx="694" cy="246" r="4" fill="#1baf7a"/>
+  <text x="708" y="250" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#0b0b0b">timing</text>
+  <text x="892" y="250" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">when</text>
+
+  <!-- time series strip -->
+  <text x="48" y="282" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">the portfolio is a time series of that tuple</text>
+  <line x1="60" y1="303" x2="470" y2="303" stroke="#c3c2b7" stroke-width="1"/>
+  <line x1="470" y1="303" x2="540" y2="303" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="150" y="292" width="64" height="22" rx="6" fill="#2a78d6" fill-opacity="0.10"/>
+  <circle cx="168" cy="303" r="3.5" fill="#2a78d6"/><circle cx="182" cy="303" r="3.5" fill="#eb6834"/><circle cx="196" cy="303" r="3.5" fill="#1baf7a"/>
+  <rect x="232" y="292" width="64" height="22" rx="6" fill="#2a78d6" fill-opacity="0.10"/>
+  <circle cx="250" cy="303" r="3.5" fill="#2a78d6"/><circle cx="264" cy="303" r="3.5" fill="#eb6834"/><circle cx="278" cy="303" r="3.5" fill="#1baf7a"/>
+  <rect x="314" y="292" width="64" height="22" rx="6" fill="#2a78d6" fill-opacity="0.10"/>
+  <circle cx="332" cy="303" r="3.5" fill="#2a78d6"/><circle cx="346" cy="303" r="3.5" fill="#eb6834"/><circle cx="360" cy="303" r="3.5" fill="#1baf7a"/>
+  <rect x="396" y="292" width="64" height="22" rx="6" fill="#2a78d6" fill-opacity="0.10"/>
+  <circle cx="414" cy="303" r="3.5" fill="#2a78d6"/><circle cx="428" cy="303" r="3.5" fill="#eb6834"/><circle cx="442" cy="303" r="3.5" fill="#1baf7a"/>
+  <text x="556" y="307" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">time</text>
+
+  <!-- decompose -->
+  <text x="48" y="348" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">Decompose before you build</text>
+  <text x="912" y="348" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">every step has an input and an output</text>
+  <rect x="48" y="360" width="268" height="68" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="64" y="384" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#0b0b0b">gather</text>
+  <text x="64" y="404" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">collect; filter relevant</text>
+  <text x="64" y="418" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">from irrelevant</text>
+  <line x1="316" y1="394" x2="344" y2="394" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="348" y="360" width="268" height="68" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="364" y="384" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#0b0b0b">analyze</text>
+  <text x="364" y="404" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">form a view for public</text>
+  <text x="364" y="418" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">and private markets</text>
+  <line x1="616" y1="394" x2="644" y2="394" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="648" y="360" width="264" height="68" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="664" y="384" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#0b0b0b">decide</text>
+  <text x="664" y="404" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">emit the three-parameter</text>
+  <text x="664" y="418" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">decision object</text>
+  <text x="48" y="450" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">each step's output is the next step's input — build and tune each one alone</text>
+
+  <!-- runners -->
+  <text x="48" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">Pick the best runner per step — four types</text>
+  <text x="912" y="480" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">optimize absolute quality, not the share automated</text>
+  <rect x="48" y="492" width="204" height="64" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="68" cy="512" r="5" fill="#2a78d6"/>
+  <text x="82" y="517" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">deterministic code</text>
+  <text x="82" y="536" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">fast, cheap, reliable;</text>
+  <text x="82" y="550" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">e.g. P/E under 15</text>
+  <rect x="264" y="492" width="204" height="64" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="284" cy="512" r="5" fill="#eb6834"/>
+  <text x="298" y="517" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">classical stats / ML</text>
+  <text x="298" y="536" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">fit a regression line</text>
+  <text x="298" y="550" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">to a pattern</text>
+  <rect x="480" y="492" width="204" height="64" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="500" cy="512" r="5" fill="#1baf7a"/>
+  <text x="514" y="517" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">LLMs and agents</text>
+  <text x="514" y="536" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">state of the art</text>
+  <text x="514" y="550" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">for summarization</text>
+  <rect x="696" y="492" width="216" height="64" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="716" cy="512" r="5" fill="#eda100"/>
+  <text x="730" y="517" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">people</text>
+  <text x="730" y="536" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">judgment — meeting a</text>
+  <text x="730" y="550" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">management team</text>
+  <text x="48" y="578" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">Most steps are multi-runner — combinatorics across the four buckets.</text>
+
+  <!-- side annotations -->
+  <rect x="48" y="592" width="520" height="72" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="64" y="612" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">Every design choice is a hyperparameter</text>
+  <text x="64" y="630" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">chunking · images · control flow · model size · harness · skills · hooks</text>
+  <text x="64" y="646" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">at least 10 hyperparameters, at least 20 valid values per node</text>
+  <text x="64" y="660" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">— the search space is basically infinite</text>
+  <rect x="592" y="592" width="320" height="72" rx="8" fill="#2a78d6" fill-opacity="0.08" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="608" y="610" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">hill climb against an eval North Star</text>
+  <text x="608" y="626" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b">"And if you don't have a North Star</text>
+  <text x="608" y="641" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b">to hill climb against, you're just kind</text>
+  <text x="608" y="656" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b">of, you're just fidgeting around."</text>
+
+  <text x="48" y="690" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">Source: Frank Long (Coatue), "A Hedge Fund as a Function", AI Engineer NYC 2026, day 1.</text>
+</svg>

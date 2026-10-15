@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Right-sizing beats intuition</title>
+  <desc id="desc">Three panels on model economics. Panel one, Vals AI: cost per task on an internal eval, GPT-5.6-Sol at $2.50 per task versus self-hosted Kimi K3 at $11. Panel two, Southbridge AI: a statewide Ohio entity-resolution job projected at about $10,000 finished at $795, with checking costing about four times doing, $545 versus $128. Panel three, Ramp: a post-trained Qwen 3.5 35B specialist beat Opus 4.6 on exact task accuracy at far lower latency under a frontier orchestrator; no numeric accuracy values were given, so the claim is shown as text rather than bars.</desc>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+    <!-- Card -->
+    <rect x="0.5" y="0.5" width="959" height="719" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+
+    <!-- Header -->
+    <text x="48" y="66" font-size="11" letter-spacing="0.08em" fill="#52514e">DATA — MODEL ECONOMICS</text>
+    <text x="48" y="94" font-size="20" font-weight="600" fill="#0b0b0b">Right-sizing beats intuition</text>
+    <text x="48" y="120" font-size="13" fill="#52514e">Measure first, then route each task to the right model.</text>
+
+    <!-- Panel A: Vals AI -->
+    <rect x="48" y="150" width="272" height="510" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="68" y="184" font-size="11" letter-spacing="0.06em" fill="#52514e">VALS AI · DAY 1</text>
+    <text x="68" y="208" font-size="13" font-weight="600" fill="#0b0b0b">Cost per task, internal eval</text>
+    <text x="68" y="226" font-size="11" fill="#52514e">closed model vs self-hosted</text>
+
+    <line x1="68" y1="246" x2="68" y2="330" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="68" y="256" font-size="12" font-weight="600" fill="#0b0b0b">GPT-5.6-Sol</text>
+    <path d="M68,264 L100,264 A4,4 0 0 1 104,268 L104,274 A4,4 0 0 1 100,278 L68,278 Z" fill="#2a78d6"/>
+    <text x="112" y="275" font-size="12" font-weight="600" fill="#0b0b0b">$2.50</text>
+    <text x="68" y="302" font-size="12" font-weight="600" fill="#52514e">Self-hosted Kimi K3</text>
+    <path d="M68,310 L224,310 A4,4 0 0 1 228,314 L228,320 A4,4 0 0 1 224,324 L68,324 Z" fill="#9ec5f4" fill-opacity="0.45"/>
+    <text x="236" y="321" font-size="12" font-weight="600" fill="#52514e">$11</text>
+
+    <text x="68" y="356" font-size="11" fill="#52514e"><tspan x="68">The intuitive plan to go self-</tspan><tspan x="68" dy="16">hosted failed the measurement.</tspan></text>
+    <text x="68" y="396" font-size="11" fill="#52514e"><tspan x="68">GPT-5.6-Sol also scored 2% better</tspan><tspan x="68" dy="16">and ran in half the time.</tspan></text>
+
+    <rect x="68" y="440" width="232" height="68" rx="8" fill="#2a78d6" fill-opacity="0.08"/>
+    <text x="80" y="462" font-size="11" fill="#0b0b0b"><tspan x="80">Replaying GitHub PR history as</tspan><tspan x="80" dy="16">agent tasks cut spend by 90%,</tspan><tspan x="80" dy="16">with the same output</tspan></text>
+
+    <text x="68" y="592" font-size="11" fill="#52514e"><tspan x="68">Source: Rayan Krishnan (Vals AI),</tspan><tspan x="68" dy="16">“Beyond the Model Card: The</tspan><tspan x="68" dy="16">Jagged Frontier of AI in Finance”,</tspan><tspan x="68" dy="16">AI Engineer NYC 2026, day 1.</tspan></text>
+
+    <!-- Panel B: Southbridge AI -->
+    <rect x="344" y="150" width="272" height="510" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="364" y="184" font-size="11" letter-spacing="0.06em" fill="#52514e">SOUTHBRIDGE AI · DAY 1</text>
+    <text x="364" y="208" font-size="13" font-weight="600" fill="#0b0b0b">Ohio entity resolution</text>
+    <text x="364" y="226" font-size="11" fill="#52514e">statewide campaign-finance records</text>
+
+    <line x1="364" y1="246" x2="364" y2="330" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="364" y="256" font-size="12" font-weight="600" fill="#52514e">Projected</text>
+    <path d="M364,264 L480,264 A4,4 0 0 1 484,268 L484,274 A4,4 0 0 1 480,278 L364,278 Z" fill="#9ec5f4" fill-opacity="0.45"/>
+    <text x="492" y="275" font-size="12" font-weight="600" fill="#52514e">about $10,000</text>
+    <text x="364" y="302" font-size="12" font-weight="600" fill="#0b0b0b">Actual, statewide job</text>
+    <path d="M364,310 L370,310 A4,4 0 0 1 374,314 L374,320 A4,4 0 0 1 370,324 L364,324 Z" fill="#2a78d6"/>
+    <text x="382" y="321" font-size="12" font-weight="600" fill="#0b0b0b">$795</text>
+
+    <text x="364" y="356" font-size="11" fill="#52514e"><tspan x="364">Finished on an $800 budget set</tspan><tspan x="364" dy="16">ahead of time. Checking cost</tspan><tspan x="364" dy="16">about 4x doing: $545 vs $128.</tspan></text>
+
+    <rect x="364" y="440" width="232" height="68" rx="8" fill="#2a78d6" fill-opacity="0.08"/>
+    <text x="376" y="470" font-size="11" fill="#0b0b0b"><tspan x="376">All 203,317 cases labeled with</tspan><tspan x="376" dy="16">what the answer rests on</tspan></text>
+
+    <text x="364" y="576" font-size="11" fill="#52514e"><tspan x="364">Source: Hrishi Olickel</tspan><tspan x="364" dy="16">(Southbridge AI), “No universal</tspan><tspan x="364" dy="16">schema: just-in-time ontologies,</tspan><tspan x="364" dy="16">model priors, and Pareto surfing”,</tspan><tspan x="364" dy="16">AI Engineer NYC 2026, day 1.</tspan></text>
+
+    <!-- Panel C: Ramp -->
+    <rect x="640" y="150" width="272" height="510" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="660" y="184" font-size="11" letter-spacing="0.06em" fill="#52514e">RAMP · DAY 2</text>
+    <text x="660" y="208" font-size="13" font-weight="600" fill="#0b0b0b">Post-trained specialist</text>
+    <text x="660" y="226" font-size="11" fill="#52514e">under a frontier orchestrator</text>
+
+    <rect x="660" y="252" width="3" height="86" rx="1.5" fill="#2a78d6"/>
+    <text x="672" y="264" font-size="12" fill="#0b0b0b"><tspan x="672">A post-trained Qwen 3.5 35B</tspan><tspan x="672" dy="16">financial QA layer beat Opus</tspan><tspan x="672" dy="16">4.6 on exact task accuracy,</tspan><tspan x="672" dy="16">at far lower latency — and</tspan><tspan x="672" dy="16">shipped to production.</tspan></text>
+
+    <text x="672" y="356" font-size="11" fill="#52514e"><tspan x="672">The talk reports the ranking,</tspan><tspan x="672" dy="16">not numeric accuracy values.</tspan></text>
+
+    <rect x="660" y="440" width="232" height="68" rx="8" fill="#2a78d6" fill-opacity="0.08"/>
+    <text x="672" y="462" font-size="11" fill="#0b0b0b"><tspan x="672">Open-weight models up to 5x</tspan><tspan x="672" dy="16">cheaper, with almost as good</tspan><tspan x="672" dy="16">detection</tspan></text>
+
+    <text x="660" y="592" font-size="11" fill="#52514e"><tspan x="660">Source: Alexander Shevchenko</tspan><tspan x="660" dy="16">(Ramp), “Chasing capabilities</tspan><tspan x="660" dy="16">while waiting for the frontier”,</tspan><tspan x="660" dy="16">AI Engineer NYC 2026, day 2.</tspan></text>
+  </g>
+</svg>

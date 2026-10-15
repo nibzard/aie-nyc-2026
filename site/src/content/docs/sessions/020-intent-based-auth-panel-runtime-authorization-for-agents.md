@@ -1,9 +1,9 @@
 ---
 title: Intent Based Auth
-description: "A Keycard-moderated panel on runtime authorization for AI agents:
-  approve each action against the agent's mission rather than standing OAuth
-  scopes, using AAuth missions and budgets, supervising agents, egress proxies,
-  and tamper-proof audit logs."
+description: "Day 1 · Oct 13. A Keycard-moderated panel on runtime authorization
+  for AI agents: approve each action against the agent's mission rather than
+  standing OAuth scopes, using AAuth missions and budgets, supervising agents,
+  egress proxies, and tamper-proof audit logs."
 sidebar:
   order: 20
   hidden: false
@@ -12,7 +12,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 A Keycard-moderated panel on runtime authorization for AI agents: approve each action against the agent's mission rather than standing OAuth scopes, using AAuth missions and budgets, supervising agents, egress proxies, and tamper-proof audit logs.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/intent-based-auth">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Runtime authorization approves each tool call against the agent's mission. It replaces standing OAuth scopes that agents eventually misuse.
@@ -38,7 +42,13 @@ A Keycard-moderated panel on runtime authorization for AI agents: approve each a
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=9793&rel=0" title="Intent Based Auth" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Allie Howe, Ian Livingstone, Michael Davis, Dick Hardt &middot; 11:31:05 AM ET-12:14:14 PM ET &middot; panel &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=9793s" rel="noopener">Watch on YouTube from 02:43:13</a></p>
+<p class="session-meta">Allie Howe, Ian Livingstone, Michael Davis, Dick Hardt &middot; 11:31:05 AM ET–12:14:14 PM ET &middot; panel &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=9793s" rel="noopener">Watch on YouTube from 02:43:13</a></p>
+
+## Figures
+
+![Sequence diagram of per-tool-call ephemeral token exchange.](/figures/per-tool-call-token-exchange.svg)
+
+Runtime authorization as the panel described it: per-tool-call ephemeral tokens.
 
 ## Notable quotes
 - [02:44:01 | 11:31:53 AM] "Runtime auth is the practice of authorizing an agent per tool call, rather than having the agent hold broad standing access that it will eventually misuse." — Allie Howe

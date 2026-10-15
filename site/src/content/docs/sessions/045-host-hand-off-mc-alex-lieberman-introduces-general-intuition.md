@@ -1,9 +1,9 @@
 ---
 title: "Host hand-off: MC Alex Lieberman introduces General Intuition CEO Pim de
   Witte (frontier models that act in space and time)"
-description: A 27-second MC hand-off that bridges Frank Long's Coatue keynote to
-  the "Frontier Models for Acting in Space and Time" keynote by introducing
-  General Intuition co-founder and CEO Pim de Witte.
+description: Day 1 · Oct 13. A 27-second MC hand-off that bridges Frank Long's
+  Coatue keynote to the "Frontier Models for Acting in Space and Time" keynote
+  by introducing General Intuition co-founder and CEO Pim de Witte.
 sidebar:
   order: 45
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A 27-second MC hand-off that bridges Frank Long's Coatue keynote to the "Frontier Models for Acting in Space and Time" keynote by introducing General Intuition co-founder and CEO Pim de Witte.
 
@@ -32,7 +34,7 @@ A 27-second MC hand-off that bridges Frank Long's Coatue keynote to the "Frontie
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=26933&rel=0" title="Host hand-off: MC Alex Lieberman introduces General Intuition CEO Pim de Witte (frontier models that act in space and time)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Alex Lieberman, Pim de Witte &middot; 4:16:45 PM ET-4:17:12 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=26933s" rel="noopener">Watch on YouTube from 07:28:53</a></p>
+<p class="session-meta">Alex Lieberman, Pim de Witte &middot; 4:16:45 PM ET–4:17:12 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=26933s" rel="noopener">Watch on YouTube from 07:28:53</a></p>
 
 ## Notable quotes
 > "And now, let's take a look at frontier models built to act in space and time." [07:28:53 | 4:16:45 PM]

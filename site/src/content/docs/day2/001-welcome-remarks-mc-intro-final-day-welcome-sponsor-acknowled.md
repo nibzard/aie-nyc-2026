@@ -1,15 +1,18 @@
 ---
 title: Welcome Remarks
-description: Ksenia Se of Turing Post, introduced by an unnamed host voice,
-  opens the third and final day of AI Engineer New York with sponsor thanks, a
-  room-by-room program overview, and a hand-off to the first Ramp keynote.
+description: Day 2 · Oct 14. Ksenia Se of Turing Post, introduced by an unnamed
+  host voice, opens the third and final day of AI Engineer New York with sponsor
+  thanks, a room-by-room program overview, and a hand-off to the first Ramp
+  keynote.
 sidebar:
   order: 1
-  hidden: false
-pagefind: true
+  hidden: true
+pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Ksenia Se of Turing Post, introduced by an unnamed host voice, opens the third and final day of AI Engineer New York with sponsor thanks, a room-by-room program overview, and a hand-off to the first Ramp keynote.
 
@@ -34,7 +37,7 @@ Ksenia Se of Turing Post, introduced by an unnamed host voice, opens the third a
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=901&rel=0" title="Welcome Remarks" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Ksenia Se, Unidentified host (stream opening) &middot; 8:55:37 AM ET-9:00:50 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=901s" rel="noopener">Watch on YouTube from 00:15:01</a></p>
+<p class="session-meta">Ksenia Se, Unidentified host (stream opening) &middot; 8:55:37 AM ET–9:00:50 AM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=901s" rel="noopener">Watch on YouTube from 00:15:01</a></p>
 
 ## Notable quotes
 "Welcome to the third and the final day of AI Engineer New York." [00:15:35 | 8:56:10 AM]

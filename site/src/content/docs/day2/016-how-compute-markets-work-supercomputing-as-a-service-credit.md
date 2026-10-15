@@ -1,8 +1,9 @@
 ---
 title: How Compute Markets Work
-description: Evan Conrad of San Francisco Compute explains why a compute market
-  only works if it is physically settled, why credit (not power) is the
-  number-one AI bottleneck, and what happens to startups if nobody builds one.
+description: Day 2 · Oct 14. Evan Conrad of San Francisco Compute explains why a
+  compute market only works if it is physically settled, why credit (not power)
+  is the number-one AI bottleneck, and what happens to startups if nobody builds
+  one.
 sidebar:
   order: 16
   hidden: false
@@ -10,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Evan Conrad of San Francisco Compute explains why a compute market only works if it is physically settled, why credit (not power) is the number-one AI bottleneck, and what happens to startups if nobody builds one.
 
@@ -36,7 +39,13 @@ Evan Conrad of San Francisco Compute explains why a compute market only works if
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=10199&rel=0" title="How Compute Markets Work" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Evan Conrad &middot; 11:30:35 AM ET-11:48:12 AM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=10199s" rel="noopener">Watch on YouTube from 02:49:59</a></p>
+<p class="session-meta">Evan Conrad &middot; 11:30:35 AM ET–11:48:12 AM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=10199s" rel="noopener">Watch on YouTube from 02:49:59</a></p>
+
+## Figures
+
+![A supply chain from chips to contracts with credit as the constraint.](/figures/compute-becomes-a-market.svg)
+
+The market map: chips, power, credit as the binding constraint, and contracts.
 
 ## Notable quotes
 "When we say physically settled, we mean we're the operator." [02:50:27 | 11:31:03 AM]

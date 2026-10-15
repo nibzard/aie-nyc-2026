@@ -1,9 +1,9 @@
 ---
 title: "Vault: Making Unstructured Data Work for Investing"
-description: Bridgewater built Vault, a governed 100-million-document platform
-  for external and internal unstructured data, because frontier models fail on
-  the open web — and the real prize is an always-on agent that captures what the
-  firm learns back into the corpus.
+description: Day 1 · Oct 13. Bridgewater built Vault, a governed
+  100-million-document platform for external and internal unstructured data,
+  because frontier models fail on the open web — and the real prize is an
+  always-on agent that captures what the firm learns back into the corpus.
 sidebar:
   order: 3
   hidden: false
@@ -12,7 +12,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Bridgewater built Vault, a governed 100-million-document platform for external and internal unstructured data, because frontier models fail on the open web — and the real prize is an always-on agent that captures what the firm learns back into the corpus.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/bridgewater-vault">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Bridgewater's Vault holds more than 100 million documents, grows by thousands per day from 135 external sources, and ingests all internal writing — all aligned to the firm's ontology with countries, concepts, markets, and time period.
@@ -38,7 +42,13 @@ Bridgewater built Vault, a governed 100-million-document platform for external a
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=829&rel=0" title="Vault: Making Unstructured Data Work for Investing" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Sam Green, Aaron Linsky &middot; 9:01:41 AM ET-9:18:55 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=829s" rel="noopener">Watch on YouTube from 00:13:49</a></p>
+<p class="session-meta">Sam Green, Aaron Linsky &middot; 9:01:41 AM ET–9:18:55 AM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=829s" rel="noopener">Watch on YouTube from 00:13:49</a></p>
+
+## Figures
+
+![A split comparison of human and agent readers of the same corpus.](/figures/two-readers-of-the-corpus.svg)
+
+Bridgewater's split between the two classes of reader.
 
 ## Notable quotes
 - "And what originally began as a set of if-then rules on a yellow legal pad evolved into a continuous compounding process with humans at the center, constantly looking for the next thing that's changing in markets." [00:16:06 | 9:03:57 AM]

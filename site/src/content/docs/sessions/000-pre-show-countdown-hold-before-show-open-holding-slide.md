@@ -1,9 +1,9 @@
 ---
 title: Pre-show countdown hold before show open (holding slide, pre-show music,
   no speech)
-description: The livestream opens at 8:47:52 AM ET with roughly eight minutes of
-  holding-slide pre-show content and no speech, until the show-open voice-over
-  begins at 00:08:11.
+description: Day 1 · Oct 13. The livestream opens at 8:47:52 AM ET with roughly
+  eight minutes of holding-slide pre-show content and no speech, until the
+  show-open voice-over begins at 00:08:11.
 sidebar:
   order: 0
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 The livestream opens at 8:47:52 AM ET with roughly eight minutes of holding-slide pre-show content and no speech, until the show-open voice-over begins at 00:08:11.
 
@@ -32,7 +34,7 @@ The livestream opens at 8:47:52 AM ET with roughly eight minutes of holding-slid
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=0&rel=0" title="Pre-show countdown hold before show open (holding slide, pre-show music, no speech)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">8:47:52 AM ET-8:56:03 AM ET &middot; dead air &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=0s" rel="noopener">Watch on YouTube from 00:00:00</a></p>
+<p class="session-meta">8:47:52 AM ET–8:56:03 AM ET &middot; dead air &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=0s" rel="noopener">Watch on YouTube from 00:00:00</a></p>
 
 ## Notable quotes
 

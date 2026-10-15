@@ -1,8 +1,8 @@
 ---
 title: Host hand-off introducing Max Kanat-Alexander
-description: A 33-second host hand-off that bridges the Two Sigma keynote and
-  the "Does Code Quality Even Matter?" keynote, framing it as a talk about the
-  missing principles of code quality.
+description: Day 1 · Oct 13. A 33-second host hand-off that bridges the Two
+  Sigma keynote and the "Does Code Quality Even Matter?" keynote, framing it as
+  a talk about the missing principles of code quality.
 sidebar:
   order: 9
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A 33-second host hand-off that bridges the Two Sigma keynote and the "Does Code Quality Even Matter?" keynote, framing it as a talk about the missing principles of code quality.
 
@@ -30,7 +32,7 @@ A 33-second host hand-off that bridges the Two Sigma keynote and the "Does Code 
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=4182&rel=0" title="Host hand-off introducing Max Kanat-Alexander" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Max Kanat-Alexander, Unidentified host/MC (voice only) &middot; 9:57:34 AM ET-9:58:07 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=4182s" rel="noopener">Watch on YouTube from 01:09:42</a></p>
+<p class="session-meta">Max Kanat-Alexander, Unidentified host/MC (voice only) &middot; 9:57:34 AM ET–9:58:07 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=4182s" rel="noopener">Watch on YouTube from 01:09:42</a></p>
 
 ## Notable quotes
 > "Here to help us understand the missing principles around code quality." [01:09:42 | 9:57:34 AM]

@@ -1,8 +1,8 @@
 ---
 title: Session changeover / dead air between talks (11:23-11:30am ET)
-description: A 7 minute 24 second block changeover on the Simons Room stream
-  with zero transcribed speech, between Oliver Kennon's SemiAnalysis talk and
-  Evan Conrad's 11:30am compute-markets talk.
+description: Day 2 · Oct 14. A 7 minute 24 second block changeover on the Simons
+  Room stream with zero transcribed speech, between Oliver Kennon's SemiAnalysis
+  talk and Evan Conrad's 11:30am compute-markets talk.
 sidebar:
   order: 15
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 7 minute 24 second block changeover on the Simons Room stream with zero transcribed speech, between Oliver Kennon's SemiAnalysis talk and Evan Conrad's 11:30am compute-markets talk.
 
@@ -30,7 +32,7 @@ None - this segment is a 7-minute changeover with no speech.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=9755&rel=0" title="Session changeover / dead air between talks (11:23-11:30am ET)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">11:23:11 AM ET-11:30:35 AM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=9755s" rel="noopener">Watch on YouTube from 02:42:35</a></p>
+<p class="session-meta">11:23:11 AM ET–11:30:35 AM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=9755s" rel="noopener">Watch on YouTube from 02:42:35</a></p>
 
 ## Session narrative
 This segment is a block changeover, not a talk. The previous speaker, Oliver Kennon of SemiAnalysis, ended his GPU cost-curve talk at 11:23:11 AM ET; per the boundary verification, his final sentence was "Thank you all for listening, and have a fantastic rest of your day." The transcript then records no sentences for 7 minutes 24 seconds. The next speech on the stream is the first sentence of "How Compute Markets Work" by Evan Conrad of San Francisco Compute at 11:30:35 AM ET. No host introduction sits inside the gap; Evan speaks first. The single transcript line below is that boundary sentence, which belongs to the next session and is kept here only to mark where the dead air ends.

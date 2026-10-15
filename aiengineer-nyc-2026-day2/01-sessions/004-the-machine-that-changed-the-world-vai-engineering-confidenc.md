@@ -36,6 +36,16 @@ confidence: "high"
 7. Do not use an LLM as the only judge. PayPal AI's research lab found that 7 to 17 percent of verdicts change across identical replications, depending on model and situation. A Meta study found a simple "Are you sure?" challenge changes the LLM's mind 7 to 34 percent of the time.
 8. Build the factory around intent, guardrails, verification, and evidence. Verification must be independent and thorough, mixing deterministic and agentic methods: "You use CPUs when you can use CPUs, and you use GPUs when you need GPUs." Evidence must pass the quality gates, from IT general controls to MISRA. In Sonar's data, SonarVortex cut token cost 36% and issues in the commit 92%; across more than a thousand customers surveyed, SonarQube users were 81% more likely to see a very positive security impact, 34% for time to market, and 76% for outage frequency.
 
+## Figures
+
+![Bar chart: code up 2,450 percent, releases up 30 percent.](../../figures/code-abundant-confidence-scarce.svg)
+
+The volume gap between written code and releases.
+
+![Line chart of per-step accuracy decaying by chain length.](../../figures/compounding-error-curve.svg)
+
+Why 95 percent per step is not enough for long chains.
+
 ## Notable quotes
 - "You have an explosion in the number of lines of code written, up 2,450%." [00:38:12 | 9:18:47 AM]
 - "And it turns out they agree with AI when AI is right 93% of the time." [00:41:17 | 9:21:52 AM]

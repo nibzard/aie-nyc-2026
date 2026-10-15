@@ -36,6 +36,12 @@ confidence: "high"
 7. Keep endpoints OpenAI-compatible. All internal endpoints expose an OpenAI-compatible API with the Responses API, so the same self-hosted backend plugs into OpenCode, Claude, Codex, and the Codex app.
 8. Address the stigma of Chinese open-source models head-on for CIOs: you are not calling an inference endpoint in China. You take the weights and serve them on a US-based service. Classify coding tasks as human-in-the-loop rather than autonomous agents, and prove it with a sandbox that allows or denies individual operations (allow grep, not Gradle). That sandbox also shields against rogue internal actors and prompt injection. Keep data in countries inside the data-equivalency framework (US, EU, UK, Israel), require zero data retention from inference and GPU providers by default, and invest in strong OpenTelemetry so incidents can be investigated log-deep.
 
+## Figures
+
+![Two panels of AI cost economics.](../../figures/where-the-money-goes.svg)
+
+Token economics: the merged-PR split is day two’s Jellyfish talk; the self-hosted bar is this talk.
+
 ## Notable quotes
 - "First one, long context is a scam." [06:10:58 | 2:58:49 PM]
 - "As soon as you exceed five seconds, my Slack inbox starts to blow up, and so we know that's the limit." [06:08:35 | 2:56:26 PM]
@@ -53,6 +59,9 @@ He closed with production setup and a message "for the CIO in the room." GLM is 
 
 ## Speaker details
 **David Abitbol** - Ops & Infrastructure Leader, Revolut. David is a strategy consultant specialized in financial services, passionate about tech, with a side hobby of statistical modelling. In this session he introduced himself as leading AI operations at Revolut, where he runs the internal AI coding stack. Links: [LinkedIn](https://www.linkedin.com/in/abitbold/), [Twitter](https://x.com/Revolut), [Website](https://www.revolut.com/)
+
+
+Result context: the reported token cost and lead-time improvement describe Revolut’s internal deployment. The comparison does not isolate the model change from other causes. Hosting and regulatory comments describe the speaker’s circumstances rather than a general compliance determination. See the [official reading edition](https://aie-nyc-2026-talks.swyxio.workers.dev/talks/david-abitbol-revolut).
 
 ## Full timestamped transcript
 ```

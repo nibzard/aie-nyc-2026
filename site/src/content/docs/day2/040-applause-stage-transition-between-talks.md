@@ -1,8 +1,8 @@
 ---
 title: Applause / stage transition between talks
-description: A roughly 44-second caption-free gap on the Simons Room stage
-  between the end of Will Brown's Prime Intellect talk and the start of Jemima
-  Abu's accessibility talk, with no host voiceover.
+description: Day 2 · Oct 14. A roughly 44-second caption-free gap on the Simons
+  Room stage between the end of Will Brown's Prime Intellect talk and the start
+  of Jemima Abu's accessibility talk, with no host voiceover.
 sidebar:
   order: 40
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A roughly 44-second caption-free gap on the Simons Room stage between the end of Will Brown's Prime Intellect talk and the start of Jemima Abu's accessibility talk, with no host voiceover.
 
@@ -29,7 +31,7 @@ None - this segment is a 45-second applause transition.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=26747&rel=0" title="Applause / stage transition between talks" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">4:06:22 PM ET-4:07:06 PM ET &middot; filler &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=26747s" rel="noopener">Watch on YouTube from 07:25:46</a></p>
+<p class="session-meta">4:06:22 PM ET–4:07:06 PM ET &middot; filler &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=26747s" rel="noopener">Watch on YouTube from 07:25:46</a></p>
 
 ## Session narrative
 

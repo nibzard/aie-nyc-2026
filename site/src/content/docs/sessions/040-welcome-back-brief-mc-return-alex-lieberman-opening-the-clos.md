@@ -1,8 +1,8 @@
 ---
 title: Welcome Back - Featured Keynotes
-description: A voice-over announcer brings MC Alex Lieberman back to the main
-  stage to open the closing keynote block of day one at AI Engineer New York
-  2026.
+description: Day 1 · Oct 13. A voice-over announcer brings MC Alex Lieberman
+  back to the main stage to open the closing keynote block of day one at AI
+  Engineer New York 2026.
 sidebar:
   order: 40
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A voice-over announcer brings MC Alex Lieberman back to the main stage to open the closing keynote block of day one at AI Engineer New York 2026.
 
@@ -29,7 +31,7 @@ A voice-over announcer brings MC Alex Lieberman back to the main stage to open t
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=25180&rel=0" title="Welcome Back - Featured Keynotes" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Alex Lieberman, Unidentified stage announcer &middot; 3:47:31 PM ET-3:47:35 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=25180s" rel="noopener">Watch on YouTube from 06:59:40</a></p>
+<p class="session-meta">Alex Lieberman, Unidentified stage announcer &middot; 3:47:31 PM ET–3:47:35 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=25180s" rel="noopener">Watch on YouTube from 06:59:40</a></p>
 
 ## Notable quotes
 - "To guide us back into the closing keynotes of today's program, please welcome once again to the stage our MC, Alex Lieberman, managing partner at 10X." - [06:59:40 | 3:47:31 PM]

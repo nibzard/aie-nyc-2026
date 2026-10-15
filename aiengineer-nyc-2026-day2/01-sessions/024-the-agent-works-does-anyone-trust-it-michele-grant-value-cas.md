@@ -36,6 +36,12 @@ confidence: "high"
 7. Build the evidence for autonomy into the agent itself. Grant looks for three artifacts. First, an auditable decision log that records raw data ingested, tool calls executed, the prompt, model versions, output generated, and the human sign-off. Two engineering choices make it airtight: run the core math and reconciliation rules in deterministic, finance-approved code rather than LLM prose, and treat the model's written summary as explanation, not proof. If reported savings do not match the general ledger, the agent does not touch the number. It flags the discrepancy and routes it up. Second, a model inventory record covering the accountable executive, data lineage, source-system dependencies, validation results, escalation path, and kill-switch runbook, plus regression triggers: any prompt, base model, or source API update requires full revalidation before the agent runs in production again.
 8. Grant autonomy in four stages and watch the failure mode of the last one. Stage one is shadow mode, where the agent runs alongside the analyst and the team compares the two. Stage two is the supervised draft, with a senior analyst reviewing every line item. Stage three is the exception ensemble, reviewing flagged initiatives plus a random sample of clean ones. Stage four is exceptions only. Once humans only look at exceptions, the biggest vulnerability is what the agent failed to flag, so track missed material issues through independent sampling, monitor error severity, and watch the override rate. A falling override rate can mean review depth slipped, not that the agent got smarter. The scorecard pairs those control metrics with the value metrics on one page, so the steering committee can promote the agent, hold it, step it back, or drop it to supervised review.
 
+## Figures
+
+![A four-stage autonomy staircase climbing measured eval quality.](../../figures/autonomy-hill-climb.svg)
+
+The four-stage autonomy staircase and its guardrails.
+
 ## Notable quotes
 - "[04:28:23 | 1:08:59 PM] Go live proves that a system exists, but it doesn't prove the people behind the work will actually use it, or that it will ever deliver a single dollar from the deal model."
 - "[04:29:46 | 1:10:22 PM] An agent earns trust when it delivers the value the business budgeted for while staying fully within the company's approved risk appetite."

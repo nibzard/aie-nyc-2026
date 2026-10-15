@@ -1,10 +1,10 @@
 ---
 title: Untranscribed gap inside the welcome-back block (~10.3 min; possible
   sponsor reel, video, or dead air before the MC resumes)
-description: Between video 06:59:43 and 07:10:05 (3:47:35 PM to 3:57:57 PM), the
-  main-stage livestream produced no transcribed speech inside the welcome-back
-  block, leaving a 10-minute-22-second hold between Alex Lieberman's cut-off
-  self-introduction and his mid-sentence resume.
+description: Day 1 · Oct 13. Between video 06:59:43 and 07:10:05 (3:47:35 PM to
+  3:57:57 PM), the main-stage livestream produced no transcribed speech inside
+  the welcome-back block, leaving a 10-minute-22-second hold between Alex
+  Lieberman's cut-off self-introduction and his mid-sentence resume.
 sidebar:
   order: 41
   hidden: true
@@ -12,6 +12,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 Between video 06:59:43 and 07:10:05 (3:47:35 PM to 3:57:57 PM), the main-stage livestream produced no transcribed speech inside the welcome-back block, leaving a 10-minute-22-second hold between Alex Lieberman's cut-off self-introduction and his mid-sentence resume.
 
@@ -34,7 +36,7 @@ Between video 06:59:43 and 07:10:05 (3:47:35 PM to 3:57:57 PM), the main-stage l
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=25183&rel=0" title="Untranscribed gap inside the welcome-back block (~10.3 min; possible sponsor reel, video, or dead air before the MC resumes)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">3:47:35 PM ET-3:57:57 PM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=25183s" rel="noopener">Watch on YouTube from 06:59:43</a></p>
+<p class="session-meta">3:47:35 PM ET–3:57:57 PM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=25183s" rel="noopener">Watch on YouTube from 06:59:43</a></p>
 
 ## Notable quotes
 > "Well, welcome back for the closing keynote block here at AI Engineer New York 2026." — [06:59:42 | 3:47:34 PM] — tail of the welcome-back open (session 040). Note: this line carries t=25182, one second before this segment's official start at t=25183 (3:47:35 PM). It is retained only to bracket the silence.

@@ -1,9 +1,9 @@
 ---
 title: Not All GPU's Are Deployed The Same
-description: A SemiAnalysis research analyst argues that identical GPUs deliver
-  very different amounts of useful intelligence depending on who operates them,
-  so compute buyers, benchmarks, and futures markets must grade the operator,
-  not just the chip.
+description: Day 2 · Oct 14. A SemiAnalysis research analyst argues that
+  identical GPUs deliver very different amounts of useful intelligence depending
+  on who operates them, so compute buyers, benchmarks, and futures markets must
+  grade the operator, not just the chip.
 sidebar:
   order: 14
   hidden: false
@@ -11,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A SemiAnalysis research analyst argues that identical GPUs deliver very different amounts of useful intelligence depending on who operates them, so compute buyers, benchmarks, and futures markets must grade the operator, not just the chip.
 
@@ -38,7 +40,13 @@ A SemiAnalysis research analyst argues that identical GPUs deliver very differen
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=8707&rel=0" title="Not All GPU's Are Deployed The Same" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Oliver Kennon &middot; 11:05:43 AM ET-11:23:11 AM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=8707s" rel="noopener">Watch on YouTube from 02:25:07</a></p>
+<p class="session-meta">Oliver Kennon &middot; 11:05:43 AM ET–11:23:11 AM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=8707s" rel="noopener">Watch on YouTube from 02:25:07</a></p>
+
+## Figures
+
+![Two bars comparing tokens per second from the same GPU.](/figures/gpu-level-of-operator.svg)
+
+Two identical B200 stacks and the operator gap between them.
 
 ## Notable quotes
 - [02:25:31 | 11:06:07 AM] A GPU falls to the level of the operator.

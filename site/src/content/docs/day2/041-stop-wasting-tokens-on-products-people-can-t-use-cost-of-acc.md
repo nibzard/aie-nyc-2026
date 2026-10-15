@@ -1,8 +1,8 @@
 ---
 title: Stop Wasting Tokens on Products People Can’t Use
-description: Jemima Abu (CAIS) argues that letting AI agents ship inaccessible
-  products wastes tokens, time, and money — her experiment saw a 58% cost
-  reduction and one-third the build time when the agent ran with an
+description: Day 2 · Oct 14. Jemima Abu (CAIS) argues that letting AI agents
+  ship inaccessible products wastes tokens, time, and money — her experiment saw
+  a 58% cost reduction and one-third the build time when the agent ran with an
   accessibility skill.
 sidebar:
   order: 41
@@ -11,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Jemima Abu (CAIS) argues that letting AI agents ship inaccessible products wastes tokens, time, and money — her experiment saw a 58% cost reduction and one-third the build time when the agent ran with an accessibility skill.
 
@@ -38,7 +40,7 @@ Jemima Abu (CAIS) argues that letting AI agents ship inaccessible products waste
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=26790&rel=0" title="Stop Wasting Tokens on Products People Can’t Use" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Jemima Abu &middot; 4:07:06 PM ET-4:17:07 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=26790s" rel="noopener">Watch on YouTube from 07:26:30</a></p>
+<p class="session-meta">Jemima Abu &middot; 4:07:06 PM ET–4:17:07 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=26790s" rel="noopener">Watch on YouTube from 07:26:30</a></p>
 
 ## Notable quotes
 "And I'm going to be talking to you about the cost of accessibility in AI, or as I like to call it, stop wasting tokens on building products that people can't use." [07:26:31 | 4:07:06 PM]

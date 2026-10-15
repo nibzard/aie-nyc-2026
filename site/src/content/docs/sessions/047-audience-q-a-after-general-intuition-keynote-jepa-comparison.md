@@ -1,9 +1,10 @@
 ---
 title: "Audience Q&A after General Intuition keynote: JEPA comparison, action
   labels vs world models"
-description: In a 98-second closing Q&A, Pim de Witte distinguished General
-  Intuition's action-label-trained foundation models from JEPA, calling JEPA
-  "the more correct approach" in the limit but far less practical short-term.
+description: Day 1 · Oct 13. In a 98-second closing Q&A, Pim de Witte
+  distinguished General Intuition's action-label-trained foundation models from
+  JEPA, calling JEPA "the more correct approach" in the limit but far less
+  practical short-term.
 sidebar:
   order: 47
   hidden: false
@@ -12,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 In a 98-second closing Q&A, Pim de Witte distinguished General Intuition's action-label-trained foundation models from JEPA, calling JEPA "the more correct approach" in the limit but far less practical short-term.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/pim-de-witte-space-time">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Brief audience Q&A at the end of the "Frontier Models for Acting in Space and Time" keynote (session 046). One question was answered in full.
@@ -32,7 +37,7 @@ In a 98-second closing Q&A, Pim de Witte distinguished General Intuition's actio
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=27972&rel=0" title="Audience Q&amp;A after General Intuition keynote: JEPA comparison, action labels vs world models" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Pim de Witte, Unidentified audience member &middot; 4:34:04 PM ET-4:35:42 PM ET &middot; qna &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=27972s" rel="noopener">Watch on YouTube from 07:46:12</a></p>
+<p class="session-meta">Pim de Witte, Unidentified audience member &middot; 4:34:04 PM ET–4:35:42 PM ET &middot; qna &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=27972s" rel="noopener">Watch on YouTube from 07:46:12</a></p>
 
 ## Notable quotes
 > "So JEPA doesn't train alongside the action labels, so they bet on inferred action labels for the most part." [07:46:29 | 4:34:20 PM]

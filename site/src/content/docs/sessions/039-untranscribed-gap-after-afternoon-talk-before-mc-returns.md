@@ -1,10 +1,10 @@
 ---
 title: Untranscribed gap after afternoon talk, before MC returns (12m44s; room
   changeover / idle stream)
-description: After Sid Pednekar's "Thank you." closed the last afternoon stage
-  talk at 3:34:48 PM, the livestream carried no transcribed speech for 12
-  minutes 42 seconds, until an off-stage voice-over welcomed MC Alex Lieberman
-  back at 3:47:31 PM to open the closing-keynote block.
+description: Day 1 · Oct 13. After Sid Pednekar's "Thank you." closed the last
+  afternoon stage talk at 3:34:48 PM, the livestream carried no transcribed
+  speech for 12 minutes 42 seconds, until an off-stage voice-over welcomed MC
+  Alex Lieberman back at 3:47:31 PM to open the closing-keynote block.
 sidebar:
   order: 39
   hidden: true
@@ -12,6 +12,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 After Sid Pednekar's "Thank you." closed the last afternoon stage talk at 3:34:48 PM, the livestream carried no transcribed speech for 12 minutes 42 seconds, until an off-stage voice-over welcomed MC Alex Lieberman back at 3:47:31 PM to open the closing-keynote block.
 
@@ -35,7 +37,7 @@ After Sid Pednekar's "Thank you." closed the last afternoon stage talk at 3:34:4
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=24417&rel=0" title="Untranscribed gap after afternoon talk, before MC returns (12m44s; room changeover / idle stream)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">3:34:49 PM ET-3:47:31 PM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=24417s" rel="noopener">Watch on YouTube from 06:46:57</a></p>
+<p class="session-meta">3:34:49 PM ET–3:47:31 PM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=24417s" rel="noopener">Watch on YouTube from 06:46:57</a></p>
 
 ## Notable quotes
 - "Thank you." - [06:46:56 | 3:34:48 PM]

@@ -48,7 +48,7 @@ No speakers are credited for this segment in the session manifest.
 
 **Branislav Brzak** - AI Security Researcher, Stealthium (contextual attribution only). The boundary line "Thank you all for watching." at [04:15:05 | 1:02:57 PM] belongs to him by context: it closes his lunch talk on GPU side channels in segment 025. His research shows a GPU co-tenant can fingerprint a victim LLM's architecture and depth with about 97% accuracy and its decode speed with about 99.3% accuracy from timing alone, within a MIG-partitioned H100 and across an NVSwitch/NVLink fabric. Links: [LinkedIn](https://rs.linkedin.com/in/branislav-brzak)
 
-**Unnamed Railway engineer** (identified from session context, not this segment). The boundary line "People have been saying that SaaS is dead for a while now." at [04:15:31 | 1:03:22 PM] opens this speaker's lunch talk on becoming your company's SaaS layer (segment 027), recorded from Edinburgh. The manifest records the name as "not heard", and no speaker record exists.
+**Mahmoud Abdelwahab** (identified in the official talk library, not in this transition segment). The boundary line "People have been saying that SaaS is dead for a while now." at [04:15:31 | 1:03:22 PM] opens this speaker's lunch talk on becoming your company's SaaS layer (segment 027), recorded from Edinburgh. The original manifest recorded the name as "not heard". The [official reading edition](https://aie-nyc-2026-talks.swyxio.workers.dev/talks/mahmoud-abdelwahab-saas-replacements) supplies the speaker attribution.
 
 ## Full timestamped transcript
 ```

@@ -1,10 +1,10 @@
 ---
 title: Welcome Back - Featured Keynotes
-description: MC Alex Lieberman returns after the afternoon break to thank the
-  sponsor tiers, argues the conference content is "surface area" for hallway
-  conversations, shares Tenex's enterprise AI diffusion ladder (90% LLM rollout,
-  60% trained users, 50% coding agents, 5% non-engineering agents), and
-  introduces Frank Long of Coatue
+description: Day 1 · Oct 13. MC Alex Lieberman returns after the afternoon break
+  to thank the sponsor tiers, argues the conference content is "surface area"
+  for hallway conversations, shares Tenex's enterprise AI diffusion ladder (90%
+  LLM rollout, 60% trained users, 50% coding agents, 5% non-engineering agents),
+  and introduces Frank Long of Coatue…
 sidebar:
   order: 42
   hidden: true
@@ -13,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 MC Alex Lieberman returns after the afternoon break to thank the sponsor tiers, argues the conference content is "surface area" for hallway conversations, shares Tenex's enterprise AI diffusion ladder (90% LLM rollout, 60% trained users, 50% coding agents, 5% non-engineering agents), and introduces Frank Long of Coatue for "A Hedge Fund as a Function."
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/welcome-back-remarks">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Lieberman resumes mid-thought ("For Fortune 500 businesses") after a roughly 10-minute untranscribed gap, checks in on the day, and thanks the sponsors by tier: presenting sponsor Arize; platinum sponsors Oracle, Sonar, WorkOS, and Exa; then gold, silver, and supporting partners.
@@ -37,7 +41,7 @@ MC Alex Lieberman returns after the afternoon break to thank the sponsor tiers, 
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=25805&rel=0" title="Welcome Back - Featured Keynotes" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Alex Lieberman &middot; 3:57:57 PM ET-4:02:23 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=25805s" rel="noopener">Watch on YouTube from 07:10:05</a></p>
+<p class="session-meta">Alex Lieberman &middot; 3:57:57 PM ET–4:02:23 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=25805s" rel="noopener">Watch on YouTube from 07:10:05</a></p>
 
 ## Notable quotes
 "So before we hop into the next block, one thing that I just wanted to share, and I'm sure a lot of you are already feeling this already, is not only is the energy palpable across the room, in between all of the sessions, but what you realize when you come to AI Engineer is that the content is incredible." [07:11:17 | 3:59:08 PM]

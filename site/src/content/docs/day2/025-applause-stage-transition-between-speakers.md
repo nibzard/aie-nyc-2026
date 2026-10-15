@@ -1,8 +1,8 @@
 ---
 title: Applause / stage transition between speakers
-description: A 24-second caption-free gap between two pre-recorded talks,
-  consistent with applause and a stage changeover during the 12:40-2:05pm ET
-  networking break.
+description: Day 2 · Oct 14. A 24-second caption-free gap between two
+  pre-recorded talks, consistent with applause and a stage changeover during the
+  12:40-2:05pm ET networking break.
 sidebar:
   order: 25
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 24-second caption-free gap between two pre-recorded talks, consistent with applause and a stage changeover during the 12:40-2:05pm ET networking break.
 
@@ -29,7 +31,7 @@ A 24-second caption-free gap between two pre-recorded talks, consistent with app
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=17021&rel=0" title="Applause / stage transition between speakers" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">1:24:16 PM ET-1:24:40 PM ET &middot; filler &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=17021s" rel="noopener">Watch on YouTube from 04:43:41</a></p>
+<p class="session-meta">1:24:16 PM ET–1:24:40 PM ET &middot; filler &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=17021s" rel="noopener">Watch on YouTube from 04:43:41</a></p>
 
 ## Notable quotes
 - None. The only two transcript lines are boundary sentences owned by sessions 024 and 026. No words are spoken inside this gap.

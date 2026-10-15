@@ -1,0 +1,586 @@
+{
+  "nodes": [
+    {
+      "id": "Evaluation",
+      "talks": 18,
+      "windows": 79,
+      "community": 0,
+      "betweenness": 0.0158
+    },
+    {
+      "id": "Security",
+      "talks": 20,
+      "windows": 89,
+      "community": 0,
+      "betweenness": 0.2609
+    },
+    {
+      "id": "Authorization",
+      "talks": 9,
+      "windows": 68,
+      "community": 0,
+      "betweenness": 0.0949
+    },
+    {
+      "id": "Verification",
+      "talks": 11,
+      "windows": 45,
+      "community": 1,
+      "betweenness": 0.0395
+    },
+    {
+      "id": "Trust",
+      "talks": 24,
+      "windows": 85,
+      "community": 1,
+      "betweenness": 0.0
+    },
+    {
+      "id": "Human review",
+      "talks": 14,
+      "windows": 38,
+      "community": 0,
+      "betweenness": 0.1067
+    },
+    {
+      "id": "Observability",
+      "talks": 18,
+      "windows": 78,
+      "community": 0,
+      "betweenness": 0.1462
+    },
+    {
+      "id": "Memory",
+      "talks": 9,
+      "windows": 31,
+      "community": 0,
+      "betweenness": 0.0751
+    },
+    {
+      "id": "Context",
+      "talks": 22,
+      "windows": 89,
+      "community": 1,
+      "betweenness": 0.0316
+    },
+    {
+      "id": "Retrieval",
+      "talks": 11,
+      "windows": 39,
+      "community": 2,
+      "betweenness": 0.0
+    },
+    {
+      "id": "Workflow",
+      "talks": 31,
+      "windows": 116,
+      "community": 1,
+      "betweenness": 0.1462
+    },
+    {
+      "id": "Software and coding",
+      "talks": 41,
+      "windows": 226,
+      "community": 1,
+      "betweenness": 0.0237
+    },
+    {
+      "id": "Skills",
+      "talks": 11,
+      "windows": 45,
+      "community": 1,
+      "betweenness": 0.0158
+    },
+    {
+      "id": "GPU",
+      "talks": 8,
+      "windows": 58,
+      "community": 3,
+      "betweenness": 0.0791
+    },
+    {
+      "id": "Compute",
+      "talks": 15,
+      "windows": 90,
+      "community": 3,
+      "betweenness": 0.1502
+    },
+    {
+      "id": "Cost",
+      "talks": 34,
+      "windows": 197,
+      "community": 3,
+      "betweenness": 0.0751
+    },
+    {
+      "id": "Latency",
+      "talks": 7,
+      "windows": 22,
+      "community": 3,
+      "betweenness": 0.0
+    },
+    {
+      "id": "Training",
+      "talks": 11,
+      "windows": 51,
+      "community": 1,
+      "betweenness": 0.0
+    },
+    {
+      "id": "Simulation",
+      "talks": 6,
+      "windows": 37,
+      "community": 4,
+      "betweenness": 0.0
+    },
+    {
+      "id": "Business value",
+      "talks": 10,
+      "windows": 40,
+      "community": 3,
+      "betweenness": 0.0316
+    },
+    {
+      "id": "Deployment",
+      "talks": 28,
+      "windows": 106,
+      "community": 0,
+      "betweenness": 0.0277
+    },
+    {
+      "id": "Privacy",
+      "talks": 3,
+      "windows": 14,
+      "community": 5,
+      "betweenness": 0.0
+    },
+    {
+      "id": "Inference",
+      "talks": 8,
+      "windows": 31,
+      "community": 3,
+      "betweenness": 0.1621
+    },
+    {
+      "id": "Finance",
+      "talks": 33,
+      "windows": 224,
+      "community": 3,
+      "betweenness": 0.0
+    }
+  ],
+  "edges": [
+    {
+      "source": "Compute",
+      "target": "GPU",
+      "windows": 33,
+      "talks": 7,
+      "lift": 5.2977,
+      "npmi": 0.5155
+    },
+    {
+      "source": "GPU",
+      "target": "Inference",
+      "windows": 16,
+      "talks": 5,
+      "lift": 7.4572,
+      "npmi": 0.5076
+    },
+    {
+      "source": "Authorization",
+      "target": "Security",
+      "windows": 30,
+      "talks": 7,
+      "lift": 4.154,
+      "npmi": 0.4277
+    },
+    {
+      "source": "Memory",
+      "target": "Observability",
+      "windows": 13,
+      "talks": 4,
+      "lift": 4.5054,
+      "npmi": 0.3613
+    },
+    {
+      "source": "Compute",
+      "target": "Inference",
+      "windows": 13,
+      "talks": 5,
+      "lift": 3.9047,
+      "npmi": 0.327
+    },
+    {
+      "source": "Authorization",
+      "target": "Human review",
+      "windows": 12,
+      "talks": 5,
+      "lift": 3.8916,
+      "npmi": 0.32
+    },
+    {
+      "source": "Business value",
+      "target": "Cost",
+      "windows": 25,
+      "talks": 8,
+      "lift": 2.6586,
+      "npmi": 0.2784
+    },
+    {
+      "source": "Compute",
+      "target": "Cost",
+      "windows": 47,
+      "talks": 12,
+      "lift": 2.2214,
+      "npmi": 0.2771
+    },
+    {
+      "source": "Trust",
+      "target": "Verification",
+      "windows": 13,
+      "talks": 4,
+      "lift": 2.8481,
+      "npmi": 0.2512
+    },
+    {
+      "source": "Observability",
+      "target": "Security",
+      "windows": 20,
+      "talks": 11,
+      "lift": 2.4143,
+      "npmi": 0.236
+    },
+    {
+      "source": "Authorization",
+      "target": "Observability",
+      "windows": 16,
+      "talks": 4,
+      "lift": 2.5279,
+      "npmi": 0.2343
+    },
+    {
+      "source": "Evaluation",
+      "target": "Observability",
+      "windows": 18,
+      "talks": 7,
+      "lift": 2.4479,
+      "npmi": 0.2331
+    },
+    {
+      "source": "Memory",
+      "target": "Security",
+      "windows": 9,
+      "talks": 5,
+      "lift": 2.7336,
+      "npmi": 0.2218
+    },
+    {
+      "source": "Context",
+      "target": "Memory",
+      "windows": 9,
+      "talks": 5,
+      "lift": 2.7336,
+      "npmi": 0.2218
+    },
+    {
+      "source": "Cost",
+      "target": "Latency",
+      "windows": 13,
+      "talks": 5,
+      "lift": 2.5136,
+      "npmi": 0.2212
+    },
+    {
+      "source": "Skills",
+      "target": "Workflow",
+      "windows": 15,
+      "talks": 7,
+      "lift": 2.408,
+      "npmi": 0.2184
+    },
+    {
+      "source": "Business value",
+      "target": "Compute",
+      "windows": 11,
+      "talks": 5,
+      "lift": 2.5606,
+      "npmi": 0.217
+    },
+    {
+      "source": "Cost",
+      "target": "GPU",
+      "windows": 28,
+      "talks": 7,
+      "lift": 2.0536,
+      "npmi": 0.2117
+    },
+    {
+      "source": "Deployment",
+      "target": "Evaluation",
+      "windows": 21,
+      "talks": 7,
+      "lift": 2.1015,
+      "npmi": 0.2015
+    },
+    {
+      "source": "Human review",
+      "target": "Workflow",
+      "windows": 12,
+      "talks": 9,
+      "lift": 2.2813,
+      "npmi": 0.1942
+    },
+    {
+      "source": "Deployment",
+      "target": "Human review",
+      "windows": 11,
+      "talks": 8,
+      "lift": 2.2885,
+      "npmi": 0.1911
+    },
+    {
+      "source": "Inference",
+      "target": "Security",
+      "windows": 8,
+      "talks": 4,
+      "lift": 2.4299,
+      "npmi": 0.1909
+    },
+    {
+      "source": "Human review",
+      "target": "Observability",
+      "windows": 8,
+      "talks": 5,
+      "lift": 2.2618,
+      "npmi": 0.1755
+    },
+    {
+      "source": "Trust",
+      "target": "Workflow",
+      "windows": 22,
+      "talks": 10,
+      "lift": 1.8698,
+      "npmi": 0.1719
+    },
+    {
+      "source": "Observability",
+      "target": "Verification",
+      "windows": 9,
+      "talks": 4,
+      "lift": 2.1487,
+      "npmi": 0.1687
+    },
+    {
+      "source": "Context",
+      "target": "Skills",
+      "windows": 10,
+      "talks": 5,
+      "lift": 2.0924,
+      "npmi": 0.1667
+    },
+    {
+      "source": "GPU",
+      "target": "Security",
+      "windows": 12,
+      "talks": 5,
+      "lift": 1.9481,
+      "npmi": 0.157
+    },
+    {
+      "source": "Deployment",
+      "target": "Inference",
+      "windows": 8,
+      "talks": 4,
+      "lift": 2.0402,
+      "npmi": 0.1533
+    },
+    {
+      "source": "Compute",
+      "target": "Finance",
+      "windows": 37,
+      "talks": 8,
+      "lift": 1.538,
+      "npmi": 0.138
+    },
+    {
+      "source": "Training",
+      "target": "Workflow",
+      "windows": 12,
+      "talks": 5,
+      "lift": 1.6998,
+      "npmi": 0.1249
+    },
+    {
+      "source": "Software and coding",
+      "target": "Workflow",
+      "windows": 45,
+      "talks": 22,
+      "lift": 1.4384,
+      "npmi": 0.1243
+    },
+    {
+      "source": "Skills",
+      "target": "Software and coding",
+      "windows": 19,
+      "talks": 8,
+      "lift": 1.5656,
+      "npmi": 0.1184
+    },
+    {
+      "source": "Observability",
+      "target": "Workflow",
+      "windows": 17,
+      "talks": 9,
+      "lift": 1.5745,
+      "npmi": 0.1165
+    },
+    {
+      "source": "Verification",
+      "target": "Workflow",
+      "windows": 10,
+      "talks": 6,
+      "lift": 1.6054,
+      "npmi": 0.1069
+    },
+    {
+      "source": "Deployment",
+      "target": "Observability",
+      "windows": 15,
+      "talks": 8,
+      "lift": 1.5203,
+      "npmi": 0.1041
+    },
+    {
+      "source": "Authorization",
+      "target": "Workflow",
+      "windows": 14,
+      "talks": 7,
+      "lift": 1.4873,
+      "npmi": 0.097
+    },
+    {
+      "source": "Context",
+      "target": "Training",
+      "windows": 8,
+      "talks": 5,
+      "lift": 1.477,
+      "npmi": 0.0838
+    },
+    {
+      "source": "Security",
+      "target": "Workflow",
+      "windows": 17,
+      "talks": 9,
+      "lift": 1.3799,
+      "npmi": 0.0826
+    },
+    {
+      "source": "Cost",
+      "target": "Finance",
+      "windows": 65,
+      "talks": 21,
+      "lift": 1.2344,
+      "npmi": 0.0824
+    },
+    {
+      "source": "Finance",
+      "target": "GPU",
+      "windows": 21,
+      "talks": 6,
+      "lift": 1.3545,
+      "npmi": 0.0823
+    },
+    {
+      "source": "Business value",
+      "target": "Software and coding",
+      "windows": 15,
+      "talks": 5,
+      "lift": 1.3905,
+      "npmi": 0.0819
+    }
+  ],
+  "communities": [
+    [
+      "Authorization",
+      "Deployment",
+      "Evaluation",
+      "Human review",
+      "Memory",
+      "Observability",
+      "Security"
+    ],
+    [
+      "Context",
+      "Skills",
+      "Software and coding",
+      "Training",
+      "Trust",
+      "Verification",
+      "Workflow"
+    ],
+    [
+      "Retrieval"
+    ],
+    [
+      "Business value",
+      "Compute",
+      "Cost",
+      "Finance",
+      "GPU",
+      "Inference",
+      "Latency"
+    ],
+    [
+      "Simulation"
+    ],
+    [
+      "Privacy"
+    ]
+  ],
+  "sensitivity": [
+    {
+      "cutoff": 0.05,
+      "edges": 49,
+      "top_bridges": [
+        "Security",
+        "Workflow",
+        "Compute",
+        "Observability",
+        "Inference"
+      ]
+    },
+    {
+      "cutoff": 0.08,
+      "edges": 41,
+      "top_bridges": [
+        "Security",
+        "Inference",
+        "Compute",
+        "Observability",
+        "Workflow"
+      ]
+    },
+    {
+      "cutoff": 0.12,
+      "edges": 31,
+      "top_bridges": [
+        "Security",
+        "Inference",
+        "Workflow",
+        "Human review",
+        "Compute"
+      ]
+    },
+    {
+      "cutoff": 0.16,
+      "edges": 26,
+      "top_bridges": [
+        "Security",
+        "Inference",
+        "Observability",
+        "Compute",
+        "Human review"
+      ]
+    }
+  ]
+}

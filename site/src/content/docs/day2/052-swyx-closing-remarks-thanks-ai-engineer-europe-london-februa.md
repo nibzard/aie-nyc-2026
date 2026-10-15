@@ -1,10 +1,10 @@
 ---
 title: "Swyx closing remarks: thanks, AI Engineer Europe (London, February),
   World's Fair San Francisco -- off-agenda"
-description: AI Engineer cofounder Swyx closes the New York 2026 event by
-  thanking the MC and the New York AI community, then announces AI Engineer
-  Code, AI Engineer Europe in London in February, and the 10,000-person World's
-  Fair in San Francisco next summer.
+description: Day 2 · Oct 14. AI Engineer cofounder Swyx closes the New York 2026
+  event by thanking the MC and the New York AI community, then announces AI
+  Engineer Code, AI Engineer Europe in London in February, and the 10,000-person
+  World's Fair in San Francisco next summer.
 sidebar:
   order: 52
   hidden: true
@@ -12,6 +12,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 AI Engineer cofounder Swyx closes the New York 2026 event by thanking the MC and the New York AI community, then announces AI Engineer Code, AI Engineer Europe in London in February, and the 10,000-person World's Fair in San Francisco next summer.
 
@@ -37,7 +39,7 @@ AI Engineer cofounder Swyx closes the New York 2026 event by thanking the MC and
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=31674&rel=0" title="Swyx closing remarks: thanks, AI Engineer Europe (London, February), World's Fair San Francisco -- off-agenda" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Swyx &middot; 5:28:30 PM ET-5:30:36 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=31674s" rel="noopener">Watch on YouTube from 08:47:54</a></p>
+<p class="session-meta">Swyx &middot; 5:28:30 PM ET–5:30:36 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=31674s" rel="noopener">Watch on YouTube from 08:47:54</a></p>
 
 ## Notable quotes
 > "That's the second year in London in February, and obviously the big, big show of all, bigger than all the other ones combined, the World's Fair, 10,000 people in San Francisco next summer." [08:49:22 | 5:29:57 PM]

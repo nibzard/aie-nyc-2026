@@ -1,8 +1,9 @@
 ---
 title: Closing Remarks
-description: "MC Alex Lieberman closes day one of AI Engineer NYC 2026 with
-  applause for the speakers, thanks to the sponsors, and two housekeeping items:
-  go talk to humans tonight, and come back before 9 a.m. tomorrow."
+description: "Day 1 · Oct 13. MC Alex Lieberman closes day one of AI Engineer
+  NYC 2026 with applause for the speakers, thanks to the sponsors, and two
+  housekeeping items: go talk to humans tonight, and come back before 9 a.m.
+  tomorrow."
 sidebar:
   order: 51
   hidden: true
@@ -11,7 +12,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 MC Alex Lieberman closes day one of AI Engineer NYC 2026 with applause for the speakers, thanks to the sponsors, and two housekeeping items: go talk to humans tonight, and come back before 9 a.m. tomorrow.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/closing-remarks">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - A stage voice-over brings MC Alex Lieberman back for the day-one close at 4:51 PM ET.
@@ -36,7 +41,7 @@ MC Alex Lieberman closes day one of AI Engineer NYC 2026 with applause for the s
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=29007&rel=0" title="Closing Remarks" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Alex Lieberman &middot; 4:51:19 PM ET-4:52:55 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=29007s" rel="noopener">Watch on YouTube from 08:03:27</a></p>
+<p class="session-meta">Alex Lieberman &middot; 4:51:19 PM ET–4:52:55 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=29007s" rel="noopener">Watch on YouTube from 08:03:27</a></p>
 
 ## Notable quotes
 - "Okay, let's close this thing out." [08:03:38 | 4:51:29 PM]

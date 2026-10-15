@@ -1,10 +1,10 @@
 ---
 title: Great Agents Start with Great Infrastructure
-description: Modal CTO Akshat Bubna shows what agents actually need from
-  infrastructure — sandboxes holding multiple containers and sidecars, shared
-  volumes, snapshots, path-level network control, and agent-facing observability
-  — backing workloads like Hebbia's agent-per-spreadsheet-cell at up to 10,000
-  sandboxes per second.
+description: Day 1 · Oct 13. Modal CTO Akshat Bubna shows what agents actually
+  need from infrastructure — sandboxes holding multiple containers and sidecars,
+  shared volumes, snapshots, path-level network control, and agent-facing
+  observability — backing workloads like Hebbia's agent-per-spreadsheet-cell at
+  up to 10,000 sandboxes per second.
 sidebar:
   order: 31
   hidden: false
@@ -13,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Modal CTO Akshat Bubna shows what agents actually need from infrastructure — sandboxes holding multiple containers and sidecars, shared volumes, snapshots, path-level network control, and agent-facing observability — backing workloads like Hebbia's agent-per-spreadsheet-cell at up to 10,000 sandboxes per second.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/akshat-bubna-agent-infrastructure">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Modal's sandbox primitive has outgrown the one-sandbox-one-container model: a sandbox now runs multiple containers, including a sidecar proxy, so the agent harness (brains) stays isolated from where tool calls execute (hands).
@@ -39,7 +43,13 @@ Modal CTO Akshat Bubna shows what agents actually need from infrastructure — s
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=18543&rel=0" title="Great Agents Start with Great Infrastructure" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Akshat Bubna &middot; 1:56:55 PM ET-2:11:19 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=18543s" rel="noopener">Watch on YouTube from 05:09:03</a></p>
+<p class="session-meta">Akshat Bubna &middot; 1:56:55 PM ET–2:11:19 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=18543s" rel="noopener">Watch on YouTube from 05:09:03</a></p>
+
+## Figures
+
+![Three panels showing sandbox eras.](/figures/pets-cattle-microbes.svg)
+
+The sandbox eras, ending in the ocean of microbes.
 
 ## Notable quotes
 - [05:10:10 | 1:58:01 PM] You have a spreadsheet, and you can run a query where literally every cell is backed by a different agent.

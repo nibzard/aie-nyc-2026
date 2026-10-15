@@ -1,10 +1,10 @@
 ---
 title: "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors,
   and Event Hooks"
-description: Philipp Schmid of Google DeepMind builds "Bug", an autonomous Wall
-  Street co-worker, live on Gemini managed agents — with skills, MCP connectors,
-  write-only credentials behind a network proxy, hooks, cron triggers, and a
-  Gemini 4.0 recap.
+description: Day 2 · Oct 14. Philipp Schmid of Google DeepMind builds "Bug", an
+  autonomous Wall Street co-worker, live on Gemini managed agents — with skills,
+  MCP connectors, write-only credentials behind a network proxy, hooks, cron
+  triggers, and a Gemini 4.0 recap.
 sidebar:
   order: 35
   hidden: false
@@ -12,6 +12,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Philipp Schmid of Google DeepMind builds "Bug", an autonomous Wall Street co-worker, live on Gemini managed agents — with skills, MCP connectors, write-only credentials behind a network proxy, hooks, cron triggers, and a Gemini 4.0 recap.
 
@@ -38,7 +40,7 @@ Philipp Schmid of Google DeepMind builds "Bug", an autonomous Wall Street co-wor
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=22337&rel=0" title="Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Philipp Schmid &middot; 2:52:53 PM ET-3:10:06 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=22337s" rel="noopener">Watch on YouTube from 06:12:17</a></p>
+<p class="session-meta">Philipp Schmid &middot; 2:52:53 PM ET–3:10:06 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=22337s" rel="noopener">Watch on YouTube from 06:12:17</a></p>
 
 ## Notable quotes
 [06:12:58 | 2:53:34 PM] And now we are moving into, like, this autonomous co-worker area where we basically give or create a digital employee where we give an agent its own computer, give it a task, and hopefully come back a few hours later with a good result.

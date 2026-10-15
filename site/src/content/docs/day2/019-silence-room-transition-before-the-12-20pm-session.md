@@ -1,8 +1,9 @@
 ---
 title: Silence / room transition before the 12:20pm session
-description: A 4 minute 1 second silent room changeover on the Simons Room
-  stream, with zero transcribed speech between the close of the Jump Trading
-  "Dark Pools of Compute" talk and Carmen Li's 12:20pm Compute Exchange session.
+description: Day 2 · Oct 14. A 4 minute 1 second silent room changeover on the
+  Simons Room stream, with zero transcribed speech between the close of the Jump
+  Trading "Dark Pools of Compute" talk and Carmen Li's 12:20pm Compute Exchange
+  session.
 sidebar:
   order: 19
   hidden: true
@@ -10,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 4 minute 1 second silent room changeover on the Simons Room stream, with zero transcribed speech between the close of the Jump Trading "Dark Pools of Compute" talk and Carmen Li's 12:20pm Compute Exchange session.
 
@@ -30,7 +33,7 @@ None - this segment is a 4-minute silence before the next session.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=12946&rel=0" title="Silence / room transition before the 12:20pm session" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">12:16:22 PM ET-12:20:23 PM ET &middot; dead air &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=12946s" rel="noopener">Watch on YouTube from 03:35:46</a></p>
+<p class="session-meta">12:16:22 PM ET–12:20:23 PM ET &middot; dead air &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=12946s" rel="noopener">Watch on YouTube from 03:35:46</a></p>
 
 ## Session narrative
 This segment is silence, not a session. The Jump Trading talk ran about 3 minutes past its 12:13pm agenda end and finished at 12:16:22 PM ET. The stream then records no speech for 4 minutes 1 second while the room turns over for the next speaker.

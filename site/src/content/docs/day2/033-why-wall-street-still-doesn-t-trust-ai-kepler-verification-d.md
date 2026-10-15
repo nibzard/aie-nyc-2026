@@ -1,9 +1,9 @@
 ---
 title: Why Wall Street Still Doesn’t Trust AI
-description: Kepler CEO Vinoo Ganesh argues that Wall Street's distrust of AI is
-  structural, not a model-quality problem, and shows how making code write every
-  number through deterministic pointers yields citations that are verified,
-  corrected at search time, or refused.
+description: Day 2 · Oct 14. Kepler CEO Vinoo Ganesh argues that Wall Street's
+  distrust of AI is structural, not a model-quality problem, and shows how
+  making code write every number through deterministic pointers yields citations
+  that are verified, corrected at search time, or refused.
 sidebar:
   order: 33
   hidden: false
@@ -11,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Kepler CEO Vinoo Ganesh argues that Wall Street's distrust of AI is structural, not a model-quality problem, and shows how making code write every number through deterministic pointers yields citations that are verified, corrected at search time, or refused.
 
@@ -38,7 +40,7 @@ Kepler CEO Vinoo Ganesh argues that Wall Street's distrust of AI is structural, 
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=20984&rel=0" title="Why Wall Street Still Doesn’t Trust AI" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Vinoo Ganesh &middot; 2:30:20 PM ET-2:48:35 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=20984s" rel="noopener">Watch on YouTube from 05:49:44</a></p>
+<p class="session-meta">Vinoo Ganesh &middot; 2:30:20 PM ET–2:48:35 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=20984s" rel="noopener">Watch on YouTube from 05:49:44</a></p>
 
 ## Notable quotes
 - [05:52:01 | 2:32:37 PM] "Alpha is how a firm makes money."

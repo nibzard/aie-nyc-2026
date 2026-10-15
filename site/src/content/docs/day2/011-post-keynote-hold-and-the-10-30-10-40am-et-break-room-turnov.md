@@ -1,11 +1,11 @@
 ---
 title: Post-keynote hold and the 10:30-10:40am ET break (room turnover, no
   transcribed content)
-description: "A roughly 15-minute non-speech interstitial on the main-stage
-  stream: the Bloomberg security keynote closed about five minutes early at
-  10:25:29 AM ET, hold and break audio filled the scheduled 10:30-10:40am ET
-  agenda gap, and the stream resumed mid-intro with the next Simons Room talk at
-  10:40:31 AM ET."
+description: "Day 2 · Oct 14. A roughly 15-minute non-speech interstitial on the
+  main-stage stream: the Bloomberg security keynote closed about five minutes
+  early at 10:25:29 AM ET, hold and break audio filled the scheduled
+  10:30-10:40am ET agenda gap, and the stream resumed mid-intro with the next
+  Simons Room talk at 10:40:31 AM ET."
 sidebar:
   order: 11
   hidden: true
@@ -13,6 +13,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A roughly 15-minute non-speech interstitial on the main-stage stream: the Bloomberg security keynote closed about five minutes early at 10:25:29 AM ET, hold and break audio filled the scheduled 10:30-10:40am ET agenda gap, and the stream resumed mid-intro with the next Simons Room talk at 10:40:31 AM ET.
 
@@ -32,7 +34,7 @@ None - this segment is a 15-minute room-turnover hold with no speech.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=6293&rel=0" title="Post-keynote hold and the 10:30-10:40am ET break (room turnover, no transcribed content)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">10:25:29 AM ET-10:40:32 AM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=6293s" rel="noopener">Watch on YouTube from 01:44:53</a></p>
+<p class="session-meta">10:25:29 AM ET–10:40:32 AM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=6293s" rel="noopener">Watch on YouTube from 01:44:53</a></p>
 
 ## Session narrative
 The Featured Keynote "Security in the Age of AI: Recent Attacks, Incidents & Defenses" by Andrey Rybka (Bloomberg) held the 10:12-10:30am ET slot in the Simons Room. It finished early. Its last sentence, "Thank you.", starts at t=6293 (video 01:44:53, 10:25:29 AM ET). After that close, the stream produced no transcribed speech for about 15 minutes.

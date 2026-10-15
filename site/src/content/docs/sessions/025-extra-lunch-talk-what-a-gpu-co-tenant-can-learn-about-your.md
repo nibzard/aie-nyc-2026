@@ -1,9 +1,9 @@
 ---
 title: "Extra lunch talk: what a GPU co-tenant can learn about your LLM from
   timing alone (MIG and NVLink side channels)"
-description: A GPU co-tenant can fingerprint your LLM from timing alone —
-  architecture at 97% accuracy and decode speed at 99.3% on real H100s — without
-  root, an exploit, or ever touching your data.
+description: Day 1 · Oct 13. Branislav Brzak demonstrates how timing on shared
+  GPUs can reveal model and workload information without reading another
+  tenant’s memory. Reported results refer to distinct experimental setups.
 sidebar:
   order: 25
   hidden: false
@@ -12,7 +12,11 @@ prev: false
 next: false
 ---
 
-A GPU co-tenant can fingerprint your LLM from timing alone — architecture at 97% accuracy and decode speed at 99.3% on real H100s — without root, an exploit, or ever touching your data.
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
+Branislav Brzak demonstrates how timing on shared GPUs can reveal model and workload information without reading another tenant’s memory. Reported results refer to distinct experimental setups.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/branislav-brzak-gpu-neighbor">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - A co-tenant on a MIG-partitioned NVIDIA GPU can identify your model's architecture and depth at 97% accuracy and its decode speed at 99.3% accuracy, on real H100s serving real LLMs. The attacker needs no root access and no exploit, and never reads the victim's memory.
@@ -25,7 +29,7 @@ A GPU co-tenant can fingerprint your LLM from timing alone — architecture at 9
 ## Key lessons
 1. MIG isolates hardware, but not time. Compute units, VRAM capacity, bandwidth quotas, and L2 cache partitions are per instance, with no cross-instance L2 eviction. But GPU-wide memory barriers still touch every L2 partition on the card, so when one tenant is busy, other tenants' reads get slightly slower. Timing is the one shared resource.
 2. The attack primitive is minimal and unprivileged: no root, no exploit. The attacker only reads its own small buffer, times each load, and repeats every five microseconds. The observable effect is a median latency increase of only about three microseconds — invisible to the naked eye, sufficient for the attacker. The MIG memory-barrier leak itself is credited to the USENIX Security '26 "Behind Bars" researchers, not the speaker.
-3. Headline numbers, measured live on real H100s: model architecture and depth at 97% accuracy; decode speed at 99.3% accuracy; busy periods, token counts, and answer length recoverable; workload type (code, JSON, retrieval) classifiable. Prompts, answers, and contents are not recoverable — the channel is timing only.
+3. The speaker’s headline claims for the demonstrated H100 setups: model architecture and depth at 97% accuracy; decode speed at 99.3% accuracy; busy periods, token counts, and answer length recoverable; workload type (code, JSON, retrieval) classifiable. Prompts, answers, and contents are not recoverable — the channel is timing only.
 4. Speed alone is not a fingerprint; layer counts are. Qwen3 8B and Llama 3 8B decode only 1.6% apart in token rate, so token rate narrows but does not identify. Folding and averaging the trace once per model yields a count that lands almost exactly on a whole number (mean distance from an integer 0.028 across 22 traces), equal to the model's layer count plus one to three additional peaks.
 5. The layer-count classifier is deliberately simple: under 30 lines of code, no training set, no labels, no configuration. It tests each candidate depth from 16 to 48, measures how strongly that depth's expected signature appears in the trace, and picks the best fit. For Qwen3 8B, 36 layers won clearly, four times over the next candidate. Because it is a best-fit test rather than a lookup, it also identifies proprietary or unreleased models, and fine-tunes and distillations that share a base model: Llama 3 8B, Llama 3.1 8B, and the DeepSeek R1 distill all share the 32-layer backbone, with per-layer timing within about 1.6 nanoseconds median shift, yet remain separable.
 6. Workload-type classification rides on speculative decoding. With speculative decoding enabled (an opt-in in vLLM, not the default), text predictability changes how many drafted tokens are accepted per step, which changes step time. Of 40 half-second workload votes (prose, code, JSON, retrieval), 31 were right, and four full responses were identified by majority vote. Across 11 configurations (dense and mixture of experts, BF16 and FP8), the signal always appeared — 70.2% spread on GPT-OSS 20B versus 0.9% on GLM 4 9B — and prose was fastest in 11 runs where chance gives one in four.
@@ -38,7 +42,13 @@ A GPU co-tenant can fingerprint your LLM from timing alone — architecture at 9
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=14504&rel=0" title="Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Branislav Brzak &middot; 12:49:36 PM ET-1:02:57 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=14504s" rel="noopener">Watch on YouTube from 04:01:44</a></p>
+<p class="session-meta">Branislav Brzak &middot; 12:49:36 PM ET–1:02:57 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=14504s" rel="noopener">Watch on YouTube from 04:01:44</a></p>
+
+## Figures
+
+![A GPU split into two MIG partitions with timing leak paths.](/figures/gpu-timing-side-channel.svg)
+
+The MIG and NVLink timing leaks demonstrated in this talk.
 
 ## Notable quotes
 - [04:02:00 | 12:49:51 PM] "They can tell what model you're running, how fast it's responding, and even what kind of work it's doing right now, all without touching your data, just by watching timing."
@@ -59,6 +69,9 @@ He closed with detection and defense. His company's product flagged the attack "
 **Branislav Brzak** - AI Security Researcher, Stealthium. Member of the Stealthium Core Team, focused on low-level GPU security research, Linux kernel work, virtualization, and performance engineering. He is the author of the Stealthium research post "Return of a Nosy Neighbor: More Detail, More Noise" (September 2026), which extends the USENIX Security '26 "Behind Bars" work on NVIDIA MIG; this lunch talk presented that research. Based in Serbia. LinkedIn: https://rs.linkedin.com/in/branislav-brzak
 
 (Note: the stream's automatic transcription renders his employer as "Celtium" and once as "Celty"; the enriched speaker record and its sources spell it Stealthium. His self-introduction in the session: "I'm Branislav Brzak, AI security researcher employed at Celtium. At Celtium, we specialize in securing and providing observability into the environments AI systems run on.")
+
+
+Measurement context: the headline percentages, layer recovery, workload classification, and NVLink model identification are separate measurements. They are not one general attack success rate. The demonstration does not recover prompt or answer text. The [official reading edition](https://aie-nyc-2026-talks.swyxio.workers.dev/talks/branislav-brzak-gpu-neighbor) separates the experiments and their limits.
 
 ## Full timestamped transcript
 ```

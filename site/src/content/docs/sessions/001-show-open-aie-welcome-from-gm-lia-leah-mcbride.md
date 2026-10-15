@@ -1,10 +1,10 @@
 ---
 title: AIE Welcome from GM, Lia McBride
-description: After an eight-minute pre-show countdown hold, an unseen voice-over
-  opens the AI Engineer NYC 2026 livestream and hands the stage to AI Engineer
-  General Manager Lia McBride, who welcomes the crowd to the third New York
-  event, thanks presenting sponsor Arize, previews the tracks and speakers, and
-  introduces MC Alex Lieb
+description: Day 1 · Oct 13. After an eight-minute pre-show countdown hold, an
+  unseen voice-over opens the AI Engineer NYC 2026 livestream and hands the
+  stage to AI Engineer General Manager Lia McBride, who welcomes the crowd to
+  the third New York event, thanks presenting sponsor Arize, previews the tracks
+  and speakers, and introduces MC Alex Lieb…
 sidebar:
   order: 1
   hidden: true
@@ -13,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 After an eight-minute pre-show countdown hold, an unseen voice-over opens the AI Engineer NYC 2026 livestream and hands the stage to AI Engineer General Manager Lia McBride, who welcomes the crowd to the third New York event, thanks presenting sponsor Arize, previews the tracks and speakers, and introduces MC Alex Lieberman.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/opening-remarks">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - A show-open voice-over at 8:56 AM ET officially opens AI Engineer New York 2026 and brings AI Engineer's General Manager Lia McBride to the stage.
@@ -39,7 +43,7 @@ After an eight-minute pre-show countdown hold, an unseen voice-over opens the AI
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=491&rel=0" title="AIE Welcome from GM, Lia McBride" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Lia McBride, Unseen announcer (show-open voice-over) &middot; 8:56:03 AM ET-8:58:21 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=491s" rel="noopener">Watch on YouTube from 00:08:11</a></p>
+<p class="session-meta">Lia McBride, Unseen announcer (show-open voice-over) &middot; 8:56:03 AM ET–8:58:21 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=491s" rel="noopener">Watch on YouTube from 00:08:11</a></p>
 
 ## Notable quotes
 - "There's very, very few places like New York City, as we know, where big ideas scale very, very fast." — [00:08:34 | 8:56:26 AM]

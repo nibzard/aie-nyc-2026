@@ -1,9 +1,9 @@
 ---
 title: Shipping like a startup, regulated like a bank
-description: Revolut's David Abitbol explains how self-hosting GLM on 56
-  dedicated B200 GPUs cut the bank's token bill to one-tenth, lifted engineering
-  lead time 70%, and still passed EU bank compliance through sandboxing and
-  human-in-the-loop controls.
+description: Day 1 · Oct 13. Revolut's David Abitbol explains how self-hosting
+  GLM on 56 dedicated B200 GPUs cut the bank's token bill to one-tenth, lifted
+  engineering lead time 70%, and still passed EU bank compliance through
+  sandboxing and human-in-the-loop controls.
 sidebar:
   order: 36
   hidden: false
@@ -12,7 +12,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Revolut's David Abitbol explains how self-hosting GLM on 56 dedicated B200 GPUs cut the bank's token bill to one-tenth, lifted engineering lead time 70%, and still passed EU bank compliance through sandboxing and human-in-the-loop controls.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/david-abitbol-revolut">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Revolut, an 80-million-customer digital bank in Europe, self-hosts the open-source GLM-4.3 model (800 billion parameters) on roughly 56 B200 GPUs to serve about 2,000 engineers.
@@ -38,7 +42,13 @@ Revolut's David Abitbol explains how self-hosting GLM on 56 dedicated B200 GPUs 
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=21830&rel=0" title="Shipping like a startup, regulated like a bank" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">David Abitbol &middot; 2:51:42 PM ET-3:03:15 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=21830s" rel="noopener">Watch on YouTube from 06:03:50</a></p>
+<p class="session-meta">David Abitbol &middot; 2:51:42 PM ET–3:03:15 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=21830s" rel="noopener">Watch on YouTube from 06:03:50</a></p>
+
+## Figures
+
+![Two panels of AI cost economics.](/figures/where-the-money-goes.svg)
+
+Token economics: the merged-PR split is day two’s Jellyfish talk; the self-hosted bar is this talk.
 
 ## Notable quotes
 - "First one, long context is a scam." [06:10:58 | 2:58:49 PM]
@@ -57,6 +67,9 @@ He closed with production setup and a message "for the CIO in the room." GLM is 
 
 ## Speaker details
 **David Abitbol** - Ops & Infrastructure Leader, Revolut. David is a strategy consultant specialized in financial services, passionate about tech, with a side hobby of statistical modelling. In this session he introduced himself as leading AI operations at Revolut, where he runs the internal AI coding stack. Links: [LinkedIn](https://www.linkedin.com/in/abitbold/), [Twitter](https://x.com/Revolut), [Website](https://www.revolut.com/)
+
+
+Result context: the reported token cost and lead-time improvement describe Revolut’s internal deployment. The comparison does not isolate the model change from other causes. Hosting and regulatory comments describe the speaker’s circumstances rather than a general compliance determination. See the [official reading edition](https://aie-nyc-2026-talks.swyxio.workers.dev/talks/david-abitbol-revolut).
 
 ## Full timestamped transcript
 ```

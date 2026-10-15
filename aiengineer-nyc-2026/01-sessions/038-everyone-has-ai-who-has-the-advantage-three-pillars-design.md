@@ -36,6 +36,12 @@ confidence: "high"
 7. Modernize infrastructure for agents. The enterprise was built for one human interacting with one application; agents take context, deliberate, and act across workflows and applications. Studies show 71% of organizations are modernizing core infrastructure for AI, and 23% invest 6 to 10% of annual revenue in core system modernization. Data quality and data reuse are the common challenges.
 8. Build feedback loops that compound. Ask of every failure: what can we learn that gives us an edge? Ask of every success: how do we make it part of the system? The test is "the individual learned but did the system?" Feed corrections back into the org as new tools or context, and preserve the evidence along with the learnings.
 
+## Figures
+
+![An adoption ladder funnel beside capability and EBIT statistics.](../../figures/diffusion-gap.svg)
+
+The adoption ladder from the MC’s segment and the EBIT numbers from this talk.
+
 ## Notable quotes
 > "Judgment is choosing what matters and how to act when there's no single obvious answer. It's the creativity that lets you explore what possibilities are worth exploring. It's the taste that tells you what good looks like in your given context."
 > — [06:33:19 | 3:21:10 PM]

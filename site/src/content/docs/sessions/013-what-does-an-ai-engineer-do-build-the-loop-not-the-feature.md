@@ -1,9 +1,9 @@
 ---
 title: What does an AI engineer do?
-description: Aparna Dhinakaran (Arize AI) argues the AI engineer's job has
-  shifted from writing AI features to building the always-on loop — agents,
-  evals, and telemetry — that writes, reviews, and improves those features,
-  illustrated by Arize's Signal agent.
+description: Day 1 · Oct 13. Aparna Dhinakaran (Arize AI) argues the AI
+  engineer's job has shifted from writing AI features to building the always-on
+  loop — agents, evals, and telemetry — that writes, reviews, and improves those
+  features, illustrated by Arize's Signal agent.
 sidebar:
   order: 13
   hidden: false
@@ -12,7 +12,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Aparna Dhinakaran (Arize AI) argues the AI engineer's job has shifted from writing AI features to building the always-on loop — agents, evals, and telemetry — that writes, reviews, and improves those features, illustrated by Arize's Signal agent.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/aparna-dhinakaran-ai-engineer">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - The AI engineer's job is "no longer to just write the feature" — it is to build the loop (build, eval, ship, monitor, improve) that does each of those steps.
@@ -38,7 +42,17 @@ Aparna Dhinakaran (Arize AI) argues the AI engineer's job has shifted from writi
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=5217&rel=0" title="What does an AI engineer do?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Aparna Dhinakaran &middot; 10:14:49 AM ET-10:30:34 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=5217s" rel="noopener">Watch on YouTube from 01:26:57</a></p>
+<p class="session-meta">Aparna Dhinakaran &middot; 10:14:49 AM ET–10:30:34 AM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=5217s" rel="noopener">Watch on YouTube from 01:26:57</a></p>
+
+## Figures
+
+![Two panels: a linear feature pipeline that ends, and an always-on agent loop.](/figures/build-the-loop-not-the-feature.svg)
+
+The always-on loop versus the linear feature pipeline.
+
+![A four-band funnel from 6 billion LLM users to about 5,000 frontier users.](/figures/adoption-funnel.svg)
+
+The usage pyramid the talk opened with, from touched to frontier.
 
 ## Notable quotes
 - "As an AI engineer, your job is no longer to just write the feature, write an AI feature." — Aparna Dhinakaran [01:29:49 | 10:17:40 AM]

@@ -1,10 +1,10 @@
 ---
 title: Self-Improving Organizations
-description: "Will Brown of Prime Intellect argues that after chatbots,
-  reasoners, agents, and innovators, the next stage of AI progress is the
-  AI-native enterprise: an organization that compounds its implicit
+description: "Day 2 · Oct 14. Will Brown of Prime Intellect argues that after
+  chatbots, reasoners, agents, and innovators, the next stage of AI progress is
+  the AI-native enterprise: an organization that compounds its implicit
   institutional knowledge by continually training its own open-source models,
-  instead of re-teaching agents in context on ever"
+  instead of re-teaching agents in context on ever…"
 sidebar:
   order: 39
   hidden: false
@@ -12,6 +12,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Will Brown of Prime Intellect argues that after chatbots, reasoners, agents, and innovators, the next stage of AI progress is the AI-native enterprise: an organization that compounds its implicit institutional knowledge by continually training its own open-source models, instead of re-teaching agents in context on every run.
 
@@ -38,7 +40,7 @@ Will Brown of Prime Intellect argues that after chatbots, reasoners, agents, and
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=25157&rel=0" title="Self-Improving Organizations" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Will Brown &middot; 3:39:53 PM ET-4:06:22 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=25157s" rel="noopener">Watch on YouTube from 06:59:17</a></p>
+<p class="session-meta">Will Brown &middot; 3:39:53 PM ET–4:06:22 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=25157s" rel="noopener">Watch on YouTube from 06:59:17</a></p>
 
 ## Notable quotes
 [07:11:53 | 3:52:29 PM] "And this typically looks like them kind of having a skill file written by somebody or, like, looking around a code base, but they don't get the institutional-level latent knowledge that human employees really do."

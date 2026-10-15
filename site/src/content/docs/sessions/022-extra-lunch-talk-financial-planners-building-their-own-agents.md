@@ -1,9 +1,9 @@
 ---
 title: We Let Our Financial Planners Write the Agents
-description: A certified financial planner at Range explains how non-coding
-  planners wrote the Claude skills they use daily, and gives a five-step method
-  (pick, teach, pack, test, ship) for getting domain experts to author their own
-  agents.
+description: Day 1 · Oct 13. A certified financial planner at Range explains how
+  non-coding planners wrote the Claude skills they use daily, and gives a
+  five-step method (pick, teach, pack, test, ship) for getting domain experts to
+  author their own agents.
 sidebar:
   order: 22
   hidden: false
@@ -12,7 +12,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 A certified financial planner at Range explains how non-coding planners wrote the Claude skills they use daily, and gives a five-step method (pick, teach, pack, test, ship) for getting domain experts to author their own agents.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/matt-ragone-financial-planners">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 Provenance note: this talk was delivered as an extra lunch talk during the 12:14 PM block and does not appear in the official main-stage agenda for October 13. The title above is the talk's official title from the speaker's session record (listed there at an 11:30am-11:48am program slot); the manifest's descriptive title was "Extra lunch talk: financial planners building their own agents — a five-step method for expert-written Claude skills (Range)".
 
@@ -42,7 +46,7 @@ Provenance note: this talk was delivered as an extra lunch talk during the 12:14
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=12420&rel=0" title="We Let Our Financial Planners Write the Agents" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Matt Ragone &middot; 12:14:52 PM ET-12:23:41 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=12420s" rel="noopener">Watch on YouTube from 03:27:00</a></p>
+<p class="session-meta">Matt Ragone &middot; 12:14:52 PM ET–12:23:41 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=12420s" rel="noopener">Watch on YouTube from 03:27:00</a></p>
 
 ## Notable quotes
 

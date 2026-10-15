@@ -1,7 +1,7 @@
 ---
 title: Welcome Back - Featured Keynotes
-description: MC Ksenia Se reopens the main stage for the final keynote block,
-  runs the sponsor roll call, shares a
+description: Day 2 · Oct 14. MC Ksenia Se reopens the main stage for the final
+  keynote block, runs the sponsor roll call, shares a
   build-an-agent-to-rank-employers-by-salary networking idea, and hands off to
   the Apollo fireside.
 sidebar:
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 MC Ksenia Se reopens the main stage for the final keynote block, runs the sponsor roll call, shares a build-an-agent-to-rank-employers-by-salary networking idea, and hands off to the Apollo fireside.
 
@@ -35,7 +37,7 @@ MC Ksenia Se reopens the main stage for the final keynote block, runs the sponso
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=27927&rel=0" title="Welcome Back - Featured Keynotes" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Ksenia Se &middot; 4:26:03 PM ET-4:30:48 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=27927s" rel="noopener">Watch on YouTube from 07:45:27</a></p>
+<p class="session-meta">Ksenia Se &middot; 4:26:03 PM ET–4:30:48 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=27927s" rel="noopener">Watch on YouTube from 07:45:27</a></p>
 
 ## Notable quotes
 - "I spent the day talking to other speakers and participants, and what I've noticed is that one of the strongest incentives to come to this conference is hiring." [07:48:00 | 4:28:35 PM]

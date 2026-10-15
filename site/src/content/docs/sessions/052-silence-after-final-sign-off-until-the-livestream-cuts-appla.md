@@ -1,9 +1,9 @@
 ---
 title: Silence after final sign-off until the livestream cuts (applause or
   outro, untranscribed)
-description: After the final sign-off of the closing remarks at 4:52:53 PM, the
-  day-one livestream ran 46 more seconds with no transcribed speech, and the
-  broadcast ended at 4:53:42 PM ET.
+description: Day 1 · Oct 13. After the final sign-off of the closing remarks at
+  4:52:53 PM, the day-one livestream ran 46 more seconds with no transcribed
+  speech, and the broadcast ended at 4:53:42 PM ET.
 sidebar:
   order: 52
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 After the final sign-off of the closing remarks at 4:52:53 PM, the day-one livestream ran 46 more seconds with no transcribed speech, and the broadcast ended at 4:53:42 PM ET.
 
@@ -30,7 +32,7 @@ None - this segment is post-sign-off silence until the stream cut.
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=29104&rel=0" title="Silence after final sign-off until the livestream cuts (applause or outro, untranscribed)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">4:52:56 PM ET-4:53:42 PM ET &middot; dead air &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=29104s" rel="noopener">Watch on YouTube from 08:05:04</a></p>
+<p class="session-meta">4:52:56 PM ET–4:53:42 PM ET &middot; dead air &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=29104s" rel="noopener">Watch on YouTube from 08:05:04</a></p>
 
 ## Session narrative
 MC Alex Lieberman closed day one of AI Engineer NYC 2026 at [08:05:01 | 4:52:52 PM] with thanks to the audience, a request to network in Edge City, and a reminder that day two starts before 9 a.m. Three seconds later the transcription goes silent, and no speech is captured for the remaining 46 seconds of the broadcast.

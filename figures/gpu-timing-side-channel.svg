@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="title">What a GPU co-tenant can learn from timing alone</title>
+  <desc id="desc">One GPU drawn as a rounded chip split into two MIG partitions by the GPU-wide memory barrier: a blue victim tenant serving an LLM with token bursts, and an orange attacker co-tenant reading a latency sparkline of its own loads. A side list gives the reported results: architecture and depth within 97 percent, decode speed 99.3 percent, about 3 microseconds median latency shift probed every 5 microseconds, 79.2 percent across NVLink against a 20 percent baseline, and detection in under 6 milliseconds. A mini diagram shows NVLink peer hops of about 890 nanoseconds idle rising to about 300 microseconds under load.</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="540" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="40" y="56" font-size="11" letter-spacing="0.08em" fill="#52514e">CONCEPT — SECURITY</text>
+  <text x="40" y="84" font-size="20" font-weight="600" fill="#0b0b0b">What a GPU co-tenant can learn from timing alone</text>
+  <text x="40" y="110" font-size="13" fill="#52514e">&#8220;They can tell what model you&#8217;re running, how fast it&#8217;s responding, and even what kind of</text>
+  <text x="40" y="128" font-size="13" fill="#52514e">work it&#8217;s doing right now, all without touching your data, just by watching timing.&#8221;</text>
+
+  <!-- GPU chip -->
+  <rect x="60" y="165" width="360" height="250" rx="16" fill="#ffffff" stroke="#52514e" stroke-width="1.5"/>
+  <text x="240" y="190" font-size="11" fill="#52514e" text-anchor="middle">One GPU, two MIG partitions</text>
+
+  <!-- Victim partition -->
+  <rect x="70" y="202" width="162" height="206" rx="6" fill="#2a78d6" fill-opacity="0.10"/>
+  <text x="151" y="226" font-size="12.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">Victim tenant</text>
+  <text x="151" y="244" font-size="11.5" fill="#52514e" text-anchor="middle">serving an LLM</text>
+  <text x="151" y="262" font-size="11" fill="#52514e" text-anchor="middle">3 compute units</text>
+  <text x="151" y="277" font-size="11" fill="#52514e" text-anchor="middle">40 GB VRAM</text>
+  <rect x="95" y="336" width="26" height="12" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+  <rect x="127" y="336" width="14" height="12" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+  <rect x="147" y="336" width="30" height="12" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+  <rect x="183" y="336" width="18" height="12" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+  <text x="151" y="368" font-size="11" fill="#52514e" text-anchor="middle">one burst per token</text>
+
+  <!-- Barrier divider: the leak path on the die -->
+  <rect x="236" y="202" width="8" height="206" rx="4" fill="#52514e" fill-opacity="0.85"/>
+  <line x1="222" y1="298" x2="258" y2="298" stroke="#52514e" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- Attacker partition -->
+  <rect x="248" y="202" width="162" height="206" rx="6" fill="#eb6834" fill-opacity="0.10"/>
+  <text x="329" y="226" font-size="12.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">Attacker co-tenant</text>
+  <text x="329" y="244" font-size="11.5" fill="#52514e" text-anchor="middle">no root, no exploit</text>
+  <text x="329" y="262" font-size="11" fill="#52514e" text-anchor="middle">1 compute unit</text>
+  <text x="329" y="277" font-size="11" fill="#52514e" text-anchor="middle">10 GB VRAM</text>
+  <rect x="259" y="292" width="140" height="58" rx="6" fill="#ffffff" stroke="#e1e0d9" stroke-width="1"/>
+  <polyline points="267,336 271,318 276,318 280,336 284,336 288,310 293,310 297,336 301,336 305,320 310,320 314,336 318,336 322,308 327,308 331,336 335,336 339,316 344,316 348,336 352,336 356,312 361,312 365,336 369,336 373,319 378,319 382,336 391,336" fill="none" stroke="#eb6834" stroke-width="1.75" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="329" y="368" font-size="11" fill="#52514e" text-anchor="middle">own-load timing trace</text>
+  <text x="329" y="386" font-size="11" fill="#52514e" text-anchor="middle">probes every 5 &#181;s</text>
+
+  <!-- Barrier caption -->
+  <text x="240" y="432" font-size="11.5" fill="#52514e" text-anchor="middle">GPU-wide memory barrier — one tenant&#8217;s barrier</text>
+  <text x="240" y="448" font-size="11.5" fill="#52514e" text-anchor="middle">touches every L2 partition; timing stays shared</text>
+
+  <!-- Reported results -->
+  <text x="480" y="182" font-size="13.5" font-weight="600" fill="#0b0b0b">What timing alone reveals</text>
+  <text x="480" y="200" font-size="11.5" fill="#52514e">on real H100s serving real LLMs</text>
+
+  <text x="580" y="232" font-size="15" font-weight="600" fill="#0b0b0b" text-anchor="end">97%</text>
+  <text x="594" y="231" font-size="12" fill="#52514e">architecture and depth identified</text>
+  <line x1="480" y1="243" x2="902" y2="243" stroke="#e1e0d9" stroke-width="1"/>
+
+  <text x="580" y="266" font-size="15" font-weight="600" fill="#0b0b0b" text-anchor="end">99.3%</text>
+  <text x="594" y="265" font-size="12" fill="#52514e">decode speed recovered</text>
+  <line x1="480" y1="277" x2="902" y2="277" stroke="#e1e0d9" stroke-width="1"/>
+
+  <text x="580" y="300" font-size="15" font-weight="600" fill="#0b0b0b" text-anchor="end">~3 &#181;s</text>
+  <text x="594" y="299" font-size="12" fill="#52514e">median latency shift</text>
+  <line x1="480" y1="311" x2="902" y2="311" stroke="#e1e0d9" stroke-width="1"/>
+
+  <text x="580" y="334" font-size="15" font-weight="600" fill="#0b0b0b" text-anchor="end">79.2%</text>
+  <text x="594" y="333" font-size="12" fill="#52514e">across NVLink, vs a 20% baseline</text>
+  <line x1="480" y1="345" x2="902" y2="345" stroke="#e1e0d9" stroke-width="1"/>
+
+  <text x="580" y="368" font-size="15" font-weight="600" fill="#0b0b0b" text-anchor="end">&lt; 6 ms</text>
+  <text x="594" y="367" font-size="12" fill="#52514e">to detection, before the reply was half typed</text>
+
+  <!-- NVLink variant -->
+  <rect x="480" y="392" width="120" height="38" rx="8" fill="#ffffff" stroke="#2a78d6" stroke-width="1.25"/>
+  <text x="540" y="415" font-size="11.5" fill="#0b0b0b" text-anchor="middle">GPU 0 — victim</text>
+  <rect x="740" y="392" width="130" height="38" rx="8" fill="#ffffff" stroke="#eb6834" stroke-width="1.25"/>
+  <text x="805" y="415" font-size="11.5" fill="#0b0b0b" text-anchor="middle">GPU 2 — attacker</text>
+  <line x1="602" y1="411" x2="738" y2="411" stroke="#52514e" stroke-width="1.75" marker-start="url(#ah)" marker-end="url(#ah)"/>
+  <text x="670" y="446" font-size="11" fill="#52514e" text-anchor="middle">NVLink peer hops: ~890 ns idle,</text>
+  <text x="670" y="462" font-size="11" fill="#52514e" text-anchor="middle">up to ~300 &#181;s under victim load</text>
+
+  <!-- Caveat and source -->
+  <text x="40" y="486" font-size="11" fill="#52514e">Reported results refer to distinct experimental setups; prompts, answers, and contents do not leak.</text>
+  <text x="40" y="508" font-size="11" fill="#52514e">Source: Branislav Brzak (Stealthium), &#8220;What a GPU co-tenant can learn about your LLM from timing alone&#8221;, AI Engineer NYC 2026, day 1.</text>
+</svg>

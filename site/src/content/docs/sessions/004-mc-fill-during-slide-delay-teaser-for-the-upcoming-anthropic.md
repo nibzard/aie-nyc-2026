@@ -1,8 +1,8 @@
 ---
 title: "MC fill during slide delay: teaser for the upcoming Anthropic keynote"
-description: The MC teases the upcoming Anthropic keynote by name-checking
-  Belinda Neal and Keon Shahab, then fills roughly 20 seconds of dead air while
-  the stage crew fixes the slides.
+description: Day 1 · Oct 13. The MC teases the upcoming Anthropic keynote by
+  name-checking Belinda Neal and Keon Shahab, then fills roughly 20 seconds of
+  dead air while the stage crew fixes the slides.
 sidebar:
   order: 4
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 The MC teases the upcoming Anthropic keynote by name-checking Belinda Neal and Keon Shahab, then fills roughly 20 seconds of dead air while the stage crew fixes the slides.
 
@@ -33,7 +35,7 @@ The MC teases the upcoming Anthropic keynote by name-checking Belinda Neal and K
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=853&rel=0" title="MC fill during slide delay: teaser for the upcoming Anthropic keynote" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Alex Lieberman &middot; 9:02:04 AM ET-9:02:38 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=853s" rel="noopener">Watch on YouTube from 00:14:12</a></p>
+<p class="session-meta">Alex Lieberman &middot; 9:02:04 AM ET–9:02:38 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=853s" rel="noopener">Watch on YouTube from 00:14:12</a></p>
 
 ## Notable quotes
 

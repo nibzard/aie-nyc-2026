@@ -35,6 +35,12 @@ confidence: "high"
 7. Claude for Financial Advisors shows the pattern compounding at industry level. Built on the stat that advisors spend only about 20% of their time with clients, the September launch brought in 25 platforms across custody, portfolio, planning, data, and CRM (Schwab, Adapar [likely Addepar], Salesforce, and more on the Claude Marketplace), shipped a GitHub plugin with eight skills and workflows (for example pre-meeting prep and meeting-notes follow-up), and kept layer four intact: nothing is saved or sent without the advisor's approval.
 8. Access and operating model matter as much as architecture. The same foundation has four doors — Claude CoWork for business users, Claude Code for engineers, Managed Agents or Agent SDK for your own UI — and the business now works directly with the agent, proposing corrections while engineering stays in the loop, with evals gating what becomes a scaled change.
 
+## Figures
+
+![A five-layer stack: connectors, skills, identity and permissions, approval, and evals.](../../figures/five-layer-agent-foundation.svg)
+
+The agent foundation stack, walked through on the trade-break example.
+
 ## Notable quotes
 
 > "Intelligence is ahead of adoption. What a model can do on its own is doubling every four months." — [00:34:18 | 9:22:10 AM]

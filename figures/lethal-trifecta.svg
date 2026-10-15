@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="title">The lethal trifecta</title>
+  <desc id="desc">A Venn diagram of three circles: untrusted content exposure, private-data access, and external communication. Each pair may coexist, but the center intersection, where all three overlap, is marked lethal with a human-sign-off-required chip. A side panel carries day two's rule of two from the Bloomberg talk.</desc>
+  <rect x="0" y="0" width="960" height="720" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="40" y="58" font-size="11" letter-spacing="0.08em" fill="#52514e">CONCEPT — SECURITY</text>
+  <text x="40" y="86" font-size="20" font-weight="600" fill="#0b0b0b">The lethal trifecta</text>
+  <text x="40" y="112" font-size="13" fill="#52514e">&#8220;These incidents happen because humans give agents way more access than they need.&#8221;</text>
+
+  <!-- Venn circles -->
+  <circle cx="310" cy="330" r="130" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-width="1.5"/>
+  <circle cx="220" cy="480" r="130" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-width="1.5"/>
+  <circle cx="400" cy="480" r="130" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-width="1.5"/>
+
+  <!-- Circle labels outside, with leader lines and identity dots -->
+  <circle cx="203" cy="174" r="4" fill="#2a78d6"/>
+  <text x="310" y="178" font-size="12.5" fill="#0b0b0b" text-anchor="middle">Untrusted content exposure</text>
+  <line x1="310" y1="186" x2="310" y2="199" stroke="#898781" stroke-width="1"/>
+
+  <circle cx="137" cy="646" r="4" fill="#eb6834"/>
+  <text x="220" y="650" font-size="12.5" fill="#0b0b0b" text-anchor="middle">Private-data access</text>
+  <line x1="220" y1="638" x2="220" y2="614" stroke="#898781" stroke-width="1"/>
+
+  <circle cx="306" cy="646" r="4" fill="#1baf7a"/>
+  <text x="400" y="650" font-size="12.5" fill="#0b0b0b" text-anchor="middle">External communication</text>
+  <line x1="400" y1="638" x2="400" y2="614" stroke="#898781" stroke-width="1"/>
+
+  <!-- Center intersection: triple overlap marked, labeled by callout -->
+  <path d="M 310,386.2 A 130 130 0 0 0 272.5,454.5 A 130 130 0 0 0 347.5,454.5 A 130 130 0 0 0 310,386.2 Z" fill="#d03b3b" fill-opacity="0.12"/>
+  <circle cx="310" cy="430" r="5" fill="#d03b3b"/>
+  <polyline points="316,434 430,513 440,513" fill="none" stroke="#898781" stroke-width="1"/>
+  <rect x="440" y="500" width="196" height="26" rx="13" fill="#d03b3b"/>
+  <text x="538" y="517" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">All three together = lethal</text>
+  <rect x="447" y="534" width="182" height="24" rx="12" fill="#ffffff" stroke="#d03b3b" stroke-width="1.25"/>
+  <text x="538" y="550" font-size="11" fill="#0b0b0b" text-anchor="middle">human sign-off required</text>
+
+  <!-- Side annotation: day two rule of two -->
+  <rect x="650" y="175" width="270" height="235" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="668" y="203" font-size="13" font-weight="600" fill="#0b0b0b">The rule of two</text>
+  <text x="668" y="230" font-size="12.5" fill="#52514e">Of untrusted input, sensitive</text>
+  <text x="668" y="247" font-size="12.5" fill="#52514e">data, and external action,</text>
+  <text x="668" y="264" font-size="12.5" fill="#52514e">allow any two together.</text>
+  <text x="668" y="292" font-size="12.5" font-weight="600" fill="#0b0b0b">All three together need</text>
+  <text x="668" y="309" font-size="12.5" font-weight="600" fill="#0b0b0b">human sign-off.</text>
+  <line x1="668" y1="326" x2="902" y2="326" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="668" y="346" font-size="11" fill="#52514e">Source: Andrey Rybka (Bloomberg),</text>
+  <text x="668" y="361" font-size="11" fill="#52514e">&#8220;Security in the Age of AI,&#8221;</text>
+  <text x="668" y="376" font-size="11" fill="#52514e">AI Engineer NYC 2026, day 2.</text>
+
+  <!-- Source line -->
+  <text x="40" y="688" font-size="11" fill="#52514e">Source: Kim Maida (Keycard), &#8220;Your Agent Is a Lethal Trifecta&#8221;, AI Engineer NYC 2026, day 1. Term coined by Simon Willison.</text>
+</svg>

@@ -36,6 +36,12 @@ confidence: "high"
 7. Your position on the cost curve is relative, and scarcity obscures it. In the speaker's hypothetical (cost units he likes to imagine as bars of gold), your full cost per successful task falls from 10 to 8 while your competitor's figure moves through 6 and 12, and you can still end up as the more expensive producer (the digits as transcribed appear flipped; the point is that relative position can flip even while you improve). With demand outstripping supply for a foreseen "two to three years," producers with very different costs all find customers. Every commodity in history has had supply and demand swings, so build the operating and cost advantage "when the sun is shining," before prices come under pressure.
 8. A credible compute futures market needs grades that define comparable compute services and benchmarks that summarize real rental prices. An advertised offer and a completed trade are not the same thing, and service scope, contract terms, and sampling shape the reference. A rental hedge offsets rental price changes only: it does not fix a failed deployment or ensure the customer pays, and charging more than the index does not by itself make a bad hedge. What matters is whether changes in the reference track changes in your rent.
 
+## Figures
+
+![Two bars comparing tokens per second from the same GPU.](../../figures/gpu-level-of-operator.svg)
+
+Two identical B200 stacks and the operator gap between them.
+
 ## Notable quotes
 - [02:25:31 | 11:06:07 AM] A GPU falls to the level of the operator.
 - [02:29:09 | 11:09:45 AM] Same chip, same target interactivity, about 50% more output.

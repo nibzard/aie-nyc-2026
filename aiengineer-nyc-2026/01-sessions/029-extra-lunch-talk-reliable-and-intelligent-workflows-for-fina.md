@@ -37,6 +37,12 @@ confidence: "high"
 7. Make waiting, approval, and follow-up first-class nodes. A reply wait defaults to 72 hours and can range from one minute to 30 days; when it passes, a rule decides what happens, not a model. One approval covers the plan, and every external action has its own gate tied to a hash of the exact payload, checked again right before sending. A partial reply is a provisional judgment that stays blocked until a person confirms it; the follow-up then runs as a new child plan, the approved parent is never changed, and there are at most five rounds. There are no automatic retries, and side effects get a life cycle - prepared, dispatching, succeeded, or "outcome unknown" and manual review. A chat message can approve a step or answer a question, but it cannot change an approved plan. The model steers; it never drives.
 8. Route models by judgment size, and log everything. Outside the planner, judgments are small and typed - is this reply complete, does this document match, which field is which - so a fast flash-tier model handles them. In an illustrative run of 20 decisions, 19 went to the flash tier and one to a frontier model. The design target is about 95 percent of model decisions never needing a frontier model. Every judgment is typed and logged, and provisional ones are confirmed or rejected by a person, so each frontier decision produces eval-grade training data by construction. That data can post-train the flash tier, shrinking the frontier share release by release until even the hard cases run locally. Because every call is small, typed, and schema-checked, pointing it at a privately hosted model is a configuration change, not a rewrite - so 95 percent local inference becomes viable as an architectural consequence, not a policy promise.
 
+## Figures
+
+![A deterministic DAG shell with an adaptive agent loop inside one node.](../../figures/deterministic-outside-adaptive-inside.svg)
+
+The planner-compiler split from this talk and the policy shell from day two’s Coinbase talk.
+
 ## Notable quotes
 
 > "So the intelligent way to build is to use intelligence minimally and on purpose." — [04:52:53 | 1:40:45 PM]

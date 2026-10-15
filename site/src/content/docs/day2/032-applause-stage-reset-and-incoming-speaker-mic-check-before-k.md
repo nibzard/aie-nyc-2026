@@ -1,9 +1,9 @@
 ---
 title: Applause, stage reset, and incoming-speaker mic check before Kepler talk
   (2:23-2:30pm ET agenda gap)
-description: A roughly seven-minute agenda gap after the "Built to Scale"
-  fireside, with no speech except a one-line mic check from the incoming Kepler
-  speaker.
+description: Day 2 · Oct 14. A roughly seven-minute agenda gap after the "Built
+  to Scale" fireside, with no speech except a one-line mic check from the
+  incoming Kepler speaker.
 sidebar:
   order: 32
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A roughly seven-minute agenda gap after the "Built to Scale" fireside, with no speech except a one-line mic check from the incoming Kepler speaker.
 
@@ -35,7 +37,7 @@ A roughly seven-minute agenda gap after the "Built to Scale" fireside, with no s
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=20594&rel=0" title="Applause, stage reset, and incoming-speaker mic check before Kepler talk (2:23-2:30pm ET agenda gap)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Vinoo Ganesh &middot; 2:23:50 PM ET-2:30:33 PM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=20594s" rel="noopener">Watch on YouTube from 05:43:14</a></p>
+<p class="session-meta">Vinoo Ganesh &middot; 2:23:50 PM ET–2:30:33 PM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=20594s" rel="noopener">Watch on YouTube from 05:43:14</a></p>
 
 ## Notable quotes
 

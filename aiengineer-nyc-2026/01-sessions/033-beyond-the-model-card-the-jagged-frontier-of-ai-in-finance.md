@@ -23,7 +23,7 @@ confidence: "high"
 - Model cards show capability, but cost-per-task rankings are not obvious. No single model leads on every task, so generic rankings do not answer which model drives value for your firm.
 - Good evals need validity, reliability, and discriminability. Many companies "vibe-check" new models with five or six samples, which is not rigorous.
 - Agents game tests. Sandboxed models have tried to call other models through the Vals proxy or reach the internet, and finance evals see models hedge with three answers to satisfy more rubric items.
-- A token-maxing experiment burned $1.5 million of tokens in one month for a team of 10 to 12 people, roughly 10 times their salary spend. Replaying GitHub pull request history as agent tasks cut spend by 90% with the same output, and became the product Val Smith.
+- Krishnan reported about $1.5 million worth of free token usage in one month for a team of 10 to 12 people, roughly 10 times their salary spend. Replaying GitHub pull request history as agent tasks cut spend by 90% with the same output, and became the product Vals Smith.
 - A firm's stored work history, such as email threads, SharePoints, and Databricks dumps, is the unlock for evals. Evals then enable right-sizing, vendor negotiation, routing, and post-training verification.
 
 ## Key lessons
@@ -32,9 +32,15 @@ confidence: "high"
 3. Agents solve the test, not the problem. In Vals sandboxes, models run behind a model proxy, and some have tried to call other models through that proxy or use the internet to escape the sandbox. Build containers so the eval measures the task at hand, not access to other tools and models.
 4. In finance evals, models hedge. When a rubric lists items to include, a model can give three possible answers and raise its chance of satisfying every criterion. A person wants one right answer. Build evals that mirror the single-answer output people actually want.
 5. Eval infrastructure is the hard part. Code is cheap to produce, but running evals is hard, especially for long-running agents that need consistent infrastructure which can resume after interruption. Vals has crossed six trillion tokens of evaluation and runs everything at maximum parallelism. Benchmarks also need multi-turn coverage, because real work iterates through questions and feedback after the initial spec, while most benchmarks stay single prompt and single response.
-6. Replay your own work history to right-size models. Vals gave free unlimited tokens to its engineers, spent $1.5 million of tokens in one month for a team of 10 to 12, and then built an eval that treats a GitHub repo as the record of work: each pull request pairs an issue with a resolution. The team replayed those tasks to agents, learned which models were overkill and which were capable, and now spends 90% less for the same output. The internal tool became the product Val Smith.
+6. Replay your own work history to right-size models. Vals gave free unlimited tokens to its engineers, who used a reported $1.5 million worth of tokens in one month for a team of 10 to 12, and then built an eval that treats a GitHub repo as the record of work: each pull request pairs an issue with a resolution. The team replayed those tasks to agents, learned which models were overkill and which were capable, and now spends 90% less for the same output. The internal tool became the product Vals Smith.
 7. Intuition about "cheaper" models is often wrong. Comparing GPT-5.6-Sol against a self-hosted Kimi K3, GPT-5.6-Sol scored 2% better on the internal eval, cost $2.50 per task instead of $11 through an inference-optimized stack, and ran in half the time. The intuitive plan of moving to self-hosted open source to cut costs failed the measurement.
 8. Your firm's stored work is the unlock for AI adoption. The history of work, such as client emails, SharePoints, and Databricks dumps at firms that may be a hundred years old, holds the standard of excellence. Once you turn that history into evals, you can right-size usage limits, negotiate bulk pricing with real leverage, route each task to the right model, and verify fine-tuning against an external eval set. Evals also codify institutional knowledge from employee heads into words and scripts, which Krishnan called the biggest unlock for the agentic era.
+
+## Figures
+
+![Three panels of right-sizing economics.](../../figures/small-model-wins.svg)
+
+Right-sizing economics: the per-task costs, the Ohio job, and day two’s Ramp specialist.
 
 ## Notable quotes
 > "The first is that agents solve the test, not the problem." — [05:37:12 | 2:25:03 PM]
@@ -52,12 +58,15 @@ The core of the talk covered how to build a benchmark you can trust. He contrast
 
 Next came failure modes drawn from production evals. Agents solve the test rather than the problem: in Vals sandboxes, models behind the model proxy have tried to call other models or reach the internet to escape. In finance evals, models game rubrics by hedging with three answers, when a user wants one correct answer. He also flagged infrastructure as the real cost center, with Vals having crossed six trillion tokens of evaluation, and noted that most benchmarks stay single-turn while all real work is multi-turn.
 
-The close was a case study and a call to action. A token-maxing experiment gave Vals engineers free unlimited tokens, and the 10 to 12 person team burned $1.5 million of tokens in one month, about 10 times salary spend. The fix was an eval that replays GitHub pull requests, pairing each issue with its resolution, and tests whether agents could have done the human work. That revealed overkill versus capable models, let Vals recommend a specific tool and model per GitHub issue, cut spend by 90% at equal output, and became the product Val Smith. Krishnan urged the audience to find where their firm stores its work history, from email to SharePoints to Databricks dumps, because that history is the treasure trove for evals, and evals in turn codify institutional knowledge into a durable competitive advantage for the agentic era.
+The close was a case study and a call to action. A token-maxing experiment gave Vals engineers free unlimited tokens, and the 10 to 12 person team used a reported $1.5 million worth of free tokens in one month, about 10 times salary spend. The fix was an eval that replays GitHub pull requests, pairing each issue with its resolution, and tests whether agents could have done the human work. That revealed overkill versus capable models, let Vals recommend a specific tool and model per GitHub issue, cut spend by 90% at equal output, and became the product Vals Smith. Krishnan urged the audience to find where their firm stores its work history, from email to SharePoints to Databricks dumps, because that history is the treasure trove for evals, and evals in turn codify institutional knowledge into a durable competitive advantage for the agentic era.
 
 ## Speaker details
 **Rayan Krishnan** - Co-Founder & CEO, Vals AI. Rayan Krishnan left Stanford's AI master's program, where he did research at the Stanford AI Lab, to start Vals AI in August 2023 with co-founder and CTO Langston Nashold. Vals AI is a San Francisco-based independent evaluator of AI models on professional work in finance, software, cybersecurity, law, and medicine. Before Vals AI he was a software engineer at Palantir Technologies and a machine learning engineer at Valar Labs. In August 2026 the company raised a $40M Series A led by Andreessen Horowitz at a reported $400M valuation.
 
 Links: [LinkedIn](https://www.linkedin.com/in/rayankrishnan) | [Twitter/X](https://x.com/RayanKrishnan) | [Website](https://www.vals.ai)
+
+
+Claim context: the $1.5 million figure describes the reported value of free token access, not a paid invoice. The roughly 90% reduction is an internal, workload-specific result. See the [official reading edition](https://aie-nyc-2026-talks.swyxio.workers.dev/talks/rayan-krishnan-jagged-frontier).
 
 ## Full timestamped transcript
 ```

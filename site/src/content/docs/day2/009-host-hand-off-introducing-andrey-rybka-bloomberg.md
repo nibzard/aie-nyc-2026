@@ -1,8 +1,9 @@
 ---
 title: "Host hand-off: introducing Andrey Rybka (Bloomberg)"
-description: "A 27-second unnamed-host voiceover bridges the OpenAI finance
-  keynote and the Bloomberg security keynote: it frames AI as changing both
-  sides of the security equation, then welcomes Andrey Rybka to the stage."
+description: "Day 2 · Oct 14. A 27-second unnamed-host voiceover bridges the
+  OpenAI finance keynote and the Bloomberg security keynote: it frames AI as
+  changing both sides of the security equation, then welcomes Andrey Rybka to
+  the stage."
 sidebar:
   order: 9
   hidden: true
@@ -10,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 27-second unnamed-host voiceover bridges the OpenAI finance keynote and the Bloomberg security keynote: it frames AI as changing both sides of the security equation, then welcomes Andrey Rybka to the stage.
 
@@ -33,7 +36,7 @@ A 27-second unnamed-host voiceover bridges the OpenAI finance keynote and the Bl
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=5329&rel=0" title="Host hand-off: introducing Andrey Rybka (Bloomberg)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Unidentified host/MC &middot; 10:09:25 AM ET-10:09:52 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=5329s" rel="noopener">Watch on YouTube from 01:28:49</a></p>
+<p class="session-meta">Unidentified host/MC &middot; 10:09:25 AM ET–10:09:52 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=5329s" rel="noopener">Watch on YouTube from 01:28:49</a></p>
 
 ## Notable quotes
 > "AI is changing both sides of the security equation." [01:28:49 | 10:09:25 AM]

@@ -1,9 +1,9 @@
 ---
 title: Host hand-off introducing Aparna Dhinakaran (Arize AI)
-description: A roughly five-second host hand-off that bridges the applause after
-  Max Kanat-Alexander's keynote and Aparna Dhinakaran's "What does an AI
-  engineer do?" keynote, framing it around what engineering means when AI does
-  the building.
+description: Day 1 · Oct 13. A roughly five-second host hand-off that bridges
+  the applause after Max Kanat-Alexander's keynote and Aparna Dhinakaran's "What
+  does an AI engineer do?" keynote, framing it around what engineering means
+  when AI does the building.
 sidebar:
   order: 12
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A roughly five-second host hand-off that bridges the applause after Max Kanat-Alexander's keynote and Aparna Dhinakaran's "What does an AI engineer do?" keynote, framing it around what engineering means when AI does the building.
 
@@ -31,7 +33,7 @@ A roughly five-second host hand-off that bridges the applause after Max Kanat-Al
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=5217&rel=0" title="Host hand-off introducing Aparna Dhinakaran (Arize AI)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Aparna Dhinakaran, Unidentified host/MC (voice only) &middot; 10:14:49 AM ET-10:14:54 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=5217s" rel="noopener">Watch on YouTube from 01:26:57</a></p>
+<p class="session-meta">Aparna Dhinakaran, Unidentified host/MC (voice only) &middot; 10:14:49 AM ET–10:14:54 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=5217s" rel="noopener">Watch on YouTube from 01:26:57</a></p>
 
 ## Notable quotes
 > "As AI takes on more of the building, what does it mean to be an engineer?" [01:26:57 | 10:14:49 AM]

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">A GPU falls to the level of the operator</title>
+  <desc id="desc">Two horizontal bars compare generated output at P90 from two identical B200 serving stacks running the same model against the same interactivity target: about 200 tokens per second on one stack and about 300 on the other, roughly 50% more output from the same chip. The gap comes from software, settings, and request concurrency, all operator choices.</desc>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+    <!-- Card -->
+    <rect x="0.5" y="0.5" width="959" height="539" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+
+    <!-- Header -->
+    <text x="48" y="66" font-size="11" letter-spacing="0.08em" fill="#52514e">DATA — SERVING</text>
+    <text x="48" y="94" font-size="20" font-weight="600" fill="#0b0b0b">A GPU falls to the level of the operator</text>
+    <text x="48" y="120" font-size="13" fill="#52514e">Buy by cost per acceptable token — grade the operator, not just the chip.</text>
+
+    <!-- Chart context -->
+    <text x="48" y="150" font-size="11" fill="#52514e">Two B200 serving stacks, same model, roughly 8,000 input and 1,000 output tokens.</text>
+    <text x="48" y="166" font-size="11" fill="#52514e">P50 target of 100 output tokens per second per user; same assumed hourly bill for both.</text>
+
+    <!-- Baseline -->
+    <line x1="280" y1="194" x2="280" y2="298" stroke="#c3c2b7" stroke-width="1"/>
+
+    <!-- Bars -->
+    <path d="M280,202 L609,202 A4,4 0 0 1 613,206 L613,218 A4,4 0 0 1 609,222 L280,222 Z" fill="#9ec5f4" fill-opacity="0.45"/>
+    <path d="M280,254 L776,254 A4,4 0 0 1 780,258 L780,270 A4,4 0 0 1 776,274 L280,274 Z" fill="#2a78d6"/>
+
+    <!-- Direct labels -->
+    <text x="264" y="216" font-size="12" font-weight="600" fill="#52514e" text-anchor="end">Serving stack 1</text>
+    <text x="621" y="216" font-size="13" font-weight="600" fill="#52514e">~200 tokens/s</text>
+    <text x="264" y="268" font-size="12" font-weight="600" fill="#0b0b0b" text-anchor="end">Serving stack 2</text>
+    <text x="788" y="268" font-size="13" font-weight="600" fill="#0b0b0b">~300 tokens/s</text>
+    <text x="288" y="292" font-size="11" fill="#52514e">generated tokens per second, measured at P90</text>
+
+    <!-- Takeaway -->
+    <text x="280" y="326" font-size="12" font-style="italic" fill="#52514e">“Same chip, same target interactivity, about 50% more output.”</text>
+    <text x="280" y="346" font-size="11" fill="#52514e">The gap comes down to software, settings, and the number of requests running — all operator choices.</text>
+
+    <!-- Futures-market band -->
+    <rect x="48" y="382" width="864" height="58" rx="8" fill="#2a78d6" fill-opacity="0.08"/>
+    <text x="72" y="416" font-size="13" fill="#0b0b0b">“Rating the operator is an essential building block for building a credible compute futures market.”</text>
+
+    <!-- Source -->
+    <text x="48" y="490" font-size="11" fill="#52514e">Source: Oliver Kennon (SemiAnalysis), “Not All GPU’s Are Deployed The Same”, AI Engineer NYC 2026, day 2.</text>
+  </g>
+</svg>

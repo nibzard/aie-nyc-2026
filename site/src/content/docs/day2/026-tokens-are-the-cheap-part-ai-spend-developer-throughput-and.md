@@ -1,7 +1,7 @@
 ---
 title: "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per
   merged PR"
-description: Jellyfish research on the industry's largest
+description: Day 2 · Oct 14. Jellyfish research on the industry's largest
   engineering-workflow-plus-AI-telemetry dataset shows AI is only about 2.5% of
   the cost of a merged PR, so token bills are still cheap relative to salary -
   track cost per merged PR, not the token bill.
@@ -12,6 +12,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Jellyfish research on the industry's largest engineering-workflow-plus-AI-telemetry dataset shows AI is only about 2.5% of the cost of a merged PR, so token bills are still cheap relative to salary - track cost per merged PR, not the token bill.
 
@@ -39,7 +41,13 @@ Jellyfish research on the industry's largest engineering-workflow-plus-AI-teleme
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=17044&rel=0" title="Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Steve Jamison &middot; 1:24:40 PM ET-1:42:06 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=17044s" rel="noopener">Watch on YouTube from 04:44:04</a></p>
+<p class="session-meta">Steve Jamison &middot; 1:24:40 PM ET–1:42:06 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=17044s" rel="noopener">Watch on YouTube from 04:44:04</a></p>
+
+## Figures
+
+![Two panels of AI cost economics.](/figures/where-the-money-goes.svg)
+
+The merged-PR cost split from this talk; the self-hosted panel is day one’s Revolut talk.
 
 ## Notable quotes
 > "I'm here to show you why tokens are the cheap part." [04:44:09 | 1:24:44 PM]

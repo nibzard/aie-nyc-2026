@@ -36,6 +36,12 @@ confidence: "high"
 7. Hill climb against an evaluation North Star. The way to break the problem down is to compartmentalize it into pieces you can understand and evaluate. Without that measure, you are just fidgeting — swapping an LLM for an ML system here, an if statement there, with no signal of improvement.
 8. The data foundation is cultural, not only technical. Coatue has filed every note about every trade, every decision made or not made, and what went well or badly, for decades. That recorded history, plus a rigorous culture and strong data-science systems, is what positioned the firm to expose everything to AI. Frank's estimate of the real graph: massively complex, with at least 10 hyperparameters and at least 20 valid values per node, so the search space is basically infinite — and the great challenge is laying it out so people can absorb it both technically and organizationally.
 
+## Figures
+
+![A function diagram returning one tuple of selection, size, and timing.](../../figures/hedge-fund-as-a-function.svg)
+
+The firm as one function returning one tuple.
+
 ## Notable quotes
 - "Every single thing that a human can see in pixels on the screen, an agent in your building should be able to see via API." [07:16:17 | 4:04:08 PM]
 - "There is no glory in automating things for the sake of automating things." [07:23:46 | 4:11:37 PM]

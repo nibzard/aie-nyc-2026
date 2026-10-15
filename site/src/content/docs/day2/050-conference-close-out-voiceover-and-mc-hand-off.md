@@ -1,8 +1,8 @@
 ---
 title: Conference close-out voiceover and MC hand-off
-description: A 26-second production voiceover thanks attendees as AI Engineer
-  New York 2026 comes to a close, then hands the stage back to MC Kseniya Se of
-  Turing Post for the final closing remarks.
+description: Day 2 · Oct 14. A 26-second production voiceover thanks attendees
+  as AI Engineer New York 2026 comes to a close, then hands the stage back to MC
+  Kseniya Se of Turing Post for the final closing remarks.
 sidebar:
   order: 50
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 26-second production voiceover thanks attendees as AI Engineer New York 2026 comes to a close, then hands the stage back to MC Kseniya Se of Turing Post for the final closing remarks.
 
@@ -28,7 +30,7 @@ None - this segment is a 26-second close-out voice-over.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=31583&rel=0" title="Conference close-out voiceover and MC hand-off" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Ksenia Se &middot; 5:26:59 PM ET-5:27:25 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=31583s" rel="noopener">Watch on YouTube from 08:46:23</a></p>
+<p class="session-meta">Ksenia Se &middot; 5:26:59 PM ET–5:27:25 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=31583s" rel="noopener">Watch on YouTube from 08:46:23</a></p>
 
 ## Notable quotes
 "As we come to the close of AI Engineer New York 2026, we'd like to thank everyone for being part of this incredible event." [08:46:23 | 5:26:59 PM]

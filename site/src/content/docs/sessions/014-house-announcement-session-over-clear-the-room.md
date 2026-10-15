@@ -1,8 +1,9 @@
 ---
 title: "House announcement: session over, clear the room"
-description: "An eight-second public-address announcement closes the 10:30 AM
-  keynote block: the program has finished, and attendees must collect their
-  belongings and clear the room through the main doors before the next session."
+description: "Day 1 · Oct 13. An eight-second public-address announcement closes
+  the 10:30 AM keynote block: the program has finished, and attendees must
+  collect their belongings and clear the room through the main doors before the
+  next session."
 sidebar:
   order: 14
   hidden: true
@@ -10,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 An eight-second public-address announcement closes the 10:30 AM keynote block: the program has finished, and attendees must collect their belongings and clear the room through the main doors before the next session.
 
@@ -30,7 +33,7 @@ None - this segment is a 8-second house PA announcement.
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=6162&rel=0" title="House announcement: session over, clear the room" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Unidentified venue PA announcer &middot; 10:30:34 AM ET-10:30:42 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=6162s" rel="noopener">Watch on YouTube from 01:42:42</a></p>
+<p class="session-meta">Unidentified venue PA announcer &middot; 10:30:34 AM ET–10:30:42 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=6162s" rel="noopener">Watch on YouTube from 01:42:42</a></p>
 
 ## Notable quotes
 

@@ -1,10 +1,10 @@
 ---
 title: Agentifying a SEC Master
-description: Nori Agentic's CEO Amol Kapoor and CTO Clifford Ressel, joined on
-  screen by their agent Jiro, explain in a podcast-format online-track talk how
-  cloud agents can maintain a securities master whose every cell change today
-  sends a person hunting for provenance in Google Drive, email, and contract
-  PDFs.
+description: Day 2 · Oct 14. Nori Agentic's CEO Amol Kapoor and CTO Clifford
+  Ressel, joined on screen by their agent Jiro, explain in a podcast-format
+  online-track talk how cloud agents can maintain a securities master whose
+  every cell change today sends a person hunting for provenance in Google Drive,
+  email, and contract PDFs.
 sidebar:
   order: 29
   hidden: false
@@ -12,6 +12,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Nori Agentic's CEO Amol Kapoor and CTO Clifford Ressel, joined on screen by their agent Jiro, explain in a podcast-format online-track talk how cloud agents can maintain a securities master whose every cell change today sends a person hunting for provenance in Google Drive, email, and contract PDFs.
 
@@ -38,7 +40,7 @@ Nori Agentic's CEO Amol Kapoor and CTO Clifford Ressel, joined on screen by thei
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=18138&rel=0" title="Agentifying a SEC Master" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Amol Kapoor, Clifford Ressel, Jiro &middot; 1:42:54 PM ET-2:02:56 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=18138s" rel="noopener">Watch on YouTube from 05:02:18</a></p>
+<p class="session-meta">Amol Kapoor, Clifford Ressel, Jiro &middot; 1:42:54 PM ET–2:02:56 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=18138s" rel="noopener">Watch on YouTube from 05:02:18</a></p>
 
 ## Notable quotes
 > "So cloud agent, the most succinct definition, I think, for just agent to start: an LLM or a model that you run in a loop and give access to tools." [05:04:48 | 1:45:23 PM]

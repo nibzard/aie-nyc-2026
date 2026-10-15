@@ -1,8 +1,8 @@
 ---
 title: Closing Remarks
-description: MC Ksenia Se thanks the speakers, team, crew, sponsors, and
-  attendees, recaps the three days of AI Engineer New York 2026 in one sentence,
-  and hands the stage to Swyx, the event's curator.
+description: Day 2 · Oct 14. MC Ksenia Se thanks the speakers, team, crew,
+  sponsors, and attendees, recaps the three days of AI Engineer New York 2026 in
+  one sentence, and hands the stage to Swyx, the event's curator.
 sidebar:
   order: 51
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 MC Ksenia Se thanks the speakers, team, crew, sponsors, and attendees, recaps the three days of AI Engineer New York 2026 in one sentence, and hands the stage to Swyx, the event's curator.
 
@@ -33,7 +35,7 @@ MC Ksenia Se thanks the speakers, team, crew, sponsors, and attendees, recaps th
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=31609&rel=0" title="Closing Remarks" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Ksenia Se &middot; 5:27:25 PM ET-5:28:30 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=31609s" rel="noopener">Watch on YouTube from 08:46:49</a></p>
+<p class="session-meta">Ksenia Se &middot; 5:27:25 PM ET–5:28:30 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=31609s" rel="noopener">Watch on YouTube from 08:46:49</a></p>
 
 ## Notable quotes
 1. "Thank you, Christabel, and thank you to all of our speakers." [08:46:50 | 5:27:25 PM]

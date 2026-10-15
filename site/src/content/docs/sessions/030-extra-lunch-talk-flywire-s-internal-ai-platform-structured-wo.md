@@ -1,10 +1,10 @@
 ---
 title: "Extra lunch talk: Flywire's internal AI platform — structured workflow
   automation (Orbit on the Victoria PaaS)"
-description: Two Flywire engineers open their lunch talk on structured agentic
-  workflow automation — Flywire's compliance context, the Victoria PaaS, and the
-  Orbit platform — before the captured livestream audio cuts off after less than
-  three minutes.
+description: Day 1 · Oct 13. Two Flywire engineers open their lunch talk on
+  structured agentic workflow automation — Flywire's compliance context, the
+  Victoria PaaS, and the Orbit platform — before the captured livestream audio
+  cuts off after less than three minutes.
 sidebar:
   order: 30
   hidden: false
@@ -13,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Two Flywire engineers open their lunch talk on structured agentic workflow automation — Flywire's compliance context, the Victoria PaaS, and the Orbit platform — before the captured livestream audio cuts off after less than three minutes.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/eduardo-simon-javier-casal-agents-in-orbit">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Edu and Javi represent Flywire's AI platform experience team. Their mission is practical agentic infrastructure that empowers software engineers while following established engineering standards and practices.
@@ -36,7 +40,7 @@ Two Flywire engineers open their lunch talk on structured agentic workflow autom
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=18379&rel=0" title="Extra lunch talk: Flywire's internal AI platform — structured workflow automation (Orbit on the Victoria PaaS)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Edu, Javi &middot; 1:54:11 PM ET-1:56:54 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=18379s" rel="noopener">Watch on YouTube from 05:06:19</a></p>
+<p class="session-meta">Eduardo Simon, Javier Casal &middot; 1:54:11 PM ET–1:56:54 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=18379s" rel="noopener">Watch on YouTube from 05:06:19</a></p>
 
 ## Notable quotes
 - "My name is Edu, and alongside Javi, we represent the AI platform experience team at Flywire." [05:06:22 | 1:54:13 PM]
@@ -52,9 +56,12 @@ That context took most of the captured segment. Flywire processes "the world's m
 The talk reached its first product reveal about two minutes in: Orbit, "our on-call killer," an internal platform that eliminates daily on-call work and lets other AI services and tools across Flywire start workflows directly — for example, an engineer asking Claude in Slack. At that point the captured record breaks down. The final transcription lines fragment mid-sentence ("Victoria, it starts and shares the main request with scorecards, measures how."), ending with an apparent on-stage stumble or restart — "Sorry, I'm good." at [05:08:58 | 1:56:50 PM] — before the stream cut to the next talk (Modal) at 1:56:55 PM. Only 2 minutes 43 seconds of this talk exists in the livestream record; the announced "deep technical details" of Orbit never appear in the captured audio. Per the speaker records, the same pair discussed the full platform on the AI Engineer show podcast episode "Agents in Orbit: Workflows, Not Autopilot" (YAML-defined workflows on the Claude Agents SDK, with LLM steps isolated by network, tool, skill, and MCP access rules).
 
 ## Speaker details
-**Edu (Eduardo Simón Picón)** — Senior Software Engineer, AI Platform Experience Team, Flywire. Based in Valencia, Spain. Edu has about seven years of full-stack experience: React and TypeScript frontends, Ruby and TypeScript backends, AWS infrastructure, and DevSecOps. Before the AI platform work, he built foundational components of Flywire's public API that power partner payment processing. Links: [LinkedIn](https://www.linkedin.com/in/eduardo-simon), [Website](https://edusimon.dev), [GitHub](https://github.com/eduardosimon)
+**Eduardo Simon (Edu)** — Senior Software Engineer, AI Platform Experience Team, Flywire. Based in Valencia, Spain. Edu has about seven years of full-stack experience: React and TypeScript frontends, Ruby and TypeScript backends, AWS infrastructure, and DevSecOps. Before the AI platform work, he built foundational components of Flywire's public API that power partner payment processing. Links: [LinkedIn](https://www.linkedin.com/in/eduardo-simon), [Website](https://edusimon.dev), [GitHub](https://github.com/eduardosimon)
 
-**Javi (Javier Casal)** — Senior Software Engineer, AI Platform Experience Team, Flywire. Based in Valencia, Spain. Javi works on the AI Platform Experience Team, which builds Orbit, Flywire's internal platform for structured agentic workflow automation running on the Victoria PaaS. He studied at Universidad Politécnica de Valencia. Links: [LinkedIn](https://es.linkedin.com/in/jacarui), [GitHub](https://github.com/jacarui)
+**Javier Casal (Javi)** — Senior Software Engineer, AI Platform Experience Team, Flywire. Based in Valencia, Spain. Javi works on the AI Platform Experience Team, which builds Orbit, Flywire's internal platform for structured agentic workflow automation running on the Victoria PaaS. He studied at Universidad Politécnica de Valencia. Links: [LinkedIn](https://es.linkedin.com/in/jacarui), [GitHub](https://github.com/jacarui)
+
+
+Speaker names follow the [official reading edition](https://aie-nyc-2026-talks.swyxio.workers.dev/talks/eduardo-simon-javier-casal-agents-in-orbit). This recording is an opening excerpt; it does not establish what was presented elsewhere.
 
 ## Full timestamped transcript
 ```

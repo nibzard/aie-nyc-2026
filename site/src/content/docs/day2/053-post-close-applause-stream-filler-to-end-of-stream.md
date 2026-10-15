@@ -1,8 +1,9 @@
 ---
 title: Post-close applause / stream filler to end of stream
-description: "The final 75 seconds of the day-three stream carry no speech:
-  applause after Swyx's \"See you next year.\" decays into near-silence, then
-  low-level non-speech audio runs to the hard cut at stream end."
+description: "Day 2 · Oct 14. The final 75 seconds of the day-three stream carry
+  no speech: applause after Swyx's \"See you next year.\" decays into
+  near-silence, then low-level non-speech audio runs to the hard cut at stream
+  end."
 sidebar:
   order: 53
   hidden: true
@@ -10,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 The final 75 seconds of the day-three stream carry no speech: applause after Swyx's "See you next year." decays into near-silence, then low-level non-speech audio runs to the hard cut at stream end.
 
@@ -32,7 +35,7 @@ None - this segment is post-close applause filler.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=31801&rel=0" title="Post-close applause / stream filler to end of stream" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">5:30:37 PM ET-5:31:52 PM ET &middot; filler &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=31801s" rel="noopener">Watch on YouTube from 08:50:01</a></p>
+<p class="session-meta">5:30:37 PM ET–5:31:52 PM ET &middot; filler &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=31801s" rel="noopener">Watch on YouTube from 08:50:01</a></p>
 
 ## Session narrative
 

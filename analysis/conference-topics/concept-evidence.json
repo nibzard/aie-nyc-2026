@@ -1,0 +1,1202 @@
+{
+  "Evaluation": [
+    {
+      "session": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "text": "We have a skill with Arize Evaluator to actually help you build and write evals, as well as align those evals with the human judgment.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5918s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/"
+    },
+    {
+      "session": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "text": "So again, one tempting answer here is let's have some kind of central evaluation methodology that waits for a full eval suite and a committee sign-off.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=3978s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/"
+    },
+    {
+      "session": "1:033",
+      "day": 1,
+      "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+      "text": "The goal here is to try and build evals that are reflective of the actual work people are doing and the work output they want to see, not to build these contrived evals that the models can actually game.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=20285s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/033-beyond-the-model-card-the-jagged-frontier-of-ai-in-finance/"
+    },
+    {
+      "session": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "text": "You've got your price discovery individuals, so people with indexes, data, the benchmarks that we're all looking at right now and referencing, which would be used to, you know, in the future launch the futures based on the benchmarks talked about in the associated contracts, per spec, per pending approval.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=12528s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/"
+    },
+    {
+      "session": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "text": "Third, do we have like enough tracking and evaluation system to make sure that every query when you are sending to the agents, whether they've been tracked or not, and are you evaluating the quality response or not, right?",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=14453s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/"
+    },
+    {
+      "session": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "text": "But going back to what John mentioned, how we do our data capture and distillation and how we make How we make this available is, like, state to these models, and then also just how we do our benchmarks and evaluation.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=20174s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/"
+    }
+  ],
+  "Security": [
+    {
+      "session": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "text": "We don't want to sandbox or lock down everything because a sandbox with no real access to systems is safe, but it's not very interesting or useful.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=3427s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/"
+    },
+    {
+      "session": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "text": "And so the agent's triggered, we build a sandbox, we put everything that we need inside of that sandbox.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5639s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/"
+    },
+    {
+      "session": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "text": "So the core of the question is like, okay, well, if we give these, like, agents, we give the brain, which is the model and the LLM, and you have these hands, which you kind of give them, put them in a sandbox, and inside the sandbox is the tools.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=11477s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/"
+    },
+    {
+      "session": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "text": "Sandboxes bound what the processes can do, but they don't control what is authorized to act outside the sandbox itself.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=13480s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/"
+    },
+    {
+      "session": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "text": "You could vibe code a sandbox platform, but who is going to do all the work to, like, continually reason about the security boundaries and make sure it's defensible in an age when everything is...",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=19133s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/"
+    },
+    {
+      "session": "1:033",
+      "day": 1,
+      "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+      "text": "So this is talked a lot about as reward hacking, and we've seen a lot of instances where we'll have a sandbox and models will be run with our model proxy, and sometimes they may try and actually call other models within that proxy to escape the sandbox or make use of the internet.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=20234s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/033-beyond-the-model-card-the-jagged-frontier-of-ai-in-finance/"
+    }
+  ],
+  "Authorization": [
+    {
+      "session": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "text": "So for Slack, if you want to connect Slack, you can define, hey, here's the credential, and you are only allowed to use that credential with a certain domain or with a certain environment variable, so that way you can control when a credential is used.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=23007s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/"
+    },
+    {
+      "session": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "text": "We can think about that in three general steps: who the agent is acting as, with an identity and permissions layer; how we can sandbox and determine the approval layer of the agent so that someone is signing off before it acts; and lastly, how we know the agent will still work once we adjust any variables over time.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=2352s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/"
+    },
+    {
+      "session": "1:010",
+      "day": 1,
+      "title": "Does Code Quality Even Matter?",
+      "text": "On the right, you just see a series of instructions with no particular identity, recognizable or understandable identity.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=4471s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/010-does-code-quality-even-matter-understanding-execution/"
+    },
+    {
+      "session": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "text": "Well, when people started looking at how do we authorize agents to access something, the tool that was sitting there on the shelf was OAuth.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=9987s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/"
+    },
+    {
+      "session": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "text": "So the first problem is that credentials weren't attributed to a user or an agent's identity.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=13508s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/"
+    },
+    {
+      "session": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "text": "We're going to talk about workload identity, scoped credentials, agent-to-agent mutual authentication, and secureless agents.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=5570s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/"
+    }
+  ],
+  "Verification": [
+    {
+      "session": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "text": "Then you get to verification, and we started Life as a verification company.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=2905s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/"
+    },
+    {
+      "session": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "text": "So this is kind of a classic supply chain verification, but I would say like, don't just do supply chain verification.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=6144s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/"
+    },
+    {
+      "session": "2:033",
+      "day": 2,
+      "title": "Why Wall Street Still Doesn’t Trust AI",
+      "text": "So three months ago, I think there's a little bit of an overlap, but I gave a talk at AIE World Fair really around verification and why that most institutions need verification in some form of the trust ecosystem of AI.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=21007s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/"
+    },
+    {
+      "session": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "text": "These data sets, golden truth data sets, we run evals, verify them against the human output, and then try to align to make sure that the judge actually agrees with the human and they're in agreement before we actually ship out a new evaluator.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5968s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/"
+    },
+    {
+      "session": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "text": "They're able to verify work because model vision capabilities have improved, and in many contexts, people are proclaiming that AGI is here.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=9891s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/"
+    },
+    {
+      "session": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "text": "Now this is not something that it has access to directly, so it is essentially assuming that the morning team is going to verify that this did in fact work and the information was restored.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=13148s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/"
+    }
+  ],
+  "Trust": [
+    {
+      "session": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "text": "We're actually building confidence, and you're seeing results: better security, more confidence in our time to market, improved, or a reduction in number of outages, improved reliability.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=3000s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/"
+    },
+    {
+      "session": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "text": "And do I really trust that the eval is, you know, is going to catch, or, you know, how do I trust that it's as good as my judgment?",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5944s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/"
+    },
+    {
+      "session": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "text": "So I'm a believer in quality, and in traditional software, we've built confidence mechanisms in place to give us confidence that the software is of high quality.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=3792s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/"
+    },
+    {
+      "session": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "text": "We are based right here in New York City, and the thing that we focus on is how can we get agents to do production-scale work reliably enough so that we are trusted and used end-to-end by accounting firms across the country.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=29406s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/"
+    },
+    {
+      "session": "1:003",
+      "day": 1,
+      "title": "Vault: Making Unstructured Data Work for Investing",
+      "text": "And when it ultimately answers my question, it draws on seven instead of only one or two and gives me back a rich answer that the agent is more confident is going to address my question.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=1258s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/003-vault-making-unstructured-data-work-for-investing-bridgewater/"
+    },
+    {
+      "session": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "text": "One example here is Citadel told us at our briefing event in May that their investment professionals started to use Claude for Excel, and it gives them a step change function in how they can test, build, and trust their work.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=2035s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/"
+    }
+  ],
+  "Human review": [
+    {
+      "session": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "text": "Now, forcing a human in the loop approval just kind of passes the access control on to a consent-fatigued user.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=13339s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/"
+    },
+    {
+      "session": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "text": "We can think about that in three general steps: who the agent is acting as, with an identity and permissions layer; how we can sandbox and determine the approval layer of the agent so that someone is signing off before it acts; and lastly, how we know the agent will still work once we adjust any variables over time.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=2352s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/"
+    },
+    {
+      "session": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "text": "And if we can use the same, if we try to use the same review process to cover all of these agents, then every agent is waiting in the same queue for weeks for human review.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=3661s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/"
+    },
+    {
+      "session": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "text": "But these evals can also, they need to be kind of aligned with human judgment.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5890s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/"
+    },
+    {
+      "session": "1:018",
+      "day": 1,
+      "title": "Inside Arca’s long-horizon agents that run the business",
+      "text": "And just like that, you have these analyses being done in January and these one-click approval emails with the full plan for every client showing up on our users' plates.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=9137s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/018-inside-arca-s-long-horizon-agents-that-run-the-business/"
+    },
+    {
+      "session": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "text": "At some point, agents are going to be doing so much work, there's no way we can have human in the loop approving everything, right?",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=11030s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/"
+    }
+  ],
+  "Observability": [
+    {
+      "session": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "text": "It's actually no longer even about just setting up metrics and software kind of telemetry, but it's actually how do you have agents go through and read the observability data, and have agents actually consume that telemetry to find patterns.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5413s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/"
+    },
+    {
+      "session": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "text": "Things like self-improving monitoring, where we use LLMs to automatically create monitors with Datadog on a lot of our product surfaces, and then as alerts come in, improve those monitors automatically without a person in the loop to try to basically create super, super robust and resilient software.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=1999s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/"
+    },
+    {
+      "session": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "text": "So, combining with evals as sort of your runtime logs of what happened, or sorry, traces, which are sort of your runtime logs of what happens, we've built this confidence mechanism to complement traditional software.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=3874s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/"
+    },
+    {
+      "session": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "text": "So the way the monitoring work is usually like the moment you submit any calls to your agent, it will send all the operation log into the log store.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=15073s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/"
+    },
+    {
+      "session": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "text": "Ian, why is it important to have your audit log separate from the agent itself, meaning outside of its control?",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=12035s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/"
+    },
+    {
+      "session": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "text": "If you remember the audit log, we couldn't tell who was using the API keys.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=13503s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/"
+    }
+  ],
+  "Memory": [
+    {
+      "session": "1:010",
+      "day": 1,
+      "title": "Does Code Quality Even Matter?",
+      "text": "For example, you know, one of the great dreams that I've always had as a test owner is that everybody would provide in-memory fake versions of their services, and I could just run those in-memory fake versions of their services.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5103s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/010-does-code-quality-even-matter-understanding-execution/"
+    },
+    {
+      "session": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "text": "So we have to consider the memory of, did it see something before that it thought was an issue?",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5500s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/"
+    },
+    {
+      "session": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "text": "Yeah, so use mixed precision, distributed data parallel, maximize micro-batch size, get faster convergence, yeah, using Muon, rope usual, and memory efficiency, flash attention, activation checkpointing.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=7697s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/"
+    },
+    {
+      "session": "1:018",
+      "day": 1,
+      "title": "Inside Arca’s long-horizon agents that run the business",
+      "text": "That gives them all of the tools and the guardrails, and more importantly, persistence of memory over the kind of long horizon period to carry that work out.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=8633s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/018-inside-arca-s-long-horizon-agents-that-run-the-business/"
+    },
+    {
+      "session": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "text": "So an example of this would be, you know, people that are leveraging memory systems.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=11561s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/"
+    },
+    {
+      "session": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "text": "What's isolated are compute units, memory capacity, bandwidth quotas, and false errors.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=14659s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/"
+    }
+  ],
+  "Context": [
+    {
+      "session": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "text": "Yeah, and this is how these things we're talking about, which seemed like geeky OSS problems, actually then merge back up to real agent engineering problems, which is if you actually understand what you're doing, one of the biggest complaints, less now, but one of the biggest complaints with MCP was context bloat, especially when we had smaller context windows, right?",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=11622s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/"
+    },
+    {
+      "session": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "text": "And pulling these schemas together is the process of transformation, of making information actually useful, taking the context that it was recorded in and merging it with the context of the decision.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=16442s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/"
+    },
+    {
+      "session": "1:043",
+      "day": 1,
+      "title": "A Hedge Fund as a Function",
+      "text": "So at a high level, you can think about a hedge fund as a function that takes in two parameters, context external and context internal, and spits out one tuple: selection, size, timing.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=26128s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/"
+    },
+    {
+      "session": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "text": "You had to reduce and scope down the context as much as possible because giving too much context to the agent would just confuse it.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=1350s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/"
+    },
+    {
+      "session": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "text": "Context is very valuable for us, so we want to decouple them and separate them into much more slices where we can then have, like, dedicated references and scripts if we want the agent to, like, do very certain things where it needs more context.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=22831s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/"
+    },
+    {
+      "session": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "text": "And the idea of a behavior spec is essentially saying, before we update the context or write the context, what do we actually want?",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=30122s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/"
+    }
+  ],
+  "Retrieval": [
+    {
+      "session": "2:033",
+      "day": 2,
+      "title": "Why Wall Street Still Doesn’t Trust AI",
+      "text": "It says, I'm going to go here and retrieve this source and retrieve this entity and do this thing.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=21370s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/"
+    },
+    {
+      "session": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "text": "We have built-in tools from the Gemini API for Google Search, so there's nothing you need to additionally do to get Google Search integrated.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=22889s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/"
+    },
+    {
+      "session": "2:049",
+      "day": 2,
+      "title": "Everything will be Simulated",
+      "text": "So in this case, I was searching for Mars, and as Continuum understands the intention of what I'm trying to search from, it also suggests interfaces that are specifically designed in real time just for that.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=31491s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/049-everything-will-be-simulated-runway-video-models-next-frame/"
+    },
+    {
+      "session": "1:003",
+      "day": 1,
+      "title": "Vault: Making Unstructured Data Work for Investing",
+      "text": "I'm going to start with one that might seem obvious, but I still think it's worth saying, which is search is hard.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=1296s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/003-vault-making-unstructured-data-work-for-investing-bridgewater/"
+    },
+    {
+      "session": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "text": "So the agent registry makes agents legible, and it registers, retrieves, and discovers the key facts about agents that we want to know for any agent.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=3597s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/"
+    },
+    {
+      "session": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "text": "And then you have the token to ID, the tokenizations, and then the embedding lookup.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=7451s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/"
+    }
+  ],
+  "Workflow": [
+    {
+      "session": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "text": "And those processes, if we believe the people who put them in place think that those processes will generalize to good outcomes, then they can be comfortable that even though the people executing the processes are not deterministic, you will generally get to good outcomes if you follow the process.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=29542s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/"
+    },
+    {
+      "session": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "text": "Actually, doing code review, it's actually how do you set up systems and agents to do the code reviews, and how do you write evals to actually do the non-deterministic, to review those non-deterministic tasks.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5401s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/"
+    },
+    {
+      "session": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "text": "In eleven deterministic stages, it turns the graph into an execution DAG or it fails closed.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=17946s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/"
+    },
+    {
+      "session": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "text": "Apache Airflow, if you're familiar, is an example of open source software that represents workflows, their dependencies as DAGs in Python code.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=3375s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/"
+    },
+    {
+      "session": "2:012",
+      "day": 2,
+      "title": "Towards Autonomous Analysts in Finance",
+      "text": "If you look at the anatomy on a deal team, right, the type of tasks that matter for long-running type of workflows, for example, going from a data room into all the sorts of materials that make its way in front of an investment committee, it doesn't work for the single-player siloed workflows.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=7388s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/"
+    },
+    {
+      "session": "2:045",
+      "day": 2,
+      "title": "AI in Practice: An Inside Look at Apollo's Approach",
+      "text": "So we've been very forward and open-minded about adopting new technologies and bringing those into our workflows and how we can be more efficient and free up capacity for people to be more thoughtful and think and replace manual processes.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=28864s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/045-ai-in-practice-an-inside-look-at-apollo-s-approach-rowspace/"
+    }
+  ],
+  "Software and coding": [
+    {
+      "session": "1:010",
+      "day": 1,
+      "title": "Does Code Quality Even Matter?",
+      "text": "In fact, I believe the absolute amount of durable software in the world will increase because AI coding tools make it easier and easier to make more durable software.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=4914s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/010-does-code-quality-even-matter-understanding-execution/"
+    },
+    {
+      "session": "1:027",
+      "day": 1,
+      "title": "Become your company's SaaS layer — principles for building polished internal tools with agents (Railway)",
+      "text": "And for me, there's one missing piece that rarely gets mentioned, and it's the fact that there's a gap, a big gap, between working software that got one-shotted and software I would actually use, software that sparks joy, that is polished, that feels good.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=15342s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/027-extra-lunch-talk-become-your-company-s-saas-layer-principles/"
+    },
+    {
+      "session": "1:049",
+      "day": 1,
+      "title": "Hermes gives you wings: Build on open foundations.",
+      "text": "It used to be that software was difficult to produce and it took coordinated teams of engineers long hours to pilfer open source and take libraries and combine them together into proprietary pieces of software and then sell that software as SaaS.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=28610s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/049-hermes-gives-you-wings-build-agents-on-open-foundations-you/"
+    },
+    {
+      "session": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "text": "The left-hand side is a study that was done on code translation, and what it shows is that the agents were able to get it right 91% of the time when the codebase was 10,000 lines of code.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=2510s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/"
+    },
+    {
+      "session": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "text": "And we, our approach to this, and I'm sure a lot of other companies, and maybe even you guys have taken this approach as well, is there's parts of our codebase that we, like, still require, like, complete human oversight from when it comes to designing, building, code ownership, even improving any kind of changes to the codebase.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=20296s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/"
+    },
+    {
+      "session": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "text": "Many of you in the room are using these tools, and you've gone from autocomplete in coding to managing fleets of agents where you're really driving and accelerating a multiple effect of how you're doing coding.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=2006s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/"
+    }
+  ],
+  "Skills": [
+    {
+      "session": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "text": "With skills, we have very short descriptions which give the agent some guidance on like, hey, you can use that skill if the user wants to do a certain task or if you have to do certain tasks, and then the agent can read that skill.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=22810s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/"
+    },
+    {
+      "session": "2:026",
+      "day": 2,
+      "title": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR",
+      "text": "Compare each developer's heavy agent skill weeks with their own weeks without skills.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=17603s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/026-tokens-are-the-cheap-part-ai-spend-developer-throughput-and/"
+    },
+    {
+      "session": "2:041",
+      "day": 2,
+      "title": "Stop Wasting Tokens on Products People Can’t Use",
+      "text": "And I ran it twice, the first time without any accessibility skill and the second time by using the skill that I had written.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=26871s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/041-stop-wasting-tokens-on-products-people-can-t-use-cost-of-acc/"
+    },
+    {
+      "session": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "text": "Then we want to give it context for our actual business rules and processes via skills.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=2343s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/"
+    },
+    {
+      "session": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "text": "Here to explore why defining success may become the essential skill, please welcome Aparna Dhinakaran, co-founder and chief product officer at Arize AI.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=5222s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/"
+    },
+    {
+      "session": "1:022",
+      "day": 1,
+      "title": "We Let Our Financial Planners Write the Agents",
+      "text": "That combination is what a skill is, our firm's way of doing one specific piece of work written down so an agent can follow it.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=12604s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/022-extra-lunch-talk-financial-planners-building-their-own-agents/"
+    }
+  ],
+  "GPU": [
+    {
+      "session": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "text": "If you're using NVIDIA hardware, GPU isolation is achieved using multi-instance GPU, or MIG for short.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=14630s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/"
+    },
+    {
+      "session": "2:016",
+      "day": 2,
+      "title": "How Compute Markets Work",
+      "text": "So if you've heard of GPU brokers, we were the first GPU broker because we were forced into being a GPU broker.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=10367s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/"
+    },
+    {
+      "session": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "text": "The other interesting emerging thing is agents need a lot more cloud science, where pre-process some data on CPUs, or spin up GPUs for running pre-process some data on CPUs, or spin up GPUs for running a scientific model, it will offload that to a model sandbox.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=18855s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/"
+    },
+    {
+      "session": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "text": "If you just get GPUs and upload weights on a GPU and you start doing some inference, you're going to get terrible performance.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=22174s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/"
+    },
+    {
+      "session": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "text": "You use CPUs when you can use CPUs, and you use GPUs when you need GPUs.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=2924s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/"
+    },
+    {
+      "session": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "text": "Both estimates use B200 GPUs serving the same model with roughly 8,000 input tokens and 1,000 output tokens, a pretty standard ratio.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=8910s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/"
+    }
+  ],
+  "Compute": [
+    {
+      "session": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "text": "What's isolated are compute units, memory capacity, bandwidth quotas, and false errors.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=14659s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/"
+    },
+    {
+      "session": "2:016",
+      "day": 2,
+      "title": "How Compute Markets Work",
+      "text": "So this is a talk about compute markets, but it's kind of more of a talk about why to make a compute market.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=10199s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/"
+    },
+    {
+      "session": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "text": "So today we're going to be looking over some of the market structure as it applies to compute trading, what compute trading even is, what we can see it becoming.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=11732s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/"
+    },
+    {
+      "session": "2:020",
+      "day": 2,
+      "title": "CEO, Compute Exchange",
+      "text": "But at the same time, when you need compute in the next 48 hours on reserved contracts, the easiest way is go to an exchange and then go to the verified compute resources, just like go to Nasdaq, NYSE to buy stocks, right?",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=13312s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico/"
+    },
+    {
+      "session": "2:029",
+      "day": 2,
+      "title": "Agentifying a SEC Master",
+      "text": "But so many people are now investing in, like, data centers and, like, clusters of GPUs.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=18730s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/029-agentifying-a-sec-master-nori-agentic-podcast-format-aie-onl/"
+    },
+    {
+      "session": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "text": "Maybe your inference capacity in the day is serving your agents; at night, employees are not using them as much, and you can use that capacity for training instead.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=26675s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/"
+    }
+  ],
+  "Cost": [
+    {
+      "session": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "text": "Where in budget, there's continual feedback to the agent about how much budget was consumed, has an idea about how much budget it has, and so now it can operate within a budget, right, like a person would do about, Oh, this resource is scarce.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=11386s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/"
+    },
+    {
+      "session": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "text": "Today, price per token is a useful practical proxy, especially for comparable workloads and quality requirements, and gets us closer to delivered output, much closer than the often quoted, all you finance bros out here will have heard this, GPU dollar per hour price, or as we view it, a cost.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=8812s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/"
+    },
+    {
+      "session": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "text": "So there's an equilibrium that exists that has to be followed where, you know, the ownership costs outweigh the, you know, rental costs, and the rental costs— Should sit below the ownership cost.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=12451s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/"
+    },
+    {
+      "session": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "text": "In terms of cost, in terms of impact, self-hosting GLM, our blended cost of token is 30 cents per million, and so our invoice is one-tenth of what we were spending on.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=22149s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/"
+    },
+    {
+      "session": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "text": "Over the last year, the number of use cases that use LLMs has increased 123%, while at the same time, a lot of our top features are growing in token spend, but on a unit economic basis, they're actually becoming cheaper because there are frontier models that are being released all the time now, and these models are cheaper, faster, and better.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=1261s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/"
+    },
+    {
+      "session": "2:026",
+      "day": 2,
+      "title": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR",
+      "text": "We need to add the AI spend and the human spend, the human salary spend.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=17932s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/026-tokens-are-the-cheap-part-ai-spend-developer-throughput-and/"
+    }
+  ],
+  "Latency": [
+    {
+      "session": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "text": "So when we started back in April, you could see requests per second around three, which is high but not so high, and time to first token over 10 seconds, which is very slow.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=22205s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/"
+    },
+    {
+      "session": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "text": "And then the second one is Ramp Router, which also leans into improving the latency of your agent, where we have a bunch of routing strategies that we work with Ramp Labs to develop, things like Nvidia Switchyard, things like Smart Flex offloading of work to both improve latency and cost per tokens that you spend.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=1897s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/"
+    },
+    {
+      "session": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "text": "But the model I'm going to show you is something that beat XGBoost, even from a latency perspective, but also from a fraud detection.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=6693s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/"
+    },
+    {
+      "session": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "text": "There is a fundamental 881 hertz, which is just tokens per second plus harmonics, since each token is a mix of distinct frequencies, not one clean one.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=14767s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/"
+    },
+    {
+      "session": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "text": "We acquire running traditional wealth management firms, and we maximize their throughput and revenue with the help of AI.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=17480s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/"
+    },
+    {
+      "session": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "text": "You know, you're asking the same question on what to focus on, whether it be research capacity, decision speed, quality of your data, latency, reliability.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=23786s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/"
+    }
+  ],
+  "Training": [
+    {
+      "session": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "text": "At the end of the day, this is the data that the agent is being trained on at runtime, not literally trained on, but effectively trained on.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=30084s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/"
+    },
+    {
+      "session": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "text": "And then you have supervised fine-tuning, and then you do RLHF, LRVR, and all of the great post-training process to get better at the task that you want to, right?",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=7042s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/"
+    },
+    {
+      "session": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "text": "So going back to the example of auto research and an agent doing a lot of training, what happens when the training run fails?",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=19044s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/"
+    },
+    {
+      "session": "1:049",
+      "day": 1,
+      "title": "Hermes gives you wings: Build on open foundations.",
+      "text": "They also trained the models to not assist in the process of training other models, and they labeled that safety.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=28753s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/049-hermes-gives-you-wings-build-agents-on-open-foundations-you/"
+    },
+    {
+      "session": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "text": "So you're post-training this latent that then can be projected onto different models, and that really amortizes the cost that you have to spend on post-training.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=1975s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/"
+    },
+    {
+      "session": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "text": "We used reinforcement learning and post-training to teach models to work through problems more effectively, and we gave them more compute to think when answering.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=4843s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/"
+    }
+  ],
+  "Simulation": [
+    {
+      "session": "2:049",
+      "day": 2,
+      "title": "Everything will be Simulated",
+      "text": "This is done—this is a video model, an image model that we had back then that was creating pixels in 128 pixels by 128 pixels that we then forcefully upsample to this kind of resolution.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=30639s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/049-everything-will-be-simulated-runway-video-models-next-frame/"
+    },
+    {
+      "session": "1:046",
+      "day": 1,
+      "title": "Frontier Models for Acting in Space and Time",
+      "text": "We just bet on scaling pixel space the same way that anthropic scaled coding space, and betting that people will just, as we scale, data compute into pixel space, that people will bring more problems into pixel space.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=27368s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/046-frontier-models-for-acting-in-space-and-time-pixels-to-actio/"
+    },
+    {
+      "session": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "text": "In robotics, there's this concept when maybe a robot raises its arm, it thinks, is it safe for me to raise my arm?",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=11897s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/"
+    },
+    {
+      "session": "1:003",
+      "day": 1,
+      "title": "Vault: Making Unstructured Data Work for Investing",
+      "text": "And that structured data needed to be carefully built so that it could be safe for use in our research process and aligned to our internal ontology and world model so that we could get great leverage out of using the data that we had built.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=1015s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/003-vault-making-unstructured-data-work-for-investing-bridgewater/"
+    },
+    {
+      "session": "1:043",
+      "day": 1,
+      "title": "A Hedge Fund as a Function",
+      "text": "Every single thing that a human can see in pixels on the screen, an agent in your building should be able to see via API.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=26176s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/"
+    },
+    {
+      "session": "2:012",
+      "day": 2,
+      "title": "Towards Autonomous Analysts in Finance",
+      "text": "And it's the same method: loop agents against Office as a judge, using Rust renderers to make sure that the rendering of these products was pixel perfect.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=7627s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/"
+    }
+  ],
+  "Business value": [
+    {
+      "session": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "text": "We acquire running traditional wealth management firms, and we maximize their throughput and revenue with the help of AI.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=17480s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/"
+    },
+    {
+      "session": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "text": "Other studies earlier in the year have shown that about 66% are saying they're having a productivity increase, but only about 40 and 20% are actually seeing cost reductions and revenue growth.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=23466s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/"
+    },
+    {
+      "session": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "text": "But that's good enough to give a lot of ROI from a false positive reductions for downstream tasks like fraud detection and unit detection rate.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=7595s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/"
+    },
+    {
+      "session": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "text": "What you see is Gemini had 10% improvement in lead time, 20% improvement in coding time, so that people no longer needed to look Stack Overflow and reading documentation.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=21972s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/"
+    },
+    {
+      "session": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "text": "The rental bill is revenue to the provider and an input cost to the inference producer.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=9188s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/"
+    },
+    {
+      "session": "2:016",
+      "day": 2,
+      "title": "How Compute Markets Work",
+      "text": "So that means that you're going to have to buy a new cluster, a net new one, and there's a lead time.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=10455s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/"
+    }
+  ],
+  "Deployment": [
+    {
+      "session": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "text": "And as you can see and imagine, you can have forward deployed engineers, you can have forward deployed product managers, but you could also have the inverse, which is forward deployed portfolio managers.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=24078s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/"
+    },
+    {
+      "session": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "text": "So a thing that summarizes Jira or linear tickets is really different than a production deployment agent that can touch a running system.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=3652s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/"
+    },
+    {
+      "session": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "text": "You can ship it, and then once it goes into production, the goal is to actually trace everything.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=6017s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/"
+    },
+    {
+      "session": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "text": "I know when it comes to building, deploying, and operating agents in production, there's many different outcomes teams should be thinking about, such as discovering what's running, what the agent's capabilities are, the ability to validate inputs and outputs, constraining an agent like we've talked about using the egress proxy and different networking rules.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=11679s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/"
+    },
+    {
+      "session": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "text": "Finally, working pipelines get deployed to production, where they can slowly mature.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=17320s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/"
+    },
+    {
+      "session": "2:020",
+      "day": 2,
+      "title": "CEO, Compute Exchange",
+      "text": "Basically, you can think about as a dedicated deployment, on-premise deployment, right?",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=13539s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico/"
+    }
+  ],
+  "Privacy": [
+    {
+      "session": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "text": "So when one tenant is busy, the other tenants' own reads get slightly slower.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=14685s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/"
+    },
+    {
+      "session": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "text": "It tries to query the customer warehouse, but policy doesn't allow a credential to be issued for this because customer PII doesn't belong in an agent's context or in an incident ticket.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=14202s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/"
+    },
+    {
+      "session": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "text": "That is the path that sensitive data demands, and compliance risk goes down as an engineering roadmap, release by release.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=18315s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/"
+    },
+    {
+      "session": "1:030",
+      "day": 1,
+      "title": "Extra lunch talk: Flywire's internal AI platform — structured workflow automation (Orbit on the Victoria PaaS)",
+      "text": "Because we process high-value international transactions, regulatory compliance, privacy, and security are not optional add-ons.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=18432s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/030-extra-lunch-talk-flywire-s-internal-ai-platform-structured-wo/"
+    },
+    {
+      "session": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "text": "And the scary thing about agents is they can mess up, and they don't really know when they might leak your sensitive data to a German forum or something.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=18956s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/"
+    },
+    {
+      "session": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "text": "We're going to cover identity and trust, prompt and input defense, to an action governance, execution isolation, data protection, and governance observability.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=5553s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/"
+    }
+  ],
+  "Inference": [
+    {
+      "session": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "text": "We've built our own file systems, the scheduling, and the runtime to give you really great performance and DevEx for use cases like inference, including LLM inference, sandboxes, training, and functions, running a lot of batch processing and whatnot.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=18746s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/"
+    },
+    {
+      "session": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "text": "The second big thing that we are actually exploring up to this day is KV cache tricks, and particularly cartridges are a really interesting family of techniques where you're able to compress a lot of context, up to 20 to 30 times more context, into the KV cache offline and serve it for your agent.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=1576s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/"
+    },
+    {
+      "session": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "text": "For inference clouds, that's going to be more applications serving more tokens, bigger market share.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=12008s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/"
+    },
+    {
+      "session": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "text": "Maybe your inference capacity in the day is serving your agents; at night, employees are not using them as much, and you can use that capacity for training instead.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=26675s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/"
+    },
+    {
+      "session": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "text": "And that gives you an example of embedding dimensions, number of decoder blocks we use, and all of the recipe from an architecture perspective.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=7554s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/"
+    },
+    {
+      "session": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "text": "In our example, the LLM we're serving runs on a slice with three compute units and 40 gigabytes of VRAM.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=14647s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/"
+    }
+  ],
+  "Finance": [
+    {
+      "session": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "text": "We have information in investment banking, consumer banking, and all of these data is data that we have in Wells Fargo and all big financial organizations have too.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=6685s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/"
+    },
+    {
+      "session": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "text": "ChatGPT for financial services is a tailored version of ChatGPT work built specifically for financial professionals, starting with investment banking and equity research.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=4285s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/"
+    },
+    {
+      "session": "2:045",
+      "day": 2,
+      "title": "AI in Practice: An Inside Look at Apollo's Approach",
+      "text": "I think in finance broadly, especially in, call it the asset management, investment banking, the bank institutional world, I still think it's very early.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=28962s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/045-ai-in-practice-an-inside-look-at-apollo-s-approach-rowspace/"
+    },
+    {
+      "session": "1:018",
+      "day": 1,
+      "title": "Inside Arca’s long-horizon agents that run the business",
+      "text": "We provide our clients with financial services like financial planning, tax planning, asset management, investment advice, and we serve a range of clients.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=8439s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/018-inside-arca-s-long-horizon-agents-that-run-the-business/"
+    },
+    {
+      "session": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "text": "Hey everyone, my name is Afan, and I'm a lead for compute trading at Jump Trading, which is a proprietary trading firm, alongside my co-lead over here, Alejandro.",
+      "source": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=11722s",
+      "notes": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/"
+    },
+    {
+      "session": "1:003",
+      "day": 1,
+      "title": "Vault: Making Unstructured Data Work for Investing",
+      "text": "And the way that we're solving that problem is in an experience we're calling the investor workbench, where the Agent is always on, tracking what's important to that investor and presenting them with the areas that are most in need of their attention.",
+      "source": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=1741s",
+      "notes": "https://aie-nyc-2026.vercel.app/sessions/003-vault-making-unstructured-data-work-for-investing-bridgewater/"
+    }
+  ]
+}

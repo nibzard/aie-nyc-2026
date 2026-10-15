@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Your company has no model of itself</title>
+  <desc id="desc">A central circular loop with five stations in order: update, age, observe, grade, correct — the company world model run as a state estimator. Two input streams converge on the loop: top-down decks, strategy docs, and status reports, tidy but opinion-infused; and bottom-up exhaust — Slack, code changes, meeting notes, agent traces — noisy but close to the truth. The model is where they meet. An inset shows a decay curve with a fresh-evidence reset, illustrating that every fact has a half-life. Stat chips: on average half of delivery dates change within two months, and 90 percent of those changes slip later than first proposed. A watermelon chip notes top-down decks are green on the outside and red on the inside.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+  </defs>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+    <rect x="1" y="1" width="958" height="718" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+    <text x="40" y="56" font-size="11" letter-spacing="0.08em" fill="#52514e">CONCEPT — WORLD MODELS</text>
+    <text x="40" y="82" font-size="20" font-weight="600" fill="#0b0b0b">Your company has no model of itself</text>
+    <text x="40" y="104" font-size="13" fill="#52514e">Engineering an institutional memory layer — a state estimator fed from above and below.</text>
+
+    <!-- Top-down stream -->
+    <rect x="40" y="128" width="260" height="96" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <rect x="56" y="140" width="4" height="14" rx="1" fill="#2a78d6"/>
+    <text x="68" y="151" font-size="11.5" font-weight="600" letter-spacing="0.06em" fill="#0b0b0b">TOP-DOWN</text>
+    <text x="56" y="176" font-size="12" fill="#52514e">Decks, strategy docs,</text>
+    <text x="56" y="194" font-size="12" fill="#52514e">status reports — tidy,</text>
+    <text x="56" y="212" font-size="12" fill="#52514e">but opinion-infused.</text>
+
+    <!-- Bottom-up stream -->
+    <rect x="40" y="376" width="260" height="96" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <rect x="56" y="388" width="4" height="14" rx="1" fill="#eb6834"/>
+    <text x="68" y="399" font-size="11.5" font-weight="600" letter-spacing="0.06em" fill="#0b0b0b">BOTTOM-UP EXHAUST</text>
+    <text x="56" y="424" font-size="12" fill="#52514e">Slack, code changes, meeting</text>
+    <text x="56" y="442" font-size="12" fill="#52514e">notes, agent traces — noisy,</text>
+    <text x="56" y="460" font-size="12" fill="#52514e">close to the truth.</text>
+
+    <!-- Stream arrows -->
+    <path d="M 304 176 C 370 176, 430 215, 484 254" fill="none" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+    <path d="M 304 424 C 370 424, 440 412, 526 399" fill="none" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <!-- Meet caption -->
+    <text x="415" y="306" font-size="12" font-style="italic" fill="#52514e" text-anchor="middle">The model is where</text>
+    <text x="415" y="322" font-size="12" font-style="italic" fill="#52514e" text-anchor="middle">they meet.</text>
+
+    <!-- Loop ring and flow arcs -->
+    <circle cx="650" cy="300" r="120" fill="none" stroke="#e1e0d9" stroke-width="1"/>
+    <path d="M 693.0 188.0 A 120 120 0 0 1 743.3 224.5" fill="none" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+    <path d="M 769.8 306.3 A 120 120 0 0 1 750.7 365.3" fill="none" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+    <path d="M 681.0 415.9 A 120 120 0 0 1 619.0 415.9" fill="none" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+    <path d="M 549.3 365.3 A 120 120 0 0 1 530.2 306.3" fill="none" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+    <path d="M 556.7 224.5 A 120 120 0 0 1 607.0 188.0" fill="none" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <!-- Loop stations -->
+    <rect x="605" y="167" width="90" height="26" rx="13" fill="#fcfcfb" stroke="#1baf7a" stroke-width="1.5"/>
+    <text x="650" y="184" font-size="11.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">1 · update</text>
+    <rect x="719.1" y="249.9" width="90" height="26" rx="13" fill="#fcfcfb" stroke="#1baf7a" stroke-width="1.5"/>
+    <text x="764.1" y="266.9" font-size="11.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">2 · age</text>
+    <rect x="675.6" y="384.1" width="90" height="26" rx="13" fill="#fcfcfb" stroke="#1baf7a" stroke-width="1.5"/>
+    <text x="720.6" y="401.1" font-size="11.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">3 · observe</text>
+    <rect x="534.4" y="384.1" width="90" height="26" rx="13" fill="#fcfcfb" stroke="#1baf7a" stroke-width="1.5"/>
+    <text x="579.4" y="401.1" font-size="11.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">4 · grade</text>
+    <rect x="490.9" y="249.9" width="90" height="26" rx="13" fill="#fcfcfb" stroke="#1baf7a" stroke-width="1.5"/>
+    <text x="535.9" y="266.9" font-size="11.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">5 · correct</text>
+    <text x="650" y="296" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">world model</text>
+    <text x="650" y="314" font-size="11.5" fill="#52514e" text-anchor="middle">a state estimator</text>
+
+    <!-- Inset: half-life decay -->
+    <rect x="40" y="496" width="260" height="148" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="56" y="518" font-size="11" letter-spacing="0.08em" fill="#52514e">EVERY FACT HAS A HALF-LIFE</text>
+    <text x="56" y="542" font-size="11" fill="#52514e">belief trust</text>
+    <line x1="56" y1="626" x2="284" y2="626" stroke="#e1e0d9" stroke-width="1"/>
+    <path d="M 60 550 C 95 550, 110 598, 150 612 C 153 584, 155 554, 158 552 C 190 552, 205 600, 240 616 S 270 624, 284 626" fill="none" stroke="#52514e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="60" cy="550" r="3.5" fill="#52514e"/>
+    <circle cx="158" cy="552" r="3.5" fill="#52514e"/>
+    <text x="170" y="545" font-size="11" fill="#52514e">fresh evidence</text>
+    <text x="284" y="638" font-size="11" fill="#52514e" text-anchor="end">time →</text>
+
+    <!-- Stat chips -->
+    <rect x="324" y="496" width="596" height="44" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="340" y="513" font-size="11" letter-spacing="0.06em" fill="#52514e">DELIVERY DATES · THREE YEARS OF RECORDS</text>
+    <text x="340" y="530" font-size="12.5" fill="#0b0b0b">On average, half change within two months.</text>
+    <rect x="324" y="546" width="596" height="44" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="340" y="563" font-size="11" letter-spacing="0.06em" fill="#52514e">WHEN THEY CHANGE</text>
+    <text x="340" y="580" font-size="12.5" fill="#0b0b0b">90% of the changes slip later than first proposed.</text>
+    <rect x="324" y="596" width="596" height="44" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="340" y="613" font-size="11" letter-spacing="0.06em" fill="#52514e">WATERMELON PROJECTS · TOP-DOWN DECKS</text>
+    <text x="340" y="630" font-size="12.5" fill="#0b0b0b">Green on the outside, red on the inside.</text>
+    <circle cx="884" cy="618" r="8" fill="#0ca30c"/>
+    <circle cx="884" cy="618" r="4.5" fill="#d03b3b"/>
+
+    <text x="40" y="664" font-size="11" fill="#52514e">Source: Joao Wenzel (Citadel Securities), "Your Company Has No Model of Itself: Bootstrapping a World</text>
+    <text x="40" y="680" font-size="11" fill="#52514e">Model from Slack, Decks and Meetings", AI Engineer NYC 2026, day 2.</text>
+  </g>
+</svg>

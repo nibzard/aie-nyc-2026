@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Two readers of the corpus</title>
+  <desc id="desc">Split-panel comparison of the two reader classes of Bridgewater's Vault corpus. Human readers: about 300 words per minute, about 100 queries an hour from 300 users, needing precision and a high signal-to-noise ratio. Agent readers: about 30,000 words per minute, 100-plus queries a second, swarms into the thousands, less sensitive to precision. A central callout reads about 100x faster reading. A footer chip notes that a benchmark of about 200 hand-labeled examples, built in under a week, took precision at 10 from about 60 percent to 90 to 95 percent.</desc>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+    <rect x="1" y="1" width="958" height="538" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+    <text x="40" y="62" font-size="11" letter-spacing="0.08em" fill="#52514e">CONCEPT — KNOWLEDGE</text>
+    <text x="40" y="89" font-size="20" font-weight="600" fill="#0b0b0b">Two readers of the corpus</text>
+    <text x="40" y="111" font-size="13" fill="#52514e">Humans and agents have very different needs from a data platform.</text>
+
+    <!-- Left panel: human readers -->
+    <rect x="40" y="134" width="356" height="258" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <circle cx="64" cy="158" r="5" fill="#2a78d6"/>
+    <text x="78" y="162" font-size="12" font-weight="600" letter-spacing="0.06em" fill="#0b0b0b">HUMAN READERS</text>
+    <line x1="64" y1="180" x2="372" y2="180" stroke="#e1e0d9" stroke-width="1"/>
+    <rect x="64" y="206" width="4" height="16" rx="1" fill="#2a78d6"/>
+    <text x="76" y="218" font-size="15" font-weight="600" fill="#0b0b0b">~300 words / minute</text>
+    <text x="76" y="236" font-size="12" fill="#52514e">even a fast reader</text>
+    <rect x="64" y="260" width="4" height="16" rx="1" fill="#2a78d6"/>
+    <text x="76" y="272" font-size="15" font-weight="600" fill="#0b0b0b">~100 queries / hour</text>
+    <text x="76" y="290" font-size="12" fill="#52514e">from 300 users</text>
+    <rect x="64" y="314" width="4" height="16" rx="1" fill="#2a78d6"/>
+    <text x="76" y="326" font-size="15" font-weight="600" fill="#0b0b0b">needs precision</text>
+    <text x="76" y="344" font-size="12" fill="#52514e">and a high signal-to-noise ratio</text>
+
+    <!-- Right panel: agent readers -->
+    <rect x="564" y="134" width="356" height="258" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <circle cx="588" cy="158" r="5" fill="#eb6834"/>
+    <text x="602" y="162" font-size="12" font-weight="600" letter-spacing="0.06em" fill="#0b0b0b">AGENT READERS</text>
+    <line x1="588" y1="180" x2="896" y2="180" stroke="#e1e0d9" stroke-width="1"/>
+    <rect x="588" y="206" width="4" height="16" rx="1" fill="#eb6834"/>
+    <text x="600" y="218" font-size="15" font-weight="600" fill="#0b0b0b">~30,000 words / minute</text>
+    <text x="600" y="236" font-size="12" fill="#52514e">reads documents in seconds</text>
+    <rect x="588" y="260" width="4" height="16" rx="1" fill="#eb6834"/>
+    <text x="600" y="272" font-size="15" font-weight="600" fill="#0b0b0b">100+ queries / second</text>
+    <text x="600" y="290" font-size="12" fill="#52514e">swarms into the thousands</text>
+    <rect x="588" y="314" width="4" height="16" rx="1" fill="#eb6834"/>
+    <text x="600" y="326" font-size="15" font-weight="600" fill="#0b0b0b">less sensitive to precision</text>
+    <text x="600" y="344" font-size="12" fill="#52514e">"If the data is there, they'll find it."</text>
+
+    <!-- Center callout -->
+    <circle cx="480" cy="263" r="52" fill="#ffffff" stroke="#52514e" stroke-width="2"/>
+    <text x="480" y="252" font-size="11" fill="#52514e" text-anchor="middle">about</text>
+    <text x="480" y="282" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle">100x</text>
+    <text x="480" y="341" font-size="11" fill="#52514e" text-anchor="middle">faster reading</text>
+
+    <!-- Footer stat chip -->
+    <rect x="40" y="408" width="880" height="56" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="64" y="430" font-size="11" letter-spacing="0.08em" fill="#52514e">PRECISION BENCHMARK</text>
+    <text x="64" y="450" font-size="12.5" fill="#0b0b0b">About 200 hand-labeled examples, built in under a week, took precision at 10 from ~60% to 90–95%.</text>
+
+    <text x="40" y="500" font-size="11" fill="#52514e">Source: Sam Green and Aaron Linsky (Bridgewater), "Vault: Making Unstructured Data Work for Investing", AI Engineer NYC 2026, day 1.</text>
+  </g>
+</svg>

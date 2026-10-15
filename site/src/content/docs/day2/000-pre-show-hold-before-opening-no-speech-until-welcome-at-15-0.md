@@ -1,9 +1,9 @@
 ---
 title: Pre-show hold before opening (no speech until welcome at 15:01; hold
   audio likely, on-screen text unverifiable)
-description: The day-three stream went live at 8:40:36 AM ET and carried roughly
-  15 minutes of non-speech hold audio before the first spoken words, "Good
-  morning and welcome back," at 00:15:01.
+description: Day 2 · Oct 14. The day-three stream went live at 8:40:36 AM ET and
+  carried roughly 15 minutes of non-speech hold audio before the first spoken
+  words, "Good morning and welcome back," at 00:15:01.
 sidebar:
   order: 0
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 The day-three stream went live at 8:40:36 AM ET and carried roughly 15 minutes of non-speech hold audio before the first spoken words, "Good morning and welcome back," at 00:15:01.
 
@@ -31,7 +33,7 @@ The day-three stream went live at 8:40:36 AM ET and carried roughly 15 minutes o
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=0&rel=0" title="Pre-show hold before opening (no speech until welcome at 15:01; hold audio likely, on-screen text unverifiable)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">8:40:36 AM ET-8:55:37 AM ET &middot; dead air &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=0s" rel="noopener">Watch on YouTube from 00:00:00</a></p>
+<p class="session-meta">8:40:36 AM ET–8:55:37 AM ET &middot; dead air &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=0s" rel="noopener">Watch on YouTube from 00:00:00</a></p>
 
 ## Notable quotes
 

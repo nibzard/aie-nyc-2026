@@ -2,7 +2,7 @@
 session_id: "027"
 title: "Become your company's SaaS layer — principles for building polished internal tools with agents (Railway)"
 agenda_title: null
-speakers: ["Unnamed Railway engineer"]
+speakers: ["Mahmoud Abdelwahab"]
 start_wall: "1:03:22 PM ET"
 end_wall: "1:16:40 PM ET"
 video_start: "04:15:30"
@@ -16,7 +16,7 @@ confidence: "high"
 
 # Become your company's SaaS layer — principles for building polished internal tools with agents (Railway)
 
-> A Railway engineer who replaced his company's marketing SaaS with one agent-built internal tool explains the product-polish patterns agents never add on their own, packaging opinions as agent skills, and the end-to-end verification loop that closes the gap between one-shot software and tools people actually love.
+> Mahmoud Abdelwahab of Railway replaced his company's marketing SaaS with one agent-built internal tool. He explains the product-polish patterns agents never add on their own, packaging opinions as agent skills, and the end-to-end verification loop that closes the gap between one-shot software and tools people actually love.
 
 ## TL;DR
 - "SaaS is dead" misses one point: there is a big gap between software an agent one-shots and polished software you use every day.
@@ -28,7 +28,7 @@ confidence: "high"
 ## Key lessons
 1. The gap is polish, not capability. Working one-shot software differs from daily-use software in dozens of small flows. You notice this only when you try to replicate an experience you love as a user.
 2. Tech stacks matter less than a structured codebase. With solid abstractions, the agent follows existing patterns instead of reinventing them, so new features come out consistent with the old ones. His go-to choices: TanStack libraries for the web, and Payload for anything content-related ("solid experience, great abstraction").
-3. Ask explicitly for auto-save. Make it a non-blocking background save while typing, and prevent the browser tab from closing on unsaved changes. Real-time collaboration is the next step up — his agent added it, "700 million tokens later".
+3. Ask explicitly for auto-save. Make it a non-blocking background save while typing, and prevent the browser tab from closing on unsaved changes. Real-time collaboration is the next step up — his agent added it, followed by the aside "700 million tokens later". Treat that line as an aside, not a measured cost.
 4. Prefer optimistic updates, undo, and archiving over spinners, confirm dialogs, and deletes. Show the success state immediately and sync in the background; roll back on failure. For deletes, remove the item at once but allow a few seconds to undo. Offer archive/unarchive so users never delete just to hide something. Do not apply optimistic updates blindly — some operations still need a spinner.
 5. Persist state in the URL. Filters and sort conditions held in the URL make any view trivially shareable with a teammate. Add infinite scroll so users never click "load more" or "next page".
 6. Use existing pages as references. Tell the agent to match an existing page's UI, data fetching, and structure. Success rate is higher and the app stays internally consistent — though sometimes the model ignores the reference ("I don't know if models, like, get dumber sometimes").
@@ -42,16 +42,16 @@ confidence: "high"
 - "And I hope that you too can become your company's SaaS layer." [04:28:45 | 1:16:36 PM]
 
 ## Session narrative
-This was a pre-recorded extra lunch talk played on the main-stage livestream during the lunch block, between the GPU side-channel security talk and the Southbridge "just-in-time ontologies" talk. The speaker, an engineer at Railway whose name is never stated on stream, opens by taking on the "SaaS is dead" meme: it is not even a hot take anymore, but everyone skips one missing piece — the big gap between working software that got one-shotted and software that is polished enough to use every day.
+This was a pre-recorded extra lunch talk played on the main-stage livestream during the lunch block, between the GPU side-channel security talk and the Southbridge "just-in-time ontologies" talk. Mahmoud Abdelwahab, identified in the official talk library as the Railway speaker, opens by taking on the "SaaS is dead" meme: it is not even a hot take anymore, but everyone skips one missing piece — the big gap between working software that got one-shotted and software that is polished enough to use every day.
 
 He then shows what that looks like in practice. He replaced a set of SaaS providers Railway used for marketing with a single all-in-one internal tool: content management for the website, changelog, and blog; email sending; simultaneous posting to all social platforms; media management; a mini CRM for external creators; task tracking; launch planning; a calendar; comments; and real-time editing — all built with agents and running on Railway, with everything auto-deploying. He dates his breakthrough to the release of GPT-6. In a light interlude he notes he recorded the talk not from his office but from a bench in Edinburgh, Scotland — "definitely a 10 out of 10 bench" — and adds a disclaimer that the landscape changes fast and the recording is from October 2026.
 
-The core of the talk is his list of principles. First, tech stacks do not matter much as long as the codebase is properly structured with solid abstractions, because the agent then follows existing patterns instead of inventing new ones; his defaults are TanStack for the web and Payload for content, after deliberately comparing CMSs rather than building one from scratch. Second, a set of UX patterns agents never implement unless explicitly asked: auto-save (non-blocking, with tab-close protection and eventually real-time collaboration, which cost roughly 700 million tokens), optimistic updates with rollback, undo-able delayed deletes, archive/unarchive, URL-persisted state for shareable views, and infinite scroll. He extends this with the practice of pointing the agent at existing pages as references, which lets him define what good looks like once and reuse it, while admitting models sometimes ignore the reference.
+The core of the talk is his list of principles. First, tech stacks do not matter much as long as the codebase is properly structured with solid abstractions, because the agent then follows existing patterns instead of inventing new ones; his defaults are TanStack for the web and Payload for content, after deliberately comparing CMSs rather than building one from scratch. Second, a set of UX patterns agents never implement unless explicitly asked: auto-save (non-blocking, with tab-close protection and eventually real-time collaboration, accompanied by his “700 million tokens” aside rather than a measured cost report), optimistic updates with rollback, undo-able delayed deletes, archive/unarchive, URL-persisted state for shareable views, and infinite scroll. He extends this with the practice of pointing the agent at existing pages as references, which lets him define what good looks like once and reuse it, while admitting models sometimes ignore the reference.
 
 He closes with two organizational principles: package opinions as agent skills — he used two design-engineering skills plus the Railway agent skills that let the agent deploy buckets, databases, the app, and the real-time server — and above all, verification. Agents report "build passed, test passed" while the experience stays broken, so he now ends every request by telling the agent to verify the feature end to end by actually running the infrastructure, something computer use finally made reliable. His sign-off lands the theme: with these pieces you get internal tools that are quick to build, consistent, and polished — and you, too, can become your company's SaaS layer.
 
 ## Speaker details
-**Name not stated** (identified from session) - Engineer, Railway. He builds Railway's internal marketing tooling and replaced the company's marketing SaaS providers with a single agent-built tool. He recorded this talk outdoors on a bench in Edinburgh, Scotland in fall 2026 (October). No speaker record exists in the index and no name is spoken in the transcript or announcements around it; the talk is a pre-recording, so no on-stage introduction occurred.
+**Mahmoud Abdelwahab** — Railway. The [official reading edition](https://aie-nyc-2026-talks.swyxio.workers.dev/talks/mahmoud-abdelwahab-saas-replacements) identifies the speaker. The livestream excerpt does not include his name in the spoken introduction.
 
 ## Full timestamped transcript
 ```

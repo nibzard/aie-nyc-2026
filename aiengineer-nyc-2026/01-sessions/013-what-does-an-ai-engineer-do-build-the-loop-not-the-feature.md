@@ -36,6 +36,16 @@ confidence: "high"
 7. Evaluate the evaluators. Before shipping a new evaluator, Arize builds golden truth datasets, runs evals, verifies them against human output, and only ships once the judge agrees with the human. The same evals run offline (pre-ship testing) and online (on production telemetry).
 8. Trace the factory, not just the product. Tracing everything now means tracing the coding agents behind the agents — Claude Code, Cursor, Codex — so you can understand what happened in your factory of agents, then feed that telemetry back to the agents that surface problems.
 
+## Figures
+
+![Two panels: a linear feature pipeline that ends, and an always-on agent loop.](../../figures/build-the-loop-not-the-feature.svg)
+
+The always-on loop versus the linear feature pipeline.
+
+![A four-band funnel from 6 billion LLM users to about 5,000 frontier users.](../../figures/adoption-funnel.svg)
+
+The usage pyramid the talk opened with, from touched to frontier.
+
 ## Notable quotes
 - "As an AI engineer, your job is no longer to just write the feature, write an AI feature." — Aparna Dhinakaran [01:29:49 | 10:17:40 AM]
 - "It's about how do you build the loop to write that feature." — Aparna Dhinakaran [01:29:53 | 10:17:44 AM]

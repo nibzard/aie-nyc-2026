@@ -1,9 +1,9 @@
 ---
 title: Inside Arca’s long-horizon agents that run the business
-description: Arca, an "AI native" wealth-management services firm, gives agents
-  four primitives (signals, operational context, a harness with persistent
-  memory, and human collaboration) so they own 10-day client goals end to end —
-  and the firm steers the business by steering its agents.
+description: Day 1 · Oct 13. Arca, an "AI native" wealth-management services
+  firm, gives agents four primitives (signals, operational context, a harness
+  with persistent memory, and human collaboration) so they own 10-day client
+  goals end to end — and the firm steers the business by steering its agents.
 sidebar:
   order: 18
   hidden: false
@@ -12,7 +12,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Arca, an "AI native" wealth-management services firm, gives agents four primitives (signals, operational context, a harness with persistent memory, and human collaboration) so they own 10-day client goals end to end — and the firm steers the business by steering its agents.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/aman-singh-arca-agents">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Arca is an "AI native services firm" (financial planning, tax planning, asset management, investment advice) where "agents run the business," not copilots in a corner: "they execute the decisions that shape the outcomes."
@@ -38,7 +42,7 @@ Arca, an "AI native" wealth-management services firm, gives agents four primitiv
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=8394&rel=0" title="Inside Arca’s long-horizon agents that run the business" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Aman Singh &middot; 11:07:46 AM ET-11:21:13 AM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=8394s" rel="noopener">Watch on YouTube from 02:19:54</a></p>
+<p class="session-meta">Aman Singh &middot; 11:07:46 AM ET–11:21:13 AM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=8394s" rel="noopener">Watch on YouTube from 02:19:54</a></p>
 
 ## Notable quotes
 - "But what we mean by AI native is that agents run our business." — [02:21:14 | 11:09:05 AM]

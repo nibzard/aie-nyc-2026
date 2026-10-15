@@ -1,10 +1,10 @@
 ---
 title: "Hold after Modal talk ends early: no speech or OCR for 10.5 minutes
   before the Vals AI session"
-description: After the Modal talk closed at 2:11:19 PM, about 12 minutes ahead
-  of its 2:23 PM agenda slot, the livestream held for 10.5 minutes with no
-  speech and no readable on-screen text until Rayan Krishnan opened the Vals AI
-  session at 2:21:49 PM.
+description: Day 1 · Oct 13. After the Modal talk closed at 2:11:19 PM, about 12
+  minutes ahead of its 2:23 PM agenda slot, the livestream held for 10.5 minutes
+  with no speech and no readable on-screen text until Rayan Krishnan opened the
+  Vals AI session at 2:21:49 PM.
 sidebar:
   order: 32
   hidden: true
@@ -12,6 +12,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 After the Modal talk closed at 2:11:19 PM, about 12 minutes ahead of its 2:23 PM agenda slot, the livestream held for 10.5 minutes with no speech and no readable on-screen text until Rayan Krishnan opened the Vals AI session at 2:21:49 PM.
 
@@ -31,7 +33,7 @@ None - this segment is a 10.5-minute hold with no speech.
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=19408&rel=0" title="Hold after Modal talk ends early: no speech or OCR for 10.5 minutes before the Vals AI session" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">2:11:20 PM ET-2:21:50 PM ET &middot; dead air &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=19408s" rel="noopener">Watch on YouTube from 05:23:28</a></p>
+<p class="session-meta">2:11:20 PM ET–2:21:50 PM ET &middot; dead air &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=19408s" rel="noopener">Watch on YouTube from 05:23:28</a></p>
 
 ## Session narrative
 The Modal talk ran short against its agenda slot. The agenda scheduled it from 2:05 PM to 2:23 PM, but the last word captured is "Thank you" at [05:23:27 | 2:11:19 PM]. The room then went into a changeover hold.

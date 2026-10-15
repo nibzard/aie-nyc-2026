@@ -35,6 +35,12 @@ confidence: "high"
 6. Amortize post-training with transfer. The Ramp Labs "Portal" technique moves learnings from one post-train to another: train a LoRA latent on one model, then project it onto newer Qwen versions or across model families. This cuts the cost of repeating post-training work.
 7. Route research into products. The same themes — saving time (latency) and money (token cost), which is Ramp's slogan — show up in two shipped products: token spend management (API-key, user, accounting-category, and tax-credit views plus a semantic taxonomy of LLM usage) and Ramp Router (routing strategies such as "Nvidia Switchyard" and Smart Flex offloading, as transcribed).
 
+## Figures
+
+![Three panels of right-sizing economics.](../../figures/small-model-wins.svg)
+
+Right-sizing economics: the 35B specialist panel is from this talk.
+
 ## Notable quotes
 > "And to caveat my presentation on Ramp Labs, Ramp is an extremely bitter lesson-built company." [00:20:55 | 9:01:30 AM]
 

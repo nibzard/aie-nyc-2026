@@ -1,8 +1,8 @@
 ---
 title: Stage voiceover intro for Cristóbal Valenzuela (Runway)
-description: A 19-second unnamed stage voiceover bridges the Basis keynote and
-  the Runway keynote, framing "Everything will be Simulated" around world models
-  before welcoming Cristóbal Valenzuela to the stage.
+description: Day 2 · Oct 14. A 19-second unnamed stage voiceover bridges the
+  Basis keynote and the Runway keynote, framing "Everything will be Simulated"
+  around world models before welcoming Cristóbal Valenzuela to the stage.
 sidebar:
   order: 48
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 19-second unnamed stage voiceover bridges the Basis keynote and the Runway keynote, framing "Everything will be Simulated" around world models before welcoming Cristóbal Valenzuela to the stage.
 
@@ -29,7 +31,7 @@ A 19-second unnamed stage voiceover bridges the Basis keynote and the Runway key
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=30548&rel=0" title="Stage voiceover intro for Cristóbal Valenzuela (Runway)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">5:09:44 PM ET-5:10:03 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=30548s" rel="noopener">Watch on YouTube from 08:29:08</a></p>
+<p class="session-meta">5:09:44 PM ET–5:10:03 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=30548s" rel="noopener">Watch on YouTube from 08:29:08</a></p>
 
 ## Notable quotes
 > "What if AI could do more than generate content and actually simulate the physical world?" [08:29:08 | 5:09:44 PM]

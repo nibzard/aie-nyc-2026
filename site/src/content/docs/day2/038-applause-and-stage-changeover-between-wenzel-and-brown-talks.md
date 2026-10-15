@@ -1,8 +1,8 @@
 ---
 title: Applause and stage changeover between Wenzel and Brown talks
-description: A roughly 105-second applause and stage changeover gap on the
-  Simons Room stage, with no transcribed speech between the end of João Wenzel's
-  talk and the start of Will Brown's.
+description: Day 2 · Oct 14. A roughly 105-second applause and stage changeover
+  gap on the Simons Room stage, with no transcribed speech between the end of
+  João Wenzel's talk and the start of Will Brown's.
 sidebar:
   order: 38
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A roughly 105-second applause and stage changeover gap on the Simons Room stage, with no transcribed speech between the end of João Wenzel's talk and the start of Will Brown's.
 
@@ -29,7 +31,7 @@ None - this segment is a 105-second applause changeover.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=25052&rel=0" title="Applause and stage changeover between Wenzel and Brown talks" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">3:38:08 PM ET-3:39:53 PM ET &middot; filler &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=25052s" rel="noopener">Watch on YouTube from 06:57:32</a></p>
+<p class="session-meta">3:38:08 PM ET–3:39:53 PM ET &middot; filler &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=25052s" rel="noopener">Watch on YouTube from 06:57:32</a></p>
 
 ## Session narrative
 This filler segment covers the stage turnaround between two adjacent Simons Room talks on the main stage livestream. The previous talk, "Your Company Has No Model of Itself" by João Wenzel of Citadel Securities, closed at 3:38:08 PM ET with "Cheers." and his offer to take questions outside. No host introduction or voiceover was captured for the next speaker.

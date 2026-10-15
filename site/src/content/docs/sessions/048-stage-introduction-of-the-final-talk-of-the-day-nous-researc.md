@@ -1,8 +1,8 @@
 ---
 title: Stage introduction of the final talk of the day (Nous Research CEO)
-description: MC Alex Lieberman uses one sentence to open the last talk of day
-  one, welcoming Nous Research CEO Dillon Rolnick to the stage for the "Hermes
-  gives you wings" closing keynote.
+description: Day 1 · Oct 13. MC Alex Lieberman uses one sentence to open the
+  last talk of day one, welcoming Nous Research CEO Dillon Rolnick to the stage
+  for the "Hermes gives you wings" closing keynote.
 sidebar:
   order: 48
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 MC Alex Lieberman uses one sentence to open the last talk of day one, welcoming Nous Research CEO Dillon Rolnick to the stage for the "Hermes gives you wings" closing keynote.
 
@@ -31,7 +33,7 @@ MC Alex Lieberman uses one sentence to open the last talk of day one, welcoming 
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=28071&rel=0" title="Stage introduction of the final talk of the day (Nous Research CEO)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Alex Lieberman &middot; 4:35:43 PM ET-4:36:11 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=28071s" rel="noopener">Watch on YouTube from 07:47:51</a></p>
+<p class="session-meta">Alex Lieberman &middot; 4:35:43 PM ET–4:36:11 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=28071s" rel="noopener">Watch on YouTube from 07:47:51</a></p>
 
 ## Notable quotes
 > "Ladies and gentlemen, for our final talk of the day, please welcome to the stage the CEO of Noose Research, Dylan Rolnick." — [07:47:51 | 4:35:43 PM]

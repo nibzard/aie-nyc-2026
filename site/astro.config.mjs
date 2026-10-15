@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-const socialImage = 'https://aie-nyc-2026.vercel.app/og-ai-engineer-nyc-2026.png';
-const socialImageAlt = 'AI Engineer NYC 2026: 8 hours of talks. Distilled. A blue wireframe New York skyline on a dark background.';
+const socialImage = 'https://aie-nyc-2026.vercel.app/og-ai-engineer-nyc-2026-two-days.png';
+const socialImageAlt = 'AI Engineer NYC 2026: Two days of talks. Distilled. A blue wireframe New York skyline on a dark background.';
 
 export default defineConfig({
   site: 'https://aie-nyc-2026.vercel.app',
@@ -10,13 +10,13 @@ export default defineConfig({
     starlight({
       title: 'AI Engineer NYC 2026',
       description:
-        'Practical lessons from AI Engineer NYC 2026 for AI engineers: session summaries, evaluation, agent systems, security, and inference costs.',
+        'An engineering field guide to AI Engineer NYC 2026: compare approaches across both days, understand the limits, and try experiments on your workload.',
       favicon: 'favicon.svg',
       head: [
         { tag: 'meta', attrs: { property: 'og:image', content: socialImage } },
         { tag: 'meta', attrs: { property: 'og:image:secure_url', content: socialImage } },
         { tag: 'meta', attrs: { property: 'og:image:type', content: 'image/png' } },
-        { tag: 'meta', attrs: { property: 'og:image:width', content: '1730' } },
+        { tag: 'meta', attrs: { property: 'og:image:width', content: '1731' } },
         { tag: 'meta', attrs: { property: 'og:image:height', content: '909' } },
         { tag: 'meta', attrs: { property: 'og:image:alt', content: socialImageAlt } },
         { tag: 'meta', attrs: { name: 'twitter:image', content: socialImage } },
@@ -26,21 +26,39 @@ export default defineConfig({
       social: [
         {
           icon: 'youtube',
-          label: 'Source VOD on YouTube',
+          label: 'Day 1 recording on YouTube',
           href: 'https://www.youtube.com/watch?v=akEqiXFo3GM',
+        },
+        {
+          icon: 'youtube',
+          label: 'Day 2 recording on YouTube',
+          href: 'https://www.youtube.com/watch?v=jiUC6IUMdvc',
         },
       ],
       sidebar: [
-        { label: 'Day one digest', link: '/' },
-        { label: 'Session summaries', link: '/sessions-index/' },
-        { label: 'Talks and panels', collapsed: true, items: [{ autogenerate: { directory: 'sessions' } }] },
-        { label: 'Speakers', link: '/speakers/' },
-        { label: 'Tags', link: '/tags/' },
-        { label: 'Day two digest', link: '/day2/' },
-        { label: 'Day two sessions', link: '/day2-sessions/' },
-        { label: 'Day two talks and panels', collapsed: true, items: [{ autogenerate: { directory: 'day2' } }] },
-        { label: 'Day two speakers', link: '/speakers-day2/' },
-        { label: 'Day two tags', link: '/tags-day2/' },
+        { label: 'Engineering field guide', link: '/' },
+        { label: 'Topic guides', collapsed: true, items: [{ autogenerate: { directory: 'guides' } }] },
+        { label: 'Explore topics and evidence', link: '/topics/' },
+        { label: 'All session summaries', link: '/sessions-index/' },
+        {
+          label: 'Day 1 · October 13',
+          items: [
+            { label: 'Day 1 digest', link: '/day1/' },
+            { label: 'Day 1 session summaries', link: '/day1-sessions/' },
+            { label: 'Day 1 talks and panels', collapsed: true, items: [{ autogenerate: { directory: 'sessions' } }] },
+          ],
+        },
+        {
+          label: 'Day 2 · October 14',
+          items: [
+            { label: 'Day 2 digest', link: '/day2/' },
+            { label: 'Day 2 session summaries', link: '/day2-sessions/' },
+            { label: 'Day 2 talks and panels', collapsed: true, items: [{ autogenerate: { directory: 'day2' } }] },
+          ],
+        },
+        { label: 'Speakers · Both days', link: '/speakers/' },
+        { label: 'Tags · Both days', link: '/tags/' },
+        { label: 'Figure library', link: '/figures/' },
         { label: 'Agenda and stream notes', link: '/stream-notes/' },
         { label: 'About this site', link: '/about/' },
       ],

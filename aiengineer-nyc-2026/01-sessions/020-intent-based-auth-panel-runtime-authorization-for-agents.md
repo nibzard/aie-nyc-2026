@@ -36,6 +36,12 @@ confidence: "high"
 7. **Keep the brains away from the hands.** In the architecture that Anthropic, OpenAI, and other labs converge on, the model (brain) runs with sandboxed tools (hands) and no API keys. An egress proxy outside the sandbox is the authorization boundary. Michael Davis added dynamic tool removal: disable web search while an email write is in flight, then re-enable it, to block toxic combinations.
 8. **Audit logs must live outside the agent, and liability law already exists.** The Hugging Face Squid-proxy incident showed an agent reaching the open internet with no record of its actions. Ian Livingstone: keep a tamper-resistant log of who told the agent to do what and for what purpose, and apply existing liability law (whoever employs the agent answers for the damage) instead of writing new agent regulation. Davis's field result: "when you have less things the agent can do, it makes better decisions."
 
+## Figures
+
+![Sequence diagram of per-tool-call ephemeral token exchange.](../../figures/per-tool-call-token-exchange.svg)
+
+Runtime authorization as the panel described it: per-tool-call ephemeral tokens.
+
 ## Notable quotes
 - [02:44:01 | 11:31:53 AM] "Runtime auth is the practice of authorizing an agent per tool call, rather than having the agent hold broad standing access that it will eventually misuse." — Allie Howe
 - [02:50:10 | 11:38:02 AM] "You know, just because this is right in context by itself doesn't mean it's the right thing within the broader mission." — Dick Hardt

@@ -1,8 +1,8 @@
 ---
 title: Everyone Has AI. Who Has the Advantage?
-description: "With AI access now universal, Sid Pednekar argues that advantage
-  comes from judgment plus three pillars: design the right problem, build shared
-  capabilities, and compound the advantage."
+description: "Day 1 · Oct 13. With AI access now universal, Sid Pednekar argues
+  that advantage comes from judgment plus three pillars: design the right
+  problem, build shared capabilities, and compound the advantage."
 sidebar:
   order: 38
   hidden: false
@@ -11,7 +11,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 With AI access now universal, Sid Pednekar argues that advantage comes from judgment plus three pillars: design the right problem, build shared capabilities, and compound the advantage.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/sid-pednekar-ai-advantage">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Only about 37% of surveyed enterprises report a positive EBIT contribution from AI, and only about 6% qualify as high performers (about 5% EBIT contribution). Access is widespread; impact is uneven.
@@ -37,7 +41,13 @@ With AI access now universal, Sid Pednekar argues that advantage comes from judg
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=23337&rel=0" title="Everyone Has AI. Who Has the Advantage?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Sid Pednekar &middot; 3:16:49 PM ET-3:34:48 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=23337s" rel="noopener">Watch on YouTube from 06:28:57</a></p>
+<p class="session-meta">Sid Pednekar &middot; 3:16:49 PM ET–3:34:48 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=23337s" rel="noopener">Watch on YouTube from 06:28:57</a></p>
+
+## Figures
+
+![An adoption ladder funnel beside capability and EBIT statistics.](/figures/diffusion-gap.svg)
+
+The adoption ladder from the MC’s segment and the EBIT numbers from this talk.
 
 ## Notable quotes
 > "Judgment is choosing what matters and how to act when there's no single obvious answer. It's the creativity that lets you explore what possibilities are worth exploring. It's the taste that tells you what good looks like in your given context."

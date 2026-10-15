@@ -1,8 +1,8 @@
 ---
 title: "Voice-over hand-off: MC returns for closing remarks"
-description: An off-stage announcer hands the stage back to MC Alex Lieberman
-  for the day-one closing remarks, and Lieberman opens with "Okay, let's close
-  this thing out."
+description: Day 1 · Oct 13. An off-stage announcer hands the stage back to MC
+  Alex Lieberman for the day-one closing remarks, and Lieberman opens with
+  "Okay, let's close this thing out."
 sidebar:
   order: 50
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 An off-stage announcer hands the stage back to MC Alex Lieberman for the day-one closing remarks, and Lieberman opens with "Okay, let's close this thing out."
 
@@ -29,7 +31,7 @@ None - this segment is a 10-second voice-over hand-off.
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=29007&rel=0" title="Voice-over hand-off: MC returns for closing remarks" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Unidentified announcer, Alex Lieberman &middot; 4:51:19 PM ET-4:51:29 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=29007s" rel="noopener">Watch on YouTube from 08:03:27</a></p>
+<p class="session-meta">Unidentified announcer, Alex Lieberman &middot; 4:51:19 PM ET–4:51:29 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=29007s" rel="noopener">Watch on YouTube from 08:03:27</a></p>
 
 ## Notable quotes
 - "And now, for a few closing thoughts and remarks, please welcome back to the stage our MC and the managing partner at 10X, Alex Lieberman." [08:03:28 | 4:51:19 PM]

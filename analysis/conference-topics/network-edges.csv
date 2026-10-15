@@ -1,0 +1,66 @@
+source,target,windows,talks,lift,npmi
+Compute,GPU,33,7,5.2977,0.5155
+GPU,Inference,16,5,7.4572,0.5076
+Authorization,Security,30,7,4.154,0.4277
+Memory,Observability,13,4,4.5054,0.3613
+Compute,Inference,13,5,3.9047,0.327
+Authorization,Human review,12,5,3.8916,0.32
+Business value,Cost,25,8,2.6586,0.2784
+Compute,Cost,47,12,2.2214,0.2771
+Trust,Verification,13,4,2.8481,0.2512
+Observability,Security,20,11,2.4143,0.236
+Authorization,Observability,16,4,2.5279,0.2343
+Evaluation,Observability,18,7,2.4479,0.2331
+Memory,Security,9,5,2.7336,0.2218
+Context,Memory,9,5,2.7336,0.2218
+Cost,Latency,13,5,2.5136,0.2212
+Skills,Workflow,15,7,2.408,0.2184
+Business value,Compute,11,5,2.5606,0.217
+Cost,GPU,28,7,2.0536,0.2117
+Deployment,Evaluation,21,7,2.1015,0.2015
+Human review,Workflow,12,9,2.2813,0.1942
+Deployment,Human review,11,8,2.2885,0.1911
+Inference,Security,8,4,2.4299,0.1909
+Human review,Observability,8,5,2.2618,0.1755
+Trust,Workflow,22,10,1.8698,0.1719
+Observability,Verification,9,4,2.1487,0.1687
+Context,Skills,10,5,2.0924,0.1667
+GPU,Security,12,5,1.9481,0.157
+Deployment,Inference,8,4,2.0402,0.1533
+Compute,Finance,37,8,1.538,0.138
+Training,Workflow,12,5,1.6998,0.1249
+Software and coding,Workflow,45,22,1.4384,0.1243
+Skills,Software and coding,19,8,1.5656,0.1184
+Observability,Workflow,17,9,1.5745,0.1165
+Verification,Workflow,10,6,1.6054,0.1069
+Deployment,Observability,15,8,1.5203,0.1041
+Authorization,Workflow,14,7,1.4873,0.097
+Context,Training,8,5,1.477,0.0838
+Security,Workflow,17,9,1.3799,0.0826
+Cost,Finance,65,21,1.2344,0.0824
+Finance,GPU,21,6,1.3545,0.0823
+Business value,Software and coding,15,5,1.3905,0.0819
+Authorization,Deployment,12,4,1.3951,0.0784
+Cost,Inference,10,4,1.3722,0.0715
+Retrieval,Software and coding,14,8,1.3311,0.0699
+Context,Workflow,16,9,1.2987,0.066
+Context,Observability,11,7,1.3279,0.0654
+Latency,Software and coding,8,5,1.3484,0.0643
+Finance,Training,17,5,1.247,0.0566
+Evaluation,Trust,10,4,1.248,0.05
+Context,Finance,28,12,1.177,0.0479
+Business value,Finance,13,7,1.2158,0.0469
+Finance,Inference,10,6,1.2068,0.0424
+Cost,Software and coding,59,23,1.1105,0.0395
+Context,Security,11,6,1.1637,0.035
+Context,Deployment,13,8,1.1548,0.0345
+Compute,Deployment,13,5,1.1419,0.0319
+Finance,Workflow,34,19,1.0965,0.0288
+Finance,Trust,25,11,1.1003,0.0272
+Context,Trust,10,5,1.1077,0.0231
+Software and coding,Training,15,6,1.0906,0.0216
+Cost,Evaluation,20,9,1.0769,0.0198
+Human review,Software and coding,11,8,1.0734,0.0163
+Software and coding,Trust,24,13,1.047,0.0129
+Deployment,Software and coding,29,17,1.0144,0.0043
+Evaluation,Workflow,11,6,1.0059,0.0014

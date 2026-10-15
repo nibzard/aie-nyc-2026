@@ -1,9 +1,9 @@
 ---
 title: Everything will be Simulated
-description: Runway co-founder Cristóbal Valenzuela argues that next-frame
-  prediction, scaled far enough, turns video models into universal simulation
-  engines, and demos Continuum, a video-model operating system that Runway plans
-  to release within 8 to 12 months.
+description: Day 2 · Oct 14. Runway co-founder Cristóbal Valenzuela argues that
+  next-frame prediction, scaled far enough, turns video models into universal
+  simulation engines, and demos Continuum, a video-model operating system that
+  Runway plans to release within 8 to 12 months.
 sidebar:
   order: 49
   hidden: false
@@ -11,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Runway co-founder Cristóbal Valenzuela argues that next-frame prediction, scaled far enough, turns video models into universal simulation engines, and demos Continuum, a video-model operating system that Runway plans to release within 8 to 12 months.
 
@@ -38,7 +40,7 @@ Runway co-founder Cristóbal Valenzuela argues that next-frame prediction, scale
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=30548&rel=0" title="Everything will be Simulated" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Cristóbal Valenzuela &middot; 5:09:44 PM ET-5:26:46 PM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=30548s" rel="noopener">Watch on YouTube from 08:29:08</a></p>
+<p class="session-meta">Cristóbal Valenzuela &middot; 5:09:44 PM ET–5:26:46 PM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=30548s" rel="noopener">Watch on YouTube from 08:29:08</a></p>
 
 ## Notable quotes
 - "I look at that video, and I've been doing this for 10 years, I can't tell you if that's real or not." — [08:33:52 | 5:14:27 PM]

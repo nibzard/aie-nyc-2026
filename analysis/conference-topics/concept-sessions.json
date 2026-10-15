@@ -1,0 +1,3266 @@
+{
+  "Evaluation": [
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/",
+      "mentions": 12,
+      "segments": 9
+    },
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 25,
+      "segments": 20
+    },
+    {
+      "key": "1:018",
+      "day": 1,
+      "title": "Inside Arca’s long-horizon agents that run the business",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/018-inside-arca-s-long-horizon-agents-that-run-the-business/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:033",
+      "day": 1,
+      "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/033-beyond-the-model-card-the-jagged-frontier-of-ai-in-finance/",
+      "mentions": 22,
+      "segments": 20
+    },
+    {
+      "key": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:012",
+      "day": 2,
+      "title": "Towards Autonomous Analysts in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 15,
+      "segments": 14
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 9,
+      "segments": 7
+    },
+    {
+      "key": "2:037",
+      "day": 2,
+      "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+      "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+      "mentions": 6,
+      "segments": 5
+    },
+    {
+      "key": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/",
+      "mentions": 14,
+      "segments": 12
+    }
+  ],
+  "Security": [
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 8,
+      "segments": 7
+    },
+    {
+      "key": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/",
+      "mentions": 3,
+      "segments": 2
+    },
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 9,
+      "segments": 8
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 19,
+      "segments": 18
+    },
+    {
+      "key": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/",
+      "mentions": 17,
+      "segments": 16
+    },
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 9,
+      "segments": 9
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 23,
+      "segments": 21
+    },
+    {
+      "key": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "url": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/",
+      "mentions": 5,
+      "segments": 4
+    },
+    {
+      "key": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 28,
+      "segments": 28
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:024",
+      "day": 2,
+      "title": "The Agent Works. Does Anyone Trust It?",
+      "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:029",
+      "day": 2,
+      "title": "Agentifying a SEC Master",
+      "url": "https://aie-nyc-2026.vercel.app/day2/029-agentifying-a-sec-master-nori-agentic-podcast-format-aie-onl/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:033",
+      "day": 2,
+      "title": "Why Wall Street Still Doesn’t Trust AI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/",
+      "mentions": 6,
+      "segments": 5
+    },
+    {
+      "key": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+      "mentions": 9,
+      "segments": 9
+    },
+    {
+      "key": "2:037",
+      "day": 2,
+      "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+      "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+      "mentions": 3,
+      "segments": 3
+    }
+  ],
+  "Authorization": [
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 7,
+      "segments": 5
+    },
+    {
+      "key": "1:010",
+      "day": 1,
+      "title": "Does Code Quality Even Matter?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/010-does-code-quality-even-matter-understanding-execution/",
+      "mentions": 3,
+      "segments": 2
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 47,
+      "segments": 45
+    },
+    {
+      "key": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/",
+      "mentions": 62,
+      "segments": 52
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 16,
+      "segments": 14
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:024",
+      "day": 2,
+      "title": "The Agent Works. Does Anyone Trust It?",
+      "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+      "mentions": 17,
+      "segments": 12
+    },
+    {
+      "key": "2:042",
+      "day": 2,
+      "title": "Scary stories of AI gone wrong: three real incidents and the infrastructure controls that prevent them",
+      "url": "https://aie-nyc-2026.vercel.app/day2/042-scary-stories-of-ai-gone-wrong-three-real-incidents-and-the/",
+      "mentions": 2,
+      "segments": 2
+    }
+  ],
+  "Verification": [
+    {
+      "key": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:027",
+      "day": 1,
+      "title": "Become your company's SaaS layer — principles for building polished internal tools with agents (Railway)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/027-extra-lunch-talk-become-your-company-s-saas-layer-principles/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/",
+      "mentions": 13,
+      "segments": 12
+    },
+    {
+      "key": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 9,
+      "segments": 8
+    },
+    {
+      "key": "2:020",
+      "day": 2,
+      "title": "CEO, Compute Exchange",
+      "url": "https://aie-nyc-2026.vercel.app/day2/020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:033",
+      "day": 2,
+      "title": "Why Wall Street Still Doesn’t Trust AI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/",
+      "mentions": 21,
+      "segments": 18
+    }
+  ],
+  "Trust": [
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 9,
+      "segments": 9
+    },
+    {
+      "key": "1:010",
+      "day": 1,
+      "title": "Does Code Quality Even Matter?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/010-does-code-quality-even-matter-understanding-execution/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 3,
+      "segments": 2
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "1:022",
+      "day": 1,
+      "title": "We Let Our Financial Planners Write the Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/022-extra-lunch-talk-financial-planners-building-their-own-agents/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:033",
+      "day": 1,
+      "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/033-beyond-the-model-card-the-jagged-frontier-of-ai-in-finance/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:046",
+      "day": 1,
+      "title": "Frontier Models for Acting in Space and Time",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/046-frontier-models-for-acting-in-space-and-time-pixels-to-actio/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:049",
+      "day": 1,
+      "title": "Hermes gives you wings: Build on open foundations.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/049-hermes-gives-you-wings-build-agents-on-open-foundations-you/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/",
+      "mentions": 18,
+      "segments": 13
+    },
+    {
+      "key": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+      "mentions": 16,
+      "segments": 14
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:012",
+      "day": 2,
+      "title": "Towards Autonomous Analysts in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "2:016",
+      "day": 2,
+      "title": "How Compute Markets Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "url": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:024",
+      "day": 2,
+      "title": "The Agent Works. Does Anyone Trust It?",
+      "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:033",
+      "day": 2,
+      "title": "Why Wall Street Still Doesn’t Trust AI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/",
+      "mentions": 11,
+      "segments": 11
+    },
+    {
+      "key": "2:037",
+      "day": 2,
+      "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+      "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:045",
+      "day": 2,
+      "title": "AI in Practice: An Inside Look at Apollo's Approach",
+      "url": "https://aie-nyc-2026.vercel.app/day2/045-ai-in-practice-an-inside-look-at-apollo-s-approach-rowspace/",
+      "mentions": 5,
+      "segments": 4
+    },
+    {
+      "key": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/",
+      "mentions": 18,
+      "segments": 14
+    }
+  ],
+  "Human review": [
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:022",
+      "day": 1,
+      "title": "We Let Our Financial Planners Write the Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/022-extra-lunch-talk-financial-planners-building-their-own-agents/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/",
+      "mentions": 7,
+      "segments": 6
+    },
+    {
+      "key": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+      "mentions": 3,
+      "segments": 2
+    },
+    {
+      "key": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+      "mentions": 2,
+      "segments": 2
+    }
+  ],
+  "Observability": [
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 37,
+      "segments": 24
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 11,
+      "segments": 8
+    },
+    {
+      "key": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/",
+      "mentions": 12,
+      "segments": 8
+    },
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+      "mentions": 6,
+      "segments": 4
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 8,
+      "segments": 8
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 31,
+      "segments": 24
+    },
+    {
+      "key": "2:024",
+      "day": 2,
+      "title": "The Agent Works. Does Anyone Trust It?",
+      "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+      "mentions": 7,
+      "segments": 5
+    },
+    {
+      "key": "2:026",
+      "day": 2,
+      "title": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR",
+      "url": "https://aie-nyc-2026.vercel.app/day2/026-tokens-are-the-cheap-part-ai-spend-developer-throughput-and/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "2:037",
+      "day": 2,
+      "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+      "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:041",
+      "day": 2,
+      "title": "Stop Wasting Tokens on Products People Can’t Use",
+      "url": "https://aie-nyc-2026.vercel.app/day2/041-stop-wasting-tokens-on-products-people-can-t-use-cost-of-acc/",
+      "mentions": 2,
+      "segments": 2
+    }
+  ],
+  "Memory": [
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "1:018",
+      "day": 1,
+      "title": "Inside Arca’s long-horizon agents that run the business",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/018-inside-arca-s-long-horizon-agents-that-run-the-business/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "url": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 11,
+      "segments": 11
+    },
+    {
+      "key": "2:037",
+      "day": 2,
+      "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+      "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+      "mentions": 3,
+      "segments": 3
+    }
+  ],
+  "Context": [
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 9,
+      "segments": 9
+    },
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:018",
+      "day": 1,
+      "title": "Inside Arca’s long-horizon agents that run the business",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/018-inside-arca-s-long-horizon-agents-that-run-the-business/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 24,
+      "segments": 23
+    },
+    {
+      "key": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "1:030",
+      "day": 1,
+      "title": "Extra lunch talk: Flywire's internal AI platform — structured workflow automation (Orbit on the Victoria PaaS)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/030-extra-lunch-talk-flywire-s-internal-ai-platform-structured-wo/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:043",
+      "day": 1,
+      "title": "A Hedge Fund as a Function",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/",
+      "mentions": 6,
+      "segments": 5
+    },
+    {
+      "key": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "url": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/",
+      "mentions": 8,
+      "segments": 6
+    },
+    {
+      "key": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "2:012",
+      "day": 2,
+      "title": "Towards Autonomous Analysts in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/",
+      "mentions": 8,
+      "segments": 8
+    },
+    {
+      "key": "2:020",
+      "day": 2,
+      "title": "CEO, Compute Exchange",
+      "url": "https://aie-nyc-2026.vercel.app/day2/020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 10,
+      "segments": 9
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "2:037",
+      "day": 2,
+      "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+      "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "2:042",
+      "day": 2,
+      "title": "Scary stories of AI gone wrong: three real incidents and the infrastructure controls that prevent them",
+      "url": "https://aie-nyc-2026.vercel.app/day2/042-scary-stories-of-ai-gone-wrong-three-real-incidents-and-the/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/",
+      "mentions": 5,
+      "segments": 4
+    }
+  ],
+  "Retrieval": [
+    {
+      "key": "1:003",
+      "day": 1,
+      "title": "Vault: Making Unstructured Data Work for Investing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/003-vault-making-unstructured-data-work-for-investing-bridgewater/",
+      "mentions": 9,
+      "segments": 9
+    },
+    {
+      "key": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:043",
+      "day": 1,
+      "title": "A Hedge Fund as a Function",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "url": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:012",
+      "day": 2,
+      "title": "Towards Autonomous Analysts in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:033",
+      "day": 2,
+      "title": "Why Wall Street Still Doesn’t Trust AI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/",
+      "mentions": 30,
+      "segments": 26
+    },
+    {
+      "key": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "2:037",
+      "day": 2,
+      "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+      "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+      "mentions": 2,
+      "segments": 2
+    }
+  ],
+  "Workflow": [
+    {
+      "key": "1:003",
+      "day": 1,
+      "title": "Vault: Making Unstructured Data Work for Investing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/003-vault-making-unstructured-data-work-for-investing-bridgewater/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 11,
+      "segments": 11
+    },
+    {
+      "key": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:010",
+      "day": 1,
+      "title": "Does Code Quality Even Matter?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/010-does-code-quality-even-matter-understanding-execution/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 3,
+      "segments": 2
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "1:022",
+      "day": 1,
+      "title": "We Let Our Financial Planners Write the Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/022-extra-lunch-talk-financial-planners-building-their-own-agents/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/",
+      "mentions": 16,
+      "segments": 15
+    },
+    {
+      "key": "1:030",
+      "day": 1,
+      "title": "Extra lunch talk: Flywire's internal AI platform — structured workflow automation (Orbit on the Victoria PaaS)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/030-extra-lunch-talk-flywire-s-internal-ai-platform-structured-wo/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/",
+      "mentions": 15,
+      "segments": 15
+    },
+    {
+      "key": "1:043",
+      "day": 1,
+      "title": "A Hedge Fund as a Function",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "1:046",
+      "day": 1,
+      "title": "Frontier Models for Acting in Space and Time",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/046-frontier-models-for-acting-in-space-and-time-pixels-to-actio/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:049",
+      "day": 1,
+      "title": "Hermes gives you wings: Build on open foundations.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/049-hermes-gives-you-wings-build-agents-on-open-foundations-you/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "url": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+      "mentions": 21,
+      "segments": 17
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "2:012",
+      "day": 2,
+      "title": "Towards Autonomous Analysts in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:024",
+      "day": 2,
+      "title": "The Agent Works. Does Anyone Trust It?",
+      "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:026",
+      "day": 2,
+      "title": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR",
+      "url": "https://aie-nyc-2026.vercel.app/day2/026-tokens-are-the-cheap-part-ai-spend-developer-throughput-and/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:029",
+      "day": 2,
+      "title": "Agentifying a SEC Master",
+      "url": "https://aie-nyc-2026.vercel.app/day2/029-agentifying-a-sec-master-nori-agentic-podcast-format-aie-onl/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:033",
+      "day": 2,
+      "title": "Why Wall Street Still Doesn’t Trust AI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:037",
+      "day": 2,
+      "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+      "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+      "mentions": 10,
+      "segments": 8
+    },
+    {
+      "key": "2:045",
+      "day": 2,
+      "title": "AI in Practice: An Inside Look at Apollo's Approach",
+      "url": "https://aie-nyc-2026.vercel.app/day2/045-ai-in-practice-an-inside-look-at-apollo-s-approach-rowspace/",
+      "mentions": 3,
+      "segments": 2
+    },
+    {
+      "key": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/",
+      "mentions": 8,
+      "segments": 5
+    }
+  ],
+  "Software and coding": [
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 9,
+      "segments": 8
+    },
+    {
+      "key": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/",
+      "mentions": 7,
+      "segments": 6
+    },
+    {
+      "key": "1:010",
+      "day": 1,
+      "title": "Does Code Quality Even Matter?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/010-does-code-quality-even-matter-understanding-execution/",
+      "mentions": 48,
+      "segments": 42
+    },
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 9,
+      "segments": 7
+    },
+    {
+      "key": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/",
+      "mentions": 6,
+      "segments": 5
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 17,
+      "segments": 16
+    },
+    {
+      "key": "1:022",
+      "day": 1,
+      "title": "We Let Our Financial Planners Write the Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/022-extra-lunch-talk-financial-planners-building-their-own-agents/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:027",
+      "day": 1,
+      "title": "Become your company's SaaS layer — principles for building polished internal tools with agents (Railway)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/027-extra-lunch-talk-become-your-company-s-saas-layer-principles/",
+      "mentions": 5,
+      "segments": 3
+    },
+    {
+      "key": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:030",
+      "day": 1,
+      "title": "Extra lunch talk: Flywire's internal AI platform — structured workflow automation (Orbit on the Victoria PaaS)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/030-extra-lunch-talk-flywire-s-internal-ai-platform-structured-wo/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "1:033",
+      "day": 1,
+      "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/033-beyond-the-model-card-the-jagged-frontier-of-ai-in-finance/",
+      "mentions": 6,
+      "segments": 5
+    },
+    {
+      "key": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/",
+      "mentions": 15,
+      "segments": 14
+    },
+    {
+      "key": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:043",
+      "day": 1,
+      "title": "A Hedge Fund as a Function",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/",
+      "mentions": 11,
+      "segments": 10
+    },
+    {
+      "key": "1:046",
+      "day": 1,
+      "title": "Frontier Models for Acting in Space and Time",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/046-frontier-models-for-acting-in-space-and-time-pixels-to-actio/",
+      "mentions": 8,
+      "segments": 8
+    },
+    {
+      "key": "1:049",
+      "day": 1,
+      "title": "Hermes gives you wings: Build on open foundations.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/049-hermes-gives-you-wings-build-agents-on-open-foundations-you/",
+      "mentions": 8,
+      "segments": 6
+    },
+    {
+      "key": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "url": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/",
+      "mentions": 36,
+      "segments": 28
+    },
+    {
+      "key": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+      "mentions": 20,
+      "segments": 17
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 7,
+      "segments": 6
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:012",
+      "day": 2,
+      "title": "Towards Autonomous Analysts in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/",
+      "mentions": 13,
+      "segments": 11
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:024",
+      "day": 2,
+      "title": "The Agent Works. Does Anyone Trust It?",
+      "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:026",
+      "day": 2,
+      "title": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR",
+      "url": "https://aie-nyc-2026.vercel.app/day2/026-tokens-are-the-cheap-part-ai-spend-developer-throughput-and/",
+      "mentions": 16,
+      "segments": 15
+    },
+    {
+      "key": "2:029",
+      "day": 2,
+      "title": "Agentifying a SEC Master",
+      "url": "https://aie-nyc-2026.vercel.app/day2/029-agentifying-a-sec-master-nori-agentic-podcast-format-aie-onl/",
+      "mentions": 17,
+      "segments": 15
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 25,
+      "segments": 18
+    },
+    {
+      "key": "2:033",
+      "day": 2,
+      "title": "Why Wall Street Still Doesn’t Trust AI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/",
+      "mentions": 5,
+      "segments": 4
+    },
+    {
+      "key": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+      "mentions": 11,
+      "segments": 10
+    },
+    {
+      "key": "2:037",
+      "day": 2,
+      "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+      "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+      "mentions": 8,
+      "segments": 8
+    },
+    {
+      "key": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+      "mentions": 14,
+      "segments": 13
+    },
+    {
+      "key": "2:041",
+      "day": 2,
+      "title": "Stop Wasting Tokens on Products People Can’t Use",
+      "url": "https://aie-nyc-2026.vercel.app/day2/041-stop-wasting-tokens-on-products-people-can-t-use-cost-of-acc/",
+      "mentions": 25,
+      "segments": 20
+    },
+    {
+      "key": "2:042",
+      "day": 2,
+      "title": "Scary stories of AI gone wrong: three real incidents and the infrastructure controls that prevent them",
+      "url": "https://aie-nyc-2026.vercel.app/day2/042-scary-stories-of-ai-gone-wrong-three-real-incidents-and-the/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:045",
+      "day": 2,
+      "title": "AI in Practice: An Inside Look at Apollo's Approach",
+      "url": "https://aie-nyc-2026.vercel.app/day2/045-ai-in-practice-an-inside-look-at-apollo-s-approach-rowspace/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/",
+      "mentions": 8,
+      "segments": 7
+    },
+    {
+      "key": "2:049",
+      "day": 2,
+      "title": "Everything will be Simulated",
+      "url": "https://aie-nyc-2026.vercel.app/day2/049-everything-will-be-simulated-runway-video-models-next-frame/",
+      "mentions": 5,
+      "segments": 3
+    }
+  ],
+  "Skills": [
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 10,
+      "segments": 10
+    },
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "1:022",
+      "day": 1,
+      "title": "We Let Our Financial Planners Write the Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/022-extra-lunch-talk-financial-planners-building-their-own-agents/",
+      "mentions": 15,
+      "segments": 15
+    },
+    {
+      "key": "1:027",
+      "day": 1,
+      "title": "Become your company's SaaS layer — principles for building polished internal tools with agents (Railway)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/027-extra-lunch-talk-become-your-company-s-saas-layer-principles/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "1:043",
+      "day": 1,
+      "title": "A Hedge Fund as a Function",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+      "mentions": 15,
+      "segments": 12
+    },
+    {
+      "key": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:041",
+      "day": 2,
+      "title": "Stop Wasting Tokens on Products People Can’t Use",
+      "url": "https://aie-nyc-2026.vercel.app/day2/041-stop-wasting-tokens-on-products-people-can-t-use-cost-of-acc/",
+      "mentions": 15,
+      "segments": 12
+    },
+    {
+      "key": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/",
+      "mentions": 2,
+      "segments": 2
+    }
+  ],
+  "GPU": [
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 35,
+      "segments": 28
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/",
+      "mentions": 11,
+      "segments": 9
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 20,
+      "segments": 18
+    },
+    {
+      "key": "2:016",
+      "day": 2,
+      "title": "How Compute Markets Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/",
+      "mentions": 14,
+      "segments": 11
+    },
+    {
+      "key": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "url": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/",
+      "mentions": 11,
+      "segments": 11
+    },
+    {
+      "key": "2:020",
+      "day": 2,
+      "title": "CEO, Compute Exchange",
+      "url": "https://aie-nyc-2026.vercel.app/day2/020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico/",
+      "mentions": 32,
+      "segments": 29
+    },
+    {
+      "key": "2:029",
+      "day": 2,
+      "title": "Agentifying a SEC Master",
+      "url": "https://aie-nyc-2026.vercel.app/day2/029-agentifying-a-sec-master-nori-agentic-podcast-format-aie-onl/",
+      "mentions": 5,
+      "segments": 4
+    }
+  ],
+  "Compute": [
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 5,
+      "segments": 4
+    },
+    {
+      "key": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "1:046",
+      "day": 1,
+      "title": "Frontier Models for Acting in Space and Time",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/046-frontier-models-for-acting-in-space-and-time-pixels-to-actio/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 15,
+      "segments": 15
+    },
+    {
+      "key": "2:016",
+      "day": 2,
+      "title": "How Compute Markets Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/",
+      "mentions": 60,
+      "segments": 47
+    },
+    {
+      "key": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "url": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/",
+      "mentions": 60,
+      "segments": 50
+    },
+    {
+      "key": "2:020",
+      "day": 2,
+      "title": "CEO, Compute Exchange",
+      "url": "https://aie-nyc-2026.vercel.app/day2/020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico/",
+      "mentions": 30,
+      "segments": 27
+    },
+    {
+      "key": "2:024",
+      "day": 2,
+      "title": "The Agent Works. Does Anyone Trust It?",
+      "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:029",
+      "day": 2,
+      "title": "Agentifying a SEC Master",
+      "url": "https://aie-nyc-2026.vercel.app/day2/029-agentifying-a-sec-master-nori-agentic-podcast-format-aie-onl/",
+      "mentions": 8,
+      "segments": 6
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:045",
+      "day": 2,
+      "title": "AI in Practice: An Inside Look at Apollo's Approach",
+      "url": "https://aie-nyc-2026.vercel.app/day2/045-ai-in-practice-an-inside-look-at-apollo-s-approach-rowspace/",
+      "mentions": 3,
+      "segments": 3
+    }
+  ],
+  "Cost": [
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:010",
+      "day": 1,
+      "title": "Does Code Quality Even Matter?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/010-does-code-quality-even-matter-understanding-execution/",
+      "mentions": 14,
+      "segments": 12
+    },
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/",
+      "mentions": 5,
+      "segments": 4
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 17,
+      "segments": 11
+    },
+    {
+      "key": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/",
+      "mentions": 22,
+      "segments": 21
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "1:033",
+      "day": 1,
+      "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/033-beyond-the-model-card-the-jagged-frontier-of-ai-in-finance/",
+      "mentions": 16,
+      "segments": 13
+    },
+    {
+      "key": "1:035",
+      "day": 1,
+      "title": "AI and the Future of Fundamental Investing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/035-ai-and-the-future-of-fundamental-investing-kepler-fireside/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/",
+      "mentions": 7,
+      "segments": 5
+    },
+    {
+      "key": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "1:043",
+      "day": 1,
+      "title": "A Hedge Fund as a Function",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:049",
+      "day": 1,
+      "title": "Hermes gives you wings: Build on open foundations.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/049-hermes-gives-you-wings-build-agents-on-open-foundations-you/",
+      "mentions": 13,
+      "segments": 12
+    },
+    {
+      "key": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "url": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/",
+      "mentions": 22,
+      "segments": 16
+    },
+    {
+      "key": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:012",
+      "day": 2,
+      "title": "Towards Autonomous Analysts in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 70,
+      "segments": 56
+    },
+    {
+      "key": "2:016",
+      "day": 2,
+      "title": "How Compute Markets Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/",
+      "mentions": 10,
+      "segments": 7
+    },
+    {
+      "key": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "url": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/",
+      "mentions": 40,
+      "segments": 31
+    },
+    {
+      "key": "2:020",
+      "day": 2,
+      "title": "CEO, Compute Exchange",
+      "url": "https://aie-nyc-2026.vercel.app/day2/020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico/",
+      "mentions": 20,
+      "segments": 19
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:024",
+      "day": 2,
+      "title": "The Agent Works. Does Anyone Trust It?",
+      "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:026",
+      "day": 2,
+      "title": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR",
+      "url": "https://aie-nyc-2026.vercel.app/day2/026-tokens-are-the-cheap-part-ai-spend-developer-throughput-and/",
+      "mentions": 91,
+      "segments": 74
+    },
+    {
+      "key": "2:029",
+      "day": 2,
+      "title": "Agentifying a SEC Master",
+      "url": "https://aie-nyc-2026.vercel.app/day2/029-agentifying-a-sec-master-nori-agentic-podcast-format-aie-onl/",
+      "mentions": 8,
+      "segments": 8
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 8,
+      "segments": 7
+    },
+    {
+      "key": "2:033",
+      "day": 2,
+      "title": "Why Wall Street Still Doesn’t Trust AI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/",
+      "mentions": 3,
+      "segments": 2
+    },
+    {
+      "key": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+      "mentions": 6,
+      "segments": 4
+    },
+    {
+      "key": "2:041",
+      "day": 2,
+      "title": "Stop Wasting Tokens on Products People Can’t Use",
+      "url": "https://aie-nyc-2026.vercel.app/day2/041-stop-wasting-tokens-on-products-people-can-t-use-cost-of-acc/",
+      "mentions": 8,
+      "segments": 8
+    },
+    {
+      "key": "2:045",
+      "day": 2,
+      "title": "AI in Practice: An Inside Look at Apollo's Approach",
+      "url": "https://aie-nyc-2026.vercel.app/day2/045-ai-in-practice-an-inside-look-at-apollo-s-approach-rowspace/",
+      "mentions": 6,
+      "segments": 6
+    }
+  ],
+  "Latency": [
+    {
+      "key": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/",
+      "mentions": 12,
+      "segments": 10
+    },
+    {
+      "key": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "url": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:026",
+      "day": 2,
+      "title": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR",
+      "url": "https://aie-nyc-2026.vercel.app/day2/026-tokens-are-the-cheap-part-ai-spend-developer-throughput-and/",
+      "mentions": 19,
+      "segments": 19
+    }
+  ],
+  "Training": [
+    {
+      "key": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/",
+      "mentions": 26,
+      "segments": 19
+    },
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "1:043",
+      "day": 1,
+      "title": "A Hedge Fund as a Function",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:046",
+      "day": 1,
+      "title": "Frontier Models for Acting in Space and Time",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/046-frontier-models-for-acting-in-space-and-time-pixels-to-actio/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "1:049",
+      "day": 1,
+      "title": "Hermes gives you wings: Build on open foundations.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/049-hermes-gives-you-wings-build-agents-on-open-foundations-you/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "url": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/",
+      "mentions": 9,
+      "segments": 8
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 17,
+      "segments": 16
+    },
+    {
+      "key": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+      "mentions": 25,
+      "segments": 23
+    },
+    {
+      "key": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/",
+      "mentions": 5,
+      "segments": 3
+    }
+  ],
+  "Simulation": [
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 5,
+      "segments": 4
+    },
+    {
+      "key": "1:043",
+      "day": 1,
+      "title": "A Hedge Fund as a Function",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:046",
+      "day": 1,
+      "title": "Frontier Models for Acting in Space and Time",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/046-frontier-models-for-acting-in-space-and-time-pixels-to-actio/",
+      "mentions": 32,
+      "segments": 23
+    },
+    {
+      "key": "2:037",
+      "day": 2,
+      "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+      "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:049",
+      "day": 2,
+      "title": "Everything will be Simulated",
+      "url": "https://aie-nyc-2026.vercel.app/day2/049-everything-will-be-simulated-runway-video-models-next-frame/",
+      "mentions": 52,
+      "segments": 40
+    }
+  ],
+  "Business value": [
+    {
+      "key": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:016",
+      "day": 2,
+      "title": "How Compute Markets Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "url": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:024",
+      "day": 2,
+      "title": "The Agent Works. Does Anyone Trust It?",
+      "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:026",
+      "day": 2,
+      "title": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR",
+      "url": "https://aie-nyc-2026.vercel.app/day2/026-tokens-are-the-cheap-part-ai-spend-developer-throughput-and/",
+      "mentions": 23,
+      "segments": 23
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:033",
+      "day": 2,
+      "title": "Why Wall Street Still Doesn’t Trust AI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/",
+      "mentions": 5,
+      "segments": 5
+    }
+  ],
+  "Deployment": [
+    {
+      "key": "1:003",
+      "day": 1,
+      "title": "Vault: Making Unstructured Data Work for Investing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/003-vault-making-unstructured-data-work-for-investing-bridgewater/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/",
+      "mentions": 10,
+      "segments": 9
+    },
+    {
+      "key": "1:010",
+      "day": 1,
+      "title": "Does Code Quality Even Matter?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/010-does-code-quality-even-matter-understanding-execution/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:013",
+      "day": 1,
+      "title": "What does an AI engineer do?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+      "mentions": 7,
+      "segments": 5
+    },
+    {
+      "key": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 12,
+      "segments": 9
+    },
+    {
+      "key": "1:022",
+      "day": 1,
+      "title": "We Let Our Financial Planners Write the Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/022-extra-lunch-talk-financial-planners-building-their-own-agents/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:023",
+      "day": 1,
+      "title": "Your Agent Is a Lethal Trifecta",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "1:027",
+      "day": 1,
+      "title": "Become your company's SaaS layer — principles for building polished internal tools with agents (Railway)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/027-extra-lunch-talk-become-your-company-s-saas-layer-principles/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/",
+      "mentions": 5,
+      "segments": 4
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/",
+      "mentions": 4,
+      "segments": 2
+    },
+    {
+      "key": "1:046",
+      "day": 1,
+      "title": "Frontier Models for Acting in Space and Time",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/046-frontier-models-for-acting-in-space-and-time-pixels-to-actio/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "url": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:004",
+      "day": 2,
+      "title": "The Machine that Changed the World, vAI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:012",
+      "day": 2,
+      "title": "Towards Autonomous Analysts in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 13,
+      "segments": 13
+    },
+    {
+      "key": "2:016",
+      "day": 2,
+      "title": "How Compute Markets Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "2:020",
+      "day": 2,
+      "title": "CEO, Compute Exchange",
+      "url": "https://aie-nyc-2026.vercel.app/day2/020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico/",
+      "mentions": 4,
+      "segments": 3
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 12,
+      "segments": 9
+    },
+    {
+      "key": "2:024",
+      "day": 2,
+      "title": "The Agent Works. Does Anyone Trust It?",
+      "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 8,
+      "segments": 7
+    },
+    {
+      "key": "2:037",
+      "day": 2,
+      "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+      "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:039",
+      "day": 2,
+      "title": "Self-Improving Organizations",
+      "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+      "mentions": 5,
+      "segments": 4
+    },
+    {
+      "key": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/",
+      "mentions": 12,
+      "segments": 12
+    }
+  ],
+  "Privacy": [
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 8,
+      "segments": 7
+    },
+    {
+      "key": "2:010",
+      "day": 2,
+      "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+      "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+      "mentions": 8,
+      "segments": 8
+    },
+    {
+      "key": "2:023",
+      "day": 2,
+      "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+      "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+      "mentions": 5,
+      "segments": 5
+    }
+  ],
+  "Inference": [
+    {
+      "key": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:025",
+      "day": 1,
+      "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+      "mentions": 8,
+      "segments": 8
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 3,
+      "segments": 2
+    },
+    {
+      "key": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 9,
+      "segments": 9
+    },
+    {
+      "key": "2:016",
+      "day": 2,
+      "title": "How Compute Markets Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/",
+      "mentions": 5,
+      "segments": 5
+    },
+    {
+      "key": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "url": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/",
+      "mentions": 9,
+      "segments": 8
+    },
+    {
+      "key": "2:020",
+      "day": 2,
+      "title": "CEO, Compute Exchange",
+      "url": "https://aie-nyc-2026.vercel.app/day2/020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico/",
+      "mentions": 2,
+      "segments": 2
+    }
+  ],
+  "Finance": [
+    {
+      "key": "1:003",
+      "day": 1,
+      "title": "Vault: Making Unstructured Data Work for Investing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/003-vault-making-unstructured-data-work-for-investing-bridgewater/",
+      "mentions": 18,
+      "segments": 17
+    },
+    {
+      "key": "1:006",
+      "day": 1,
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+      "mentions": 33,
+      "segments": 28
+    },
+    {
+      "key": "1:008",
+      "day": 1,
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/",
+      "mentions": 19,
+      "segments": 17
+    },
+    {
+      "key": "1:016",
+      "day": 1,
+      "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/",
+      "mentions": 58,
+      "segments": 43
+    },
+    {
+      "key": "1:018",
+      "day": 1,
+      "title": "Inside Arca’s long-horizon agents that run the business",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/018-inside-arca-s-long-horizon-agents-that-run-the-business/",
+      "mentions": 6,
+      "segments": 4
+    },
+    {
+      "key": "1:020",
+      "day": 1,
+      "title": "Intent Based Auth",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+      "mentions": 15,
+      "segments": 12
+    },
+    {
+      "key": "1:022",
+      "day": 1,
+      "title": "We Let Our Financial Planners Write the Agents",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/022-extra-lunch-talk-financial-planners-building-their-own-agents/",
+      "mentions": 6,
+      "segments": 6
+    },
+    {
+      "key": "1:028",
+      "day": 1,
+      "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:029",
+      "day": 1,
+      "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:031",
+      "day": 1,
+      "title": "Great Agents Start with Great Infrastructure",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:033",
+      "day": 1,
+      "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/033-beyond-the-model-card-the-jagged-frontier-of-ai-in-finance/",
+      "mentions": 3,
+      "segments": 3
+    },
+    {
+      "key": "1:035",
+      "day": 1,
+      "title": "AI and the Future of Fundamental Investing",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/035-ai-and-the-future-of-fundamental-investing-kepler-fireside/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:036",
+      "day": 1,
+      "title": "Shipping like a startup, regulated like a bank",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "1:038",
+      "day": 1,
+      "title": "Everyone Has AI. Who Has the Advantage?",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/",
+      "mentions": 14,
+      "segments": 14
+    },
+    {
+      "key": "1:043",
+      "day": 1,
+      "title": "A Hedge Fund as a Function",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/",
+      "mentions": 10,
+      "segments": 10
+    },
+    {
+      "key": "1:049",
+      "day": 1,
+      "title": "Hermes gives you wings: Build on open foundations.",
+      "url": "https://aie-nyc-2026.vercel.app/sessions/049-hermes-gives-you-wings-build-agents-on-open-foundations-you/",
+      "mentions": 8,
+      "segments": 7
+    },
+    {
+      "key": "2:002",
+      "day": 2,
+      "title": "Chasing capabilities while waiting for the frontier",
+      "url": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/",
+      "mentions": 9,
+      "segments": 7
+    },
+    {
+      "key": "2:005",
+      "day": 2,
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:007",
+      "day": 2,
+      "title": "Building the Next Chapter of AI in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+      "mentions": 57,
+      "segments": 46
+    },
+    {
+      "key": "2:012",
+      "day": 2,
+      "title": "Towards Autonomous Analysts in Finance",
+      "url": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/",
+      "mentions": 17,
+      "segments": 17
+    },
+    {
+      "key": "2:014",
+      "day": 2,
+      "title": "Not All GPU's Are Deployed The Same",
+      "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+      "mentions": 8,
+      "segments": 8
+    },
+    {
+      "key": "2:016",
+      "day": 2,
+      "title": "How Compute Markets Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/",
+      "mentions": 13,
+      "segments": 11
+    },
+    {
+      "key": "2:018",
+      "day": 2,
+      "title": "The Dark Pools of Compute",
+      "url": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/",
+      "mentions": 28,
+      "segments": 24
+    },
+    {
+      "key": "2:020",
+      "day": 2,
+      "title": "CEO, Compute Exchange",
+      "url": "https://aie-nyc-2026.vercel.app/day2/020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico/",
+      "mentions": 21,
+      "segments": 20
+    },
+    {
+      "key": "2:024",
+      "day": 2,
+      "title": "The Agent Works. Does Anyone Trust It?",
+      "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+      "mentions": 2,
+      "segments": 2
+    },
+    {
+      "key": "2:026",
+      "day": 2,
+      "title": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR",
+      "url": "https://aie-nyc-2026.vercel.app/day2/026-tokens-are-the-cheap-part-ai-spend-developer-throughput-and/",
+      "mentions": 4,
+      "segments": 4
+    },
+    {
+      "key": "2:029",
+      "day": 2,
+      "title": "Agentifying a SEC Master",
+      "url": "https://aie-nyc-2026.vercel.app/day2/029-agentifying-a-sec-master-nori-agentic-podcast-format-aie-onl/",
+      "mentions": 24,
+      "segments": 21
+    },
+    {
+      "key": "2:031",
+      "day": 2,
+      "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+      "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+      "mentions": 19,
+      "segments": 15
+    },
+    {
+      "key": "2:033",
+      "day": 2,
+      "title": "Why Wall Street Still Doesn’t Trust AI",
+      "url": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/",
+      "mentions": 7,
+      "segments": 7
+    },
+    {
+      "key": "2:035",
+      "day": 2,
+      "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+      "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+      "mentions": 6,
+      "segments": 5
+    },
+    {
+      "key": "2:042",
+      "day": 2,
+      "title": "Scary stories of AI gone wrong: three real incidents and the infrastructure controls that prevent them",
+      "url": "https://aie-nyc-2026.vercel.app/day2/042-scary-stories-of-ai-gone-wrong-three-real-incidents-and-the/",
+      "mentions": 3,
+      "segments": 2
+    },
+    {
+      "key": "2:045",
+      "day": 2,
+      "title": "AI in Practice: An Inside Look at Apollo's Approach",
+      "url": "https://aie-nyc-2026.vercel.app/day2/045-ai-in-practice-an-inside-look-at-apollo-s-approach-rowspace/",
+      "mentions": 47,
+      "segments": 32
+    },
+    {
+      "key": "2:047",
+      "day": 2,
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "url": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/",
+      "mentions": 7,
+      "segments": 5
+    }
+  ]
+}

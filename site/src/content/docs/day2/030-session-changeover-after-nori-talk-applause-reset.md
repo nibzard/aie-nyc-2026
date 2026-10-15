@@ -1,8 +1,8 @@
 ---
 title: Session changeover after Nori talk (applause/reset)
-description: A roughly 21-second untranscribed changeover between the close of
-  the off-agenda Nori Agentic online-track talk and Scott Worland's opening of
-  the next session.
+description: Day 2 · Oct 14. A roughly 21-second untranscribed changeover
+  between the close of the off-agenda Nori Agentic online-track talk and Scott
+  Worland's opening of the next session.
 sidebar:
   order: 30
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A roughly 21-second untranscribed changeover between the close of the off-agenda Nori Agentic online-track talk and Scott Worland's opening of the next session.
 
@@ -29,7 +31,7 @@ A roughly 21-second untranscribed changeover between the close of the off-agenda
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=19340&rel=0" title="Session changeover after Nori talk (applause/reset)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">2:02:56 PM ET-2:03:17 PM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=19340s" rel="noopener">Watch on YouTube from 05:22:20</a></p>
+<p class="session-meta">2:02:56 PM ET–2:03:17 PM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=19340s" rel="noopener">Watch on YouTube from 05:22:20</a></p>
 
 ## Notable quotes
 No quote originates inside this segment. The two lines that mark its boundaries are verbatim boundary markers, not content of this break:

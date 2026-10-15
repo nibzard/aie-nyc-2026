@@ -1,10 +1,10 @@
 ---
 title: Balancing Acceleration and Safety for AI Agents
-description: Two Sigma's John Feminella retells Citibank's $900 million Revlon
-  wire error to show why agent safety and speed are not a tradeoff, then lays
-  out five composable controls — an agent registry, risk-scored review,
-  declared-purpose tool access, shared evals, and classifier-governed runtime —
-  that let a regulated firm run
+description: Day 1 · Oct 13. Two Sigma's John Feminella retells Citibank's $900
+  million Revlon wire error to show why agent safety and speed are not a
+  tradeoff, then lays out five composable controls — an agent registry,
+  risk-scored review, declared-purpose tool access, shared evals, and
+  classifier-governed runtime — that let a regulated firm run…
 sidebar:
   order: 8
   hidden: false
@@ -13,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Two Sigma's John Feminella retells Citibank's $900 million Revlon wire error to show why agent safety and speed are not a tradeoff, then lays out five composable controls — an agent registry, risk-scored review, declared-purpose tool access, shared evals, and classifier-governed runtime — that let a regulated firm run agents with real autonomy.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/john-feminella-agent-safety">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Feminella opens with the August 2020 Citibank/Revlon incident: a Flexcube operator error sent the entire ~$900 million loan principal to 300+ lenders instead of ~$8 million of interest, even though the software warned and three humans approved.
@@ -39,7 +43,7 @@ Two Sigma's John Feminella retells Citibank's $900 million Revlon wire error to 
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=3033&rel=0" title="Balancing Acceleration and Safety for AI Agents" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">John Feminella &middot; 9:38:25 AM ET-9:57:32 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=3033s" rel="noopener">Watch on YouTube from 00:50:33</a></p>
+<p class="session-meta">John Feminella &middot; 9:38:25 AM ET–9:57:32 AM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=3033s" rel="noopener">Watch on YouTube from 00:50:33</a></p>
 
 ## Notable quotes
 - "So the principal never went to the wash account, and instead, Flexcube sent the entire outstanding principal of the loan to all of the 300 lenders, about $900 million instead of $8 million." [00:54:57 | 9:42:49 AM]

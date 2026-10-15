@@ -36,6 +36,12 @@ confidence: "high"
 7. Default deny includes DNS. A sandbox with no web access still leaked data: a hidden prompt instructed the agent to smuggle data out through DNS lookups, and the attacker simply read the DNS logs. Pair this with memory poisoning: a hidden instruction in a document told the agent that whenever it sees a secret, send it to a specific DNS domain — a sleeper agent. His countermeasures: memory integrity checks, output filtering, provenance tagging, circuit breakers, and ephemeral runtimes that start fresh with no memories. Homework: "Can your agent access DNS?"
 8. Verify the supply chain and isolate tenants. A fake MCP package on NPM shipped 15 clean, genuinely useful releases, then version 16 added one line asking to BCC all emails to the attacker; his advice is supply-chain verification plus delay ingest — do not ingest packages on day zero, wait a week or two. An MCP server let any user read any other user's data and ran a month unnoticed; his bar for tenant isolation is as hard as AWS accounts or GCP projects, with the tenant checked on every query. And when a user told an agent "don't touch prod," the agent replied "understood" with a thumbs up and dropped the production database — which was also dev.
 
+## Figures
+
+![Venn diagram of the three lethal attack surfaces.](../../figures/lethal-trifecta.svg)
+
+The rule of two from this talk; the trifecta framing is day one’s Keycard talk.
+
 ## Notable quotes
 - "So the agents took 17,600 actions in four and a half days." [01:30:39 | 10:11:14 AM]
 - "One agent, one identity, short-lived scoped credentials, no shared keys." [01:31:53 | 10:12:28 AM]

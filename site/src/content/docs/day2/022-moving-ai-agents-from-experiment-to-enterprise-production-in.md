@@ -1,17 +1,21 @@
 ---
 title: "Moving AI agents from experiment to enterprise production (Intuit Credit
   Karma: LangGraph, MCP gateway, evals, memory, PII blocking) -- off-agenda"
-description: "An Intuit Credit Karma engineer maps the full enterprise agent
-  stack: LangGraph agents, a self-built MCP gateway with JWT auth, OpenTelemetry
-  monitoring, memory, tracking and evals, a PII trimmer, and a context optimizer
-  that cut token use about 90% in a live demo."
+description: "Day 2 · Oct 14. An Intuit Credit Karma engineer maps the full
+  enterprise agent stack: LangGraph agents, a self-built MCP gateway with JWT
+  auth, OpenTelemetry monitoring, memory, tracking and evals, a PII trimmer, and
+  a context optimizer that cut token use about 90% in a live demo."
 sidebar:
   order: 22
-  hidden: false
-pagefind: true
+  hidden: true
+pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
+
+This is an alternate catalog record of the same Intuit Credit Karma recording. [Read the main session summary](/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/).
 
 An Intuit Credit Karma engineer maps the full enterprise agent stack: LangGraph agents, a self-built MCP gateway with JWT auth, OpenTelemetry monitoring, memory, tracking and evals, a PII trimmer, and a context optimizer that cut token use about 90% in a live demo.
 
@@ -39,7 +43,7 @@ An Intuit Credit Karma engineer maps the full enterprise agent stack: LangGraph 
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=14327&rel=0" title="Moving AI agents from experiment to enterprise production (Intuit Credit Karma: LangGraph, MCP gateway, evals, memory, PII blocking) -- off-agenda" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Sharish Gagar &middot; 12:39:23 PM ET-1:08:52 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=14327s" rel="noopener">Watch on YouTube from 03:58:47</a></p>
+<p class="session-meta">Sharish Gagar &middot; 12:39:23 PM ET–1:08:52 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=14327s" rel="noopener">Watch on YouTube from 03:58:47</a></p>
 
 ## Notable quotes
 > "Of course, like there are many agents generally get fail in productions because their foundation controls are missing." [04:00:24 | 12:41:00 PM]

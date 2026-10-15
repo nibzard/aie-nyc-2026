@@ -1,0 +1,4 @@
+Edit the supplied social sharing cover. Preserve the composition, typography style, dark navy background, electric-blue Manhattan wireframe skyline, textures, and all other visual details. Change only two lines of text:
+1. Replace the small top-left line "THE UNOFFICIAL DAY-ONE DIGEST" with the exact text "THE UNOFFICIAL TWO-DAY DIGEST".
+2. Replace the lower headline "8 hours of talks. Distilled." with the exact text "Two days of talks. Distilled."
+Keep the large "AI ENGINEER" and "NYC 2026" titles and the footer "SUMMARIES / TAKEAWAYS / TIMESTAMPS" unchanged. Match the existing fonts, positions, scale, colors, and spacing as closely as possible. Keep the same wide aspect ratio and all safe margins. This is a precise text update to the existing finished cover, not a redesign. Opaque background.

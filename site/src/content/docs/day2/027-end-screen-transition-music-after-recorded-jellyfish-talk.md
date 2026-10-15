@@ -1,8 +1,8 @@
 ---
 title: End screen / transition music after recorded Jellyfish talk
-description: A 19-second non-speech gap of end-screen/transition music on the
-  main-stage stream, between the sign-off of the pre-recorded Jellyfish talk and
-  the off-mic pre-roll of the next online-track video.
+description: Day 2 · Oct 14. A 19-second non-speech gap of end-screen/transition
+  music on the main-stage stream, between the sign-off of the pre-recorded
+  Jellyfish talk and the off-mic pre-roll of the next online-track video.
 sidebar:
   order: 27
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 19-second non-speech gap of end-screen/transition music on the main-stage stream, between the sign-off of the pre-recorded Jellyfish talk and the off-mic pre-roll of the next online-track video.
 
@@ -27,7 +29,7 @@ None - this segment is a 19-second end-screen music gap.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=18091&rel=0" title="End screen / transition music after recorded Jellyfish talk" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">1:42:07 PM ET-1:42:26 PM ET &middot; dead air &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=18091s" rel="noopener">Watch on YouTube from 05:01:31</a></p>
+<p class="session-meta">1:42:07 PM ET–1:42:26 PM ET &middot; dead air &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=18091s" rel="noopener">Watch on YouTube from 05:01:31</a></p>
 
 ## Session narrative
 

@@ -1,10 +1,10 @@
 ---
 title: "Anthropic: Accelerating frontier AI in Financial Services."
-description: Anthropic's Belinda Neal and Keon Shahab argue that model
-  intelligence now runs far ahead of adoption in financial services, and they
-  lay out a five-layer agent foundation (MCP connectors, skills, identity and
-  permissions, approval, evals) plus Claude for Financial Advisors as the proof
-  that the same pattern scales fro
+description: Day 1 · Oct 13. Anthropic's Belinda Neal and Keon Shahab argue that
+  model intelligence now runs far ahead of adoption in financial services, and
+  they lay out a five-layer agent foundation (MCP connectors, skills, identity
+  and permissions, approval, evals) plus Claude for Financial Advisors as the
+  proof that the same pattern scales fro…
 sidebar:
   order: 6
   hidden: false
@@ -13,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Anthropic's Belinda Neal and Keon Shahab argue that model intelligence now runs far ahead of adoption in financial services, and they lay out a five-layer agent foundation (MCP connectors, skills, identity and permissions, approval, evals) plus Claude for Financial Advisors as the proof that the same pattern scales from one firm to a whole industry.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/anthropic-financial-services">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Intelligence is ahead of adoption: what a model can do on its own doubles every four months, yet three quarters of the economic gains of AI go to a fifth of companies. Anthropic calls this the diffusion gap, and sees it as the room's opportunity.
@@ -38,7 +42,13 @@ Anthropic's Belinda Neal and Keon Shahab argue that model intelligence now runs 
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=1880&rel=0" title="Anthropic: Accelerating frontier AI in Financial Services." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Belinda Neal, Keon Shahab &middot; 9:19:12 AM ET-9:38:09 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=1880s" rel="noopener">Watch on YouTube from 00:31:20</a></p>
+<p class="session-meta">Belinda Neal, Keon Shahab &middot; 9:19:12 AM ET–9:38:09 AM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=1880s" rel="noopener">Watch on YouTube from 00:31:20</a></p>
+
+## Figures
+
+![A five-layer stack: connectors, skills, identity and permissions, approval, and evals.](/figures/five-layer-agent-foundation.svg)
+
+The agent foundation stack, walked through on the trade-break example.
 
 ## Notable quotes
 

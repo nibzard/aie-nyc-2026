@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="title">The diffusion gap</title>
+  <desc id="desc">Left panel: an enterprise AI diffusion ladder with four ordinal blue bands — 90 percent have rolled out a general-purpose LLM, about 60 percent have people actually trained on the tools, about 50 percent use coding agents in engineering workflows, and about 5 percent have agents working in non-engineering workflows. Right panel: three stat chips — what a model can do on its own doubles every four months (Belinda Neal, Anthropic); about 37 percent of enterprises report positive EBIT contribution and about 6 percent are high performers (Sid Pednekar); three quarters of AI's economic gains go to a fifth of companies (PwC, cited by Neal).</desc>
+  <rect x="1" y="1" width="958" height="538" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="48" y="64" font-size="11" font-weight="600" letter-spacing="0.88" fill="#52514e">DATA — ADOPTION</text>
+  <text x="48" y="92" font-size="20" font-weight="600" fill="#0b0b0b">The diffusion gap</text>
+  <text x="48" y="116" font-size="13" fill="#52514e">Enterprises climb the adoption ladder slowly while frontier capability compounds.</text>
+  <text x="48" y="134" font-size="13" fill="#52514e">Adoption and capability are different measures from different sources, shown separately.</text>
+
+  <!-- Left panel: diffusion ladder -->
+  <rect x="48" y="146" width="520" height="350" rx="8" fill="#ffffff" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="72" y="176" font-size="15" font-weight="600" fill="#0b0b0b">Enterprise AI diffusion ladder</text>
+  <text x="72" y="194" font-size="11" fill="#52514e">MC Alex Lieberman — about 100 Tenex enterprise clients</text>
+
+  <path d="M72 212 H348 A4 4 0 0 1 352 216 V262 A4 4 0 0 1 348 266 H72 Z" fill="#86b6ef"/>
+  <text x="88" y="244" font-size="15" font-weight="600" fill="#0b0b0b">90%</text>
+  <text x="368" y="235" font-size="12" fill="#52514e">have rolled out a</text>
+  <text x="368" y="251" font-size="12" fill="#52514e">general-purpose LLM</text>
+
+  <path d="M72 274 H255 A4 4 0 0 1 259 278 V324 A4 4 0 0 1 255 328 H72 Z" fill="#5598e7"/>
+  <text x="88" y="306" font-size="15" font-weight="600" fill="#0b0b0b">~60%</text>
+  <text x="368" y="297" font-size="12" fill="#52514e">have people actually</text>
+  <text x="368" y="313" font-size="12" fill="#52514e">trained on the tools</text>
+
+  <path d="M72 336 H224 A4 4 0 0 1 228 340 V386 A4 4 0 0 1 224 390 H72 Z" fill="#2a78d6"/>
+  <text x="88" y="368" font-size="15" font-weight="600" fill="#ffffff">~50%</text>
+  <text x="368" y="359" font-size="12" fill="#52514e">use coding agents in</text>
+  <text x="368" y="375" font-size="12" fill="#52514e">engineering workflows</text>
+
+  <path d="M72 398 H84 A4 4 0 0 1 88 402 V448 A4 4 0 0 1 84 452 H72 Z" fill="#1c5cab"/>
+  <text x="100" y="430" font-size="15" font-weight="600" fill="#0b0b0b">~5%</text>
+  <text x="368" y="421" font-size="12" fill="#52514e">agents working in</text>
+  <text x="368" y="437" font-size="12" fill="#52514e">non-engineering workflows</text>
+
+  <text x="72" y="486" font-size="11" fill="#52514e">Source: Alex Lieberman (MC, Tenex), day 1, session 042.</text>
+
+  <!-- Right panel: stat chips -->
+  <rect x="592" y="146" width="320" height="350" rx="8" fill="#ffffff" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="612" y="176" font-size="15" font-weight="600" fill="#0b0b0b">From the day-one talks</text>
+
+  <rect x="612" y="196" width="280" height="88" rx="8" fill="#2a78d6" fill-opacity="0.06" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="628" y="222" font-size="15" font-weight="600" fill="#0b0b0b">Doubles every 4 months</text>
+  <text x="628" y="240" font-size="11" fill="#52514e">what a model can do on its own</text>
+  <text x="628" y="258" font-size="11" fill="#52514e">Belinda Neal (Anthropic), session 006</text>
+
+  <rect x="612" y="296" width="280" height="88" rx="8" fill="#2a78d6" fill-opacity="0.06" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="628" y="322" font-size="15" font-weight="600" fill="#0b0b0b">~37% positive EBIT</text>
+  <text x="628" y="340" font-size="11" fill="#52514e">about 6% are high performers</text>
+  <text x="628" y="358" font-size="11" fill="#52514e">Sid Pednekar, session 038</text>
+
+  <rect x="612" y="396" width="280" height="88" rx="8" fill="#2a78d6" fill-opacity="0.06" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="628" y="422" font-size="15" font-weight="600" fill="#0b0b0b">3 of 4 → 1 of 5</text>
+  <text x="628" y="440" font-size="11" fill="#52514e">three quarters of AI's economic</text>
+  <text x="628" y="455" font-size="11" fill="#52514e">gains go to a fifth of companies</text>
+  <text x="628" y="472" font-size="11" fill="#52514e">PwC, cited by Neal — session 006</text>
+</svg>

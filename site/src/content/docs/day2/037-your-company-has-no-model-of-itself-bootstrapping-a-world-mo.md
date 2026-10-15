@@ -1,11 +1,11 @@
 ---
 title: "Your Company Has No Model of Itself: Bootstrapping a World Model from
   Slack, Decks and Meetings"
-description: Citadel Securities' Joao Wenzel argues that the one person who
-  "seems to know everything" is a company's only world model, and shows the
-  state-estimator loop (update, age, observe, grade, correct) his team uses to
-  bootstrap one from decks, Slack, meetings, code changes, and agent traces — a
-  job RAG cannot do.
+description: Day 2 · Oct 14. Citadel Securities' Joao Wenzel argues that the one
+  person who "seems to know everything" is a company's only world model, and
+  shows the state-estimator loop (update, age, observe, grade, correct) his team
+  uses to bootstrap one from decks, Slack, meetings, code changes, and agent
+  traces — a job RAG cannot do.
 sidebar:
   order: 37
   hidden: false
@@ -13,6 +13,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Citadel Securities' Joao Wenzel argues that the one person who "seems to know everything" is a company's only world model, and shows the state-estimator loop (update, age, observe, grade, correct) his team uses to bootstrap one from decks, Slack, meetings, code changes, and agent traces — a job RAG cannot do.
 
@@ -40,7 +42,13 @@ Citadel Securities' Joao Wenzel argues that the one person who "seems to know ev
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=23922&rel=0" title="Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Joao Wenzel &middot; 3:19:18 PM ET-3:38:08 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=23922s" rel="noopener">Watch on YouTube from 06:38:42</a></p>
+<p class="session-meta">Joao Wenzel &middot; 3:19:18 PM ET–3:38:08 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=23922s" rel="noopener">Watch on YouTube from 06:38:42</a></p>
+
+## Figures
+
+![A circular world-model loop with a fact half-life inset.](/figures/company-world-model.svg)
+
+The company as a state estimator, with the fact half-life inset.
 
 ## Notable quotes
 - "That person is a company's world model, essentially." [06:39:28 | 3:20:03 PM]

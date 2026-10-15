@@ -36,6 +36,12 @@ confidence: "high"
 7. The platform compounds into products: the pocket analyst does hours of research in a few minutes for a few dollars; the researcher stretches that across days or weeks; custom models like the forecaster produce AI-generated macro predictions; and investment signals turn unstructured data into structured tradable strategies.
 8. The real prize is a proactive agent. The investor workbench keeps an agent always on, tracking what matters to each investor and surfacing topic cards with an agentic summary plus the exact evidence behind the recommendation; when the investor digs in, the collaboration's results are captured automatically back into the Vault for the next turn.
 
+## Figures
+
+![A split comparison of human and agent readers of the same corpus.](../../figures/two-readers-of-the-corpus.svg)
+
+Bridgewater's split between the two classes of reader.
+
 ## Notable quotes
 - "And what originally began as a set of if-then rules on a yellow legal pad evolved into a continuous compounding process with humans at the center, constantly looking for the next thing that's changing in markets." [00:16:06 | 9:03:57 AM]
 - "Even a fast reader manages about 300 words a minute, and personally, I'm much slower." [00:22:02 | 9:09:53 AM]

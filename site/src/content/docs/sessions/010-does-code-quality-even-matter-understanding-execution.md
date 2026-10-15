@@ -1,9 +1,10 @@
 ---
 title: Does Code Quality Even Matter?
-description: "The author of Code Simplicity reduces all software success to
-  understanding and execution, splits software into durable versus disposable,
-  and answers the title directly: quality matters for durable software, not for
-  disposable software — and rigor does not have to be expensive."
+description: "Day 1 · Oct 13. The author of Code Simplicity reduces all software
+  success to understanding and execution, splits software into durable versus
+  disposable, and answers the title directly: quality matters for durable
+  software, not for disposable software — and rigor does not have to be
+  expensive."
 sidebar:
   order: 10
   hidden: false
@@ -12,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 The author of Code Simplicity reduces all software success to understanding and execution, splits software into durable versus disposable, and answers the title directly: quality matters for durable software, not for disposable software — and rigor does not have to be expensive.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/max-kanat-alexander-code-quality">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - All software success depends on exactly two factors: understanding the system and executing on that understanding. Every code-quality practice — tests, debuggers, observability, evals — exists only to serve those two.
@@ -38,7 +43,7 @@ The author of Code Simplicity reduces all software success to understanding and 
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=4182&rel=0" title="Does Code Quality Even Matter?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Max Kanat-Alexander &middot; 9:57:34 AM ET-10:14:28 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=4182s" rel="noopener">Watch on YouTube from 01:09:42</a></p>
+<p class="session-meta">Max Kanat-Alexander &middot; 9:57:34 AM ET–10:14:28 AM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=4182s" rel="noopener">Watch on YouTube from 01:09:42</a></p>
 
 ## Notable quotes
 - "Everything we have ever done in the field of code quality is exclusively and only for these two things." [01:12:11 | 10:00:02 AM]

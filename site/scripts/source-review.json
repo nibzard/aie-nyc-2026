@@ -1,0 +1,44 @@
+{
+  "reviewed_on": "2026-10-15",
+  "reference": "https://aie-nyc-2026-talks.swyxio.workers.dev/",
+  "scope": "Checked speaker attribution across the 26 official October 13 entries; reviewed selected numerical claims and evidence limits. This is not a complete biography or transcript audit.",
+  "corrections": [
+    {
+      "sessions": [
+        "1:026",
+        "1:027"
+      ],
+      "change": "Name the Railway speaker Mahmoud Abdelwahab. Treat the 700 million tokens aside as an aside rather than a measured budget.",
+      "source": "https://aie-nyc-2026-talks.swyxio.workers.dev/talks/mahmoud-abdelwahab-saas-replacements"
+    },
+    {
+      "sessions": [
+        "1:030"
+      ],
+      "change": "Use Eduardo Simon and Javier Casal in the catalog. Describe the record as a partial excerpt without claiming where unavailable material exists.",
+      "source": "https://aie-nyc-2026-talks.swyxio.workers.dev/talks/eduardo-simon-javier-casal-agents-in-orbit"
+    },
+    {
+      "sessions": [
+        "1:033"
+      ],
+      "change": "Clarify the reported value of free token usage rather than a paid invoice. Mark the roughly 90 percent reduction as a workload-specific internal result. Correct the product name to Vals Smith.",
+      "source": "https://aie-nyc-2026-talks.swyxio.workers.dev/talks/rayan-krishnan-jagged-frontier"
+    },
+    {
+      "sessions": [
+        "1:025"
+      ],
+      "change": "Separate headline claims from layer recovery, workload classification, and NVLink identification measurements. Do not present them as a general success rate. Both transcripts contain the headline figures.",
+      "source": "https://aie-nyc-2026-talks.swyxio.workers.dev/talks/branislav-brzak-gpu-neighbor"
+    },
+    {
+      "sessions": [
+        "1:036"
+      ],
+      "change": "Qualify cost and lead-time claims as internal deployment results. The comparison does not isolate the model change or establish general regulatory compliance.",
+      "source": "https://aie-nyc-2026-talks.swyxio.workers.dev/talks/david-abitbol-revolut"
+    }
+  ],
+  "transcripts": "Original transcript text and timestamps remain unchanged."
+}

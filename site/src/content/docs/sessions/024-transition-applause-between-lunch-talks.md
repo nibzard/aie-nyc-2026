@@ -1,9 +1,9 @@
 ---
 title: Transition/applause between lunch talks
-description: A 21-second applause and changeover window on the livestream
-  between two extra lunch talks — Kim Maida's Keycard talk ending and Branislav
-  Brzak's GPU side-channel talk beginning — inside the agenda's 12:15-2:05pm
-  networking break.
+description: Day 1 · Oct 13. A 21-second applause and changeover window on the
+  livestream between two extra lunch talks — Kim Maida's Keycard talk ending and
+  Branislav Brzak's GPU side-channel talk beginning — inside the agenda's
+  12:15-2:05pm networking break.
 sidebar:
   order: 24
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A 21-second applause and changeover window on the livestream between two extra lunch talks — Kim Maida's Keycard talk ending and Branislav Brzak's GPU side-channel talk beginning — inside the agenda's 12:15-2:05pm networking break.
 
@@ -29,7 +31,7 @@ A 21-second applause and changeover window on the livestream between two extra l
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=14484&rel=0" title="Transition/applause between lunch talks" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">12:49:16 PM ET-12:49:37 PM ET &middot; filler &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=14484s" rel="noopener">Watch on YouTube from 04:01:24</a></p>
+<p class="session-meta">12:49:16 PM ET–12:49:37 PM ET &middot; filler &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=14484s" rel="noopener">Watch on YouTube from 04:01:24</a></p>
 
 ## Notable quotes
 > "Hello everyone." — [04:01:45 | 12:49:36 PM] (boundary line; by context this is Branislav Brzak opening the next talk, not speech from this filler segment)

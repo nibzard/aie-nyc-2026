@@ -1,0 +1,720 @@
+[
+  {
+    "key": "1:003",
+    "day": 1,
+    "id": "003",
+    "title": "Vault: Making Unstructured Data Work for Investing",
+    "speakers": [
+      "Sam Green",
+      "Aaron Linsky"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/003-vault-making-unstructured-data-work-for-investing-bridgewater/",
+    "start": 829,
+    "end": 1863,
+    "partial": false,
+    "words": 2803,
+    "sentence_count": 165
+  },
+  {
+    "key": "1:006",
+    "day": 1,
+    "id": "006",
+    "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+    "speakers": [
+      "Belinda Neal",
+      "Keon Shahab"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/006-anthropic-accelerating-frontier-ai-in-financial-services/",
+    "start": 1880,
+    "end": 3017,
+    "partial": false,
+    "words": 3267,
+    "sentence_count": 206
+  },
+  {
+    "key": "1:008",
+    "day": 1,
+    "id": "008",
+    "title": "Balancing Acceleration and Safety for AI Agents",
+    "speakers": [
+      "John Feminella"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/008-balancing-acceleration-and-safety-for-ai-agents/",
+    "start": 3033,
+    "end": 4180,
+    "partial": false,
+    "words": 3721,
+    "sentence_count": 202
+  },
+  {
+    "key": "1:010",
+    "day": 1,
+    "id": "010",
+    "title": "Does Code Quality Even Matter?",
+    "speakers": [
+      "Max Kanat-Alexander"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/010-does-code-quality-even-matter-understanding-execution/",
+    "start": 4182,
+    "end": 5196,
+    "partial": false,
+    "words": 2946,
+    "sentence_count": 228
+  },
+  {
+    "key": "1:013",
+    "day": 1,
+    "id": "013",
+    "title": "What does an AI engineer do?",
+    "speakers": [
+      "Aparna Dhinakaran"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/013-what-does-an-ai-engineer-do-build-the-loop-not-the-feature/",
+    "start": 5217,
+    "end": 6162,
+    "partial": false,
+    "words": 2583,
+    "sentence_count": 121
+  },
+  {
+    "key": "1:016",
+    "day": 1,
+    "id": "016",
+    "title": "Wells Fargo Foundation Model: Application to Fraud Detection at Scale",
+    "speakers": [
+      "Freddy Lecue"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/016-wells-fargo-foundation-model-application-to-fraud-detection/",
+    "start": 6685,
+    "end": 7971,
+    "partial": false,
+    "words": 2671,
+    "sentence_count": 161
+  },
+  {
+    "key": "1:018",
+    "day": 1,
+    "id": "018",
+    "title": "Inside Arca’s long-horizon agents that run the business",
+    "speakers": [
+      "Aman Singh"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/018-inside-arca-s-long-horizon-agents-that-run-the-business/",
+    "start": 8394,
+    "end": 9201,
+    "partial": false,
+    "words": 2109,
+    "sentence_count": 142
+  },
+  {
+    "key": "1:020",
+    "day": 1,
+    "id": "020",
+    "title": "Intent Based Auth",
+    "speakers": [
+      "Allie Howe",
+      "Ian Livingstone",
+      "Michael Davis",
+      "Dick Hardt"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/020-intent-based-auth-panel-runtime-authorization-for-agents/",
+    "start": 9793,
+    "end": 12382,
+    "partial": false,
+    "words": 9040,
+    "sentence_count": 468
+  },
+  {
+    "key": "1:022",
+    "day": 1,
+    "id": "022",
+    "title": "We Let Our Financial Planners Write the Agents",
+    "speakers": [
+      "Matt Ragone"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/022-extra-lunch-talk-financial-planners-building-their-own-agents/",
+    "start": 12420,
+    "end": 12949,
+    "partial": false,
+    "words": 1408,
+    "sentence_count": 114
+  },
+  {
+    "key": "1:023",
+    "day": 1,
+    "id": "023",
+    "title": "Your Agent Is a Lethal Trifecta",
+    "speakers": [
+      "Kim Maida"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/023-extra-lunch-talk-your-agent-is-a-lethal-trifecta-task-scoped/",
+    "start": 12957,
+    "end": 14484,
+    "partial": false,
+    "words": 3632,
+    "sentence_count": 212
+  },
+  {
+    "key": "1:025",
+    "day": 1,
+    "id": "025",
+    "title": "Extra lunch talk: what a GPU co-tenant can learn about your LLM from timing alone (MIG and NVLink side channels)",
+    "speakers": [
+      "Branislav Brzak"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/025-extra-lunch-talk-what-a-gpu-co-tenant-can-learn-about-your/",
+    "start": 14504,
+    "end": 15305,
+    "partial": false,
+    "words": 1968,
+    "sentence_count": 170
+  },
+  {
+    "key": "1:027",
+    "day": 1,
+    "id": "027",
+    "title": "Become your company's SaaS layer — principles for building polished internal tools with agents (Railway)",
+    "speakers": [
+      "Mahmoud Abdelwahab"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/027-extra-lunch-talk-become-your-company-s-saas-layer-principles/",
+    "start": 15330,
+    "end": 16128,
+    "partial": false,
+    "words": 2454,
+    "sentence_count": 126
+  },
+  {
+    "key": "1:028",
+    "day": 1,
+    "id": "028",
+    "title": "No universal schema: just-in-time ontologies, model priors, and Pareto surfing",
+    "speakers": [
+      "Hrishi Olickel"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/028-extra-lunch-talk-no-universal-schema-just-in-time-ontologies/",
+    "start": 16137,
+    "end": 17412,
+    "partial": false,
+    "words": 3559,
+    "sentence_count": 223
+  },
+  {
+    "key": "1:029",
+    "day": 1,
+    "id": "029",
+    "title": "Reliable and intelligent workflows for finance, wealth, and insurance",
+    "speakers": [
+      "Karthic Rao"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/029-extra-lunch-talk-reliable-and-intelligent-workflows-for-fina/",
+    "start": 17430,
+    "end": 18356,
+    "partial": false,
+    "words": 2235,
+    "sentence_count": 174
+  },
+  {
+    "key": "1:030",
+    "day": 1,
+    "id": "030",
+    "title": "Extra lunch talk: Flywire's internal AI platform — structured workflow automation (Orbit on the Victoria PaaS)",
+    "speakers": [
+      "Eduardo Simon",
+      "Javier Casal"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/030-extra-lunch-talk-flywire-s-internal-ai-platform-structured-wo/",
+    "start": 18379,
+    "end": 18542,
+    "partial": true,
+    "words": 319,
+    "sentence_count": 22
+  },
+  {
+    "key": "1:031",
+    "day": 1,
+    "id": "031",
+    "title": "Great Agents Start with Great Infrastructure",
+    "speakers": [
+      "Akshat Bubna"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/031-great-agents-start-with-great-infrastructure-modal-sandboxes/",
+    "start": 18543,
+    "end": 19407,
+    "partial": false,
+    "words": 2117,
+    "sentence_count": 126
+  },
+  {
+    "key": "1:033",
+    "day": 1,
+    "id": "033",
+    "title": "Beyond the Model Card: The Jagged Frontier of AI in Finance",
+    "speakers": [
+      "Rayan Krishnan"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/033-beyond-the-model-card-the-jagged-frontier-of-ai-in-finance/",
+    "start": 20038,
+    "end": 20626,
+    "partial": false,
+    "words": 2029,
+    "sentence_count": 108
+  },
+  {
+    "key": "1:035",
+    "day": 1,
+    "id": "035",
+    "title": "AI and the Future of Fundamental Investing",
+    "speakers": [
+      "Jack Woodruff",
+      "Vinoo Ganesh"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/035-ai-and-the-future-of-fundamental-investing-kepler-fireside/",
+    "start": 21358,
+    "end": 21830,
+    "partial": false,
+    "words": 1042,
+    "sentence_count": 59
+  },
+  {
+    "key": "1:036",
+    "day": 1,
+    "id": "036",
+    "title": "Shipping like a startup, regulated like a bank",
+    "speakers": [
+      "David Abitbol"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/036-shipping-like-a-startup-regulated-like-a-bank-self-hosting/",
+    "start": 21830,
+    "end": 22523,
+    "partial": false,
+    "words": 1747,
+    "sentence_count": 151
+  },
+  {
+    "key": "1:038",
+    "day": 1,
+    "id": "038",
+    "title": "Everyone Has AI. Who Has the Advantage?",
+    "speakers": [
+      "Sid Pednekar"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/038-everyone-has-ai-who-has-the-advantage-three-pillars-design/",
+    "start": 23337,
+    "end": 24416,
+    "partial": false,
+    "words": 2364,
+    "sentence_count": 171
+  },
+  {
+    "key": "1:043",
+    "day": 1,
+    "id": "043",
+    "title": "A Hedge Fund as a Function",
+    "speakers": [
+      "Frank Long"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/043-a-hedge-fund-as-a-function-coatue/",
+    "start": 26060,
+    "end": 26914,
+    "partial": false,
+    "words": 2320,
+    "sentence_count": 165
+  },
+  {
+    "key": "1:046",
+    "day": 1,
+    "id": "046",
+    "title": "Frontier Models for Acting in Space and Time",
+    "speakers": [
+      "Pim de Witte"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/046-frontier-models-for-acting-in-space-and-time-pixels-to-actio/",
+    "start": 26933,
+    "end": 28070,
+    "partial": false,
+    "words": 3226,
+    "sentence_count": 173
+  },
+  {
+    "key": "1:049",
+    "day": 1,
+    "id": "049",
+    "title": "Hermes gives you wings: Build on open foundations.",
+    "speakers": [
+      "Dillon Rolnick"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/sessions/049-hermes-gives-you-wings-build-agents-on-open-foundations-you/",
+    "start": 28071,
+    "end": 29006,
+    "partial": false,
+    "words": 2197,
+    "sentence_count": 141
+  },
+  {
+    "key": "2:002",
+    "day": 2,
+    "id": "002",
+    "title": "Chasing capabilities while waiting for the frontier",
+    "speakers": [
+      "Alexander Shevchenko",
+      "Ksenia Se"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/002-chasing-capabilities-while-waiting-for-the-frontier-ramp-app/",
+    "start": 1199,
+    "end": 2065,
+    "partial": false,
+    "words": 2230,
+    "sentence_count": 96
+  },
+  {
+    "key": "2:004",
+    "day": 2,
+    "id": "004",
+    "title": "The Machine that Changed the World, vAI",
+    "speakers": [
+      "Tariq Shaukat"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/004-the-machine-that-changed-the-world-vai-engineering-confidenc/",
+    "start": 2067,
+    "end": 3081,
+    "partial": false,
+    "words": 2702,
+    "sentence_count": 158
+  },
+  {
+    "key": "2:005",
+    "day": 2,
+    "id": "005",
+    "title": "Trusting Agents in Policy-Driven Workflows",
+    "speakers": [
+      "Evan Kormos"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/005-trusting-agents-in-policy-driven-workflows-policies-as-code/",
+    "start": 3087,
+    "end": 4159,
+    "partial": false,
+    "words": 2191,
+    "sentence_count": 135
+  },
+  {
+    "key": "2:007",
+    "day": 2,
+    "id": "007",
+    "title": "Building the Next Chapter of AI in Finance",
+    "speakers": [
+      "Joseph Kim"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/007-building-the-next-chapter-of-ai-in-finance-chatgpt-for-finan/",
+    "start": 4172,
+    "end": 5328,
+    "partial": false,
+    "words": 3248,
+    "sentence_count": 179
+  },
+  {
+    "key": "2:010",
+    "day": 2,
+    "id": "010",
+    "title": "Security in the Age of AI: Recent Attacks, Incidents & Defenses",
+    "speakers": [
+      "Andrey Rybka"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/010-security-in-the-age-of-ai-recent-attacks-incidents-defenses/",
+    "start": 5329,
+    "end": 6293,
+    "partial": false,
+    "words": 2053,
+    "sentence_count": 219
+  },
+  {
+    "key": "2:012",
+    "day": 2,
+    "id": "012",
+    "title": "Towards Autonomous Analysts in Finance",
+    "speakers": [
+      "Yijia Liang"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/012-towards-autonomous-analysts-in-finance-compound-long-running/",
+    "start": 7196,
+    "end": 8130,
+    "partial": false,
+    "words": 2925,
+    "sentence_count": 163
+  },
+  {
+    "key": "2:014",
+    "day": 2,
+    "id": "014",
+    "title": "Not All GPU's Are Deployed The Same",
+    "speakers": [
+      "Oliver Kennon"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/014-not-all-gpu-s-are-deployed-the-same-cost-curves-for-intellig/",
+    "start": 8707,
+    "end": 9755,
+    "partial": false,
+    "words": 2678,
+    "sentence_count": 210
+  },
+  {
+    "key": "2:016",
+    "day": 2,
+    "id": "016",
+    "title": "How Compute Markets Work",
+    "speakers": [
+      "Evan Conrad"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/016-how-compute-markets-work-supercomputing-as-a-service-credit/",
+    "start": 10199,
+    "end": 11256,
+    "partial": false,
+    "words": 3457,
+    "sentence_count": 207
+  },
+  {
+    "key": "2:018",
+    "day": 2,
+    "id": "018",
+    "title": "The Dark Pools of Compute",
+    "speakers": [
+      "Affaan Mustafa",
+      "Alejandro Soumah Fernandez"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/018-the-dark-pools-of-compute-unlit-otc-compute-markets-jevons-p/",
+    "start": 11722,
+    "end": 12944,
+    "partial": false,
+    "words": 3825,
+    "sentence_count": 209
+  },
+  {
+    "key": "2:020",
+    "day": 2,
+    "id": "020",
+    "title": "CEO, Compute Exchange",
+    "speakers": [
+      "Carmen Li"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/020-ceo-compute-exchange-the-only-neutral-gpu-marketplace-silico/",
+    "start": 13187,
+    "end": 14264,
+    "partial": false,
+    "words": 2695,
+    "sentence_count": 236
+  },
+  {
+    "key": "2:023",
+    "day": 2,
+    "id": "023",
+    "title": "Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)",
+    "speakers": [
+      "Harisha P C"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/023-building-an-enterprise-agent-ecosystem-with-mcp-gateway-serv/",
+    "start": 14328,
+    "end": 16097,
+    "partial": false,
+    "words": 5002,
+    "sentence_count": 236
+  },
+  {
+    "key": "2:024",
+    "day": 2,
+    "id": "024",
+    "title": "The Agent Works. Does Anyone Trust It?",
+    "speakers": [
+      "Michele Grant"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/024-the-agent-works-does-anyone-trust-it-michele-grant-value-cas/",
+    "start": 16103,
+    "end": 17019,
+    "partial": false,
+    "words": 1720,
+    "sentence_count": 125
+  },
+  {
+    "key": "2:026",
+    "day": 2,
+    "id": "026",
+    "title": "Tokens Are the Cheap Part: AI spend, developer throughput, and cost per merged PR",
+    "speakers": [
+      "Steve Jamison"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/026-tokens-are-the-cheap-part-ai-spend-developer-throughput-and/",
+    "start": 17044,
+    "end": 18090,
+    "partial": false,
+    "words": 2145,
+    "sentence_count": 179
+  },
+  {
+    "key": "2:029",
+    "day": 2,
+    "id": "029",
+    "title": "Agentifying a SEC Master",
+    "speakers": [
+      "Amol Kapoor",
+      "Clifford Ressel",
+      "Jiro"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/029-agentifying-a-sec-master-nori-agentic-podcast-format-aie-onl/",
+    "start": 18138,
+    "end": 19340,
+    "partial": false,
+    "words": 4301,
+    "sentence_count": 311
+  },
+  {
+    "key": "2:031",
+    "day": 2,
+    "id": "031",
+    "title": "Built to Scale: Future-Proofing Your Technology Roadmap",
+    "speakers": [
+      "John Stecher",
+      "Scott Worland"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/031-built-to-scale-future-proofing-your-technology-roadmap-black/",
+    "start": 19361,
+    "end": 20594,
+    "partial": false,
+    "words": 4810,
+    "sentence_count": 214
+  },
+  {
+    "key": "2:033",
+    "day": 2,
+    "id": "033",
+    "title": "Why Wall Street Still Doesn’t Trust AI",
+    "speakers": [
+      "Vinoo Ganesh"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/033-why-wall-street-still-doesn-t-trust-ai-kepler-verification-d/",
+    "start": 20984,
+    "end": 22080,
+    "partial": false,
+    "words": 3183,
+    "sentence_count": 205
+  },
+  {
+    "key": "2:035",
+    "day": 2,
+    "id": "035",
+    "title": "Coding an Autonomous Wall Street Coworker: Custom Skills, Connectors, and Event Hooks",
+    "speakers": [
+      "Philipp Schmid"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/035-coding-an-autonomous-wall-street-co-worker-with-gemini-manag/",
+    "start": 22337,
+    "end": 23370,
+    "partial": false,
+    "words": 3095,
+    "sentence_count": 196
+  },
+  {
+    "key": "2:037",
+    "day": 2,
+    "id": "037",
+    "title": "Your Company Has No Model of Itself: Bootstrapping a World Model from Slack, Decks and Meetings",
+    "speakers": [
+      "Joao Wenzel"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/037-your-company-has-no-model-of-itself-bootstrapping-a-world-mo/",
+    "start": 23922,
+    "end": 25052,
+    "partial": false,
+    "words": 3372,
+    "sentence_count": 205
+  },
+  {
+    "key": "2:039",
+    "day": 2,
+    "id": "039",
+    "title": "Self-Improving Organizations",
+    "speakers": [
+      "Will Brown"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/039-self-improving-organizations-ai-native-enterprises-open-sour/",
+    "start": 25157,
+    "end": 26746,
+    "partial": false,
+    "words": 3888,
+    "sentence_count": 170
+  },
+  {
+    "key": "2:041",
+    "day": 2,
+    "id": "041",
+    "title": "Stop Wasting Tokens on Products People Can’t Use",
+    "speakers": [
+      "Jemima Abu"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/041-stop-wasting-tokens-on-products-people-can-t-use-cost-of-acc/",
+    "start": 26790,
+    "end": 27391,
+    "partial": false,
+    "words": 2449,
+    "sentence_count": 124
+  },
+  {
+    "key": "2:042",
+    "day": 2,
+    "id": "042",
+    "title": "Scary stories of AI gone wrong: three real incidents and the infrastructure controls that prevent them",
+    "speakers": [
+      "Zhao Chenjiang"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/042-scary-stories-of-ai-gone-wrong-three-real-incidents-and-the/",
+    "start": 27393,
+    "end": 27708,
+    "partial": true,
+    "words": 763,
+    "sentence_count": 45
+  },
+  {
+    "key": "2:045",
+    "day": 2,
+    "id": "045",
+    "title": "AI in Practice: An Inside Look at Apollo's Approach",
+    "speakers": [
+      "Michael Manapat",
+      "Jack McDonald"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/045-ai-in-practice-an-inside-look-at-apollo-s-approach-rowspace/",
+    "start": 28190,
+    "end": 29356,
+    "partial": false,
+    "words": 3313,
+    "sentence_count": 143
+  },
+  {
+    "key": "2:047",
+    "day": 2,
+    "id": "047",
+    "title": "Process Supervision for Agents That Do Long-Horizon Work",
+    "speakers": [
+      "Mitchell Troyanovsky"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/047-process-supervision-for-agents-that-do-long-horizon-work-beh/",
+    "start": 29357,
+    "end": 30536,
+    "partial": false,
+    "words": 3341,
+    "sentence_count": 207
+  },
+  {
+    "key": "2:049",
+    "day": 2,
+    "id": "049",
+    "title": "Everything will be Simulated",
+    "speakers": [
+      "Cristóbal Valenzuela"
+    ],
+    "url": "https://aie-nyc-2026.vercel.app/day2/049-everything-will-be-simulated-runway-video-models-next-frame/",
+    "start": 30548,
+    "end": 31570,
+    "partial": false,
+    "words": 3107,
+    "sentence_count": 183
+  }
+]

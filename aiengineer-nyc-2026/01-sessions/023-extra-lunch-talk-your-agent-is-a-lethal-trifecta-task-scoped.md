@@ -40,6 +40,12 @@ Provenance note: this talk was delivered as an extra lunch talk in the 12:23 PM 
 7. Delegation must respect the delegating user's own authority. In the replay, the agent asked for approval to restart the main server, but policy blocked it anyway because the presenter's user role did not permit the action: "the agent can't do it, but I can't do it either, and the agent is acting on my behalf." Approval flows only work when they are backed by policy, not substituted for it.
 8. Prefer open, composable standards over bespoke gates. Token exchange is public and well researched, so anyone can implement it. It interoperates with existing policy engines, standards-compliant identity providers, gateways, sandboxes, OAuth, off-the-shelf and custom agents, CLIs, MCP servers, software factories, agent-to-agent, cross-app access — "plus whatever comes out next week."
 
+## Figures
+
+![Venn diagram of the three lethal attack surfaces.](../../figures/lethal-trifecta.svg)
+
+The trifecta from this talk; the rule of two is day two’s Bloomberg framing.
+
 ## Notable quotes
 
 > "Non-privileged agent dropping a production database is basically a nightmare that several companies have actually lived." — [03:39:25 | 12:27:16 PM]

@@ -36,6 +36,12 @@ confidence: "high"
 7. **The scale numbers define the infrastructure bar.** 20 million snapshots a week, 8 petabytes of data processed a day, almost 2.6 million volumes created a week. One personal-assistant customer workload requires creating 10,000 sandboxes a second, running almost a million sandboxes that live only two or three minutes, and each must be interactive in less than a second.
 8. **You cannot get this scale from a single cloud.** The world is crunched on CPUs, not just GPUs, so Modal aggregates cloud capacity across a bunch of hyperscalers and neoclouds so users get CPU capacity worldwide when they need it.
 
+## Figures
+
+![Three panels showing sandbox eras.](../../figures/pets-cattle-microbes.svg)
+
+The sandbox eras, ending in the ocean of microbes.
+
 ## Notable quotes
 - [05:10:10 | 1:58:01 PM] You have a spreadsheet, and you can run a query where literally every cell is backed by a different agent.
 - [05:18:20 | 2:06:12 PM] I don't think you should vibe code a sandbox platform.

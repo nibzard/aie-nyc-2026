@@ -1,0 +1,144 @@
+---
+import data from '../data/topics.json';
+import { coverage, detail, matrix, comparison, related, type TopicState } from './topic-view';
+const state: TopicState = {topic:'cost', day:'all', view:'coverage', session:'', all:false, query:'', sort:'coverage', rate:'pooled'};
+---
+<topic-explorer>
+  <p class="digest-kicker">47 talks · Two days · Source-linked analysis</p>
+  <p class="explorer-intro">Find the sessions behind a topic. Compare how widely it appears, see what changes between days, and check the source.</p>
+  <div class="explorer-insights">
+    <a href="?topic=cost"><strong>Cost</strong><span>34 of 47 talks match. Day 2 uses cost terms about twice as often per word.</span></a>
+    <a href="?topic=security"><strong>Security</strong><span>Day 2 reaches more talks, while Day 1 has more matches per word.</span></a>
+    <a href="?topic=compute"><strong>Compute</strong><span>Day 2 uses compute terms about seven times as often per word.</span></a>
+  </div>
+  <p class="explorer-note">These are overlapping term families, not rankings of importance. The <a href="/#find-a-lesson-for-what-you-are-building">field guides</a> explain what to try.</p>
+  <div class="explorer-controls" hidden>
+    <fieldset><legend>Choose a day</legend><div class="day-filter-buttons">
+      <button type="button" data-day="all" aria-pressed="true">Both days · 47 talks</button>
+      <button type="button" data-day="1" aria-pressed="false">Day 1 · 23 talks</button>
+      <button type="button" data-day="2" aria-pressed="false">Day 2 · 24 talks</button>
+    </div></fieldset>
+    <fieldset><legend>Choose a view</legend><div class="day-filter-buttons">
+      <button type="button" data-view="coverage" aria-pressed="true">Topic coverage</button>
+      <button type="button" data-view="matrix" aria-pressed="false">Session map</button>
+    </div></fieldset>
+  </div>
+  <p class="explorer-status" role="status" aria-live="polite">Cost · 34 of 47 talks across both days</p>
+  <section class="matrix-section" hidden aria-label="Session map">
+    <p>Scroll the table to compare topics. On a phone, topic coverage offers a simpler way to find the same sources.</p>
+    <div class="matrix-scroll" tabindex="0" role="region" aria-label="Scrollable session and topic table" set:html={matrix(data,state)} />
+  </section>
+  <div class="explorer-layout">
+    <section class="topic-coverage" aria-labelledby="coverage-heading">
+      <h2 id="coverage-heading">Topic coverage</h2>
+      <p class="explorer-note">Talks with matches in at least two transcript segments.</p>
+      <div class="topic-search-controls" hidden>
+        <label for="topic-search">Find a topic</label><input type="search" id="topic-search" autocomplete="off" placeholder="For example, trust" />
+        <label for="topic-sort">Sort topics</label><select id="topic-sort"><option value="coverage">Most talks first</option><option value="name">Topic name</option></select>
+        <label class="topic-all"><input type="checkbox" id="all-topics" /> Show all 24 topics</label>
+      </div>
+      <div class="topic-bars" set:html={coverage(data,state)} />
+    </section>
+    <section class="topic-detail" aria-labelledby="selected-topic" set:html={detail(data,state)} />
+  </div>
+  <section class="topic-comparison" aria-labelledby="compare-heading">
+    <h2 id="compare-heading">Compare emphasis, not recording length</h2>
+    <div class="rate-control" hidden><label for="topic-rate">Weight the comparison</label><select id="topic-rate"><option value="pooled">Pool each day’s words</option><option value="equal">Give each talk equal weight</option></select></div>
+    <div data-comparison set:html={comparison(data,state)} />
+  </section>
+  <details class="topic-related"><summary>Explore related concepts</summary><div data-related set:html={related(data,state)} /></details>
+  <details class="topic-lexical"><summary>See the repeated words and phrases</summary>
+    <p>Word counts explain the vocabulary. They do not measure usefulness. Inflections and common aliases are merged; common function words are removed.</p>
+    <div class="lexical-grid"><div><h2>Frequent terms</h2><ol>{data.lexical.slice(0,15).map(r => <li><span>{r.term}</span><strong>{r.mentions.toLocaleString()}</strong></li>)}</ol></div><div><h2>Repeated phrases</h2><ol>{data.phrases.slice(0,15).map(r => <li><span>{r.phrase}</span><strong>{r.mentions.toLocaleString()}</strong></li>)}</ol></div></div>
+    <p class="explorer-note">These counts cover both days and do not follow the day filter. “Agent” includes “agents” and “agentic.” Lexical term counts and topic-family counts use different matching rules.</p>
+  </details>
+  <section class="explorer-methods" aria-labelledby="methods-heading">
+    <h2 id="methods-heading">How to read this analysis</h2>
+    <p>The corpus contains 134,250 words from 47 distinct talks in the two main-stage recordings. It does not cover every room.</p>
+    <details><summary>Scope, matching rules, and limits</summary>
+      <ul>
+        <li>Day 1 has 23 talks and 61,757 words. Day 2 has 24 talks and 72,493 words.</li>
+        <li>The session browser has 48 summaries. This analysis folds the separate Day 1 question period into its keynote. The duplicated Intuit record and welcome remarks are excluded.</li>
+        <li>The Flywire and Coder recordings are partial. Source matches can include brief introductions inside a talk.</li>
+        <li>Each of the 24 term families has a visible matching rule. Categories overlap. For example, “trust” includes confidence and reliability. A phrase can match a different technical meaning.</li>
+        <li>A talk counts toward coverage when at least two distinct transcript segments match. Rates count every match per 10,000 words. The denominators and recording lengths differ between days.</li>
+        <li>Eight excerpts have manually reviewed labels: <strong>Reported result</strong>, <strong>Implementation guidance</strong>, <strong>Constraint</strong>, or <strong>Future plan</strong>. Labels apply only to those excerpts. They do not rate a whole talk or independently verify a claim.</li>
+        <li>Automatic transcripts can contain errors in names, numbers, and technical terms. Source links let you check the audio and surrounding context.</li>
+      </ul>
+      <p>Semantic topic models and sentiment scoring were tested during research. They are not presented as definitive topic labels or speaker attitudes. Technical threat descriptions and ordinary words such as “save” can mislead a general sentiment model.</p>
+    </details>
+    <p><a href="/data/topics/coverage.csv" download>Coverage data (CSV)</a> · <a href="/data/topics/words.csv" download>Word counts (CSV)</a> · <a href="/data/topics/explorer.json" download>Explorer data (JSON)</a> · <a href="/data/topics/methodology.json" download>Method and source hashes (JSON)</a></p>
+    <p><a href="/#find-a-lesson-for-what-you-are-building">Read the field guides →</a> · <a href="/sessions-index/">Browse all summaries →</a></p>
+  </section>
+  <noscript><p>JavaScript enables the day filters and topic selection. The cost analysis, source links, and downloads remain available here.</p></noscript>
+  <script type="application/json" data-topic-data set:html={JSON.stringify(data).replace(/</g,'\\u003c')} />
+</topic-explorer>
+<script>
+  import { current, coverage, detail, matrix, comparison, related, selectedMatches, total, type TopicData, type TopicState } from './topic-view';
+  class TopicExplorer extends HTMLElement {
+    connectedCallback() {
+      const data: TopicData = JSON.parse(this.querySelector('[data-topic-data]')!.textContent!);
+      const query = this.querySelector<HTMLInputElement>('#topic-search')!;
+      const all = this.querySelector<HTMLInputElement>('#all-topics')!;
+      const sort = this.querySelector<HTMLSelectElement>('#topic-sort')!;
+      const rate = this.querySelector<HTMLSelectElement>('#topic-rate')!;
+      let state: TopicState;
+      const read = () => {
+        const p = new URLSearchParams(location.search);
+        const topic = data.concepts.find(c => c.id === p.get('topic'))?.id || 'cost';
+        const day = ['1','2'].includes(p.get('day') || '') ? p.get('day')! : 'all';
+        const session = data.sessions.find(s => s.key === p.get('session') && (day === 'all' || s.day === Number(day)))?.key || '';
+        state = {topic, day, session, view:p.get('view') === 'matrix' ? 'matrix':'coverage', all:p.get('all') === '1', query:p.get('q') || '', sort:p.get('sort') === 'name' ? 'name':'coverage', rate:p.get('rate') === 'equal' ? 'equal':'pooled'};
+      };
+      const render = () => {
+        query.value=state.query; all.checked=state.all; sort.value=state.sort; rate.value=state.rate;
+        this.querySelector('.topic-bars')!.innerHTML=coverage(data,state);
+        this.querySelector('.topic-detail')!.innerHTML=detail(data,state);
+        this.querySelector('[data-comparison]')!.innerHTML=comparison(data,state);
+        this.querySelector('[data-related]')!.innerHTML=related(data,state);
+        const isMatrix=state.view === 'matrix';
+        this.querySelector<HTMLElement>('.matrix-section')!.hidden=!isMatrix;
+        this.querySelector<HTMLElement>('.topic-coverage')!.hidden=isMatrix;
+        this.querySelector('.explorer-layout')!.classList.toggle('map-layout',isMatrix);
+        if (isMatrix) this.querySelector('.matrix-scroll')!.innerHTML=matrix(data,state);
+        this.querySelectorAll<HTMLButtonElement>('[data-day]').forEach(b => b.setAttribute('aria-pressed',String(b.dataset.day === state.day)));
+        this.querySelectorAll<HTMLButtonElement>('[data-view]').forEach(b => b.setAttribute('aria-pressed',String(b.dataset.view === state.view)));
+        this.querySelector('.explorer-status')!.textContent=`${current(data,state).concept} · ${selectedMatches(data,state).length} of ${total(state)} talks ${state.day === 'all' ? 'across both days':`from Day ${state.day}`}`;
+      };
+      const update = (replace=false) => {
+        const u=new URL(location.href);
+        const values={topic:state.topic, day:state.day === 'all'?'':state.day, view:state.view === 'coverage'?'':state.view, session:state.session, all:state.all?'1':'', q:state.query, sort:state.sort === 'coverage'?'':state.sort, rate:state.rate === 'pooled'?'':state.rate};
+        for (const [key,value] of Object.entries(values)) value ? u.searchParams.set(key,value):u.searchParams.delete(key);
+        replace ? history.replaceState(null,'',u):history.pushState(null,'',u);
+        render();
+      };
+      // Dynamic panels are replaced. Restore focus to the equivalent control.
+      this.addEventListener('click', event => {
+        const button=(event.target as HTMLElement).closest<HTMLButtonElement>('button');
+        if (!button) return;
+        if (button.dataset.day) {state.day=button.dataset.day;state.session='';update();return;}
+        if (button.dataset.view) {state.view=button.dataset.view;update();return;}
+        if (button.hasAttribute('data-clear-session')) {state.session='';update();const heading=this.querySelector<HTMLElement>('#topic-evidence')!;heading.setAttribute('tabindex','-1');heading.focus();return;}
+        if (button.dataset.topic || button.dataset.session) {
+          const topic=button.dataset.topic, session=button.dataset.session;
+          if (topic) {state.topic=topic;state.session='';}
+          if (session) state.session=session;
+          const fromMap=!!button.closest('.matrix-scroll'), fromRelated=!!button.closest('[data-related]');
+          update();
+          if (fromMap || fromRelated || session) {
+            const heading=this.querySelector<HTMLElement>(session?'#topic-evidence':'#selected-topic')!;
+            heading.setAttribute('tabindex','-1');heading.focus();heading.scrollIntoView({block:'start'});
+          } else this.querySelector<HTMLButtonElement>(`.topic-bars [data-topic="${state.topic}"]`)?.focus({preventScroll:true});
+        }
+      });
+      query.addEventListener('input',()=>{state.query=query.value;update(true);});
+      all.addEventListener('change',()=>{state.all=all.checked;update();});
+      sort.addEventListener('change',()=>{state.sort=sort.value;update();});
+      rate.addEventListener('change',()=>{state.rate=rate.value;update();});
+      window.addEventListener('popstate',()=>{read();render();});
+      this.querySelectorAll<HTMLElement>('.explorer-controls,.topic-search-controls,.rate-control').forEach(el=>el.hidden=false);
+      read();render();
+    }
+  }
+  if (!customElements.get('topic-explorer')) customElements.define('topic-explorer',TopicExplorer);
+</script>

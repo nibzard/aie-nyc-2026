@@ -1,9 +1,9 @@
 ---
 title: Stage voiceover intro for Mitchell Troyanovsky (Basis)
-description: "A 26-second unnamed stage voiceover bridging the Apollo/Redding
-  Ridge fireside and the Basis keynote: it frames agent evaluation around the
-  decisions made along the way, not just the final answer, then welcomes
-  Mitchell Troyanovsky, co-founder of Basis, to the stage."
+description: "Day 2 · Oct 14. A 26-second unnamed stage voiceover bridging the
+  Apollo/Redding Ridge fireside and the Basis keynote: it frames agent
+  evaluation around the decisions made along the way, not just the final answer,
+  then welcomes Mitchell Troyanovsky, co-founder of Basis, to the stage."
 sidebar:
   order: 46
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 26-second unnamed stage voiceover bridging the Apollo/Redding Ridge fireside and the Basis keynote: it frames agent evaluation around the decisions made along the way, not just the final answer, then welcomes Mitchell Troyanovsky, co-founder of Basis, to the stage.
 
@@ -33,7 +35,7 @@ A 26-second unnamed stage voiceover bridging the Apollo/Redding Ridge fireside a
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=29357&rel=0" title="Stage voiceover intro for Mitchell Troyanovsky (Basis)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">4:49:53 PM ET-4:50:19 PM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=29357s" rel="noopener">Watch on YouTube from 08:09:17</a></p>
+<p class="session-meta">4:49:53 PM ET–4:50:19 PM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=29357s" rel="noopener">Watch on YouTube from 08:09:17</a></p>
 
 ## Notable quotes
 > "When AI agents tackle complex tasks, the final answer is only part of the story." [08:09:17 | 4:49:53 PM]

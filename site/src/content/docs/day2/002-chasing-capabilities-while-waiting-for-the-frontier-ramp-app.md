@@ -1,9 +1,9 @@
 ---
 title: Chasing capabilities while waiting for the frontier
-description: "Ramp Labs' Alexander Shevchenko argues that an application-layer
-  company should not wait for the next frontier model, and shows three Ramp
-  cases where applied research closed the gap: a post-trained Qwen 3.5
-  specialist, KV-cache cartridges, and 10,000-agent pen-test swarms."
+description: "Day 2 · Oct 14. Ramp Labs' Alexander Shevchenko argues that an
+  application-layer company should not wait for the next frontier model, and
+  shows three Ramp cases where applied research closed the gap: a post-trained
+  Qwen 3.5 specialist, KV-cache cartridges, and 10,000-agent pen-test swarms."
 sidebar:
   order: 2
   hidden: false
@@ -11,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Ramp Labs' Alexander Shevchenko argues that an application-layer company should not wait for the next frontier model, and shows three Ramp cases where applied research closed the gap: a post-trained Qwen 3.5 specialist, KV-cache cartridges, and 10,000-agent pen-test swarms.
 
@@ -37,7 +39,13 @@ Ramp Labs' Alexander Shevchenko argues that an application-layer company should 
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=1199&rel=0" title="Chasing capabilities while waiting for the frontier" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Alexander Shevchenko, Ksenia Se &middot; 9:00:35 AM ET-9:15:01 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=1199s" rel="noopener">Watch on YouTube from 00:19:59</a></p>
+<p class="session-meta">Alexander Shevchenko, Ksenia Se &middot; 9:00:35 AM ET–9:15:01 AM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=1199s" rel="noopener">Watch on YouTube from 00:19:59</a></p>
+
+## Figures
+
+![Three panels of right-sizing economics.](/figures/small-model-wins.svg)
+
+Right-sizing economics: the 35B specialist panel is from this talk.
 
 ## Notable quotes
 > "And to caveat my presentation on Ramp Labs, Ramp is an extremely bitter lesson-built company." [00:20:55 | 9:01:30 AM]

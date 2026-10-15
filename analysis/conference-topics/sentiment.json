@@ -1,0 +1,26 @@
+{
+  "baseline": "VADER, transcript segments with at least 8 words; thresholds ±0.05; strong-valence sensitivity ±0.5",
+  "by_day": [
+    {
+      "day": 1,
+      "segments": 3009,
+      "positive_share": 0.4251,
+      "neutral_share": 0.4467,
+      "negative_share": 0.1283,
+      "mean_compound": 0.1437,
+      "strong_positive_share": 0.1512,
+      "strong_negative_share": 0.0259
+    },
+    {
+      "day": 2,
+      "segments": 3307,
+      "positive_share": 0.4977,
+      "neutral_share": 0.3985,
+      "negative_share": 0.1037,
+      "mean_compound": 0.204,
+      "strong_positive_share": 0.2171,
+      "strong_negative_share": 0.0184
+    }
+  ],
+  "warning": "Measures lexical valence of a transcript segment, not sentiment toward AI or audience sentiment. No reliable stance labels are inferred."
+}

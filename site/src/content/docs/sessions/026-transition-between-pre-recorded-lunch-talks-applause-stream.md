@@ -1,9 +1,9 @@
 ---
 title: Transition between pre-recorded lunch talks (applause / stream filler)
-description: A 26-second applause and stream-filler window between two
-  pre-recorded extra lunch talks — Branislav Brzak's GPU side-channel talk
-  ending and the Railway "SaaS layer" talk beginning — inside the agenda's
-  12:15pm-2:05pm Networking Break.
+description: Day 1 · Oct 13. A 26-second applause and stream-filler window
+  between two pre-recorded extra lunch talks — Branislav Brzak's GPU
+  side-channel talk ending and the Railway "SaaS layer" talk beginning — inside
+  the agenda's 12:15pm-2:05pm Networking Break.
 sidebar:
   order: 26
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A 26-second applause and stream-filler window between two pre-recorded extra lunch talks — Branislav Brzak's GPU side-channel talk ending and the Railway "SaaS layer" talk beginning — inside the agenda's 12:15pm-2:05pm Networking Break.
 
@@ -33,7 +35,7 @@ A 26-second applause and stream-filler window between two pre-recorded extra lun
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=15305&rel=0" title="Transition between pre-recorded lunch talks (applause / stream filler)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">1:02:57 PM ET-1:03:23 PM ET &middot; filler &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=15305s" rel="noopener">Watch on YouTube from 04:15:05</a></p>
+<p class="session-meta">1:02:57 PM ET–1:03:23 PM ET &middot; filler &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=15305s" rel="noopener">Watch on YouTube from 04:15:05</a></p>
 
 ## Notable quotes
 > "Thank you all for watching." — [04:15:05 | 1:02:57 PM] (boundary line; by context this is Branislav Brzak closing his GPU side-channel talk, not speech original to this filler segment)
@@ -52,7 +54,7 @@ No speakers are credited for this segment in the session manifest.
 
 **Branislav Brzak** - AI Security Researcher, Stealthium (contextual attribution only). The boundary line "Thank you all for watching." at [04:15:05 | 1:02:57 PM] belongs to him by context: it closes his lunch talk on GPU side channels in segment 025. His research shows a GPU co-tenant can fingerprint a victim LLM's architecture and depth with about 97% accuracy and its decode speed with about 99.3% accuracy from timing alone, within a MIG-partitioned H100 and across an NVSwitch/NVLink fabric. Links: [LinkedIn](https://rs.linkedin.com/in/branislav-brzak)
 
-**Unnamed Railway engineer** (identified from session context, not this segment). The boundary line "People have been saying that SaaS is dead for a while now." at [04:15:31 | 1:03:22 PM] opens this speaker's lunch talk on becoming your company's SaaS layer (segment 027), recorded from Edinburgh. The manifest records the name as "not heard", and no speaker record exists.
+**Mahmoud Abdelwahab** (identified in the official talk library, not in this transition segment). The boundary line "People have been saying that SaaS is dead for a while now." at [04:15:31 | 1:03:22 PM] opens this speaker's lunch talk on becoming your company's SaaS layer (segment 027), recorded from Edinburgh. The original manifest recorded the name as "not heard". The [official reading edition](https://aie-nyc-2026-talks.swyxio.workers.dev/talks/mahmoud-abdelwahab-saas-replacements) supplies the speaker attribution.
 
 ## Full timestamped transcript
 ```

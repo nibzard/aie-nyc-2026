@@ -35,6 +35,12 @@ confidence: "high"
 7. Quality starts with inputs and lives or dies on the check. "Higher quality inputs will result in better outputs at a lower compute cost" [01:01:16 | 9:41:51 AM]; inject the DAG state into the agent's context so it knows where it fits into the bigger picture [01:02:04 | 9:42:39 AM]. The check must define what good looks like, and "The loop is really only as trustworthy as the check" [01:02:52 | 9:43:27 AM].
 8. Replace unit-test exactness with statistical evaluation, then climb the autonomy hill. Agents are probabilistic: "the same request can produce different answers" and "More than one answer may be acceptable" [01:03:51-01:03:58]. So build representative data sets, "run these evaluations in repeated series" as a statistical analysis [01:04:17 | 9:44:53 AM], and combine them with traces as runtime logs [01:04:34 | 9:45:10 AM]. Screen nodes with four questions (checkable against policy, bounded loop, traceable, human fallback) [01:05:34-01:05:44]; keep the decision node human-driven [01:06:10 | 9:46:46 AM]; and turn autonomy on gradually: supervised, then sampling at a policy confidence threshold, then exception-only human work [01:06:30-01:07:27].
 
+## Figures
+
+![A deterministic DAG shell with an adaptive agent loop inside one node.](../../figures/deterministic-outside-adaptive-inside.svg)
+
+The policy DAG shell from this talk and the compiler row from day one’s Perpetual talk.
+
 ## Notable quotes
 - "Think of policy as the original institutional intent, or the original system prompt." [00:52:56 | 9:33:31 AM]
 - "The loop is really only as trustworthy as the check." [01:02:52 | 9:43:27 AM]

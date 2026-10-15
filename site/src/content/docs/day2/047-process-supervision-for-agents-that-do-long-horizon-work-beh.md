@@ -1,9 +1,9 @@
 ---
 title: Process Supervision for Agents That Do Long-Horizon Work
-description: Basis co-founder Mitchell Troyanovsky argues that agents only earn
-  end-to-end production use when they are simple and reliable, and shows three
-  tools — behavior specs, forking, and simulations — that supervise the process
-  of long-horizon work, not just the outcome.
+description: Day 2 · Oct 14. Basis co-founder Mitchell Troyanovsky argues that
+  agents only earn end-to-end production use when they are simple and reliable,
+  and shows three tools — behavior specs, forking, and simulations — that
+  supervise the process of long-horizon work, not just the outcome.
 sidebar:
   order: 47
   hidden: false
@@ -11,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Basis co-founder Mitchell Troyanovsky argues that agents only earn end-to-end production use when they are simple and reliable, and shows three tools — behavior specs, forking, and simulations — that supervise the process of long-horizon work, not just the outcome.
 
@@ -37,7 +39,7 @@ Basis co-founder Mitchell Troyanovsky argues that agents only earn end-to-end pr
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=29357&rel=0" title="Process Supervision for Agents That Do Long-Horizon Work" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Mitchell Troyanovsky &middot; 4:49:53 PM ET-5:09:32 PM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=29357s" rel="noopener">Watch on YouTube from 08:09:17</a></p>
+<p class="session-meta">Mitchell Troyanovsky &middot; 4:49:53 PM ET–5:09:32 PM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=29357s" rel="noopener">Watch on YouTube from 08:09:17</a></p>
 
 ## Notable quotes
 - "It's okay if you can't do something, but you should be consistently able to not do something, and then you get better, just like a person does." [08:16:24 | 4:56:59 PM]

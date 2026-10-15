@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Pets, cattle, microbes</title>
+  <desc id="desc">Three-panel evolution of sandbox infrastructure. Pets: a few named, bespoke, hand-tended machines. Cattle: a replaceable fleet of homogeneous templates that heals when one fails, where most agent deployments sit today. Microbes: an ephemeral ocean of self-evolving sandbox swarms, spun up and back down on demand, an analogy credited to Swyx. Below, the brains-versus-hands split: the harness is the brains, the sandbox is the hands. Stats: 20 million snapshots a week, about 8 petabytes processed a day, one workload needing 10,000 sandboxes a second. Quote: "I don't think you should vibe code a sandbox platform."</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+  </defs>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+    <rect x="1" y="1" width="958" height="538" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+    <text x="40" y="58" font-size="11" letter-spacing="0.08em" fill="#52514e">CONCEPT — INFRASTRUCTURE</text>
+    <text x="40" y="84" font-size="20" font-weight="600" fill="#0b0b0b">Pets, cattle, microbes</text>
+    <text x="40" y="106" font-size="13" fill="#52514e">The pets-to-cattle analogy evolves into "an ocean of microbes" — credit to Swyx.</text>
+
+    <!-- Panel 1: pets -->
+    <rect x="40" y="124" width="272" height="190" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <rect x="56" y="136" width="4" height="14" rx="1" fill="#86b6ef"/>
+    <text x="66" y="148" font-size="12.5" font-weight="600" letter-spacing="0.04em" fill="#0b0b0b">PETS</text>
+    <rect x="86" y="172" width="64" height="40" rx="6" fill="#86b6ef" fill-opacity="0.10" stroke="#86b6ef" stroke-width="1.5"/>
+    <text x="118" y="196" font-size="11" fill="#0b0b0b" text-anchor="middle">db-01</text>
+    <rect x="166" y="172" width="64" height="40" rx="6" fill="#86b6ef" fill-opacity="0.10" stroke="#86b6ef" stroke-width="1.5"/>
+    <text x="198" y="196" font-size="11" fill="#0b0b0b" text-anchor="middle">db-02</text>
+    <text x="176" y="268" font-size="11.5" fill="#52514e" text-anchor="middle">A few named machines,</text>
+    <text x="176" y="286" font-size="11.5" fill="#52514e" text-anchor="middle">each one bespoke,</text>
+    <text x="176" y="303" font-size="11.5" fill="#52514e" text-anchor="middle">managed one by one.</text>
+
+    <line x1="318" y1="219" x2="336" y2="219" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <!-- Panel 2: cattle -->
+    <rect x="344" y="124" width="272" height="190" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <rect x="360" y="136" width="4" height="14" rx="1" fill="#5598e7"/>
+    <text x="370" y="148" font-size="12.5" font-weight="600" letter-spacing="0.04em" fill="#0b0b0b">CATTLE</text>
+    <text x="596" y="148" font-size="11" fill="#52514e" text-anchor="end">today</text>
+    <rect x="397" y="172" width="34" height="24" rx="4" fill="#5598e7" fill-opacity="0.10" stroke="#5598e7" stroke-width="1.5"/>
+    <rect x="441" y="172" width="34" height="24" rx="4" fill="#5598e7" fill-opacity="0.10" stroke="#5598e7" stroke-width="1.5"/>
+    <rect x="485" y="172" width="34" height="24" rx="4" fill="#5598e7" fill-opacity="0.10" stroke="#5598e7" stroke-width="1.5"/>
+    <rect x="529" y="172" width="34" height="24" rx="4" fill="#5598e7" fill-opacity="0.10" stroke="#5598e7" stroke-width="1.5"/>
+    <rect x="397" y="206" width="34" height="24" rx="4" fill="#5598e7" fill-opacity="0.10" stroke="#5598e7" stroke-width="1.5"/>
+    <rect x="441" y="206" width="34" height="24" rx="4" fill="#5598e7" fill-opacity="0.10" stroke="#5598e7" stroke-width="1.5"/>
+    <rect x="485" y="206" width="34" height="24" rx="4" fill="#5598e7" fill-opacity="0.10" stroke="#5598e7" stroke-width="1.5"/>
+    <rect x="529" y="206" width="34" height="24" rx="4" fill="#5598e7" fill-opacity="0.10" stroke="#5598e7" stroke-width="1.5"/>
+    <text x="480" y="268" font-size="11.5" fill="#52514e" text-anchor="middle">A replaceable fleet of</text>
+    <text x="480" y="286" font-size="11.5" fill="#52514e" text-anchor="middle">homogeneous templates.</text>
+    <text x="480" y="303" font-size="11.5" fill="#52514e" text-anchor="middle">One fails, it heals.</text>
+
+    <line x1="622" y1="219" x2="640" y2="219" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <!-- Panel 3: microbes -->
+    <rect x="648" y="124" width="272" height="190" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <rect x="664" y="136" width="4" height="14" rx="1" fill="#2a78d6"/>
+    <text x="674" y="148" font-size="12.5" font-weight="600" letter-spacing="0.04em" fill="#0b0b0b">MICROBES</text>
+    <text x="904" y="148" font-size="11" fill="#52514e" text-anchor="end">next</text>
+    <circle cx="712" cy="196" r="3" fill="#2a78d6"/>
+    <circle cx="726" cy="178" r="2.5" fill="#2a78d6" fill-opacity="0.6"/>
+    <circle cx="738" cy="206" r="4" fill="#2a78d6"/>
+    <circle cx="752" cy="186" r="2.5" fill="#2a78d6" fill-opacity="0.6"/>
+    <circle cx="764" cy="222" r="3" fill="#2a78d6"/>
+    <circle cx="778" cy="172" r="2" fill="#2a78d6" fill-opacity="0.45"/>
+    <circle cx="788" cy="198" r="3.5" fill="#2a78d6"/>
+    <circle cx="802" cy="232" r="2.5" fill="#2a78d6" fill-opacity="0.6"/>
+    <circle cx="812" cy="180" r="3" fill="#2a78d6"/>
+    <circle cx="826" cy="204" r="2.5" fill="#2a78d6" fill-opacity="0.6"/>
+    <circle cx="840" cy="188" r="4" fill="#2a78d6"/>
+    <circle cx="854" cy="214" r="2.5" fill="#2a78d6" fill-opacity="0.6"/>
+    <circle cx="700" cy="224" r="2" fill="#2a78d6" fill-opacity="0.45"/>
+    <circle cx="748" cy="168" r="2" fill="#2a78d6" fill-opacity="0.45"/>
+    <circle cx="770" cy="238" r="2" fill="#2a78d6" fill-opacity="0.45"/>
+    <circle cx="800" cy="164" r="2" fill="#2a78d6" fill-opacity="0.45"/>
+    <circle cx="822" cy="222" r="2" fill="#2a78d6" fill-opacity="0.45"/>
+    <circle cx="848" cy="170" r="2" fill="#2a78d6" fill-opacity="0.45"/>
+    <circle cx="860" cy="236" r="2" fill="#2a78d6" fill-opacity="0.45"/>
+    <circle cx="718" cy="214" r="2.5" fill="#2a78d6" fill-opacity="0.6"/>
+    <circle cx="744" cy="194" r="2" fill="#2a78d6" fill-opacity="0.45"/>
+    <circle cx="766" cy="210" r="2.5" fill="#2a78d6" fill-opacity="0.6"/>
+    <circle cx="792" cy="184" r="2" fill="#2a78d6" fill-opacity="0.45"/>
+    <circle cx="806" cy="212" r="3" fill="#2a78d6"/>
+    <circle cx="832" cy="196" r="2" fill="#2a78d6" fill-opacity="0.45"/>
+    <text x="784" y="268" font-size="11.5" fill="#52514e" text-anchor="middle">An ephemeral ocean of</text>
+    <text x="784" y="286" font-size="11.5" fill="#52514e" text-anchor="middle">self-evolving swarms,</text>
+    <text x="784" y="303" font-size="11.5" fill="#52514e" text-anchor="middle">spun up and back down.</text>
+
+    <!-- Brains / hands split -->
+    <text x="40" y="344" font-size="11" letter-spacing="0.08em" fill="#52514e">BRAINS AND HANDS SPLIT</text>
+    <rect x="40" y="354" width="150" height="50" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="115" y="377" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">Harness</text>
+    <text x="115" y="395" font-size="11.5" fill="#52514e" text-anchor="middle">the brains</text>
+    <line x1="200" y1="379" x2="244" y2="379" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+    <rect x="254" y="354" width="166" height="50" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="337" y="377" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">Sandbox</text>
+    <text x="337" y="395" font-size="11.5" fill="#52514e" text-anchor="middle">the hands</text>
+
+    <!-- Quote chip -->
+    <rect x="454" y="330" width="466" height="82" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="476" y="374" font-size="34" fill="#52514e">“</text>
+    <text x="510" y="362" font-size="14" font-style="italic" fill="#0b0b0b">I don't think you should</text>
+    <text x="510" y="382" font-size="14" font-style="italic" fill="#0b0b0b">vibe code a sandbox platform.</text>
+    <text x="510" y="402" font-size="11" fill="#52514e">his reasons: reliability · security · scale</text>
+
+    <!-- Stats chips -->
+    <rect x="40" y="428" width="282" height="52" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="60" y="450" font-size="15" font-weight="600" fill="#0b0b0b">20 million</text>
+    <text x="60" y="468" font-size="11.5" fill="#52514e">snapshots a week</text>
+    <rect x="339" y="428" width="282" height="52" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="359" y="450" font-size="15" font-weight="600" fill="#0b0b0b">~8 petabytes</text>
+    <text x="359" y="468" font-size="11.5" fill="#52514e">processed a day</text>
+    <rect x="638" y="428" width="282" height="52" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="658" y="450" font-size="15" font-weight="600" fill="#0b0b0b">10,000 a second</text>
+    <text x="658" y="468" font-size="11.5" fill="#52514e">sandboxes — one workload</text>
+
+    <text x="40" y="508" font-size="11" fill="#52514e">Source: Akshat Bubna (Modal), "Great Agents Start with Great Infrastructure", AI Engineer NYC 2026, day 1.</text>
+  </g>
+</svg>

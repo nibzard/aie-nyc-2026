@@ -1,8 +1,8 @@
 ---
 title: Panel close / stage transition (applause before lunch-talk block)
-description: 'A 36-second bridge: the "Intent Based Auth" panel ends in mutual
-  thanks and applause, and the stream holds on the stage until the first extra
-  lunch talk begins.'
+description: 'Day 1 · Oct 13. A 36-second bridge: the "Intent Based Auth" panel
+  ends in mutual thanks and applause, and the stream holds on the stage until
+  the first extra lunch talk begins.'
 sidebar:
   order: 21
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A 36-second bridge: the "Intent Based Auth" panel ends in mutual thanks and applause, and the stream holds on the stage until the first extra lunch talk begins.
 
@@ -29,7 +31,7 @@ None - this segment is a 36-second panel close and transition.
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=12383&rel=0" title="Panel close / stage transition (applause before lunch-talk block)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">12:14:15 PM ET-12:14:51 PM ET &middot; filler &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=12383s" rel="noopener">Watch on YouTube from 03:26:23</a></p>
+<p class="session-meta">12:14:15 PM ET–12:14:51 PM ET &middot; filler &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=12383s" rel="noopener">Watch on YouTube from 03:26:23</a></p>
 
 ## Notable quotes
 > "Thanks so much." — [03:26:23 | 12:14:14 PM]

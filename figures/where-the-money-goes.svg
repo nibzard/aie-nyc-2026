@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="title">Where the money goes</title>
+  <desc id="desc">Two panels. Left: the cost of a merged PR is about 97.5 percent salary and about 2.5 percent AI spend, with chips for merged PRs per engineer up 43 percent, cost per merged PR down 26 percent, and AI spend up 60 times year over year, plus a quote that the bill tells you what you spent while cost per PR tells you whether it worked. Right: self-hosted tokens at 30 cents per million, one-tenth of the previous Anthropic and OpenAI invoice, with chips for time to first token falling from over 10 seconds to about 1.6 seconds and throughput rising from about 3 to over 7 requests per second on the same 56 GPUs.</desc>
+  <rect x="1" y="1" width="958" height="538" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="48" y="64" font-size="11" font-weight="600" letter-spacing="0.88" fill="#52514e">DATA — ECONOMICS</text>
+  <text x="48" y="92" font-size="20" font-weight="600" fill="#0b0b0b">Where the money goes</text>
+  <text x="48" y="116" font-size="13" fill="#52514e">Two cost views from the conference: what a merged PR costs, and what self-hosted tokens cost.</text>
+
+  <!-- Panel A: cost of a merged PR -->
+  <rect x="48" y="146" width="432" height="350" rx="8" fill="#ffffff" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="72" y="176" font-size="15" font-weight="600" fill="#0b0b0b">The cost of a merged PR</text>
+  <text x="72" y="194" font-size="11" fill="#52514e">Share of “intelligence cost” (salary + AI), August 2026</text>
+
+  <line x1="72" y1="212" x2="72" y2="336" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="72" y="232" font-size="12" fill="#52514e">Salary</text>
+  <path d="M72 240 H390 A4 4 0 0 1 394 244 V260 A4 4 0 0 1 390 264 H72 Z" fill="#9ec5f4" fill-opacity="0.45"/>
+  <text x="402" y="260" font-size="13" fill="#52514e">97.5%</text>
+
+  <text x="72" y="300" font-size="12" fill="#52514e">AI spend</text>
+  <path d="M72 308 H76 A4 4 0 0 1 80 312 V328 A4 4 0 0 1 76 332 H72 Z" fill="#2a78d6"/>
+  <text x="90" y="328" font-size="13" font-weight="600" fill="#0b0b0b">2.5%</text>
+
+  <rect x="72" y="348" width="120" height="64" rx="8" fill="#2a78d6" fill-opacity="0.06" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="84" y="370" font-size="13" font-weight="600" fill="#0b0b0b">+43%</text>
+  <text x="84" y="387" font-size="11" fill="#52514e">merged PRs per</text>
+  <text x="84" y="401" font-size="11" fill="#52514e">engineer</text>
+
+  <rect x="202" y="348" width="120" height="64" rx="8" fill="#2a78d6" fill-opacity="0.06" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="214" y="370" font-size="13" font-weight="600" fill="#0b0b0b">−26%</text>
+  <text x="214" y="387" font-size="11" fill="#52514e">cost per</text>
+  <text x="214" y="401" font-size="11" fill="#52514e">merged PR</text>
+
+  <rect x="332" y="348" width="120" height="64" rx="8" fill="#2a78d6" fill-opacity="0.06" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="344" y="370" font-size="13" font-weight="600" fill="#0b0b0b">60x</text>
+  <text x="344" y="387" font-size="11" fill="#52514e">AI spend vs.</text>
+  <text x="344" y="401" font-size="11" fill="#52514e">last year</text>
+
+  <rect x="72" y="424" width="384" height="48" rx="8" fill="#2a78d6" fill-opacity="0.08"/>
+  <text x="88" y="444" font-size="12" fill="#0b0b0b">“The bill tells you what you spent.</text>
+  <text x="88" y="460" font-size="12" fill="#0b0b0b">Cost per PR tells you whether it worked.”</text>
+
+  <text x="72" y="486" font-size="11" fill="#52514e">Source: Steve Jamison (Jellyfish), day 2, session 026.</text>
+
+  <!-- Panel B: self-hosted tokens -->
+  <rect x="480" y="146" width="432" height="350" rx="8" fill="#ffffff" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="504" y="176" font-size="15" font-weight="600" fill="#0b0b0b">Self-hosted tokens</text>
+  <text x="504" y="194" font-size="11" fill="#52514e">GLM-4.3 on 56 B200 GPUs, serving 2,000 engineers</text>
+
+  <line x1="504" y1="212" x2="504" y2="272" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="504" y="232" font-size="12" fill="#52514e">Blended cost per million tokens</text>
+  <path d="M504 240 H750 A4 4 0 0 1 754 244 V260 A4 4 0 0 1 750 264 H504 Z" fill="#2a78d6"/>
+  <text x="762" y="260" font-size="13" font-weight="600" fill="#0b0b0b">$0.30</text>
+  <text x="504" y="292" font-size="12" fill="#52514e">Invoice is one-tenth of the previous</text>
+  <text x="504" y="309" font-size="12" fill="#52514e">Anthropic and OpenAI spend.</text>
+
+  <rect x="504" y="328" width="182" height="64" rx="8" fill="#2a78d6" fill-opacity="0.06" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="516" y="350" font-size="13" font-weight="600" fill="#0b0b0b">over 10 s → ~1.6 s</text>
+  <text x="516" y="367" font-size="11" fill="#52514e">time to first token</text>
+  <text x="516" y="381" font-size="11" fill="#52514e">after tuning</text>
+
+  <rect x="706" y="328" width="182" height="64" rx="8" fill="#2a78d6" fill-opacity="0.06" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="718" y="350" font-size="13" font-weight="600" fill="#0b0b0b">~3 → 7+ req/s</text>
+  <text x="718" y="367" font-size="11" fill="#52514e">requests per second</text>
+  <text x="718" y="381" font-size="11" fill="#52514e">on the same 56 GPUs</text>
+
+  <text x="504" y="412" font-size="11" font-style="italic" fill="#52514e">Caveat: the comparison does not isolate the</text>
+  <text x="504" y="427" font-size="11" font-style="italic" fill="#52514e">model change from other causes.</text>
+
+  <text x="504" y="486" font-size="11" fill="#52514e">Source: David Abitbol (Revolut), day 1, session 036.</text>
+</svg>

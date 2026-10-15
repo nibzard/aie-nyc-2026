@@ -2,10 +2,10 @@
 title: 'Break / room turnaround in Simons Room: after "Shipping like a startup,
   regulated like a bank" (David Abitbol, Revolut), before "Everyone Has AI. Who
   Has the Advantage?" (Sid Pednekar) - 13.6 min with no transcribed audio'
-description: After David Abitbol closed the Revolut talk at 3:03:13 PM, the
-  Simons Room stage turned over for 13 minutes and 35 seconds with no
-  transcribed audio, until Sid Pednekar opened "Everyone Has AI. Who Has the
-  Advantage?" at 3:16:49 PM.
+description: Day 1 · Oct 13. After David Abitbol closed the Revolut talk at
+  3:03:13 PM, the Simons Room stage turned over for 13 minutes and 35 seconds
+  with no transcribed audio, until Sid Pednekar opened "Everyone Has AI. Who Has
+  the Advantage?" at 3:16:49 PM.
 sidebar:
   order: 37
   hidden: true
@@ -13,6 +13,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 After David Abitbol closed the Revolut talk at 3:03:13 PM, the Simons Room stage turned over for 13 minutes and 35 seconds with no transcribed audio, until Sid Pednekar opened "Everyone Has AI. Who Has the Advantage?" at 3:16:49 PM.
 
@@ -35,7 +37,7 @@ After David Abitbol closed the Revolut talk at 3:03:13 PM, the Simons Room stage
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=22522&rel=0" title="Break / room turnaround in Simons Room: after &quot;Shipping like a startup, regulated like a bank&quot; (David Abitbol, Revolut), before &quot;Everyone Has AI. Who Has the Advantage?&quot; (Sid Pednekar) - 13.6 min with no transcribed audio" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">3:03:14 PM ET-3:16:49 PM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=22522s" rel="noopener">Watch on YouTube from 06:15:22</a></p>
+<p class="session-meta">3:03:14 PM ET–3:16:49 PM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=22522s" rel="noopener">Watch on YouTube from 06:15:22</a></p>
 
 ## Notable quotes
 > "Thanks, everyone." — [06:15:21 | 3:03:13 PM]

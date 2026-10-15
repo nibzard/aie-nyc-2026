@@ -1,9 +1,9 @@
 ---
 title: Between-session transition (11:48-11:55am ET)
-description: A 7 minute 46 second untranscribed gap on the Simons Room stream
-  between the close of Evan Conrad's "How Compute Markets Work" at 11:48:12 AM
-  ET and the first audible words of Jump Trading's "The Dark Pools of Compute"
-  at 11:55:57 AM ET.
+description: Day 2 · Oct 14. A 7 minute 46 second untranscribed gap on the
+  Simons Room stream between the close of Evan Conrad's "How Compute Markets
+  Work" at 11:48:12 AM ET and the first audible words of Jump Trading's "The
+  Dark Pools of Compute" at 11:55:57 AM ET.
 sidebar:
   order: 17
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 7 minute 46 second untranscribed gap on the Simons Room stream between the close of Evan Conrad's "How Compute Markets Work" at 11:48:12 AM ET and the first audible words of Jump Trading's "The Dark Pools of Compute" at 11:55:57 AM ET.
 
@@ -31,7 +33,7 @@ None - this segment is a 7-minute between-session transition.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=11256&rel=0" title="Between-session transition (11:48-11:55am ET)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">11:48:12 AM ET-11:55:57 AM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=11256s" rel="noopener">Watch on YouTube from 03:07:36</a></p>
+<p class="session-meta">11:48:12 AM ET–11:55:57 AM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=11256s" rel="noopener">Watch on YouTube from 03:07:36</a></p>
 
 ## Session narrative
 This segment is a between-session transition, not a talk. The previous speaker, Evan Conrad of San Francisco Compute, closed "How Compute Markets Work" with "Cool. That's it. That's the talk." and a final "Yeah." at t=11256.219 (11:48:12 AM ET), about 12 seconds past the agenda's 11:48am block end. The transcript then records no sentences for 465.6 seconds. The next speech on the stream is the fragment "Started here." at t=11721.829 (11:55:57 AM ET), followed one second later by "Hey everyone, my name is Afan", the self-introduction that opens "The Dark Pools of Compute" (Jump Trading), which began about 58 seconds into its 11:55am agenda slot. The two transcript lines below are boundary markers only: "Yeah." closes the previous session, and "Started here." marks the first audible words of the next session. The audio in between is untranscribed applause, room changeover, and hold; the boundary verification confirmed the gap in both transcript and OCR checks.

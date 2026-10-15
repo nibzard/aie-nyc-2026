@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Deterministic outside, adaptive inside</title>
+  <desc id="desc">Nested-box diagram. An outer deterministic DAG workflow contains policy gates, parallel reviews, and waits, approvals, and follow-ups as first-class nodes; one agent node is expanded to show the adaptive directed-cyclic-graph loop of run steps, check, and apply feedback living inside it. Below, Perpetual's engine: a planner model call emits a typed semantic graph, a compiler that never calls a model turns it into an immutable hash-pinned DAG in eleven deterministic stages, checked against 42 typed action contracts with fail-closed behavior.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+    <marker id="arrO" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#eb6834"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="959" height="719" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+  <text x="48" y="64" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" letter-spacing="0.08em" fill="#52514e">CONCEPT — ARCHITECTURE</text>
+  <text x="48" y="90" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#0b0b0b">Deterministic outside, adaptive inside</text>
+  <text x="48" y="114" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#52514e">The recipe: "keep it deterministic on the outside and make it adaptive on the inside."</text>
+
+  <!-- outer deterministic workflow -->
+  <rect x="48" y="142" width="864" height="300" rx="10" fill="#ffffff" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="68" y="168" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">Outer flow — a deterministic DAG workflow</text>
+  <rect x="430" y="159" width="10" height="10" rx="2" fill="#2a78d6"/>
+  <text x="446" y="168" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">deterministic</text>
+  <rect x="556" y="159" width="10" height="10" rx="2" fill="#eb6834"/>
+  <text x="572" y="168" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">adaptive (model)</text>
+  <text x="888" y="168" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">wrapped in a policy boundary</text>
+
+  <rect x="68" y="200" width="96" height="32" rx="8" fill="#fcfcfb" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="116" y="220" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">request</text>
+  <line x1="164" y1="216" x2="182" y2="216" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="188" y="200" width="104" height="32" rx="8" fill="#fcfcfb" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="240" y="220" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">policy gate</text>
+  <line x1="292" y1="210" x2="312" y2="198" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="292" y1="222" x2="312" y2="230" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="316" y="186" width="150" height="24" rx="8" fill="#fcfcfb" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="391" y="202" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">independent review</text>
+  <rect x="316" y="218" width="150" height="24" rx="8" fill="#fcfcfb" stroke="#eb6834" stroke-width="1.5"/>
+  <text x="391" y="234" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">agent node</text>
+  <line x1="466" y1="198" x2="486" y2="208" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="466" y1="230" x2="486" y2="224" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="490" y="200" width="118" height="32" rx="8" fill="#fcfcfb" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="549" y="220" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">wait · approval</text>
+  <line x1="608" y1="216" x2="628" y2="216" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="632" y="200" width="104" height="32" rx="8" fill="#fcfcfb" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="684" y="220" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">follow-up</text>
+  <line x1="736" y1="216" x2="756" y2="216" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="760" y="200" width="128" height="32" rx="8" fill="#fcfcfb" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="824" y="220" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">decision</text>
+
+  <text x="188" y="274" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">must · may · should</text>
+  <text x="316" y="252" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">parallel reviews</text>
+  <text x="490" y="272" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">72 h default</text>
+  <text x="644" y="272" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">child plan · 5-round cap</text>
+  <text x="760" y="256" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">kept human-driven</text>
+  <path d="M 391,242 L 391,258 L 632,258 L 632,276" fill="none" stroke="#c3c2b7" stroke-width="1" marker-end="url(#arr)"/>
+
+  <text x="68" y="298" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#52514e">waits, approvals, and follow-ups are nodes in the plan, not prompts</text>
+  <text x="68" y="342" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b">"Think of policy as the original institutional intent,</text>
+  <text x="68" y="358" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b">or the original system prompt."</text>
+  <text x="68" y="404" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b">"The loop is really only as trustworthy as the check."</text>
+
+  <!-- expanded node: inner adaptive loop -->
+  <rect x="620" y="280" width="268" height="154" rx="10" fill="#eb6834" fill-opacity="0.08" stroke="#eb6834" stroke-width="1.5"/>
+  <text x="636" y="300" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">inside one node: the loop (DCG)</text>
+  <text x="636" y="422" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">people and agents work together</text>
+  <rect x="636" y="352" width="84" height="26" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="678" y="369" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">run steps</text>
+  <line x1="720" y1="365" x2="738" y2="365" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="742" y="352" width="62" height="26" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <text x="773" y="369" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">check</text>
+  <path d="M 773,352 L 773,330 Q 773,322 765,322 L 686,322 Q 678,322 678,330 L 678,348" fill="none" stroke="#eb6834" stroke-width="1.5" marker-end="url(#arrO)"/>
+  <text x="721" y="316" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">apply feedback</text>
+  <line x1="804" y1="365" x2="828" y2="365" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="834" y="369" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">next</text>
+  <text x="636" y="396" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">iterate until the work is good</text>
+  <text x="636" y="408" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">enough to pass</text>
+
+  <!-- perpetual engine -->
+  <text x="48" y="478" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">The deterministic outside, compiled — Perpetual's engine</text>
+  <rect x="48" y="494" width="270" height="92" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="66" cy="510" r="5" fill="#eb6834"/>
+  <text x="80" y="515" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">planner — one model call</text>
+  <text x="64" y="534" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">its only job is translation:</text>
+  <text x="64" y="548" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">emits a typed semantic graph,</text>
+  <text x="64" y="562" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">grounded in the request's words</text>
+  <line x1="318" y1="540" x2="340" y2="540" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="346" y="494" width="270" height="92" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="364" cy="510" r="5" fill="#2a78d6"/>
+  <text x="378" y="515" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">compiler — never calls a model</text>
+  <text x="362" y="534" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">eleven deterministic stages turn</text>
+  <text x="362" y="548" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">the graph into an execution DAG,</text>
+  <text x="362" y="562" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">or it fails closed</text>
+  <line x1="616" y1="540" x2="638" y2="540" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="644" y="494" width="268" height="92" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="662" cy="510" r="5" fill="#2a78d6"/>
+  <text x="676" y="515" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#0b0b0b">the plan: immutable, hash-pinned</text>
+  <text x="660" y="534" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">42 typed action contracts;</text>
+  <text x="660" y="548" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">about 40 ways to fail closed;</text>
+  <text x="660" y="562" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">verdicts: valid · needs</text>
+  <text x="660" y="576" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">clarification · refused</text>
+
+  <text x="48" y="612" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b">"The model steers; it never drives."</text>
+  <text x="500" y="612" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b">"So the intelligent way to build is to use</text>
+  <text x="500" y="628" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b">intelligence minimally and on purpose."</text>
+
+  <text x="48" y="660" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">Sources: Evan Kormos (Coinbase), "Trusting Agents in Policy-Driven Workflows", AI Engineer NYC 2026, day 2;</text>
+  <text x="48" y="676" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e">Karthic Rao (Perpetual), "Reliable and intelligent workflows for finance, wealth, and insurance", day 1.</text>
+</svg>

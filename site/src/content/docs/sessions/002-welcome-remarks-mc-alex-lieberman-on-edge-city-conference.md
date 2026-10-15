@@ -1,9 +1,10 @@
 ---
 title: Welcome Remarks
-description: MC Alex Lieberman opens AI Engineer New York 2026 by calling the
-  room an "Edge City" that lives six months to two years ahead of AI consensus,
-  frames the event as "AI engineering meets Wall Street," thanks the AIE team
-  and sponsors, and hands off to the first keynote from Bridgewater.
+description: Day 1 · Oct 13. MC Alex Lieberman opens AI Engineer New York 2026
+  by calling the room an "Edge City" that lives six months to two years ahead of
+  AI consensus, frames the event as "AI engineering meets Wall Street," thanks
+  the AIE team and sponsors, and hands off to the first keynote from
+  Bridgewater.
 sidebar:
   order: 2
   hidden: true
@@ -12,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 MC Alex Lieberman opens AI Engineer New York 2026 by calling the room an "Edge City" that lives six months to two years ahead of AI consensus, frames the event as "AI engineering meets Wall Street," thanks the AIE team and sponsors, and hands off to the first keynote from Bridgewater.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/opening-remarks">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Alex Lieberman introduces himself as co-founder and co-managing partner at 10X, an applied AI company that helps Fortune 500 businesses become AI-native, and as prior co-founder of Morning Brew.
@@ -37,7 +42,7 @@ MC Alex Lieberman opens AI Engineer New York 2026 by calling the room an "Edge C
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=629&rel=0" title="Welcome Remarks" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Alex Lieberman &middot; 8:58:21 AM ET-9:01:58 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=629s" rel="noopener">Watch on YouTube from 00:10:29</a></p>
+<p class="session-meta">Alex Lieberman &middot; 8:58:21 AM ET–9:01:58 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=629s" rel="noopener">Watch on YouTube from 00:10:29</a></p>
 
 ## Notable quotes
 - "And what I love about this conference and why I get so excited to come to it every single year is because this almost feels like X on steroids." [00:11:35 | 8:59:27 AM]

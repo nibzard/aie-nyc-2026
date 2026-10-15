@@ -35,6 +35,12 @@ confidence: "high"
 7. Brokering clusters cannot work. The hotel analogy: if you buy a resold hotel room, "Who do I call?" for room service or repairs [03:02:13-03:02:27]. "You have to operate the cluster like the hotel. You have to run the whole damn thing" [03:02:33-03:02:36].
 8. The ante to start a lab rose from a $10 million deposit to $100 million to $1 billion [03:03:44-03:03:59]. Projecting the line, founders will need to buy $100 million of tokens to compete [03:05:53-03:06:03], and the default outcome is consolidation into "one big creditworthy customer," a TSMC-like structure with a few clouds and labs [03:00:40-03:00:57].
 
+## Figures
+
+![A supply chain from chips to contracts with credit as the constraint.](../../figures/compute-becomes-a-market.svg)
+
+The market map: chips, power, credit as the binding constraint, and contracts.
+
 ## Notable quotes
 "When we say physically settled, we mean we're the operator." [02:50:27 | 11:31:03 AM]
 

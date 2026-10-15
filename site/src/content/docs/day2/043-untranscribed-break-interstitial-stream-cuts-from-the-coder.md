@@ -2,10 +2,10 @@
 title: "Untranscribed break interstitial: stream cuts from the Coder talk (Zhao
   Chenjiang) mid-flow to a music slate; captions resume at the welcome-back
   voiceover for the final block"
-description: A 3-minute-45-second non-speech interstitial in which the
-  main-stage stream cut mid-flow from Zhao Chenjiang's off-agenda Coder talk to
-  an AI Engineer branded music slate, then returned with the welcome-back
-  voiceover for the final keynote block.
+description: Day 2 · Oct 14. A 3-minute-45-second non-speech interstitial in
+  which the main-stage stream cut mid-flow from Zhao Chenjiang's off-agenda
+  Coder talk to an AI Engineer branded music slate, then returned with the
+  welcome-back voiceover for the final keynote block.
 sidebar:
   order: 43
   hidden: true
@@ -13,6 +13,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 3-minute-45-second non-speech interstitial in which the main-stage stream cut mid-flow from Zhao Chenjiang's off-agenda Coder talk to an AI Engineer branded music slate, then returned with the welcome-back voiceover for the final keynote block.
 
@@ -35,7 +37,7 @@ A 3-minute-45-second non-speech interstitial in which the main-stage stream cut 
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=27703&rel=0" title="Untranscribed break interstitial: stream cuts from the Coder talk (Zhao Chenjiang) mid-flow to a music slate; captions resume at the welcome-back voiceover for the final block" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">4:22:19 PM ET-4:26:04 PM ET &middot; filler &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=27703s" rel="noopener">Watch on YouTube from 07:41:43</a></p>
+<p class="session-meta">4:22:19 PM ET–4:26:04 PM ET &middot; filler &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=27703s" rel="noopener">Watch on YouTube from 07:41:43</a></p>
 
 ## Notable quotes
 

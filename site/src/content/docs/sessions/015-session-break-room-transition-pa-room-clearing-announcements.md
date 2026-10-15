@@ -1,10 +1,10 @@
 ---
 title: Session break / room transition (PA room-clearing announcements, then
   dead air before the Wells Fargo talk)
-description: "A roughly nine-minute room-turnaround break on the main-stage
-  livestream: a PA voice clears Simons Room after the Arize AI keynote, the
-  stream holds with no speech for about 8.6 minutes, and Freddy Lecue's Wells
-  Fargo talk begins at the segment's closing boundary."
+description: "Day 1 · Oct 13. A roughly nine-minute room-turnaround break on the
+  main-stage livestream: a PA voice clears Simons Room after the Arize AI
+  keynote, the stream holds with no speech for about 8.6 minutes, and Freddy
+  Lecue's Wells Fargo talk begins at the segment's closing boundary."
 sidebar:
   order: 15
   hidden: true
@@ -12,6 +12,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A roughly nine-minute room-turnaround break on the main-stage livestream: a PA voice clears Simons Room after the Arize AI keynote, the stream holds with no speech for about 8.6 minutes, and Freddy Lecue's Wells Fargo talk begins at the segment's closing boundary.
 
@@ -33,7 +35,7 @@ A roughly nine-minute room-turnaround break on the main-stage livestream: a PA v
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=6163&rel=0" title="Session break / room transition (PA room-clearing announcements, then dead air before the Wells Fargo talk)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">10:30:35 AM ET-10:39:17 AM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=6163s" rel="noopener">Watch on YouTube from 01:42:43</a></p>
+<p class="session-meta">10:30:35 AM ET–10:39:17 AM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=6163s" rel="noopener">Watch on YouTube from 01:42:43</a></p>
 
 ## Notable quotes
 [01:42:43 | 10:30:34 AM] The current program has finished its run.

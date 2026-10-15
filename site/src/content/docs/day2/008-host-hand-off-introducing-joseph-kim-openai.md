@@ -1,9 +1,10 @@
 ---
 title: "Host hand-off: introducing Joseph Kim (OpenAI)"
-description: "A 16-second voiceover bridge between the Coinbase policy keynote
-  and the OpenAI finance keynote: an unnamed host asks what it takes to turn AI
-  advances into meaningful progress for financial services, then welcomes Joseph
-  Kim, head of ChatGPT for financial services at OpenAI, to the stage."
+description: "Day 2 · Oct 14. A 16-second voiceover bridge between the Coinbase
+  policy keynote and the OpenAI finance keynote: an unnamed host asks what it
+  takes to turn AI advances into meaningful progress for financial services,
+  then welcomes Joseph Kim, head of ChatGPT for financial services at OpenAI, to
+  the stage."
 sidebar:
   order: 8
   hidden: true
@@ -11,6 +12,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 16-second voiceover bridge between the Coinbase policy keynote and the OpenAI finance keynote: an unnamed host asks what it takes to turn AI advances into meaningful progress for financial services, then welcomes Joseph Kim, head of ChatGPT for financial services at OpenAI, to the stage.
 
@@ -31,7 +34,7 @@ None - this segment is a short voice-over hand-off.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=4173&rel=0" title="Host hand-off: introducing Joseph Kim (OpenAI)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Unidentified host/MC &middot; 9:50:09 AM ET-9:50:25 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=4173s" rel="noopener">Watch on YouTube from 01:09:33</a></p>
+<p class="session-meta">Unidentified host/MC &middot; 9:50:09 AM ET–9:50:25 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=4173s" rel="noopener">Watch on YouTube from 01:09:33</a></p>
 
 ## Notable quotes
 > "What does it take to turn advances in AI into meaningful progress for financial services?" [01:09:33 | 9:50:08 AM]

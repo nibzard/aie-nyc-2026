@@ -1,9 +1,9 @@
 ---
 title: A Hedge Fund as a Function
-description: "Coatue Head of AI Frank Long models a hedge fund as a function
-  that compresses external and internal context into one tuple — selection,
-  size, timing — and decomposes it into evaluable steps, each run by the best of
-  four runner types: code, statistics, LLMs, or people."
+description: "Day 1 · Oct 13. Coatue Head of AI Frank Long models a hedge fund
+  as a function that compresses external and internal context into one tuple —
+  selection, size, timing — and decomposes it into evaluable steps, each run by
+  the best of four runner types: code, statistics, LLMs, or people."
 sidebar:
   order: 43
   hidden: false
@@ -12,7 +12,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Coatue Head of AI Frank Long models a hedge fund as a function that compresses external and internal context into one tuple — selection, size, timing — and decomposes it into evaluable steps, each run by the best of four runner types: code, statistics, LLMs, or people.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/frank-long-hedge-fund">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - A hedge fund is a function. It takes external context (news, prices, filings) and internal context (positions, risk limits, case-study history). It returns one tuple: selection, size, timing. The portfolio is a time series of that tuple.
@@ -38,7 +42,13 @@ Coatue Head of AI Frank Long models a hedge fund as a function that compresses e
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=26060&rel=0" title="A Hedge Fund as a Function" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Frank Long &middot; 4:02:12 PM ET-4:16:26 PM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=26060s" rel="noopener">Watch on YouTube from 07:14:20</a></p>
+<p class="session-meta">Frank Long &middot; 4:02:12 PM ET–4:16:26 PM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=26060s" rel="noopener">Watch on YouTube from 07:14:20</a></p>
+
+## Figures
+
+![A function diagram returning one tuple of selection, size, and timing.](/figures/hedge-fund-as-a-function.svg)
+
+The firm as one function returning one tuple.
 
 ## Notable quotes
 - "Every single thing that a human can see in pixels on the screen, an agent in your building should be able to see via API." [07:16:17 | 4:04:08 PM]

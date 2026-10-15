@@ -1,7 +1,10 @@
 ---
-title: Day two speakers
-description: Day two speakers
+title: Day 2 speakers
+description: Speakers from the October 14 livestream.
 ---
+
+[Speakers from both days](/speakers/) · [Day 2 digest](/day2/)
+
 
 Compiled from official event data and web research;
 full records in speaker-data/.

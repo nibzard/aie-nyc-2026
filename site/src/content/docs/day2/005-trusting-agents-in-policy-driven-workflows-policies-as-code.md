@@ -1,9 +1,9 @@
 ---
 title: Trusting Agents in Policy-Driven Workflows
-description: Coinbase engineering manager Evan Kormos maps policy-driven
-  workflows as deterministic DAGs on the outside, lets agents loop adaptively
-  inside each node, and turns autonomy on only when measured evaluation quality
-  clears a policy threshold.
+description: Day 2 · Oct 14. Coinbase engineering manager Evan Kormos maps
+  policy-driven workflows as deterministic DAGs on the outside, lets agents loop
+  adaptively inside each node, and turns autonomy on only when measured
+  evaluation quality clears a policy threshold.
 sidebar:
   order: 5
   hidden: false
@@ -11,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Coinbase engineering manager Evan Kormos maps policy-driven workflows as deterministic DAGs on the outside, lets agents loop adaptively inside each node, and turns autonomy on only when measured evaluation quality clears a policy threshold.
 
@@ -37,7 +39,13 @@ Coinbase engineering manager Evan Kormos maps policy-driven workflows as determi
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=3087&rel=0" title="Trusting Agents in Policy-Driven Workflows" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Evan Kormos &middot; 9:32:03 AM ET-9:49:55 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=3087s" rel="noopener">Watch on YouTube from 00:51:27</a></p>
+<p class="session-meta">Evan Kormos &middot; 9:32:03 AM ET–9:49:55 AM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=3087s" rel="noopener">Watch on YouTube from 00:51:27</a></p>
+
+## Figures
+
+![A deterministic DAG shell with an adaptive agent loop inside one node.](/figures/deterministic-outside-adaptive-inside.svg)
+
+The policy DAG shell from this talk and the compiler row from day one’s Perpetual talk.
 
 ## Notable quotes
 - "Think of policy as the original institutional intent, or the original system prompt." [00:52:56 | 9:33:31 AM]

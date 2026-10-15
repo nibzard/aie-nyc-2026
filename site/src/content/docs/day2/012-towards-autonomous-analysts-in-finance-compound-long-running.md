@@ -1,9 +1,9 @@
 ---
 title: Towards Autonomous Analysts in Finance
-description: A former Coatue VP and Compound AI co-founder explains how Compound
-  rebuilt Excel, PowerPoint, and Word from scratch with coding agents so
-  multiplayer, long-running agents can move buy-side finance work from copilot
-  to autopilot.
+description: Day 2 · Oct 14. A former Coatue VP and Compound AI co-founder
+  explains how Compound rebuilt Excel, PowerPoint, and Word from scratch with
+  coding agents so multiplayer, long-running agents can move buy-side finance
+  work from copilot to autopilot.
 sidebar:
   order: 12
   hidden: false
@@ -11,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A former Coatue VP and Compound AI co-founder explains how Compound rebuilt Excel, PowerPoint, and Word from scratch with coding agents so multiplayer, long-running agents can move buy-side finance work from copilot to autopilot.
 
@@ -37,7 +39,7 @@ A former Coatue VP and Compound AI co-founder explains how Compound rebuilt Exce
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=7196&rel=0" title="Towards Autonomous Analysts in Finance" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Yijia Liang &middot; 10:40:32 AM ET-10:56:06 AM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=7196s" rel="noopener">Watch on YouTube from 01:59:56</a></p>
+<p class="session-meta">Yijia Liang &middot; 10:40:32 AM ET–10:56:06 AM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=7196s" rel="noopener">Watch on YouTube from 01:59:56</a></p>
 
 ## Notable quotes
 - [02:01:26 | 10:42:01 AM] "But all the factors that make personal agents work so well doesn't really translate to institutional finance today."

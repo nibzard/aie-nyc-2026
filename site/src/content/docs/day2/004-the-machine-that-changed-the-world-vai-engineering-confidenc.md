@@ -1,9 +1,9 @@
 ---
 title: The Machine that Changed the World, vAI
-description: Sonar CEO Tariq Shaukat argues that agentic coding makes code
-  abundant and confidence scarce, and presents a four-part code confidence
-  formula (intent, guardrails, verification, evidence) for engineering trust
-  into agentic software factories.
+description: Day 2 · Oct 14. Sonar CEO Tariq Shaukat argues that agentic coding
+  makes code abundant and confidence scarce, and presents a four-part code
+  confidence formula (intent, guardrails, verification, evidence) for
+  engineering trust into agentic software factories.
 sidebar:
   order: 4
   hidden: false
@@ -11,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Sonar CEO Tariq Shaukat argues that agentic coding makes code abundant and confidence scarce, and presents a four-part code confidence formula (intent, guardrails, verification, evidence) for engineering trust into agentic software factories.
 
@@ -38,7 +40,17 @@ Sonar CEO Tariq Shaukat argues that agentic coding makes code abundant and confi
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=2067&rel=0" title="The Machine that Changed the World, vAI" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Tariq Shaukat &middot; 9:15:03 AM ET-9:31:57 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=2067s" rel="noopener">Watch on YouTube from 00:34:27</a></p>
+<p class="session-meta">Tariq Shaukat &middot; 9:15:03 AM ET–9:31:57 AM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=2067s" rel="noopener">Watch on YouTube from 00:34:27</a></p>
+
+## Figures
+
+![Bar chart: code up 2,450 percent, releases up 30 percent.](/figures/code-abundant-confidence-scarce.svg)
+
+The volume gap between written code and releases.
+
+![Line chart of per-step accuracy decaying by chain length.](/figures/compounding-error-curve.svg)
+
+Why 95 percent per step is not enough for long chains.
 
 ## Notable quotes
 - "You have an explosion in the number of lines of code written, up 2,450%." [00:38:12 | 9:18:47 AM]

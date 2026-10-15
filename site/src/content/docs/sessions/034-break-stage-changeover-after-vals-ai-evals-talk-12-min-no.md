@@ -1,10 +1,10 @@
 ---
 title: Break / stage changeover after the Vals AI evals talk (12 min, no speech
   on stream)
-description: A roughly 12-minute stage changeover on the main-stage livestream
-  between Rayan Krishnan's Vals AI finance-evals talk and the Kepler fireside
-  chat with Jack Woodruff, with no transcribed speech in between — the Vals talk
-  closed with "Thanks, everyone.
+description: Day 1 · Oct 13. A roughly 12-minute stage changeover on the
+  main-stage livestream between Rayan Krishnan's Vals AI finance-evals talk and
+  the Kepler fireside chat with Jack Woodruff, with no transcribed speech in
+  between — the Vals talk closed with "Thanks, everyone.
 sidebar:
   order: 34
   hidden: true
@@ -12,6 +12,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A roughly 12-minute stage changeover on the main-stage livestream between Rayan Krishnan's Vals AI finance-evals talk and the Kepler fireside chat with Jack Woodruff, with no transcribed speech in between — the Vals talk closed with "Thanks, everyone." at 2:31:37 PM ET and Vinoo Ganesh opened the fireside early at 2:43:50 PM ET.
 
@@ -32,7 +34,7 @@ A roughly 12-minute stage changeover on the main-stage livestream between Rayan 
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=20626&rel=0" title="Break / stage changeover after the Vals AI evals talk (12 min, no speech on stream)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">2:31:38 PM ET-2:43:50 PM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=20626s" rel="noopener">Watch on YouTube from 05:43:46</a></p>
+<p class="session-meta">2:31:38 PM ET–2:43:50 PM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=20626s" rel="noopener">Watch on YouTube from 05:43:46</a></p>
 
 ## Notable quotes
 > "Thanks, everyone." — [05:43:46 | 2:31:37 PM]

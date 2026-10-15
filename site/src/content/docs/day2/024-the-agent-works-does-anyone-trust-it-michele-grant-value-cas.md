@@ -1,10 +1,10 @@
 ---
 title: The Agent Works. Does Anyone Trust It?
-description: Michele Grant, creator of Leading at Scale, uses a $15 billion M&A
-  integration case to argue that a working agent earns enterprise trust only
-  through a written value case with baselines, assigned ownership under the
-  three lines model, and engineering evidence gated by a four-stage autonomy
-  scorecard.
+description: Day 2 · Oct 14. Michele Grant, creator of Leading at Scale, uses a
+  $15 billion M&A integration case to argue that a working agent earns
+  enterprise trust only through a written value case with baselines, assigned
+  ownership under the three lines model, and engineering evidence gated by a
+  four-stage autonomy scorecard.
 sidebar:
   order: 24
   hidden: false
@@ -12,6 +12,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Michele Grant, creator of Leading at Scale, uses a $15 billion M&A integration case to argue that a working agent earns enterprise trust only through a written value case with baselines, assigned ownership under the three lines model, and engineering evidence gated by a four-stage autonomy scorecard.
 
@@ -39,7 +41,13 @@ Michele Grant, creator of Leading at Scale, uses a $15 billion M&A integration c
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=16103&rel=0" title="The Agent Works. Does Anyone Trust It?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Michele Grant &middot; 1:08:59 PM ET-1:24:15 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=16103s" rel="noopener">Watch on YouTube from 04:28:23</a></p>
+<p class="session-meta">Michele Grant &middot; 1:08:59 PM ET–1:24:15 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=16103s" rel="noopener">Watch on YouTube from 04:28:23</a></p>
+
+## Figures
+
+![A four-stage autonomy staircase climbing measured eval quality.](/figures/autonomy-hill-climb.svg)
+
+The four-stage autonomy staircase and its guardrails.
 
 ## Notable quotes
 - "[04:28:23 | 1:08:59 PM] Go live proves that a system exists, but it doesn't prove the people behind the work will actually use it, or that it will ever deliver a single dollar from the deal model."

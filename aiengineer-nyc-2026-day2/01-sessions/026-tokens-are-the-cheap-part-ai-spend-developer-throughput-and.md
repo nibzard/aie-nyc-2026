@@ -36,6 +36,12 @@ confidence: "high"
 7. Check quality proxies before trusting the gains. Revert rates (merged PRs that undo an earlier PR) dropped slightly for every group, though the deltas sit just below the noise in the data - no evidence of improvement, but also no worrying signs of rampant quality issues. And throughput is demonstrably not driven by smaller PRs: AI is increasing lines of code per PR.
 8. Track three things monthly: total intelligence cost per PR (human plus artificial), the AI bill, and PR throughput - with reverts and quality metrics beside them as a counterweight, because "we don't need AI slop mucking up the gears." Watch for runaway jobs, but do not let the AI spend per PR be your driving metric.
 
+## Figures
+
+![Two panels of AI cost economics.](../../figures/where-the-money-goes.svg)
+
+The merged-PR cost split from this talk; the self-hosted panel is day one’s Revolut talk.
+
 ## Notable quotes
 > "I'm here to show you why tokens are the cheap part." [04:44:09 | 1:24:44 PM]
 

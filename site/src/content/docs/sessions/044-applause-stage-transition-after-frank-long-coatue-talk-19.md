@@ -1,8 +1,9 @@
 ---
 title: Applause / stage transition after Frank Long (Coatue) talk
-description: "A 19-second bridge after Frank Long's Coatue keynote: applause and
-  stage changeover, closed by an off-stage MC voice-over that teases the next
-  keynote, \"Frontier Models for Acting in Space and Time.\""
+description: "Day 1 · Oct 13. A 19-second bridge after Frank Long's Coatue
+  keynote: applause and stage changeover, closed by an off-stage MC voice-over
+  that teases the next keynote, \"Frontier Models for Acting in Space and
+  Time.\""
 sidebar:
   order: 44
   hidden: true
@@ -10,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A 19-second bridge after Frank Long's Coatue keynote: applause and stage changeover, closed by an off-stage MC voice-over that teases the next keynote, "Frontier Models for Acting in Space and Time."
 
@@ -28,7 +31,7 @@ None - this segment is a 19-second applause transition.
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=26914&rel=0" title="Applause / stage transition after Frank Long (Coatue) talk" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">4:16:26 PM ET-4:16:45 PM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=26914s" rel="noopener">Watch on YouTube from 07:28:34</a></p>
+<p class="session-meta">4:16:26 PM ET–4:16:45 PM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=26914s" rel="noopener">Watch on YouTube from 07:28:34</a></p>
 
 ## Notable quotes
 > "And now, let's take a look at frontier models built to act in space and time." — [07:28:53 | 4:16:45 PM]

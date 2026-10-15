@@ -1,9 +1,9 @@
 ---
 title: "Wells Fargo Foundation Model: Application to Fraud Detection at Scale"
-description: Wells Fargo pre-trained its own 1-billion-parameter transaction
-  foundation model from scratch on billions of monthly customer transactions,
-  and it beat the production XGBoost fraud model on detection rate, false
-  positives, and latency.
+description: Day 1 · Oct 13. Wells Fargo pre-trained its own 1-billion-parameter
+  transaction foundation model from scratch on billions of monthly customer
+  transactions, and it beat the production XGBoost fraud model on detection
+  rate, false positives, and latency.
 sidebar:
   order: 16
   hidden: false
@@ -12,7 +12,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Wells Fargo pre-trained its own 1-billion-parameter transaction foundation model from scratch on billions of monthly customer transactions, and it beat the production XGBoost fraud model on detection rate, false positives, and latency.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/freddy-lecue-fraud-foundation-model">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Wells Fargo built its first in-house foundation model: a decoder-only transformer pre-trained from scratch on billions of monthly customer transactions across debit, credit, digital, and check channels.
@@ -37,7 +41,7 @@ Wells Fargo pre-trained its own 1-billion-parameter transaction foundation model
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=6685&rel=0" title="Wells Fargo Foundation Model: Application to Fraud Detection at Scale" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Freddy Lecue &middot; 10:39:17 AM ET-11:00:43 AM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=6685s" rel="noopener">Watch on YouTube from 01:51:25</a></p>
+<p class="session-meta">Freddy Lecue &middot; 10:39:17 AM ET–11:00:43 AM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=6685s" rel="noopener">Watch on YouTube from 01:51:25</a></p>
 
 ## Notable quotes
 - [02:00:24 | 10:48:16 AM] We pre-train transformer blocks at scale from scratch using our transaction data.

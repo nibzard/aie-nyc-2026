@@ -1,8 +1,8 @@
 ---
 title: "Security in the Age of AI: Recent Attacks, Incidents & Defenses"
-description: Bloomberg's Andrey Rybka walks through a catalog of unnamed real
-  agent incidents — runaway agents, a July 26 sandbox escape with 17,600 actions
-  in 4.
+description: Day 2 · Oct 14. Bloomberg's Andrey Rybka walks through a catalog of
+  unnamed real agent incidents — runaway agents, a July 26 sandbox escape with
+  17,600 actions in 4.
 sidebar:
   order: 10
   hidden: false
@@ -10,6 +10,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Bloomberg's Andrey Rybka walks through a catalog of unnamed real agent incidents — runaway agents, a July 26 sandbox escape with 17,600 actions in 4.5 days, zero-click email exfiltration, Morse-code payloads, DNS smuggling, and a dropped production database — and maps each one to a six-layer defense-in-depth toolbox anchored by one agent one identity and deterministic controls outside the model.
 
@@ -37,7 +39,13 @@ Bloomberg's Andrey Rybka walks through a catalog of unnamed real agent incidents
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=5329&rel=0" title="Security in the Age of AI: Recent Attacks, Incidents &amp; Defenses" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Andrey Rybka &middot; 10:09:25 AM ET-10:25:29 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=5329s" rel="noopener">Watch on YouTube from 01:28:49</a></p>
+<p class="session-meta">Andrey Rybka &middot; 10:09:25 AM ET–10:25:29 AM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=5329s" rel="noopener">Watch on YouTube from 01:28:49</a></p>
+
+## Figures
+
+![Venn diagram of the three lethal attack surfaces.](/figures/lethal-trifecta.svg)
+
+The rule of two from this talk; the trifecta framing is day one’s Keycard talk.
 
 ## Notable quotes
 - "So the agents took 17,600 actions in four and a half days." [01:30:39 | 10:11:14 AM]

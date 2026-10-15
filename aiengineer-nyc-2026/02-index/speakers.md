@@ -58,7 +58,7 @@ full records in [speaker-data/](speaker-data/).
 - **Role:** CEO, Nous Research
 - **On stream:** [Hermes gives you wings: Build on open foundations.](../01-sessions/049-hermes-gives-you-wings-build-agents-on-open-foundations-you.md)
 
-## Edu
+## Eduardo Simon
 
 - **Role:** Senior Software Engineer, AI Platform Experience Team, Flywire
 - **On stream:** [Extra lunch talk: Flywire's internal AI platform — structure](../01-sessions/030-extra-lunch-talk-flywire-s-internal-ai-platform-structured-wo.md)
@@ -88,7 +88,7 @@ full records in [speaker-data/](speaker-data/).
 - **Role:** Senior Advisor, Kepler
 - **On stream:** [AI and the Future of Fundamental Investing](../01-sessions/035-ai-and-the-future-of-fundamental-investing-kepler-fireside.md)
 
-## Javi
+## Javier Casal
 
 - **Role:** Senior Software Engineer, AI Platform Experience Team, Flywire
 - **On stream:** [Extra lunch talk: Flywire's internal AI platform — structure](../01-sessions/030-extra-lunch-talk-flywire-s-internal-ai-platform-structured-wo.md)
@@ -183,9 +183,10 @@ full records in [speaker-data/](speaker-data/).
 - **Role:** unknown
 - **On stream:** [House announcement: session over, clear the room](../01-sessions/014-house-announcement-session-over-clear-the-room.md)
 
-## Unnamed Railway engineer
+## Mahmoud Abdelwahab
 
-- **Role:** unknown
+- **Role:** Railway
+- **Attribution:** [Official talk library](https://aie-nyc-2026-talks.swyxio.workers.dev/talks/mahmoud-abdelwahab-saas-replacements)
 - **On stream:** [Become your company's SaaS layer — principles for building p](../01-sessions/027-extra-lunch-talk-become-your-company-s-saas-layer-principles.md)
 
 ## Unseen announcer (show-open voice-over)

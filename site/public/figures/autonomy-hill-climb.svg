@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Autonomy is hill-climbed, not granted</title>
+  <desc id="desc">A four-step ascending staircase: shadow mode, supervised draft, exception ensemble, exceptions only, with independent sampling to detect missed material issues. The uphill axis is labeled measured eval quality, with a policy threshold tick near the top. Guardrails around the staircase: a value case agreed in writing with a pre-deployment baseline per metric and the rule "If the IMO cannot state the baseline today, do not deploy"; one named daily overseer with override authority and a kill switch; an auditable decision log plus a model inventory with regression triggers; and evaluations run in repeated series as statistical analysis, outputs viewed in volume rather than as one-off direct comparisons.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+  </defs>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+    <rect x="1" y="1" width="958" height="718" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+    <text x="40" y="56" font-size="11" letter-spacing="0.08em" fill="#52514e">CONCEPT — GOVERNANCE</text>
+    <text x="40" y="82" font-size="20" font-weight="600" fill="#0b0b0b">Autonomy is hill-climbed, not granted</text>
+    <text x="40" y="104" font-size="13" fill="#52514e">The autonomy scorecard grants autonomy in four stages, each unlocked by measured quality.</text>
+
+    <!-- Uphill axis -->
+    <line x1="120" y1="446" x2="120" y2="205" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+    <text transform="translate(104,326) rotate(-90)" font-size="12" fill="#52514e" text-anchor="middle">measured eval quality</text>
+    <line x1="112" y1="240" x2="128" y2="240" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="136" y="244" font-size="11" fill="#52514e">policy threshold</text>
+
+    <!-- Climb arrow -->
+    <line x1="172" y1="334" x2="868" y2="201" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <!-- Staircase -->
+    <rect x="160" y="346" width="175" height="100" rx="8" fill="#86b6ef" fill-opacity="0.10" stroke="#86b6ef" stroke-width="1.5"/>
+    <circle cx="247.5" cy="370" r="10" fill="#fcfcfb" stroke="#86b6ef" stroke-width="1.5"/>
+    <text x="247.5" y="374" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">1</text>
+    <text x="247.5" y="402" font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="middle">shadow mode</text>
+    <text x="247.5" y="420" font-size="11" fill="#52514e" text-anchor="middle">runs alongside the</text>
+    <text x="247.5" y="436" font-size="11" fill="#52514e" text-anchor="middle">analyst; compare</text>
+
+    <rect x="345" y="301" width="175" height="145" rx="8" fill="#5598e7" fill-opacity="0.10" stroke="#5598e7" stroke-width="1.5"/>
+    <circle cx="432.5" cy="325" r="10" fill="#fcfcfb" stroke="#5598e7" stroke-width="1.5"/>
+    <text x="432.5" y="329" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+    <text x="432.5" y="357" font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="middle">supervised draft</text>
+    <text x="432.5" y="375" font-size="11" fill="#52514e" text-anchor="middle">senior analyst reviews</text>
+    <text x="432.5" y="391" font-size="11" fill="#52514e" text-anchor="middle">every line item</text>
+
+    <rect x="530" y="256" width="175" height="190" rx="8" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-width="1.5"/>
+    <circle cx="617.5" cy="280" r="10" fill="#fcfcfb" stroke="#2a78d6" stroke-width="1.5"/>
+    <text x="617.5" y="284" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">3</text>
+    <text x="617.5" y="312" font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="middle">exception ensemble</text>
+    <text x="617.5" y="330" font-size="11" fill="#52514e" text-anchor="middle">flagged items plus a</text>
+    <text x="617.5" y="346" font-size="11" fill="#52514e" text-anchor="middle">random sample</text>
+
+    <rect x="715" y="211" width="175" height="235" rx="8" fill="#1c5cab" fill-opacity="0.10" stroke="#1c5cab" stroke-width="1.5"/>
+    <circle cx="802.5" cy="235" r="10" fill="#fcfcfb" stroke="#1c5cab" stroke-width="1.5"/>
+    <text x="802.5" y="239" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">4</text>
+    <text x="802.5" y="267" font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="middle">exceptions only</text>
+    <text x="802.5" y="285" font-size="11" fill="#52514e" text-anchor="middle">review exceptions;</text>
+    <text x="802.5" y="301" font-size="11" fill="#52514e" text-anchor="middle">sample for missed issues</text>
+
+    <text x="480" y="474" font-size="12" fill="#52514e" text-anchor="middle">Autonomy turns on only when measured confidence clears a policy threshold.</text>
+
+    <!-- Guardrail: value case (tall chip) -->
+    <rect x="40" y="492" width="433" height="138" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <rect x="56" y="506" width="4" height="14" rx="1" fill="#2a78d6"/>
+    <text x="68" y="517" font-size="11" font-weight="600" letter-spacing="0.06em" fill="#52514e">VALUE CASE WITH BASELINES</text>
+    <text x="56" y="538" font-size="11.5" fill="#0b0b0b">Agree the value case in writing before production</text>
+    <text x="56" y="554" font-size="11.5" fill="#0b0b0b">data. Every metric needs a pre-deployment baseline.</text>
+    <text x="56" y="578" font-size="11.5" font-style="italic" fill="#0b0b0b">“If the IMO cannot state the baseline</text>
+    <text x="56" y="594" font-size="11.5" font-style="italic" fill="#0b0b0b">today, do not deploy.”</text>
+
+    <!-- Guardrail chips -->
+    <rect x="487" y="492" width="433" height="42" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <rect x="503" y="505" width="4" height="14" rx="1" fill="#2a78d6"/>
+    <text x="515" y="516" font-size="11" font-weight="600" letter-spacing="0.06em" fill="#52514e">ONE DAILY OVERSEER</text>
+    <text x="503" y="530" font-size="11.5" fill="#0b0b0b">Named owner each day, with override and kill switch.</text>
+
+    <rect x="487" y="540" width="433" height="42" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <rect x="503" y="553" width="4" height="14" rx="1" fill="#2a78d6"/>
+    <text x="515" y="564" font-size="11" font-weight="600" letter-spacing="0.06em" fill="#52514e">AUDITABLE EVIDENCE</text>
+    <text x="503" y="578" font-size="11.5" fill="#0b0b0b">Decision log; model inventory with regression triggers.</text>
+
+    <rect x="487" y="588" width="433" height="42" rx="8" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+    <rect x="503" y="601" width="4" height="14" rx="1" fill="#2a78d6"/>
+    <text x="515" y="612" font-size="11" font-weight="600" letter-spacing="0.06em" fill="#52514e">EVALS AS STATISTICS</text>
+    <text x="503" y="626" font-size="11.5" fill="#0b0b0b">Repeated series; outputs in volume, not one-offs.</text>
+
+    <text x="40" y="660" font-size="11" fill="#52514e">Sources: Michele Grant (Leading at Scale), "The Agent Works. Does Anyone Trust It?", and Evan</text>
+    <text x="40" y="676" font-size="11" fill="#52514e">Kormos (Coinbase), "Trusting Agents in Policy-Driven Workflows" — AI Engineer NYC 2026, day 2.</text>
+  </g>
+</svg>

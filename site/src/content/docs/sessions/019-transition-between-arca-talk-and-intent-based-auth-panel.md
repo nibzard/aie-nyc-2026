@@ -1,10 +1,10 @@
 ---
 title: Transition between Arca talk and Intent Based Auth panel (~9.7 min,
   applause/room changeover/dead air)
-description: "A roughly 10-minute stage turnover after the Arca talk: the stream
-  stays live through applause and room changeover with no transcribed speech,
-  until two Intent Based Auth panelists greet each other as their microphones go
-  live at the panel's start."
+description: "Day 1 · Oct 13. A roughly 10-minute stage turnover after the Arca
+  talk: the stream stays live through applause and room changeover with no
+  transcribed speech, until two Intent Based Auth panelists greet each other as
+  their microphones go live at the panel's start."
 sidebar:
   order: 19
   hidden: true
@@ -12,6 +12,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A roughly 10-minute stage turnover after the Arca talk: the stream stays live through applause and room changeover with no transcribed speech, until two Intent Based Auth panelists greet each other as their microphones go live at the panel's start.
 
@@ -33,7 +35,7 @@ A roughly 10-minute stage turnover after the Arca talk: the stream stays live th
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=9202&rel=0" title="Transition between Arca talk and Intent Based Auth panel (~9.7 min, applause/room changeover/dead air)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">11:21:14 AM ET-11:31:05 AM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=9202s" rel="noopener">Watch on YouTube from 02:33:22</a></p>
+<p class="session-meta">11:21:14 AM ET–11:31:05 AM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=9202s" rel="noopener">Watch on YouTube from 02:33:22</a></p>
 
 ## Notable quotes
 

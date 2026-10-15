@@ -1,9 +1,9 @@
 ---
 title: Applause, then host welcome introducing John Feminella, SVP of
   Architecture at Two Sigma
-description: 'A 44-second stage hand-off: applause closes the Anthropic keynote,
-  an unnamed host introduces John Feminella of Two Sigma, and Feminella opens
-  with "Hey, everyone." before his talk begins.'
+description: 'Day 1 · Oct 13. A 44-second stage hand-off: applause closes the
+  Anthropic keynote, an unnamed host introduces John Feminella of Two Sigma, and
+  Feminella opens with "Hey, everyone." before his talk begins.'
 sidebar:
   order: 7
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A 44-second stage hand-off: applause closes the Anthropic keynote, an unnamed host introduces John Feminella of Two Sigma, and Feminella opens with "Hey, everyone." before his talk begins.
 
@@ -31,7 +33,7 @@ A 44-second stage hand-off: applause closes the Anthropic keynote, an unnamed ho
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=3018&rel=0" title="Applause, then host welcome introducing John Feminella, SVP of Architecture at Two Sigma" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">John Feminella &middot; 9:38:10 AM ET-9:38:54 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=3018s" rel="noopener">Watch on YouTube from 00:50:18</a></p>
+<p class="session-meta">John Feminella &middot; 9:38:10 AM ET–9:38:54 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=3018s" rel="noopener">Watch on YouTube from 00:50:18</a></p>
 
 ## Notable quotes
 > [00:50:33 | 9:38:25 AM] And now, to explore how serious organizations can accelerate innovation without compromising trust, please welcome John Femenella, SVP of Architecture at Two Sigma.

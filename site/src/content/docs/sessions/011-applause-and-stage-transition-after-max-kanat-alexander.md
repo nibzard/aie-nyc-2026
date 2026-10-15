@@ -1,8 +1,8 @@
 ---
 title: Applause and stage transition after Max Kanat-Alexander
-description: "A 20-second bridge between keynotes: applause after Max
-  Kanat-Alexander's close, then an off-stage voice teases the next talk by
-  asking what an engineer is when AI does the building."
+description: "Day 1 · Oct 13. A 20-second bridge between keynotes: applause
+  after Max Kanat-Alexander's close, then an off-stage voice teases the next
+  talk by asking what an engineer is when AI does the building."
 sidebar:
   order: 11
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A 20-second bridge between keynotes: applause after Max Kanat-Alexander's close, then an off-stage voice teases the next talk by asking what an engineer is when AI does the building.
 
@@ -28,7 +30,7 @@ None - this segment is applause and a 20-second stage transition.
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=5197&rel=0" title="Applause and stage transition after Max Kanat-Alexander" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">10:14:29 AM ET-10:14:49 AM ET &middot; filler &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=5197s" rel="noopener">Watch on YouTube from 01:26:37</a></p>
+<p class="session-meta">10:14:29 AM ET–10:14:49 AM ET &middot; filler &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=5197s" rel="noopener">Watch on YouTube from 01:26:37</a></p>
 
 ## Notable quotes
 > "As AI takes on more of the building, what does it mean to be an engineer?" — [01:26:57 | 10:14:49 AM]

@@ -1,8 +1,9 @@
 ---
 title: "AI in Practice: An Inside Look at Apollo's Approach"
-description: Rowspace co-founder Michael Manapat interviews Jack McDonald, COO
-  of Apollo's Redding Ridge Capital, about turning AI from a nice-to-have into
-  mission-critical infrastructure for structured credit and CLO management.
+description: Day 2 · Oct 14. Rowspace co-founder Michael Manapat interviews Jack
+  McDonald, COO of Apollo's Redding Ridge Capital, about turning AI from a
+  nice-to-have into mission-critical infrastructure for structured credit and
+  CLO management.
 sidebar:
   order: 45
   hidden: false
@@ -10,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Rowspace co-founder Michael Manapat interviews Jack McDonald, COO of Apollo's Redding Ridge Capital, about turning AI from a nice-to-have into mission-critical infrastructure for structured credit and CLO management.
 
@@ -37,7 +40,7 @@ Rowspace co-founder Michael Manapat interviews Jack McDonald, COO of Apollo's Re
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=28190&rel=0" title="AI in Practice: An Inside Look at Apollo's Approach" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Michael Manapat, Jack McDonald &middot; 4:30:26 PM ET-4:49:52 PM ET &middot; fireside &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=28190s" rel="noopener">Watch on YouTube from 07:49:50</a></p>
+<p class="session-meta">Michael Manapat, Jack McDonald &middot; 4:30:26 PM ET–4:49:52 PM ET &middot; fireside &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=28190s" rel="noopener">Watch on YouTube from 07:49:50</a></p>
 
 ## Notable quotes
 - "So we've— Look to companies like Rho Space to partner with to come in and actually sit with our teams, work with us, and understand the actual calculations and information that we're looking to and what's actually the golden source of truth, and then continuing to enhance the AI engines to understand that and repeat that and just make us that much more efficient." [07:53:31 | 4:34:07 PM]

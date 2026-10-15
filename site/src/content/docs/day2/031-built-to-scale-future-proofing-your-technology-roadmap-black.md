@@ -1,10 +1,10 @@
 ---
 title: "Built to Scale: Future-Proofing Your Technology Roadmap"
-description: "A fireside chat in which Scott Worland (CTO, Norm Ai) interviews
-  John Stecher (CTO, Blackstone) on keeping a technology roadmap durable while
-  frontier AI jumps every few months: fix the data strategy first, treat evals
-  as the quality bar, build throwaway POCs fast, and leave conduits open for
-  frontier intelligence inst"
+description: "Day 2 · Oct 14. A fireside chat in which Scott Worland (CTO, Norm
+  Ai) interviews John Stecher (CTO, Blackstone) on keeping a technology roadmap
+  durable while frontier AI jumps every few months: fix the data strategy first,
+  treat evals as the quality bar, build throwaway POCs fast, and leave conduits
+  open for frontier intelligence inst…"
 sidebar:
   order: 31
   hidden: false
@@ -12,6 +12,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A fireside chat in which Scott Worland (CTO, Norm Ai) interviews John Stecher (CTO, Blackstone) on keeping a technology roadmap durable while frontier AI jumps every few months: fix the data strategy first, treat evals as the quality bar, build throwaway POCs fast, and leave conduits open for frontier intelligence instead of dams.
 
@@ -39,7 +41,7 @@ A fireside chat in which Scott Worland (CTO, Norm Ai) interviews John Stecher (C
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=19361&rel=0" title="Built to Scale: Future-Proofing Your Technology Roadmap" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">John Stecher, Scott Worland &middot; 2:03:17 PM ET-2:23:50 PM ET &middot; fireside &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=19361s" rel="noopener">Watch on YouTube from 05:22:41</a></p>
+<p class="session-meta">John Stecher, Scott Worland &middot; 2:03:17 PM ET–2:23:50 PM ET &middot; fireside &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=19361s" rel="noopener">Watch on YouTube from 05:22:41</a></p>
 
 ## Notable quotes
 > "If they don't have a cohesive data strategy that's moving stuff out of transactional systems into something that can be accessed and easily managed and recalled from, like, an agent perspective, it is going to fail." — John Stecher [05:24:27 | 2:05:03 PM]

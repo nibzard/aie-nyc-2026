@@ -1,0 +1,67 @@
+{
+  "warning": "Overlapping regex cue flags, not validated evidence classification. Examples of results language are not proof; future/constraint flags miss implicit meaning. Use only to propose manual labels.",
+  "patterns": {
+    "Reported results": "\\b(?:percent|\\d+%|measured|measurement|benchmark|we found|we saw|we observed|results? (?:show|showed)|in production)\\b",
+    "Constraints and caution": "\\b(?:but|however|cannot|can.t|risk|failure|fail|unless|constraint|limitations?|trade.off|not (?:enough|always|necessarily))\\b",
+    "Implementation guidance": "\\b(?:you (?:should|need to|have to|can)|make sure|we recommend|the fix|you want to|best practice)\\b",
+    "Future intent": "\\b(?:we (?:will|plan|intend|expect)|next (?:year|month)|going to (?:build|release|launch)|in the future|within .* months)\\b"
+  },
+  "counts": [
+    {
+      "frame": "Reported results",
+      "day": 1,
+      "segments": 27,
+      "total_eligible_segments": 3009,
+      "share": 0.009
+    },
+    {
+      "frame": "Reported results",
+      "day": 2,
+      "segments": 39,
+      "total_eligible_segments": 3307,
+      "share": 0.0118
+    },
+    {
+      "frame": "Constraints and caution",
+      "day": 1,
+      "segments": 350,
+      "total_eligible_segments": 3009,
+      "share": 0.1163
+    },
+    {
+      "frame": "Constraints and caution",
+      "day": 2,
+      "segments": 416,
+      "total_eligible_segments": 3307,
+      "share": 0.1258
+    },
+    {
+      "frame": "Implementation guidance",
+      "day": 1,
+      "segments": 255,
+      "total_eligible_segments": 3009,
+      "share": 0.0847
+    },
+    {
+      "frame": "Implementation guidance",
+      "day": 2,
+      "segments": 356,
+      "total_eligible_segments": 3307,
+      "share": 0.1077
+    },
+    {
+      "frame": "Future intent",
+      "day": 1,
+      "segments": 8,
+      "total_eligible_segments": 3009,
+      "share": 0.0027
+    },
+    {
+      "frame": "Future intent",
+      "day": 2,
+      "segments": 26,
+      "total_eligible_segments": 3307,
+      "share": 0.0079
+    }
+  ]
+}

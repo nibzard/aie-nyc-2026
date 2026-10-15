@@ -1,11 +1,11 @@
 ---
 title: Building an enterprise agent ecosystem with MCP (gateway, servers,
   monitoring, memory, evals, PII trimmer, context optimizer)
-description: "A recorded, off-agenda talk in which a senior staff engineer from
-  Intuit Credit Karma shows how to move AI agents from experiment to enterprise:
-  an MCP gateway with JWT auth and Redis sessions, security-reviewed FastMCP
-  servers, OpenTelemetry-based monitoring, LangGraph with human-in-the-loop,
-  memory, eval tables, a PI"
+description: "Day 2 · Oct 14. A recorded, off-agenda talk in which a senior
+  staff engineer from Intuit Credit Karma shows how to move AI agents from
+  experiment to enterprise: an MCP gateway with JWT auth and Redis sessions,
+  security-reviewed FastMCP servers, OpenTelemetry-based monitoring, LangGraph
+  with human-in-the-loop, memory, eval tables, a PI…"
 sidebar:
   order: 23
   hidden: false
@@ -13,6 +13,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A recorded, off-agenda talk in which a senior staff engineer from Intuit Credit Karma shows how to move AI agents from experiment to enterprise: an MCP gateway with JWT auth and Redis sessions, security-reviewed FastMCP servers, OpenTelemetry-based monitoring, LangGraph with human-in-the-loop, memory, eval tables, a PII trimmer, and a context optimizer that cut tokens 70-78%.
 
@@ -40,7 +42,7 @@ A recorded, off-agenda talk in which a senior staff engineer from Intuit Credit 
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=14328&rel=0" title="Building an enterprise agent ecosystem with MCP (gateway, servers, monitoring, memory, evals, PII trimmer, context optimizer)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Harisha P C &middot; 12:39:24 PM ET-1:08:53 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=14328s" rel="noopener">Watch on YouTube from 03:58:48</a></p>
+<p class="session-meta">Harisha P C &middot; 12:39:24 PM ET–1:08:53 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=14328s" rel="noopener">Watch on YouTube from 03:58:48</a></p>
 
 ## Notable quotes
 - "I would like to walk you through that how we can transition an AI agents from an experiment to the real enterprise environment." [03:58:49 | 12:39:25 PM]

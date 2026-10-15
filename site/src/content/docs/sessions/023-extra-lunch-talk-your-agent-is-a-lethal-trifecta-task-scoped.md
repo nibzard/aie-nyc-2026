@@ -1,10 +1,10 @@
 ---
 title: Your Agent Is a Lethal Trifecta
-description: A Keycard demo talk that first lets an overprivileged on-call
-  triage agent leak customer PII and drop a production database, then rebuilds
-  the same agent with OAuth 2.0 token exchange and intent-based authorization so
-  every tool call gets an ephemeral, task-scoped, attributable credential
-  governed by policy.
+description: Day 1 · Oct 13. A Keycard demo talk that first lets an
+  overprivileged on-call triage agent leak customer PII and drop a production
+  database, then rebuilds the same agent with OAuth 2.0 token exchange and
+  intent-based authorization so every tool call gets an ephemeral, task-scoped,
+  attributable credential governed by policy.
 sidebar:
   order: 23
   hidden: false
@@ -13,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 A Keycard demo talk that first lets an overprivileged on-call triage agent leak customer PII and drop a production database, then rebuilds the same agent with OAuth 2.0 token exchange and intent-based authorization so every tool call gets an ephemeral, task-scoped, attributable credential governed by policy.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/kim-maida-lethal-trifecta">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 Provenance note: this talk was delivered as an extra lunch talk in the 12:23 PM block and does not appear in the official main-stage agenda for October 13 (the agenda lists a Networking Break in this window). The title is the talk's own title, from the speaker's opening line ("how your agent is a lethal trifecta and what to do about it"); the manifest's descriptive title was "Extra lunch talk: Your Agent Is a Lethal Trifecta — task-scoped access with token exchange and intent-based authorization (Keycard)".
 
@@ -43,7 +47,13 @@ Provenance note: this talk was delivered as an extra lunch talk in the 12:23 PM 
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=12957&rel=0" title="Your Agent Is a Lethal Trifecta" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Kim Maida &middot; 12:23:49 PM ET-12:49:16 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=12957s" rel="noopener">Watch on YouTube from 03:35:57</a></p>
+<p class="session-meta">Kim Maida &middot; 12:23:49 PM ET–12:49:16 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=12957s" rel="noopener">Watch on YouTube from 03:35:57</a></p>
+
+## Figures
+
+![Venn diagram of the three lethal attack surfaces.](/figures/lethal-trifecta.svg)
+
+The trifecta from this talk; the rule of two is day two’s Bloomberg framing.
 
 ## Notable quotes
 

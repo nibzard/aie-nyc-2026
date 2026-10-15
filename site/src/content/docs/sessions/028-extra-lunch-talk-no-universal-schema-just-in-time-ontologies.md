@@ -1,11 +1,11 @@
 ---
 title: "No universal schema: just-in-time ontologies, model priors, and Pareto
   surfing"
-description: Southbridge AI co-founder Hrishi Olickel argues that no universal
-  schema exists — only four schemas that align solely at decision time — so
-  build just-in-time ontologies, split intelligence into three pipeline roles,
-  and let self-optimizing "Pareto surfing" pipelines drive an Ohio
-  campaign-finance entity-resolution job
+description: Day 1 · Oct 13. Southbridge AI co-founder Hrishi Olickel argues
+  that no universal schema exists — only four schemas that align solely at
+  decision time — so build just-in-time ontologies, split intelligence into
+  three pipeline roles, and let self-optimizing "Pareto surfing" pipelines drive
+  an Ohio campaign-finance entity-resolution job…
 sidebar:
   order: 28
   hidden: false
@@ -14,7 +14,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Southbridge AI co-founder Hrishi Olickel argues that no universal schema exists — only four schemas that align solely at decision time — so build just-in-time ontologies, split intelligence into three pipeline roles, and let self-optimizing "Pareto surfing" pipelines drive an Ohio campaign-finance entity-resolution job from a projected $10,000 to $795.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/hrishi-olickel-just-in-time-ontologies">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - There is no universal schema. Source, storage, and decision schemas — plus the model's own prior — can only be known together at the moment a decision is made, so merge contexts just-in-time instead of pre-building an enterprise ontology.
@@ -40,7 +44,7 @@ Southbridge AI co-founder Hrishi Olickel argues that no universal schema exists 
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=16137&rel=0" title="No universal schema: just-in-time ontologies, model priors, and Pareto surfing" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Hrishi Olickel &middot; 1:16:49 PM ET-1:38:04 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=16137s" rel="noopener">Watch on YouTube from 04:28:57</a></p>
+<p class="session-meta">Hrishi Olickel &middot; 1:16:49 PM ET–1:38:04 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=16137s" rel="noopener">Watch on YouTube from 04:28:57</a></p>
 
 ## Notable quotes
 > "I believe we've solved the final bottleneck in transformation." — [04:29:56 | 1:17:48 PM]

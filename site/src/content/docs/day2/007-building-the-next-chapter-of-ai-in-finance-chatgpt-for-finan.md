@@ -1,9 +1,10 @@
 ---
 title: Building the Next Chapter of AI in Finance
-description: Joseph Kim, head of ChatGPT for financial services at OpenAI,
-  presents the month-old product built with Morgan Stanley and Evercore, frames
-  it as a way to close the "capability overhang", and predicts models will
-  outperform the best human experts on financial judgment tasks by 2027.
+description: Day 2 · Oct 14. Joseph Kim, head of ChatGPT for financial services
+  at OpenAI, presents the month-old product built with Morgan Stanley and
+  Evercore, frames it as a way to close the "capability overhang", and predicts
+  models will outperform the best human experts on financial judgment tasks by
+  2027.
 sidebar:
   order: 7
   hidden: false
@@ -11,6 +12,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Joseph Kim, head of ChatGPT for financial services at OpenAI, presents the month-old product built with Morgan Stanley and Evercore, frames it as a way to close the "capability overhang", and predicts models will outperform the best human experts on financial judgment tasks by 2027.
 
@@ -37,7 +40,7 @@ Joseph Kim, head of ChatGPT for financial services at OpenAI, presents the month
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=4172&rel=0" title="Building the Next Chapter of AI in Finance" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Joseph Kim &middot; 9:50:08 AM ET-10:09:24 AM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=4172s" rel="noopener">Watch on YouTube from 01:09:32</a></p>
+<p class="session-meta">Joseph Kim &middot; 9:50:08 AM ET–10:09:24 AM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=4172s" rel="noopener">Watch on YouTube from 01:09:32</a></p>
 
 ## Notable quotes
 - [01:14:40 | 9:55:16 AM] "We call that gap the capability overhang, the distance between what the model is capable of and the value people can actually get from it."

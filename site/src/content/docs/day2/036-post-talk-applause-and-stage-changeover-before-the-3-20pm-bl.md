@@ -1,9 +1,9 @@
 ---
 title: Post-talk applause and stage changeover before the 3:20pm block
   (3:13-3:20pm ET agenda gap)
-description: A roughly nine-minute untranscribed changeover on the Simons Room
-  main stage between Philipp Schmid's 2:55pm talk and Joao Wenzel's 3:20pm
-  Citadel Securities talk.
+description: Day 2 · Oct 14. A roughly nine-minute untranscribed changeover on
+  the Simons Room main stage between Philipp Schmid's 2:55pm talk and Joao
+  Wenzel's 3:20pm Citadel Securities talk.
 sidebar:
   order: 36
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A roughly nine-minute untranscribed changeover on the Simons Room main stage between Philipp Schmid's 2:55pm talk and Joao Wenzel's 3:20pm Citadel Securities talk.
 
@@ -32,7 +34,7 @@ A roughly nine-minute untranscribed changeover on the Simons Room main stage bet
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=23375&rel=0" title="Post-talk applause and stage changeover before the 3:20pm block (3:13-3:20pm ET agenda gap)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">3:10:11 PM ET-3:19:18 PM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=23375s" rel="noopener">Watch on YouTube from 06:29:35</a></p>
+<p class="session-meta">3:10:11 PM ET–3:19:18 PM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=23375s" rel="noopener">Watch on YouTube from 06:29:35</a></p>
 
 ## Notable quotes
 

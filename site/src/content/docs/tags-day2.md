@@ -1,7 +1,10 @@
 ---
-title: Day two tags
-description: Day two tags
+title: Day 2 tags
+description: Tags from the October 14 livestream.
 ---
+
+[Tags from both days](/tags/) · [Day 2 digest](/day2/)
+
 
 ## `accessibility` (1)
 

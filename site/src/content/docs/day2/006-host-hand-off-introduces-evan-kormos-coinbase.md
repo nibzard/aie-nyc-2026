@@ -1,9 +1,9 @@
 ---
 title: "Host hand-off: introduces Evan Kormos (Coinbase)"
-description: "A 29-second voiceover bridge between the Sonar and Coinbase
-  keynotes: an unnamed host asks where AI agents should take control and where
-  humans should stay in charge, then welcomes Evan Kormos, engineering manager
-  at Coinbase, to the stage."
+description: "Day 2 · Oct 14. A 29-second voiceover bridge between the Sonar and
+  Coinbase keynotes: an unnamed host asks where AI agents should take control
+  and where humans should stay in charge, then welcomes Evan Kormos, engineering
+  manager at Coinbase, to the stage."
 sidebar:
   order: 6
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 29-second voiceover bridge between the Sonar and Coinbase keynotes: an unnamed host asks where AI agents should take control and where humans should stay in charge, then welcomes Evan Kormos, engineering manager at Coinbase, to the stage.
 
@@ -31,7 +33,7 @@ None - this segment is a short voice-over hand-off.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=3088&rel=0" title="Host hand-off: introduces Evan Kormos (Coinbase)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Unidentified host/MC &middot; 9:32:04 AM ET-9:32:33 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=3088s" rel="noopener">Watch on YouTube from 00:51:28</a></p>
+<p class="session-meta">Unidentified host/MC &middot; 9:32:04 AM ET–9:32:33 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=3088s" rel="noopener">Watch on YouTube from 00:51:28</a></p>
 
 ## Notable quotes
 > "Where should AI agents take control, and when should humans stay in charge?" [00:51:28 | 9:32:03 AM]

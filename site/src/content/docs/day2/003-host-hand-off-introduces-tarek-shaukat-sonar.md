@@ -1,8 +1,8 @@
 ---
 title: "Host hand-off: introduces Tarek Shaukat (Sonar)"
-description: "A 35-second voiceover bridge between the Ramp and Sonar keynotes:
-  an unnamed host asks how agent-generated code can be trusted to ship, then
-  welcomes Tarek Shaukat, CEO of Sonar, to the stage."
+description: "Day 2 · Oct 14. A 35-second voiceover bridge between the Ramp and
+  Sonar keynotes: an unnamed host asks how agent-generated code can be trusted
+  to ship, then welcomes Tarek Shaukat, CEO of Sonar, to the stage."
 sidebar:
   order: 3
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 35-second voiceover bridge between the Ramp and Sonar keynotes: an unnamed host asks how agent-generated code can be trusted to ship, then welcomes Tarek Shaukat, CEO of Sonar, to the stage.
 
@@ -30,7 +32,7 @@ None - this segment is a 35-second voice-over hand-off.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=2067&rel=0" title="Host hand-off: introduces Tarek Shaukat (Sonar)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Unidentified host/MC &middot; 9:15:03 AM ET-9:15:38 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=2067s" rel="noopener">Watch on YouTube from 00:34:27</a></p>
+<p class="session-meta">Unidentified host/MC &middot; 9:15:03 AM ET–9:15:38 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=2067s" rel="noopener">Watch on YouTube from 00:34:27</a></p>
 
 ## Notable quotes
 > "As AI agents generate more code than ever, how do we make sure it's ready to ship?" [00:34:27 | 9:15:02 AM]

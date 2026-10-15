@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="title">Code is abundant, confidence is scarce</title>
+  <desc id="desc">Three horizontal bars compare the effect of asynchronous agents in the development lifecycle: lines of code written up 2,450 percent, commits up 240 percent, and releases up only 30 percent. The releases bar is highlighted in blue; the other two are desaturated. Side chips note that humans agreed with AI four out of five times when it was wrong, and Sonar survey figures of 5 percent of developers running agentic software factories today, 34 percent within a year, and 39 percent in financial services.</desc>
+  <rect x="1" y="1" width="958" height="538" rx="12" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="48" y="64" font-size="11" font-weight="600" letter-spacing="0.88" fill="#52514e">DATA — SURVEY</text>
+  <text x="48" y="92" font-size="20" font-weight="600" fill="#0b0b0b">Code is abundant, confidence is scarce</text>
+  <text x="48" y="116" font-size="13" fill="#52514e">After asynchronous agents entered the lifecycle, code output exploded while releases barely moved.</text>
+  <text x="48" y="134" font-size="13" fill="#52514e">Bars: research published the month before the talk on asynchronous agents in the development lifecycle.</text>
+
+  <!-- Baseline -->
+  <line x1="48" y1="168" x2="48" y2="356" stroke="#c3c2b7" stroke-width="1"/>
+
+  <!-- Row 1: lines of code -->
+  <text x="48" y="182" font-size="12" fill="#52514e">Lines of code written</text>
+  <path d="M48 190 H704 A4 4 0 0 1 708 194 V210 A4 4 0 0 1 704 214 H48 Z" fill="#9ec5f4" fill-opacity="0.45"/>
+  <text x="716" y="206" font-size="13" fill="#52514e">+2,450%</text>
+
+  <!-- Row 2: commits -->
+  <text x="48" y="248" font-size="12" fill="#52514e">Commits</text>
+  <path d="M48 256 H109 A4 4 0 0 1 113 260 V276 A4 4 0 0 1 109 280 H48 Z" fill="#9ec5f4" fill-opacity="0.45"/>
+  <text x="121" y="272" font-size="13" fill="#52514e">+240%</text>
+
+  <!-- Row 3: releases (highlight) -->
+  <text x="48" y="314" font-size="12" fill="#52514e">Releases</text>
+  <path d="M48 322 H52 A4 4 0 0 1 56 326 V342 A4 4 0 0 1 52 346 H48 Z" fill="#2a78d6"/>
+  <text x="64" y="338" font-size="13" font-weight="600" fill="#0b0b0b">+30%</text>
+
+  <!-- Chips -->
+  <rect x="48" y="372" width="272" height="64" rx="8" fill="#ffffff" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="62" y="394" font-size="13" font-weight="600" fill="#0b0b0b">4 out of 5</text>
+  <text x="62" y="411" font-size="11" fill="#52514e">humans agreed with AI when</text>
+  <text x="62" y="425" font-size="11" fill="#52514e">it was wrong — “cognitive surrender”</text>
+
+  <rect x="344" y="372" width="272" height="64" rx="8" fill="#ffffff" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="358" y="394" font-size="13" font-weight="600" fill="#0b0b0b">5%</text>
+  <text x="358" y="411" font-size="11" fill="#52514e">of developers run agentic</text>
+  <text x="358" y="425" font-size="11" fill="#52514e">software factories today</text>
+
+  <rect x="640" y="372" width="272" height="64" rx="8" fill="#ffffff" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="654" y="394" font-size="13" font-weight="600" fill="#0b0b0b">34%</text>
+  <text x="654" y="411" font-size="11" fill="#52514e">expect to within a year;</text>
+  <text x="654" y="425" font-size="11" fill="#52514e">39% in financial services</text>
+
+  <!-- Notes and source -->
+  <text x="48" y="458" font-size="11" fill="#52514e">Chips: the “cognitive surrender” study; Sonar State of Code Developer Survey, finished the day of the talk.</text>
+  <text x="48" y="500" font-size="11" fill="#52514e">Source: Tariq Shaukat (Sonar), “The Machine that Changed the World, vAI”, AI Engineer NYC 2026, day 2.</text>
+</svg>

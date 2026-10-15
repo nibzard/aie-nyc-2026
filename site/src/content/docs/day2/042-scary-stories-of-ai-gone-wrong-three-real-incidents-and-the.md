@@ -1,11 +1,11 @@
 ---
 title: "Scary stories of AI gone wrong: three real incidents and the
   infrastructure controls that prevent them"
-description: Coder staff product manager Zhao Chenjiang opens a talk about three
-  real incidents of AI usage gone wrong at real companies by arguing they were
-  all preventable with infrastructure controls you mostly already own — not with
-  a smarter, more expensive frontier model — but the stream cut to a music
-  interstitial before the
+description: Day 2 · Oct 14. Coder staff product manager Zhao Chenjiang opens a
+  talk about three real incidents of AI usage gone wrong at real companies by
+  arguing they were all preventable with infrastructure controls you mostly
+  already own — not with a smarter, more expensive frontier model — but the
+  stream cut to a music interstitial before the…
 sidebar:
   order: 42
   hidden: false
@@ -13,6 +13,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Coder staff product manager Zhao Chenjiang opens a talk about three real incidents of AI usage gone wrong at real companies by arguing they were all preventable with infrastructure controls you mostly already own — not with a smarter, more expensive frontier model — but the stream cut to a music interstitial before the stories themselves began.
 
@@ -39,7 +41,7 @@ Coder staff product manager Zhao Chenjiang opens a talk about three real inciden
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=27393&rel=0" title="Scary stories of AI gone wrong: three real incidents and the infrastructure controls that prevent them" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Zhao Chenjiang &middot; 4:17:09 PM ET-4:22:24 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=27393s" rel="noopener">Watch on YouTube from 07:36:33</a></p>
+<p class="session-meta">Zhao Chenjiang &middot; 4:17:09 PM ET–4:22:24 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=27393s" rel="noopener">Watch on YouTube from 07:36:33</a></p>
 
 ## Notable quotes
 - [07:38:56 | 4:19:31 PM] "So I know you said not to change anything, but, well, I destroyed a month of your work in seconds."

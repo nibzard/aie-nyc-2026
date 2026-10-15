@@ -1,9 +1,9 @@
 ---
 title: Break / stage changeover between Wells Fargo and Arca talks
-description: A roughly seven-minute stage changeover on the main-stage
-  livestream between Freddy Lecue's Wells Fargo fraud-detection talk and Aman
-  Singh's Arca talk, with no transcribed speech until a single "All right."
-  opens the Arca talk at 11:07:46 AM ET.
+description: Day 1 · Oct 13. A roughly seven-minute stage changeover on the
+  main-stage livestream between Freddy Lecue's Wells Fargo fraud-detection talk
+  and Aman Singh's Arca talk, with no transcribed speech until a single "All
+  right." opens the Arca talk at 11:07:46 AM ET.
 sidebar:
   order: 17
   hidden: true
@@ -11,6 +11,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A roughly seven-minute stage changeover on the main-stage livestream between Freddy Lecue's Wells Fargo fraud-detection talk and Aman Singh's Arca talk, with no transcribed speech until a single "All right." opens the Arca talk at 11:07:46 AM ET.
 
@@ -30,7 +32,7 @@ None - this segment is a 7-minute stage changeover with no speech.
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=7975&rel=0" title="Break / stage changeover between Wells Fargo and Arca talks" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">11:00:46 AM ET-11:07:46 AM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=7975s" rel="noopener">Watch on YouTube from 02:12:54</a></p>
+<p class="session-meta">11:00:46 AM ET–11:07:46 AM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=7975s" rel="noopener">Watch on YouTube from 02:12:54</a></p>
 
 ## Notable quotes
 > "All right." — [02:19:54 | 11:07:46 AM]

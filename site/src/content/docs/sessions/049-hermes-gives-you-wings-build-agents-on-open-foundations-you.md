@@ -1,10 +1,10 @@
 ---
 title: "Hermes gives you wings: Build on open foundations."
-description: Nous Research CEO Dillon Rolnick argues that commoditized models
-  leave frontier labs two ways to recoup their trillion-dollar bets — trap
-  business users at the agent layer or "build God" and aim it at lucrative
-  problems like finance — so companies should build agents on open foundations
-  they own, such as the MIT-licens
+description: Day 1 · Oct 13. Nous Research CEO Dillon Rolnick argues that
+  commoditized models leave frontier labs two ways to recoup their
+  trillion-dollar bets — trap business users at the agent layer or "build God"
+  and aim it at lucrative problems like finance — so companies should build
+  agents on open foundations they own, such as the MIT-licens…
 sidebar:
   order: 49
   hidden: false
@@ -13,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 Nous Research CEO Dillon Rolnick argues that commoditized models leave frontier labs two ways to recoup their trillion-dollar bets — trap business users at the agent layer or "build God" and aim it at lucrative problems like finance — so companies should build agents on open foundations they own, such as the MIT-licensed Hermes Agent.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/dillon-rolnick-hermes">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Labs have spent hundreds of billions of dollars training models (trillions industry-wide), yet models are commoditizing: average token cost falls, total token spend surges, serving infrastructure cost stays flat, and model-layer margins narrow.
@@ -39,7 +43,7 @@ Nous Research CEO Dillon Rolnick argues that commoditized models leave frontier 
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=28071&rel=0" title="Hermes gives you wings: Build on open foundations." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Dillon Rolnick &middot; 4:35:43 PM ET-4:51:18 PM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=28071s" rel="noopener">Watch on YouTube from 07:47:51</a></p>
+<p class="session-meta">Dillon Rolnick &middot; 4:35:43 PM ET–4:51:18 PM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=28071s" rel="noopener">Watch on YouTube from 07:47:51</a></p>
 
 ## Notable quotes
 - "Or two, you build God, and you build God faster than anyone else, and you monetize God." [07:50:40 | 4:40:32 PM]

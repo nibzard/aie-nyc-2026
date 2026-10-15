@@ -1,9 +1,10 @@
 ---
 title: Session turnaround / networking break (10:56-11:06am ET, nothing transcribed)
-description: "A roughly 9.6-minute non-speech interstitial on the main-stage
-  stream: the Compound AI talk ended about two minutes early at 10:56:06 AM ET,
-  the stream carried no speech across the scheduled 10:58-11:05am ET block gap,
-  and the SemiAnalysis talk opened at 11:05:43 AM ET."
+description: "Day 2 · Oct 14. A roughly 9.6-minute non-speech interstitial on
+  the main-stage stream: the Compound AI talk ended about two minutes early at
+  10:56:06 AM ET, the stream carried no speech across the scheduled
+  10:58-11:05am ET block gap, and the SemiAnalysis talk opened at 11:05:43 AM
+  ET."
 sidebar:
   order: 13
   hidden: true
@@ -11,6 +12,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A roughly 9.6-minute non-speech interstitial on the main-stage stream: the Compound AI talk ended about two minutes early at 10:56:06 AM ET, the stream carried no speech across the scheduled 10:58-11:05am ET block gap, and the SemiAnalysis talk opened at 11:05:43 AM ET.
 
@@ -30,7 +33,7 @@ None - this segment is a 10-minute turnaround with no transcribed speech.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=8130&rel=0" title="Session turnaround / networking break (10:56-11:06am ET, nothing transcribed)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">10:56:06 AM ET-11:05:44 AM ET &middot; break &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=8130s" rel="noopener">Watch on YouTube from 02:15:30</a></p>
+<p class="session-meta">10:56:06 AM ET–11:05:44 AM ET &middot; break &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=8130s" rel="noopener">Watch on YouTube from 02:15:30</a></p>
 
 ## Session narrative
 The Stage Talk "Towards Autonomous Analysts in Finance" by Yijia Liang (Compound AI) held the 10:40-10:58am ET slot in the Simons Room. It finished early. Its last sentence, "Thanks so much.", ends at t=8130 (video 02:15:30, 10:56:06 AM ET). After that close, the transcript records no sentence for 577 seconds.

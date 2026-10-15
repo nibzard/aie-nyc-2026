@@ -1,0 +1,80 @@
+---
+interface Session {
+  day: number;
+  date: string;
+  title: string;
+  speakers: string;
+  description: string;
+  href: string;
+  official?: string;
+}
+interface Props { sessions: Session[] }
+const { sessions } = Astro.props;
+---
+<session-browser>
+  <div class="session-filters" hidden>
+    <fieldset>
+      <legend>Choose a livestream day</legend>
+      <div class="day-filter-buttons">
+        <button type="button" data-day="all" aria-pressed="true">Both days</button>
+        <button type="button" data-day="1" aria-pressed="false">Day 1 · Oct 13</button>
+        <button type="button" data-day="2" aria-pressed="false">Day 2 · Oct 14</button>
+      </div>
+    </fieldset>
+    <label for="session-search">Find a session</label>
+    <input id="session-search" type="search" placeholder="Search topics, titles, or speakers" autocomplete="off" />
+  </div>
+  <p class="session-results" role="status" aria-live="polite">{sessions.length} session summaries across both days</p>
+  <div class="session-list">
+    {sessions.map((session) => (
+      <article class="session-card" data-session-day={session.day}>
+        <p class="session-day">Day {session.day} · {session.date}</p>
+        <h2><a href={session.href}>{session.title}</a></h2>
+        <p class="session-meta">{session.speakers}</p>
+        <p>{session.description}</p>
+        <p class="session-reading-links">
+          <a class="read-session" href={session.href}>Read our notes <span aria-hidden="true">→</span></a>
+          {session.official && <a href={session.official}>Official reading edition ↗</a>}
+        </p>
+      </article>
+    ))}
+  </div>
+  <p class="session-empty" hidden>No sessions match. Try another search or choose both days.</p>
+</session-browser>
+
+<script>
+  class SessionBrowser extends HTMLElement {
+    connectedCallback() {
+      const filters = this.querySelector<HTMLElement>('.session-filters')!;
+      const buttons = [...this.querySelectorAll<HTMLButtonElement>('button[data-day]')];
+      const search = this.querySelector<HTMLInputElement>('input[type="search"]')!;
+      const cards = [...this.querySelectorAll<HTMLElement>('[data-session-day]')];
+      const status = this.querySelector<HTMLElement>('.session-results')!;
+      const empty = this.querySelector<HTMLElement>('.session-empty')!;
+      const params = new URLSearchParams(location.search);
+      let selected = ['1', '2'].includes(params.get('day') || '') ? params.get('day')! : 'all';
+      search.value = params.get('q') || '';
+      const update = () => {
+        const query = search.value.trim().toLocaleLowerCase();
+        let count = 0;
+        for (const card of cards) {
+          card.hidden = (selected !== 'all' && card.dataset.sessionDay !== selected)
+            || !(card.textContent || '').toLocaleLowerCase().includes(query);
+          if (!card.hidden) count++;
+        }
+        for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.day === selected));
+        status.textContent = `${count} session ${count === 1 ? 'summary' : 'summaries'} ${selected === 'all' ? 'across both days' : `from Day ${selected}`}`;
+        empty.hidden = count !== 0;
+        const url = new URL(location.href);
+        selected === 'all' ? url.searchParams.delete('day') : url.searchParams.set('day', selected);
+        query ? url.searchParams.set('q', search.value.trim()) : url.searchParams.delete('q');
+        history.replaceState(null, '', url);
+      };
+      for (const button of buttons) button.addEventListener('click', () => { selected = button.dataset.day!; update(); });
+      search.addEventListener('input', update);
+      filters.hidden = false;
+      update();
+    }
+  }
+  if (!customElements.get('session-browser')) customElements.define('session-browser', SessionBrowser);
+</script>

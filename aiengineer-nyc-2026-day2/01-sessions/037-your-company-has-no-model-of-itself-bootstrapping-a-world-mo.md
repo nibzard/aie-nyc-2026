@@ -36,6 +36,12 @@ confidence: "high"
 7. Backtest predictions against future labels. Snapshot the world model as of a past date (for example February), then compare agent flags with what actually happened: statuses that were green but flagged were twice as likely to turn yellow or red [06:50:13 - 06:50:36].
 8. Treat a dead sensor as missing signal, not zero. A quiet Slack channel is like a speedometer that cuts out on the highway — you are not going zero. Track when you last polled each sensor and when it was last OK, and decide what to do when the two diverge [06:53:23 - 06:54:08].
 
+## Figures
+
+![A circular world-model loop with a fact half-life inset.](../../figures/company-world-model.svg)
+
+The company as a state estimator, with the fact half-life inset.
+
 ## Notable quotes
 - "That person is a company's world model, essentially." [06:39:28 | 3:20:03 PM]
 - "They're green on the outside and red on the inside." [06:41:25 | 3:22:00 PM]

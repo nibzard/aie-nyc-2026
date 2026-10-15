@@ -1,9 +1,9 @@
 ---
 title: CEO, Compute Exchange
-description: Carmen Li, CEO of both Compute Exchange and Silicon Data, argues
-  for a neutral GPU exchange that owns no hardware, verifies both sides of every
-  trade, and publishes the term-structure curves and residual values that now
-  feed CME futures, NVIDIA's investor deck, and bank appraisals.
+description: Day 2 · Oct 14. Carmen Li, CEO of both Compute Exchange and Silicon
+  Data, argues for a neutral GPU exchange that owns no hardware, verifies both
+  sides of every trade, and publishes the term-structure curves and residual
+  values that now feed CME futures, NVIDIA's investor deck, and bank appraisals.
 sidebar:
   order: 20
   hidden: false
@@ -11,6 +11,8 @@ pagefind: true
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 Carmen Li, CEO of both Compute Exchange and Silicon Data, argues for a neutral GPU exchange that owns no hardware, verifies both sides of every trade, and publishes the term-structure curves and residual values that now feed CME futures, NVIDIA's investor deck, and bank appraisals.
 
@@ -38,7 +40,7 @@ Carmen Li, CEO of both Compute Exchange and Silicon Data, argues for a neutral G
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=13187&rel=0" title="CEO, Compute Exchange" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Carmen Li &middot; 12:20:23 PM ET-12:38:20 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=13187s" rel="noopener">Watch on YouTube from 03:39:47</a></p>
+<p class="session-meta">Carmen Li &middot; 12:20:23 PM ET–12:38:20 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=13187s" rel="noopener">Watch on YouTube from 03:39:47</a></p>
 
 ## Notable quotes
 - "[03:40:19 | 12:20:55 PM] Our company, Compute Exchange, the world's actually the only neutral marketplaces for GPU procurement."

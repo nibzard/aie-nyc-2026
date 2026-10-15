@@ -1,10 +1,10 @@
 ---
 title: Applause, then host welcome introducing Anthropic speakers Belinda Neal
   and Keon Shahab
-description: "A 46-second stage handoff: applause closes the Bridgewater
-  keynote, the host introduces the two Anthropic speakers by name and role, and
-  Belinda Neal opens with a self-introduction that leads straight into the
-  keynote."
+description: "Day 1 · Oct 13. A 46-second stage handoff: applause closes the
+  Bridgewater keynote, the host introduces the two Anthropic speakers by name
+  and role, and Belinda Neal opens with a self-introduction that leads straight
+  into the keynote."
 sidebar:
   order: 5
   hidden: true
@@ -12,6 +12,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
 
 A 46-second stage handoff: applause closes the Bridgewater keynote, the host introduces the two Anthropic speakers by name and role, and Belinda Neal opens with a self-introduction that leads straight into the keynote.
 
@@ -33,7 +35,7 @@ A 46-second stage handoff: applause closes the Bridgewater keynote, the host int
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=1863&rel=0" title="Applause, then host welcome introducing Anthropic speakers Belinda Neal and Keon Shahab" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Unidentified host (MC), Belinda Neal, Keon Shahab &middot; 9:18:55 AM ET-9:19:41 AM ET &middot; announcement &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=1863s" rel="noopener">Watch on YouTube from 00:31:03</a></p>
+<p class="session-meta">Unidentified host (MC), Belinda Neal, Keon Shahab &middot; 9:18:55 AM ET–9:19:41 AM ET &middot; announcement &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=1863s" rel="noopener">Watch on YouTube from 00:31:03</a></p>
 
 ## Notable quotes
 

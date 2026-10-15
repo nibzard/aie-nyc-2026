@@ -1,9 +1,9 @@
 ---
 title: Reliable and intelligent workflows for finance, wealth, and insurance
-description: An extra lunch talk from Perpetual's CTO arguing that reliable AI
-  in regulated finance comes from deliberately placing the boundary between
-  deterministic compiled workflows and minimal, typed model judgment - not from
-  choosing "more agency" or "less agency".
+description: Day 1 · Oct 13. An extra lunch talk from Perpetual's CTO arguing
+  that reliable AI in regulated finance comes from deliberately placing the
+  boundary between deterministic compiled workflows and minimal, typed model
+  judgment - not from choosing "more agency" or "less agency".
 sidebar:
   order: 29
   hidden: false
@@ -12,7 +12,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 An extra lunch talk from Perpetual's CTO arguing that reliable AI in regulated finance comes from deliberately placing the boundary between deterministic compiled workflows and minimal, typed model judgment - not from choosing "more agency" or "less agency".
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/karthic-rao-reliable-smart-workflows">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 
@@ -39,7 +43,13 @@ An extra lunch talk from Perpetual's CTO arguing that reliable AI in regulated f
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=17430&rel=0" title="Reliable and intelligent workflows for finance, wealth, and insurance" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Karthic Rao &middot; 1:38:22 PM ET-1:53:48 PM ET &middot; talk &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=17430s" rel="noopener">Watch on YouTube from 04:50:30</a></p>
+<p class="session-meta">Karthic Rao &middot; 1:38:22 PM ET–1:53:48 PM ET &middot; talk &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=17430s" rel="noopener">Watch on YouTube from 04:50:30</a></p>
+
+## Figures
+
+![A deterministic DAG shell with an adaptive agent loop inside one node.](/figures/deterministic-outside-adaptive-inside.svg)
+
+The planner-compiler split from this talk and the policy shell from day two’s Coinbase talk.
 
 ## Notable quotes
 

@@ -1,8 +1,8 @@
 ---
 title: "Off-air pre-roll: two speakers planning edits and naming their agent 'Jiro'"
-description: A 28-second off-mic pre-roll in which the two Nori Agentic
-  presenters settle on the name "Jiro" for their agent and plan their opening
-  edit, immediately before their recorded online-track talk.
+description: Day 2 · Oct 14. A 28-second off-mic pre-roll in which the two Nori
+  Agentic presenters settle on the name "Jiro" for their agent and plan their
+  opening edit, immediately before their recorded online-track talk.
 sidebar:
   order: 28
   hidden: true
@@ -10,6 +10,8 @@ pagefind: false
 prev: false
 next: false
 ---
+
+<p class="session-context"><span class="day-badge">Day 2 · Oct 14</span> <a href="/day2/">Day 2 digest</a> · <a href="/sessions-index/?day=2">More from this day</a></p>
 
 A 28-second off-mic pre-roll in which the two Nori Agentic presenters settle on the name "Jiro" for their agent and plan their opening edit, immediately before their recorded online-track talk.
 
@@ -27,7 +29,7 @@ None - this segment is a 28-second off-air pre-roll.
 <iframe src="https://www.youtube-nocookie.com/embed/jiUC6IUMdvc?start=18110&rel=0" title="Off-air pre-roll: two speakers planning edits and naming their agent 'Jiro'" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Amol Kapoor, Clifford Ressel &middot; 1:42:26 PM ET-1:42:54 PM ET &middot; filler &middot;  <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=18110s" rel="noopener">Watch on YouTube from 05:01:50</a></p>
+<p class="session-meta">Amol Kapoor, Clifford Ressel &middot; 1:42:26 PM ET–1:42:54 PM ET &middot; filler &middot; <a href="https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=18110s" rel="noopener">Watch on YouTube from 05:01:50</a></p>
 
 ## Notable quotes
 

@@ -1,10 +1,10 @@
 ---
 title: Frontier Models for Acting in Space and Time
-description: General Intuition CEO Pim de Witte presents one model family that
-  converts pixels to actions in real time — trained on Medal's game-play action
-  data, it plays video games at the highest level and controls over 10 robot
-  types, on the theory that scaling pixel space repeats Anthropic's bet on
-  coding space.
+description: Day 1 · Oct 13. General Intuition CEO Pim de Witte presents one
+  model family that converts pixels to actions in real time — trained on Medal's
+  game-play action data, it plays video games at the highest level and controls
+  over 10 robot types, on the theory that scaling pixel space repeats
+  Anthropic's bet on coding space.
 sidebar:
   order: 46
   hidden: false
@@ -13,7 +13,11 @@ prev: false
 next: false
 ---
 
+<p class="session-context"><span class="day-badge">Day 1 · Oct 13</span> <a href="/day1/">Day 1 digest</a> · <a href="/sessions-index/?day=1">More from this day</a></p>
+
 General Intuition CEO Pim de Witte presents one model family that converts pixels to actions in real time — trained on Medal's game-play action data, it plays video games at the highest level and controls over 10 robot types, on the theory that scaling pixel space repeats Anthropic's bet on coding space.
+
+<p class="official-reading"><a href="https://aie-nyc-2026-talks.swyxio.workers.dev/talks/pim-de-witte-space-time">Read the official edition ↗</a><span> A detailed reading edition with a searchable transcript.</span></p>
 
 ## TL;DR
 - Pim de Witte, co-founder and CEO of General Intuition, argues that LLMs are turn-based predictors and hit a wall in environments that unfold in space and time. His company builds purpose-built models that observe while they act.
@@ -38,7 +42,7 @@ General Intuition CEO Pim de Witte presents one model family that converts pixel
 <iframe src="https://www.youtube-nocookie.com/embed/akEqiXFo3GM?start=26933&rel=0" title="Frontier Models for Acting in Space and Time" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<p class="session-meta">Pim de Witte &middot; 4:16:45 PM ET-4:35:42 PM ET &middot; keynote &middot;  <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=26933s" rel="noopener">Watch on YouTube from 07:28:53</a></p>
+<p class="session-meta">Pim de Witte &middot; 4:16:45 PM ET–4:35:42 PM ET &middot; keynote &middot; <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=26933s" rel="noopener">Watch on YouTube from 07:28:53</a></p>
 
 ## Notable quotes
 > "I want you to zoom out for a second and think about if somebody were to tell you today that we would take all the information on the internet, and then we would train a model on it, and we would use that in order to solve scientific problems that were not on the internet." — [07:29:23 | 4:17:14 PM]
